@@ -386,7 +386,7 @@ export const Layout: React.FC<LayoutProps> = ({
         {children}
       </main>
 
-      <footer ref={footerRef} className="relative h-[380px] md:h-[450px] w-full overflow-hidden z-0" style={{
+      <footer ref={footerRef} className="relative min-h-[480px] md:min-h-[500px] w-full overflow-hidden z-0" style={{
       backgroundColor: 'hsl(var(--background))',
       boxShadow: '0 -4px 20px rgba(0,0,0,0.06)'
     }}>
@@ -395,14 +395,13 @@ export const Layout: React.FC<LayoutProps> = ({
         background: 'linear-gradient(135deg, rgba(157,170,198,0.12) 0%, rgba(216,204,171,0.08) 100%)'
       }} />
 
-        <div className="relative z-10 container mx-auto px-6 h-full flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 container mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
           <div className="mb-6 flex items-center gap-3">
             <img src={logoFull} alt="Danique Kwakman" className="h-12 w-auto" />
           </div>
 
-          <p className="text-muted-foreground max-w-md text-sm md:text-base leading-relaxed mb-10">
-            Jouw partner voor natuurlijke gezondheid en duurzame vitaliteit. <br className="hidden md:block" />
-            Herstel je balans van binnenuit.
+          <p className="text-muted-foreground max-w-xl text-sm md:text-base leading-relaxed mb-6">
+            Orthomoleculair therapeut voor vrouwen die hun lijf en gezondheid willen begrijpen. Zodat je je klachten kunt doorgronden, kunt transformeren en weer volledig in je kracht staat.
           </p>
 
           <div className="flex items-center gap-8 mb-8">
@@ -420,20 +419,7 @@ export const Layout: React.FC<LayoutProps> = ({
               <Instagram size={26} strokeWidth={1.5} />
             </motion.a>
             <motion.a 
-              href="#" 
-              className="text-muted-foreground"
-              whileHover={{ 
-                color: "hsl(var(--foreground))",
-                y: -4
-              }}
-              transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            >
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-              </svg>
-            </motion.a>
-            <motion.a 
-              href="#" 
+              href="mailto:info@daniquekwakman.nl" 
               className="text-muted-foreground"
               whileHover={{ 
                 color: "hsl(var(--foreground))",
@@ -445,28 +431,39 @@ export const Layout: React.FC<LayoutProps> = ({
             </motion.a>
           </div>
 
+          {/* CAT & GAT info */}
+          <div className="max-w-lg mb-6">
+            <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+              Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).
+            </p>
+            <p className="text-xs text-muted-foreground">
+              Voor meer informatie over mijn klachtenregeling zie{' '}
+              <a 
+                href="https://gatgeschillen.nl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground transition-colors"
+              >
+                gatgeschillen.nl
+              </a>
+            </p>
+          </div>
+
+          {/* Belangrijke documenten */}
           <div className="flex items-center justify-center gap-4 mb-8 flex-wrap">
+            <span className="text-xs text-muted-foreground font-medium">Belangrijke documenten:</span>
             <motion.a 
               href="/privacy" 
-              className="text-xs text-muted-foreground"
+              className="text-xs text-muted-foreground underline"
               whileHover={{ color: "hsl(var(--foreground))" }}
               transition={{ duration: 0.3 }}
             >
-              Privacy
-            </motion.a>
-            <span className="text-muted-foreground opacity-40">|</span>
-            <motion.a 
-              href="/cookie-policy" 
-              className="text-xs text-muted-foreground"
-              whileHover={{ color: "hsl(var(--foreground))" }}
-              transition={{ duration: 0.3 }}
-            >
-              Cookies
+              Privacyverklaring
             </motion.a>
             <span className="text-muted-foreground opacity-40">|</span>
             <motion.a 
               href="/terms" 
-              className="text-xs text-muted-foreground"
+              className="text-xs text-muted-foreground underline"
               whileHover={{ color: "hsl(var(--foreground))" }}
               transition={{ duration: 0.3 }}
             >
@@ -474,7 +471,7 @@ export const Layout: React.FC<LayoutProps> = ({
             </motion.a>
           </div>
 
-          <div className="absolute bottom-8 left-0 w-full text-center px-4">
+          <div className="text-center">
             <p className="text-xs text-muted-foreground opacity-60 font-light tracking-wide">
               © {new Date().getFullYear()} Danique Kwakman. Alle rechten voorbehouden.
             </p>
