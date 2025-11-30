@@ -9,18 +9,23 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { useForm } from 'react-hook-form';
 import { useToast } from '@/hooks/use-toast';
-
 const Ebook = () => {
-  const { register, handleSubmit, reset } = useForm();
-  const { toast } = useToast();
-
+  const {
+    register,
+    handleSubmit,
+    reset
+  } = useForm();
+  const {
+    toast
+  } = useToast();
   const onSubmit = (data: any) => {
-    toast({ title: "E-book aangevraagd!", description: "Check je inbox voor de download link." });
+    toast({
+      title: "E-book aangevraagd!",
+      description: "Check je inbox voor de download link."
+    });
     reset();
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Section className="bg-background pt-32 md:pt-40 min-h-screen">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
@@ -29,16 +34,8 @@ const Ebook = () => {
             <div className="w-full lg:w-1/2">
               <FadeIn className="relative">
                 <div className="flex items-center justify-center gap-4">
-                  <img
-                    src={ebookCoverFront}
-                    alt="5 Ontbijt Recepten E-book voorkant"
-                    className="w-1/2 max-w-[240px] h-auto rounded-lg shadow-lg"
-                  />
-                  <img
-                    src={ebookCoverOpen}
-                    alt="5 Ontbijt Recepten E-book open"
-                    className="w-1/2 max-w-[280px] h-auto rounded-lg shadow-lg"
-                  />
+                  <img src={ebookCoverFront} alt="5 Ontbijt Recepten E-book voorkant" className="w-1/2 max-w-[240px] h-auto rounded-lg shadow-none" />
+                  <img src={ebookCoverOpen} alt="5 Ontbijt Recepten E-book open" className="w-1/2 max-w-[280px] h-auto rounded-lg shadow-none" />
                 </div>
               </FadeIn>
             </div>
@@ -101,8 +98,6 @@ const Ebook = () => {
           </FadeIn>
         </div>
       </Section>
-    </div>
-  );
+    </div>;
 };
-
 export default Ebook;
