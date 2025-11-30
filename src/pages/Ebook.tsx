@@ -41,14 +41,21 @@ const Ebook = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Een gezond ontbijt is de beste start van je dag. Het geeft je de brandstof om je hormonen aan ta maken, scherp en energiek te zijn, je beter te voelen en vol focus de dag door te gaan.
                 </p>
-                <motion.a href="#download-form" whileHover={{
-                scale: 1.02
-              }} whileTap={{
-                scale: 0.98
-              }} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors">
+                <motion.button 
+                  onClick={() => {
+                    document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  whileHover={{
+                    scale: 1.02
+                  }} 
+                  whileTap={{
+                    scale: 0.98
+                  }} 
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
+                >
                   Ontvang gratis e-book
                   <ArrowDown className="w-5 h-5" />
-                </motion.a>
+                </motion.button>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
