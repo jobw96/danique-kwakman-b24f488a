@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { ChefHat, Clock, Lightbulb } from 'lucide-react';
+import { ChefHat, X, Lightbulb } from 'lucide-react';
 import granolaImage from '@/assets/recipe-granola.jpg';
 import gingerShotsImage from '@/assets/recipe-ginger-shots.jpg';
 import eggMuffinsImage from '@/assets/recipe-egg-muffins.jpg';
@@ -117,62 +118,142 @@ const RecipeCard = ({ recipe, onClick }: { recipe: Recipe; onClick: () => void }
 );
 
 const RecipeDetail = ({ recipe, onClose }: { recipe: Recipe; onClose: () => void }) => (
-  <div className="fixed inset-0 bg-foreground/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
-    <div className="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-scale-in" onClick={(e) => e.stopPropagation()}>
-      <div className="h-64 overflow-hidden rounded-t-3xl">
-        <img src={recipe.image} alt={recipe.title} className="w-full h-full object-cover" />
-      </div>
-      <div className="p-8">
-        <h2 className="font-serif text-3xl text-foreground mb-4">{recipe.title}</h2>
-        <p className="text-muted-foreground leading-relaxed mb-8">{recipe.intro}</p>
-        
-        <div className="mb-8">
-          <h3 className="font-serif text-xl text-foreground mb-4 flex items-center gap-2">
-            <span>Ingrediënten</span>
-            {recipe.ingredientsNote && <span className="text-sm font-normal text-muted-foreground">({recipe.ingredientsNote})</span>}
-          </h3>
-          <ul className="space-y-2">
-            {recipe.ingredients.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="mb-8">
-          <h3 className="font-serif text-xl text-foreground mb-4">Bereiding</h3>
-          <ol className="space-y-3">
-            {recipe.steps.map((step, i) => (
-              <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                <span className="w-6 h-6 rounded-full bg-[#FDF8F3] flex items-center justify-center text-sm font-medium text-foreground flex-shrink-0 mt-0.5">{i + 1}</span>
-                <span className="leading-relaxed">{step}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-
-        {recipe.tip && (
-          <div className="bg-[#FDF8F3] rounded-xl p-4 mb-6 flex items-start gap-3">
-            <Lightbulb size={18} className="text-primary flex-shrink-0 mt-0.5" />
-            <p className="text-muted-foreground text-sm"><span className="font-medium text-foreground">Tip:</span> {recipe.tip}</p>
-          </div>
-        )}
-
-        {recipe.afterNote && (
-          <p className="text-muted-foreground italic">{recipe.afterNote}</p>
-        )}
-
-        <button 
+  <motion.div 
+    className="fixed inset-0 bg-foreground/60 backdrop-blur-md z-50 flex items-center justify-center p-2 sm:p-4" 
+    onClick={onClose}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.2 }}
+  >
+    <motion.div 
+      className="bg-white rounded-2xl sm:rounded-3xl w-full max-w-xl max-h-[95vh] sm:max-h-[85vh] overflow-hidden shadow-2xl flex flex-col" 
+      onClick={(e) => e.stopPropagation()}
+      initial={{ scale: 0.9, opacity: 0, y: 20 }}
+      animate={{ scale: 1, opacity: 1, y: 0 }}
+      exit={{ scale: 0.95, opacity: 0, y: 10 }}
+      transition={{ type: "spring", stiffness: 350, damping: 30 }}
+    >
+      {/* Header with image */}
+      <div className="relative h-40 sm:h-48 flex-shrink-0">
+        <motion.img 
+          src={recipe.image} 
+          alt={recipe.title} 
+          className="w-full h-full object-cover"
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.4 }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+        <motion.button 
           onClick={onClose}
-          className="mt-8 w-full bg-primary text-primary-foreground py-3 rounded-xl font-medium hover:bg-primary/90 transition-colors"
+          className="absolute top-3 right-3 w-8 h-8 sm:w-10 sm:h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
-          Sluiten
-        </button>
+          <X size={18} className="text-foreground" />
+        </motion.button>
+        <motion.h2 
+          className="absolute bottom-3 left-4 right-4 font-serif text-xl sm:text-2xl text-white drop-shadow-lg"
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.1 }}
+        >
+          {recipe.title}
+        </motion.h2>
       </div>
-    </div>
-  </div>
+
+      {/* Scrollable content */}
+      <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+        <motion.p 
+          className="text-muted-foreground text-sm leading-relaxed mb-5"
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.15 }}
+        >
+          {recipe.intro}
+        </motion.p>
+        
+        {/* Two column layout on larger screens */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          {/* Ingredients */}
+          <motion.div 
+            className="bg-[#FDF8F3] rounded-xl p-4"
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <h3 className="font-serif text-base sm:text-lg text-foreground mb-3 flex items-center gap-2">
+              Ingrediënten
+              {recipe.ingredientsNote && <span className="text-xs font-normal text-muted-foreground">({recipe.ingredientsNote})</span>}
+            </h3>
+            <ul className="space-y-1.5">
+              {recipe.ingredients.map((item, i) => (
+                <motion.li 
+                  key={i} 
+                  className="flex items-start gap-2 text-muted-foreground text-sm"
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.25 + i * 0.03 }}
+                >
+                  <span className="w-1 h-1 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  {item}
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Preparation */}
+          <motion.div
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.25 }}
+          >
+            <h3 className="font-serif text-base sm:text-lg text-foreground mb-3">Bereiding</h3>
+            <ol className="space-y-2">
+              {recipe.steps.map((step, i) => (
+                <motion.li 
+                  key={i} 
+                  className="flex items-start gap-2 text-muted-foreground text-sm"
+                  initial={{ x: 10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.3 + i * 0.05 }}
+                >
+                  <span className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center text-xs font-medium text-primary flex-shrink-0 mt-0.5">{i + 1}</span>
+                  <span className="leading-relaxed">{step}</span>
+                </motion.li>
+              ))}
+            </ol>
+          </motion.div>
+        </div>
+
+        {/* Tip */}
+        {recipe.tip && (
+          <motion.div 
+            className="bg-primary/5 border border-primary/20 rounded-xl p-3 mt-4 flex items-start gap-2"
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            <Lightbulb size={16} className="text-primary flex-shrink-0 mt-0.5" />
+            <p className="text-muted-foreground text-xs sm:text-sm"><span className="font-medium text-foreground">Tip:</span> {recipe.tip}</p>
+          </motion.div>
+        )}
+
+        {/* After note */}
+        {recipe.afterNote && (
+          <motion.p 
+            className="text-muted-foreground text-sm italic mt-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.45 }}
+          >
+            {recipe.afterNote}
+          </motion.p>
+        )}
+      </div>
+    </motion.div>
+  </motion.div>
 );
 
 const Recepten = () => {
@@ -213,9 +294,11 @@ const Recepten = () => {
       </Section>
 
       {/* Recipe Detail Modal */}
-      {selectedRecipe && (
-        <RecipeDetail recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} />
-      )}
+      <AnimatePresence>
+        {selectedRecipe && (
+          <RecipeDetail recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
