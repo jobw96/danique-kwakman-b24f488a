@@ -157,7 +157,7 @@ const ServiceAccordion = () => {
       duration: 0.5,
       ease: "easeInOut"
     }}>
-        <ParallaxImage key={activeService.id} src={activeService.image} alt={activeService.title} className="w-full h-full object-cover" />
+        <ParallaxImage key={activeService.id} src={activeService.image} alt={`${activeService.title} - orthomoleculaire therapie bij Danique Kwakman`} className="w-full h-full object-cover" />
       </motion.div>
       <div className="flex flex-col justify-center">
         {SERVICES.map(service => <div key={service.id} className="border-b border-secondary/30 last:border-none">
@@ -235,8 +235,8 @@ const Index = () => {
         scale: heroScale,
         opacity: heroOpacity
       }}>
-          <img src={heroImageMobile} alt="Hero" className="md:hidden w-full h-full object-cover object-center" />
-          <img src={heroImage} alt="Hero" className="hidden md:block w-full h-full object-cover object-right" />
+          <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
+          <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" />
         </motion.div>
         <div className="relative z-10 container mx-auto px-6">
           <FadeIn>
@@ -301,7 +301,7 @@ const Index = () => {
                     damping: 25
                   }}>
                     <div className="h-64 overflow-hidden relative">
-                      <ParallaxImage src={treatment.image} alt={treatment.title} className="w-full h-full" />
+                      <ParallaxImage src={treatment.image} alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
                       <motion.div className="absolute inset-0 bg-foreground/0" whileHover={{
                         backgroundColor: "hsl(var(--foreground) / 0.1)"
                       }} transition={{

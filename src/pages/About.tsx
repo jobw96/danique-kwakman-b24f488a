@@ -34,7 +34,7 @@ const About = () => {
             </div>
             <div className="lg:w-1/2">
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
-                <ParallaxImage src={daniqueAbout} alt="Danique Kwakman" className="w-full h-full object-cover" />
+                <ParallaxImage src={daniqueAbout} alt="Danique Kwakman - orthomoleculair therapeut gespecialiseerd in vrouwengezondheid" className="w-full h-full object-cover" />
               </FadeIn>
             </div>
           </div>
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
                 <div className="lg:w-1/3">
                   <div className="rounded-2xl overflow-hidden aspect-[3/4]">
-                    <ParallaxImage src={daniqueBeach} alt="Danique op het strand" className="w-full h-full object-cover" />
+                    <ParallaxImage src={daniqueBeach} alt="Danique Kwakman wandelt op het strand - van overleven naar leven" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const About = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
             <div className="lg:w-5/12">
               <FadeIn delay={0.1} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
-                <ParallaxImage src={daniqueRelaxed} alt="Danique relaxed" className="w-full h-full object-cover" />
+                <ParallaxImage src={daniqueRelaxed} alt="Danique Kwakman - verpleegkundige achtergrond en orthomoleculaire expertise" className="w-full h-full object-cover" />
               </FadeIn>
             </div>
             <div className="lg:w-7/12">
@@ -125,7 +125,7 @@ const About = () => {
                 </div>
                 <div className="lg:w-1/3">
                   <div className="rounded-2xl overflow-hidden aspect-square">
-                    <ParallaxImage src={daniqueWalking} alt="Danique wandelend" className="w-full h-full object-cover" />
+                    <ParallaxImage src={daniqueWalking} alt="Danique Kwakman CIRCLE-methode voor hormoonbalans en energie" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

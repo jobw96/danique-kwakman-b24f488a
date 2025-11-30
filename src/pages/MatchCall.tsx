@@ -33,7 +33,7 @@ const MatchCall = () => {
           </div>
           <div className="md:w-1/2 relative">
             <FadeIn delay={0.2} className="rounded-full overflow-hidden border-8 border-primary/20 shadow-xl">
-              <img src={daniqueMatchCall} alt="Danique Kwakman" className="w-full object-cover aspect-square" />
+              <img src={daniqueMatchCall} alt="Gratis kennismakingsgesprek met Danique Kwakman - ontdek welk traject bij jou past" className="w-full object-cover aspect-square" />
             </FadeIn>
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary rounded-full -z-10 opacity-30"></div>
             <div className="absolute -bottom-5 -left-5 w-20 h-20 bg-secondary rounded-full -z-10"></div>
