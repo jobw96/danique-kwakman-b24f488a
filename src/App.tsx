@@ -22,6 +22,7 @@ import Privacy from "./pages/Privacy";
 import CookiePolicy from "./pages/CookiePolicy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import Linktree from "./pages/Linktree";
 
 const queryClient = new QueryClient();
 
@@ -58,9 +59,16 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Layout>
-          <AnimatedRoutes />
-        </Layout>
+        <Routes>
+          {/* Linktree page without Layout */}
+          <Route path="/links" element={<Linktree />} />
+          {/* All other pages with Layout */}
+          <Route path="/*" element={
+            <Layout>
+              <AnimatedRoutes />
+            </Layout>
+          } />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
