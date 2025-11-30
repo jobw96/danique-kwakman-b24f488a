@@ -7,13 +7,11 @@ import daniqueAbout from '@/assets/danique-about.jpg';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
 import daniqueWalking from '@/assets/danique-walking.jpg';
-
 const SectionTag = ({
   text
 }: {
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
-
 const About = () => {
   return <div className="min-h-screen">
       <Section className="pt-32 md:pt-40 bg-background">
@@ -36,11 +34,7 @@ const About = () => {
             </div>
             <div className="lg:w-1/2">
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
-                <ParallaxImage 
-                  src={daniqueAbout} 
-                  alt="Danique Kwakman" 
-                  className="w-full h-full object-cover" 
-                />
+                <ParallaxImage src={daniqueAbout} alt="Danique Kwakman" className="w-full h-full object-cover" />
               </FadeIn>
             </div>
           </div>
@@ -73,11 +67,7 @@ const About = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
             <div className="lg:w-5/12">
               <FadeIn delay={0.1} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
-                <ParallaxImage 
-                  src={daniqueRelaxed} 
-                  alt="Danique relaxed" 
-                  className="w-full h-full object-cover" 
-                />
+                <ParallaxImage src={daniqueRelaxed} alt="Danique relaxed" className="w-full h-full object-cover" />
               </FadeIn>
             </div>
             <div className="lg:w-7/12">
@@ -152,24 +142,17 @@ const About = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                "Verpleegkunde",
-                "Orthomoleculaire therapeut Basis",
-                "Orthomoleculair therapeut Gevorderd",
-                "Orthomoleculaire Epigenetisch therapeut"
-              ].map((item, i) => (
-                <FadeIn key={i} delay={i * 0.1} className="bg-white p-6 rounded-xl border border-secondary/30 shadow-sm hover:border-primary/50 transition-colors group">
+              {["Verpleegkunde", "Orthomoleculaire therapeut Basis", "Orthomoleculair therapeut Gevorderd", "Orthomoleculaire Epigenetisch therapeut"].map((item, i) => <FadeIn key={i} delay={i * 0.1} className="bg-white p-6 rounded-xl border border-secondary/30 shadow-sm hover:border-primary/50 transition-colors group">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-background border border-secondary flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                       <GraduationCap size={20} />
                     </div>
                     <div>
                       <h3 className="text-foreground font-medium leading-snug">{item}</h3>
-                      <p className="text-muted-foreground text-sm mt-1">Gecertificeerd</p>
+                      
                     </div>
                   </div>
-                </FadeIn>
-              ))}
+                </FadeIn>)}
             </div>
           </FadeIn>
 
@@ -204,5 +187,4 @@ const About = () => {
       </Section>
     </div>;
 };
-
 export default About;
