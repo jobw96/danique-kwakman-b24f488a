@@ -163,88 +163,94 @@ const BlogPost: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-24">
-      {/* Hero Section */}
-      <Section className="pb-0">
-        <div className="max-w-4xl mx-auto">
-          <FadeIn>
-            {/* Back Link */}
-            <Link 
-              to="/blog" 
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Terug naar blog</span>
-            </Link>
-
-            {/* Category */}
-            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">
-              {post.category}
-            </span>
-
-            {/* Title */}
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
-              {post.title}
-            </h1>
-
-            {/* Meta */}
-            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-8">
-              <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                {post.date}
-              </span>
-              <span className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                {post.readTime} leestijd
-              </span>
-              <button 
-                className="flex items-center gap-2 hover:text-primary transition-colors ml-auto"
-                onClick={() => navigator.share?.({ title: post.title, url: window.location.href })}
-              >
-                <Share2 className="w-4 h-4" />
-                Delen
-              </button>
-            </div>
-          </FadeIn>
-        </div>
-      </Section>
-
-      {/* Featured Image */}
-      <motion.div 
-        className="max-w-5xl mx-auto px-6 mb-12"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        <div className="aspect-[21/9] rounded-2xl overflow-hidden">
+      {/* Header with Featured Image */}
+      <div className="relative">
+        {/* Featured Image */}
+        <motion.div 
+          className="w-full h-[40vh] md:h-[50vh] relative"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
           <img 
             src={post.image} 
             alt={post.title}
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+        </motion.div>
+
+        {/* Title overlay */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <div className="max-w-4xl mx-auto px-6 pb-8">
+            <FadeIn>
+              {/* Back Link */}
+              <Link 
+                to="/blog" 
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors mb-4 text-sm"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                <span>Terug naar blog</span>
+              </Link>
+
+              {/* Title */}
+              <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight">
+                {post.title}
+              </h1>
+            </FadeIn>
+          </div>
         </div>
-      </motion.div>
+      </div>
+
+      {/* Meta bar */}
+      <div className="border-b border-border/50">
+        <div className="max-w-4xl mx-auto px-6 py-4">
+          <motion.div 
+            className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+          >
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-4 h-4" />
+              {post.date}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-4 h-4" />
+              {post.readTime} leestijd
+            </span>
+            <button 
+              className="flex items-center gap-1.5 hover:text-primary transition-colors ml-auto"
+              onClick={() => navigator.share?.({ title: post.title, url: window.location.href })}
+            >
+              <Share2 className="w-4 h-4" />
+              Delen
+            </button>
+          </motion.div>
+        </div>
+      </div>
 
       {/* Content */}
-      <Section className="pt-0">
+      <Section className="py-12 md:py-16">
         <motion.article 
           className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           {content.content}
         </motion.article>
       </Section>
 
       {/* Related Posts */}
-      <Section className="bg-muted/30">
+      <Section className="bg-muted/30 py-12 md:py-16">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
+            <h2 className="font-serif text-xl md:text-2xl text-foreground mb-6">
               Meer artikelen
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {relatedPosts.map((relatedPost, index) => (
               <motion.article
                 key={relatedPost.id}
@@ -253,22 +259,21 @@ const BlogPost: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="group"
               >
-                <Link to={`/blog/${relatedPost.slug}`} className="block">
-                  <div className="bg-card rounded-xl overflow-hidden border border-border/50">
-                    <div className="relative h-48 overflow-hidden">
-                      <motion.img
-                        src={relatedPost.image}
-                        alt={relatedPost.title}
-                        className="w-full h-full object-cover"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.6 }}
-                      />
-                    </div>
-                    <div className="p-5">
-                      <h3 className="font-serif text-lg text-foreground group-hover:text-primary transition-colors">
-                        {relatedPost.title}
-                      </h3>
-                    </div>
+                <Link to={`/blog/${relatedPost.slug}`} className="flex gap-4 items-center">
+                  <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                    <motion.img
+                      src={relatedPost.image}
+                      alt={relatedPost.title}
+                      className="w-full h-full object-cover"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.6 }}
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-base text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                      {relatedPost.title}
+                    </h3>
+                    <span className="text-muted-foreground text-xs mt-1">{relatedPost.readTime}</span>
                   </div>
                 </Link>
               </motion.article>
