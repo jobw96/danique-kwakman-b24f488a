@@ -9,290 +9,147 @@ const Terms = () => {
             Algemene Voorwaarden
           </h1>
           
+          <p className="text-muted-foreground mb-8">Danique Kwakman (2025)</p>
+          
           <div className="prose prose-lg max-w-none space-y-8 text-muted-foreground">
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">1. Algemeen</h2>
-              <p>
-                Deze algemene voorwaarden zijn van toepassing op alle diensten, adviezen en 
-                behandelingen die worden aangeboden door Danique Kwakman, gevestigd te Nederland, 
-                hierna te noemen "de praktijk".
-              </p>
-              <p className="mt-4">
-                Door gebruik te maken van onze diensten verklaart u zich akkoord met deze 
-                algemene voorwaarden.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">2. Dienstverlening</h2>
-              <p>
-                De praktijk biedt orthomoleculaire therapie, voedingsadviezen en gerelateerde 
-                gezondheidsdiensten aan. Alle diensten worden uitgevoerd met de grootst mogelijke 
-                zorgvuldigheid en volgens de laatste stand van de wetenschap.
-              </p>
-              <ul className="list-disc pl-6 space-y-2 mt-4">
-                <li>Adviezen zijn altijd persoonlijk en worden op maat gemaakt</li>
-                <li>Behandelingen vinden plaats na een uitgebreide intake</li>
-                <li>Resultaten kunnen per persoon verschillen</li>
-                <li>De praktijk werkt niet met diagnoses maar met adviezen gericht op optimale gezondheid</li>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 1. Definities</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">1.1 Therapeut:</span> Danique Kwakman Orthomoleculaire Therapie, gevestigd te Muntstraat 18, 1621 GB in Hoorn, ingeschreven bij de KvK onder nummer 90038606</li>
+                <li><span className="font-medium text-foreground">1.2 Cliënt:</span> de natuurlijke persoon die een dienst of traject afneemt bij de therapeut.</li>
+                <li><span className="font-medium text-foreground">1.3 Diensten:</span> orthomoleculaire coaching, trajecten, consulten, testen (o.a. ontlastingsonderzoek, voedselintolerantietesten, glucosemonitor trajecten), online programma's en gerelateerde dienstverlening.</li>
+                <li><span className="font-medium text-foreground">1.4 Overeenkomst:</span> de schriftelijke of digitale afspraak tussen therapeut en cliënt.</li>
+                <li><span className="font-medium text-foreground">1.5 Bescheiden:</span> alle materialen, adviezen, documenten, rapportages en digitale gegevens die door de therapeut worden verstrekt aan cliënt.</li>
+                <li><span className="font-medium text-foreground">1.6 Schriftelijk:</span> e-mail, WhatsApp en overige digitale communicatie.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">3. Afspraken en reserveringen</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">3.1 Afspraken maken</h3>
-                  <p>
-                    Afspraken kunnen worden gemaakt via:
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2 mt-2">
-                    <li>Het online boekingssysteem op onze website</li>
-                    <li>Per e-mail: info@daniquekwakman.nl</li>
-                    <li>Telefonisch (tijdens kantooruren)</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">3.2 Bevestiging</h3>
-                  <p>
-                    U ontvangt binnen 24 uur een bevestiging van uw afspraak per e-mail. 
-                    Zonder bevestiging is de afspraak niet definitief.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">3.3 Voorbereiding</h3>
-                  <p>
-                    Voor het eerste consult ontvangt u een intakeformulier dat u 
-                    volledig en naar waarheid dient in te vullen en uiterlijk 48 uur voor de 
-                    afspraak dient te retourneren.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">4. Annuleringsbeleid</h2>
-              <div className="bg-accent/20 border border-secondary rounded-lg p-6 my-6">
-                <h3 className="text-xl font-medium mb-3 text-foreground">Belangrijke informatie</h3>
-                <p className="text-foreground font-medium mb-2">
-                  Bij annulering binnen 24 uur voor de afspraak wordt € 45,- annuleringskosten 
-                  in rekening gebracht.
-                </p>
-                <p className="text-sm">
-                  Deze kosten dienen binnen 7 dagen na annulering te worden voldaan.
-                </p>
-              </div>
-
-              <div className="space-y-4 mt-6">
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">4.1 Annuleren door cliënt</h3>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Meer dan 24 uur van tevoren:</strong> Gratis annuleren mogelijk</li>
-                    <li><strong>Binnen 24 uur:</strong> € 45,- annuleringskosten</li>
-                    <li><strong>No-show (niet verschenen):</strong> Volledige behandelkosten worden in rekening gebracht</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">4.2 Annuleren door praktijk</h3>
-                  <p>
-                    Mocht de praktijk genoodzaakt zijn een afspraak te annuleren, dan wordt u 
-                    hier zo snel mogelijk van op de hoogte gesteld. Er worden geen kosten in 
-                    rekening gebracht en er wordt gezocht naar een passende vervangende datum.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">4.3 Te laat komen</h3>
-                  <p>
-                    Bij te laat komen wordt de behandeltijd verkort met de vertraging. 
-                    Het volledige tarief blijft van toepassing. Bij meer dan 15 minuten 
-                    vertraging kan de praktijk besluiten de afspraak te annuleren, waarbij 
-                    de annuleringskosten van toepassing zijn.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">5. Tarieven en betaling</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">5.1 Tarieven</h3>
-                  <p>
-                    De actuele tarieven zijn terug te vinden op onze website en kunnen 
-                    jaarlijks worden aangepast. De tarieven die gelden op het moment van 
-                    afspraak maken zijn van toepassing.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">5.2 Betaling</h3>
-                  <p>Betaling dient te geschieden:</p>
-                  <ul className="list-disc pl-6 space-y-2 mt-2">
-                    <li>Direct na afloop van de behandeling via pin of bank</li>
-                    <li>Bij trajecten: volgens het overeengekomen betalingsschema</li>
-                    <li>Voor supplementen: bij afhalen of voorafgaand aan verzending</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">5.3 Verzuim betaling</h3>
-                  <p>
-                    Bij niet-tijdige betaling worden twee herinneringen gestuurd. Bij uitblijven 
-                    van betaling na de tweede herinnering kunnen incassokosten in rekening worden 
-                    gebracht.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">5.4 Vergoeding door verzekering</h3>
-                  <p>
-                    Sommige zorgverzekeraars vergoeden (een deel van) de kosten via de 
-                    aanvullende verzekering. Dit is afhankelijk van uw polis. De praktijk 
-                    is niet aangesloten bij zorgverzekeraars; betaling geschiedt rechtstreeks 
-                    aan de praktijk, waarna u zelf declaratie kunt indienen bij uw verzekeraar.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">6. Trajecten en pakketten</h2>
-              <div className="space-y-4">
-                <p>
-                  De praktijk biedt verschillende trajecten en pakketten aan met een vaste 
-                  looptijd en vooraf afgesproken aantal consulten.
-                </p>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">6.1 Looptijd</h3>
-                  <p>
-                    De minimale looptijd van een traject is zoals aangegeven in het pakket. 
-                    Tussentijds beëindigen is niet mogelijk, behalve in overleg met de praktijk.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">6.2 Verlenging</h3>
-                  <p>
-                    Na afloop van een traject kan deze in overleg worden verlengd met losse 
-                    consulten of een vervolgtraject.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">7. Privacy en geheimhouding</h2>
-              <p>
-                De praktijk gaat zorgvuldig om met uw persoonlijke gegevens en gezondheids­informatie 
-                volgens de AVG (Algemene Verordening Gegevensbescherming). Meer informatie vindt u 
-                in onze{' '}
-                <a href="/privacy" className="text-primary hover:underline">
-                  privacyverklaring
-                </a>
-                .
-              </p>
-              <ul className="list-disc pl-6 space-y-2 mt-4">
-                <li>Alle informatie die u deelt wordt vertrouwelijk behandeld</li>
-                <li>Gegevens worden alleen gedeeld met uw toestemming</li>
-                <li>U heeft inzagerecht in uw dossier</li>
-                <li>Gegevens worden bewaard volgens de wettelijke bewaartermijn</li>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 2. Toepasselijkheid</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">2.1</span> Deze voorwaarden gelden voor alle diensten, trajecten, aanbiedingen en overeenkomsten.</li>
+                <li><span className="font-medium text-foreground">2.2</span> Afwijkingen zijn alleen geldig indien schriftelijk overeengekomen.</li>
+                <li><span className="font-medium text-foreground">2.3</span> Algemene voorwaarden van de cliënt worden uitdrukkelijk uitgesloten.</li>
+                <li><span className="font-medium text-foreground">2.4</span> Indien één bepaling ongeldig is, blijven de overige bepalingen van kracht.</li>
+                <li><span className="font-medium text-foreground">2.5</span> De therapeut mag de voorwaarden aanpassen; wijzigingen gelden ook voor bestaande overeenkomsten.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">8. Aansprakelijkheid</h2>
-              <div className="space-y-4">
-                <p>
-                  De praktijk is aangesloten bij een beroepsvereniging en beschikt over een 
-                  beroepsaansprakelijkheidsverzekering.
-                </p>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">8.1 Behandelaansprakelijkheid</h3>
-                  <p>
-                    De praktijk werkt met de grootst mogelijke zorgvuldigheid. Aansprakelijkheid 
-                    voor directe of indirecte schade is beperkt tot het bedrag dat door de 
-                    aansprakelijkheidsverzekering wordt uitbetaald.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">8.2 Eigen verantwoordelijkheid</h3>
-                  <p>
-                    De cliënt is zelf verantwoordelijk voor het opvolgen van adviezen en het 
-                    correct innemen van aanbevolen supplementen. Bij twijfel of bijwerkingen 
-                    dient u altijd contact op te nemen met de praktijk.
-                  </p>
-                </div>
-              </div>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 3. Diensten & Werkwijze</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">3.1</span> De therapeut heeft een inspanningsverplichting, geen resultaatsverplichting.</li>
+                <li><span className="font-medium text-foreground">3.2</span> De therapeut voert haar diensten naar beste inzicht, professionaliteit en zorgvuldigheid uit.</li>
+                <li><span className="font-medium text-foreground">3.3</span> Orthomoleculaire therapie vervangt geen medische behandeling.</li>
+                <li><span className="font-medium text-foreground">3.4</span> De therapeut mag derden inschakelen indien dit wenselijk is.</li>
+                <li><span className="font-medium text-foreground">3.5</span> Adviezen worden verstrekt op basis van de door de cliënt aangeleverde informatie. Onvolledige of onjuiste informatie is verantwoordelijkheid van de cliënt.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">9. Klachten</h2>
-              <p>
-                Mocht u onverhoopt een klacht hebben over de dienstverlening, dan vragen wij u 
-                dit zo snel mogelijk kenbaar te maken, zodat we samen naar een oplossing kunnen zoeken.
-              </p>
-              <div className="mt-4">
-                <p><strong>Klachten kunt u indienen via:</strong></p>
-                <ul className="list-disc pl-6 space-y-2 mt-2">
-                  <li>E-mail: info@daniquekwakman.nl</li>
-                  <li>Schriftelijk naar het praktijkadres</li>
-                </ul>
-                <p className="mt-4">
-                  U ontvangt binnen 14 dagen een reactie op uw klacht. Indien we er niet samen 
-                  uitkomen, kunt u zich wenden tot de klachtencommissie van de beroepsvereniging 
-                  waarbij de praktijk is aangesloten.
-                </p>
-              </div>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 4. Verplichtingen van de cliënt</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">4.1</span> De cliënt geeft volledige en juiste informatie over gezondheid, medicatie, klachten en relevante voorgeschiedenis.</li>
+                <li><span className="font-medium text-foreground">4.2</span> De cliënt is zelf verantwoordelijk voor het opvolgen van adviezen.</li>
+                <li><span className="font-medium text-foreground">4.3</span> De cliënt blijft onder behandeling van een arts waar nodig.</li>
+                <li><span className="font-medium text-foreground">4.4</span> De cliënt is verantwoordelijk voor het tijdig aanleveren van gegevens/onderzoeksmaterialen.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">10. Intellectueel eigendom</h2>
-              <p>
-                Alle materialen die door de praktijk worden verstrekt (zoals adviezen, planningen, 
-                recepten en educatief materiaal) zijn intellectueel eigendom van de praktijk en 
-                mogen niet worden gekopieerd, verspreid of commercieel gebruikt zonder schriftelijke 
-                toestemming.
-              </p>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 5. Afspraken & Annuleringen</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">5.1</span> Afspraken kunnen tot 24 uur van tevoren kosteloos worden verzet.</li>
+                <li><span className="font-medium text-foreground">5.2</span> Niet tijdig verzetten of afwezigheid kan volledig in rekening worden gebracht.</li>
+                <li><span className="font-medium text-foreground">5.3</span> Bij trajecten (1:1 of groepen) is annuleren na start niet mogelijk; het volledige bedrag blijft verschuldigd.</li>
+                <li><span className="font-medium text-foreground">5.4</span> Bij losse consulten gelden de normale annuleringsregels zoals beschreven in artikel 5.1, 5.2 en 5.3.</li>
+                <li><span className="font-medium text-foreground">5.5</span> Annulering door de klant:
+                  <ul className="list-disc pl-6 mt-2 space-y-1">
+                    <li>Tot 14 dagen voor de intake datum: volledige terugbetaling minus administratiekosten van €25.</li>
+                    <li>Binnen 14 dagen voor de intake: geen terugbetaling.</li>
+                  </ul>
+                </li>
+                <li><span className="font-medium text-foreground">5.6</span> Bij online programma's en e-books geldt: geen terugbetaling na levering.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">11. Wijzigingen</h2>
-              <p>
-                De praktijk behoudt zich het recht voor deze algemene voorwaarden te wijzigen. 
-                Wijzigingen worden op de website gepubliceerd en zijn van kracht vanaf de 
-                publicatiedatum. Voor lopende trajecten blijven de voorwaarden gelden die bij 
-                aanvang van het traject van toepassing waren.
-              </p>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 6. Tarieven & Betaling</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">6.1</span> Alle tarieven zijn inclusief btw, tenzij anders vermeld.</li>
+                <li><span className="font-medium text-foreground">6.2</span> Facturen dienen binnen 14 dagen te worden betaald.</li>
+                <li><span className="font-medium text-foreground">6.3</span> Bij niet tijdige betaling mag de therapeut de dienstverlening opschorten.</li>
+                <li><span className="font-medium text-foreground">6.4</span> De therapeut mag vooruitbetaling of een aanbetaling vragen.</li>
+                <li><span className="font-medium text-foreground">6.5</span> Bij uitblijven van betaling worden wettelijke rente en incassokosten in rekening gebracht.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">12. Toepasselijk recht</h2>
-              <p>
-                Op deze algemene voorwaarden is Nederlands recht van toepassing. Eventuele 
-                geschillen zullen worden voorgelegd aan de bevoegde rechter in Nederland.
-              </p>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 7. Duur van de overeenkomst</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">7.1</span> De overeenkomst eindigt na afronding van het traject of consult, tenzij anders overeengekomen.</li>
+                <li><span className="font-medium text-foreground">7.2</span> Bij overlijden of bedrijfsbeëindiging eindigt de overeenkomst automatisch.</li>
+                <li><span className="font-medium text-foreground">7.3</span> Tussentijdse beëindiging door de cliënt is niet mogelijk in lopende trajecten.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-serif mb-4 text-foreground">13. Contact</h2>
-              <p>
-                Voor vragen over deze algemene voorwaarden kunt u contact met ons opnemen via:
-              </p>
-              <div className="mt-4 space-y-2">
-                <p><strong>E-mail:</strong> info@daniquekwakman.nl</p>
-                <p><strong>Website:</strong> www.daniquekwakman.nl</p>
-                <p className="mt-6 text-sm opacity-80">
-                  Laatste update: {new Date().toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </p>
-              </div>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 8. Overmacht</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">8.1</span> Onder overmacht worden alle omstandigheden verstaan die de nakoming van de overeenkomst geheel of gedeeltelijk verhinderen en die niet aan Danique Kwakman zijn toe te rekenen. Voorbeelden hiervan zijn (maar niet uitsluitend): ziekte of uitval van de therapeut, technische storingen, storingen in online communicatiemiddelen, extreme weersomstandigheden, overheidsmaatregelen, plotselinge persoonlijke omstandigheden of andere situaties buiten de redelijke invloedssfeer van de therapeut.</li>
+                <li><span className="font-medium text-foreground">8.2</span> In geval van overmacht heeft Danique Kwakman het recht om afspraken of consulten te verzetten of tijdelijk op te schorten, zonder dat de cliënt aanspraak kan maken op enige schadevergoeding.</li>
+                <li><span className="font-medium text-foreground">8.3</span> Indien een overmachtsituatie zich voordoet nadat een deel van de diensten al is geleverd, is Danique Kwakman gerechtigd het reeds geleverde gedeelte te factureren. Voor diensten die nog niet zijn uitgevoerd, vindt geen terugbetaling van vooruitbetaalde bedragen plaats.</li>
+                <li><span className="font-medium text-foreground">8.4</span> Duurt de overmachtssituatie langer dan twee maanden of is deze blijvend van aard, dan mogen zowel de cliënt als Danique Kwakman de overeenkomst schriftelijk beëindigen, zonder recht op schadevergoeding of terugbetaling voor nog niet geleverde diensten.</li>
+              </ul>
             </section>
+
+            <section>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 9. Aansprakelijkheid</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">9.1</span> De therapeut is niet aansprakelijk voor schade die voortvloeit uit:
+                  <ul className="list-disc pl-6 mt-2 space-y-1">
+                    <li>onjuiste of onvolledige informatie van de cliënt,</li>
+                    <li>het niet opvolgen van adviezen,</li>
+                    <li>vertraging door derden,</li>
+                    <li>indirecte schade (zoals gevolgschade of winstverlies).</li>
+                  </ul>
+                </li>
+                <li><span className="font-medium text-foreground">9.2</span> Orthomoleculaire therapie is ondersteunend en niet-medisch; resultaten kunnen niet worden gegarandeerd.</li>
+                <li><span className="font-medium text-foreground">9.3</span> De cliënt blijft altijd zelf verantwoordelijk voor zijn/haar gezondheid en besluitvorming.</li>
+                <li><span className="font-medium text-foreground">9.4</span> Aansprakelijkheid is beperkt tot directe schade en tot maximaal het factuurbedrag.</li>
+                <li><span className="font-medium text-foreground">9.5</span> De klant vrijwaart Danique Kwakman tegen aanspraken van derden.</li>
+                <li><span className="font-medium text-foreground">9.6</span> Aansprakelijkheid vervalt één jaar na beëindiging van de overeenkomst, behoudens opzet of grove nalatigheid.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 10. Intellectueel eigendom</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">10.1</span> Alle adviezen, modellen, documenten, werkboeken en materialen blijven eigendom van de therapeut.</li>
+                <li><span className="font-medium text-foreground">10.2</span> Het is niet toegestaan materiaal te delen met derden of te verspreiden zonder schriftelijke toestemming.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 11. Privacy</h2>
+              <ul className="list-none space-y-2">
+                <li><span className="font-medium text-foreground">11.1</span> De therapeut verwerkt persoonsgegevens volgens de AVG.</li>
+                <li><span className="font-medium text-foreground">11.2</span> Gegevens worden nooit gedeeld met derden tenzij wettelijk vereist of met expliciete toestemming.</li>
+                <li><span className="font-medium text-foreground">11.3</span> Cliëntgegevens worden veilig bewaard en digitaal versleuteld opgeslagen waar mogelijk.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-serif mb-4 text-foreground">Artikel 12. Toepasselijk recht</h2>
+              <p>
+                Op de overeenkomst is Nederlands recht van toepassing. Eventuele geschillen worden 
+                voorgelegd aan de bevoegde rechter in het arrondissement van de vestigingsplaats van de therapeut.
+              </p>
+            </section>
+
+            <p className="mt-8 text-sm opacity-80">
+              Laatste update: 2025
+            </p>
           </div>
         </div>
       </Section>
