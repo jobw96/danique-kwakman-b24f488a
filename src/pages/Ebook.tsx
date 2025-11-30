@@ -134,7 +134,7 @@ const Ebook = () => {
 
                 {/* Right: Form */}
                 <div id="download-form">
-                  <motion.div className="bg-background p-8 rounded-2xl border border-secondary/30 sticky top-24" initial={{
+                  <motion.div className="p-8 rounded-2xl sticky top-24" initial={{
                   opacity: 0,
                   y: 20
                 }} whileInView={{
