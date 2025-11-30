@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
@@ -17,6 +18,7 @@ import daniqueDarm from '@/assets/danique-darm.jpg';
 import daniqueWalking from '@/assets/danique-walking.jpg';
 import daniqueRunning from '@/assets/danique-running.jpg';
 import hetProces from '@/assets/het-proces.png';
+import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
 const TREATMENTS = [{
   id: 'glowup',
   title: "1:1 Glow Up Traject",
@@ -27,6 +29,11 @@ const TREATMENTS = [{
   title: "1:1 Darmtraject Therapie",
   description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
   image: daniqueDarm
+}, {
+  id: 'reset-recharge',
+  title: "1:1 Reset & Recharge",
+  description: "1 maand intensieve begeleiding voor meer energie, rust in je lijf en helderheid in je hoofd.",
+  image: daniqueKleedZand
 }];
 const SERVICES: ServiceItem[] = [{
   id: 'hormonal',
@@ -150,7 +157,7 @@ const ServiceAccordion = () => {
       duration: 0.5,
       ease: "easeInOut"
     }}>
-        <ParallaxImage key={activeService.id} src={activeService.image} alt={activeService.title} className="w-full h-full object-cover" />
+        <ParallaxImage key={activeService.id} src={activeService.image} alt={`${activeService.title} - orthomoleculaire therapie bij Danique Kwakman`} className="w-full h-full object-cover" />
       </motion.div>
       <div className="flex flex-col justify-center">
         {SERVICES.map(service => <div key={service.id} className="border-b border-secondary/30 last:border-none">
@@ -195,6 +202,23 @@ const ServiceAccordion = () => {
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const heroRef = React.useRef(null);
+  
+  // Load ActiveCampaign newsletter form script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=27';
+    script.charset = 'utf-8';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      const existingScript = document.querySelector('script[src*="activehosted.com/f/embed.php?id=27"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, []);
+  
   const {
     scrollYProgress: heroScroll
   } = useScroll({
@@ -211,8 +235,8 @@ const Index = () => {
         scale: heroScale,
         opacity: heroOpacity
       }}>
-          <img src={heroImageMobile} alt="Hero" className="md:hidden w-full h-full object-cover object-center" />
-          <img src={heroImage} alt="Hero" className="hidden md:block w-full h-full object-cover object-right" />
+          <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
+          <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" />
         </motion.div>
         <div className="relative z-10 container mx-auto px-6">
           <FadeIn>
@@ -261,46 +285,47 @@ const Index = () => {
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Behandelingen</h2>
           </FadeIn>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {TREATMENTS.map((treatment, index) => <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
-              <motion.div className="bg-card rounded-2xl overflow-hidden shadow-sm border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
-            y: -8,
-            boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-            borderColor: "hsl(var(--primary) / 0.3)"
-          }} transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 25
-          }}>
-                <div className="h-80 overflow-hidden relative">
-                  <ParallaxImage src={treatment.image} alt={treatment.title} className="w-full h-full" />
-                  <motion.div className="absolute inset-0 bg-foreground/0" whileHover={{
-                backgroundColor: "hsl(var(--foreground) / 0.1)"
-              }} transition={{
-                duration: 0.5
-              }} />
-                </div>
-                <div className="p-8 flex flex-col flex-grow">
-                  <motion.h3 className="font-serif text-2xl text-card-foreground mb-4" whileHover={{
-                color: "hsl(var(--primary))"
-              }} transition={{
-                duration: 0.3
-              }}>
-                    {treatment.title}
-                  </motion.h3>
-                  <p className="text-muted-foreground mb-8 leading-relaxed flex-grow">{treatment.description}</p>
-                  <motion.div className="flex items-center text-primary font-medium mt-auto" whileHover={{
-                x: 8
-              }} transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 25
-              }}>
-                    Bekijk traject <ArrowRight className="w-4 h-4 ml-2" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {TREATMENTS.map((treatment, index) => {
+            const linkPath = treatment.id === 'glowup' ? '/glowup' : treatment.id === 'darmtraject' ? '/darmtraject' : '/reset-recharge';
+            return (
+              <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
+                <Link to={linkPath} className="h-full block">
+                  <motion.div className="bg-card rounded-2xl overflow-hidden shadow-sm border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
+                    y: -8,
+                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    borderColor: "hsl(var(--primary) / 0.3)"
+                  }} transition={{
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 25
+                  }}>
+                    <div className="h-64 overflow-hidden relative">
+                      <ParallaxImage src={treatment.image} alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
+                      <motion.div className="absolute inset-0 bg-foreground/0" whileHover={{
+                        backgroundColor: "hsl(var(--foreground) / 0.1)"
+                      }} transition={{
+                        duration: 0.5
+                      }} />
+                    </div>
+                    <div className="p-6 flex flex-col flex-grow">
+                      <h3 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h3>
+                      <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
+                      <motion.div className="flex items-center text-primary font-medium mt-auto text-sm" whileHover={{
+                        x: 8
+                      }} transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 25
+                      }}>
+                        Bekijk traject <ArrowRight className="w-4 h-4 ml-2" />
+                      </motion.div>
+                    </div>
                   </motion.div>
-                </div>
-              </motion.div>
-            </FadeIn>)}
+                </Link>
+              </FadeIn>
+            );
+          })}
         </div>
         <div className="text-center mt-12">
           <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
@@ -382,6 +407,25 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Newsletter Section */}
+      <Section id="nieuwsbrief" className="bg-[#FDF8F3]">
+        <div className="max-w-2xl mx-auto text-center">
+          <FadeIn>
+            <SectionTag text="Nieuwsbrief" />
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Maandelijkse Glow & Nourish recepten</h2>
+            <p className="text-muted-foreground mb-8">
+              Schrijf je in voor mijn maandelijkse nieuwsbrief en ontvang gratis recepten, tips en inspiratie voor een gezonde leefstijl.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <div className="newsletter-form-wrapper">
+              <div className="_form_27"></div>
+            </div>
+          </FadeIn>
+        </div>
+      </Section>
+
     </div>;
 };
+
 export default Index;

@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
-import { CookieConsent } from './CookieConsent';
+import logoCat from '@/assets/logo-cat.png';
+import logoGat from '@/assets/logo-gat.png';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -45,6 +46,11 @@ export const Layout: React.FC<LayoutProps> = ({
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   const scrollToTop = () => {
     const start = window.scrollY;
     const startTime = performance.now();
@@ -77,36 +83,46 @@ export const Layout: React.FC<LayoutProps> = ({
     subItems: [{
       name: 'Kennismakingsgesprek',
       href: '/match-call',
-      description: 'Plan een gesprek',
+      description: '',
       icon: Phone
     }, {
       name: 'Podcast',
       href: '/podcast',
-      description: 'Luister mee',
+      description: '',
       icon: Headphones
     }, {
       name: 'E-book: 5 gratis ontbijtrecepten',
       href: '/ebook',
-      description: 'Gratis tips',
+      description: '',
       icon: BookOpen
+    }, {
+      name: 'Recepten',
+      href: '/recepten',
+      description: '',
+      icon: UtensilsCrossed
     }]
   }, {
     name: 'Aanbod',
     subItems: [{
       name: 'Behandelingen',
       href: '/#services',
-      description: 'Overzicht',
+      description: '',
       icon: LayoutGrid
     }, {
       name: '1:1 Glowup',
       href: '/glowup',
-      description: 'Exclusief traject',
+      description: '',
       icon: Sparkles
     }, {
       name: '1:1 Darmtraject',
       href: '/darmtraject',
-      description: 'Darmherstel',
+      description: '',
       icon: Activity
+    }, {
+      name: '1:1 Reset & Recharge',
+      href: '/reset-recharge',
+      description: '',
+      icon: Zap
     }]
   }, {
     name: 'Mijn methode',
@@ -173,7 +189,7 @@ export const Layout: React.FC<LayoutProps> = ({
             />
           </motion.div>
 
-          <nav className="hidden md:flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-2">
             {navLinks.map(link => <div 
                 key={link.name} 
                 className="relative px-3 py-2"
@@ -182,7 +198,7 @@ export const Layout: React.FC<LayoutProps> = ({
               >
                 <motion.button 
                   onClick={() => link.href ? handleNavigation(link.href) : null} 
-                  className="flex items-center gap-1.5 text-sm font-medium"
+                  className="flex items-center gap-1.5 text-sm font-light"
                   animate={{
                     color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
                   }}
@@ -260,8 +276,7 @@ export const Layout: React.FC<LayoutProps> = ({
                                     <sub.icon size={18} strokeWidth={2} />
                                   </motion.div>
                                   <div>
-                                    <div className="text-sm font-semibold text-foreground">{sub.name}</div>
-                                    <div className="text-xs text-muted-foreground">{sub.description}</div>
+                                    <div className="text-sm font-light text-foreground">{sub.name}</div>
                                   </div>
                                 </motion.button>
                               ))}
@@ -288,7 +303,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </nav>
 
           <motion.button 
-            className="md:hidden p-2 relative z-[60]"
+            className="lg:hidden p-2 relative z-[60]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             animate={{
               color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
@@ -301,72 +316,140 @@ export const Layout: React.FC<LayoutProps> = ({
           </motion.button>
         </div>
 
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div 
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm lg:hidden z-[55]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={() => setMobileMenuOpen(false)}
+            />
+          )}
+        </AnimatePresence>
+
         <motion.div 
-          className="absolute top-0 left-0 w-full bg-background min-h-screen p-6 pt-24 md:hidden flex flex-col gap-4 shadow-xl"
-          initial={{ x: "-100%" }}
-          animate={{ x: mobileMenuOpen ? 0 : "-100%" }}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className="fixed top-0 right-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 lg:hidden flex flex-col z-[58] shadow-2xl"
+          initial={{ x: "100%" }}
+          animate={{ x: mobileMenuOpen ? 0 : "100%" }}
+          transition={{ 
+            type: "spring", 
+            stiffness: 280, 
+            damping: 32,
+            mass: 0.8
+          }}
         >
-          {navLinks.map(link => <div key={link.name} className="border-b border-secondary/50 pb-2 last:border-0">
-              {link.subItems ? <div>
-                  <motion.button 
-                    onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} 
-                    className="flex justify-between items-center w-full text-lg font-serif font-medium text-foreground py-3"
+          {/* Logo */}
+          <motion.div 
+            className="mb-8"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: mobileMenuOpen ? 1 : 0, y: mobileMenuOpen ? 0 : -10 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+          >
+            <img 
+              src={logoFull} 
+              alt="Danique Kwakman" 
+              className="h-8 w-auto cursor-pointer" 
+              onClick={() => handleNavigation('/')}
+            />
+          </motion.div>
+
+          <nav className="flex flex-col gap-1 flex-1 overflow-y-auto">
+            {navLinks.map((link, index) => (
+              <motion.div 
+                key={link.name}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ 
+                  opacity: mobileMenuOpen ? 1 : 0, 
+                  x: mobileMenuOpen ? 0 : 20 
+                }}
+                transition={{ 
+                  delay: mobileMenuOpen ? 0.1 + index * 0.04 : 0,
+                  duration: 0.4,
+                  ease: [0.25, 0.1, 0.25, 1]
+                }}
+              >
+                {link.subItems ? (
+                  <div>
+                    <motion.button 
+                      onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} 
+                      className="flex justify-between items-center w-full text-base font-light text-foreground py-3"
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      {link.name}
+                      <motion.div
+                        animate={{ rotate: activeDropdown === link.name ? 180 : 0 }}
+                        transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+                      >
+                        <ChevronDown className="w-4 h-4 opacity-50" />
+                      </motion.div>
+                    </motion.button>
+                    <AnimatePresence initial={false}>
+                      {activeDropdown === link.name && (
+                        <motion.div 
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ 
+                            height: { duration: 0.35, ease: [0.4, 0, 0.2, 1] },
+                            opacity: { duration: 0.25, ease: "easeOut" }
+                          }}
+                          className="overflow-hidden"
+                        >
+                          <div className="flex flex-col gap-1 pb-2 pl-2">
+                            {link.subItems.map((sub, subIndex) => (
+                              <motion.button 
+                                key={sub.name} 
+                                onClick={() => handleNavigation(sub.href)} 
+                                className="flex items-center gap-3 text-muted-foreground text-left py-2.5 rounded-lg transition-colors hover:bg-secondary/30"
+                                initial={{ opacity: 0, x: 10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ 
+                                  delay: 0.05 + subIndex * 0.03,
+                                  duration: 0.3,
+                                  ease: [0.25, 0.1, 0.25, 1]
+                                }}
+                                whileTap={{ scale: 0.98 }}
+                              >
+                                <div className="w-8 h-8 rounded-lg bg-secondary/40 flex items-center justify-center text-foreground/60">
+                                  <sub.icon size={14} strokeWidth={1.5} />
+                                </div>
+                                <span className="text-sm font-light">{sub.name}</span>
+                              </motion.button>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ) : (
+                  <motion.button
+                    onClick={() => handleNavigation(link.href!)} 
+                    className="text-base font-light text-foreground w-full text-left py-3"
                     whileTap={{ scale: 0.98 }}
                   >
                     {link.name}
-                    <motion.div
-                      animate={{ rotate: activeDropdown === link.name ? 180 : 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                    >
-                      <ChevronDown className="w-5 h-5" />
-                    </motion.div>
                   </motion.button>
-                  <motion.div 
-                    initial={false}
-                    animate={{
-                      height: activeDropdown === link.name ? "auto" : 0,
-                      opacity: activeDropdown === link.name ? 1 : 0,
-                      marginTop: activeDropdown === link.name ? 8 : 0,
-                      marginBottom: activeDropdown === link.name ? 16 : 0
-                    }}
-                    transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-                    className="overflow-hidden"
-                  >
-                    <div className="flex flex-col gap-3 pl-4">
-                      {link.subItems.map(sub => (
-                        <motion.button 
-                          key={sub.name} 
-                          onClick={() => handleNavigation(sub.href)} 
-                          className="flex items-center gap-3 text-muted-foreground text-left py-2 transition-colors duration-[180ms] ease-out active:bg-[#ede7e0]"
-                          whileTap={{ scale: 0.98 }}
-                          transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                        >
-                          <div className="w-8 h-8 rounded-full bg-white border border-secondary flex items-center justify-center text-primary">
-                            <sub.icon size={14} />
-                          </div>
-                          <span className="text-sm font-medium">{sub.name}</span>
-                        </motion.button>
-                      ))}
-                    </div>
-                  </motion.div>
-                </div> : (
-                <motion.button
-                  onClick={() => handleNavigation(link.href!)} 
-                  className="text-lg font-serif font-medium text-foreground w-full text-left py-3"
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                >
-                  {link.name}
-                </motion.button>
-              )}
-            </div>)}
+                )}
+              </motion.div>
+            ))}
+          </nav>
+
           <motion.button 
             onClick={handleExternalLink} 
-            className="bg-primary text-primary-foreground font-medium text-center py-4 rounded-xl mt-6 shadow-md w-full"
-            whileHover={{ scale: 1.02 }}
+            className="bg-primary text-primary-foreground font-light text-center py-3.5 rounded-lg mt-6 w-full"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ 
+              opacity: mobileMenuOpen ? 1 : 0, 
+              y: mobileMenuOpen ? 0 : 10 
+            }}
+            transition={{ 
+              delay: mobileMenuOpen ? 0.3 : 0,
+              duration: 0.4,
+              ease: [0.25, 0.1, 0.25, 1]
+            }}
             whileTap={{ scale: 0.98 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             Gratis kennismaking
           </motion.button>
@@ -377,7 +460,7 @@ export const Layout: React.FC<LayoutProps> = ({
         {children}
       </main>
 
-      <footer ref={footerRef} className="relative h-[380px] md:h-[450px] w-full overflow-hidden z-0" style={{
+      <footer ref={footerRef} className="relative min-h-[480px] md:min-h-[500px] w-full overflow-hidden z-0" style={{
       backgroundColor: 'hsl(var(--background))',
       boxShadow: '0 -4px 20px rgba(0,0,0,0.06)'
     }}>
@@ -386,19 +469,20 @@ export const Layout: React.FC<LayoutProps> = ({
         background: 'linear-gradient(135deg, rgba(157,170,198,0.12) 0%, rgba(216,204,171,0.08) 100%)'
       }} />
 
-        <div className="relative z-10 container mx-auto px-6 h-full flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 container mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
           <div className="mb-6 flex items-center gap-3">
-            <img src={logoFull} alt="Danique Kwakman" className="h-12 w-auto" />
+            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto" />
           </div>
 
-          <p className="text-muted-foreground max-w-md text-sm md:text-base leading-relaxed mb-10">
-            Jouw partner voor natuurlijke gezondheid en duurzame vitaliteit. <br className="hidden md:block" />
-            Herstel je balans van binnenuit.
+          <p className="text-muted-foreground max-w-xl text-sm md:text-base leading-relaxed mb-6">
+            Orthomoleculair therapeut voor vrouwen die hun lijf en gezondheid willen begrijpen. Zodat je je klachten kunt doorgronden, kunt transformeren en weer volledig in je kracht staat.
           </p>
 
           <div className="flex items-center gap-8 mb-8">
             <motion.a 
-              href="#" 
+              href="https://www.instagram.com/daniquekwakman/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground"
               whileHover={{ 
                 color: "hsl(var(--foreground))",
@@ -409,7 +493,9 @@ export const Layout: React.FC<LayoutProps> = ({
               <Instagram size={26} strokeWidth={1.5} />
             </motion.a>
             <motion.a 
-              href="#" 
+              href="https://www.tiktok.com/@daniquekwakman" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground"
               whileHover={{ 
                 color: "hsl(var(--foreground))",
@@ -422,7 +508,7 @@ export const Layout: React.FC<LayoutProps> = ({
               </svg>
             </motion.a>
             <motion.a 
-              href="#" 
+              href="mailto:info@daniquekwakman.nl" 
               className="text-muted-foreground"
               whileHover={{ 
                 color: "hsl(var(--foreground))",
@@ -434,28 +520,43 @@ export const Layout: React.FC<LayoutProps> = ({
             </motion.a>
           </div>
 
+          {/* CAT & GAT info */}
+          <div className="max-w-lg mb-6">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <img src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" />
+              <img src={logoGat} alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" />
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+              Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).
+            </p>
+            <p className="text-xs text-muted-foreground">
+              Voor meer informatie over mijn klachtenregeling zie{' '}
+              <a 
+                href="https://gatgeschillen.nl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground transition-colors"
+              >
+                gatgeschillen.nl
+              </a>
+            </p>
+          </div>
+
+          {/* Belangrijke documenten */}
           <div className="flex items-center justify-center gap-4 mb-8 flex-wrap">
+            <span className="text-xs text-muted-foreground font-medium">Belangrijke documenten:</span>
             <motion.a 
               href="/privacy" 
-              className="text-xs text-muted-foreground"
+              className="text-xs text-muted-foreground underline"
               whileHover={{ color: "hsl(var(--foreground))" }}
               transition={{ duration: 0.3 }}
             >
-              Privacy
-            </motion.a>
-            <span className="text-muted-foreground opacity-40">|</span>
-            <motion.a 
-              href="/cookie-policy" 
-              className="text-xs text-muted-foreground"
-              whileHover={{ color: "hsl(var(--foreground))" }}
-              transition={{ duration: 0.3 }}
-            >
-              Cookies
+              Privacyverklaring
             </motion.a>
             <span className="text-muted-foreground opacity-40">|</span>
             <motion.a 
               href="/terms" 
-              className="text-xs text-muted-foreground"
+              className="text-xs text-muted-foreground underline"
               whileHover={{ color: "hsl(var(--foreground))" }}
               transition={{ duration: 0.3 }}
             >
@@ -463,7 +564,7 @@ export const Layout: React.FC<LayoutProps> = ({
             </motion.a>
           </div>
 
-          <div className="absolute bottom-8 left-0 w-full text-center px-4">
+          <div className="text-center">
             <p className="text-xs text-muted-foreground opacity-60 font-light tracking-wide">
               © {new Date().getFullYear()} Danique Kwakman. Alle rechten voorbehouden.
             </p>
@@ -506,7 +607,5 @@ export const Layout: React.FC<LayoutProps> = ({
             <ArrowUp size={20} />
           </motion.button>}
       </AnimatePresence>
-
-      <CookieConsent />
     </div>;
 };

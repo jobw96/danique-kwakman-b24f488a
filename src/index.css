@@ -126,3 +126,240 @@ body {
     @apply font-serif text-foreground;
   }
 }
+
+/* ActiveCampaign Form Styling */
+._form_1,
+[id^="_form_"] {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+._form_1 ._form-title,
+[id^="_form_"] ._form-title {
+  font-family: 'Aesthet Nova', serif !important;
+  color: hsl(60 4% 11%) !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+._form_1 ._form-label,
+._form_1 label,
+[id^="_form_"] ._form-label,
+[id^="_form_"] label {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  color: hsl(60 4% 11%) !important;
+  font-size: 0.875rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+._form_1 input[type="text"],
+._form_1 input[type="email"],
+._form_1 input[type="tel"],
+._form_1 input[type="date"],
+._form_1 textarea,
+._form_1 select,
+[id^="_form_"] input[type="text"],
+[id^="_form_"] input[type="email"],
+[id^="_form_"] input[type="tel"],
+[id^="_form_"] input[type="date"],
+[id^="_form_"] textarea,
+[id^="_form_"] select {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+  background-color: hsl(0 0% 100%) !important;
+  border: 1px solid hsl(44 38% 76%) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.875rem !important;
+  color: hsl(60 4% 11%) !important;
+  width: 100% !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+._form_1 input[type="text"]:focus,
+._form_1 input[type="email"]:focus,
+._form_1 input[type="tel"]:focus,
+._form_1 textarea:focus,
+[id^="_form_"] input[type="text"]:focus,
+[id^="_form_"] input[type="email"]:focus,
+[id^="_form_"] input[type="tel"]:focus,
+[id^="_form_"] textarea:focus {
+  outline: none !important;
+  border-color: hsl(220 27% 69%) !important;
+  box-shadow: 0 0 0 2px hsl(220 27% 69% / 0.2) !important;
+}
+
+._form_1 ._submit,
+[id^="_form_"] ._submit {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  background-color: hsl(220 27% 69%) !important;
+  color: hsl(0 0% 100%) !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 0.875rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease, transform 0.1s ease !important;
+  width: 100% !important;
+}
+
+._form_1 ._submit:hover,
+[id^="_form_"] ._submit:hover {
+  background-color: hsl(220 27% 60%) !important;
+}
+
+._form_1 ._submit:active,
+[id^="_form_"] ._submit:active {
+  transform: scale(0.98) !important;
+}
+
+._form_1 ._form-content,
+[id^="_form_"] ._form-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+._form_1 ._field-wrapper,
+[id^="_form_"] ._field-wrapper {
+  margin-bottom: 0 !important;
+}
+
+._form_1 ._error-inner,
+[id^="_form_"] ._error-inner {
+  color: hsl(0 84% 60%) !important;
+  font-size: 0.75rem !important;
+  margin-top: 0.25rem !important;
+}
+
+._form_1 ._form-thank-you,
+[id^="_form_"] ._form-thank-you {
+  font-family: 'Neulis Sans', sans-serif !important;
+  color: hsl(60 4% 11%) !important;
+  text-align: center !important;
+  padding: 2rem !important;
+}
+
+/* Hide ALL ActiveCampaign forms by default */
+._form_1,
+[id^="_form_"]:not(.newsletter-form-wrapper *),
+div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
+  display: none !important;
+}
+
+/* Only show forms inside the designated container */
+#ac-form-container ._form_1,
+#ac-form-container [id^="_form_"],
+#ac-form-container div[class*="_form_"] {
+  display: block !important;
+}
+
+/* Newsletter form wrapper - show all form content */
+.newsletter-form-wrapper,
+.newsletter-form-wrapper * {
+  display: revert !important;
+}
+
+.newsletter-form-wrapper ._form_27,
+.newsletter-form-wrapper [class*="_form"] {
+  display: block !important;
+  background: transparent !important;
+}
+
+/* Hide the form title */
+.newsletter-form-wrapper ._form-title,
+.newsletter-form-wrapper h1,
+.newsletter-form-wrapper h2,
+.newsletter-form-wrapper h3,
+.newsletter-form-wrapper ._form_element._x71212654 {
+  display: none !important;
+}
+
+.newsletter-form-wrapper form {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  background: transparent !important;
+}
+
+.newsletter-form-wrapper ._form-content {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.newsletter-form-wrapper input[type="text"],
+.newsletter-form-wrapper input[type="email"] {
+  width: 100% !important;
+  padding: 0.875rem 1rem !important;
+  border: 1px solid hsl(44 38% 76% / 0.5) !important;
+  border-radius: 0.75rem !important;
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-size: 0.875rem !important;
+  background: white !important;
+  color: hsl(60 4% 11%) !important;
+  transition: all 0.2s ease !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.newsletter-form-wrapper input[type="text"]:focus,
+.newsletter-form-wrapper input[type="email"]:focus {
+  outline: none !important;
+  border-color: hsl(220 50% 50%) !important;
+  box-shadow: 0 0 0 3px hsl(220 50% 50% / 0.1) !important;
+}
+
+.newsletter-form-wrapper input[type="text"]::placeholder,
+.newsletter-form-wrapper input[type="email"]::placeholder {
+  color: hsl(60 4% 11% / 0.5) !important;
+}
+
+.newsletter-form-wrapper button[type="submit"],
+.newsletter-form-wrapper input[type="submit"],
+.newsletter-form-wrapper ._submit {
+  width: 100% !important;
+  padding: 0.875rem 1.5rem !important;
+  background: hsl(220 60% 50%) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0.75rem !important;
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  margin-top: 0.5rem !important;
+}
+
+.newsletter-form-wrapper button[type="submit"]:hover,
+.newsletter-form-wrapper input[type="submit"]:hover,
+.newsletter-form-wrapper ._submit:hover {
+  background: hsl(220 60% 45%) !important;
+  transform: translateY(-2px) !important;
+}
+
+.newsletter-form-wrapper label {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-size: 0.875rem !important;
+  color: hsl(60 4% 11% / 0.7) !important;
+  text-align: left !important;
+  display: block !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.newsletter-form-wrapper ._form_element {
+  margin-bottom: 1rem !important;
+}
+
+.newsletter-form-wrapper ._form-thank-you {
+  padding: 1.5rem !important;
+  background: transparent !important;
+  border-radius: 0.75rem !important;
+  color: hsl(60 4% 11%) !important;
+}
+
+/* Remove any wrapper backgrounds */
+.newsletter-form-wrapper ._form-wrapper,
+.newsletter-form-wrapper ._form-inner {
+  background: transparent !important;
+}
