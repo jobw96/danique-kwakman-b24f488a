@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
@@ -252,6 +252,18 @@ const RecipeDetail = ({ recipe, onClose }: { recipe: Recipe; onClose: () => void
 
 const Recepten = () => {
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+
+  // Prevent background scroll when modal is open
+  useEffect(() => {
+    if (selectedRecipe) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedRecipe]);
 
   return (
     <div className="min-h-screen">
