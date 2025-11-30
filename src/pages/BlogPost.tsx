@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { BLOG_POSTS } from './Blog';
 
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
@@ -150,7 +151,7 @@ const BLOG_CONTENT: Record<string, { content: React.ReactNode }> = {
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  
+
   const post = BLOG_POSTS.find(p => p.slug === slug);
   const content = slug ? BLOG_CONTENT[slug] : null;
 
@@ -163,50 +164,41 @@ const BlogPost: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-24">
-      {/* Header with Featured Image */}
-      <div className="relative">
-        {/* Featured Image */}
-        <motion.div 
-          className="w-full h-[40vh] md:h-[50vh] relative"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          <img 
-            src={post.image} 
-            alt={post.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-        </motion.div>
-
-        {/* Title overlay */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <div className="max-w-4xl mx-auto px-6 pb-8">
-            <FadeIn>
-              {/* Back Link */}
-              <Link 
-                to="/blog" 
-                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors mb-4 text-sm"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <span>Terug naar blog</span>
-              </Link>
-
-              {/* Title */}
-              <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight">
-                {post.title}
-              </h1>
-            </FadeIn>
-          </div>
+      {/* Breadcrumbs */}
+      <Section className="py-6">
+        <div className="max-w-4xl mx-auto">
+          <Breadcrumbs items={[
+            { label: 'Home', href: '/' },
+            { label: 'Blog', href: '/blog' },
+            { label: post.title }
+          ]} />
         </div>
-      </div>
+      </Section>
 
-      {/* Meta bar */}
-      <div className="border-b border-border/50">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <motion.div 
-            className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm"
+      {/* Content */}
+      <Section className="py-8 md:py-12">
+        <div className="max-w-4xl mx-auto">
+          {/* Back Link */}
+          <FadeIn>
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6 text-sm"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Terug naar blog</span>
+            </Link>
+          </FadeIn>
+
+          {/* Title */}
+          <FadeIn delay={0.1}>
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
+              {post.title}
+            </h1>
+          </FadeIn>
+
+          {/* Meta */}
+          <motion.div
+            className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm mb-8 pb-8 border-b border-border/50"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
@@ -219,7 +211,7 @@ const BlogPost: React.FC = () => {
               <Clock className="w-4 h-4" />
               {post.readTime} leestijd
             </span>
-            <button 
+            <button
               className="flex items-center gap-1.5 hover:text-primary transition-colors ml-auto"
               onClick={() => navigator.share?.({ title: post.title, url: window.location.href })}
             >
@@ -227,12 +219,28 @@ const BlogPost: React.FC = () => {
               Delen
             </button>
           </motion.div>
-        </div>
-      </div>
 
-      {/* Content */}
-      <Section className="py-12 md:py-16">
-        <motion.article 
+          {/* Featured Image Card */}
+          <motion.div
+            className="rounded-2xl overflow-hidden shadow-md mb-12 border border-border/30"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <div className="relative aspect-[21/9]">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Article Content */}
+      <Section className="py-0 md:py-0">
+        <motion.article
           className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
