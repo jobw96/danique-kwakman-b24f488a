@@ -3,7 +3,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
-import { CookieConsent } from './CookieConsent';
+import logoCat from '@/assets/logo-cat.png';
+import logoGat from '@/assets/logo-gat.png';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -433,6 +434,10 @@ export const Layout: React.FC<LayoutProps> = ({
 
           {/* CAT & GAT info */}
           <div className="max-w-lg mb-6">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <img src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" />
+              <img src={logoGat} alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" />
+            </div>
             <p className="text-xs text-muted-foreground leading-relaxed mb-2">
               Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).
             </p>
@@ -514,7 +519,5 @@ export const Layout: React.FC<LayoutProps> = ({
             <ArrowUp size={20} />
           </motion.button>}
       </AnimatePresence>
-
-      <CookieConsent />
     </div>;
 };
