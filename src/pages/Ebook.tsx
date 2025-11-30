@@ -19,12 +19,32 @@ const Ebook = () => {
     script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=1';
     script.charset = 'utf-8';
     script.async = true;
-    document.body.appendChild(script);
+    
+    // Add script to the form container instead of body
+    const formContainer = document.getElementById('ac-form-container');
+    if (formContainer) {
+      formContainer.appendChild(script);
+    }
+    
     return () => {
       // Cleanup script on unmount
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
       }
+      // Remove any forms that were created by the script
+      const forms = document.querySelectorAll('[id^="_form_"]');
+      forms.forEach(form => {
+        if (form.parentNode) {
+          form.parentNode.removeChild(form);
+        }
+      });
+      // Also clean up any leftover _form_1 class elements outside our container
+      const formElements = document.querySelectorAll('body > ._form_1, body > div[class*="_form_"]');
+      formElements.forEach(el => {
+        if (el.parentNode) {
+          el.parentNode.removeChild(el);
+        }
+      });
     };
   }, []);
   return <div className="min-h-screen">
@@ -149,7 +169,9 @@ const Ebook = () => {
                     
 
                     {/* ActiveCampaign Form Container */}
-                    <div className="_form_1"></div>
+                    <div id="ac-form-container">
+                      <div className="_form_1"></div>
+                    </div>
                   </motion.div>
                 </div>
               </div>

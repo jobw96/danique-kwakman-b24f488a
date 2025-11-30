@@ -241,3 +241,12 @@ body {
   text-align: center !important;
   padding: 2rem !important;
 }
+
+/* Hide any ActiveCampaign forms that appear outside the designated container */
+body > ._form_1,
+body > [id^="_form_"],
+body > div[class*="_form_"],
+footer ._form_1,
+footer [id^="_form_"] {
+  display: none !important;
+}
