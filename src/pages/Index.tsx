@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { CustomButton } from '@/components/CustomButton';
@@ -202,6 +202,23 @@ const ServiceAccordion = () => {
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const heroRef = React.useRef(null);
+  
+  // Load ActiveCampaign newsletter form script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=27';
+    script.charset = 'utf-8';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      const existingScript = document.querySelector('script[src*="activehosted.com/f/embed.php?id=27"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, []);
+  
   const {
     scrollYProgress: heroScroll
   } = useScroll({
@@ -390,6 +407,25 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Newsletter Section */}
+      <Section className="bg-[#FDF8F3]">
+        <div className="max-w-2xl mx-auto text-center">
+          <FadeIn>
+            <SectionTag text="Nieuwsbrief" />
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Maandelijkse Glow & Nourish recepten</h2>
+            <p className="text-muted-foreground mb-8">
+              Schrijf je in voor mijn maandelijkse nieuwsbrief en ontvang gratis recepten, tips en inspiratie voor een gezonde leefstijl.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <div className="newsletter-form-wrapper">
+              <div className="_form_27"></div>
+            </div>
+          </FadeIn>
+        </div>
+      </Section>
+
     </div>;
 };
+
 export default Index;
