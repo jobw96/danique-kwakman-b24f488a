@@ -408,7 +408,7 @@ const Index = () => {
       </Section>
 
       {/* Newsletter Section */}
-      <Section className="bg-[#FDF8F3]">
+      <Section id="nieuwsbrief" className="bg-[#FDF8F3]">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <SectionTag text="Nieuwsbrief" />
