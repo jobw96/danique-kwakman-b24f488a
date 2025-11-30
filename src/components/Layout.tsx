@@ -184,7 +184,7 @@ export const Layout: React.FC<LayoutProps> = ({
             />
           </motion.div>
 
-          <nav className="hidden md:flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-2">
             {navLinks.map(link => <div 
                 key={link.name} 
                 className="relative px-3 py-2"
@@ -271,7 +271,7 @@ export const Layout: React.FC<LayoutProps> = ({
                                     <sub.icon size={18} strokeWidth={2} />
                                   </motion.div>
                                   <div>
-                                    <div className="text-sm font-medium text-foreground">{sub.name}</div>
+                                    <div className="text-sm font-light text-foreground">{sub.name}</div>
                                   </div>
                                 </motion.button>
                               ))}
@@ -298,7 +298,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </nav>
 
           <motion.button 
-            className="md:hidden p-2 relative z-[60]"
+            className="lg:hidden p-2 relative z-[60]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             animate={{
               color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
@@ -311,72 +311,125 @@ export const Layout: React.FC<LayoutProps> = ({
           </motion.button>
         </div>
 
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div 
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm lg:hidden z-[55]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={() => setMobileMenuOpen(false)}
+            />
+          )}
+        </AnimatePresence>
+
         <motion.div 
-          className="absolute top-0 left-0 w-full bg-background min-h-screen p-6 pt-24 md:hidden flex flex-col gap-4 shadow-xl"
+          className="fixed top-0 left-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 pt-24 lg:hidden flex flex-col z-[58] shadow-2xl"
           initial={{ x: "-100%" }}
           animate={{ x: mobileMenuOpen ? 0 : "-100%" }}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          transition={{ 
+            type: "spring", 
+            stiffness: 280, 
+            damping: 32,
+            mass: 0.8
+          }}
         >
-          {navLinks.map(link => <div key={link.name} className="border-b border-secondary/50 pb-2 last:border-0">
-              {link.subItems ? <div>
-                  <motion.button 
-                    onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} 
-                    className="flex justify-between items-center w-full text-lg font-serif font-medium text-foreground py-3"
+          <nav className="flex flex-col gap-1 flex-1 overflow-y-auto">
+            {navLinks.map((link, index) => (
+              <motion.div 
+                key={link.name}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ 
+                  opacity: mobileMenuOpen ? 1 : 0, 
+                  x: mobileMenuOpen ? 0 : -20 
+                }}
+                transition={{ 
+                  delay: mobileMenuOpen ? 0.1 + index * 0.04 : 0,
+                  duration: 0.4,
+                  ease: [0.25, 0.1, 0.25, 1]
+                }}
+              >
+                {link.subItems ? (
+                  <div>
+                    <motion.button 
+                      onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} 
+                      className="flex justify-between items-center w-full text-base font-light text-foreground py-3"
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      {link.name}
+                      <motion.div
+                        animate={{ rotate: activeDropdown === link.name ? 180 : 0 }}
+                        transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+                      >
+                        <ChevronDown className="w-4 h-4 opacity-50" />
+                      </motion.div>
+                    </motion.button>
+                    <AnimatePresence initial={false}>
+                      {activeDropdown === link.name && (
+                        <motion.div 
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ 
+                            height: { duration: 0.35, ease: [0.4, 0, 0.2, 1] },
+                            opacity: { duration: 0.25, ease: "easeOut" }
+                          }}
+                          className="overflow-hidden"
+                        >
+                          <div className="flex flex-col gap-1 pb-2 pl-2">
+                            {link.subItems.map((sub, subIndex) => (
+                              <motion.button 
+                                key={sub.name} 
+                                onClick={() => handleNavigation(sub.href)} 
+                                className="flex items-center gap-3 text-muted-foreground text-left py-2.5 rounded-lg transition-colors hover:bg-secondary/30"
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ 
+                                  delay: 0.05 + subIndex * 0.03,
+                                  duration: 0.3,
+                                  ease: [0.25, 0.1, 0.25, 1]
+                                }}
+                                whileTap={{ scale: 0.98 }}
+                              >
+                                <div className="w-8 h-8 rounded-lg bg-secondary/40 flex items-center justify-center text-foreground/60">
+                                  <sub.icon size={14} strokeWidth={1.5} />
+                                </div>
+                                <span className="text-sm font-light">{sub.name}</span>
+                              </motion.button>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ) : (
+                  <motion.button
+                    onClick={() => handleNavigation(link.href!)} 
+                    className="text-base font-light text-foreground w-full text-left py-3"
                     whileTap={{ scale: 0.98 }}
                   >
                     {link.name}
-                    <motion.div
-                      animate={{ rotate: activeDropdown === link.name ? 180 : 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                    >
-                      <ChevronDown className="w-5 h-5" />
-                    </motion.div>
                   </motion.button>
-                  <motion.div 
-                    initial={false}
-                    animate={{
-                      height: activeDropdown === link.name ? "auto" : 0,
-                      opacity: activeDropdown === link.name ? 1 : 0,
-                      marginTop: activeDropdown === link.name ? 8 : 0,
-                      marginBottom: activeDropdown === link.name ? 16 : 0
-                    }}
-                    transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-                    className="overflow-hidden"
-                  >
-                    <div className="flex flex-col gap-3 pl-4">
-                      {link.subItems.map(sub => (
-                        <motion.button 
-                          key={sub.name} 
-                          onClick={() => handleNavigation(sub.href)} 
-                          className="flex items-center gap-3 text-muted-foreground text-left py-2 transition-colors duration-[180ms] ease-out active:bg-[#ede7e0]"
-                          whileTap={{ scale: 0.98 }}
-                          transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                        >
-                          <div className="w-8 h-8 rounded-full bg-white border border-secondary flex items-center justify-center text-primary">
-                            <sub.icon size={14} />
-                          </div>
-                          <span className="text-sm font-medium">{sub.name}</span>
-                        </motion.button>
-                      ))}
-                    </div>
-                  </motion.div>
-                </div> : (
-                <motion.button
-                  onClick={() => handleNavigation(link.href!)} 
-                  className="text-lg font-serif font-medium text-foreground w-full text-left py-3"
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                >
-                  {link.name}
-                </motion.button>
-              )}
-            </div>)}
+                )}
+              </motion.div>
+            ))}
+          </nav>
+
           <motion.button 
             onClick={handleExternalLink} 
-            className="bg-primary text-primary-foreground font-medium text-center py-4 rounded-xl mt-6 shadow-md w-full"
-            whileHover={{ scale: 1.02 }}
+            className="bg-primary text-primary-foreground font-light text-center py-3.5 rounded-lg mt-6 w-full"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ 
+              opacity: mobileMenuOpen ? 1 : 0, 
+              y: mobileMenuOpen ? 0 : 10 
+            }}
+            transition={{ 
+              delay: mobileMenuOpen ? 0.3 : 0,
+              duration: 0.4,
+              ease: [0.25, 0.1, 0.25, 1]
+            }}
             whileTap={{ scale: 0.98 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
             Gratis kennismaking
           </motion.button>
