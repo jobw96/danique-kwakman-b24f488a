@@ -91,7 +91,7 @@ const About = () => {
           {/* Inzicht cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
             <FadeIn delay={0.1} className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30">
-              <div className="w-14 h-14 bg-[#FDF8F3] rounded-full flex items-center justify-center mb-6">
+              <div className="w-14 h-14 min-w-14 min-h-14 flex-shrink-0 bg-[#FDF8F3] rounded-full flex items-center justify-center mb-6">
                 <Heart size={24} className="text-[#6B7B8A]" />
               </div>
               <h3 className="font-serif text-xl text-foreground mb-3">Inzicht in cyclus</h3>
@@ -100,7 +100,7 @@ const About = () => {
               </p>
             </FadeIn>
             <FadeIn delay={0.2} className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30">
-              <div className="w-14 h-14 bg-[#FDF8F3] rounded-full flex items-center justify-center mb-6">
+              <div className="w-14 h-14 min-w-14 min-h-14 flex-shrink-0 bg-[#FDF8F3] rounded-full flex items-center justify-center mb-6">
                 <Sparkles size={24} className="text-[#6B7B8A]" />
               </div>
               <h3 className="font-serif text-xl text-foreground mb-3">Darmen in balans</h3>
@@ -144,7 +144,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {["Verpleegkunde", "Orthomoleculaire therapeut Basis", "Orthomoleculair therapeut Gevorderd", "Orthomoleculaire Epigenetisch therapeut"].map((item, i) => <FadeIn key={i} delay={i * 0.1} className="bg-white p-6 rounded-xl border border-secondary/30 shadow-sm hover:border-primary/50 transition-colors group">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#FDF8F3] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 min-w-12 min-h-12 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <GraduationCap size={20} className="text-[#6B7B8A]" />
                     </div>
                     <div>
