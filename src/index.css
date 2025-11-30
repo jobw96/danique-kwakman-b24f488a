@@ -242,20 +242,16 @@ body {
   padding: 2rem !important;
 }
 
-/* Hide any ActiveCampaign forms that appear outside the designated container */
-body > ._form_1,
-body > [id^="_form_"],
-body > div[class*="_form_"],
-footer ._form_1,
-footer [id^="_form_"],
-main ~ ._form_1,
-main ~ [id^="_form_"],
-main ~ div[class*="_form_"] {
+/* Hide ALL ActiveCampaign forms by default */
+._form_1,
+[id^="_form_"],
+div[class*="_form_"] {
   display: none !important;
 }
 
-/* Ensure forms inside the container are visible */
+/* Only show forms inside the designated container */
 #ac-form-container ._form_1,
-#ac-form-container [id^="_form_"] {
+#ac-form-container [id^="_form_"],
+#ac-form-container div[class*="_form_"] {
   display: block !important;
 }
