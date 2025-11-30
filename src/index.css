@@ -244,8 +244,8 @@ body {
 
 /* Hide ALL ActiveCampaign forms by default */
 ._form_1,
-[id^="_form_"],
-div[class*="_form_"]:not(._form_27) {
+[id^="_form_"]:not(.newsletter-form-wrapper *),
+div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
   display: none !important;
 }
 
@@ -256,8 +256,14 @@ div[class*="_form_"]:not(._form_27) {
   display: block !important;
 }
 
-/* Newsletter form wrapper styles */
-.newsletter-form-wrapper ._form_27 {
+/* Newsletter form wrapper - show all form content */
+.newsletter-form-wrapper,
+.newsletter-form-wrapper * {
+  display: revert !important;
+}
+
+.newsletter-form-wrapper ._form_27,
+.newsletter-form-wrapper [class*="_form"] {
   display: block !important;
 }
 
