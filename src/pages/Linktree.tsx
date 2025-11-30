@@ -162,7 +162,7 @@ const Linktree: React.FC = () => {
               />
             </div>
             <motion.div 
-              className="absolute -bottom-1 -right-1 bg-[#2D4F4A] text-white rounded-full p-1.5"
+              className="absolute -bottom-1 -right-1 bg-primary text-white rounded-full p-1.5"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 400 }}
@@ -241,12 +241,12 @@ const Linktree: React.FC = () => {
             <motion.button
               key={index}
               onClick={() => handleLinkClick(link.href, link.internal)}
-              className="w-full bg-[#2D4F4A] text-white py-4 px-6 rounded-lg text-sm font-medium shadow-md relative overflow-hidden group"
+              className="w-full bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium shadow-md relative overflow-hidden group"
               variants={itemVariants}
               whileHover={{ 
                 scale: 1.02,
                 y: -2,
-                boxShadow: "0 10px 30px -10px rgba(45, 79, 74, 0.4)"
+                boxShadow: "0 10px 30px -10px hsl(var(--primary) / 0.4)"
               }}
               whileTap={{ scale: 0.98 }}
             >
