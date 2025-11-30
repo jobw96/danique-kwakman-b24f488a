@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { Download, Sparkles, Coffee, Zap } from 'lucide-react';
+import { ArrowDown, Sparkles, Coffee, Zap } from 'lucide-react';
 import ebookCoverFront from '@/assets/ebook-cover-front.png';
 import ebookCoverOpen from '@/assets/ebook-cover-open.png';
 const SectionTag = ({
@@ -45,9 +45,9 @@ const Ebook = () => {
                 scale: 1.02
               }} whileTap={{
                 scale: 0.98
-              }} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-colors">
-                  <Download className="w-5 h-5" />
-                  Download gratis e-book
+              }} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors">
+                  Ontvang gratis e-book
+                  <ArrowDown className="w-5 h-5" />
                 </motion.a>
               </FadeIn>
             </div>
