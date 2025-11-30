@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -25,6 +26,25 @@ import NotFound from "./pages/NotFound";
 import Linktree from "./pages/Linktree";
 
 const queryClient = new QueryClient();
+
+// Scroll to hash element after page load
+const ScrollToHash = () => {
+  const location = useLocation();
+  
+  useEffect(() => {
+    if (location.hash) {
+      // Small delay to allow page to render
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
+  
+  return null;
+};
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -59,6 +79,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToHash />
         <Routes>
           {/* Linktree page without Layout */}
           <Route path="/linktree" element={<Linktree />} />
