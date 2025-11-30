@@ -146,9 +146,7 @@ const Ebook = () => {
                   delay: 0.2
                 }}>
                     
-                    <p className="text-muted-foreground text-center mb-6 text-sm">
-                      Vul je gegevens in en ontvang direct het e-book in je inbox
-                    </p>
+                    
 
                     {/* ActiveCampaign Form Container */}
                     <div className="_form_1"></div>
