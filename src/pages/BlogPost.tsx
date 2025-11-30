@@ -6,9 +6,9 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { BLOG_POSTS } from './Blog';
 
-import blogHormonen from '@/assets/blog-hormonen.jpg';
-import blogDarmgezondheid from '@/assets/blog-darmgezondheid.jpg';
-import blogEnergie from '@/assets/blog-energie.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
+import daniqueBeach from '@/assets/danique-beach.png';
+import daniqueRunning from '@/assets/danique-running.jpg';
 
 // Blog content for each post
 const BLOG_CONTENT: Record<string, { content: React.ReactNode }> = {
