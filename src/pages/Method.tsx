@@ -104,12 +104,11 @@ const Method = () => {
 
                   {/* Image Content */}
                   <FadeIn className="lg:w-1/2" delay={0.2}>
-                    <div className="relative rounded-2xl overflow-hidden aspect-[4/5] w-full">
-                      <ParallaxImage 
+                    <div className="relative rounded-2xl overflow-hidden w-full">
+                      <img 
                         src={card.image} 
                         alt={card.title} 
-                        className="w-full h-full object-cover" 
-                        speed={0.1}
+                        className="w-full h-auto object-contain" 
                       />
                     </div>
                   </FadeIn>
