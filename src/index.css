@@ -265,11 +265,27 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
 .newsletter-form-wrapper ._form_27,
 .newsletter-form-wrapper [class*="_form"] {
   display: block !important;
+  background: transparent !important;
+}
+
+/* Hide the form title */
+.newsletter-form-wrapper ._form-title,
+.newsletter-form-wrapper h1,
+.newsletter-form-wrapper h2,
+.newsletter-form-wrapper h3,
+.newsletter-form-wrapper ._form_element._x71212654 {
+  display: none !important;
 }
 
 .newsletter-form-wrapper form {
   max-width: 100% !important;
   margin: 0 auto !important;
+  background: transparent !important;
+}
+
+.newsletter-form-wrapper ._form-content {
+  padding: 0 !important;
+  background: transparent !important;
 }
 
 .newsletter-form-wrapper input[type="text"],
@@ -289,8 +305,8 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
 .newsletter-form-wrapper input[type="text"]:focus,
 .newsletter-form-wrapper input[type="email"]:focus {
   outline: none !important;
-  border-color: hsl(220 27% 69%) !important;
-  box-shadow: 0 0 0 3px hsl(220 27% 69% / 0.1) !important;
+  border-color: hsl(220 50% 50%) !important;
+  box-shadow: 0 0 0 3px hsl(220 50% 50% / 0.1) !important;
 }
 
 .newsletter-form-wrapper input[type="text"]::placeholder,
@@ -299,10 +315,11 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
 }
 
 .newsletter-form-wrapper button[type="submit"],
-.newsletter-form-wrapper input[type="submit"] {
+.newsletter-form-wrapper input[type="submit"],
+.newsletter-form-wrapper ._submit {
   width: 100% !important;
   padding: 0.875rem 1.5rem !important;
-  background: hsl(220 27% 69%) !important;
+  background: hsl(220 60% 50%) !important;
   color: white !important;
   border: none !important;
   border-radius: 0.75rem !important;
@@ -315,8 +332,9 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
 }
 
 .newsletter-form-wrapper button[type="submit"]:hover,
-.newsletter-form-wrapper input[type="submit"]:hover {
-  background: hsl(220 27% 60%) !important;
+.newsletter-form-wrapper input[type="submit"]:hover,
+.newsletter-form-wrapper ._submit:hover {
+  background: hsl(220 60% 45%) !important;
   transform: translateY(-2px) !important;
 }
 
@@ -329,17 +347,19 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
   margin-bottom: 0.25rem !important;
 }
 
-.newsletter-form-wrapper ._form-content {
-  padding: 0 !important;
-}
-
 .newsletter-form-wrapper ._form_element {
   margin-bottom: 1rem !important;
 }
 
 .newsletter-form-wrapper ._form-thank-you {
   padding: 1.5rem !important;
-  background: white !important;
+  background: transparent !important;
   border-radius: 0.75rem !important;
   color: hsl(60 4% 11%) !important;
+}
+
+/* Remove any wrapper backgrounds */
+.newsletter-form-wrapper ._form-wrapper,
+.newsletter-form-wrapper ._form-inner {
+  background: transparent !important;
 }
