@@ -26,10 +26,10 @@ const ResetRecharge = () => {
                     Voel je je vaak moe, opgeblazen of uit balans door hormonale schommelingen? Wil je eindelijk grip krijgen op je energie, je buik en je gemoedstoestand?
                   </p>
                   <p>
-                    <strong>Reset & Recharge</strong> is jouw korte, gerichte traject om je lichaam weer te leren begrijpen, rust te creëren en energie terug te krijgen. Geen overdaad aan theorie, maar concrete inzichten, praktische stappen en voelbare resultaten, stap voor stap en passend bij jou.
+                    Reset & Recharge is jouw korte, gerichte traject om je lichaam weer te leren begrijpen, rust te creëren en energie terug te krijgen. Geen overdaad aan theorie, maar concrete inzichten, praktische stappen en voelbare resultaten, stap voor stap en passend bij jou.
                   </p>
                   <p>
-                    Compact en doelgericht, waarbij we in <strong>een maand krachtige stappen zetten</strong> richting verandering die blijft.
+                    Compact en doelgericht, waarbij we in een maand krachtige stappen zetten richting verandering die blijft.
                   </p>
                 </div>
                 <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">

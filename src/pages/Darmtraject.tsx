@@ -25,7 +25,7 @@ const Darmtraject = () => {
                     Heb je vaak last van een opgeblazen gevoel, wisselende stoelgang, buikpijn of vermoeidheid? Word je beperkt door je darmklachten, voel je je onzeker over wat je wel of niet kunt eten en beïnvloedt dit je dagelijks leven?
                   </p>
                   <p>
-                    In dit traject zoeken we naar de oorzaak van je klachten. Niet door standaarddiëten of snelle oplossingen, maar met <strong>gericht onderzoek</strong>, een onderbouwde aanpak die rekening houdt met jouw lichaam, leefstijl en energie. Zo krijg je inzicht, grip en rust in je spijsvertering en algehele gezondheid.
+                    In dit traject zoeken we naar de oorzaak van je klachten. Niet door standaarddiëten of snelle oplossingen, maar met gericht onderzoek, een onderbouwde aanpak die rekening houdt met jouw lichaam, leefstijl en energie. Zo krijg je inzicht, grip en rust in je spijsvertering en algehele gezondheid.
                   </p>
                 </div>
                 <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">

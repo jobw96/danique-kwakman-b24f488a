@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp, Zap } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import { CookieConsent } from './CookieConsent';
@@ -77,17 +77,17 @@ export const Layout: React.FC<LayoutProps> = ({
     subItems: [{
       name: 'Kennismakingsgesprek',
       href: '/match-call',
-      description: 'Plan een gesprek',
+      description: '',
       icon: Phone
     }, {
       name: 'Podcast',
       href: '/podcast',
-      description: 'Luister mee',
+      description: '',
       icon: Headphones
     }, {
       name: 'E-book: 5 gratis ontbijtrecepten',
       href: '/ebook',
-      description: 'Gratis tips',
+      description: '',
       icon: BookOpen
     }]
   }, {
@@ -95,18 +95,23 @@ export const Layout: React.FC<LayoutProps> = ({
     subItems: [{
       name: 'Behandelingen',
       href: '/#services',
-      description: 'Overzicht',
+      description: '',
       icon: LayoutGrid
     }, {
       name: '1:1 Glowup',
       href: '/glowup',
-      description: 'Exclusief traject',
+      description: '',
       icon: Sparkles
     }, {
       name: '1:1 Darmtraject',
       href: '/darmtraject',
-      description: 'Darmherstel',
+      description: '',
       icon: Activity
+    }, {
+      name: '1:1 Reset & Recharge',
+      href: '/reset-recharge',
+      description: '',
+      icon: Zap
     }]
   }, {
     name: 'Mijn methode',
@@ -260,8 +265,7 @@ export const Layout: React.FC<LayoutProps> = ({
                                     <sub.icon size={18} strokeWidth={2} />
                                   </motion.div>
                                   <div>
-                                    <div className="text-sm font-semibold text-foreground">{sub.name}</div>
-                                    <div className="text-xs text-muted-foreground">{sub.description}</div>
+                                    <div className="text-sm font-medium text-foreground">{sub.name}</div>
                                   </div>
                                 </motion.button>
                               ))}
