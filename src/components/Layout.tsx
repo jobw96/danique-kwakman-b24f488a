@@ -193,7 +193,7 @@ export const Layout: React.FC<LayoutProps> = ({
               >
                 <motion.button 
                   onClick={() => link.href ? handleNavigation(link.href) : null} 
-                  className="flex items-center gap-1.5 text-sm font-normal"
+                  className="flex items-center gap-1.5 text-sm font-light"
                   animate={{
                     color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
                   }}
