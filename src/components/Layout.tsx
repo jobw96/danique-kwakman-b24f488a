@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp, Zap } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import { CookieConsent } from './CookieConsent';
@@ -89,6 +89,11 @@ export const Layout: React.FC<LayoutProps> = ({
       href: '/ebook',
       description: '',
       icon: BookOpen
+    }, {
+      name: 'Recepten',
+      href: '/recepten',
+      description: '',
+      icon: UtensilsCrossed
     }]
   }, {
     name: 'Aanbod',
