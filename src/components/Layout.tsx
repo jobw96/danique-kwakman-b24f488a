@@ -46,6 +46,11 @@ export const Layout: React.FC<LayoutProps> = ({
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   const scrollToTop = () => {
     const start = window.scrollY;
     const startTime = performance.now();
@@ -325,9 +330,9 @@ export const Layout: React.FC<LayoutProps> = ({
         </AnimatePresence>
 
         <motion.div 
-          className="fixed top-0 left-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 pt-24 lg:hidden flex flex-col z-[58] shadow-2xl"
-          initial={{ x: "-100%" }}
-          animate={{ x: mobileMenuOpen ? 0 : "-100%" }}
+          className="fixed top-0 right-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 lg:hidden flex flex-col z-[58] shadow-2xl"
+          initial={{ x: "100%" }}
+          animate={{ x: mobileMenuOpen ? 0 : "100%" }}
           transition={{ 
             type: "spring", 
             stiffness: 280, 
@@ -335,14 +340,29 @@ export const Layout: React.FC<LayoutProps> = ({
             mass: 0.8
           }}
         >
+          {/* Logo */}
+          <motion.div 
+            className="mb-8"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: mobileMenuOpen ? 1 : 0, y: mobileMenuOpen ? 0 : -10 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+          >
+            <img 
+              src={logoFull} 
+              alt="Danique Kwakman" 
+              className="h-8 w-auto cursor-pointer" 
+              onClick={() => handleNavigation('/')}
+            />
+          </motion.div>
+
           <nav className="flex flex-col gap-1 flex-1 overflow-y-auto">
             {navLinks.map((link, index) => (
               <motion.div 
                 key={link.name}
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: 20 }}
                 animate={{ 
                   opacity: mobileMenuOpen ? 1 : 0, 
-                  x: mobileMenuOpen ? 0 : -20 
+                  x: mobileMenuOpen ? 0 : 20 
                 }}
                 transition={{ 
                   delay: mobileMenuOpen ? 0.1 + index * 0.04 : 0,
@@ -383,7 +403,7 @@ export const Layout: React.FC<LayoutProps> = ({
                                 key={sub.name} 
                                 onClick={() => handleNavigation(sub.href)} 
                                 className="flex items-center gap-3 text-muted-foreground text-left py-2.5 rounded-lg transition-colors hover:bg-secondary/30"
-                                initial={{ opacity: 0, x: -10 }}
+                                initial={{ opacity: 0, x: 10 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ 
                                   delay: 0.05 + subIndex * 0.03,
