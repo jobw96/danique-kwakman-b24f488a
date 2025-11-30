@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Method from "./pages/Method";
 import GlowUp from "./pages/GlowUp";
 import Darmtraject from "./pages/Darmtraject";
+import ResetRecharge from "./pages/ResetRecharge";
 import MatchCall from "./pages/MatchCall";
 import Podcast from "./pages/Podcast";
 import Ebook from "./pages/Ebook";
@@ -34,6 +35,7 @@ const AnimatedRoutes = () => {
         <Route path="/method" element={<PageTransition><Method /></PageTransition>} />
         <Route path="/glowup" element={<PageTransition><GlowUp /></PageTransition>} />
         <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
+        <Route path="/reset-recharge" element={<PageTransition><ResetRecharge /></PageTransition>} />
         <Route path="/match-call" element={<PageTransition><MatchCall /></PageTransition>} />
         <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
         <Route path="/ebook" element={<PageTransition><Ebook /></PageTransition>} />
