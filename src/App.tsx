@@ -61,7 +61,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           {/* Linktree page without Layout */}
-          <Route path="/links" element={<Linktree />} />
+          <Route path="/linktree" element={<Linktree />} />
           {/* All other pages with Layout */}
           <Route path="/*" element={
             <Layout>
