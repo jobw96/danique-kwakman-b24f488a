@@ -26,13 +26,13 @@ const GlowUp = () => {
                     Voel je dat je klachten je afremmen, zoals vermoeidheid, hormonale onrust of buikpijn, terwijl je diep van binnen weet dat er méér in je zit? Merk je dat je vastloopt in oude patronen of steeds opnieuw dezelfde uitdagingen tegenkomt, zonder echt vooruitgang te boeken?
                   </p>
                   <p>
-                    In dit traject brengen we rust, richting en helderheid terug in jouw systeem. Met een combi van <strong>orthomoleculaire kennis</strong> en <strong>persoonlijke coaching</strong> help ik je begrijpen wat er onder je klachten ligt en hoe je weer in balans komt.
+                    In dit traject brengen we rust, richting en helderheid terug in jouw systeem. Met een combi van orthomoleculaire kennis en persoonlijke coaching help ik je begrijpen wat er onder je klachten ligt en hoe je weer in balans komt.
                   </p>
                   <p>
-                    Niet om een betere versie van jezelf te worden, maar om <strong>volledig jezelf te zijn</strong>: energiek, ontspannen en stevig in je eigen ritme.
+                    Niet om een betere versie van jezelf te worden, maar om volledig jezelf te zijn: energiek, ontspannen en stevig in je eigen ritme.
                   </p>
                   <p>
-                    Dit is geen quick fix. In dit traject leer je luisteren naar je lichaam, begrijpen wat er onder je klachten zit en weer in je eigen ritme te komen. <strong>Je leert weer wat je lichaam nodig heeft, stap voor stap.</strong>
+                    Dit is geen quick fix. In dit traject leer je luisteren naar je lichaam, begrijpen wat er onder je klachten zit en weer in je eigen ritme te komen. Je leert weer wat je lichaam nodig heeft, stap voor stap.
                   </p>
                 </div>
                 <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
