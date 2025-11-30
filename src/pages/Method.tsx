@@ -76,27 +76,27 @@ const Method = () => {
       </Section>
 
       {/* Method Cards Sections */}
-      <Section className="bg-[#FCF9F2] py-12 md:py-20">
-        <div className="max-w-7xl mx-auto space-y-24 md:space-y-32">
+      <Section className="bg-[#FCF9F2] py-12 md:py-16">
+        <div className="max-w-6xl mx-auto space-y-16 md:space-y-20">
           {METHOD_CARDS.map((card, index) => {
             const isEven = index % 2 === 0;
             return (
               <StaggerContainer key={card.id} delay={0.1}>
-                <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 lg:gap-16`}>
+                <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 lg:gap-12`}>
                   {/* Text Content */}
                   <FadeIn className="lg:w-1/2" delay={0.1}>
                     <div 
-                      className="bg-background rounded-3xl p-8 md:p-12 shadow-lg border-l-8 relative overflow-hidden"
+                      className="bg-background rounded-2xl p-6 md:p-8 border-l-4 relative overflow-hidden"
                       style={{ borderLeftColor: card.accentColor }}
                     >
                       <div 
-                        className="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-20"
+                        className="absolute top-0 right-0 w-24 h-24 rounded-full blur-3xl opacity-15"
                         style={{ backgroundColor: card.accentColor }}
                       />
-                      <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6 relative z-10">
+                      <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-4 relative z-10">
                         {card.title}
                       </h2>
-                      <p className="text-lg md:text-xl leading-relaxed text-muted-foreground relative z-10">
+                      <p className="text-base leading-relaxed text-muted-foreground relative z-10">
                         {card.description}
                       </p>
                     </div>
@@ -104,7 +104,7 @@ const Method = () => {
 
                   {/* Image Content */}
                   <FadeIn className="lg:w-1/2" delay={0.2}>
-                    <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] w-full">
+                    <div className="relative rounded-2xl overflow-hidden aspect-[4/5] w-full">
                       <ParallaxImage 
                         src={card.image} 
                         alt={card.title} 
