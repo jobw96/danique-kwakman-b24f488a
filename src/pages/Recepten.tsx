@@ -102,7 +102,7 @@ const RecipeCard = ({ recipe, onClick }: { recipe: Recipe; onClick: () => void }
       <div className="h-56 overflow-hidden">
         <img 
           src={recipe.image} 
-          alt={recipe.title} 
+          alt={`${recipe.title} - gezond recept voor energie en hormoonbalans`} 
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
         />
       </div>
@@ -138,7 +138,7 @@ const RecipeDetail = ({ recipe, onClose }: { recipe: Recipe; onClose: () => void
       <div className="relative h-32 sm:h-36 flex-shrink-0">
         <motion.img 
           src={recipe.image} 
-          alt={recipe.title} 
+          alt={`${recipe.title} - voedzaam recept van orthomoleculair therapeut Danique Kwakman`} 
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}

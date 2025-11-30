@@ -58,7 +58,7 @@ const Ebook = () => {
             </div>
             <div className="lg:w-[35%]">
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden aspect-[4/5]">
-                <ParallaxImage src={ebookCoverFront} alt="5 Ontbijt Recepten E-book" className="w-full h-full object-cover" />
+                <ParallaxImage src={ebookCoverFront} alt="Gratis e-book 5 ontbijtrecepten voor energie en hormoonbalans - Danique Kwakman" className="w-full h-full object-cover" />
               </FadeIn>
             </div>
           </div>

@@ -107,7 +107,7 @@ const Method = () => {
                     <div className="relative rounded-2xl overflow-hidden w-full">
                       <img 
                         src={card.image} 
-                        alt={card.title} 
+                        alt={`CIRCLE-methode stap ${card.title} - orthomoleculaire begeleiding voor vrouwen`} 
                         className="w-full h-auto object-contain" 
                       />
                     </div>
@@ -124,7 +124,7 @@ const Method = () => {
         <div className="absolute inset-0">
           <ParallaxImage 
             src={daniqueRelaxed} 
-            alt="Spa Treatment" 
+            alt="Danique Kwakman - klaar om van overleven naar leven te gaan met orthomoleculaire therapie" 
             className="w-full h-full" 
             speed={0.15} 
           />

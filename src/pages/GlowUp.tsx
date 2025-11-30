@@ -44,7 +44,7 @@ const GlowUp = () => {
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
                 <ParallaxImage 
                   src={daniqueGlowup} 
-                  alt="Danique - Glow Up" 
+                  alt="1:1 Glow Up traject - terug naar energie en hormonale balans met Danique Kwakman" 
                   className="w-full h-full object-cover" 
                 />
               </FadeIn>

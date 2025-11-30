@@ -193,7 +193,7 @@ export const Layout: React.FC<LayoutProps> = ({
               >
                 <motion.button 
                   onClick={() => link.href ? handleNavigation(link.href) : null} 
-                  className="flex items-center gap-1.5 text-sm font-medium"
+                  className="flex items-center gap-1.5 text-sm font-normal"
                   animate={{
                     color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
                   }}
@@ -398,7 +398,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
         <div className="relative z-10 container mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
           <div className="mb-6 flex items-center gap-3">
-            <img src={logoFull} alt="Danique Kwakman" className="h-12 w-auto" />
+            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto" />
           </div>
 
           <p className="text-muted-foreground max-w-xl text-sm md:text-base leading-relaxed mb-6">
