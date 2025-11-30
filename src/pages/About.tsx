@@ -177,7 +177,7 @@ const About = () => {
                 <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
                   <CustomButton>Gratis kennismaking</CustomButton>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer">
                   <CustomButton variant="secondary">Volg me op Instagram</CustomButton>
                 </a>
               </div>

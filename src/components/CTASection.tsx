@@ -35,7 +35,7 @@ export const CTASection = () => {
                 </CustomButton>
               </a>
               
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer">
                 <CustomButton variant="outline" icon={false} className="bg-white/20 backdrop-blur-sm hover:bg-white/30 border-2 border-white px-6 h-14 rounded-xl">
                   <Instagram className="w-6 h-6" />
                 </CustomButton>

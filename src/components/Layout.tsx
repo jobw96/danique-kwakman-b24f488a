@@ -398,7 +398,9 @@ export const Layout: React.FC<LayoutProps> = ({
 
           <div className="flex items-center gap-8 mb-8">
             <motion.a 
-              href="#" 
+              href="https://www.instagram.com/daniquekwakman/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground"
               whileHover={{ 
                 color: "hsl(var(--foreground))",
