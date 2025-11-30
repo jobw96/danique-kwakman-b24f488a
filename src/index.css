@@ -126,3 +126,118 @@ body {
     @apply font-serif text-foreground;
   }
 }
+
+/* ActiveCampaign Form Styling */
+._form_1,
+[id^="_form_"] {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+._form_1 ._form-title,
+[id^="_form_"] ._form-title {
+  font-family: 'Aesthet Nova', serif !important;
+  color: hsl(60 4% 11%) !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+._form_1 ._form-label,
+._form_1 label,
+[id^="_form_"] ._form-label,
+[id^="_form_"] label {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  color: hsl(60 4% 11%) !important;
+  font-size: 0.875rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+._form_1 input[type="text"],
+._form_1 input[type="email"],
+._form_1 input[type="tel"],
+._form_1 input[type="date"],
+._form_1 textarea,
+._form_1 select,
+[id^="_form_"] input[type="text"],
+[id^="_form_"] input[type="email"],
+[id^="_form_"] input[type="tel"],
+[id^="_form_"] input[type="date"],
+[id^="_form_"] textarea,
+[id^="_form_"] select {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+  background-color: hsl(0 0% 100%) !important;
+  border: 1px solid hsl(44 38% 76%) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.875rem !important;
+  color: hsl(60 4% 11%) !important;
+  width: 100% !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+._form_1 input[type="text"]:focus,
+._form_1 input[type="email"]:focus,
+._form_1 input[type="tel"]:focus,
+._form_1 textarea:focus,
+[id^="_form_"] input[type="text"]:focus,
+[id^="_form_"] input[type="email"]:focus,
+[id^="_form_"] input[type="tel"]:focus,
+[id^="_form_"] textarea:focus {
+  outline: none !important;
+  border-color: hsl(220 27% 69%) !important;
+  box-shadow: 0 0 0 2px hsl(220 27% 69% / 0.2) !important;
+}
+
+._form_1 ._submit,
+[id^="_form_"] ._submit {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  background-color: hsl(220 27% 69%) !important;
+  color: hsl(0 0% 100%) !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 0.875rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease, transform 0.1s ease !important;
+  width: 100% !important;
+}
+
+._form_1 ._submit:hover,
+[id^="_form_"] ._submit:hover {
+  background-color: hsl(220 27% 60%) !important;
+}
+
+._form_1 ._submit:active,
+[id^="_form_"] ._submit:active {
+  transform: scale(0.98) !important;
+}
+
+._form_1 ._form-content,
+[id^="_form_"] ._form-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+._form_1 ._field-wrapper,
+[id^="_form_"] ._field-wrapper {
+  margin-bottom: 0 !important;
+}
+
+._form_1 ._error-inner,
+[id^="_form_"] ._error-inner {
+  color: hsl(0 84% 60%) !important;
+  font-size: 0.75rem !important;
+  margin-top: 0.25rem !important;
+}
+
+._form_1 ._form-thank-you,
+[id^="_form_"] ._form-thank-you {
+  font-family: 'Neulis Sans', sans-serif !important;
+  color: hsl(60 4% 11%) !important;
+  text-align: center !important;
+  padding: 2rem !important;
+}
