@@ -116,8 +116,8 @@ const Ebook = () => {
 
           {/* Content & Form Section - Integrated */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Left: Content */}
                 <div>
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
@@ -154,7 +154,7 @@ const Ebook = () => {
 
                 {/* Right: Form */}
                 <div id="download-form">
-                  <motion.div className="p-8 rounded-2xl sticky top-24" initial={{
+                  <motion.div className="p-4 sm:p-8 rounded-2xl sticky top-24" initial={{
                   opacity: 0,
                   y: 20
                 }} whileInView={{
