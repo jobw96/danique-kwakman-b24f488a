@@ -63,50 +63,45 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.3
+      staggerChildren: 0.06,
+      delayChildren: 0.2
     }
   }
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20, scale: 0.95 },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,
-    scale: 1,
     transition: {
-      type: "spring" as const,
-      stiffness: 300,
-      damping: 24
+      duration: 0.4,
+      ease: "easeOut" as const
     }
   }
 };
 
 const profileVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.9 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
-      type: "spring" as const,
-      stiffness: 200,
-      damping: 20,
-      delay: 0.1
+      duration: 0.5,
+      ease: "easeOut" as const
     }
   }
 };
 
 const socialVariants = {
-  hidden: { opacity: 0, scale: 0 },
+  hidden: { opacity: 0, scale: 0.8 },
   visible: (i: number) => ({
     opacity: 1,
     scale: 1,
     transition: {
-      type: "spring" as const,
-      stiffness: 400,
-      damping: 20,
-      delay: 0.4 + i * 0.1
+      duration: 0.3,
+      ease: "easeOut" as const,
+      delay: 0.3 + i * 0.08
     }
   })
 };
@@ -121,27 +116,7 @@ const Linktree: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-accent flex flex-col items-center px-4 py-8 md:py-12">
-      {/* Decorative background elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <motion.div 
-          className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl"
-          animate={{ 
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3]
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute bottom-40 right-10 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"
-          animate={{ 
-            scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.4, 0.2]
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </div>
-
+    <div className="min-h-screen bg-card flex flex-col items-center px-4 py-8 md:py-12">
       <div className="w-full max-w-md relative z-10">
         {/* Profile Section */}
         <motion.div 
