@@ -5,9 +5,9 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 
-import blogHormonen from '@/assets/blog-hormonen.jpg';
-import blogDarmgezondheid from '@/assets/blog-darmgezondheid.jpg';
-import blogEnergie from '@/assets/blog-energie.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
+import daniqueBeach from '@/assets/danique-beach.png';
+import daniqueRunning from '@/assets/danique-running.jpg';
 
 export interface BlogPost {
   id: string;
@@ -26,7 +26,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'hormoonbalans-5-signalen',
     title: 'Hormoonbalans: 5 Signalen dat je hormonen uit balans zijn',
     excerpt: 'Ontdek de meest voorkomende signalen die aangeven dat je hormonen mogelijk uit balans zijn en wat je eraan kunt doen.',
-    image: blogHormonen,
+    image: daniqueRelaxed,
     date: '28 november 2024',
     readTime: '6 min',
     category: 'Hormonen'
@@ -36,7 +36,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'darmgezondheid-basis-welzijn',
     title: 'Darmgezondheid: De basis van je welzijn',
     excerpt: 'Waarom een gezonde darm de sleutel is tot meer energie, een sterker immuunsysteem en een betere mentale gezondheid.',
-    image: blogDarmgezondheid,
+    image: daniqueBeach,
     date: '21 november 2024',
     readTime: '8 min',
     category: 'Darmgezondheid'
@@ -46,7 +46,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'natuurlijke-energie-boost',
     title: 'Energie boost: Natuurlijke manieren om je energie te verhogen',
     excerpt: 'Voel je je vaak moe en uitgeput? Ontdek bewezen natuurlijke methoden om je energieniveau te verhogen zonder cafeïne.',
-    image: blogEnergie,
+    image: daniqueRunning,
     date: '14 november 2024',
     readTime: '5 min',
     category: 'Energie'
@@ -80,10 +80,10 @@ const Blog: React.FC = () => {
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
-      <Section className="bg-muted/30 py-12 md:py-16">
+      <Section className="bg-muted/30 py-10 md:py-12">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3">
               Inzichten voor een <span className="text-secondary">gezonder</span> leven
             </h1>
             <p className="text-muted-foreground leading-relaxed">
@@ -94,7 +94,7 @@ const Blog: React.FC = () => {
       </Section>
 
       {/* Blog Posts Grid */}
-      <Section className="py-12 md:py-16">
+      <Section className="py-10 md:py-12">
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
