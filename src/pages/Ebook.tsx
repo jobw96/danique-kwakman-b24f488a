@@ -29,7 +29,7 @@ const Ebook = () => {
     };
   }, []);
   return <div className="min-h-screen">
-      <Section className="pt-32 md:pt-40 bg-background">
+      <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section - Glow Up Style */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">

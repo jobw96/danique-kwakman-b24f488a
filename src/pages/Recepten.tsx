@@ -267,7 +267,7 @@ const Recepten = () => {
 
   return (
     <div className="min-h-screen">
-      <Section className="pt-32 md:pt-40 bg-background">
+      <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">

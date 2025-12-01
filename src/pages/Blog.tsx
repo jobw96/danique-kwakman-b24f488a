@@ -74,7 +74,7 @@ const cardVariants = {
 const Blog: React.FC = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <Section className="bg-muted/30 py-10 md:py-12 pb-0">
+      <Section className="bg-muted/30 pt-4 pb-10 md:pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3">

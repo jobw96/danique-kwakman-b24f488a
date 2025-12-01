@@ -14,7 +14,7 @@ const SectionTag = ({
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const About = () => {
   return <div className="min-h-screen">
-      <Section className="pt-32 md:pt-40 bg-background">
+      <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">

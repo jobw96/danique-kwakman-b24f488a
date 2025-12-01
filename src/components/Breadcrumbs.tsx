@@ -77,7 +77,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
     return (
         <motion.nav
             aria-label="Breadcrumb"
-            className={`container mx-auto px-6 pt-28 pb-4 ${className || ''}`}
+            className={`container mx-auto px-6 pt-24 pb-2 ${className || ''}`}
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}

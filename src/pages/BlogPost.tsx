@@ -158,7 +158,7 @@ const BlogPost: React.FC = () => {
   const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 2);
   return <div className="min-h-screen">
       {/* Content */}
-      <Section className="py-8 md:py-12 pb-0">
+      <Section className="pt-4 pb-0">
         <div className="max-w-4xl mx-auto">
           {/* Back Link */}
           <FadeIn>
