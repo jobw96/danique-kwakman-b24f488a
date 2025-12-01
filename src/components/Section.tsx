@@ -1,4 +1,5 @@
 import React from 'react';
+import { cn } from '@/lib/utils';
 
 interface SectionProps {
   id?: string;
@@ -13,7 +14,11 @@ export const Section = React.forwardRef<HTMLElement, SectionProps>(
       <section 
         ref={ref}
         id={id} 
-        className={`py-20 md:py-32 ${dark ? 'bg-foreground text-background' : 'bg-background text-foreground'} ${className}`}
+        className={cn(
+          'py-20 md:py-32',
+          dark ? 'bg-foreground text-background' : 'bg-background text-foreground',
+          className
+        )}
       >
         <div className="container mx-auto px-6">
           {children}
