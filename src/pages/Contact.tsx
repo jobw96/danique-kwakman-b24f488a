@@ -160,8 +160,8 @@ const Contact = () => {
                   <img src={daniqueWalkingBeach} alt="Danique Kwakman orthomoleculair therapeut - neem contact op voor een kennismakingsgesprek" className="w-full h-auto rounded-lg object-cover" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl text-foreground mb-4">Veel werk ik online</h3>
-                  <p className="text-muted-foreground leading-relaxed">Indien afspraken fysiek zijn ontvang ik je op de volgende locatie:</p>
+                  
+                  <p className="text-muted-foreground leading-relaxed">Alle trajecten kunnen zowel online als fysiek worden gevolgd. Indien afspraken fysiek zijn ontvang ik je op de volgende locatie:</p>
                 </div>
 
                 <div className="space-y-6">
