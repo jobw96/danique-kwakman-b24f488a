@@ -43,8 +43,8 @@ const FAQ = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
-      <Section>
+    <div className="min-h-screen pb-20">
+      <Section className="pt-4">
         <div className="text-center mb-16">
           <FadeIn>
             <SectionTag text="Veelgestelde vragen" />

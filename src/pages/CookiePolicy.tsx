@@ -3,7 +3,7 @@ import { Section } from "@/components/Section";
 const CookiePolicy = () => {
   return (
     <div className="bg-background">
-      <Section className="pt-32 md:pt-40 pb-20 md:pb-32">
+      <Section className="pt-4 pb-20 md:pb-32">
         <div className="container mx-auto px-6 max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">
             Cookiebeleid

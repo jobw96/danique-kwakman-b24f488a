@@ -10,7 +10,7 @@ const SectionTag = ({
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const MatchCall = () => {
   return <div className="min-h-screen">
-      <Section className="pt-32 md:pt-40 min-h-[80vh] flex items-center bg-background">
+      <Section className="pt-4 min-h-[80vh] flex items-center bg-background">
         <div className="flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <FadeIn>

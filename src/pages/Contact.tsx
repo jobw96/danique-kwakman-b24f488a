@@ -70,7 +70,7 @@ const Contact = () => {
   };
   return <div className="min-h-screen">
       {/* Main Content Section */}
-      <Section className="pt-32 md:pt-40">
+      <Section className="pt-4">
         <div className="max-w-6xl mx-auto">
           <FadeIn>
             <SectionTag text="Contact" />

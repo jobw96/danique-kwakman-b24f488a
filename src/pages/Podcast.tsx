@@ -8,7 +8,7 @@ const SectionTag = ({
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const Podcast = () => {
   return <div className="min-h-screen">
-      <Section className="bg-background pt-32 md:pt-40">
+      <Section className="bg-background pt-4">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <SectionTag text="Nu te beluisteren" />
