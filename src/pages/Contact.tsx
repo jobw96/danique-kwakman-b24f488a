@@ -193,7 +193,7 @@ Parkeren: betaald op straat of in nabije parkeergarage .<br />
                   </div>
                   <div>
                     <h4 className="font-medium text-foreground mb-2">Telefoon</h4>
-                    <p className="text-muted-foreground">+31 6 12345678</p>
+                    <p className="text-muted-foreground">+31 682018727</p>
                   </div>
                 </div>
               </div>
