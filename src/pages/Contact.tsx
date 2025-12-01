@@ -172,8 +172,8 @@ const Contact = () => {
 
                   <div>
                     <h4 className="font-medium text-foreground mb-2">Bereikbaarheid</h4>
-                    <p className="text-muted-foreground leading-relaxed">OV: +- 10 min lopen vanaf station Hoorn.
-Parkeren: betaald op straat.<br />
+                    <p className="text-muted-foreground leading-relaxed">OV: +- 10 min lopen vanaf station Hoorn. Parkeren: betaald op straat.
+Parkeren: betaald op straat of in nabije parkeergarage .<br />
                       Parkeren: betaald op straat of in parkeergarage scheepvaartkwartier.
                     </p>
                   </div>
