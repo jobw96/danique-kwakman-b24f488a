@@ -5,11 +5,9 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
-
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
 import daniqueRunning from '@/assets/danique-running.jpg';
-
 export interface BlogPost {
   id: string;
   slug: string;
@@ -20,42 +18,38 @@ export interface BlogPost {
   readTime: string;
   category: string;
 }
-
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    id: '1',
-    slug: 'hormoonbalans-5-signalen',
-    title: 'Hormoonbalans: 5 Signalen dat je hormonen uit balans zijn',
-    excerpt: 'Ontdek de meest voorkomende signalen die aangeven dat je hormonen mogelijk uit balans zijn en wat je eraan kunt doen.',
-    image: daniqueRelaxed,
-    date: '28 november 2024',
-    readTime: '6 min',
-    category: 'Hormonen'
-  },
-  {
-    id: '2',
-    slug: 'darmgezondheid-basis-welzijn',
-    title: 'Darmgezondheid: De basis van je welzijn',
-    excerpt: 'Waarom een gezonde darm de sleutel is tot meer energie, een sterker immuunsysteem en een betere mentale gezondheid.',
-    image: daniqueBeach,
-    date: '21 november 2024',
-    readTime: '8 min',
-    category: 'Darmgezondheid'
-  },
-  {
-    id: '3',
-    slug: 'natuurlijke-energie-boost',
-    title: 'Energie boost: Natuurlijke manieren om je energie te verhogen',
-    excerpt: 'Voel je je vaak moe en uitgeput? Ontdek bewezen natuurlijke methoden om je energieniveau te verhogen zonder cafeïne.',
-    image: daniqueRunning,
-    date: '14 november 2024',
-    readTime: '5 min',
-    category: 'Energie'
-  }
-];
-
+export const BLOG_POSTS: BlogPost[] = [{
+  id: '1',
+  slug: 'hormoonbalans-5-signalen',
+  title: 'Hormoonbalans: 5 Signalen dat je hormonen uit balans zijn',
+  excerpt: 'Ontdek de meest voorkomende signalen die aangeven dat je hormonen mogelijk uit balans zijn en wat je eraan kunt doen.',
+  image: daniqueRelaxed,
+  date: '28 november 2024',
+  readTime: '6 min',
+  category: 'Hormonen'
+}, {
+  id: '2',
+  slug: 'darmgezondheid-basis-welzijn',
+  title: 'Darmgezondheid: De basis van je welzijn',
+  excerpt: 'Waarom een gezonde darm de sleutel is tot meer energie, een sterker immuunsysteem en een betere mentale gezondheid.',
+  image: daniqueBeach,
+  date: '21 november 2024',
+  readTime: '8 min',
+  category: 'Darmgezondheid'
+}, {
+  id: '3',
+  slug: 'natuurlijke-energie-boost',
+  title: 'Energie boost: Natuurlijke manieren om je energie te verhogen',
+  excerpt: 'Voel je je vaak moe en uitgeput? Ontdek bewezen natuurlijke methoden om je energieniveau te verhogen zonder cafeïne.',
+  image: daniqueRunning,
+  date: '14 november 2024',
+  readTime: '5 min',
+  category: 'Energie'
+}];
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: {
+    opacity: 0
+  },
   visible: {
     opacity: 1,
     transition: {
@@ -64,9 +58,11 @@ const containerVariants = {
     }
   }
 };
-
 const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: {
+    opacity: 0,
+    y: 30
+  },
   visible: {
     opacity: 1,
     y: 0,
@@ -76,17 +72,15 @@ const cardVariants = {
     }
   }
 };
-
 const Blog: React.FC = () => {
-  return (
-    <div className="min-h-screen pt-24">
+  return <div className="min-h-screen pt-24">
       {/* Breadcrumbs */}
-      <Section className="py-6">
+      <Section className="py-0">
         <Breadcrumbs />
       </Section>
 
       {/* Hero Section */}
-      <Section className="bg-muted/30 py-10 md:py-12">
+      <Section className="bg-muted/30 py-10 md:py-12 pb-0">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3">
@@ -101,29 +95,18 @@ const Blog: React.FC = () => {
 
       {/* Blog Posts Grid */}
       <Section className="py-10 md:py-12">
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {BLOG_POSTS.map((post) => (
-            <motion.article
-              key={post.id}
-              variants={cardVariants}
-              className="group h-full"
-            >
+        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" animate="visible">
+          {BLOG_POSTS.map(post => <motion.article key={post.id} variants={cardVariants} className="group h-full">
               <Link to={`/blog/${post.slug}`} className="block h-full">
                 <div className="bg-card rounded-xl overflow-hidden border border-border/50 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
-                    <motion.img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.6, ease: "easeOut" }}
-                    />
+                    <motion.img src={post.image} alt={post.title} className="w-full h-full object-cover" whileHover={{
+                  scale: 1.05
+                }} transition={{
+                  duration: 0.6,
+                  ease: "easeOut"
+                }} />
                   </div>
 
                   {/* Content */}
@@ -158,12 +141,9 @@ const Blog: React.FC = () => {
                   </div>
                 </div>
               </Link>
-            </motion.article>
-          ))}
+            </motion.article>)}
         </motion.div>
       </Section>
-    </div>
-  );
+    </div>;
 };
-
 export default Blog;
