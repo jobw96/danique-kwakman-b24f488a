@@ -6,16 +6,16 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { BLOG_POSTS } from './Blog';
-
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
 import daniqueRunning from '@/assets/danique-running.jpg';
 
 // Blog content for each post
-const BLOG_CONTENT: Record<string, { content: React.ReactNode }> = {
+const BLOG_CONTENT: Record<string, {
+  content: React.ReactNode;
+}> = {
   'hormoonbalans-5-signalen': {
-    content: (
-      <>
+    content: <>
         <p className="lead">
           Hormonen spelen een cruciale rol in vrijwel elk aspect van je gezondheid. Ze reguleren je stofwisseling, stemming, slaap, voortplanting en nog veel meer. Wanneer je hormonen uit balans raken, kan dit een breed scala aan symptomen veroorzaken.
         </p>
@@ -53,11 +53,9 @@ const BLOG_CONTENT: Record<string, { content: React.ReactNode }> = {
           Wil je meer weten over hoe je je hormoonbalans kunt herstellen? Neem dan contact met me op voor een persoonlijk adviesgesprek.
         </p>
       </>
-    )
   },
   'darmgezondheid-basis-welzijn': {
-    content: (
-      <>
+    content: <>
         <p className="lead">
           Je darmen worden niet voor niets je 'tweede brein' genoemd. Een gezond microbioom is essentieel voor je algehele welzijn, van je immuunsysteem tot je mentale gezondheid.
         </p>
@@ -101,11 +99,9 @@ const BLOG_CONTENT: Record<string, { content: React.ReactNode }> = {
           Naast voeding spelen ook andere factoren een rol bij je darmgezondheid. Chronische stress, slaapgebrek en gebrek aan beweging kunnen je darmmicrobioom negatief beïnvloeden. Een holistische aanpak die al deze aspecten adresseert is essentieel.
         </p>
       </>
-    )
   },
   'natuurlijke-energie-boost': {
-    content: (
-      <>
+    content: <>
         <p className="lead">
           Vermoeidheid is een van de meest voorkomende klachten in onze moderne samenleving. Gelukkig zijn er veel natuurlijke manieren om je energie te verhogen zonder te grijpen naar eindeloze kopjes koffie.
         </p>
@@ -145,45 +141,44 @@ const BLOG_CONTENT: Record<string, { content: React.ReactNode }> = {
           Tekorten aan ijzer, vitamine B12, vitamine D en magnesium zijn veelvoorkomende oorzaken van vermoeidheid. Overweeg om je waarden te laten testen als je aanhoudende vermoeidheid ervaart.
         </p>
       </>
-    )
   }
 };
-
 const BlogPost: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-
+  const {
+    slug
+  } = useParams<{
+    slug: string;
+  }>();
   const post = BLOG_POSTS.find(p => p.slug === slug);
   const content = slug ? BLOG_CONTENT[slug] : null;
-
   if (!post || !content) {
     return <Navigate to="/blog" replace />;
   }
 
   // Get related posts (excluding current)
   const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 2);
-
-  return (
-    <div className="min-h-screen pt-24">
+  return <div className="min-h-screen pt-24">
       {/* Breadcrumbs */}
-      <Section className="py-6">
+      <Section className="py-0">
         <div className="max-w-4xl mx-auto">
-          <Breadcrumbs items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: post.title }
-          ]} />
+          <Breadcrumbs items={[{
+          label: 'Home',
+          href: '/'
+        }, {
+          label: 'Blog',
+          href: '/blog'
+        }, {
+          label: post.title
+        }]} />
         </div>
       </Section>
 
       {/* Content */}
-      <Section className="py-8 md:py-12">
+      <Section className="py-8 md:py-12 pb-0">
         <div className="max-w-4xl mx-auto">
           {/* Back Link */}
           <FadeIn>
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6 text-sm"
-            >
+            <Link to="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6 text-sm">
               <ArrowLeft className="w-4 h-4" />
               <span>Terug naar blog</span>
             </Link>
@@ -197,12 +192,16 @@ const BlogPost: React.FC = () => {
           </FadeIn>
 
           {/* Meta */}
-          <motion.div
-            className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm mb-8 pb-8 border-b border-border/50"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-          >
+          <motion.div className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm mb-8 pb-8 border-b border-border/50" initial={{
+          opacity: 0,
+          y: 10
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.4,
+          delay: 0.2
+        }}>
             <span className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" />
               {post.date}
@@ -211,28 +210,28 @@ const BlogPost: React.FC = () => {
               <Clock className="w-4 h-4" />
               {post.readTime} leestijd
             </span>
-            <button
-              className="flex items-center gap-1.5 hover:text-primary transition-colors ml-auto"
-              onClick={() => navigator.share?.({ title: post.title, url: window.location.href })}
-            >
+            <button className="flex items-center gap-1.5 hover:text-primary transition-colors ml-auto" onClick={() => navigator.share?.({
+            title: post.title,
+            url: window.location.href
+          })}>
               <Share2 className="w-4 h-4" />
               Delen
             </button>
           </motion.div>
 
           {/* Featured Image Card */}
-          <motion.div
-            className="rounded-2xl overflow-hidden shadow-md mb-12 border border-border/30"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
+          <motion.div className="rounded-2xl overflow-hidden shadow-md mb-12 border border-border/30" initial={{
+          opacity: 0,
+          y: 20
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.5,
+          delay: 0.3
+        }}>
             <div className="relative aspect-[21/9]">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-full object-cover"
-              />
+              <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>
@@ -240,12 +239,16 @@ const BlogPost: React.FC = () => {
 
       {/* Article Content */}
       <Section className="py-0 md:py-0">
-        <motion.article
-          className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-        >
+        <motion.article className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground" initial={{
+        opacity: 0,
+        y: 20
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.5,
+        delay: 0.3
+      }}>
           {content.content}
         </motion.article>
       </Section>
@@ -259,23 +262,23 @@ const BlogPost: React.FC = () => {
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {relatedPosts.map((relatedPost, index) => (
-              <motion.article
-                key={relatedPost.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="group"
-              >
+            {relatedPosts.map((relatedPost, index) => <motion.article key={relatedPost.id} initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.5,
+            delay: 0.1 * index
+          }} className="group">
                 <Link to={`/blog/${relatedPost.slug}`} className="flex gap-4 items-center">
                   <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
-                    <motion.img
-                      src={relatedPost.image}
-                      alt={relatedPost.title}
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.6 }}
-                    />
+                    <motion.img src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover" whileHover={{
+                  scale: 1.05
+                }} transition={{
+                  duration: 0.6
+                }} />
                   </div>
                   <div>
                     <h3 className="font-serif text-base text-foreground group-hover:text-primary transition-colors line-clamp-2">
@@ -284,13 +287,10 @@ const BlogPost: React.FC = () => {
                     <span className="text-muted-foreground text-xs mt-1">{relatedPost.readTime}</span>
                   </div>
                 </Link>
-              </motion.article>
-            ))}
+              </motion.article>)}
           </div>
         </div>
       </Section>
-    </div>
-  );
+    </div>;
 };
-
 export default BlogPost;
