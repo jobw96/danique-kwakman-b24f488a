@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.png';
 import logoGat from '@/assets/logo-gat.png';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -457,6 +458,7 @@ export const Layout: React.FC<LayoutProps> = ({
       </motion.header>
 
       <main className="flex-grow bg-background relative z-10">
+        <Breadcrumbs />
         {children}
       </main>
 
