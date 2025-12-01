@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { BLOG_POSTS } from './Blog';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
@@ -157,22 +156,7 @@ const BlogPost: React.FC = () => {
 
   // Get related posts (excluding current)
   const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 2);
-  return <div className="min-h-screen pt-24">
-      {/* Breadcrumbs */}
-      <Section className="py-0">
-        <div className="max-w-4xl mx-auto">
-          <Breadcrumbs items={[{
-          label: 'Home',
-          href: '/'
-        }, {
-          label: 'Blog',
-          href: '/blog'
-        }, {
-          label: post.title
-        }]} />
-        </div>
-      </Section>
-
+  return <div className="min-h-screen">
       {/* Content */}
       <Section className="py-8 md:py-12 pb-0">
         <div className="max-w-4xl mx-auto">

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
 import daniqueRunning from '@/assets/danique-running.jpg';
@@ -73,12 +72,7 @@ const cardVariants = {
   }
 };
 const Blog: React.FC = () => {
-  return <div className="min-h-screen pt-24">
-      {/* Breadcrumbs */}
-      <Section className="py-0">
-        <Breadcrumbs />
-      </Section>
-
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <Section className="bg-muted/30 py-10 md:py-12 pb-0">
         <div className="max-w-3xl mx-auto text-center">

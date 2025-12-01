@@ -1,15 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { ChevronRight, Home } from 'lucide-react';
-import {
-    Breadcrumb,
-    BreadcrumbList,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+import { motion } from 'framer-motion';
 
 export interface BreadcrumbItem {
     label: string;
@@ -21,32 +13,6 @@ interface BreadcrumbsProps {
     className?: string;
 }
 
-const containerVariants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.4,
-            ease: 'easeOut' as const,
-            staggerChildren: 0.1,
-            delayChildren: 0.1,
-        },
-    },
-};
-
-const itemVariants = {
-    hidden: { opacity: 0, x: -10 },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 0.3,
-            ease: 'easeOut' as const,
-        },
-    },
-};
-
 // Route name mappings
 const routeNames: Record<string, string> = {
     '/': 'Home',
@@ -56,8 +22,10 @@ const routeNames: Record<string, string> = {
     '/method': 'Methode',
     '/glowup': 'Glow Up Traject',
     '/darmtraject': 'Darmtraject',
+    '/reset-recharge': 'Reset & Recharge',
     '/ebook': 'E-book',
     '/podcast': 'Podcast',
+    '/recepten': 'Recepten',
     '/match-call': 'Match Call',
     '/faq': 'FAQ',
     '/privacy': 'Privacy',
@@ -83,7 +51,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
         // Build breadcrumbs from path segments
         pathSegments.forEach((segment, index) => {
             const path = '/' + pathSegments.slice(0, index + 1).join('/');
-            const label = routeNames[path] || segment.charAt(0).toUpperCase() + segment.slice(1);
+            const label = routeNames[path] || segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
 
             // Last item should not have href (current page)
             if (index === pathSegments.length - 1) {
@@ -96,45 +64,46 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
         return generatedItems;
     }, [items, location.pathname]);
 
-    // Don't show breadcrumbs on homepage
-    if (location.pathname === '/' && !items) {
+    // Don't show breadcrumbs on homepage or linktree
+    if (location.pathname === '/' || location.pathname === '/linktree') {
+        return null;
+    }
+
+    // Don't render if only one item (just the current page)
+    if (breadcrumbItems.length < 2 && !items) {
         return null;
     }
 
     return (
-        <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className={className}
+        <motion.nav
+            aria-label="Breadcrumb"
+            className={`container mx-auto px-6 pt-28 pb-4 ${className || ''}`}
+            initial={{ opacity: 0, y: -5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-            <Breadcrumb>
-                <BreadcrumbList>
-                    {breadcrumbItems.map((item, index) => (
-                        <React.Fragment key={index}>
-                            <motion.div variants={itemVariants}>
-                                <BreadcrumbItem>
-                                    {item.href ? (
-                                        <BreadcrumbLink asChild>
-                                            <Link to={item.href} className="flex items-center gap-1.5">
-                                                {index === 0 && <Home className="w-3.5 h-3.5" />}
-                                                <span>{item.label}</span>
-                                            </Link>
-                                        </BreadcrumbLink>
-                                    ) : (
-                                        <BreadcrumbPage>{item.label}</BreadcrumbPage>
-                                    )}
-                                </BreadcrumbItem>
-                            </motion.div>
-                            {index < breadcrumbItems.length - 1 && (
-                                <BreadcrumbSeparator>
-                                    <ChevronRight className="w-3.5 h-3.5" />
-                                </BreadcrumbSeparator>
-                            )}
-                        </React.Fragment>
-                    ))}
-                </BreadcrumbList>
-            </Breadcrumb>
-        </motion.div>
+            <ol className="flex items-center gap-1.5 text-sm text-muted-foreground flex-wrap">
+                {breadcrumbItems.map((item, index) => (
+                    <li key={index} className="flex items-center gap-1.5">
+                        {item.href ? (
+                            <Link 
+                                to={item.href} 
+                                className="flex items-center gap-1 hover:text-foreground transition-colors"
+                            >
+                                {index === 0 && <Home className="w-3.5 h-3.5" />}
+                                <span>{item.label}</span>
+                            </Link>
+                        ) : (
+                            <span className="text-foreground font-medium truncate max-w-[200px] md:max-w-none">
+                                {item.label}
+                            </span>
+                        )}
+                        {index < breadcrumbItems.length - 1 && (
+                            <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/50 flex-shrink-0" />
+                        )}
+                    </li>
+                ))}
+            </ol>
+        </motion.nav>
     );
 };
