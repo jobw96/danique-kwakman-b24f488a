@@ -17,6 +17,7 @@ import daniqueGlowup from '@/assets/danique-glowup.jpg';
 import daniqueDarm from '@/assets/danique-darm.jpg';
 import daniqueWalking from '@/assets/danique-walking.jpg';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import hetProces from '@/assets/het-proces.png';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
 const TREATMENTS = [{
@@ -54,7 +55,7 @@ const SERVICES: ServiceItem[] = [{
   id: 'prevention',
   title: 'Preventie',
   description: 'In plaats van steeds klachten te herstellen, leer je signalen van je lichaam herkennen en ernaar handelen. Zo bouw je een duurzame basis van gezondheid en vertrouwen, zodat je nieuwe way of life stabiel blijft en je lichaam je ondersteunt in plaats van tegenwerkt.',
-  image: daniqueWalking
+  image: daniqueRelaxed
 }];
 const STATS: Stat[] = [{
   value: '8',
