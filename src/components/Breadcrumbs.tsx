@@ -25,7 +25,7 @@ const routeNames: Record<string, string> = {
     '/ebook': 'E-book',
     '/podcast': 'Podcast',
     '/recepten': 'Recepten',
-    '/match-call': 'Match Call',
+    '/kennismaking': 'Kennismaking',
     '/faq': 'FAQ',
     '/privacy': 'Privacy',
     '/terms': 'Algemene Voorwaarden',

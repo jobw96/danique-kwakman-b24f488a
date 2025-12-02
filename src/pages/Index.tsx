@@ -16,7 +16,8 @@ import stap4Image from '@/assets/stap-4.png';
 import daniqueGlowup from '@/assets/danique-glowup.jpg';
 import daniqueDarm from '@/assets/danique-darm.jpg';
 import daniqueWalking from '@/assets/danique-walking.jpg';
-import daniqueRunning from '@/assets/danique-running.jpg';
+import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import hetProces from '@/assets/het-proces.png';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
 
@@ -51,12 +52,12 @@ const SERVICES: ServiceItem[] = [{
   id: 'energy',
   title: 'Energie',
   description: 'Moe wakker worden na een hele nacht, energie dipjes, brainfog of niet doorslapen? Dit zijn signalen dat je lichaam niet in balans is. In mijn coaching kijken we samen naar wat jouw lichaam écht nodig heeft. Zo krijg je je energie terug, voel je je veerkrachtiger, kun je je dagen weer vol vertrouwen en zonder weerstand beleven. En misschien wel het allerbelangrijkste: een leven waarbij jij het leven weer fantastisch vindt, zodat je naast je werk, gezin, sociale leven en sport nog energie en plezier over hebt voor jezelf!',
-  image: daniqueRunning
+  image: daniqueWalkingBeach
 }, {
   id: 'prevention',
   title: 'Preventie',
   description: 'In plaats van steeds klachten te herstellen, leer je signalen van je lichaam herkennen en ernaar handelen. Zo bouw je een duurzame basis van gezondheid en vertrouwen, zodat je nieuwe way of life stabiel blijft en je lichaam je ondersteunt in plaats van tegenwerkt.',
-  image: daniqueWalking
+  image: daniqueRelaxed
 }];
 
 const STATS: Stat[] = [{
@@ -228,6 +229,7 @@ const Index = () => {
   }, []);
 
   return <div className="min-h-screen">
+<<<<<<< HEAD
     <section className="relative h-screen flex items-center overflow-hidden bg-foreground">
       <div className="absolute inset-0 z-0">
         <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
@@ -245,6 +247,34 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
               <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
+=======
+      <section ref={heroRef} className="relative h-screen flex items-center overflow-hidden bg-foreground">
+        <motion.div className="absolute inset-0 z-0" style={{
+        y: heroY,
+        scale: heroScale,
+        opacity: heroOpacity
+      }}>
+          <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
+          <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" />
+        </motion.div>
+        <div className="relative z-10 container mx-auto px-6">
+          <FadeIn>
+            <div className="max-w-3xl text-center md:text-left">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 text-white leading-[1.1]">
+                Optimaliseer je <br />Hormoonbalans <span className="text-secondary">&</span> <br />Darmgezondheid voor <br />Meer Energie
+              </h1>
+              <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
+                Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <Link to="/kennismaking">
+                  <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
+                </Link>
+                <Link to="/method">
+                  <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
+                </Link>
+              </div>
+>>>>>>> 9e41a8c07e5746f963606472b2599a8530e87edf
             </div>
           </div>
         </FadeIn>
