@@ -16,7 +16,7 @@ import stap4Image from '@/assets/stap-4.png';
 import daniqueGlowup from '@/assets/danique-glowup.jpg';
 import daniqueDarm from '@/assets/danique-darm.jpg';
 import daniqueWalking from '@/assets/danique-walking.jpg';
-import daniqueRunning from '@/assets/danique-running.jpg';
+import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
 import hetProces from '@/assets/het-proces.png';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
 const TREATMENTS = [{
@@ -49,7 +49,7 @@ const SERVICES: ServiceItem[] = [{
   id: 'energy',
   title: 'Energie',
   description: 'Moe wakker worden na een hele nacht, energie dipjes, brainfog of niet doorslapen? Dit zijn signalen dat je lichaam niet in balans is. In mijn coaching kijken we samen naar wat jouw lichaam écht nodig heeft. Zo krijg je je energie terug, voel je je veerkrachtiger, kun je je dagen weer vol vertrouwen en zonder weerstand beleven. En misschien wel het allerbelangrijkste: een leven waarbij jij het leven weer fantastisch vindt, zodat je naast je werk, gezin, sociale leven en sport nog energie en plezier over hebt voor jezelf!',
-  image: daniqueRunning
+  image: daniqueWalkingBeach
 }, {
   id: 'prevention',
   title: 'Preventie',
@@ -248,8 +248,12 @@ const Index = () => {
                 Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-                <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
+                <Link to="/match-call">
+                  <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
+                </Link>
+                <Link to="/methode">
+                  <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
+                </Link>
               </div>
             </div>
           </FadeIn>
