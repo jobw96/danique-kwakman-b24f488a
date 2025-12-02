@@ -83,7 +83,7 @@ export const Layout: React.FC<LayoutProps> = ({
     name: 'Gratis',
     subItems: [{
       name: 'Kennismakingsgesprek',
-      href: '/match-call',
+      href: '/kennismaking',
       description: '',
       icon: Phone
     }, {
