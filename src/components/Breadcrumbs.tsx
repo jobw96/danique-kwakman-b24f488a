@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronRight, Home } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export interface BreadcrumbItem {
@@ -82,24 +81,23 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-            <ol className="flex items-center gap-1.5 text-sm text-muted-foreground flex-wrap">
+            <ol className="flex items-center gap-2 text-sm flex-wrap">
                 {breadcrumbItems.map((item, index) => (
-                    <li key={index} className="flex items-center gap-1.5">
+                    <li key={index} className="flex items-center gap-2">
                         {item.href ? (
-                            <Link 
-                                to={item.href} 
-                                className="flex items-center gap-1 hover:text-foreground transition-colors"
+                            <Link
+                                to={item.href}
+                                className="text-gray-500 hover:text-gray-700 transition-colors"
                             >
-                                {index === 0 && <Home className="w-3.5 h-3.5" />}
-                                <span>{item.label}</span>
+                                {item.label}
                             </Link>
                         ) : (
-                            <span className="text-foreground font-medium truncate max-w-[200px] md:max-w-none">
+                            <span className="text-gray-900 font-normal">
                                 {item.label}
                             </span>
                         )}
                         {index < breadcrumbItems.length - 1 && (
-                            <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/50 flex-shrink-0" />
+                            <span className="text-gray-400">/</span>
                         )}
                     </li>
                 ))}
