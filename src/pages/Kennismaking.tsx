@@ -8,14 +8,14 @@ const SectionTag = ({
 }: {
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
-const MatchCall = () => {
+const Kennismaking = () => {
   return <div className="min-h-screen">
       <Section className="pt-4 min-h-[80vh] flex items-center bg-background">
         <div className="flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <FadeIn>
               
-              <h1 className="font-serif text-4xl md:text-5xl mb-6 text-foreground">Gratis kennismakingsgesprek<span className="text-secondary">&</span> kennismakingsgesprek
+              <h1 className="font-serif text-4xl md:text-5xl mb-6 text-foreground">Gratis kennismaking
               </h1>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Ben je benieuwd wat ik voor jou kan betekenen of twijfel je welk traject het beste bij jou past?
@@ -42,4 +42,4 @@ const MatchCall = () => {
       </Section>
     </div>;
 };
-export default MatchCall;
+export default Kennismaking;
