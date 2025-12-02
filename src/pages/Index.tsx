@@ -229,7 +229,6 @@ const Index = () => {
   }, []);
 
   return <div className="min-h-screen">
-<<<<<<< HEAD
     <section className="relative h-screen flex items-center overflow-hidden bg-foreground">
       <div className="absolute inset-0 z-0">
         <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
@@ -245,36 +244,12 @@ const Index = () => {
               Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-              <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
-=======
-      <section ref={heroRef} className="relative h-screen flex items-center overflow-hidden bg-foreground">
-        <motion.div className="absolute inset-0 z-0" style={{
-        y: heroY,
-        scale: heroScale,
-        opacity: heroOpacity
-      }}>
-          <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
-          <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" />
-        </motion.div>
-        <div className="relative z-10 container mx-auto px-6">
-          <FadeIn>
-            <div className="max-w-3xl text-center md:text-left">
-              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 text-white leading-[1.1]">
-                Optimaliseer je <br />Hormoonbalans <span className="text-secondary">&</span> <br />Darmgezondheid voor <br />Meer Energie
-              </h1>
-              <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
-                Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Link to="/kennismaking">
-                  <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-                </Link>
-                <Link to="/method">
-                  <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
-                </Link>
-              </div>
->>>>>>> 9e41a8c07e5746f963606472b2599a8530e87edf
+              <Link to="/kennismaking">
+                <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
+              </Link>
+              <Link to="/method">
+                <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
+              </Link>
             </div>
           </div>
         </FadeIn>
@@ -288,8 +263,6 @@ const Index = () => {
         <ArrowRight className="w-6 h-6 rotate-90" />
       </motion.div>
     </section>
-
-
 
     <Section id="services">
       <div className="text-center mb-16">
