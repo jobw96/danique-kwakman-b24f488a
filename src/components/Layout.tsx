@@ -48,10 +48,12 @@ export const Layout: React.FC<LayoutProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top on route change
+  // Scroll to top on route change (but not when there's a hash)
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]);
   const scrollToTop = () => {
     const start = window.scrollY;
     const startTime = performance.now();
