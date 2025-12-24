@@ -48,9 +48,17 @@ export const Layout: React.FC<LayoutProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top on route change (but not when there's a hash)
+  // Scroll to top on route change, or smooth scroll to hash
   useEffect(() => {
-    if (!location.hash) {
+    if (location.hash) {
+      const anchor = location.hash.replace('#', '');
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
       window.scrollTo(0, 0);
     }
   }, [location.pathname, location.hash]);
