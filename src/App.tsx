@@ -26,6 +26,7 @@ import NotFound from "./pages/NotFound";
 import Linktree from "./pages/Linktree";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Behandelingen from "./pages/Behandelingen";
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<PageTransition><Index /></PageTransition>} />
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/method" element={<PageTransition><Method /></PageTransition>} />
+        <Route path="/behandelingen" element={<PageTransition><Behandelingen /></PageTransition>} />
         <Route path="/glowup" element={<PageTransition><GlowUp /></PageTransition>} />
         <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
         <Route path="/reset-recharge" element={<PageTransition><ResetRecharge /></PageTransition>} />

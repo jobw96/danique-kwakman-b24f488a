@@ -112,7 +112,7 @@ export const Layout: React.FC<LayoutProps> = ({
     name: 'Aanbod',
     subItems: [{
     name: 'Behandelingen',
-      href: '/#behandelingen',
+      href: '/behandelingen',
       description: '',
       icon: LayoutGrid
     }, {
