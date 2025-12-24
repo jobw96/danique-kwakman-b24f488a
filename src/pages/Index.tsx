@@ -276,7 +276,7 @@ const Index = () => {
       <ServiceAccordion />
     </Section>
 
-    <Section className="bg-background">
+    <Section id="behandelingen" className="bg-background">
       <div className="text-center mb-16">
         <FadeIn>
           <SectionTag text="Aanbod" />
