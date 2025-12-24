@@ -43,8 +43,8 @@ const Behandelingen = () => {
       <Section className="pt-4 bg-background">
         <div className="text-center mb-16">
           <FadeIn>
-            <SectionTag text="Aanbod" />
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Behandelingen</h1>
+          <SectionTag text="Trajecten" />
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h1>
           </FadeIn>
         </div>
         
