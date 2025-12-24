@@ -39,7 +39,7 @@ const routeNames: Record<string, string> = {
     '/contact': 'Contact',
     '/blog': 'Blog',
     '/method': 'Methode',
-    '/behandelingen': 'Behandelingen',
+    '/behandelingen': 'Aanbod',
     '/glowup': 'Glow Up Traject',
     '/darmtraject': 'Darmtraject',
     '/reset-recharge': 'Reset & Recharge',

@@ -279,8 +279,8 @@ const Index = () => {
     <Section id="behandelingen" className="bg-background">
       <div className="text-center mb-16">
         <FadeIn>
-          <SectionTag text="Aanbod" />
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Behandelingen</h2>
+          <SectionTag text="Trajecten" />
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h2>
         </FadeIn>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

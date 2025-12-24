@@ -109,9 +109,9 @@ export const Layout: React.FC<LayoutProps> = ({
       icon: UtensilsCrossed
     }]
   }, {
-    name: 'Aanbod',
+    name: 'Aanbod Trajecten',
     subItems: [{
-    name: 'Behandelingen',
+    name: 'Aanbod',
       href: '/behandelingen',
       description: '',
       icon: LayoutGrid
