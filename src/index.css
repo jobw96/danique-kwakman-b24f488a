@@ -521,6 +521,70 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
 }
 
 /* ============================================
+   Phone field - intl-tel-input dropdown fix
+   Hide country dropdown by default, only show on click
+   ============================================ */
+.contact-form-29 .iti,
+.contact-form-29 .intl-tel-input {
+  width: 100% !important;
+}
+
+/* Country dropdown - hidden by default */
+.contact-form-29 .iti__country-list,
+.contact-form-29 .country-list {
+  display: none !important;
+  position: absolute !important;
+  z-index: 9999 !important;
+  background: hsl(0 0% 100%) !important;
+  border: 1px solid hsl(44 38% 76%) !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  max-height: 200px !important;
+  overflow-y: auto !important;
+}
+
+/* Show dropdown only when active/open */
+.contact-form-29 .iti--container .iti__country-list,
+.contact-form-29 .iti.iti--show-dropdown .iti__country-list,
+.contact-form-29 .intl-tel-input.open .country-list,
+.contact-form-29 .iti__country-list.iti__show {
+  display: block !important;
+}
+
+/* Flag button styling */
+.contact-form-29 .iti__flag-container,
+.contact-form-29 .iti__selected-flag,
+.contact-form-29 .flag-container,
+.contact-form-29 .selected-flag {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 0.5rem !important;
+  cursor: pointer !important;
+}
+
+/* Country list items */
+.contact-form-29 .iti__country,
+.contact-form-29 .country {
+  padding: 0.5rem 0.75rem !important;
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-size: 0.875rem !important;
+  color: hsl(60 4% 11%) !important;
+  cursor: pointer !important;
+}
+
+.contact-form-29 .iti__country:hover,
+.contact-form-29 .country:hover,
+.contact-form-29 .iti__country--highlight {
+  background: hsl(42 56% 97%) !important;
+}
+
+/* Phone input field with flag */
+.contact-form-29 .iti input,
+.contact-form-29 .intl-tel-input input {
+  padding-left: 3rem !important;
+}
+
+/* ============================================
    MOBILE RESPONSIVE - Form 29
    Larger touch targets, full-width elements
    ============================================ */
