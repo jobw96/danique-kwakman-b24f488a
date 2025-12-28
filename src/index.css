@@ -263,10 +263,12 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
    ============================================ */
 
 /* Container wrapper - show form */
-.contact-form-29,
-.contact-form-29 * {
-  display: revert !important;
+.contact-form-29 {
+  display: block !important;
 }
+
+/* NOTE: Do NOT force "display: revert" on all descendants.
+   It can unintentionally reveal hidden widgets (e.g. phone country dropdown). */
 
 .contact-form-29 ._form_29,
 .contact-form-29 [class*="_form"] {
@@ -543,11 +545,10 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
   overflow-y: auto !important;
 }
 
-/* Show dropdown only when active/open */
-.contact-form-29 .iti--container .iti__country-list,
+/* Show dropdown only when the widget explicitly sets "show" state */
 .contact-form-29 .iti.iti--show-dropdown .iti__country-list,
-.contact-form-29 .intl-tel-input.open .country-list,
-.contact-form-29 .iti__country-list.iti__show {
+.contact-form-29 .iti__country-list.iti__show,
+.contact-form-29 .country-list.show {
   display: block !important;
 }
 
