@@ -244,8 +244,8 @@ body {
 
 /* Hide ALL ActiveCampaign forms by default */
 ._form_1,
-[id^="_form_"]:not(.newsletter-form-wrapper *),
-div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
+[id^="_form_"]:not(.newsletter-form-wrapper *):not(.contact-form-29 *),
+div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact-form-29 *) {
   display: none !important;
 }
 
@@ -254,6 +254,324 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27) {
 #ac-form-container [id^="_form_"],
 #ac-form-container div[class*="_form_"] {
   display: block !important;
+}
+
+/* ============================================
+   CONTACT FORM 29 - ActiveCampaign Override
+   Matches design system: Neulis Sans, Aesthet Nova
+   Colors from CSS variables
+   ============================================ */
+
+/* Container wrapper - show form */
+.contact-form-29,
+.contact-form-29 * {
+  display: revert !important;
+}
+
+.contact-form-29 ._form_29,
+.contact-form-29 [class*="_form"] {
+  display: block !important;
+  background: transparent !important;
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+/* Hide ActiveCampaign branding and default title */
+.contact-form-29 ._form-branding,
+.contact-form-29 [class*="branding"],
+.contact-form-29 a[href*="activecampaign"],
+.contact-form-29 ._form-title {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Form content container */
+.contact-form-29 ._form-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* Field wrapper spacing */
+.contact-form-29 ._field-wrapper,
+.contact-form-29 ._form_element {
+  margin-bottom: 0 !important;
+}
+
+/* Labels - match design system */
+.contact-form-29 label,
+.contact-form-29 ._form-label {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  color: hsl(60 4% 11%) !important; /* --foreground */
+  display: block !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Required field asterisk */
+.contact-form-29 ._form-label._form_required::after,
+.contact-form-29 label span[style*="color: red"],
+.contact-form-29 ._required {
+  color: hsl(0 84% 60%) !important; /* --destructive */
+}
+
+/* Input fields - text, email, tel */
+.contact-form-29 input[type="text"],
+.contact-form-29 input[type="email"],
+.contact-form-29 input[type="tel"],
+.contact-form-29 input[type="date"],
+.contact-form-29 input[type="number"] {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  background-color: hsl(0 0% 100%) !important; /* white */
+  border: 1px solid hsl(44 38% 76%) !important; /* --border / --input */
+  border-radius: 0.5rem !important; /* --radius */
+  padding: 0.75rem 1rem !important;
+  color: hsl(60 4% 11%) !important; /* --foreground */
+  width: 100% !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+/* Textarea */
+.contact-form-29 textarea {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+  background-color: hsl(0 0% 100%) !important;
+  border: 1px solid hsl(44 38% 76%) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1rem !important;
+  color: hsl(60 4% 11%) !important;
+  width: 100% !important;
+  min-height: 120px !important;
+  box-sizing: border-box !important;
+  resize: vertical !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Select dropdown */
+.contact-form-29 select {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 0.875rem !important;
+  background-color: hsl(0 0% 100%) !important;
+  border: 1px solid hsl(44 38% 76%) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1rem !important;
+  color: hsl(60 4% 11%) !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Placeholder text */
+.contact-form-29 input::placeholder,
+.contact-form-29 textarea::placeholder {
+  color: hsl(0 0% 46% / 0.7) !important; /* --muted-foreground */
+}
+
+/* Focus states - primary ring */
+.contact-form-29 input[type="text"]:focus,
+.contact-form-29 input[type="email"]:focus,
+.contact-form-29 input[type="tel"]:focus,
+.contact-form-29 input[type="date"]:focus,
+.contact-form-29 input[type="number"]:focus,
+.contact-form-29 textarea:focus,
+.contact-form-29 select:focus {
+  outline: none !important;
+  border-color: hsl(220 27% 69%) !important; /* --primary / --ring */
+  box-shadow: 0 0 0 2px hsl(220 27% 69% / 0.2) !important;
+}
+
+/* Hover states */
+.contact-form-29 input[type="text"]:hover,
+.contact-form-29 input[type="email"]:hover,
+.contact-form-29 input[type="tel"]:hover,
+.contact-form-29 textarea:hover,
+.contact-form-29 select:hover {
+  border-color: hsl(220 27% 69% / 0.6) !important;
+}
+
+/* Checkbox styling */
+.contact-form-29 input[type="checkbox"] {
+  width: 1rem !important;
+  height: 1rem !important;
+  border: 1px solid hsl(220 27% 69%) !important;
+  border-radius: 0.25rem !important;
+  margin-right: 0.5rem !important;
+  cursor: pointer !important;
+  accent-color: hsl(220 27% 69%) !important;
+}
+
+.contact-form-29 input[type="checkbox"]:checked {
+  background-color: hsl(220 27% 69%) !important;
+  border-color: hsl(220 27% 69%) !important;
+}
+
+/* Radio button styling */
+.contact-form-29 input[type="radio"] {
+  width: 1rem !important;
+  height: 1rem !important;
+  border: 1px solid hsl(220 27% 69%) !important;
+  margin-right: 0.5rem !important;
+  cursor: pointer !important;
+  accent-color: hsl(220 27% 69%) !important;
+}
+
+/* Submit button - primary style */
+.contact-form-29 ._submit,
+.contact-form-29 button[type="submit"],
+.contact-form-29 input[type="submit"] {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  background-color: hsl(220 27% 69%) !important; /* --primary */
+  color: hsl(0 0% 100%) !important; /* --primary-foreground */
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  min-height: 2.75rem !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease !important;
+}
+
+/* Button hover state */
+.contact-form-29 ._submit:hover,
+.contact-form-29 button[type="submit"]:hover,
+.contact-form-29 input[type="submit"]:hover {
+  background-color: hsl(220 27% 60%) !important; /* darker primary */
+  box-shadow: 0 4px 12px hsl(220 27% 69% / 0.3) !important;
+}
+
+/* Button focus state */
+.contact-form-29 ._submit:focus,
+.contact-form-29 button[type="submit"]:focus,
+.contact-form-29 input[type="submit"]:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px hsl(220 27% 69% / 0.4) !important;
+}
+
+/* Button active state */
+.contact-form-29 ._submit:active,
+.contact-form-29 button[type="submit"]:active,
+.contact-form-29 input[type="submit"]:active {
+  transform: scale(0.98) !important;
+}
+
+/* Error messages */
+.contact-form-29 ._error,
+.contact-form-29 ._error-inner,
+.contact-form-29 [class*="error"] {
+  color: hsl(0 84% 60%) !important; /* --destructive */
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-size: 0.75rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Error input border */
+.contact-form-29 input.error,
+.contact-form-29 textarea.error,
+.contact-form-29 input._has-error,
+.contact-form-29 textarea._has-error {
+  border-color: hsl(0 84% 60%) !important;
+}
+
+/* Thank you message after submission */
+.contact-form-29 ._form-thank-you {
+  font-family: 'Neulis Sans', sans-serif !important;
+  font-weight: 300 !important;
+  color: hsl(60 4% 11%) !important;
+  text-align: center !important;
+  padding: 2rem !important;
+  background: hsl(42 56% 97%) !important; /* --background */
+  border-radius: 0.5rem !important;
+}
+
+/* Row layout for name fields if applicable */
+.contact-form-29 ._row {
+  display: flex !important;
+  gap: 1rem !important;
+}
+
+.contact-form-29 ._row > * {
+  flex: 1 !important;
+}
+
+/* Remove any default wrapper backgrounds */
+.contact-form-29 ._form-wrapper,
+.contact-form-29 ._form-inner,
+.contact-form-29 form {
+  background: transparent !important;
+  max-width: 100% !important;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE - Form 29
+   Larger touch targets, full-width elements
+   ============================================ */
+@media (max-width: 667px) {
+  /* Inputs and buttons full width with larger touch targets */
+  .contact-form-29 input[type="text"],
+  .contact-form-29 input[type="email"],
+  .contact-form-29 input[type="tel"],
+  .contact-form-29 input[type="date"],
+  .contact-form-29 input[type="number"],
+  .contact-form-29 textarea,
+  .contact-form-29 select {
+    width: 100% !important;
+    padding: 1rem !important; /* larger padding for touch */
+    font-size: 1rem !important; /* prevent iOS zoom */
+    min-height: 3rem !important;
+  }
+
+  .contact-form-29 ._submit,
+  .contact-form-29 button[type="submit"],
+  .contact-form-29 input[type="submit"] {
+    width: 100% !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1rem !important;
+    min-height: 3.25rem !important;
+  }
+
+  /* Checkbox and radio larger touch target */
+  .contact-form-29 input[type="checkbox"],
+  .contact-form-29 input[type="radio"] {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  /* Stack row elements on mobile */
+  .contact-form-29 ._row {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Adjust form gap for mobile */
+  .contact-form-29 ._form-content {
+    gap: 1.25rem !important;
+  }
+
+  /* Labels slightly larger on mobile */
+  .contact-form-29 label,
+  .contact-form-29 ._form-label {
+    font-size: 0.9375rem !important;
+  }
 }
 
 /* Newsletter form wrapper - show all form content */

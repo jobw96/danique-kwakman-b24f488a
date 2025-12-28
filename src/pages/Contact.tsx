@@ -1,73 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Button } from '@/components/ui/button';
-import { useForm, Controller } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { useToast } from '@/hooks/use-toast';
-import contactBackground from '@/assets/contact-background.jpg';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
-const contactFormSchema = z.object({
-  firstName: z.string().trim().min(1, {
-    message: "Voornaam is verplicht"
-  }).max(50, {
-    message: "Voornaam mag maximaal 50 karakters zijn"
-  }),
-  lastName: z.string().trim().min(1, {
-    message: "Achternaam is verplicht"
-  }).max(50, {
-    message: "Achternaam mag maximaal 50 karakters zijn"
-  }),
-  email: z.string().trim().email({
-    message: "Ongeldig e-mailadres"
-  }).max(255, {
-    message: "E-mail mag maximaal 255 karakters zijn"
-  }),
-  phone: z.string().optional(),
-  message: z.string().trim().min(1, {
-    message: "Bericht is verplicht"
-  }).max(1000, {
-    message: "Bericht mag maximaal 1000 karakters zijn"
-  }),
-  privacy: z.boolean().refine(val => val === true, {
-    message: "Je moet akkoord gaan met de algemene voorwaarden en privacybeleid"
-  })
-});
-type ContactFormData = z.infer<typeof contactFormSchema>;
+
 const SectionTag = ({
   text
 }: {
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const Contact = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    control,
-    formState: {
-      errors
-    }
-  } = useForm<ContactFormData>({
-    resolver: zodResolver(contactFormSchema),
-    mode: 'onBlur'
-  });
-  const {
-    toast
-  } = useToast();
-  const onSubmit = (data: ContactFormData) => {
-    toast({
-      title: "Bericht verzonden!",
-      description: "We nemen zo snel mogelijk contact met je op."
-    });
-    reset();
-  };
+  useEffect(() => {
+    // Load ActiveCampaign form script
+    const script = document.createElement('script');
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=29';
+    script.charset = 'utf-8';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      document.body.removeChild(script);
+    };
+  }, []);
   return <div className="min-h-screen">
       {/* Main Content Section */}
       <Section className="pt-4">
@@ -96,59 +51,16 @@ const Contact = () => {
                 </div>
               </FadeIn>
 
-              {/* Contact Form */}
+              {/* Contact Form - ActiveCampaign Embed */}
               <FadeIn delay={0.1}>
                 <div className="space-y-6">
                   <h3 className="font-serif text-2xl text-foreground">
                     Of stel mij een vraag via het contactformulier
                   </h3>
-                  <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label>Voornaam <span className="text-destructive">*</span></Label>
-                        <Input {...register("firstName")} className={errors.firstName ? 'border-destructive' : ''} />
-                        {errors.firstName && <p className="text-xs text-destructive">{errors.firstName.message}</p>}
-                      </div>
-                      <div className="space-y-2">
-                        <Label>Achternaam <span className="text-destructive">*</span></Label>
-                        <Input {...register("lastName")} className={errors.lastName ? 'border-destructive' : ''} />
-                        {errors.lastName && <p className="text-xs text-destructive">{errors.lastName.message}</p>}
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label>E-mail <span className="text-destructive">*</span></Label>
-                      <Input type="email" {...register("email")} className={errors.email ? 'border-destructive' : ''} />
-                      {errors.email && <p className="text-xs text-destructive">{errors.email.message}</p>}
-                    </div>
-                    <div className="space-y-2">
-                      <Label>Telefoon</Label>
-                      <Input type="tel" {...register("phone")} />
-                    </div>
-                    <div className="space-y-2">
-                      <Label>Bericht <span className="text-destructive">*</span></Label>
-                      <Textarea {...register("message")} className={errors.message ? 'border-destructive' : ''} />
-                      {errors.message && <p className="text-xs text-destructive">{errors.message.message}</p>}
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex items-start space-x-2">
-                        <Controller name="privacy" control={control} render={({
-                        field
-                      }) => <Checkbox id="privacy" checked={field.value} onCheckedChange={field.onChange} className="mt-1" />} />
-                        <Label htmlFor="privacy" className="text-sm leading-relaxed">
-                          Ik ga akkoord met de{' '}
-                          <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                            algemene voorwaarden
-                          </a>
-                          {' '}en het{' '}
-                          <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                            privacybeleid
-                          </a>
-                        </Label>
-                      </div>
-                      {errors.privacy && <p className="text-xs text-destructive">{errors.privacy.message}</p>}
-                    </div>
-                    <Button type="submit" className="w-full">Verstuur bericht</Button>
-                  </form>
+                  {/* ActiveCampaign Form Container */}
+                  <div className="contact-form-29">
+                    <div className="_form_29"></div>
+                  </div>
                 </div>
               </FadeIn>
             </div>
