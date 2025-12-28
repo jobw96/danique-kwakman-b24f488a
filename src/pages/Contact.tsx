@@ -11,7 +11,11 @@ const SectionTag = ({
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const Contact = () => {
   useEffect(() => {
-    // Load ActiveCampaign form script
+    // Remove any existing AC scripts first
+    const existingScripts = document.querySelectorAll('script[src*="activehosted.com/f/embed"]');
+    existingScripts.forEach(s => s.remove());
+    
+    // Load fresh ActiveCampaign form script
     const script = document.createElement('script');
     script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=29';
     script.charset = 'utf-8';
@@ -20,7 +24,9 @@ const Contact = () => {
 
     return () => {
       // Cleanup script on unmount
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
   return <div className="min-h-screen">
