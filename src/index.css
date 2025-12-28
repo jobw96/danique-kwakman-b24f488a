@@ -263,12 +263,10 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
    ============================================ */
 
 /* Container wrapper - show form */
-.contact-form-29 {
-  display: block !important;
+.contact-form-29,
+.contact-form-29 * {
+  display: revert !important;
 }
-
-/* NOTE: Do NOT force "display: revert" on all descendants.
-   It can unintentionally reveal hidden widgets (e.g. phone country dropdown). */
 
 .contact-form-29 ._form_29,
 .contact-form-29 [class*="_form"] {
@@ -520,89 +518,6 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
 .contact-form-29 form {
   background: transparent !important;
   max-width: 100% !important;
-}
-
-/* ============================================
-   Phone field - intl-tel-input dropdown fix
-   Hide country dropdown by default, only show on click
-   ============================================ */
-.contact-form-29 .iti,
-.contact-form-29 .intl-tel-input {
-  width: 100% !important;
-}
-
-/* Country dropdown - hidden by default */
-/* HARD RESET: Force ALL dropdown variants hidden by default */
-.contact-form-29 .iti__country-list,
-.contact-form-29 .country-list,
-.contact-form-29 [class*="country-list"],
-.contact-form-29 .iti__dropdown-content,
-.contact-form-29 ul.iti__country-list {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  position: absolute !important;
-  z-index: 9999 !important;
-  background: hsl(0 0% 100%) !important;
-  border: 1px solid hsl(44 38% 76%) !important;
-  border-radius: 0.5rem !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-  max-height: 200px !important;
-  overflow-y: auto !important;
-}
-
-/* Show dropdown ONLY when explicitly opened by user click */
-.contact-form-29 .iti--show-dropdown .iti__country-list,
-.contact-form-29 .iti--show-dropdown [class*="country-list"],
-.contact-form-29 .iti.iti--show-dropdown ul.iti__country-list,
-.contact-form-29 .intl-tel-input.open .country-list,
-.contact-form-29 .iti__country-list[style*="display: block"],
-.contact-form-29 .country-list.open {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-}
-
-/* Hide any empty/ghost buttons from ActiveCampaign */
-.contact-form-29 button:empty,
-.contact-form-29 ._button-wrapper button:not([type="submit"]):empty,
-.contact-form-29 ._form_element button:not(._submit):empty {
-  display: none !important;
-}
-
-/* Flag button styling */
-.contact-form-29 .iti__flag-container,
-.contact-form-29 .iti__selected-flag,
-.contact-form-29 .flag-container,
-.contact-form-29 .selected-flag {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 0.5rem !important;
-  cursor: pointer !important;
-}
-
-/* Country list items */
-.contact-form-29 .iti__country,
-.contact-form-29 .country {
-  padding: 0.5rem 0.75rem !important;
-  font-family: 'Neulis Sans', sans-serif !important;
-  font-size: 0.875rem !important;
-  color: hsl(60 4% 11%) !important;
-  cursor: pointer !important;
-}
-
-.contact-form-29 .iti__country:hover,
-.contact-form-29 .country:hover,
-.contact-form-29 .iti__country--highlight {
-  background: hsl(42 56% 97%) !important;
-}
-
-/* Phone input field with flag */
-.contact-form-29 .iti input,
-.contact-form-29 .intl-tel-input input {
-  padding-left: 3rem !important;
 }
 
 /* ============================================
