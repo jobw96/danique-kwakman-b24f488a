@@ -574,6 +574,86 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
   }
 }
 
+/* ==========================================================================
+   INTL-TEL-INPUT (ITI) OVERRIDES - Telefoon dropdown vereenvoudigen
+   Verbergt de internationale vlaggen dropdown volledig
+   ========================================================================== */
+
+/* Verberg de volledige vlaggen container (dropdown trigger) */
+.contact-form-29 .iti__flag-container,
+.contact-form-29 .iti__selected-flag,
+._form_29 .iti__flag-container,
+._form_29 .iti__selected-flag,
+#_form_29_ .iti__flag-container,
+#_form_29_ .iti__selected-flag {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* Verberg de country dropdown lijst volledig */
+.contact-form-29 .iti__country-list,
+.contact-form-29 .iti--container,
+._form_29 .iti__country-list,
+._form_29 .iti--container,
+#_form_29_ .iti__country-list,
+#_form_29_ .iti--container,
+.iti--container,
+.iti__country-list {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Reset padding op het telefoon input veld (geen ruimte voor vlag nodig) */
+.contact-form-29 .iti input[type="tel"],
+.contact-form-29 input[name="phone"],
+._form_29 .iti input[type="tel"],
+._form_29 input[name="phone"],
+#_form_29_ .iti input[type="tel"],
+#_form_29_ input[name="phone"] {
+  padding-left: 16px !important; /* Normale padding zoals andere inputs */
+  width: 100% !important;
+}
+
+/* Zorg dat de iti wrapper geen extra breedte/offset toevoegt */
+.contact-form-29 .iti,
+._form_29 .iti,
+#_form_29_ .iti {
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Verberg eventuele dropdown arrow/chevron */
+.contact-form-29 .iti__arrow,
+._form_29 .iti__arrow,
+#_form_29_ .iti__arrow {
+  display: none !important;
+}
+
+/* Verberg de search bar in de dropdown (backup) */
+.contact-form-29 .iti__search-input,
+._form_29 .iti__search-input,
+#_form_29_ .iti__search-input {
+  display: none !important;
+}
+
+/* Verberg dial code als die apart wordt getoond */
+.contact-form-29 .iti__selected-dial-code,
+._form_29 .iti__selected-dial-code,
+#_form_29_ .iti__selected-dial-code {
+  display: none !important;
+}
+
+/* EINDE ITI Overrides */
+
 /* Newsletter form wrapper - show all form content */
 .newsletter-form-wrapper,
 .newsletter-form-wrapper * {
