@@ -532,9 +532,16 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
 }
 
 /* Country dropdown - hidden by default */
+/* HARD RESET: Force ALL dropdown variants hidden by default */
 .contact-form-29 .iti__country-list,
-.contact-form-29 .country-list {
+.contact-form-29 .country-list,
+.contact-form-29 [class*="country-list"],
+.contact-form-29 .iti__dropdown-content,
+.contact-form-29 ul.iti__country-list {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
   position: absolute !important;
   z-index: 9999 !important;
   background: hsl(0 0% 100%) !important;
@@ -545,11 +552,24 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
   overflow-y: auto !important;
 }
 
-/* Show dropdown only when the widget explicitly sets "show" state */
-.contact-form-29 .iti.iti--show-dropdown .iti__country-list,
-.contact-form-29 .iti__country-list.iti__show,
-.contact-form-29 .country-list.show {
+/* Show dropdown ONLY when explicitly opened by user click */
+.contact-form-29 .iti--show-dropdown .iti__country-list,
+.contact-form-29 .iti--show-dropdown [class*="country-list"],
+.contact-form-29 .iti.iti--show-dropdown ul.iti__country-list,
+.contact-form-29 .intl-tel-input.open .country-list,
+.contact-form-29 .iti__country-list[style*="display: block"],
+.contact-form-29 .country-list.open {
   display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Hide any empty/ghost buttons from ActiveCampaign */
+.contact-form-29 button:empty,
+.contact-form-29 ._button-wrapper button:not([type="submit"]):empty,
+.contact-form-29 ._form_element button:not(._submit):empty {
+  display: none !important;
 }
 
 /* Flag button styling */
