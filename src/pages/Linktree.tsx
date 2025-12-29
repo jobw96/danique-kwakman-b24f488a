@@ -13,7 +13,7 @@ const LINKS = [
   },
   {
     title: "Gratis e-book: 5 ontbijt recepten voor de meest energieke start van de dag",
-    href: "/ebook",
+    href: "/e-book",
     icon: BookOpen,
     internal: true
   },
