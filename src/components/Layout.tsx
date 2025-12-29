@@ -99,7 +99,7 @@ export const Layout: React.FC<LayoutProps> = ({
       icon: Headphones
     }, {
       name: 'E-book: 5 gratis ontbijtrecepten',
-      href: '/ebook',
+      href: '/e-book',
       description: '',
       icon: BookOpen
     }, {
@@ -136,7 +136,7 @@ export const Layout: React.FC<LayoutProps> = ({
     href: '/method'
   }, {
     name: 'Over mij',
-    href: '/about'
+    href: '/over-mij'
   }, {
     name: 'FAQ',
     href: '/faq'

@@ -56,7 +56,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageTransition><Index /></PageTransition>} />
-        <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+        <Route path="/over-mij" element={<PageTransition><About /></PageTransition>} />
         <Route path="/method" element={<PageTransition><Method /></PageTransition>} />
         <Route path="/behandelingen" element={<PageTransition><Behandelingen /></PageTransition>} />
         <Route path="/glowup" element={<PageTransition><GlowUp /></PageTransition>} />
@@ -65,7 +65,7 @@ const AnimatedRoutes = () => {
         <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />
         <Route path="/kennismaking" element={<PageTransition><Kennismaking /></PageTransition>} />
         <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
-        <Route path="/ebook" element={<PageTransition><Ebook /></PageTransition>} />
+        <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
         <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />

@@ -35,7 +35,7 @@ interface BreadcrumbsProps {
 // Route name mappings
 const routeNames: Record<string, string> = {
     '/': 'Home',
-    '/about': 'Over mij',
+    '/over-mij': 'Over mij',
     '/contact': 'Contact',
     '/blog': 'Blog',
     '/method': 'Methode',
@@ -43,7 +43,7 @@ const routeNames: Record<string, string> = {
     '/glowup': 'Glow Up Traject',
     '/darmtraject': 'Darmtraject',
     '/reset-recharge': 'Reset & Recharge',
-    '/ebook': 'E-book',
+    '/e-book': 'E-book',
     '/podcast': 'Podcast',
     '/recepten': 'Recepten',
     '/kennismaking': 'Kennismaking',
@@ -57,7 +57,7 @@ const routeNames: Record<string, string> = {
 // Icon mappings
 const routeIcons: Record<string, React.ElementType> = {
     '/': Home,
-    '/about': User,
+    '/over-mij': User,
     '/contact': Mail,
     '/blog': FileText,
     '/method': Layers,
@@ -65,7 +65,7 @@ const routeIcons: Record<string, React.ElementType> = {
     '/glowup': Sparkles,
     '/darmtraject': Activity,
     '/reset-recharge': Zap,
-    '/ebook': Book,
+    '/e-book': Book,
     '/podcast': Mic,
     '/recepten': Utensils,
     '/kennismaking': Phone,
