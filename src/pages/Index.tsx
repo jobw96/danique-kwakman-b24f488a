@@ -7,6 +7,7 @@ import { Plus, Minus, Star, ArrowRight, Quote } from 'lucide-react';
 import { ServiceItem, Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage, StaggerContainer } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
+import { Countdown } from '@/components/Countdown';
 import heroImage from '@/assets/hero-foto.jpg';
 import heroImageMobile from '@/assets/hero-foto-mobile.jpg';
 import stap1Image from '@/assets/stap-1.png';
@@ -281,6 +282,8 @@ const Index = () => {
         <FadeIn>
           <SectionTag text="Trajecten" />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h2>
+          <p className="text-primary font-medium mb-2">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
+          <Countdown targetDate={new Date('2026-02-01T00:00:00')} />
         </FadeIn>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
