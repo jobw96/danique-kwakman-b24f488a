@@ -248,7 +248,7 @@ const Darmtraject = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Investering</h2>
               <p className="text-muted-foreground line-through mb-1">€2100</p>
               <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€1799</p>
-              <p className="text-sm text-primary font-medium mb-4">Januari actie</p>
+              <p className="text-sm text-primary font-medium mb-4">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
               <p className="text-sm text-muted-foreground mb-8">
                 Inclusief: Ontlastingsonderzoek (€490) + intolerantietest 31 voedingsmiddelen (€115)
               </p>
