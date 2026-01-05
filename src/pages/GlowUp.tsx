@@ -3,7 +3,10 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Sparkles, Activity, Heart, Check, X, MessageCircle, ClipboardList, Users, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { Countdown } from '@/components/Countdown';
 import daniqueGlowup from '@/assets/danique-glowup.jpg';
+
+const JANUARY_END = new Date('2026-02-01T00:00:00');
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
@@ -233,7 +236,8 @@ const GlowUp = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Investering</h2>
               <p className="text-muted-foreground line-through mb-1">€888</p>
               <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€755</p>
-              <p className="text-sm text-primary font-medium mb-6">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
+              <p className="text-sm text-primary font-medium mb-4">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
+              <Countdown targetDate={JANUARY_END} />
               <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
                 <CustomButton>Plan een gratis kennismaking</CustomButton>
               </a>

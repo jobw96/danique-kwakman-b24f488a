@@ -3,7 +3,10 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Check, X, Users, ClipboardList, Activity, MessageCircle, Layers, Heart, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { Countdown } from '@/components/Countdown';
 import daniqueDarm from '@/assets/danique-darm.jpg';
+
+const JANUARY_END = new Date('2026-02-01T00:00:00');
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
@@ -249,6 +252,7 @@ const Darmtraject = () => {
               <p className="text-muted-foreground line-through mb-1">€2100</p>
               <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€1799</p>
               <p className="text-sm text-primary font-medium mb-4">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
+              <Countdown targetDate={JANUARY_END} />
               <p className="text-sm text-muted-foreground mb-8">
                 Inclusief: Ontlastingsonderzoek (€490) + intolerantietest 31 voedingsmiddelen (€115)
               </p>
