@@ -82,19 +82,6 @@ const Contact = () => {
                     <p className="text-muted-foreground">Muntstraat 18, 1621GB Hoorn</p>
                   </div>
 
-                  <div>
-                    <h4 className="font-medium text-foreground mb-2">Bereikbaarheid</h4>
-                    <p className="text-muted-foreground leading-relaxed">OV: +- 10 min lopen vanaf station Hoorn. Parkeren: betaald op straat.
-Parkeren: betaald op straat of in nabije parkeergarage .<br />
-                      Parkeren: betaald op straat of in parkeergarage scheepvaartkwartier.
-                    </p>
-                  </div>
-
-                  <div className="pt-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      Het is een co working space waar je gewoon kunt aanbellen, ikzelf of 1 van mijn collega's doet de deur voor je open.
-                    </p>
-                  </div>
                 </div>
 
                 {/* Contact Details */}

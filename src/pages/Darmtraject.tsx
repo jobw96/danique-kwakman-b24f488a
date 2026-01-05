@@ -246,8 +246,9 @@ const Darmtraject = () => {
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Investering</h2>
-              <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€2100</p>
-              <p className="text-muted-foreground mb-4">excl. btw</p>
+              <p className="text-muted-foreground line-through mb-1">€2100</p>
+              <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€1799</p>
+              <p className="text-sm text-primary font-medium mb-4">Januari actie</p>
               <p className="text-sm text-muted-foreground mb-8">
                 Inclusief: Ontlastingsonderzoek (€490) + intolerantietest 31 voedingsmiddelen (€115)
               </p>
