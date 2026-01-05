@@ -177,7 +177,7 @@ const ResetRecharge = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Investering</h2>
               <p className="text-muted-foreground line-through mb-1">€444</p>
               <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€379</p>
-              <p className="text-sm text-primary font-medium mb-6">Januari actie</p>
+              <p className="text-sm text-primary font-medium mb-6">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
               <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
                 <CustomButton>Plan een gratis kennismaking</CustomButton>
               </a>
