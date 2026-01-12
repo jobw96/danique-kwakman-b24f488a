@@ -2,13 +2,18 @@ import React from 'react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import { useBookingModal } from '@/components/BookingModal';
 import daniqueMatchCall from '@/assets/danique-match-call.jpg';
+
 const SectionTag = ({
   text
 }: {
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
+
 const Kennismaking = () => {
+  const { openModal } = useBookingModal();
+
   return <div className="min-h-screen">
       <Section className="pt-4 min-h-[80vh] flex items-center bg-background">
         <div className="flex flex-col md:flex-row items-center gap-16">
@@ -26,7 +31,7 @@ const Kennismaking = () => {
               <p className="text-muted-foreground mb-8 leading-relaxed font-medium">
                 Klaar om de eerste stap te zetten naar jouw nieuwe way of life? Plan een kennismakingsgesprek in.
               </p>
-              <CustomButton onClick={() => window.open('https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC', '_blank')}>
+              <CustomButton onClick={openModal}>
                 Plan je kennismakingsgesprek
               </CustomButton>
             </FadeIn>

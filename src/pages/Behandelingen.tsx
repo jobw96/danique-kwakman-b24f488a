@@ -5,6 +5,7 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowRight } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { useBookingModal } from '@/components/BookingModal';
 import daniqueGlowup from '@/assets/danique-glowup.jpg';
 import daniqueDarm from '@/assets/danique-darm.jpg';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
@@ -38,6 +39,7 @@ const treatments = [
 ];
 
 const Behandelingen = () => {
+  const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
       <Section className="pt-4 bg-background">
@@ -105,9 +107,7 @@ const Behandelingen = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-            <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-          </a>
+          <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
         </div>
       </Section>
     </div>

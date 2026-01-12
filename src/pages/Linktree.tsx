@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, MessageCircle, Mail, Sparkles, Heart, BookOpen, Mic, Calendar, Gift, Globe } from 'lucide-react';
+import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 
@@ -25,9 +26,10 @@ const LINKS = [
   },
   {
     title: "Plan jouw gratis kennismakingsgesprek in",
-    href: "https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC",
+    href: "",
     icon: Calendar,
-    internal: false
+    internal: false,
+    isBooking: true
   },
   {
     title: "Aanbod",
@@ -107,11 +109,15 @@ const socialVariants = {
 };
 
 const Linktree: React.FC = () => {
-  const handleLinkClick = (href: string, internal: boolean) => {
-    if (internal) {
-      window.location.href = href;
+  const { openModal } = useBookingModal();
+
+  const handleLinkClick = (link: typeof LINKS[0]) => {
+    if ('isBooking' in link && link.isBooking) {
+      openModal();
+    } else if (link.internal) {
+      window.location.href = link.href;
     } else {
-      window.open(href, '_blank');
+      window.open(link.href, '_blank');
     }
   };
 
@@ -215,7 +221,7 @@ const Linktree: React.FC = () => {
           {LINKS.map((link, index) => (
             <motion.button
               key={index}
-              onClick={() => handleLinkClick(link.href, link.internal)}
+              onClick={() => handleLinkClick(link)}
               className="w-full bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium shadow-md relative overflow-hidden group"
               variants={itemVariants}
               whileHover={{ 

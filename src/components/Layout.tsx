@@ -6,6 +6,7 @@ import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.png';
 import logoGat from '@/assets/logo-gat.png';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { useBookingModal } from '@/components/BookingModal';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -25,6 +26,7 @@ export const Layout: React.FC<LayoutProps> = ({
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { openModal } = useBookingModal();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -80,7 +82,7 @@ export const Layout: React.FC<LayoutProps> = ({
     requestAnimationFrame(animateScroll);
   };
   const handleExternalLink = () => {
-    window.open('https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC', '_blank');
+    openModal();
   };
   const navLinks: NavItem[] = [{
     name: 'Home',

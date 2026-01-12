@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Layout } from "@/components/Layout";
 import { PageTransition } from "@/components/Animations";
+import { BookingModalProvider } from "@/components/BookingModal";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Method from "./pages/Method";
@@ -82,21 +83,23 @@ const AnimatedRoutes = () => {
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToHash />
-        <Routes>
-          {/* Linktree page without Layout */}
-          <Route path="/linktree" element={<Linktree />} />
-          {/* All other pages with Layout */}
-          <Route path="/*" element={
-            <Layout>
-              <AnimatedRoutes />
-            </Layout>
-          } />
-        </Routes>
-      </BrowserRouter>
+      <BookingModalProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToHash />
+          <Routes>
+            {/* Linktree page without Layout */}
+            <Route path="/linktree" element={<Linktree />} />
+            {/* All other pages with Layout */}
+            <Route path="/*" element={
+              <Layout>
+                <AnimatedRoutes />
+              </Layout>
+            } />
+          </Routes>
+        </BrowserRouter>
+      </BookingModalProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );

@@ -4,6 +4,7 @@ import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Check, X, Users, ClipboardList, Activity, MessageCircle, Layers, Heart, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { Countdown } from '@/components/Countdown';
+import { useBookingModal } from '@/components/BookingModal';
 import daniqueDarm from '@/assets/danique-darm.jpg';
 
 const JANUARY_END = new Date('2026-02-01T00:00:00');
@@ -13,6 +14,7 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const Darmtraject = () => {
+  const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
       <Section className="pt-4 bg-background">
@@ -31,9 +33,7 @@ const Darmtraject = () => {
                     In dit traject zoeken we naar de oorzaak van je klachten. Niet door standaarddiëten of snelle oplossingen, maar met gericht onderzoek, een onderbouwde aanpak die rekening houdt met jouw lichaam, leefstijl en energie. Zo krijg je inzicht, grip en rust in je spijsvertering en algehele gezondheid.
                   </p>
                 </div>
-                <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                  <CustomButton>Gratis kennismaking</CustomButton>
-                </a>
+                <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
               </FadeIn>
             </div>
             <div className="lg:w-1/2">
@@ -256,9 +256,7 @@ const Darmtraject = () => {
               <p className="text-sm text-muted-foreground mb-8">
                 Inclusief: Ontlastingsonderzoek (€490) + intolerantietest 31 voedingsmiddelen (€115)
               </p>
-              <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                <CustomButton>Plan een gratis kennismaking</CustomButton>
-              </a>
+              <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
         </div>

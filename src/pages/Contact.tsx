@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import { useBookingModal } from '@/components/BookingModal';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
 
 const SectionTag = ({
@@ -10,6 +11,7 @@ const SectionTag = ({
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const Contact = () => {
+  const { openModal } = useBookingModal();
   useEffect(() => {
     // Load ActiveCampaign form script
     const script = document.createElement('script');
@@ -45,9 +47,7 @@ const Contact = () => {
                   <p className="text-muted-foreground leading-relaxed text-base py-0 pt-0 pb-[20px]">
                     Met de volgende button kan je bij mij een afspraak maken voor een intakegesprek (60 minuten) of een kennismaking (vrijblijvend 10 minuten).
                   </p>
-                  <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                    <CustomButton variant="secondary">Afspraak maken</CustomButton>
-                  </a>
+                  <CustomButton variant="secondary" onClick={openModal}>Afspraak maken</CustomButton>
                 </div>
               </FadeIn>
 
