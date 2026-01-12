@@ -101,12 +101,13 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
             {/* Close Button */}
             <motion.button
               onClick={onClose}
-              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-accent flex items-center justify-center shadow-lg"
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.85, rotate: 90 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
               aria-label="Sluiten"
             >
-              <X className="w-5 h-5 text-foreground" />
+              <X className="w-5 h-5 text-white" />
             </motion.button>
 
             {/* Loading Spinner */}
