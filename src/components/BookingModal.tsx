@@ -59,6 +59,18 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
+  // Prevent background scrolling when modal is open
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -80,7 +92,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
 
           {/* Modal Content */}
           <motion.div
-            className="relative z-10 w-full h-full md:w-[60%] md:max-w-[1000px] md:h-[70vh] bg-card rounded-2xl shadow-2xl overflow-hidden border border-secondary/30"
+            className="relative z-10 w-[95%] h-[70vh] md:w-[60%] md:max-w-[1000px] bg-card rounded-2xl shadow-2xl overflow-hidden border border-secondary/30"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
