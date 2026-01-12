@@ -4,6 +4,7 @@ import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Check, X, MessageCircle, ClipboardList, Zap, CalendarCheck, Heart, Sparkles } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { Countdown } from '@/components/Countdown';
+import { useBookingModal } from '@/components/BookingModal';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
 
 const JANUARY_END = new Date('2026-02-01T00:00:00');
@@ -13,6 +14,7 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const ResetRecharge = () => {
+  const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
       <Section className="pt-4 bg-background">
@@ -35,9 +37,7 @@ const ResetRecharge = () => {
                     Compact en doelgericht, waarbij we in een maand krachtige stappen zetten richting verandering die blijft.
                   </p>
                 </div>
-                <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                  <CustomButton>Gratis kennismaking</CustomButton>
-                </a>
+                <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
               </FadeIn>
             </div>
             <div className="lg:w-1/2">
@@ -182,9 +182,7 @@ const ResetRecharge = () => {
               <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€379</p>
               <p className="text-sm text-primary font-medium mb-4">✨ Nieuwjaarsactie – geldig t/m 31 januari</p>
               <Countdown targetDate={JANUARY_END} />
-              <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                <CustomButton>Plan een gratis kennismaking</CustomButton>
-              </a>
+              <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
         </div>

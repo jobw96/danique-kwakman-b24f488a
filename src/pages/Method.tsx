@@ -1,6 +1,7 @@
 import { Section } from "@/components/Section";
 import { FadeIn, ParallaxImage, PageTransition, StaggerContainer } from "@/components/Animations";
 import { CustomButton } from "@/components/CustomButton";
+import { useBookingModal } from "@/components/BookingModal";
 import deKern from "@/assets/de-kern.png";
 import groei from "@/assets/groei.png";
 import hetProces from "@/assets/het-proces.png";
@@ -59,6 +60,7 @@ const METHOD_CARDS = [{
 
 // --- MethodPage Component ---
 const Method = () => {
+  const { openModal } = useBookingModal();
   return <PageTransition>
       {/* Hero Section */}
       <Section className="bg-[#FCF9F2] pt-4">
@@ -138,7 +140,7 @@ const Method = () => {
             </h2>
             <CustomButton 
               variant="secondary" 
-              onClick={() => window.open('https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC', '_blank')}
+              onClick={openModal}
             >
               Gratis kennismaking
             </CustomButton>

@@ -1,9 +1,12 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { useBookingModal } from '@/components/BookingModal';
 import contactBg from '@/assets/contact-background.jpg';
 
 export const CTASection = () => {
+  const { openModal } = useBookingModal();
+
   return (
     <section className="py-24 px-6 animate-fade-in bg-background">
       <div className="max-w-6xl mx-auto">
@@ -29,11 +32,9 @@ export const CTASection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                <CustomButton variant="white" icon={false} className="px-8 h-14 text-base rounded-xl">
-                  Gratis kennismaking
-                </CustomButton>
-              </a>
+              <CustomButton variant="white" icon={false} className="px-8 h-14 text-base rounded-xl" onClick={openModal}>
+                Gratis kennismaking
+              </CustomButton>
               
               <a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer">
                 <CustomButton variant="outline" icon={false} className="bg-white/20 backdrop-blur-sm hover:bg-white/30 border-2 border-white px-6 h-14 rounded-xl">

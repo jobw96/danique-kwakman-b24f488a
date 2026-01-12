@@ -8,6 +8,7 @@ import { ServiceItem, Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage, StaggerContainer } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
 import { Countdown } from '@/components/Countdown';
+import { useBookingModal } from '@/components/BookingModal';
 import heroImage from '@/assets/hero-foto.jpg';
 import heroImageMobile from '@/assets/hero-foto-mobile.jpg';
 import stap1Image from '@/assets/stap-1.png';
@@ -212,6 +213,7 @@ const ServiceAccordion = () => {
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const { openModal } = useBookingModal();
 
   // Load ActiveCampaign newsletter form script
   useEffect(() => {
@@ -245,9 +247,7 @@ const Index = () => {
               Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link to="/kennismaking">
-                <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-              </Link>
+              <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
               <Link to="/method">
                 <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
               </Link>
@@ -329,9 +329,7 @@ const Index = () => {
         })}
       </div>
       <div className="text-center mt-12">
-        <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-          <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-        </a>
+        <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
       </div>
     </Section>
 
@@ -389,9 +387,7 @@ const Index = () => {
           </div>
         </div>
         <div className="text-center mt-16">
-          <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-            <CustomButton variant="secondary">Gratis kennismaking</CustomButton>
-          </a>
+          <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
         </div>
       </div>
     </Section>

@@ -3,6 +3,7 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { GraduationCap, Heart, Sparkles } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { useBookingModal } from '@/components/BookingModal';
 import daniqueAbout from '@/assets/danique-about.jpg';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
@@ -13,6 +14,7 @@ const SectionTag = ({
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
 const About = () => {
+  const { openModal } = useBookingModal();
   return <div className="min-h-screen">
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
@@ -27,9 +29,7 @@ const About = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Ik help vrouwen hun lichaam opnieuw te begrijpen en stap voor stap van <strong>overleven naar leven</strong> te gaan, met mijn unieke <strong>CIRCLE-methode</strong>. Deze methode helpt je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en leven.
                 </p>
-                <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                  <CustomButton>Gratis kennismaking</CustomButton>
-                </a>
+                <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
               </FadeIn>
             </div>
             <div className="lg:w-1/2">
@@ -174,9 +174,7 @@ const About = () => {
                 Wil je ontdekken hoe ik jou kan helpen en hoe mijn begeleiding eruitziet? <strong>Plan een gratis kennismaking</strong> of <strong>volg me op Instagram</strong> voor inspiratie, tips en praktische adviezen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC" target="_blank" rel="noopener noreferrer">
-                  <CustomButton>Gratis kennismaking</CustomButton>
-                </a>
+                <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
                 <a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer">
                   <CustomButton variant="secondary">Volg me op Instagram</CustomButton>
                 </a>
