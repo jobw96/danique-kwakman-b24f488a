@@ -169,7 +169,7 @@ export const Layout: React.FC<LayoutProps> = ({
     setMobileMenuOpen(false);
     setActiveDropdown(null);
   };
-  return <div className="min-h-screen flex flex-col font-sans text-muted-foreground">
+  return <div className="min-h-screen flex flex-col font-sans text-muted-foreground" role="document">
       <motion.header className="fixed top-0 w-full z-50 border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
@@ -200,7 +200,7 @@ export const Layout: React.FC<LayoutProps> = ({
           }} />
           </motion.div>
 
-          <nav className="hidden lg:flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-2" aria-label="Hoofdnavigatie">
             {navLinks.map(link => <div key={link.name} className="relative px-3 py-2" onMouseEnter={() => link.subItems && setActiveDropdown(link.name)} onMouseLeave={() => link.subItems && setActiveDropdown(null)}>
                 <motion.button onClick={() => link.href ? handleNavigation(link.href) : null} className="flex items-center gap-1.5 text-sm font-light" animate={{
               color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
@@ -306,15 +306,25 @@ export const Layout: React.FC<LayoutProps> = ({
             </div>
           </nav>
 
-          <motion.button className="lg:hidden p-2 relative z-[60]" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} animate={{
-          color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
-        }} style={{
-          filter: useDarkHeader ? 'none' : 'drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))'
-        }} whileTap={{
-          scale: 0.95
-        }} transition={{
-          duration: 0.2
-        }}>
+          <motion.button 
+            className="lg:hidden p-2 relative z-[60]" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+            animate={{
+              color: useDarkHeader ? 'hsl(var(--foreground))' : 'hsl(0 0% 100%)'
+            }} 
+            style={{
+              filter: useDarkHeader ? 'none' : 'drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))'
+            }} 
+            whileTap={{
+              scale: 0.95
+            }} 
+            transition={{
+              duration: 0.2
+            }}
+            aria-label={mobileMenuOpen ? "Menu sluiten" : "Menu openen"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
+          >
             {mobileMenuOpen ? <X /> : <Menu />}
           </motion.button>
         </div>
@@ -355,7 +365,7 @@ export const Layout: React.FC<LayoutProps> = ({
             <img src={logoFull} alt="Danique Kwakman" className="h-8 w-auto cursor-pointer" onClick={() => handleNavigation('/')} />
           </motion.div>
 
-          <nav className="flex flex-col gap-1 flex-1 overflow-y-auto">
+          <nav id="mobile-menu" className="flex flex-col gap-1 flex-1 overflow-y-auto" aria-label="Mobiele navigatie">
             {navLinks.map((link, index) => <motion.div key={link.name} initial={{
             opacity: 0,
             x: 20
@@ -553,30 +563,40 @@ export const Layout: React.FC<LayoutProps> = ({
       </footer>
       
       <AnimatePresence>
-        {showBackToTop && <motion.button initial={{
-        opacity: 0,
-        scale: 0.8,
-        y: 20
-      }} animate={{
-        opacity: 1,
-        scale: 1,
-        y: 0
-      }} exit={{
-        opacity: 0,
-        scale: 0.8,
-        y: 20
-      }} whileHover={{
-        scale: 1.1,
-        y: -2
-      }} whileTap={{
-        scale: 0.95
-      }} transition={{
-        type: "spring",
-        stiffness: 400,
-        damping: 25
-      }} onClick={scrollToTop} className="fixed bottom-8 right-8 z-40 bg-primary text-primary-foreground p-3.5 rounded-full shadow-xl">
-            <ArrowUp size={20} />
-          </motion.button>}
+        {showBackToTop && <motion.button 
+          initial={{
+            opacity: 0,
+            scale: 0.8,
+            y: 20
+          }} 
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: 0
+          }} 
+          exit={{
+            opacity: 0,
+            scale: 0.8,
+            y: 20
+          }} 
+          whileHover={{
+            scale: 1.1,
+            y: -2
+          }} 
+          whileTap={{
+            scale: 0.95
+          }} 
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 25
+          }} 
+          onClick={scrollToTop} 
+          className="fixed bottom-8 right-8 z-40 bg-primary text-primary-foreground p-3.5 rounded-full shadow-xl"
+          aria-label="Terug naar boven"
+        >
+          <ArrowUp size={20} aria-hidden="true" />
+        </motion.button>}
       </AnimatePresence>
     </div>;
 };
