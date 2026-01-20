@@ -9,6 +9,7 @@ import { FadeIn, ParallaxImage, StaggerContainer } from '@/components/Animations
 import { Testimonials } from '@/components/Testimonials';
 import { Countdown } from '@/components/Countdown';
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import heroImage from '@/assets/hero-foto.jpg';
 import heroImageMobile from '@/assets/hero-foto-mobile.jpg';
 import stap1Image from '@/assets/stap-1.png';
@@ -231,11 +232,16 @@ const Index = () => {
     };
   }, []);
 
-  return <div className="min-h-screen">
-    <section className="relative h-screen flex items-center overflow-hidden bg-foreground">
+  return <>
+    <SEO 
+      canonicalUrl="/"
+      description="Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding via de CIRCLE-methode voor duurzame gezondheid."
+    />
+    <article className="min-h-screen">
+    <section className="relative h-screen flex items-center overflow-hidden bg-foreground" aria-label="Hero">
       <div className="absolute inset-0 z-0">
-        <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" />
-        <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" />
+        <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" loading="eager" />
+        <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" loading="eager" />
       </div>
       <div className="relative z-10 container mx-auto px-6">
         <FadeIn>
@@ -422,7 +428,8 @@ const Index = () => {
       </div>
     </Section>
 
-  </div>;
+  </article>
+  </>;
 };
 
 export default Index;

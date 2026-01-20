@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { HelmetProvider } from "react-helmet-async";
 import { Layout } from "@/components/Layout";
 import { PageTransition } from "@/components/Animations";
 import { BookingModalProvider } from "@/components/BookingModal";
@@ -81,27 +82,29 @@ const AnimatedRoutes = () => {
 };
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <BookingModalProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToHash />
-          <Routes>
-            {/* Linktree page without Layout */}
-            <Route path="/linktree" element={<Linktree />} />
-            {/* All other pages with Layout */}
-            <Route path="/*" element={
-              <Layout>
-                <AnimatedRoutes />
-              </Layout>
-            } />
-          </Routes>
-        </BrowserRouter>
-      </BookingModalProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <BookingModalProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <ScrollToHash />
+            <Routes>
+              {/* Linktree page without Layout */}
+              <Route path="/linktree" element={<Linktree />} />
+              {/* All other pages with Layout */}
+              <Route path="/*" element={
+                <Layout>
+                  <AnimatedRoutes />
+                </Layout>
+              } />
+            </Routes>
+          </BrowserRouter>
+        </BookingModalProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
