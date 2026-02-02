@@ -255,7 +255,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
               <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
               <Link to="/method">
-                <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
+                <CustomButton variant="outline">Mijn methode</CustomButton>
               </Link>
             </div>
           </div>
