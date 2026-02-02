@@ -252,10 +252,10 @@ const Index = () => {
             <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
               Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <CustomButton variant="secondary" onClick={openModal} className="w-full sm:w-auto">Gratis kennismaking</CustomButton>
-              <Link to="/method" className="w-full sm:w-auto">
-                <CustomButton variant="outline" icon={false} className="w-full">Mijn methode</CustomButton>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
+              <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
+              <Link to="/method">
+                <CustomButton variant="outline" icon={false}>Mijn methode</CustomButton>
               </Link>
             </div>
           </div>
