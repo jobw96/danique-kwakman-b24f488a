@@ -105,6 +105,11 @@ export const Layout: React.FC<LayoutProps> = ({
       description: '',
       icon: BookOpen
     }, {
+      name: 'E-book: 5 recepten zoete cravings',
+      href: '/e-book-cravings',
+      description: '',
+      icon: BookOpen
+    }, {
       name: 'Recepten',
       href: '/recepten',
       description: '',

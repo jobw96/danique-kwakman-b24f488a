@@ -19,6 +19,7 @@ import Recepten from "./pages/Recepten";
 import Kennismaking from "./pages/Kennismaking";
 import Podcast from "./pages/Podcast";
 import Ebook from "./pages/Ebook";
+import EbookCravings from "./pages/EbookCravings";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Privacy from "./pages/Privacy";
@@ -68,6 +69,7 @@ const AnimatedRoutes = () => {
         <Route path="/kennismaking" element={<PageTransition><Kennismaking /></PageTransition>} />
         <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
         <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
+        <Route path="/e-book-cravings" element={<PageTransition><EbookCravings /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
         <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
