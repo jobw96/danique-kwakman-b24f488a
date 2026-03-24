@@ -62,10 +62,11 @@ const EbookCravings = () => {
             </div>
             <div className="lg:w-[35%]">
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden aspect-[4/5]">
-                <ParallaxImage
+                <img
                   src={ebookCover}
                   alt="Gratis e-book 5 recepten om je zoete cravings rondom je menstruatie te stillen - Danique Kwakman"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </FadeIn>
             </div>
