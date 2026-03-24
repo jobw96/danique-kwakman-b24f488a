@@ -254,6 +254,7 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
 #ac-form-container [id^="_form_"],
 #ac-form-container div[class*="_form_"] {
   display: block !important;
+  box-shadow: none !important;
 }
 
 /* ============================================
