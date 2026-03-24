@@ -32,7 +32,7 @@ const EbookCravings = () => {
       <SEO
         title="5 Recepten om je Cravings te Stillen"
         description="Download gratis het e-book met 5 recepten om je zoete cravings rondom je menstruatie te stillen. Voedzaam, darmvriendelijk en snel klaar."
-        canonicalUrl="/e-book-cravings"
+        canonicalUrl="/e-book-recepten-snacks"
       />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
