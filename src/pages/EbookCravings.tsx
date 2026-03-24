@@ -32,7 +32,7 @@ const EbookCravings = () => {
       <SEO
         title="5 Recepten om je Cravings te Stillen"
         description="Download gratis het e-book met 5 recepten om je zoete cravings rondom je menstruatie te stillen. Voedzaam, darmvriendelijk en snel klaar."
-        canonicalUrl="/e-book-cravings"
+        canonicalUrl="/e-book-recepten-snacks"
       />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
@@ -108,7 +108,7 @@ const EbookCravings = () => {
 
           {/* Content & Form Section */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 border border-secondary/30 mb-20">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 <div>
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
