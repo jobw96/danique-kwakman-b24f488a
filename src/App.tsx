@@ -19,6 +19,7 @@ import Recepten from "./pages/Recepten";
 import Kennismaking from "./pages/Kennismaking";
 import Podcast from "./pages/Podcast";
 import Ebook from "./pages/Ebook";
+import EbookCravings from "./pages/EbookCravings";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Privacy from "./pages/Privacy";
