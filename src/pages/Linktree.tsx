@@ -7,15 +7,21 @@ import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 
 const LINKS = [
   {
-    title: "Gratis e-book: 5 recepten om je zoete cravings te stillen",
+    title: "Gratis e-book: 5 recepten om je zoete cravings rondom je menstruatie te stillen 🍫",
     href: "/e-book-recepten-snacks",
     icon: BookOpen,
     internal: true
   },
   {
-    title: "Gratis e-book: 5 ontbijt recepten voor de meest energieke start van de dag",
+    title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
     href: "/e-book",
     icon: BookOpen,
+    internal: true
+  },
+  {
+    title: "Ontvang elke week mijn gratis nieuwsbrief vol exclusieve inspiratie, tips en inzichten 💌",
+    href: "/e-book",
+    icon: Mail,
     internal: true
   },
   {
@@ -54,7 +60,7 @@ const SOCIAL_LINKS = [
   },
   {
     name: "WhatsApp",
-    href: "https://wa.me/31612345678",
+    href: "https://wa.me/31682018727",
     icon: MessageCircle,
     color: "bg-[#25D366]"
   }
