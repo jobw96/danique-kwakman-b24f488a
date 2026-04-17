@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/Animations';
 import { Headphones, ExternalLink } from 'lucide-react';
 
 const SPOTIFY_SHOW_URL = 'https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0';
-const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0&utm_source=oembed';
+const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed-podcast/show/21JMWSXjs1SziLcNNNFHZf?utm_source=generator';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
@@ -40,9 +40,8 @@ const Podcast = () => {
                 src={SPOTIFY_EMBED_URL}
                 className="block w-full"
                 width="100%"
-                height="152"
+                height="232"
                 frameBorder="0"
-                allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
                 title="Health & Hormone Secrets podcast op Spotify"
