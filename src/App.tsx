@@ -27,6 +27,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import Linktree from "./pages/Linktree";
+import Nieuwsbrief from "./pages/Nieuwsbrief";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Behandelingen from "./pages/Behandelingen";
@@ -70,6 +71,7 @@ const AnimatedRoutes = () => {
         <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
         <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
         <Route path="/e-book-recepten-snacks" element={<PageTransition><EbookCravings /></PageTransition>} />
+        <Route path="/nieuwsbrief" element={<PageTransition><Nieuwsbrief /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
         <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
