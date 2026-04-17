@@ -7,9 +7,9 @@ import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 
 const LINKS = [
   {
-    title: "Schrijf je in voor de maandelijkse Glow & Nourish Recepten – hormoonproof & gut friendly",
-    href: "/#nieuwsbrief",
-    icon: Mail,
+    title: "Gratis e-book: 5 recepten om je zoete cravings te stillen",
+    href: "/e-book-recepten-snacks",
+    icon: BookOpen,
     internal: true
   },
   {
