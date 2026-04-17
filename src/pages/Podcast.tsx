@@ -21,7 +21,7 @@ const Podcast = () => {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <div className="text-left space-y-4 text-muted-foreground mb-12">
+            <div className="text-left space-y-4 text-muted-foreground mb-6">
               <p className="text-center">
                 In mijn podcast neem ik je mee in alles wat jij nodig hebt om je lichaam écht te begrijpen en je beter te voelen. Van hormonale balans tot darmgezondheid, van voeding en leefstijl tot kleine dagelijkse aanpassingen die een groot verschil maken.
               </p>
@@ -35,12 +35,12 @@ const Podcast = () => {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="w-full mb-6">
+            <div className="w-full mb-4">
               <iframe
                 style={{ borderRadius: '12px' }}
                 src="https://open.spotify.com/embed/episode/7c1GreoBYmHnHHnlmlmkR4?utm_source=generator&t=0"
                 width="100%"
-                height="352"
+                height="232"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
