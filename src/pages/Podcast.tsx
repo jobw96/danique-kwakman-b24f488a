@@ -1,10 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { Headphones, ExternalLink } from 'lucide-react';
 
 const SPOTIFY_SHOW_URL = 'https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0';
+const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0&utm_source=oembed';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
@@ -34,13 +34,13 @@ const Podcast = () => {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.2}>
-            <div className="w-full mb-4">
+          <div className="w-full mb-4">
+            <div className="overflow-hidden rounded-xl border border-border/50 bg-card">
               <iframe
-                style={{ borderRadius: '12px', display: 'block' }}
-                src="https://open.spotify.com/embed/show/21JMWSXjs1SziLcNNNFHZf?utm_source=generator"
+                src={SPOTIFY_EMBED_URL}
+                className="block w-full"
                 width="100%"
-                height="352"
+                height="152"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -48,25 +48,23 @@ const Podcast = () => {
                 title="Health & Hormone Secrets podcast op Spotify"
               />
             </div>
-          </FadeIn>
+          </div>
 
-          <FadeIn delay={0.3}>
-            <motion.a
+          <div className="flex flex-col items-center gap-3">
+            <a
               href={SPOTIFY_SHOW_URL}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.02, y: -2 }}
-              whileTap={{ scale: 0.98 }}
               className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 py-3.5 rounded-md font-medium shadow-sm transition-colors hover:bg-primary/90"
             >
               <Headphones className="w-5 h-5" />
               <span>Volg de podcast op Spotify</span>
               <ExternalLink className="w-4 h-4 opacity-80 transition-transform group-hover:translate-x-0.5" />
-            </motion.a>
-            <p className="text-sm text-muted-foreground mt-3">
+            </a>
+            <p className="text-sm text-muted-foreground">
               Alle afleveringen op één plek — abonneer en mis er geen.
             </p>
-          </FadeIn>
+          </div>
         </div>
       </Section>
     </div>
