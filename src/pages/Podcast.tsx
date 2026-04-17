@@ -1,13 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-const SectionTag = ({
-  text
-}: {
-  text: string;
-}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
+import { Headphones, ExternalLink } from 'lucide-react';
+
+const SPOTIFY_SHOW_URL = 'https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0';
+
+const SectionTag = ({ text }: { text: string }) => (
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
+);
+
 const Podcast = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Section className="bg-background pt-4">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
@@ -30,14 +35,41 @@ const Podcast = () => {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="w-full">
-              <iframe style={{
-              borderRadius: '12px'
-            }} src="https://open.spotify.com/embed/episode/7c1GreoBYmHnHHnlmlmkR4?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
+            <div className="w-full mb-10">
+              <iframe
+                style={{ borderRadius: '12px' }}
+                src="https://open.spotify.com/embed/episode/7c1GreoBYmHnHHnlmlmkR4?utm_source=generator&t=0"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
             </div>
+          </FadeIn>
+
+          <FadeIn delay={0.3}>
+            <motion.a
+              href={SPOTIFY_SHOW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className="group inline-flex items-center gap-3 bg-foreground text-background px-7 py-4 rounded-md font-medium transition-colors hover:bg-foreground/90"
+            >
+              <Headphones className="w-5 h-5" />
+              <span>Volg de podcast op Spotify</span>
+              <ExternalLink className="w-4 h-4 opacity-70 transition-transform group-hover:translate-x-0.5" />
+            </motion.a>
+            <p className="text-sm text-muted-foreground mt-4">
+              Alle afleveringen op één plek — abonneer en mis er geen.
+            </p>
           </FadeIn>
         </div>
       </Section>
-    </div>;
+    </div>
+  );
 };
+
 export default Podcast;
