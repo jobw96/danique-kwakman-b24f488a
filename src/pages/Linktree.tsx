@@ -20,7 +20,7 @@ const LINKS = [
   },
   {
     title: "Ontvang elke week mijn gratis nieuwsbrief vol exclusieve inspiratie, tips en inzichten 💌",
-    href: "/e-book",
+    href: "/nieuwsbrief",
     icon: Mail,
     internal: true
   },
