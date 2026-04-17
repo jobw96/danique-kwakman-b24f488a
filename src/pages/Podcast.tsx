@@ -37,14 +37,15 @@ const Podcast = () => {
           <FadeIn delay={0.2}>
             <div className="w-full mb-4">
               <iframe
-                style={{ borderRadius: '12px' }}
+                style={{ borderRadius: '12px', display: 'block' }}
                 src="https://open.spotify.com/embed/episode/7c1GreoBYmHnHHnlmlmkR4?utm_source=generator&t=0"
                 width="100%"
-                height="232"
+                height="152"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
+                title="Spotify podcast player"
               />
             </div>
           </FadeIn>
