@@ -38,14 +38,14 @@ const Podcast = () => {
             <div className="w-full mb-4">
               <iframe
                 style={{ borderRadius: '12px', display: 'block' }}
-                src="https://open.spotify.com/embed/episode/7c1GreoBYmHnHHnlmlmkR4?utm_source=generator&t=0"
+                src="https://open.spotify.com/embed/show/21JMWSXjs1SziLcNNNFHZf?utm_source=generator"
                 width="100%"
-                height="152"
+                height="352"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                title="Spotify podcast player"
+                title="Health & Hormone Secrets podcast op Spotify"
               />
             </div>
           </FadeIn>
