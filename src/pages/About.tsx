@@ -4,6 +4,7 @@ import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { GraduationCap, Heart, Sparkles } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import daniqueAbout from '@/assets/danique-about.jpg';
 import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
 import daniqueBeach from '@/assets/danique-beach.png';
@@ -16,6 +17,11 @@ const SectionTag = ({
 const About = () => {
   const { openModal } = useBookingModal();
   return <div className="min-h-screen">
+      <SEO
+        title="Over mij | Orthomoleculair Therapeut"
+        description="Maak kennis met Danique Kwakman, orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen."
+        canonicalUrl="/over-mij"
+      />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}

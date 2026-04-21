@@ -5,6 +5,7 @@ import { Sparkles, Activity, Heart, Check, X, MessageCircle, ClipboardList, User
 import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import daniqueGlowup from '@/assets/danique-glowup.jpg';
 
 
@@ -17,6 +18,11 @@ const GlowUp = () => {
   const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
+      <SEO
+        title="1:1 Glow Up Traject | Hormoonbalans & Energie"
+        description="Het 1:1 Glow Up Traject voor vrouwen die worstelen met vermoeidheid, hormonale disbalans of buikklachten. Persoonlijke orthomoleculaire begeleiding."
+        canonicalUrl="/glowup"
+      />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}

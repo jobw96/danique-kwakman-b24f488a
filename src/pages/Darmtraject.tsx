@@ -5,6 +5,7 @@ import { Check, X, Users, ClipboardList, Activity, MessageCircle, Layers, Heart,
 import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import daniqueDarm from '@/assets/danique-darm.jpg';
 
 
@@ -17,6 +18,11 @@ const Darmtraject = () => {
   const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
+      <SEO
+        title="1:1 Darmtraject Therapie | Lab onderzoek"
+        description="Diepgaand 1:1 darmtraject inclusief laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman."
+        canonicalUrl="/darmtraject"
+      />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
