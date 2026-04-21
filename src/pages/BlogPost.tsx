@@ -215,7 +215,7 @@ const BlogPost: React.FC = () => {
           delay: 0.3
         }}>
             <div className="relative aspect-[21/9]">
-              <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+              <img src={post.image} alt={post.title} className="w-full h-full object-cover" / loading="lazy" decoding="async">
             </div>
           </motion.div>
         </div>

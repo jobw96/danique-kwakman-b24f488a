@@ -75,7 +75,7 @@ const Contact = () => {
             <FadeIn delay={0.2}>
               <div className="space-y-8">
                 <div>
-                  <img src={daniqueWalkingBeach} alt="Danique Kwakman orthomoleculair therapeut - neem contact op voor een kennismakingsgesprek" className="w-full h-auto rounded-lg object-cover" />
+                  <img src={daniqueWalkingBeach} alt="Danique Kwakman orthomoleculair therapeut - neem contact op voor een kennismakingsgesprek" className="w-full h-auto rounded-lg object-cover" / loading="lazy" decoding="async">
                 </div>
                 <div>
                   
