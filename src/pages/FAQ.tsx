@@ -4,6 +4,7 @@ import { Plus, Instagram } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn, StaggerContainer } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import SEO from '@/components/SEO';
 
 interface FaqItem {
   question: string;
@@ -42,8 +43,22 @@ const SectionTag = ({ text }: { text: string }) => (
 const FAQ = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQ_ITEMS.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen pb-20">
+      <SEO canonicalUrl="/faq" jsonLd={faqSchema} />
       <Section className="pt-4">
         <div className="text-center mb-16">
           <FadeIn>

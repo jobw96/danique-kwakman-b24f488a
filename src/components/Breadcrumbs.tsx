@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import {
     Home,
@@ -118,7 +119,22 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
         return null;
     }
 
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbItems.map((item, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: item.label,
+            ...(item.href ? { item: `https://daniquekwakman.nl${item.href}` } : {}),
+        })),
+    };
+
     return (
+        <>
+        <Helmet>
+            <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        </Helmet>
         <motion.nav
             aria-label="Breadcrumb"
             className={`container mx-auto px-6 pt-24 pb-2 ${className || ''}`}
@@ -153,5 +169,6 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
                 })}
             </ol>
         </motion.nav>
+        </>
     );
 };
