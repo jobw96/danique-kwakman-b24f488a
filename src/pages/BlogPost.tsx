@@ -4,10 +4,18 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
+import SEO from '@/components/SEO';
 import { BLOG_POSTS } from './Blog';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueRunning from '@/assets/danique-running.webp';
+
+// ISO publish dates per slug (for Article schema)
+const POST_DATES: Record<string, string> = {
+  'hormoonbalans-5-signalen': '2024-11-28',
+  'darmgezondheid-basis-welzijn': '2024-11-21',
+  'natuurlijke-energie-boost': '2024-11-14',
+};
 
 // Blog content for each post
 const BLOG_CONTENT: Record<string, {
@@ -156,7 +164,47 @@ const BlogPost: React.FC = () => {
 
   // Get related posts (excluding current)
   const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 2);
+
+  const publishedISO = slug ? POST_DATES[slug] : undefined;
+  const canonical = `/blog/${slug}`;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: `https://daniquekwakman.nl${post.image}`,
+    datePublished: publishedISO,
+    dateModified: publishedISO,
+    author: {
+      '@type': 'Person',
+      name: 'Danique Kwakman',
+      url: 'https://daniquekwakman.nl/over-mij',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Danique Kwakman',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://daniquekwakman.nl/og-image.jpg',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://daniquekwakman.nl${canonical}`,
+    },
+    articleSection: post.category,
+  };
+
   return <div className="min-h-screen">
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        canonicalUrl={canonical}
+        ogType="article"
+        publishedTime={publishedISO}
+        modifiedTime={publishedISO}
+        jsonLd={articleSchema}
+      />
       {/* Content */}
       <Section className="pt-4 pb-0">
         <div className="max-w-4xl mx-auto">

@@ -9,6 +9,7 @@ interface SEOProps {
   publishedTime?: string;
   modifiedTime?: string;
   noIndex?: boolean;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const BASE_URL = 'https://daniquekwakman.nl';
@@ -24,7 +25,9 @@ export const SEO = ({
   publishedTime,
   modifiedTime,
   noIndex = false,
+  jsonLd,
 }: SEOProps) => {
+  const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   const fullTitle = title 
     ? `${title} | Danique Kwakman - Orthomoleculair Therapeut`
     : 'Danique Kwakman - Orthomoleculair Therapeut | Hormoonbalans & Darmgezondheid';
@@ -64,6 +67,13 @@ export const SEO = ({
       {ogType === 'article' && (
         <meta property="article:author" content="Danique Kwakman" />
       )}
+
+      {/* JSON-LD structured data */}
+      {jsonLdArray.map((schema, idx) => (
+        <script key={idx} type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      ))}
     </Helmet>
   );
 };
