@@ -5,10 +5,10 @@ import { GraduationCap, Heart, Sparkles } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import daniqueAbout from '@/assets/danique-about.jpg';
-import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
-import daniqueBeach from '@/assets/danique-beach.png';
-import daniqueWalking from '@/assets/danique-walking.jpg';
+import daniqueAbout from '@/assets/danique-about.webp';
+import daniqueRelaxed from '@/assets/danique-relaxed.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
+import daniqueWalking from '@/assets/danique-walking.webp';
 const SectionTag = ({
   text
 }: {

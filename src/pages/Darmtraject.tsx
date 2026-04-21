@@ -6,7 +6,7 @@ import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import daniqueDarm from '@/assets/danique-darm.jpg';
+import daniqueDarm from '@/assets/danique-darm.webp';
 
 
 

@@ -10,19 +10,19 @@ import { Testimonials } from '@/components/Testimonials';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import heroImage from '@/assets/hero-foto.jpg';
-import heroImageMobile from '@/assets/hero-foto-mobile.jpg';
-import stap1Image from '@/assets/stap-1.png';
-import stap2Image from '@/assets/stap-2.png';
-import stap3Image from '@/assets/stap-3.png';
-import stap4Image from '@/assets/stap-4.png';
-import daniqueGlowup from '@/assets/danique-glowup.jpg';
-import daniqueDarm from '@/assets/danique-darm.jpg';
-import daniqueWalking from '@/assets/danique-walking.jpg';
-import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
-import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
-import hetProces from '@/assets/het-proces.png';
-import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
+import heroImage from '@/assets/hero-foto.webp';
+import heroImageMobile from '@/assets/hero-foto-mobile.webp';
+import stap1Image from '@/assets/stap-1.webp';
+import stap2Image from '@/assets/stap-2.webp';
+import stap3Image from '@/assets/stap-3.webp';
+import stap4Image from '@/assets/stap-4.webp';
+import daniqueGlowup from '@/assets/danique-glowup.webp';
+import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueWalking from '@/assets/danique-walking.webp';
+import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
+import daniqueRelaxed from '@/assets/danique-relaxed.webp';
+import hetProces from '@/assets/het-proces.webp';
+import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
 
 const TREATMENTS = [{
   id: 'glowup',

@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
+import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 
 const SectionTag = ({
   text

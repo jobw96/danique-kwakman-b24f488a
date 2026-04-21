@@ -5,9 +5,9 @@ import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { BLOG_POSTS } from './Blog';
-import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
-import daniqueBeach from '@/assets/danique-beach.png';
-import daniqueRunning from '@/assets/danique-running.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
+import daniqueRunning from '@/assets/danique-running.webp';
 
 // Blog content for each post
 const BLOG_CONTENT: Record<string, {

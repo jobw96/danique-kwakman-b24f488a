@@ -6,7 +6,7 @@ import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import daniqueGlowup from '@/assets/danique-glowup.jpg';
+import daniqueGlowup from '@/assets/danique-glowup.webp';
 
 
 
