@@ -480,7 +480,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
         <div className="relative z-10 container mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
           <div className="mb-6 flex items-center gap-3">
-            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto" / loading="lazy" decoding="async">
+            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto" loading="lazy" decoding="async" />
           </div>
 
           <p className="text-muted-foreground max-w-xl text-sm md:text-base leading-relaxed mb-6">
@@ -525,8 +525,8 @@ export const Layout: React.FC<LayoutProps> = ({
           {/* CAT & GAT info */}
           <div className="max-w-lg mb-6">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <img src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" / loading="lazy" decoding="async">
-              <img alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" src="/lovable-uploads/a74f49d6-b23c-40c2-8368-c8460118ab8d.png" / loading="lazy" decoding="async">
+              <img src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" loading="lazy" decoding="async" />
+              <img alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" src="/lovable-uploads/a74f49d6-b23c-40c2-8368-c8460118ab8d.png" loading="lazy" decoding="async" />
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed mb-2">
               Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).

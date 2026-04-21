@@ -111,7 +111,7 @@ const Method = () => {
                         src={card.image} 
                         alt={`CIRCLE-methode stap ${card.title} - orthomoleculaire begeleiding voor vrouwen`} 
                         className="w-full h-auto object-contain" 
-                      / loading="lazy" decoding="async">
+                      loading="lazy" decoding="async" />
                     </div>
                   </FadeIn>
                 </div>

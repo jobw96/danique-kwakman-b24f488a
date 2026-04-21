@@ -104,7 +104,7 @@ const RecipeCard = ({ recipe, onClick }: { recipe: Recipe; onClick: () => void }
           src={recipe.image} 
           alt={`${recipe.title} - gezond recept voor energie en hormoonbalans`} 
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
-        / loading="lazy" decoding="async">
+        loading="lazy" decoding="async" />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="font-serif text-xl text-foreground mb-3">{recipe.title}</h3>

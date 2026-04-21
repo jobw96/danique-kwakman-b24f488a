@@ -146,7 +146,7 @@ const Linktree: React.FC = () => {
                 src={daniqueRelaxed} 
                 alt="Danique Kwakman" 
                 className="w-full h-full object-cover"
-              / loading="lazy" decoding="async">
+              loading="lazy" decoding="async" />
             </div>
             <motion.div 
               className="absolute -bottom-1 -right-1 bg-primary text-white rounded-full p-1.5"
@@ -168,7 +168,7 @@ const Linktree: React.FC = () => {
               src={logoFull} 
               alt="Danique Kwakman" 
               className="h-6 w-auto mb-4"
-            / loading="lazy" decoding="async">
+            loading="lazy" decoding="async" />
           </motion.div>
 
           {/* Social Icons */}

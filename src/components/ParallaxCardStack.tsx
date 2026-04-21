@@ -61,7 +61,7 @@ export const ParallaxCardStack = ({ cards }: ParallaxCardStackProps) => {
                       src={card.image} 
                       alt={card.title} 
                       className="w-full h-full object-cover"
-                    / loading="lazy" decoding="async">
+                    loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
