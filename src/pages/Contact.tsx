@@ -3,6 +3,7 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.jpg';
 
 const SectionTag = ({
@@ -26,6 +27,11 @@ const Contact = () => {
     };
   }, []);
   return <div className="min-h-screen">
+      <SEO
+        title="Contact | Orthomoleculair Therapeut"
+        description="Neem contact op met Danique Kwakman, orthomoleculair therapeut, voor vragen over trajecten, kennismaking of samenwerking."
+        canonicalUrl="/contact"
+      />
       {/* Main Content Section */}
       <Section className="pt-4">
         <div className="max-w-6xl mx-auto">

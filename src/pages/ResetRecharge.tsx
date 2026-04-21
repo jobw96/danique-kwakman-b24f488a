@@ -5,6 +5,7 @@ import { Check, X, MessageCircle, ClipboardList, Zap, CalendarCheck, Heart, Spar
 import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
 
 
@@ -17,6 +18,11 @@ const ResetRecharge = () => {
   const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
+      <SEO
+        title="1:1 Reset & Recharge | 1 Maand Intensief"
+        description="1 maand intensieve begeleiding voor meer energie, rust in je lijf en helderheid in je hoofd. Reset & Recharge bij Danique Kwakman."
+        canonicalUrl="/reset-recharge"
+      />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
