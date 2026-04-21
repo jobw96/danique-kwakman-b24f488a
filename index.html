@@ -66,11 +66,130 @@
       "inLanguage": "nl-NL"
     }
     </script>
+
+    <!--
+      Per-route SEO bootstrap: runs before React mounts.
+      Sets the correct title, description, canonical and OG tags based on the URL path,
+      so social media crawlers (WhatsApp, LinkedIn, Facebook) and search engines
+      see the right metadata when they request a deep link directly.
+      React/Helmet keeps these in sync afterwards during client-side navigation.
+    -->
+    <script>
+      (function () {
+        var BASE = 'https://daniquekwakman.nl';
+        var routes = {
+          '/': {
+            title: 'Danique Kwakman - Orthomoleculair Therapeut | Hormoonbalans & Darmgezondheid',
+            description: 'Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding via de CIRCLE-methode voor duurzame gezondheid.'
+          },
+          '/over-mij': {
+            title: 'Over mij - Danique Kwakman | Orthomoleculair Therapeut',
+            description: 'Maak kennis met Danique Kwakman, orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen.'
+          },
+          '/method': {
+            title: 'De CIRCLE-methode | Danique Kwakman',
+            description: 'Ontdek de CIRCLE-methode: een holistische aanpak voor hormoonbalans, darmherstel en duurzame energie bij vrouwen.'
+          },
+          '/behandelingen': {
+            title: 'Aanbod Trajecten | Danique Kwakman',
+            description: 'Bekijk de 1:1 trajecten van Danique Kwakman: Glow Up, Darmtraject en Reset & Recharge voor hormoonbalans en darmherstel.'
+          },
+          '/glowup': {
+            title: '1:1 Glow Up Traject | Hormoonbalans & Energie | Danique Kwakman',
+            description: 'Het 1:1 Glow Up Traject voor vrouwen die worstelen met vermoeidheid, hormonale disbalans of buikklachten. Persoonlijke orthomoleculaire begeleiding.'
+          },
+          '/darmtraject': {
+            title: '1:1 Darmtraject Therapie | Lab onderzoek | Danique Kwakman',
+            description: 'Diepgaand 1:1 darmtraject inclusief laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman.'
+          },
+          '/reset-recharge': {
+            title: '1:1 Reset & Recharge | 1 Maand Intensief | Danique Kwakman',
+            description: '1 maand intensieve begeleiding voor meer energie, rust in je lijf en helderheid in je hoofd. Reset & Recharge bij Danique Kwakman.'
+          },
+          '/recepten': {
+            title: 'Gezonde Recepten | Hormoonbalans & Darmgezondheid | Danique Kwakman',
+            description: 'Voedzame, hormoon- en darmvriendelijke recepten van orthomoleculair therapeut Danique Kwakman. Ondersteunend voor energie en welzijn.'
+          },
+          '/kennismaking': {
+            title: 'Gratis Kennismaking | Danique Kwakman',
+            description: 'Plan een gratis kennismakingsgesprek met orthomoleculair therapeut Danique Kwakman en ontdek hoe ik jou kan helpen naar meer balans.'
+          },
+          '/podcast': {
+            title: 'Podcast | Danique Kwakman | Hormonen, Darmen & Energie',
+            description: 'Luister naar de podcast van Danique Kwakman over hormoonbalans, darmgezondheid, voeding en leefstijl voor vrouwen.'
+          },
+          '/e-book': {
+            title: 'Gratis E-book | Danique Kwakman',
+            description: 'Download het gratis e-book van Danique Kwakman met inzichten en praktische tips voor hormoonbalans en darmgezondheid.'
+          },
+          '/e-book-recepten-snacks': {
+            title: '5 Recepten om je Cravings te Stillen | Gratis E-book | Danique Kwakman',
+            description: 'Download gratis het e-book met 5 recepten om je zoete cravings rondom je menstruatie te stillen. Voedzaam, darmvriendelijk en snel klaar.'
+          },
+          '/nieuwsbrief': {
+            title: 'Nieuwsbrief | Danique Kwakman',
+            description: 'Schrijf je in voor de wekelijkse nieuwsbrief van Danique Kwakman en ontvang exclusieve inspiratie, tips en inzichten voor hormoonbalans en darmgezondheid.'
+          },
+          '/contact': {
+            title: 'Contact | Danique Kwakman | Orthomoleculair Therapeut',
+            description: 'Neem contact op met Danique Kwakman, orthomoleculair therapeut, voor vragen over trajecten, kennismaking of samenwerking.'
+          },
+          '/faq': {
+            title: 'Veelgestelde Vragen | Danique Kwakman',
+            description: 'Antwoorden op veelgestelde vragen over orthomoleculaire therapie, vergoeding, trajecten en werkwijze van Danique Kwakman.'
+          },
+          '/blog': {
+            title: 'Blog | Hormoonbalans, Darmen & Energie | Danique Kwakman',
+            description: 'Lees artikelen over hormoonbalans, darmgezondheid, voeding en leefstijl op de blog van orthomoleculair therapeut Danique Kwakman.'
+          },
+          '/privacy': {
+            title: 'Privacybeleid | Danique Kwakman',
+            description: 'Lees het privacybeleid van Danique Kwakman over de verwerking van persoonsgegevens.'
+          },
+          '/cookie-policy': {
+            title: 'Cookiebeleid | Danique Kwakman',
+            description: 'Informatie over het cookiebeleid van de website van Danique Kwakman.'
+          },
+          '/terms': {
+            title: 'Algemene Voorwaarden | Danique Kwakman',
+            description: 'Algemene voorwaarden van orthomoleculair therapeut Danique Kwakman.'
+          }
+        };
+
+        var path = window.location.pathname.replace(/\/+$/, '') || '/';
+        var meta = routes[path];
+        if (!meta) return;
+
+        var canonical = BASE + (path === '/' ? '/' : path);
+
+        function setMeta(selector, attr, value) {
+          var el = document.querySelector(selector);
+          if (el) el.setAttribute(attr, value);
+        }
+        function setLink(rel, href) {
+          var el = document.querySelector('link[rel="' + rel + '"]');
+          if (!el) {
+            el = document.createElement('link');
+            el.setAttribute('rel', rel);
+            document.head.appendChild(el);
+          }
+          el.setAttribute('href', href);
+        }
+
+        document.title = meta.title;
+        setMeta('meta[name="description"]', 'content', meta.description);
+        setMeta('meta[property="og:title"]', 'content', meta.title);
+        setMeta('meta[property="og:description"]', 'content', meta.description);
+        setMeta('meta[property="og:url"]', 'content', canonical);
+        setMeta('meta[name="twitter:title"]', 'content', meta.title);
+        setMeta('meta[name="twitter:description"]', 'content', meta.description);
+        setLink('canonical', canonical);
+      })();
+    </script>
   </head>
 
   <body>
     <div id="root">
-      <!-- Static SEO fallback: visible to crawlers and during initial paint, replaced by React on mount -->
       <noscript>
         <h1>Danique Kwakman - Orthomoleculair Therapeut</h1>
         <p>Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding via de CIRCLE-methode voor duurzame gezondheid.</p>
