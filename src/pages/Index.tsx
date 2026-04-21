@@ -240,8 +240,8 @@ const Index = () => {
     <article className="min-h-screen">
     <section className="relative h-screen flex items-center overflow-hidden bg-foreground" aria-label="Hero">
       <div className="absolute inset-0 z-0">
-        <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" loading="eager" />
-        <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" loading="eager" />
+        <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" loading="eager" fetchPriority="high" decoding="async" />
+        <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" loading="eager" fetchPriority="high" decoding="async" />
       </div>
       <div className="relative z-10 container mx-auto px-6">
         <FadeIn>
