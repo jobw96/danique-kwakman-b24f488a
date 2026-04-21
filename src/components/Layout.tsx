@@ -3,8 +3,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Headphones, BookOpen, Sparkles, Activity, ClipboardList, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
-import logoCat from '@/assets/logo-cat.png';
-import logoGat from '@/assets/logo-gat.png';
+import logoCat from '@/assets/logo-cat.webp';
+import logoGat from '@/assets/logo-gat.webp';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { useBookingModal } from '@/components/BookingModal';
 interface LayoutProps {

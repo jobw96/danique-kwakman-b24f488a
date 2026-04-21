@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowDown, Sparkles, Coffee, Zap } from 'lucide-react';
-import ebookCoverFront from '@/assets/ebook-cover-front.png';
-import ebookCoverOpen from '@/assets/ebook-cover-open.png';
+import ebookCoverFront from '@/assets/ebook-cover-front.webp';
+import ebookCoverOpen from '@/assets/ebook-cover-open.webp';
 const SectionTag = ({
   text
 }: {

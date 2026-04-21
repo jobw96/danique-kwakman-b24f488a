@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Instagram, MessageCircle, Mail, Sparkles, Heart, BookOpen, Mic, Calendar, Gift, Globe } from 'lucide-react';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
-import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 
 const LINKS = [
   {

@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ChefHat, X, Lightbulb } from 'lucide-react';
-import granolaImage from '@/assets/recipe-granola.jpg';
-import gingerShotsImage from '@/assets/recipe-ginger-shots.jpg';
-import eggMuffinsImage from '@/assets/recipe-egg-muffins.jpg';
+import granolaImage from '@/assets/recipe-granola.webp';
+import gingerShotsImage from '@/assets/recipe-ginger-shots.webp';
+import eggMuffinsImage from '@/assets/recipe-egg-muffins.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>

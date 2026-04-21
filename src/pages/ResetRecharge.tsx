@@ -6,7 +6,7 @@ import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import daniqueKleedZand from '@/assets/danique-kleed-zand.jpg';
+import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
 
 
 

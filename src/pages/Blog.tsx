@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import daniqueRelaxed from '@/assets/danique-relaxed.jpg';
-import daniqueBeach from '@/assets/danique-beach.png';
-import daniqueRunning from '@/assets/danique-running.jpg';
+import daniqueRelaxed from '@/assets/danique-relaxed.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
+import daniqueRunning from '@/assets/danique-running.webp';
 export interface BlogPost {
   id: string;
   slug: string;

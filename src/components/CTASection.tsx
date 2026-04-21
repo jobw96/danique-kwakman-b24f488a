@@ -2,7 +2,7 @@ import React from 'react';
 import { Instagram } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
-import contactBg from '@/assets/contact-background.jpg';
+import contactBg from '@/assets/contact-background.webp';
 
 export const CTASection = () => {
   const { openModal } = useBookingModal();

@@ -2,13 +2,13 @@ import { Section } from "@/components/Section";
 import { FadeIn, ParallaxImage, PageTransition, StaggerContainer } from "@/components/Animations";
 import { CustomButton } from "@/components/CustomButton";
 import { useBookingModal } from "@/components/BookingModal";
-import deKern from "@/assets/de-kern.png";
-import groei from "@/assets/groei.png";
-import hetProces from "@/assets/het-proces.png";
-import nieuwProces from "@/assets/nieuw-proces.png";
-import stapVoorStap from "@/assets/stap-voor-stap.png";
-import verandering from "@/assets/verandering.png";
-import daniqueRelaxed from "@/assets/danique-relaxed.jpg";
+import deKern from "@/assets/de-kern.webp";
+import groei from "@/assets/groei.webp";
+import hetProces from "@/assets/het-proces.webp";
+import nieuwProces from "@/assets/nieuw-proces.webp";
+import stapVoorStap from "@/assets/stap-voor-stap.webp";
+import verandering from "@/assets/verandering.webp";
+import daniqueRelaxed from "@/assets/danique-relaxed.webp";
 
 // --- Sub Components ---
 const SectionTag = ({

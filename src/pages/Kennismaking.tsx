@@ -3,7 +3,7 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
-import daniqueMatchCall from '@/assets/danique-match-call.jpg';
+import daniqueMatchCall from '@/assets/danique-match-call.webp';
 
 const SectionTag = ({
   text
