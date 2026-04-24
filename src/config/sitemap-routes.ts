@@ -33,7 +33,7 @@ export const STATIC_ROUTES: SitemapRoute[] = [
   { path: '/behandelingen', changefreq: 'monthly', priority: 0.9 },
   { path: '/glowup', changefreq: 'monthly', priority: 0.8 },
   { path: '/darmtraject', changefreq: 'monthly', priority: 0.8 },
-  { path: '/reset-recharge', changefreq: 'monthly', priority: 0.8 },
+  
   { path: '/recepten', changefreq: 'weekly', priority: 0.7 },
   { path: '/kennismaking', changefreq: 'monthly', priority: 0.9 },
   { path: '/podcast', changefreq: 'weekly', priority: 0.7 },

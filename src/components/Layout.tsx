@@ -132,11 +132,6 @@ export const Layout: React.FC<LayoutProps> = ({
       href: '/darmtraject',
       description: '',
       icon: Activity
-    }, {
-      name: '1:1 Reset & Recharge',
-      href: '/reset-recharge',
-      description: '',
-      icon: Zap
     }]
   }, {
     name: 'Mijn methode',

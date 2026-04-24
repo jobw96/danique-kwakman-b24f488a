@@ -34,11 +34,6 @@ const TREATMENTS = [{
   title: "1:1 Darmtraject Therapie",
   description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
   image: daniqueDarm
-}, {
-  id: 'reset-recharge',
-  title: "1:1 Reset & Recharge",
-  description: "1 maand intensieve begeleiding voor meer energie, rust in je lijf en helderheid in je hoofd.",
-  image: daniqueKleedZand
 }];
 
 const SERVICES: ServiceItem[] = [{
@@ -292,7 +287,7 @@ const Index = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {TREATMENTS.map((treatment, index) => {
-          const linkPath = treatment.id === 'glowup' ? '/glowup' : treatment.id === 'darmtraject' ? '/darmtraject' : '/reset-recharge';
+          const linkPath = treatment.id === 'glowup' ? '/glowup' : '/darmtraject';
           return (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={linkPath} className="h-full block">
