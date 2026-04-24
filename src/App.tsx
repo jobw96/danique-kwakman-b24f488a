@@ -18,7 +18,7 @@ const About = lazy(() => import("./pages/About"));
 const Method = lazy(() => import("./pages/Method"));
 const GlowUp = lazy(() => import("./pages/GlowUp"));
 const Darmtraject = lazy(() => import("./pages/Darmtraject"));
-const ResetRecharge = lazy(() => import("./pages/ResetRecharge"));
+
 const Recepten = lazy(() => import("./pages/Recepten"));
 const Kennismaking = lazy(() => import("./pages/Kennismaking"));
 const Podcast = lazy(() => import("./pages/Podcast"));
@@ -76,7 +76,7 @@ const AnimatedRoutes = () => {
           <Route path="/behandelingen" element={<PageTransition><Behandelingen /></PageTransition>} />
           <Route path="/glowup" element={<PageTransition><GlowUp /></PageTransition>} />
           <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
-          <Route path="/reset-recharge" element={<PageTransition><ResetRecharge /></PageTransition>} />
+          
           <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />
           <Route path="/kennismaking" element={<PageTransition><Kennismaking /></PageTransition>} />
           <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />

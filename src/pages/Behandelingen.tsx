@@ -8,7 +8,6 @@ import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
-import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
@@ -28,13 +27,6 @@ const treatments = [
     title: "1:1 Darmtraject Therapie",
     description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
     href: "/darmtraject"
-  },
-  {
-    id: 'reset-recharge',
-    image: daniqueRelaxed,
-    title: "1:1 Reset & Recharge",
-    description: "1 maand intensieve begeleiding voor meer energie, rust in je lijf en helderheid in je hoofd.",
-    href: "/reset-recharge"
   }
 ];
 
