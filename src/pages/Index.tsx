@@ -285,7 +285,7 @@ const Index = () => {
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h2>
         </FadeIn>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {TREATMENTS.map((treatment, index) => {
           const linkPath = treatment.id === 'glowup' ? '/glowup' : '/darmtraject';
           return (
