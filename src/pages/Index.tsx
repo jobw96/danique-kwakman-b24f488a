@@ -204,22 +204,20 @@ const Index = () => {
         <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" loading="eager" fetchPriority="high" decoding="async" />
       </div>
       <div className="relative z-10 container mx-auto px-6">
-        <FadeIn>
-          <div className="max-w-3xl text-center md:text-left">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 text-white leading-[1.1]">
-              Optimaliseer je <br />Hormoonbalans <span className="text-secondary">&</span> <br />Darmgezondheid voor <br />Meer Energie
-            </h1>
-            <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
-              Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
-              <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
-              <Link to="/method">
-                <CustomButton variant="outline">Mijn methode</CustomButton>
-              </Link>
-            </div>
+        <div className="max-w-3xl text-center md:text-left">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 text-white leading-[1.1]">
+            Optimaliseer je <br />Hormoonbalans <span className="text-secondary">&</span> <br />Darmgezondheid voor <br />Meer Energie
+          </h1>
+          <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
+            Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
+            <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
+            <Link to="/method">
+              <CustomButton variant="outline">Mijn methode</CustomButton>
+            </Link>
           </div>
-        </FadeIn>
+        </div>
       </div>
       <motion.div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/60" animate={{
         y: [0, 10, 0]
