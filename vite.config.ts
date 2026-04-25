@@ -42,4 +42,18 @@ export default defineConfig(({ mode }) => ({
       "@tanstack/react-query",
     ],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // Split heavy vendor libs into separate chunks → smaller main bundle,
+        // less unused JS per route, better long-term caching.
+        manualChunks: {
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "motion-vendor": ["framer-motion"],
+          "query-vendor": ["@tanstack/react-query"],
+          "helmet-vendor": ["react-helmet-async"],
+        },
+      },
+    },
+  },
 }));
