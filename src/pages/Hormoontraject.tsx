@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { Sparkles, Activity, Heart, Check, X, MessageCircle, ClipboardList, Users, Zap } from 'lucide-react';
+import { Activity, Heart, Check, X, MessageCircle, ClipboardList, Users, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 
 import { useBookingModal } from '@/components/BookingModal';
@@ -14,14 +14,14 @@ const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
 );
 
-const GlowUp = () => {
+const Hormoontraject = () => {
   const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
       <SEO
-        title="1:1 Glow Up Traject | Hormoonbalans & Energie"
-        description="Het 1:1 Glow Up Traject voor vrouwen die worstelen met vermoeidheid, hormonale disbalans of buikklachten. Persoonlijke orthomoleculaire begeleiding."
-        canonicalUrl="/glowup"
+        title="1:1 Hormoontraject | Hormoonbalans & Energie"
+        description="Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf."
+        canonicalUrl="/hormoontraject"
       />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
@@ -30,20 +30,23 @@ const GlowUp = () => {
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="1:1 Traject" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Glow Up</h1>
-                <p className="text-xl text-primary font-medium mb-6">Terug naar een lijf dat met je meebeweegt</p>
+                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Hormoontraject</h1>
+                <p className="text-xl text-primary font-medium mb-6">In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf</p>
                 <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                   <p>
-                    Voel je dat je klachten je afremmen, zoals vermoeidheid, hormonale onrust of buikpijn, terwijl je diep van binnen weet dat er méér in je zit? Merk je dat je vastloopt in oude patronen of steeds opnieuw dezelfde uitdagingen tegenkomt, zonder echt vooruitgang te boeken?
+                    Er zijn momenten waarop je voelt: dit ben ik niet helemaal. Maar wat het dan is, kun je moeilijk onder woorden brengen.
                   </p>
                   <p>
-                    In dit traject brengen we rust, richting en helderheid terug in jouw systeem. Met een combi van orthomoleculaire kennis en persoonlijke coaching help ik je begrijpen wat er onder je klachten ligt en hoe je weer in balans komt.
+                    Je libido schommelt of lijkt verdwenen. Je cyclus voelt elke maand als een emotionele achtbaan, met PMS, moodswings, cravings en een menstruatie waar je tegenop ziet. Je hebt misschien al laten checken of alles goed is en je bloedonderzoeken zijn prima, maar je voelt je niet goed.
                   </p>
                   <p>
-                    Niet om een betere versie van jezelf te worden, maar om volledig jezelf te zijn: energiek, ontspannen en stevig in je eigen ritme.
+                    Zelfs na een volle nacht slaap word je wakker met het gevoel dat je nog steeds leeg bent. Alsof je jezelf een beetje bent kwijtgeraakt.
                   </p>
                   <p>
-                    Dit is geen quick fix. In dit traject leer je luisteren naar je lichaam, begrijpen wat er onder je klachten zit en weer in je eigen ritme te komen. Je leert weer wat je lichaam nodig heeft, stap voor stap.
+                    Het is niet gek dat je verlangt naar stabiele energie, een rustige buik, een stabiele cyclus, vertrouwen in je lichaam en hormonen die vóór je werken in plaats van tegen je.
+                  </p>
+                  <p>
+                    In het 1:1 hormoontraject onderzoeken we welke hormonale disbalans er speelt, je leert te luisteren naar je lichaam, begrijpen wat er onder je klachten zit en hoe we je klachten op een duurzame manier oplossen.
                   </p>
                 </div>
                 <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
@@ -51,37 +54,43 @@ const GlowUp = () => {
             </div>
             <div className="lg:w-1/2">
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
-                <ParallaxImage 
-                  src={daniqueGlowup} 
-                  alt="1:1 Glow Up traject - terug naar energie en hormonale balans met Danique Kwakman" 
-                  className="w-full h-full object-cover" 
+                <ParallaxImage
+                  src={daniqueGlowup}
+                  alt="1:1 Hormoontraject - hormonale balans, rust en energie met Danique Kwakman"
+                  className="w-full h-full object-cover"
                 />
               </FadeIn>
             </div>
           </div>
 
-          {/* Wat dit traject voor je betekent */}
+          {/* Wat kun je verwachten */}
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wat dit traject voor je betekent</h2>
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wat kun je verwachten?</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed mb-8">
                 <p>
-                  We bouwen samen aan een fundament dat klopt met wie jij bent. Geen quick fix, geen overweldigende to-do's, maar een afgestemde, cyclische aanpak waarin jij je lichaam opnieuw leert begrijpen.
+                  Ik heb een manier ontwikkeld waarmee ik je stap voor stap help om te begrijpen wat er in je lichaam gebeurt en hoe je de juiste puzzelstukjes kunt neerleggen om je energie, cyclus en buik weer in balans te brengen.
                 </p>
                 <p>
-                  Dit traject is voor jou als je merkt dat je klachten je tegenhouden: vermoeidheid, hormonale onrust, buik- of darmklachten, stemmingswisselingen of een opgejaagd gevoel. Misschien voel je dat je méér in je hebt, maar oude patronen, onzekerheid of chronische klachten houden je tegen.
+                  Met mijn CIRCLE-methode werken we gericht aan de oorzaak van jouw klachten en stoppen we met het plakken van pleisters.
+                </p>
+                <p>
+                  Dit traject is voor vrouwen die (langere tijd) klachten ervaren rondom hun cyclus en hormonen. We gaan samen onderzoeken welke hormonale disbalans er speelt en hoe we de balans weer terug gaan brengen.
+                </p>
+                <p>
+                  Dit traject is passend als je klachten ervaart zoals: PCOS, PMS, onregelmatige en/of pijnlijke menstruaties, vermoeidheid, niet lekker in je vel, 2 verschillende personen zijn door de maand heen, schommelingen in energie, lichaam niet in balans voelt, stemmingswisselingen, prikkelbaarheid, schommelingen in bloedsuiker en moeite met slapen.
                 </p>
               </div>
-              
+
               <h3 className="font-serif text-xl text-foreground mb-4">Na dit traject:</h3>
               <ul className="space-y-3 mb-8">
                 {[
-                  "voel je je energieker, helderder en meer jezelf",
-                  "begrijp je wat je lichaam nodig heeft en waarom",
-                  "verdwijnen vage klachten en snap je eindelijk waar ze vandaan komen",
-                  "maak je keuzes die passen bij jouw cyclus, ritme en leven",
-                  "wordt gezondheid iets waar je op kunt vertrouwen",
-                  "ontstaat er ruimte: voor jezelf, je werk, je gezin en je dromen"
+                  "Zijn je hormonen in balans wat zorgt voor meer energie, helderheid en voel je je weer jezelf",
+                  "Begrijp je wat je lichaam nodig heeft en waarom",
+                  "Verdwijnen vage klachten en snap je eindelijk waar ze vandaan komen",
+                  "Maak je keuzes die passen bij jouw cyclus, ritme en leven",
+                  "Wordt gezondheid iets waar je op kunt vertrouwen",
+                  "Ontstaat er ruimte voor jezelf, je werk, je gezin en je dromen"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
@@ -95,12 +104,12 @@ const GlowUp = () => {
               <h3 className="font-serif text-xl text-foreground mb-4">Dit traject past bij jou als je verlangt naar:</h3>
               <ul className="space-y-3 mb-8">
                 {[
-                  "meer energie, zodat je je dagen weer vol vertrouwen en focus kunt doorkomen",
-                  "een hormonale balans die zorgt voor zelfvertrouwen, stabiliteit en plezier in het leven",
-                  "rust in je lijf én hoofd, zodat je weer helder kunt denken en voelen",
-                  "een leven zonder lichamelijke klachten en piekergedachten",
-                  "een leefstijl die moeiteloos voelt en echt bij jou past",
-                  "een lijf dat je ondersteunt, zodat je keuzes kunt maken zonder twijfel"
+                  "Meer energie, zodat je je dagen weer vol vertrouwen en focus kunt doorkomen",
+                  "Een hormonale balans die zorgt voor zelfvertrouwen, stabiliteit en plezier in het leven",
+                  "Rust in je lijf én hoofd, zodat je weer helder kunt denken en voelen",
+                  "Een leven zonder lichamelijke klachten en piekergedachten",
+                  "Een leefstijl die moeiteloos voelt en echt bij jou past",
+                  "Een lijf dat je ondersteunt, zodat je keuzes kunt maken zonder twijfel"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
@@ -114,9 +123,9 @@ const GlowUp = () => {
               <h3 className="font-serif text-xl text-foreground mb-4">En als je klaar bent om:</h3>
               <ul className="space-y-3">
                 {[
-                  "voorgoed afscheid te nemen van vage klachten die je beperken",
-                  "je energie en motivatie terug te vinden",
-                  "weer vol vertrouwen je dagen te plannen en je doelen te behalen"
+                  "Voorgoed afscheid te nemen van vage klachten die je beperken",
+                  "Je energie en motivatie terug te vinden",
+                  "Weer vol vertrouwen je dagen te plannen en je doelen te behalen"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
@@ -126,7 +135,7 @@ const GlowUp = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <p className="text-muted-foreground mt-8">
                 Je staat open voor nieuwe inzichten, bent bereid om stap voor stap te groeien en wilt eindelijk begrijpen wat je lichaam probeert te vertellen.
               </p>
@@ -140,10 +149,10 @@ const GlowUp = () => {
               <p className="text-muted-foreground mb-6">Dit traject is niet voor jou wanneer:</p>
               <ul className="space-y-3">
                 {[
-                  "je geen ruimte voelt om naar jezelf te kijken",
-                  "je liever snelle oplossingen wilt dan duurzame verandering",
-                  "je niet wilt investeren in voeding, leefstijl en herstel",
-                  "je niet klaar bent om verantwoordelijkheid te nemen voor de stappen die nodig zijn"
+                  "Je geen ruimte voelt om naar jezelf te kijken",
+                  "Je liever snelle oplossingen wilt dan duurzame verandering",
+                  "Je niet wilt investeren in voeding, leefstijl en herstel",
+                  "Je niet klaar bent om verantwoordelijkheid te nemen voor de stappen die nodig zijn"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-red-50 flex items-center justify-center mt-0.5">
@@ -164,29 +173,29 @@ const GlowUp = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { 
-                  step: "1", 
-                  title: "Kennismaking — online", 
+                {
+                  step: "1",
+                  title: "Kennismaking — online",
                   icon: Users,
-                  desc: "Tijdens dit gesprek nemen we de tijd om jouw situatie te bespreken, al je vragen te beantwoorden en te ontdekken hoe mijn werkwijze jou kan helpen. Ook voelen we aan of er een klik is en of we een goede match zijn. Het gesprek is volledig vrijblijvend, maar geeft jou én mij een helder beeld van wat mogelijk is." 
+                  desc: "Tijdens dit gesprek nemen we de tijd om jouw situatie te bespreken, al je vragen te beantwoorden en te ontdekken hoe mijn werkwijze jou kan helpen. Ook voelen we aan of er een klik is en of we een goede match zijn. Het gesprek is volledig vrijblijvend, maar geeft jou én mij een helder beeld van wat mogelijk is."
                 },
-                { 
-                  step: "2", 
-                  title: "Intake", 
+                {
+                  step: "2",
+                  title: "Intake",
                   icon: ClipboardList,
-                  desc: "Tijdens de intake duiken we echt de diepte in: hormonale gezondheid, darmen, cyclus, voeding, leefstijl en belastbaarheid. Met behulp van uitgebreide vragenlijsten en de volledige CIRCLE-methode brengen we je gezondheid volledig in kaart, ontdekken we waar je klachten vandaan komen en bepalen we samen welke richting het traject op gaat en wat jij nodig hebt." 
+                  desc: "Tijdens de intake duiken we echt de diepte in: hormonale gezondheid, darmen, cyclus, voeding, leefstijl en belastbaarheid. Met behulp van uitgebreide vragenlijsten en de volledige CIRCLE-methode brengen we je gezondheid volledig in kaart, ontdekken we waar je klachten vandaan komen, onderzoeken we welke hormonale disbalans er speelt en wat jij nodig hebt."
                 },
-                { 
-                  step: "3", 
-                  title: "Twee vervolgconsulten", 
+                {
+                  step: "3",
+                  title: "Twee vervolgconsulten",
                   icon: Activity,
-                  desc: "Volledig afgestemd op jouw proces, tempo en doelen. Tijdens deze sessies bespreken we de voortgang, passen we het plan aan waar nodig en geven we praktische handvatten om nieuwe inzichten direct toe te passen. Zo blijf je stappen maken en merk je echte verandering." 
+                  desc: "Volledig afgestemd op jouw proces, tempo en doelen. Tijdens deze sessies bespreken we de voortgang, passen we het plan aan waar nodig en geven we praktische handvatten om nieuwe inzichten direct toe te passen. Zo blijf je stappen maken en merk je echte verandering."
                 },
-                { 
-                  step: "4", 
-                  title: "WhatsApp-support", 
+                {
+                  step: "4",
+                  title: "WhatsApp-support",
                   icon: MessageCircle,
-                  desc: "Voor extra begeleiding tussen de consulten door. Precies wanneer je het nodig hebt." 
+                  desc: "Voor extra begeleiding tussen de consulten door. Precies wanneer je het nodig hebt."
                 }
               ].map((item, i) => (
                 <FadeIn key={i} delay={i * 0.1} className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30">
@@ -250,4 +259,4 @@ const GlowUp = () => {
   );
 };
 
-export default GlowUp;
+export default Hormoontraject;

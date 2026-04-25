@@ -15,11 +15,11 @@ const SectionTag = ({ text }: { text: string }) => (
 
 const treatments = [
   {
-    id: 'glowup',
+    id: 'hormoontraject',
     image: daniqueGlowup,
-    title: "1:1 Glow Up Traject",
-    description: "Voor de vrouw die al bewust bezig is, maar blijft worstelen met vermoeidheid, hormonale disbalans of buikklachten",
-    href: "/glowup"
+    title: "1:1 Hormoontraject",
+    description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
+    href: "/hormoontraject"
   },
   {
     id: 'darmtraject',

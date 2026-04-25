@@ -123,8 +123,8 @@ export const Layout: React.FC<LayoutProps> = ({
       description: '',
       icon: LayoutGrid
     }, {
-      name: '1:1 Glowup',
-      href: '/glowup',
+      name: '1:1 Hormoontraject',
+      href: '/hormoontraject',
       description: '',
       icon: Sparkles
     }, {

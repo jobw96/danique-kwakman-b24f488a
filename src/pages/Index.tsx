@@ -25,9 +25,9 @@ import hetProces from '@/assets/het-proces.webp';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
 
 const TREATMENTS = [{
-  id: 'glowup',
-  title: "1:1 Glow Up Traject",
-  description: "Voor de vrouw die al bewust bezig is, maar blijft worstelen met vermoeidheid, hormonale disbalans of buikklachten",
+  id: 'hormoontraject',
+  title: "1:1 Hormoontraject",
+  description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
   image: hetProces
 }, {
   id: 'darmtraject',
@@ -287,7 +287,7 @@ const Index = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {TREATMENTS.map((treatment, index) => {
-          const linkPath = treatment.id === 'glowup' ? '/glowup' : '/darmtraject';
+          const linkPath = treatment.id === 'hormoontraject' ? '/hormoontraject' : '/darmtraject';
           return (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={linkPath} className="h-full block">
