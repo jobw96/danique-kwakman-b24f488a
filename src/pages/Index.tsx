@@ -23,6 +23,7 @@ import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
+import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
 
 const TREATMENTS = [{
   id: 'hormoontraject',
@@ -76,7 +77,7 @@ const STATS: Stat[] = [{
   description: 'Geen standaard protocollen, maar maatwerk.'
 }];
 
-import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
+
 
 const FAQ: FaqItem[] = [{
   question: 'Worden consulten vergoed?',
