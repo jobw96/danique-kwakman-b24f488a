@@ -8,6 +8,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
 
 const DARM_TESTIMONIALS = [
   {
@@ -24,6 +25,7 @@ const DARM_TESTIMONIALS = [
     image: '',
     text: 'De afgelopen dagen kan ik elke dag naar de wc zonder die movicolon zakjes. En het gaat makkelijker 🙃',
   },
+  ...GENERAL_TESTIMONIALS,
 ];
 
 
