@@ -8,6 +8,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
 
 const DARM_TESTIMONIALS = [
   {

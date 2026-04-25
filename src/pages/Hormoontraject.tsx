@@ -8,6 +8,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
+import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
 
 const HORMOON_TESTIMONIALS = [
   {
@@ -52,6 +53,7 @@ const HORMOON_TESTIMONIALS = [
     image: '',
     text: 'Hi Danique, wilde je via deze weg even laten weten dat ik afgelopen zaterdag ongesteld ben geworden 🙌🏻🙌🏻. Geeft nu weer goede energie om door te pakken!!',
   },
+  ...GENERAL_TESTIMONIALS,
 ];
 
 
