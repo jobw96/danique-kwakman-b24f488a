@@ -291,6 +291,15 @@ const Hormoontraject = () => {
             </div>
           </FadeIn>
 
+          {/* Ervaringen */}
+          <FadeIn className="mb-20">
+            <div className="text-center mb-12">
+              <SectionTag text="Ervaringen" />
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Wat anderen zeggen</h2>
+            </div>
+            <Testimonials testimonials={HORMOON_TESTIMONIALS} />
+          </FadeIn>
+
           {/* Investering */}
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center">
