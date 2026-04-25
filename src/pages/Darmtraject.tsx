@@ -3,10 +3,28 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Check, X, Users, ClipboardList, Activity, MessageCircle, Layers, Heart, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { Testimonials } from '@/components/Testimonials';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueDarm from '@/assets/danique-darm.webp';
+
+const DARM_TESTIMONIALS = [
+  {
+    id: 'd1',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Het eten gaat mij steeds makkelijker af en heb echt mijn routine gevonden. Je recepten zijn ook erg fijn!',
+  },
+  {
+    id: 'd2',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'De afgelopen dagen kan ik elke dag naar de wc zonder die movicolon zakjes. En het gaat makkelijker 🙃',
+  },
+];
 
 
 
@@ -249,6 +267,15 @@ const Darmtraject = () => {
                 </ul>
               </div>
             </div>
+          </FadeIn>
+
+          {/* Ervaringen */}
+          <FadeIn className="mb-20">
+            <div className="text-center mb-12">
+              <SectionTag text="Ervaringen" />
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Wat anderen zeggen</h2>
+            </div>
+            <Testimonials testimonials={DARM_TESTIMONIALS} />
           </FadeIn>
 
           {/* Investering */}
