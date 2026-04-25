@@ -3,10 +3,56 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Activity, Heart, Check, X, MessageCircle, ClipboardList, Users, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { Testimonials } from '@/components/Testimonials';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
+
+const HORMOON_TESTIMONIALS = [
+  {
+    id: 'h1',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Ik moet bijna ongesteld worden, maar heb echt bijna geen last meer van PMS klachten deze maand. Stuk minder stemmingswisselingen en ook meer rust thuis daardoor. Het eten gaat ook goed.',
+  },
+  {
+    id: 'h2',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Meer rust in mijn hoofd, minder buikpijn en minder last van PMS.',
+  },
+  {
+    id: 'h3',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Mijn laatste menstruatie was echt een stuk minder pijnlijk, dus dat geeft heel veel rust en positiviteit.',
+  },
+  {
+    id: 'h4',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Ik kwam bij Danique met ernstige menstruatieklachten en een zeer onregelmatige cyclus. We hebben samen naar de opties gekeken; nu ben ik veel regelmatiger en ik heb veel minder klachten. Ik zou Danique echt aanraden als je naar een fijn traject met veel persoonlijke aandacht en een vriendelijke aanpak op zoek bent!',
+  },
+  {
+    id: 'h5',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Danique is kundig. Denkt mee en geeft goeie tips. Ik kwam bij Danique met forse vermoeidheidsklachten waarvoor ik al jaren bij allerlei specialisten ben geweest maar nooit een goeie oplossing kreeg aangeboden. Door met mij mee te denken over mijn dagelijks leven en mee te denken over voeding heeft zij mij om drie maanden tijd vooruit geholpen. Minder vermoeid en ook andere problemen aangepakt.',
+  },
+  {
+    id: 'h6',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Hi Danique, wilde je via deze weg even laten weten dat ik afgelopen zaterdag ongesteld ben geworden 🙌🏻🙌🏻. Geeft nu weer goede energie om door te pakken!!',
+  },
+];
 
 
 
