@@ -16,7 +16,7 @@ import Index from "./pages/Index";
 // All other routes lazy-loaded — smaller initial bundle, faster homepage load
 const About = lazy(() => import("./pages/About"));
 const Method = lazy(() => import("./pages/Method"));
-const GlowUp = lazy(() => import("./pages/GlowUp"));
+const Hormoontraject = lazy(() => import("./pages/Hormoontraject"));
 const Darmtraject = lazy(() => import("./pages/Darmtraject"));
 
 const Recepten = lazy(() => import("./pages/Recepten"));
@@ -74,7 +74,8 @@ const AnimatedRoutes = () => {
           <Route path="/over-mij" element={<PageTransition><About /></PageTransition>} />
           <Route path="/method" element={<PageTransition><Method /></PageTransition>} />
           <Route path="/behandelingen" element={<PageTransition><Behandelingen /></PageTransition>} />
-          <Route path="/glowup" element={<PageTransition><GlowUp /></PageTransition>} />
+          <Route path="/hormoontraject" element={<PageTransition><Hormoontraject /></PageTransition>} />
+          <Route path="/glowup" element={<PageTransition><Hormoontraject /></PageTransition>} />
           <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
           
           <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />

@@ -41,7 +41,8 @@ const routeNames: Record<string, string> = {
     '/blog': 'Blog',
     '/method': 'Methode',
     '/behandelingen': 'Aanbod',
-    '/glowup': 'Glow Up Traject',
+    '/glowup': '1:1 Hormoontraject',
+    '/hormoontraject': '1:1 Hormoontraject',
     '/darmtraject': 'Darmtraject',
     
     '/e-book': 'E-book',
@@ -64,6 +65,7 @@ const routeIcons: Record<string, React.ElementType> = {
     '/method': Layers,
     '/behandelingen': LayoutGrid,
     '/glowup': Sparkles,
+    '/hormoontraject': Sparkles,
     '/darmtraject': Activity,
     
     '/e-book': Book,
