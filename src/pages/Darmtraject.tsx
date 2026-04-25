@@ -25,6 +25,7 @@ const DARM_TESTIMONIALS = [
     image: '',
     text: 'De afgelopen dagen kan ik elke dag naar de wc zonder die movicolon zakjes. En het gaat makkelijker 🙃',
   },
+  ...GENERAL_TESTIMONIALS,
 ];
 
 
