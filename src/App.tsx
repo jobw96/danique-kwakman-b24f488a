@@ -88,6 +88,7 @@ const AnimatedRoutes = () => {
           <Route path="/e-book-recepten-snacks" element={<PageTransition><EbookCravings /></PageTransition>} />
           <Route path="/e-book-boodschappenlijst" element={<PageTransition><EbookBoodschappenlijst /></PageTransition>} />
           <Route path="/e-book-mealprep-snacks" element={<PageTransition><EbookMealprepSnacks /></PageTransition>} />
+          <Route path="/e-book-weekmenu" element={<PageTransition><EbookWeekmenu /></PageTransition>} />
           <Route path="/nieuwsbrief" element={<PageTransition><Nieuwsbrief /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
