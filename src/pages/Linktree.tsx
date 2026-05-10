@@ -59,13 +59,11 @@ const LINKS = [
 ];
 
 const variantStyles: Record<string, string> = {
-  primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90",
-  soft: "bg-primary/20 text-foreground border border-primary/30 hover:bg-primary/30"
+  primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90"
 };
 
 const iconBgStyles: Record<string, string> = {
-  primary: "bg-white/20 text-primary-foreground",
-  soft: "bg-primary/30 text-primary-foreground"
+  primary: "bg-white/20 text-primary-foreground"
 };
 
 const SOCIAL_LINKS = [
