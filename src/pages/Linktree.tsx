@@ -238,26 +238,28 @@ const Linktree: React.FC = () => {
           initial="hidden"
           animate="visible"
         >
-          {LINKS.map((link, index) => (
-            <motion.button
-              key={index}
-              onClick={() => handleLinkClick(link)}
-              className="w-full bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium shadow-md relative overflow-hidden group"
-              variants={itemVariants}
-              whileHover={{ 
-                scale: 1.02,
-                y: -2,
-                boxShadow: "0 10px 30px -10px hsl(var(--primary) / 0.4)"
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              {/* Hover gradient overlay */}
-              <motion.div 
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"
-              />
-              <span className="relative z-10 leading-relaxed">{link.title}</span>
-            </motion.button>
-          ))}
+          {LINKS.map((link, index) => {
+            const Icon = link.icon;
+            const variant = (link as { variant?: string }).variant || "primary";
+            return (
+              <motion.button
+                key={index}
+                onClick={() => handleLinkClick(link)}
+                className={`w-full ${variantStyles[variant]} py-4 px-5 rounded-md text-sm font-medium relative overflow-hidden group transition-colors flex items-center gap-3 text-left`}
+                variants={itemVariants}
+                whileHover={{
+                  scale: 1.02,
+                  y: -2,
+                }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <span className="shrink-0 w-9 h-9 rounded-full bg-background/30 flex items-center justify-center">
+                  <Icon className="w-4 h-4" />
+                </span>
+                <span className="relative z-10 leading-snug flex-1">{link.title}</span>
+              </motion.button>
+            );
+          })}
         </motion.div>
 
         {/* Footer */}
