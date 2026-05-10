@@ -24,6 +24,7 @@ const Kennismaking = lazy(() => import("./pages/Kennismaking"));
 const Podcast = lazy(() => import("./pages/Podcast"));
 const Ebook = lazy(() => import("./pages/Ebook"));
 const EbookCravings = lazy(() => import("./pages/EbookCravings"));
+const EbookBoodschappenlijst = lazy(() => import("./pages/EbookBoodschappenlijst"));
 const Contact = lazy(() => import("./pages/Contact"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const Privacy = lazy(() => import("./pages/Privacy"));
@@ -83,6 +84,7 @@ const AnimatedRoutes = () => {
           <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
           <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
           <Route path="/e-book-recepten-snacks" element={<PageTransition><EbookCravings /></PageTransition>} />
+          <Route path="/e-book-boodschappenlijst" element={<PageTransition><EbookBoodschappenlijst /></PageTransition>} />
           <Route path="/nieuwsbrief" element={<PageTransition><Nieuwsbrief /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
