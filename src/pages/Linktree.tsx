@@ -13,15 +13,15 @@ const LINKS = [
     internal: true
   },
   {
-    title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
-    href: "/e-book",
-    icon: BookOpen,
-    internal: true
-  },
-  {
     title: "Ontvang elke week mijn gratis nieuwsbrief vol exclusieve inspiratie, tips en inzichten 💌",
     href: "/nieuwsbrief",
     icon: Mail,
+    internal: true
+  },
+  {
+    title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
+    href: "/e-book",
+    icon: BookOpen,
     internal: true
   },
   {
