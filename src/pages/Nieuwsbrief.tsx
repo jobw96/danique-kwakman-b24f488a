@@ -13,13 +13,13 @@ const SectionTag = ({ text }: { text: string }) => (
 const Nieuwsbrief = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=27';
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=37';
     script.charset = 'utf-8';
     script.async = true;
     document.body.appendChild(script);
 
     return () => {
-      const existingScript = document.querySelector('script[src*="activehosted.com/f/embed.php?id=27"]');
+      const existingScript = document.querySelector('script[src*="activehosted.com/f/embed.php?id=37"]');
       if (existingScript) {
         existingScript.remove();
       }
@@ -49,7 +49,7 @@ const Nieuwsbrief = () => {
                 </FadeIn>
                 <FadeIn delay={0.2}>
                   <div className="newsletter-form-wrapper">
-                    <div className="_form_27"></div>
+                    <div className="_form_37"></div>
                   </div>
                 </FadeIn>
               </div>
