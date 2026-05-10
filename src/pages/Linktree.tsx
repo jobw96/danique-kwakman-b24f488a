@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, MessageCircle, Mail, Sparkles, Heart, BookOpen, Mic, Calendar, Globe, Cookie, Sunrise, Compass } from 'lucide-react';
+import { Instagram, MessageCircle, Mail, Sparkles, Heart, Mic, Calendar, Globe, Cookie, Sunrise, Compass } from 'lucide-react';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
@@ -18,21 +18,21 @@ const LINKS = [
     href: "/nieuwsbrief",
     icon: Mail,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
     href: "/e-book",
     icon: Sunrise,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Podcast: Health & Hormone secrets",
     href: "/podcast",
     icon: Mic,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Plan jouw gratis kennismakingsgesprek in",
@@ -47,25 +47,23 @@ const LINKS = [
     href: "/#behandelingen",
     icon: Compass,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Website",
     href: "/",
     icon: Globe,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   }
 ];
 
 const variantStyles: Record<string, string> = {
-  primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90",
-  soft: "bg-primary/20 text-foreground border border-primary/30 hover:bg-primary/30"
+  primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90"
 };
 
 const iconBgStyles: Record<string, string> = {
-  primary: "bg-white/20 text-primary-foreground",
-  soft: "bg-primary/30 text-primary-foreground"
+  primary: "bg-white/20 text-primary-foreground"
 };
 
 const SOCIAL_LINKS = [
