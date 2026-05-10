@@ -18,21 +18,21 @@ const LINKS = [
     href: "/nieuwsbrief",
     icon: Mail,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
     href: "/e-book",
     icon: Sunrise,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Podcast: Health & Hormone secrets",
     href: "/podcast",
     icon: Mic,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Plan jouw gratis kennismakingsgesprek in",
@@ -47,14 +47,14 @@ const LINKS = [
     href: "/#behandelingen",
     icon: Compass,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   },
   {
     title: "Website",
     href: "/",
     icon: Globe,
     internal: true,
-    variant: "soft"
+    variant: "primary"
   }
 ];
 
