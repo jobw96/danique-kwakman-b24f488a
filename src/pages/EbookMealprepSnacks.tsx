@@ -34,49 +34,35 @@ const EbookMealprepSnacks = () => {
         canonicalUrl="/e-book-mealprep-snacks"
       />
       <Section className="pt-4 bg-background">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
-            <div className="lg:w-[65%]">
-              <FadeIn>
-                <SectionTag text="Gratis E-book" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                  6 mealprep snacks perfect <span className="italic text-secondary">voor onderweg</span>
-                </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Als je onderweg te weinig eten hebt meegenomen van thuis zie je pas hoe moeilijk het is om snel iets voedzaams te vinden.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Te weinig eten is niet alleen vervelend omdat je trek krijgt, het kan ook je energie en hormonen in de war brengen. Je krijgt sneller cravings, je word ineens chagrijnig, voelt je moe en soms ook opgeblazen.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  Ik heb mijn 6 favoriete mealprep snacks verzameld, zodat jij altijd iets voedzaams bij de hand hebt, ook op je drukste dagen.
-                </p>
-                <motion.button
-                  onClick={() => {
-                    document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
-                >
-                  Ontvang gratis e-book
-                  <ArrowDown className="w-5 h-5" />
-                </motion.button>
-              </FadeIn>
-            </div>
-            <div className="lg:w-[35%]">
-              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden">
-                <img
-                  src={ebookCover}
-                  alt="Gratis e-book 6 mealprep snacks perfect voor onderweg - Danique Kwakman"
-                  className="w-full h-auto rounded-[2rem]"
-                  width={1024}
-                  height={1536}
-                  loading="lazy"
-                />
-              </FadeIn>
-            </div>
+          <div className="mb-20">
+            <FadeIn>
+              <SectionTag text="Gratis E-book" />
+              <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
+                6 mealprep snacks perfect <span className="italic text-secondary">voor onderweg</span>
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Als je onderweg te weinig eten hebt meegenomen van thuis zie je pas hoe moeilijk het is om snel iets voedzaams te vinden.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Te weinig eten is niet alleen vervelend omdat je trek krijgt, het kan ook je energie en hormonen in de war brengen. Je krijgt sneller cravings, je word ineens chagrijnig, voelt je moe en soms ook opgeblazen.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                Ik heb mijn 6 favoriete mealprep snacks verzameld, zodat jij altijd iets voedzaams bij de hand hebt, ook op je drukste dagen.
+              </p>
+              <motion.button
+                onClick={() => {
+                  document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
+              >
+                Ontvang gratis e-book
+                <ArrowDown className="w-5 h-5" />
+              </motion.button>
+            </FadeIn>
           </div>
 
           {/* Feature Cards */}
