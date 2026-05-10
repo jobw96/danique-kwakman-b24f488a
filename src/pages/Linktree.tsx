@@ -10,46 +10,60 @@ const LINKS = [
     title: "Gratis e-book: 5 recepten om je zoete cravings rondom je menstruatie te stillen 🍫",
     href: "/e-book-recepten-snacks",
     icon: BookOpen,
-    internal: true
+    internal: true,
+    variant: "primary"
   },
   {
     title: "Ontvang elke week mijn gratis nieuwsbrief vol exclusieve inspiratie, tips en inzichten 💌",
     href: "/nieuwsbrief",
     icon: Mail,
-    internal: true
+    internal: true,
+    variant: "secondary"
   },
   {
     title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
     href: "/e-book",
     icon: BookOpen,
-    internal: true
+    internal: true,
+    variant: "outline"
   },
   {
     title: "Podcast: Health & Hormone secrets",
     href: "/podcast",
     icon: Mic,
-    internal: true
+    internal: true,
+    variant: "soft"
   },
   {
     title: "Plan jouw gratis kennismakingsgesprek in",
     href: "",
     icon: Calendar,
     internal: false,
-    isBooking: true
+    isBooking: true,
+    variant: "primary"
   },
   {
     title: "Aanbod",
     href: "/#behandelingen",
     icon: Gift,
-    internal: true
+    internal: true,
+    variant: "outline"
   },
   {
     title: "Website",
     href: "/",
     icon: Globe,
-    internal: true
+    internal: true,
+    variant: "soft"
   }
 ];
+
+const variantStyles: Record<string, string> = {
+  primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90",
+  secondary: "bg-secondary text-secondary-foreground border border-secondary hover:bg-secondary/90",
+  outline: "bg-transparent text-foreground border border-foreground/20 hover:border-primary hover:text-primary",
+  soft: "bg-background text-foreground border border-secondary/30 hover:border-secondary/60"
+};
 
 const SOCIAL_LINKS = [
   {
