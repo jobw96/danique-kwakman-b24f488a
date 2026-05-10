@@ -256,7 +256,7 @@ const Linktree: React.FC = () => {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span className="shrink-0 w-9 h-9 rounded-full bg-background/30 flex items-center justify-center">
+                <span className={`shrink-0 w-9 h-9 rounded-full ${iconBgStyles[variant]} flex items-center justify-center`}>
                   <Icon className="w-4 h-4" />
                 </span>
                 <span className="relative z-10 leading-snug flex-1">{link.title}</span>
