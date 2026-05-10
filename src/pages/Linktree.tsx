@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, MessageCircle, Mail, Sparkles, Heart, BookOpen, Mic, Calendar, Gift, Globe } from 'lucide-react';
+import { Instagram, MessageCircle, Mail, Sparkles, Heart, BookOpen, Mic, Calendar, Globe, Cookie, Sunrise, Compass } from 'lucide-react';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
@@ -9,7 +9,7 @@ const LINKS = [
   {
     title: "Gratis e-book: 5 recepten om je zoete cravings rondom je menstruatie te stillen 🍫",
     href: "/e-book-recepten-snacks",
-    icon: BookOpen,
+    icon: Cookie,
     internal: true,
     variant: "primary"
   },
@@ -18,14 +18,14 @@ const LINKS = [
     href: "/nieuwsbrief",
     icon: Mail,
     internal: true,
-    variant: "secondary"
+    variant: "soft"
   },
   {
     title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
     href: "/e-book",
-    icon: BookOpen,
+    icon: Sunrise,
     internal: true,
-    variant: "outline"
+    variant: "soft"
   },
   {
     title: "Podcast: Health & Hormone secrets",
@@ -45,9 +45,9 @@ const LINKS = [
   {
     title: "Aanbod",
     href: "/#behandelingen",
-    icon: Gift,
+    icon: Compass,
     internal: true,
-    variant: "outline"
+    variant: "soft"
   },
   {
     title: "Website",
@@ -60,9 +60,12 @@ const LINKS = [
 
 const variantStyles: Record<string, string> = {
   primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90",
-  secondary: "bg-secondary text-secondary-foreground border border-secondary hover:bg-secondary/90",
-  outline: "bg-transparent text-foreground border border-foreground/20 hover:border-primary hover:text-primary",
-  soft: "bg-background text-foreground border border-secondary/30 hover:border-secondary/60"
+  soft: "bg-white text-foreground border border-primary/20 hover:border-primary/50 hover:text-primary"
+};
+
+const iconBgStyles: Record<string, string> = {
+  primary: "bg-white/20 text-primary-foreground",
+  soft: "bg-primary/10 text-primary"
 };
 
 const SOCIAL_LINKS = [
