@@ -26,6 +26,7 @@ const Ebook = lazy(() => import("./pages/Ebook"));
 const EbookCravings = lazy(() => import("./pages/EbookCravings"));
 const EbookBoodschappenlijst = lazy(() => import("./pages/EbookBoodschappenlijst"));
 const EbookMealprepSnacks = lazy(() => import("./pages/EbookMealprepSnacks"));
+const EbookWeekmenu = lazy(() => import("./pages/EbookWeekmenu"));
 const Contact = lazy(() => import("./pages/Contact"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const Privacy = lazy(() => import("./pages/Privacy"));
