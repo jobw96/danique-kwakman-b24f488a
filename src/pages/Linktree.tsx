@@ -60,12 +60,12 @@ const LINKS = [
 
 const variantStyles: Record<string, string> = {
   primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90",
-  soft: "bg-white text-foreground border border-primary/20 hover:border-primary/50 hover:text-primary"
+  soft: "bg-primary/20 text-foreground border border-primary/30 hover:bg-primary/30"
 };
 
 const iconBgStyles: Record<string, string> = {
   primary: "bg-white/20 text-primary-foreground",
-  soft: "bg-primary/10 text-primary"
+  soft: "bg-primary/30 text-primary-foreground"
 };
 
 const SOCIAL_LINKS = [
