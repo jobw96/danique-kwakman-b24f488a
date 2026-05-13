@@ -141,7 +141,12 @@ const EbookWeekmenu = () => {
                     transition={{ delay: 0.2 }}
                   >
                     <div id="ac-form-container">
-                      <div className="_form_43"></div>
+                      <iframe
+                        src="https://daniquekwakman.activehosted.com/f/43"
+                        title="Download gratis weekmenu e-book"
+                        className="w-full border-0 bg-transparent"
+                        style={{ minHeight: '600px' }}
+                      />
                     </div>
                   </motion.div>
                 </div>
