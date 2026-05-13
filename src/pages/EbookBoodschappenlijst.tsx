@@ -42,17 +42,17 @@ const EbookBoodschappenlijst = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Als jij precies weet welke basics je standaard in huis wilt hebben, pak je je hormoonproof en darmvriendelijke producten straks met je ogen dicht en ga je je hormonen stapje voor stapje in balans brengen.
                 </p>
-                <motion.button
-                  onClick={() => {
-                    document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                <motion.a
+                  href={AC_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
                 >
                   Ontvang gratis e-book
-                  <ArrowDown className="w-5 h-5" />
-                </motion.button>
+                  <ArrowUpRight className="w-5 h-5" />
+                </motion.a>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
@@ -146,18 +146,18 @@ const EbookBoodschappenlijst = () => {
                   </div>
                 </div>
 
-                <div id="download-form">
-                  <motion.div
-                    className="p-4 sm:p-8 rounded-2xl sticky top-24"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
+                <div className="flex items-center justify-center">
+                  <motion.a
+                    href={AC_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors text-lg"
                   >
-                    <div id="ac-form-container">
-                      <div className="_form_41"></div>
-                    </div>
-                  </motion.div>
+                    Ontvang e-book
+                    <ArrowUpRight className="w-5 h-5" />
+                  </motion.a>
                 </div>
               </div>
             </div>

@@ -36,17 +36,17 @@ const EbookCravings = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Ken je dat gevoel dat je rondom je menstruatie mega veel cravings ervaart naar iets zoets? Dat je het liefst direct na het avondeten begint aan een pak koekjes of dat je NU naar de winkel wilt om chocola te halen. Je bent zeker niet de enige en er is een manier om daar slimmer mee om te gaan, zonder je hormonen of darmen uit balans te brengen en bakken met suiker naar binnen te werken.
                 </p>
-                <motion.button
-                  onClick={() => {
-                    document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                <motion.a
+                  href={AC_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
                 >
                   Ontvang gratis e-book
-                  <ArrowDown className="w-5 h-5" />
-                </motion.button>
+                  <ArrowUpRight className="w-5 h-5" />
+                </motion.a>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
@@ -137,18 +137,18 @@ const EbookCravings = () => {
                   </div>
                 </div>
 
-                <div id="download-form">
-                  <motion.div
-                    className="p-4 sm:p-8 rounded-2xl sticky top-24"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
+                <div className="flex items-center justify-center">
+                  <motion.a
+                    href={AC_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors text-lg"
                   >
-                    <div id="ac-form-container">
-                      <div className="_form_31"></div>
-                    </div>
-                  </motion.div>
+                    Ontvang e-book
+                    <ArrowUpRight className="w-5 h-5" />
+                  </motion.a>
                 </div>
               </div>
             </div>
