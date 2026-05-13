@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
@@ -12,6 +12,21 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const EbookWeekmenu = () => {
+  useEffect(() => {
+    // Load ActiveCampaign form script
+    const script = document.createElement('script');
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=43';
+    script.charset = 'utf-8';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -141,12 +156,7 @@ const EbookWeekmenu = () => {
                     transition={{ delay: 0.2 }}
                   >
                     <div id="ac-form-container">
-                      <iframe
-                        src="https://daniquekwakman.activehosted.com/f/43"
-                        title="Download gratis weekmenu e-book"
-                        className="w-full border-0 bg-transparent"
-                        style={{ minHeight: '600px' }}
-                      />
+                      <div className="_form_43"></div>
                     </div>
                   </motion.div>
                 </div>
