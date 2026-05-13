@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { ArrowDown, Sparkles, Zap, Heart, Clock } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Zap, Heart, Clock } from 'lucide-react';
 import { SEO } from '@/components/SEO';
+
+const AC_FORM_URL = 'https://daniquekwakman.activehosted.com/f/33';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
@@ -12,19 +14,6 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const EbookMealprepSnacks = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=33';
-    script.charset = 'utf-8';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    };
-  }, []);
 
   return (
     <div className="min-h-screen">
