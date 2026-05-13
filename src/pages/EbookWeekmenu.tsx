@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
