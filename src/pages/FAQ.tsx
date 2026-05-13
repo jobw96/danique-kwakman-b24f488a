@@ -64,7 +64,7 @@ const FAQ = () => {
           <FadeIn>
             <SectionTag text="Veelgestelde vragen" />
             <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
-              Vragen?
+              Veelgestelde Vragen over Hormoontherapie en Darmgezondheid
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Hier vind je antwoorden op de meest gestelde vragen

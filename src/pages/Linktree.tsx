@@ -144,6 +144,7 @@ const Linktree: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-card flex flex-col items-center px-4 py-8 md:py-12">
+      <h1 className="sr-only">Danique Kwakman — Links en Resources</h1>
       <div className="w-full max-w-md relative z-10">
         {/* Profile Section */}
         <motion.div 
@@ -198,6 +199,7 @@ const Linktree: React.FC = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={social.name}
                 className={`${social.color} text-white p-2.5 rounded-full shadow-md`}
                 variants={socialVariants}
                 custom={index}
