@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { ArrowDown, Sparkles, Leaf, Heart, CheckCircle2 } from 'lucide-react';
+import { Sparkles, Leaf, Heart, CheckCircle2, ArrowUpRight } from 'lucide-react';
 import { SEO } from '@/components/SEO';
+
+const AC_FORM_URL = 'https://daniquekwakman.activehosted.com/f/43';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
@@ -12,21 +14,6 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const EbookWeekmenu = () => {
-  useEffect(() => {
-    // Load ActiveCampaign form script
-    const script = document.createElement('script');
-    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=43';
-    script.charset = 'utf-8';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    };
-  }, []);
 
   return (
     <div className="min-h-screen">
@@ -56,17 +43,17 @@ const EbookWeekmenu = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Je krijgt een overzichtelijke, voedende basis waarmee je jouw hormonen en darmen stap voor stap ondersteunt zonder ingewikkeld gedoe.
               </p>
-              <motion.button
-                onClick={() => {
-                  document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
-                }}
+              <motion.a
+                href={AC_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
               >
                 Ontvang gratis e-book
-                <ArrowDown className="w-5 h-5" />
-              </motion.button>
+                <ArrowUpRight className="w-5 h-5" />
+              </motion.a>
             </FadeIn>
           </div>
 
@@ -147,18 +134,18 @@ const EbookWeekmenu = () => {
                   </div>
                 </div>
 
-                <div id="download-form">
-                  <motion.div
-                    className="p-4 sm:p-8 rounded-2xl sticky top-24"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
+                <div className="flex items-center justify-center">
+                  <motion.a
+                    href={AC_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors text-lg"
                   >
-                    <div id="ac-form-container">
-                      <div className="_form_43"></div>
-                    </div>
-                  </motion.div>
+                    Ontvang e-book
+                    <ArrowUpRight className="w-5 h-5" />
+                  </motion.a>
                 </div>
               </div>
             </div>
