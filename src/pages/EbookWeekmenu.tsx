@@ -12,6 +12,21 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const EbookWeekmenu = () => {
+  useEffect(() => {
+    // Load ActiveCampaign form script
+    const script = document.createElement('script');
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=43';
+    script.charset = 'utf-8';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">
