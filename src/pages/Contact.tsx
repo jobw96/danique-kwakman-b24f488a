@@ -51,7 +51,7 @@ const Contact = () => {
                     Maak een afspraak
                   </h2>
                   <p className="text-muted-foreground leading-relaxed text-base py-0 pt-0 pb-[20px]">
-                    Met de volgende button kan je bij mij een afspraak maken voor een intakegesprek (60 minuten) of een kennismaking (vrijblijvend 10 minuten).
+                    Met de volgende button kan je bij mij een afspraak maken voor een intakegesprek of een gratis vrijblijvend kennismakingsgesprek
                   </p>
                   <CustomButton variant="secondary" onClick={openModal}>Afspraak maken</CustomButton>
                 </div>
