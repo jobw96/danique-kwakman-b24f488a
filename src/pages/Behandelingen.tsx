@@ -38,7 +38,7 @@ const Behandelingen = () => {
         <div className="text-center mb-16">
           <FadeIn>
           <SectionTag text="Trajecten" />
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h1>
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod — Behandelingen voor Hormoonbalans en Darmgezondheid</h1>
           </FadeIn>
         </div>
         

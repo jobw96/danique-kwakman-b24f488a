@@ -30,7 +30,7 @@ const About = () => {
               <FadeIn>
                 <SectionTag text="Over mij" />
                 <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                  Hi, ik ben <span className="italic">Danique</span>
+                  Over mij <span className="italic">— Danique Kwakman</span>,<br />Orthomoleculair Therapeut
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Ik help vrouwen hun lichaam opnieuw te begrijpen en stap voor stap van <strong>overleven naar leven</strong> te gaan, met mijn unieke <strong>CIRCLE-methode</strong>. Deze methode helpt je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en leven.

@@ -147,6 +147,7 @@ const RecipeDetail = ({ recipe, onClose }: { recipe: Recipe; onClose: () => void
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         <motion.button 
           onClick={onClose}
+          aria-label="Sluit recept"
           className="absolute top-2 right-2 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

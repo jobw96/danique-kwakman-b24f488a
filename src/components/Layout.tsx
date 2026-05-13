@@ -483,7 +483,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </p>
 
           <div className="flex items-center gap-8 mb-8">
-            <motion.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" whileHover={{
+            <motion.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op Instagram" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
@@ -493,7 +493,7 @@ export const Layout: React.FC<LayoutProps> = ({
           }}>
               <Instagram size={26} strokeWidth={1.5} />
             </motion.a>
-            <motion.a href="https://www.tiktok.com/@daniquekwakman" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" whileHover={{
+            <motion.a href="https://www.tiktok.com/@daniquekwakman" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
@@ -505,7 +505,7 @@ export const Layout: React.FC<LayoutProps> = ({
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
               </svg>
             </motion.a>
-            <motion.a href="mailto:info@daniquekwakman.nl" className="text-muted-foreground" whileHover={{
+            <motion.a href="mailto:info@daniquekwakman.nl" className="text-muted-foreground" aria-label="Mail Danique Kwakman" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
