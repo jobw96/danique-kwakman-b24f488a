@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { ArrowUpRight, Sparkles, Zap, UtensilsCrossed } from 'lucide-react';
+import { ArrowDown, Sparkles, Zap, UtensilsCrossed } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import ebookCover from '@/assets/ebook-cover-cravings.webp';
-
-const AC_FORM_URL = 'https://daniquekwakman.activehosted.com/f/31';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
@@ -15,6 +13,19 @@ const SectionTag = ({ text }: { text: string }) => (
 );
 
 const EbookCravings = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=31';
+    script.charset = 'utf-8';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -36,17 +47,17 @@ const EbookCravings = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Ken je dat gevoel dat je rondom je menstruatie mega veel cravings ervaart naar iets zoets? Dat je het liefst direct na het avondeten begint aan een pak koekjes of dat je NU naar de winkel wilt om chocola te halen. Je bent zeker niet de enige en er is een manier om daar slimmer mee om te gaan, zonder je hormonen of darmen uit balans te brengen en bakken met suiker naar binnen te werken.
                 </p>
-                <motion.a
-                  href={AC_FORM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <motion.button
+                  onClick={() => {
+                    document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors"
                 >
                   Ontvang gratis e-book
-                  <ArrowUpRight className="w-5 h-5" />
-                </motion.a>
+                  <ArrowDown className="w-5 h-5" />
+                </motion.button>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
@@ -137,18 +148,18 @@ const EbookCravings = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center">
-                  <motion.a
-                    href={AC_FORM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors text-lg"
+                <div id="download-form">
+                  <motion.div
+                    className="p-4 sm:p-8 rounded-2xl sticky top-24"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
                   >
-                    Ontvang e-book
-                    <ArrowUpRight className="w-5 h-5" />
-                  </motion.a>
+                    <div id="ac-form-container">
+                      <div className="_form_31"></div>
+                    </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
