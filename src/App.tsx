@@ -20,7 +20,6 @@ const Hormoontraject = lazy(() => import("./pages/Hormoontraject"));
 const Darmtraject = lazy(() => import("./pages/Darmtraject"));
 
 const Recepten = lazy(() => import("./pages/Recepten"));
-const Kennismaking = lazy(() => import("./pages/Kennismaking"));
 const Podcast = lazy(() => import("./pages/Podcast"));
 const Ebook = lazy(() => import("./pages/Ebook"));
 const EbookCravings = lazy(() => import("./pages/EbookCravings"));
@@ -35,8 +34,6 @@ const Terms = lazy(() => import("./pages/Terms"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Linktree = lazy(() => import("./pages/Linktree"));
 const Nieuwsbrief = lazy(() => import("./pages/Nieuwsbrief"));
-const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Behandelingen = lazy(() => import("./pages/Behandelingen"));
 
 const queryClient = new QueryClient();
@@ -82,7 +79,6 @@ const AnimatedRoutes = () => {
           <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
           
           <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />
-          <Route path="/kennismaking" element={<PageTransition><Kennismaking /></PageTransition>} />
           <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
           <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
           <Route path="/e-book-recepten-snacks" element={<PageTransition><EbookCravings /></PageTransition>} />
@@ -95,8 +91,6 @@ const AnimatedRoutes = () => {
           <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
           <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
-          <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
-          <Route path="/blog/:slug" element={<PageTransition><BlogPost /></PageTransition>} />
           <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
         </Routes>
       </Suspense>

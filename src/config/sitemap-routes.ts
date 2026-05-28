@@ -35,38 +35,15 @@ export const STATIC_ROUTES: SitemapRoute[] = [
   { path: '/darmtraject', changefreq: 'monthly', priority: 0.8 },
   
   { path: '/recepten', changefreq: 'weekly', priority: 0.7 },
-  { path: '/kennismaking', changefreq: 'monthly', priority: 0.9 },
   { path: '/podcast', changefreq: 'weekly', priority: 0.7 },
   { path: '/e-book', changefreq: 'monthly', priority: 0.7 },
   { path: '/e-book-recepten-snacks', changefreq: 'monthly', priority: 0.7 },
   { path: '/nieuwsbrief', changefreq: 'monthly', priority: 0.7 },
   { path: '/contact', changefreq: 'monthly', priority: 0.8 },
   { path: '/faq', changefreq: 'monthly', priority: 0.6 },
-  { path: '/blog', changefreq: 'weekly', priority: 0.8 },
   { path: '/privacy', changefreq: 'yearly', priority: 0.3 },
   { path: '/cookie-policy', changefreq: 'yearly', priority: 0.3 },
   { path: '/terms', changefreq: 'yearly', priority: 0.3 },
 ];
 
-/**
- * Blogposts: slug + ISO publish date.
- * Hier toevoegen wanneer er een nieuwe blogpost bijkomt.
- */
-export const BLOG_SITEMAP_ENTRIES: Array<{ slug: string; lastmod: string }> = [
-  { slug: 'hormoonbalans-5-signalen', lastmod: '2024-11-28' },
-  { slug: 'darmgezondheid-basis-welzijn', lastmod: '2024-11-21' },
-  { slug: 'natuurlijke-energie-boost', lastmod: '2024-11-14' },
-];
-
-export const getBlogRoutes = (): SitemapRoute[] =>
-  BLOG_SITEMAP_ENTRIES.map((entry) => ({
-    path: `/blog/${entry.slug}`,
-    changefreq: 'yearly' as ChangeFreq,
-    priority: 0.6,
-    lastmod: entry.lastmod,
-  }));
-
-export const getAllSitemapRoutes = (): SitemapRoute[] => [
-  ...STATIC_ROUTES,
-  ...getBlogRoutes(),
-];
+export const getAllSitemapRoutes = (): SitemapRoute[] => STATIC_ROUTES;
