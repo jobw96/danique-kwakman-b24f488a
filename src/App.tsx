@@ -20,7 +20,6 @@ const Hormoontraject = lazy(() => import("./pages/Hormoontraject"));
 const Darmtraject = lazy(() => import("./pages/Darmtraject"));
 
 const Recepten = lazy(() => import("./pages/Recepten"));
-const Kennismaking = lazy(() => import("./pages/Kennismaking"));
 const Podcast = lazy(() => import("./pages/Podcast"));
 const Ebook = lazy(() => import("./pages/Ebook"));
 const EbookCravings = lazy(() => import("./pages/EbookCravings"));
