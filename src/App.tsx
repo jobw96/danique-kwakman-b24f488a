@@ -34,8 +34,6 @@ const Terms = lazy(() => import("./pages/Terms"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Linktree = lazy(() => import("./pages/Linktree"));
 const Nieuwsbrief = lazy(() => import("./pages/Nieuwsbrief"));
-const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Behandelingen = lazy(() => import("./pages/Behandelingen"));
 
 const queryClient = new QueryClient();
@@ -81,7 +79,6 @@ const AnimatedRoutes = () => {
           <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
           
           <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />
-          <Route path="/kennismaking" element={<PageTransition><Kennismaking /></PageTransition>} />
           <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
           <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
           <Route path="/e-book-recepten-snacks" element={<PageTransition><EbookCravings /></PageTransition>} />
