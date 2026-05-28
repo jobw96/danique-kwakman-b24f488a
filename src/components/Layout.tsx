@@ -90,11 +90,6 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Gratis',
     subItems: [{
-      name: 'Kennismakingsgesprek',
-      href: '/kennismaking',
-      description: '',
-      icon: Phone
-    }, {
       name: 'Podcast',
       href: '/podcast',
       description: '',
