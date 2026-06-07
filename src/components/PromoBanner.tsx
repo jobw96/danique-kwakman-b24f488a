@@ -32,7 +32,7 @@ export const PromoBanner: React.FC = () => {
   return (
     <div className="bg-secondary text-white">
       <div className="container mx-auto px-4 py-1.5 flex items-center justify-center gap-x-3 text-[11px] sm:text-xs tracking-wide">
-        <span className="font-medium">Zomeractie t/m 1 juli — Hormoontraject &amp; Darmtraject</span>
+        <span className="font-medium">Trajectkorting op Hormoon- &amp; Darmtraject</span>
         <span className="opacity-50">|</span>
         <div className="flex items-center gap-1.5">
           <Unit value={time.days} label="d" />
