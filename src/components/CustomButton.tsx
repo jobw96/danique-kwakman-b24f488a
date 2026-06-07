@@ -15,7 +15,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
   className = '',
   ...props 
 }) => {
-  const baseStyles = "inline-flex items-center justify-center gap-2 px-6 rounded-md text-sm font-medium shadow-md";
+  const baseStyles = "inline-flex items-center justify-center gap-2 px-4 md:px-6 rounded-md text-sm font-medium shadow-md";
 
   const variants = {
     primary: "bg-primary text-white py-3",
