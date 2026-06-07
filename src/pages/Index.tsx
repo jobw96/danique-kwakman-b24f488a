@@ -231,7 +231,7 @@ const Index = () => {
             >
               ✦
             </motion.span>{' '}
-            Zomeractie — investeer in je energie, t/m 1 juli met korting
+            Voor wie klaar is om te beginnen — deze maand nog met korting
           </motion.p>
         </div>
       </div>
