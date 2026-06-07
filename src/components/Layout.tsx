@@ -166,6 +166,7 @@ export const Layout: React.FC<LayoutProps> = ({
     setActiveDropdown(null);
   };
   return <div className="min-h-screen flex flex-col font-sans text-muted-foreground" role="document">
+      <PromoBanner />
       <motion.header className="fixed top-0 w-full z-50 border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
