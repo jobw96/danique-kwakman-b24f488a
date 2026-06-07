@@ -231,7 +231,7 @@ const Index = () => {
             >
               ✦
             </motion.span>{' '}
-            Voor wie klaar is om te beginnen — deze maand nog met korting
+            Klaar voor jouw volgende stap? Deze maand met zachte zomerkorting
           </motion.p>
         </div>
       </div>
