@@ -212,8 +212,8 @@ const Index = () => {
             Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode naar balans in hormonen, darmen en energie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
-            <CustomButton variant="secondary" onClick={openModal} className="w-full sm:w-56">Gratis kennismaking</CustomButton>
-            <Link to="/method" className="w-full sm:w-56">
+            <CustomButton variant="secondary" onClick={openModal} className="w-56 max-w-full">Gratis kennismaking</CustomButton>
+            <Link to="/method" className="w-56 max-w-full">
               <CustomButton variant="outline" className="w-full">Mijn methode</CustomButton>
             </Link>
           </div>
