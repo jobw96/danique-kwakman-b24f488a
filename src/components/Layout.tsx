@@ -176,8 +176,6 @@ export const Layout: React.FC<LayoutProps> = ({
       <motion.header className="w-full border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
-      backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
-      paddingTop: scrolled ? '0.5rem' : '1rem',
       paddingBottom: scrolled ? '0.5rem' : '1rem',
       borderColor: scrolled ? 'hsl(var(--secondary) / 0.5)' : 'transparent',
       boxShadow: scrolled ? '0 2px 4px -1px rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.01)' : '0 0 0 0 rgba(0, 0, 0, 0)'
