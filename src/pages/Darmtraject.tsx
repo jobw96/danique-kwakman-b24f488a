@@ -282,13 +282,46 @@ const Darmtraject = () => {
 
           {/* Investering */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Investering</h2>
-              <p className="text-4xl md:text-5xl font-serif text-primary mb-2">€2100</p>
-              <p className="text-sm text-muted-foreground mb-8">
-                Inclusief: Ontlastingsonderzoek (€490) + intolerantietest 31 voedingsmiddelen (€115)
-              </p>
-              <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 bg-primary/10 py-2">
+                <span className="text-primary text-sm font-medium tracking-wide">⚡ Zomeractie — geldig t/m 1 juli 2026</span>
+              </div>
+              <div className="pt-6">
+                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-2">Investering</h2>
+                <p className="text-muted-foreground text-sm mb-6">Maandelijkse begeleiding, opzegbaar per maand</p>
+
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <span className="text-xl md:text-2xl text-muted-foreground line-through decoration-primary/50">€350</span>
+                  <span className="bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full">Nu €200/maand</span>
+                </div>
+                <p className="text-5xl md:text-6xl font-serif text-primary mb-2">€200<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
+                <p className="text-sm text-primary font-medium mb-8">Bespaar €150 per maand — slechts tijdelijk</p>
+
+                <div className="max-w-md mx-auto text-left mb-8">
+                  <p className="text-sm font-medium text-foreground mb-3 text-center">Dit krijg je:</p>
+                  <ul className="space-y-2">
+                    {[
+                      "5 persoonlijke 1:1 sessies van 60 minuten",
+                      "Intensieve begeleiding via WhatsApp",
+                      "Inclusief ontlastingsonderzoek (t.w.v. €490)",
+                      "Inclusief voedselintolerantietest 31 voedingsmiddelen (t.w.v. €115)",
+                      "Persoonlijk behandelplan en 4-fasen darmtherapie",
+                      "Praktische hulpmiddelen: trackers, recepten en werkboeken",
+                      "Flexibele maandelijkse betaling, geen verborgen kosten"
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
+                        <div className="w-5 h-5 min-w-5 min-h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                          <Check size={12} className="text-primary" />
+                        </div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
+                <p className="text-xs text-muted-foreground mt-4">Geen verplichtingen — het kennismakingsgesprek is 100% vrijblijvend</p>
+              </div>
             </div>
           </FadeIn>
         </div>
