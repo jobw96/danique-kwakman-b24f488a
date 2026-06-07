@@ -32,9 +32,11 @@ export const Layout: React.FC<LayoutProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [bannerOffset, setBannerOffset] = useState(0);
   const isHomePage = location.pathname === '/';
   const useDarkHeader = scrolled || !isHomePage || mobileMenuOpen;
   const footerRef = useRef<HTMLDivElement>(null);
+  const bannerRef = useRef<HTMLDivElement>(null);
   const {
     scrollYProgress
   } = useScroll({
@@ -46,9 +48,19 @@ export const Layout: React.FC<LayoutProps> = ({
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
       setShowBackToTop(window.scrollY > 500);
+      // On mobile, slide the banner up out of view as the user scrolls,
+      // so only the navbar stays sticky. On desktop (lg+) keep banner visible.
+      const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+      const bh = bannerRef.current?.offsetHeight ?? 0;
+      setBannerOffset(isDesktop ? 0 : Math.min(window.scrollY, bh));
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   // Scroll to top on route change, or smooth scroll to hash
