@@ -292,10 +292,10 @@ const Darmtraject = () => {
 
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-xl md:text-2xl text-muted-foreground line-through decoration-primary/50">€350</span>
-                  <span className="bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full">Nu €200/maand</span>
+                  <span className="bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full">Nu €299/maand</span>
                 </div>
-                <p className="text-5xl md:text-6xl font-serif text-primary mb-2">€200<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
-                <p className="text-sm text-primary font-medium mb-8">Bespaar €150 per maand — slechts tijdelijk</p>
+                <p className="text-5xl md:text-6xl font-serif text-primary mb-2">€299<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
+                <p className="text-sm text-primary font-medium mb-8">Bespaar €51 per maand — slechts tijdelijk</p>
 
                 <div className="max-w-md mx-auto text-left mb-8">
                   <p className="text-sm font-medium text-foreground mb-3 text-center">Dit krijg je:</p>
