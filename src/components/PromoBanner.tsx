@@ -34,7 +34,7 @@ export const PromoBanner: React.FC = () => {
   if (!time) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-primary text-primary-foreground">
+    <div className="relative z-[60] bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs sm:text-sm">
         <div className="flex items-center gap-2">
           <Zap className="w-3.5 h-3.5" />
