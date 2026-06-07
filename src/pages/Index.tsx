@@ -217,6 +217,9 @@ const Index = () => {
               <CustomButton variant="outline">Mijn methode</CustomButton>
             </Link>
           </div>
+          <p className="text-secondary text-sm font-normal opacity-85 mt-4 text-center md:text-left">
+            ✦ Zomeractie — investeer in je energie, t/m 1 juli met korting
+          </p>
         </div>
       </div>
       <motion.div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/60" animate={{
