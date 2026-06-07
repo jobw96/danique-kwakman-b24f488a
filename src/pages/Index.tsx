@@ -217,9 +217,22 @@ const Index = () => {
               <CustomButton variant="outline">Mijn methode</CustomButton>
             </Link>
           </div>
-          <p className="text-secondary text-sm font-normal opacity-85 mt-4 text-center md:text-left">
-            ✦ Zomeractie — investeer in je energie, t/m 1 juli met korting
-          </p>
+          <motion.p
+            className="text-white font-normal mt-4 text-center md:text-left"
+            style={{ fontSize: '14px' }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6, ease: 'easeOut' }}
+          >
+            <motion.span
+              className="text-secondary"
+              animate={{ opacity: [0.6, 1, 0.6] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              ✦
+            </motion.span>{' '}
+            Zomeractie — investeer in je energie, t/m 1 juli met korting
+          </motion.p>
         </div>
       </div>
       <motion.div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/60" animate={{
