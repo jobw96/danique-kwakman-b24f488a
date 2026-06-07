@@ -166,8 +166,9 @@ export const Layout: React.FC<LayoutProps> = ({
     setActiveDropdown(null);
   };
   return <div className="min-h-screen flex flex-col font-sans text-muted-foreground" role="document">
+      <div className="fixed top-0 left-0 right-0 z-50">
       <PromoBanner />
-      <motion.header className="sticky top-0 w-full z-50 border-b" animate={{
+      <motion.header className="w-full border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
       paddingBottom: scrolled ? '0.5rem' : '1rem',
@@ -455,6 +456,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </motion.button>
         </motion.div>
       </motion.header>
+      </div>
 
       <main className="flex-grow bg-background relative z-10">
         <Breadcrumbs />
