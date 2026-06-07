@@ -6,6 +6,7 @@ import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PromoBanner } from '@/components/PromoBanner';
 import { useBookingModal } from '@/components/BookingModal';
 interface LayoutProps {
   children: React.ReactNode;
