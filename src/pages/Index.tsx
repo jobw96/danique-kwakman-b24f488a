@@ -240,14 +240,6 @@ const Index = () => {
           </motion.p>
         </div>
       </div>
-      <motion.div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/60" animate={{
-        y: [0, 10, 0]
-      }} transition={{
-        repeat: Infinity,
-        duration: 2
-      }}>
-        <ArrowRight className="w-6 h-6 rotate-90" />
-      </motion.div>
     </section>
 
     <Section id="services">
