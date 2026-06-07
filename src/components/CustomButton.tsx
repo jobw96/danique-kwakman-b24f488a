@@ -15,13 +15,13 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
   className = '',
   ...props 
 }) => {
-  const baseStyles = "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md text-sm font-medium shadow-md";
-  
+  const baseStyles = "inline-flex items-center justify-center gap-2 px-6 rounded-md text-sm font-medium shadow-md";
+
   const variants = {
-    primary: "bg-primary text-white",
-    secondary: "bg-secondary text-white",
-    outline: "bg-transparent text-white border-2 border-white backdrop-blur-sm",
-    white: "bg-white text-foreground"
+    primary: "bg-primary text-white py-3",
+    secondary: "bg-secondary text-white py-3",
+    outline: "bg-transparent text-white border-2 border-white backdrop-blur-sm py-2.5",
+    white: "bg-white text-foreground py-3"
   };
 
   return (
