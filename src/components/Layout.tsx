@@ -456,6 +456,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </motion.button>
         </motion.div>
       </motion.header>
+      </div>
 
       <main className="flex-grow bg-background relative z-10">
         <Breadcrumbs />
