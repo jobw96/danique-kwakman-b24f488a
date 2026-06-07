@@ -167,8 +167,10 @@ export const Layout: React.FC<LayoutProps> = ({
   };
   return <div className="min-h-screen flex flex-col font-sans text-muted-foreground" role="document">
       <div className="lg:fixed top-0 left-0 right-0 z-50">
-      <PromoBanner />
-      <motion.header className="w-full border-b" animate={{
+      <div className="lg:contents">
+        <PromoBanner />
+      </div>
+      <motion.header className="w-full border-b fixed top-[var(--promo-banner-height,0px)] left-0 right-0 lg:static lg:top-auto z-50" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
       paddingBottom: scrolled ? '0.5rem' : '1rem',
