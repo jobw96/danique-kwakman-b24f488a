@@ -326,8 +326,7 @@ const Hormoontraject = () => {
                       "3 persoonlijke 1:1 sessies van 60 minuten",
                       "Intensieve begeleiding via WhatsApp",
                       "Persoonlijk behandelplan op maat (CIRCLE-methode)",
-                      "Praktische tools, werkboeken en cyclus-trackers",
-                      "Flexibele maandelijkse betaling, geen verborgen kosten"
+                      "Praktische tools, werkboeken en cyclus-trackers"
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                         <div className="w-5 h-5 min-w-5 min-h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
