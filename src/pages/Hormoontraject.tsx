@@ -309,37 +309,14 @@ const Hormoontraject = () => {
                 <span className="text-primary text-sm font-medium tracking-wide">⚡ Zomeractie — geldig t/m 1 juli 2026</span>
               </div>
               <div className="pt-6">
-                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-2">Investering</h2>
-                <p className="text-muted-foreground text-sm mb-6">Maandelijkse begeleiding, opzegbaar per maand</p>
+                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
 
-                <div className="flex items-center justify-center gap-3 mb-2">
+                <div className="flex items-center justify-center mb-2">
                   <span className="text-xl md:text-2xl text-muted-foreground line-through decoration-primary/50">€296</span>
-                  <span className="bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full">Nu €249/maand</span>
                 </div>
-                <p className="text-5xl md:text-6xl font-serif text-primary mb-2">€249<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
-                <p className="text-sm text-primary font-medium mb-8">Bespaar €47 per maand — slechts tijdelijk</p>
-
-                <div className="max-w-md mx-auto text-left mb-8">
-                  <p className="text-sm font-medium text-foreground mb-3 text-center">Dit krijg je:</p>
-                  <ul className="space-y-2">
-                    {[
-                      "3 persoonlijke 1:1 sessies van 60 minuten",
-                      "Intensieve begeleiding via WhatsApp",
-                      "Persoonlijk behandelplan op maat (CIRCLE-methode)",
-                      "Praktische tools, werkboeken en cyclus-trackers"
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <div className="w-5 h-5 min-w-5 min-h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
-                          <Check size={12} className="text-primary" />
-                        </div>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€249<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
 
                 <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
-                <p className="text-xs text-muted-foreground mt-4">Geen verplichtingen — het kennismakingsgesprek is 100% vrijblijvend</p>
               </div>
             </div>
           </FadeIn>

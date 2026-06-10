@@ -287,39 +287,14 @@ const Darmtraject = () => {
                 <span className="text-primary text-sm font-medium tracking-wide">⚡ Zomeractie — geldig t/m 1 juli 2026</span>
               </div>
               <div className="pt-6">
-                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-2">Investering</h2>
-                <p className="text-muted-foreground text-sm mb-6">Maandelijkse begeleiding, opzegbaar per maand</p>
+                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
 
-                <div className="flex items-center justify-center gap-3 mb-2">
+                <div className="flex items-center justify-center mb-2">
                   <span className="text-xl md:text-2xl text-muted-foreground line-through decoration-primary/50">€350</span>
-                  <span className="bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full">Nu €299/maand</span>
                 </div>
-                <p className="text-5xl md:text-6xl font-serif text-primary mb-2">€299<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
-                <p className="text-sm text-primary font-medium mb-8">Bespaar €51 per maand — slechts tijdelijk</p>
-
-                <div className="max-w-md mx-auto text-left mb-8">
-                  <p className="text-sm font-medium text-foreground mb-3 text-center">Dit krijg je:</p>
-                  <ul className="space-y-2">
-                    {[
-                      "5 persoonlijke 1:1 sessies van 60 minuten",
-                      "Intensieve begeleiding via WhatsApp",
-                      "Inclusief ontlastingsonderzoek (t.w.v. €490)",
-                      "Inclusief voedselintolerantietest 31 voedingsmiddelen (t.w.v. €115)",
-                      "Persoonlijk behandelplan en 4-fasen darmtherapie",
-                      "Praktische hulpmiddelen: trackers, recepten en werkboeken"
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <div className="w-5 h-5 min-w-5 min-h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
-                          <Check size={12} className="text-primary" />
-                        </div>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€299<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
 
                 <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
-                <p className="text-xs text-muted-foreground mt-4">Geen verplichtingen — het kennismakingsgesprek is 100% vrijblijvend</p>
               </div>
             </div>
           </FadeIn>
