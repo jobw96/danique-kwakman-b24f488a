@@ -43,6 +43,13 @@ const LINKS = [
     variant: "primary"
   },
   {
+    title: "Tijd om van je darmklachten af te komen? klik hier",
+    href: "/darmtraject",
+    icon: Sparkles,
+    internal: true,
+    variant: "primary"
+  },
+  {
     title: "Aanbod",
     href: "/#behandelingen",
     icon: Compass,
