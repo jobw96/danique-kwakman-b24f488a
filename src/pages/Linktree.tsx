@@ -7,6 +7,13 @@ import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 
 const LINKS = [
   {
+    title: "Tijd om van je darmklachten af te komen? klik hier",
+    href: "/darmtraject",
+    icon: Sparkles,
+    internal: true,
+    variant: "primary"
+  },
+  {
     title: "Gratis e-book: 5 recepten om je zoete cravings rondom je menstruatie te stillen 🍫",
     href: "/e-book-recepten-snacks",
     icon: Cookie,
@@ -42,13 +49,7 @@ const LINKS = [
     isBooking: true,
     variant: "primary"
   },
-  {
-    title: "Tijd om van je darmklachten af te komen? klik hier",
-    href: "/darmtraject",
-    icon: Sparkles,
-    internal: true,
-    variant: "primary"
-  },
+
   {
     title: "Aanbod",
     href: "/#behandelingen",
