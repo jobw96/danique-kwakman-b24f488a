@@ -268,4 +268,58 @@ export const faqSchema = (items: Array<{ question: string; answer: string }>) =>
   })),
 });
 
+/* ------------------------------------------------------------------ */
+/* Reading time + article helpers                                     */
+/* ------------------------------------------------------------------ */
+
+const WORDS_PER_MINUTE = 225;
+
+/** Count words in a plain-text string. Strips HTML tags first. */
+export const countWords = (input: string): number => {
+  const text = input.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  if (!text) return 0;
+  return text.split(' ').length;
+};
+
+/** Estimated reading time in minutes (rounded up, min 1). */
+export const readingTimeMinutes = (
+  input: string | number,
+  wordsPerMinute = WORDS_PER_MINUTE,
+): number => {
+  const words = typeof input === 'number' ? input : countWords(input);
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
+};
+
+/** Human-readable label, e.g. "5 min leestijd". */
+export const readingTimeLabel = (
+  input: string | number,
+  suffix = 'min leestijd',
+): string => `${readingTimeMinutes(input)} ${suffix}`;
+
+/** ISO 8601 duration for schema.org `timeRequired`, e.g. "PT5M". */
+export const readingTimeISO = (input: string | number): string =>
+  `PT${readingTimeMinutes(input)}M`;
+
+/**
+ * Build a BreadcrumbList for an article: Home → Section → Subsection → Article.
+ * Pass section hierarchy parents-first; `sectionBaseUrl` defaults to "/blog".
+ */
+export const articleBreadcrumbs = (params: {
+  articleTitle: string;
+  articleUrl: string;
+  sections?: Array<{ name: string; url: string }>;
+  sectionBaseUrl?: string;
+  homeLabel?: string;
+}) => {
+  const items: Array<{ name: string; url: string }> = [
+    { name: params.homeLabel ?? 'Home', url: '/' },
+  ];
+  if (params.sectionBaseUrl) {
+    items.push({ name: 'Blog', url: params.sectionBaseUrl });
+  }
+  for (const s of params.sections ?? []) items.push(s);
+  items.push({ name: params.articleTitle, url: params.articleUrl });
+  return breadcrumbSchema(items);
+};
+
 export default SEOHead;
