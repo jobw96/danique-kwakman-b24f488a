@@ -8,6 +8,7 @@ import logoGat from '@/assets/logo-gat.webp';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { PromoBanner } from '@/components/PromoBanner';
 import { useBookingModal } from '@/components/BookingModal';
+import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -28,6 +29,7 @@ export const Layout: React.FC<LayoutProps> = ({
   const navigate = useNavigate();
   const location = useLocation();
   const { openModal } = useBookingModal();
+  useHeadingHierarchyCheck();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
