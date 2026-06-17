@@ -27,23 +27,27 @@ export interface SitemapRoute {
 export const SITE_BASE_URL = 'https://daniquekwakman.nl';
 
 export const STATIC_ROUTES: SitemapRoute[] = [
-  { path: '/', changefreq: 'weekly', priority: 1.0 },
-  { path: '/over-mij', changefreq: 'monthly', priority: 0.8 },
-  { path: '/method', changefreq: 'monthly', priority: 0.8 },
-  { path: '/behandelingen', changefreq: 'monthly', priority: 0.9 },
-  { path: '/hormoontraject', changefreq: 'monthly', priority: 0.8 },
-  { path: '/darmtraject', changefreq: 'monthly', priority: 0.8 },
-  
-  { path: '/recepten', changefreq: 'weekly', priority: 0.7 },
-  { path: '/podcast', changefreq: 'weekly', priority: 0.7 },
-  { path: '/e-book', changefreq: 'monthly', priority: 0.7 },
-  { path: '/e-book-recepten-snacks', changefreq: 'monthly', priority: 0.7 },
-  { path: '/nieuwsbrief', changefreq: 'monthly', priority: 0.7 },
-  { path: '/contact', changefreq: 'monthly', priority: 0.8 },
+  // Homepage
+  { path: '/', changefreq: 'daily', priority: 1.0 },
+
+  // Hoofdpagina's
+  { path: '/over-mij', changefreq: 'weekly', priority: 0.8 },
+  { path: '/method', changefreq: 'weekly', priority: 0.8 },
+  { path: '/behandelingen', changefreq: 'weekly', priority: 0.8 },
+  { path: '/hormoontraject', changefreq: 'weekly', priority: 0.8 },
+  { path: '/darmtraject', changefreq: 'weekly', priority: 0.8 },
+  { path: '/recepten', changefreq: 'weekly', priority: 0.8 },
+  { path: '/podcast', changefreq: 'weekly', priority: 0.8 },
+  { path: '/contact', changefreq: 'weekly', priority: 0.8 },
+
+  // Subpagina's / statische content
+  { path: '/e-book', changefreq: 'monthly', priority: 0.6 },
+  { path: '/e-book-recepten-snacks', changefreq: 'monthly', priority: 0.6 },
+  { path: '/nieuwsbrief', changefreq: 'monthly', priority: 0.6 },
   { path: '/faq', changefreq: 'monthly', priority: 0.6 },
-  { path: '/privacy', changefreq: 'yearly', priority: 0.3 },
-  { path: '/cookie-policy', changefreq: 'yearly', priority: 0.3 },
-  { path: '/terms', changefreq: 'yearly', priority: 0.3 },
+  { path: '/privacy', changefreq: 'monthly', priority: 0.6 },
+  { path: '/cookie-policy', changefreq: 'monthly', priority: 0.6 },
+  { path: '/terms', changefreq: 'monthly', priority: 0.6 },
 ];
 
 export const getAllSitemapRoutes = (): SitemapRoute[] => STATIC_ROUTES;
