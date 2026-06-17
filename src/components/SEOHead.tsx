@@ -14,6 +14,19 @@ export const TWITTER_HANDLE = '@daniquekwakman';
 
 export type OgType = 'website' | 'article' | 'profile' | 'product';
 
+export interface Author {
+  name: string;
+  url?: string;
+}
+
+export interface ArticleMeta {
+  publishedTime: string; // ISO 8601
+  modifiedTime?: string;
+  authors?: Array<Author | string>;
+  section?: string;
+  tags?: string[];
+}
+
 export interface SEOHeadProps {
   /** Page title — site name is appended automatically as "Title | Site Name". */
   title?: string;
@@ -31,6 +44,8 @@ export interface SEOHeadProps {
   noindex?: boolean;
   /** JSON-LD structured data — single object or array. */
   structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
+  /** Article metadata — adds article:* OG tags when ogType="article". */
+  article?: ArticleMeta;
 }
 
 const toAbsolute = (urlOrPath: string): string => {
@@ -38,6 +53,9 @@ const toAbsolute = (urlOrPath: string): string => {
   if (urlOrPath.startsWith('http://') || urlOrPath.startsWith('https://')) return urlOrPath;
   return `${SITE_URL}${urlOrPath.startsWith('/') ? '' : '/'}${urlOrPath}`;
 };
+
+const normalizeAuthors = (authors?: Array<Author | string>): Author[] =>
+  (authors ?? []).map((a) => (typeof a === 'string' ? { name: a } : a));
 
 export const SEOHead = ({
   title,
@@ -48,6 +66,7 @@ export const SEOHead = ({
   ogType = 'website',
   noindex = false,
   structuredData,
+  article,
 }: SEOHeadProps) => {
   const location = useLocation();
   const path = canonicalUrl ?? location.pathname;
@@ -63,6 +82,8 @@ export const SEOHead = ({
       ? structuredData
       : [structuredData]
     : [];
+
+  const articleAuthors = normalizeAuthors(article?.authors);
 
   return (
     <Helmet>
@@ -86,6 +107,25 @@ export const SEOHead = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="nl_NL" />
+
+      {/* Article-specific Open Graph */}
+      {ogType === 'article' && article?.publishedTime && (
+        <meta property="article:published_time" content={article.publishedTime} />
+      )}
+      {ogType === 'article' && article?.modifiedTime && (
+        <meta property="article:modified_time" content={article.modifiedTime} />
+      )}
+      {ogType === 'article' && article?.section && (
+        <meta property="article:section" content={article.section} />
+      )}
+      {ogType === 'article' &&
+        articleAuthors.map((author, idx) => (
+          <meta key={`author-${idx}`} property="article:author" content={author.name} />
+        ))}
+      {ogType === 'article' &&
+        (article?.tags ?? []).map((tag, idx) => (
+          <meta key={`tag-${idx}`} property="article:tag" content={tag} />
+        ))}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -135,32 +175,49 @@ export const articleSchema = (params: {
   url: string;
   datePublished: string;
   dateModified?: string;
+  /** Single author name (legacy) or array of Author objects. */
   authorName?: string;
+  authors?: Array<Author | string>;
   category?: string;
-}) => ({
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: params.headline,
-  description: params.description,
-  image: toAbsolute(params.image),
-  datePublished: params.datePublished,
-  dateModified: params.dateModified ?? params.datePublished,
-  author: {
-    '@type': 'Person',
-    name: params.authorName ?? SITE_NAME,
-    url: `${SITE_URL}/over-mij`,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: SITE_NAME,
-    logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE },
-  },
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': toAbsolute(params.url),
-  },
-  ...(params.category ? { articleSection: params.category } : {}),
-});
+  keywords?: string[];
+  wordCount?: number;
+  timeRequired?: string; // ISO 8601 duration, e.g. "PT5M"
+}) => {
+  const authorList = normalizeAuthors(
+    params.authors ?? (params.authorName ? [{ name: params.authorName }] : undefined),
+  );
+  const authorNode = authorList.length
+    ? authorList.map((a) => ({
+        '@type': 'Person',
+        name: a.name,
+        ...(a.url ? { url: a.url } : {}),
+      }))
+    : [{ '@type': 'Person', name: SITE_NAME, url: `${SITE_URL}/over-mij` }];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: params.headline,
+    description: params.description,
+    image: toAbsolute(params.image),
+    datePublished: params.datePublished,
+    dateModified: params.dateModified ?? params.datePublished,
+    author: authorNode.length === 1 ? authorNode[0] : authorNode,
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': toAbsolute(params.url),
+    },
+    ...(params.category ? { articleSection: params.category } : {}),
+    ...(params.keywords?.length ? { keywords: params.keywords.join(', ') } : {}),
+    ...(params.wordCount ? { wordCount: params.wordCount } : {}),
+    ...(params.timeRequired ? { timeRequired: params.timeRequired } : {}),
+  };
+};
 
 export const productSchema = (params: {
   name: string;
@@ -210,5 +267,59 @@ export const faqSchema = (items: Array<{ question: string; answer: string }>) =>
     },
   })),
 });
+
+/* ------------------------------------------------------------------ */
+/* Reading time + article helpers                                     */
+/* ------------------------------------------------------------------ */
+
+const WORDS_PER_MINUTE = 225;
+
+/** Count words in a plain-text string. Strips HTML tags first. */
+export const countWords = (input: string): number => {
+  const text = input.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  if (!text) return 0;
+  return text.split(' ').length;
+};
+
+/** Estimated reading time in minutes (rounded up, min 1). */
+export const readingTimeMinutes = (
+  input: string | number,
+  wordsPerMinute = WORDS_PER_MINUTE,
+): number => {
+  const words = typeof input === 'number' ? input : countWords(input);
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
+};
+
+/** Human-readable label, e.g. "5 min leestijd". */
+export const readingTimeLabel = (
+  input: string | number,
+  suffix = 'min leestijd',
+): string => `${readingTimeMinutes(input)} ${suffix}`;
+
+/** ISO 8601 duration for schema.org `timeRequired`, e.g. "PT5M". */
+export const readingTimeISO = (input: string | number): string =>
+  `PT${readingTimeMinutes(input)}M`;
+
+/**
+ * Build a BreadcrumbList for an article: Home → Section → Subsection → Article.
+ * Pass section hierarchy parents-first; `sectionBaseUrl` defaults to "/blog".
+ */
+export const articleBreadcrumbs = (params: {
+  articleTitle: string;
+  articleUrl: string;
+  sections?: Array<{ name: string; url: string }>;
+  sectionBaseUrl?: string;
+  homeLabel?: string;
+}) => {
+  const items: Array<{ name: string; url: string }> = [
+    { name: params.homeLabel ?? 'Home', url: '/' },
+  ];
+  if (params.sectionBaseUrl) {
+    items.push({ name: 'Blog', url: params.sectionBaseUrl });
+  }
+  for (const s of params.sections ?? []) items.push(s);
+  items.push({ name: params.articleTitle, url: params.articleUrl });
+  return breadcrumbSchema(items);
+};
 
 export default SEOHead;
