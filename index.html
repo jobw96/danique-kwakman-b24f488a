@@ -29,6 +29,12 @@
     <link rel="icon" href="/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/favicon-light.svg" type="image/svg+xml" />
 
+    <!-- Performance: connect early to third-party origins we will hit -->
+    <link rel="preconnect" href="https://daniquekwakman.activehosted.com" crossorigin />
+    <link rel="dns-prefetch" href="https://daniquekwakman.activehosted.com" />
+    <link rel="preconnect" href="https://daniquekwakman.clientomgeving.nl" crossorigin />
+    <link rel="dns-prefetch" href="https://open.spotify.com" />
+
     <!-- Performance: preload critical custom fonts -->
     <link rel="preload" href="/fonts/Neulis-Sans-Light.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/Aesthet-Nova.woff2" as="font" type="font/woff2" crossorigin />
