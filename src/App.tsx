@@ -9,6 +9,8 @@ import { HelmetProvider } from "react-helmet-async";
 import { Layout } from "@/components/Layout";
 import { PageTransition } from "@/components/Animations";
 import { BookingModalProvider } from "@/components/BookingModal";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { RedirectHandler } from "@/components/RedirectHandler";
 
 // Homepage stays eager-loaded for fastest first paint
 import Index from "./pages/Index";
@@ -107,23 +109,26 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <ScrollToHash />
-            <Routes>
-              {/* Linktree page without Layout */}
-              <Route
-                path="/linktree"
-                element={
-                  <Suspense fallback={<RouteFallback />}>
-                    <Linktree />
-                  </Suspense>
-                }
-              />
-              {/* All other pages with Layout */}
-              <Route path="/*" element={
-                <Layout>
-                  <AnimatedRoutes />
-                </Layout>
-              } />
-            </Routes>
+            <RedirectHandler />
+            <ErrorBoundary>
+              <Routes>
+                {/* Linktree page without Layout */}
+                <Route
+                  path="/linktree"
+                  element={
+                    <Suspense fallback={<RouteFallback />}>
+                      <Linktree />
+                    </Suspense>
+                  }
+                />
+                {/* All other pages with Layout */}
+                <Route path="/*" element={
+                  <Layout>
+                    <AnimatedRoutes />
+                  </Layout>
+                } />
+              </Routes>
+            </ErrorBoundary>
           </BrowserRouter>
         </BookingModalProvider>
       </TooltipProvider>
