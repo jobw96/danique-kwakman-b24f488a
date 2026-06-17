@@ -204,6 +204,8 @@ export const SEOHead = ({
       />
 
       <link rel="canonical" href={canonical} />
+      {prevUrl && <link rel="prev" href={getCanonicalUrl(prevUrl)} />}
+      {nextUrl && <link rel="next" href={getCanonicalUrl(nextUrl)} />}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
