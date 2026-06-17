@@ -14,6 +14,19 @@ export const TWITTER_HANDLE = '@daniquekwakman';
 
 export type OgType = 'website' | 'article' | 'profile' | 'product';
 
+export interface Author {
+  name: string;
+  url?: string;
+}
+
+export interface ArticleMeta {
+  publishedTime: string; // ISO 8601
+  modifiedTime?: string;
+  authors?: Array<Author | string>;
+  section?: string;
+  tags?: string[];
+}
+
 export interface SEOHeadProps {
   /** Page title — site name is appended automatically as "Title | Site Name". */
   title?: string;
@@ -31,6 +44,8 @@ export interface SEOHeadProps {
   noindex?: boolean;
   /** JSON-LD structured data — single object or array. */
   structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
+  /** Article metadata — adds article:* OG tags when ogType="article". */
+  article?: ArticleMeta;
 }
 
 const toAbsolute = (urlOrPath: string): string => {
