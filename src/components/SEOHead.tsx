@@ -36,6 +36,11 @@ export interface SEOHeadProps {
   keywords?: string[];
   /** Relative path (e.g. "/about") or absolute URL. Defaults to current pathname. */
   canonicalUrl?: string;
+  /**
+   * Optional query params to preserve on the canonical URL (e.g. `{ page: 2 }`).
+   * All other query params (utm_*, ref, fbclid, gclid, ...) are stripped.
+   */
+  canonicalParams?: Record<string, string | number | undefined | null>;
   /** OG image URL (absolute preferred). Defaults to site OG image. */
   ogImage?: string;
   /** Open Graph type. */
@@ -46,7 +51,105 @@ export interface SEOHeadProps {
   structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
   /** Article metadata — adds article:* OG tags when ogType="article". */
   article?: ArticleMeta;
+  /** Pagination: emits <link rel="prev"> / <link rel="next"> (path or absolute URL). */
+  prevUrl?: string;
+  nextUrl?: string;
 }
+
+/* ------------------------------------------------------------------ */
+/* Canonical URL helpers                                              */
+/* ------------------------------------------------------------------ */
+
+/** Query params that must never appear in a canonical URL. */
+const TRACKING_PARAM_PATTERNS: RegExp[] = [
+  /^utm_/i,
+  /^ref$/i,
+  /^referrer$/i,
+  /^fbclid$/i,
+  /^gclid$/i,
+  /^gbraid$/i,
+  /^wbraid$/i,
+  /^msclkid$/i,
+  /^yclid$/i,
+  /^igshid$/i,
+  /^mc_/i,
+  /^_hs/i,
+  /^hsa_/i,
+  /^vero_/i,
+  /^_ga$/i,
+  /^session/i,
+];
+
+const isTrackingParam = (key: string) =>
+  TRACKING_PARAM_PATTERNS.some((re) => re.test(key));
+
+/** Lowercase pathname, ensure leading slash, strip trailing slash (except root). */
+const normalizePath = (path: string): string => {
+  let p = path || '/';
+  if (!p.startsWith('/')) p = `/${p}`;
+  const [rawPath, ...queryParts] = p.split('?');
+  let lowered = rawPath.toLowerCase();
+  if (lowered.length > 1 && lowered.endsWith('/')) {
+    lowered = lowered.replace(/\/+$/, '');
+  }
+  return queryParts.length ? `${lowered}?${queryParts.join('?')}` : lowered;
+};
+
+/**
+ * Build the canonical URL for a page.
+ *
+ * - Always https + canonical (non-www) host (`SITE_URL`).
+ * - Lowercases the pathname; trims trailing slash (except root).
+ * - Strips tracking/session params (utm_*, ref, fbclid, gclid, ...).
+ * - Merges in `params` you want to keep (e.g. `{ page: 2 }`).
+ *   `page=1` is dropped — page 1 canonicalizes to the base URL.
+ */
+export const getCanonicalUrl = (
+  pathOrUrl: string,
+  params?: Record<string, string | number | undefined | null>,
+): string => {
+  let pathname = pathOrUrl;
+  let existingSearch = '';
+  if (/^https?:\/\//i.test(pathOrUrl)) {
+    try {
+      const u = new URL(pathOrUrl);
+      pathname = u.pathname;
+      existingSearch = u.search;
+    } catch {
+      /* noop */
+    }
+  } else {
+    const qIdx = pathOrUrl.indexOf('?');
+    if (qIdx >= 0) {
+      pathname = pathOrUrl.slice(0, qIdx);
+      existingSearch = pathOrUrl.slice(qIdx);
+    }
+  }
+
+  const normalizedPath = normalizePath(pathname);
+
+  const sp = new URLSearchParams(existingSearch);
+  for (const key of Array.from(sp.keys())) {
+    if (isTrackingParam(key)) sp.delete(key);
+  }
+
+  if (params) {
+    for (const [key, value] of Object.entries(params)) {
+      if (value === undefined || value === null || value === '') {
+        sp.delete(key);
+        continue;
+      }
+      if (key === 'page' && Number(value) <= 1) {
+        sp.delete(key);
+        continue;
+      }
+      sp.set(key, String(value));
+    }
+  }
+
+  const query = sp.toString();
+  return `${SITE_URL}${normalizedPath}${query ? `?${query}` : ''}`;
+};
 
 const toAbsolute = (urlOrPath: string): string => {
   if (!urlOrPath) return SITE_URL;
@@ -62,15 +165,18 @@ export const SEOHead = ({
   description = DEFAULT_DESCRIPTION,
   keywords,
   canonicalUrl,
+  canonicalParams,
   ogImage = DEFAULT_OG_IMAGE,
   ogType = 'website',
   noindex = false,
   structuredData,
   article,
+  prevUrl,
+  nextUrl,
 }: SEOHeadProps) => {
   const location = useLocation();
   const path = canonicalUrl ?? location.pathname;
-  const canonical = toAbsolute(path);
+  const canonical = getCanonicalUrl(path, canonicalParams);
   const image = toAbsolute(ogImage);
 
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
@@ -98,6 +204,8 @@ export const SEOHead = ({
       />
 
       <link rel="canonical" href={canonical} />
+      {prevUrl && <link rel="prev" href={getCanonicalUrl(prevUrl)} />}
+      {nextUrl && <link rel="next" href={getCanonicalUrl(nextUrl)} />}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
