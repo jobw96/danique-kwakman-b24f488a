@@ -16,10 +16,7 @@ const pushToDataLayer = (event: DataLayerEvent) => {
   w.dataLayer.push(event);
 };
 
-const isDev =
-  typeof import.meta !== 'undefined' &&
-  // @ts-expect-error - import.meta.env in Vite
-  import.meta.env?.DEV === true;
+const isDev = import.meta.env?.DEV === true;
 
 export const track404 = (pathname: string, referrer?: string) => {
   const ref = referrer ?? (typeof document !== 'undefined' ? document.referrer : '');
