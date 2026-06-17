@@ -54,6 +54,9 @@ const toAbsolute = (urlOrPath: string): string => {
   return `${SITE_URL}${urlOrPath.startsWith('/') ? '' : '/'}${urlOrPath}`;
 };
 
+const normalizeAuthors = (authors?: Array<Author | string>): Author[] =>
+  (authors ?? []).map((a) => (typeof a === 'string' ? { name: a } : a));
+
 export const SEOHead = ({
   title,
   description = DEFAULT_DESCRIPTION,
@@ -63,6 +66,7 @@ export const SEOHead = ({
   ogType = 'website',
   noindex = false,
   structuredData,
+  article,
 }: SEOHeadProps) => {
   const location = useLocation();
   const path = canonicalUrl ?? location.pathname;
@@ -78,6 +82,8 @@ export const SEOHead = ({
       ? structuredData
       : [structuredData]
     : [];
+
+  const articleAuthors = normalizeAuthors(article?.authors);
 
   return (
     <Helmet>
@@ -101,6 +107,25 @@ export const SEOHead = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="nl_NL" />
+
+      {/* Article-specific Open Graph */}
+      {ogType === 'article' && article?.publishedTime && (
+        <meta property="article:published_time" content={article.publishedTime} />
+      )}
+      {ogType === 'article' && article?.modifiedTime && (
+        <meta property="article:modified_time" content={article.modifiedTime} />
+      )}
+      {ogType === 'article' && article?.section && (
+        <meta property="article:section" content={article.section} />
+      )}
+      {ogType === 'article' &&
+        articleAuthors.map((author, idx) => (
+          <meta key={`author-${idx}`} property="article:author" content={author.name} />
+        ))}
+      {ogType === 'article' &&
+        (article?.tags ?? []).map((tag, idx) => (
+          <meta key={`tag-${idx}`} property="article:tag" content={tag} />
+        ))}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
