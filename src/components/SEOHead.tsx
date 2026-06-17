@@ -175,32 +175,49 @@ export const articleSchema = (params: {
   url: string;
   datePublished: string;
   dateModified?: string;
+  /** Single author name (legacy) or array of Author objects. */
   authorName?: string;
+  authors?: Array<Author | string>;
   category?: string;
-}) => ({
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: params.headline,
-  description: params.description,
-  image: toAbsolute(params.image),
-  datePublished: params.datePublished,
-  dateModified: params.dateModified ?? params.datePublished,
-  author: {
-    '@type': 'Person',
-    name: params.authorName ?? SITE_NAME,
-    url: `${SITE_URL}/over-mij`,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: SITE_NAME,
-    logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE },
-  },
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': toAbsolute(params.url),
-  },
-  ...(params.category ? { articleSection: params.category } : {}),
-});
+  keywords?: string[];
+  wordCount?: number;
+  timeRequired?: string; // ISO 8601 duration, e.g. "PT5M"
+}) => {
+  const authorList = normalizeAuthors(
+    params.authors ?? (params.authorName ? [{ name: params.authorName }] : undefined),
+  );
+  const authorNode = authorList.length
+    ? authorList.map((a) => ({
+        '@type': 'Person',
+        name: a.name,
+        ...(a.url ? { url: a.url } : {}),
+      }))
+    : [{ '@type': 'Person', name: SITE_NAME, url: `${SITE_URL}/over-mij` }];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: params.headline,
+    description: params.description,
+    image: toAbsolute(params.image),
+    datePublished: params.datePublished,
+    dateModified: params.dateModified ?? params.datePublished,
+    author: authorNode.length === 1 ? authorNode[0] : authorNode,
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': toAbsolute(params.url),
+    },
+    ...(params.category ? { articleSection: params.category } : {}),
+    ...(params.keywords?.length ? { keywords: params.keywords.join(', ') } : {}),
+    ...(params.wordCount ? { wordCount: params.wordCount } : {}),
+    ...(params.timeRequired ? { timeRequired: params.timeRequired } : {}),
+  };
+};
 
 export const productSchema = (params: {
   name: string;
