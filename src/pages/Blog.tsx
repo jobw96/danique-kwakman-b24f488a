@@ -60,7 +60,7 @@ const Blog: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3">
-              Inzichten voor een <span className="text-secondary">gezonder</span> leven
+              Blog
             </h1>
             <p className="text-muted-foreground leading-relaxed">
               Artikelen over hormoonbalans, darmgezondheid en energie.
