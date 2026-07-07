@@ -123,6 +123,10 @@ const BLOG_CONTENT: Record<string, {
           Diarree. Hierbij is het belangrijk om te kijken naar mogelijke oorzaken zoals een infectie, voedselintolerantie of darmontsteking.
         </p>
 
+        <p>
+          Het doel? <strong>Type 3 of 4.</strong>
+        </p>
+
         <figure className="my-8">
           <img
             src={bristolStoolChart}
@@ -134,10 +138,6 @@ const BLOG_CONTENT: Record<string, {
             De Bristol Stool Chart
           </figcaption>
         </figure>
-
-        <p>
-          Het doel? <strong>Type 3 of 4.</strong>
-        </p>
 
         <h2>Let ook op deze signalen</h2>
         <p>
