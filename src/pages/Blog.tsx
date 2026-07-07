@@ -7,6 +7,7 @@ import { FadeIn } from '@/components/Animations';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueRunning from '@/assets/danique-running.webp';
+import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
 export interface BlogPost {
   id: string;
   slug: string;
@@ -18,6 +19,15 @@ export interface BlogPost {
   category: string;
 }
 export const BLOG_POSTS: BlogPost[] = [{
+  id: '4',
+  slug: 'darmen-gezond-houden-5-tips',
+  title: '5 simpele tips om je darmen gezond te houden',
+  excerpt: 'Je darmen worden niet voor niets je tweede brein genoemd. Ontdek 5 eenvoudige dagelijkse gewoontes om je darmgezondheid te ondersteunen.',
+  image: darmenGezondTips,
+  date: '7 juli 2026',
+  readTime: '7 min',
+  category: 'Darmgezondheid'
+}, {
   id: '1',
   slug: 'hormoonbalans-5-signalen',
   title: 'Hormoonbalans: 5 Signalen dat je hormonen uit balans zijn',
