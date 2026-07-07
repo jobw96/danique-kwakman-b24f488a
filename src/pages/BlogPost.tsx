@@ -131,7 +131,7 @@ const BLOG_CONTENT: Record<string, {
             loading="lazy"
           />
           <figcaption className="text-center text-sm text-muted-foreground mt-2">
-            De Bristol Stool Chart – bron: Wikimedia Commons
+            De Bristol Stool Chart
           </figcaption>
         </figure>
 
