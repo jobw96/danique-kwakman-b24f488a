@@ -90,8 +90,8 @@ const AnimatedRoutes = () => {
           <Route path="/nieuwsbrief" element={<PageTransition><Nieuwsbrief /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
-          <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
-          <Route path="/blog/:slug" element={<PageTransition><BlogPost /></PageTransition>} />
+          <Route path="/blog" element={<Navigate to="/recepten" replace />} />
+          <Route path="/blog/:slug" element={<Navigate to="/recepten" replace />} />
           <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
           <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
