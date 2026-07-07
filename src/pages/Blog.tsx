@@ -25,34 +25,8 @@ export const BLOG_POSTS: BlogPost[] = [{
   date: '7 juli 2026',
   readTime: '7 min',
   category: 'Darmgezondheid'
-}, {
-  id: '1',
-  slug: 'hormoonbalans-5-signalen',
-  title: 'Hormoonbalans: 5 Signalen dat je hormonen uit balans zijn',
-  excerpt: 'Ontdek de meest voorkomende signalen die aangeven dat je hormonen mogelijk uit balans zijn en wat je eraan kunt doen.',
-  image: daniqueRelaxed,
-  date: '28 november 2024',
-  readTime: '6 min',
-  category: 'Hormonen'
-}, {
-  id: '2',
-  slug: 'darmgezondheid-basis-welzijn',
-  title: 'Darmgezondheid: De basis van je welzijn',
-  excerpt: 'Waarom een gezonde darm de sleutel is tot meer energie, een sterker immuunsysteem en een betere mentale gezondheid.',
-  image: daniqueBeach,
-  date: '21 november 2024',
-  readTime: '8 min',
-  category: 'Darmgezondheid'
-}, {
-  id: '3',
-  slug: 'natuurlijke-energie-boost',
-  title: 'Energie boost: Natuurlijke manieren om je energie te verhogen',
-  excerpt: 'Voel je je vaak moe en uitgeput? Ontdek bewezen natuurlijke methoden om je energieniveau te verhogen zonder cafeïne.',
-  image: daniqueRunning,
-  date: '14 november 2024',
-  readTime: '5 min',
-  category: 'Energie'
 }];
+
 const containerVariants = {
   hidden: {
     opacity: 0
