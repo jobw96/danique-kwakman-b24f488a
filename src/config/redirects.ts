@@ -23,6 +23,8 @@ export interface RedirectRule {
   from: string;
   to: string;
   type: RedirectType;
+  /** Optioneel: behoud het pad na een wildcard-match. Standaard: false. */
+  preservePath?: boolean;
   /** Optioneel: notitie waarom deze redirect bestaat. */
   note?: string;
 }
@@ -36,7 +38,8 @@ export const REDIRECTS: RedirectRule[] = [
   { from: '/over', to: '/over-mij', type: 'permanent' },
   { from: '/about', to: '/over-mij', type: 'permanent' },
   { from: '/ebook', to: '/e-book', type: 'permanent' },
-  { from: '/blog', to: '/recepten', type: 'temporary', note: 'Blog tijdelijk samengevoegd met recepten.' },
+  { from: '/blog', to: '/recepten', type: 'permanent', note: 'Blog samengevoegd met recepten.' },
+  { from: '/blog/*', to: '/recepten', type: 'permanent', note: 'Blogberichten samengevoegd met recepten.' },
 ];
 
 /**
@@ -52,7 +55,7 @@ export const findRedirect = (pathname: string): RedirectRule | null => {
       const prefix = from.slice(0, -2);
       if (normalized === prefix || normalized.startsWith(`${prefix}/`)) {
         const suffix = normalized.slice(prefix.length);
-        return { ...rule, to: `${rule.to}${suffix}` };
+        return { ...rule, to: rule.preservePath ? `${rule.to}${suffix}` : rule.to };
       }
     } else if (normalized === from) {
       return rule;

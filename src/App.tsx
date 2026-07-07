@@ -91,7 +91,7 @@ const AnimatedRoutes = () => {
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
           <Route path="/blog" element={<Navigate to="/recepten" replace />} />
-          <Route path="/blog/:slug" element={<Navigate to="/recepten" replace />} />
+          <Route path="/blog/*" element={<Navigate to="/recepten" replace />} />
           <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
           <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />

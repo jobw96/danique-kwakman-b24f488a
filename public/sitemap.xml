@@ -55,36 +55,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://daniquekwakman.nl/blog</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://daniquekwakman.nl/blog/darmen-gezond-houden-5-tips</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://daniquekwakman.nl/blog/hormoonbalans-5-signalen</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://daniquekwakman.nl/blog/darmgezondheid-basis-welzijn</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://daniquekwakman.nl/blog/natuurlijke-energie-boost</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://daniquekwakman.nl/e-book</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
