@@ -12,6 +12,7 @@ import daniqueRunning from '@/assets/danique-running.webp';
 
 // ISO publish dates per slug (for Article schema)
 const POST_DATES: Record<string, string> = {
+  'darmen-gezond-houden-5-tips': '2026-07-07',
   'hormoonbalans-5-signalen': '2024-11-28',
   'darmgezondheid-basis-welzijn': '2024-11-21',
   'natuurlijke-energie-boost': '2024-11-14',
@@ -21,6 +22,120 @@ const POST_DATES: Record<string, string> = {
 const BLOG_CONTENT: Record<string, {
   content: React.ReactNode;
 }> = {
+  'darmen-gezond-houden-5-tips': {
+    content: <>
+        <p className="lead">
+          Je darmen worden niet voor niets je tweede brein genoemd.
+        </p>
+
+        <h2>Wist je dat?</h2>
+        <ul>
+          <li>Je hersenen en je darmen de hele dag signalen naar elkaar sturen en communiceren met elkaar. Dat betekent dat wat er in je darmen gebeurt, invloed kan hebben op je energie, stemming en hoe je je voelt.</li>
+          <li>Ongeveer 70% van je immuunsysteem zich in en rondom je darmen bevindt.</li>
+          <li>Darmbacteriën een belangrijke rol spelen bij de aanmaak van verschillende neurotransmitters, waaronder serotonine.</li>
+        </ul>
+
+        <p>
+          Misschien herken je het ook wel dat wanneer je gespannen bent, je dat direct voelt in je buik. Maar het werkt ook andersom. Wanneer je darmgezondheid uit balans is, kan dat invloed hebben op je energie, stemming, concentratie en zelfs je hormonen.
+        </p>
+
+        <p>
+          Je darmen doen dus veel meer dan alleen voedsel verteren.
+        </p>
+
+        <p>
+          Juist daarom besteed ik, maar ook de vrouwen in mijn praktijk, dagelijks heel veel aandacht aan de darmgezondheid.
+        </p>
+
+        <p>
+          Een goede darmgezondheid begint niet meteen bij het inzetten van supplementen, poedertjes of ingewikkelde protocollen. De grootste winst haal je echt bij het aanpassen van de basis.
+        </p>
+
+        <p>
+          Dit zijn 5 simpele dingen die je dagelijks kan toepassen om je darmen te ondersteunen:
+        </p>
+
+        <h2>1. Kauw heel goed op je eten</h2>
+        <p>
+          Je vertering begint al in je mond. Als je grote happen doorslikt, moet je maag en darmstelsel extra hard werken om alles goed te kunnen verwerken. Goed kauwen helpt je voeding beter af te breken én kan klachten zoals een opgeblazen gevoel verminderen.
+        </p>
+
+        <h2>2. Eet niet achter je laptop of met Netflix aan</h2>
+        <p>
+          Wanneer je gehaast eet of afgeleid bent tijdens het eten, staat je lichaam vaak in de 'aan-stand'. Je vertering werkt het beste wanneer je lichaam zich veilig en ontspannen voelt.
+        </p>
+        <p>
+          Je hoofd kan geen onderscheid maken tussen je Netflix serie en de realiteit. Denk je dat je je maaltijd goed kan verteren als je hoofd denkt dat jij midden in die spannende Netflix scene staat?
+        </p>
+        <p>
+          Je zenuwstelsel is op dat moment bezig met prikkels verwerken, in plaats van met verteren. Als je lijf niet bewust "door heeft" dat er eten aankomt, worden er ook minder verteringsenzymen aangemaakt.
+        </p>
+        <p>
+          Je maagzuurproductie komt minder goed op gang en je hele verteringsproces start eigenlijk al halfslachtig.
+        </p>
+        <p>
+          Daardoor wordt je eten minder goed afgebroken en opgenomen, wat je bijvoorbeeld kunt merken in een opgeblazen buik of een zwaar gevoel na het eten.
+        </p>
+        <p>
+          Je vertering werkt het beste wanneer je lichaam zich veilig en ontspannen voelt. In een ontspannen staat kan je lichaam enzymen aanmaken, je maagzuur goed laten werken en voedingsstoffen optimaal opnemen.
+        </p>
+        <p>
+          Probeer ook echt een momentje te maken van het eten van je maaltijden.
+        </p>
+
+        <h2>3. Haal 3 keer diep adem voordat je begint met eten</h2>
+        <p>
+          Dit klinkt misschien een beetje suf, maar dit helpt je om je zenuwstelsel van stressmodus naar rustmodus te schakelen. En juist in die ruststand kan je lichaam optimaal verteren.
+        </p>
+        <p>
+          <strong>Rest and digest!</strong>
+        </p>
+        <p>
+          Ben je op kantoor en vind je dat niet prettig aan tafel waar iedereen bij is? Ga voor je pauze even naar het toilet en neem daar even je rust om een paar keer diep in en uit te ademen.
+        </p>
+        <p>
+          Of lukt dit thuis niet met kinderen aan tafel? Je kunt bijvoorbeeld ook een rondje dankbaarheid doen. Iedereen deelt 1 ding waar ze vandaag dankbaar voor zijn. Op deze manier maken jullie er een ritueel van om even in het moment te zijn en te ontspannen voordat de maaltijd start.
+        </p>
+
+        <h2>4. Kies regelmatig voor een warm ontbijt</h2>
+        <p>
+          Denk aan havermout of een warme scramble. Een warm ontbijt is makkelijker te verteren voor je spijsvertering en zorgt ervoor dat je lijf minder hard hoeft te werken om je maaltijd te verwerken.
+        </p>
+        <p>
+          Kan je wel wat inspiratie gebruiken voor darmvriendelijke ontbijtjes? <Link to="/recepten">Check hier mijn recepten.</Link>
+        </p>
+
+        <h2>5. Beweeg elke dag minimaal 20 minuten</h2>
+        <p>
+          Beweging stimuleert de natuurlijke beweging van je darmen en helpt je vertering. Een korte wandeling na het eten kan soms al een wereld van verschil maken bij bijvoorbeeld een opgeblazen buik.
+        </p>
+
+        <p>
+          Je kunt de beste supplementen slikken, maar als je elke maaltijd gehaast achter je bureau eet en niet goed kauwt, krijgt je vertering nog steeds niet de omstandigheden die ze nodig heeft.
+        </p>
+
+        <p>
+          Merk je dat je toch nog last blijft houden van opgeblazen buiken en darmklachten, ondanks deze tips? Dan is het slim om verder te onderzoeken wat er speelt!
+        </p>
+
+        <p>
+          In het 1:1 darmtraject is dat precies wat we gaan doen. Met gekwalificeerd lab onderzoek onderzoeken we waar de oorzaak en triggers liggen van jouw maag- en darmklachten.
+        </p>
+
+        <p>
+          <em>Ps. We doen dit in ongeveer 6 maanden. Het is geen quick fix, maar wel iets waar je jarenlang blij over zal zijn!</em>
+        </p>
+
+        <p>
+          <Link to="/darmtraject">Lees hier meer over het 1:1 darmtraject.</Link>
+        </p>
+
+        <p>
+          Succes,<br />
+          Liefs Danique
+        </p>
+      </>
+  },
   'hormoonbalans-5-signalen': {
     content: <>
         <p className="lead">
