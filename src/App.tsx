@@ -37,8 +37,6 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Linktree = lazy(() => import("./pages/Linktree"));
 const Nieuwsbrief = lazy(() => import("./pages/Nieuwsbrief"));
 const Behandelingen = lazy(() => import("./pages/Behandelingen"));
-const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 const queryClient = new QueryClient();
 
