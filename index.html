@@ -108,10 +108,6 @@
       (function () {
         var BASE = 'https://daniquekwakman.nl';
         var path = window.location.pathname.replace(/\/+$/, '') || '/';
-        if (path.toLowerCase() === '/blog' || path.toLowerCase().indexOf('/blog/') === 0) {
-          window.location.replace('/recepten' + window.location.search + window.location.hash);
-          return;
-        }
         var routes = {
           '/': {
             title: 'Danique Kwakman - Orthomoleculair Therapeut | Hormoonbalans & Darmgezondheid',
@@ -172,6 +168,10 @@
           '/faq': {
             title: 'Veelgestelde Vragen | Danique Kwakman',
             description: 'Antwoorden op veelgestelde vragen over orthomoleculaire therapie, vergoeding, trajecten en werkwijze van Danique Kwakman.'
+          },
+          '/blog': {
+            title: 'Blog | Hormoonbalans, Darmen & Energie | Danique Kwakman',
+            description: 'Lees artikelen over hormoonbalans, darmgezondheid, voeding en leefstijl op de blog van orthomoleculair therapeut Danique Kwakman.'
           },
           '/privacy': {
             title: 'Privacybeleid | Danique Kwakman',

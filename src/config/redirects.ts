@@ -38,8 +38,6 @@ export const REDIRECTS: RedirectRule[] = [
   { from: '/over', to: '/over-mij', type: 'permanent' },
   { from: '/about', to: '/over-mij', type: 'permanent' },
   { from: '/ebook', to: '/e-book', type: 'permanent' },
-  { from: '/blog', to: '/recepten', type: 'permanent', note: 'Blog samengevoegd met recepten.' },
-  { from: '/blog/*', to: '/recepten', type: 'permanent', note: 'Blogberichten samengevoegd met recepten.' },
 ];
 
 /**
