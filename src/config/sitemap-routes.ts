@@ -41,9 +41,8 @@ export const STATIC_ROUTES: SitemapRoute[] = [
   { path: '/contact', changefreq: 'weekly', priority: 0.8 },
   { path: '/blog', changefreq: 'weekly', priority: 0.8 },
   { path: '/blog/darmen-gezond-houden-5-tips', changefreq: 'monthly', priority: 0.7 },
-  { path: '/blog/hormoonbalans-5-signalen', changefreq: 'monthly', priority: 0.7 },
-  { path: '/blog/darmgezondheid-basis-welzijn', changefreq: 'monthly', priority: 0.7 },
-  { path: '/blog/natuurlijke-energie-boost', changefreq: 'monthly', priority: 0.7 },
+
+
 
   // Subpagina's / statische content
   { path: '/e-book', changefreq: 'monthly', priority: 0.6 },
