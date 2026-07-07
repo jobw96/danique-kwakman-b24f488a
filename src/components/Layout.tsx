@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+
 import { PromoBanner } from '@/components/PromoBanner';
 import { useBookingModal } from '@/components/BookingModal';
 import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
@@ -478,7 +478,6 @@ export const Layout: React.FC<LayoutProps> = ({
       </div>
 
       <main className="flex-grow bg-background relative z-10">
-        <Breadcrumbs />
         {children}
       </main>
 
