@@ -4,6 +4,7 @@ import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
+import { FAQSection, FAQ_ITEMS } from '@/components/FAQSection';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 
 const SectionTag = ({
@@ -26,11 +27,21 @@ const Contact = () => {
       document.body.removeChild(script);
     };
   }, []);
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQ_ITEMS.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  };
   return <div className="min-h-screen">
       <SEO
         title="Contact | Orthomoleculair Therapeut"
         description="Neem contact op met Danique Kwakman, orthomoleculair therapeut, voor vragen over trajecten, kennismaking of samenwerking."
         canonicalUrl="/contact"
+        jsonLd={faqSchema}
       />
       {/* Main Content Section */}
       <Section className="pt-4">
@@ -105,6 +116,21 @@ const Contact = () => {
             </FadeIn>
           </div>
         </div>
+      </Section>
+
+      {/* Veelgestelde vragen */}
+      <Section className="pt-4 pb-20 bg-muted/30">
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <FadeIn>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-3">
+              Veelgestelde vragen
+            </h2>
+            <p className="text-muted-foreground">
+              Hier vind je antwoorden op de meest gestelde vragen.
+            </p>
+          </FadeIn>
+        </div>
+        <FAQSection />
       </Section>
     </div>;
 };
