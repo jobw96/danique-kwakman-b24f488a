@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { HelmetProvider } from "react-helmet-async";
 import { Layout } from "@/components/Layout";
@@ -37,8 +37,6 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Linktree = lazy(() => import("./pages/Linktree"));
 const Nieuwsbrief = lazy(() => import("./pages/Nieuwsbrief"));
 const Behandelingen = lazy(() => import("./pages/Behandelingen"));
-const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 const queryClient = new QueryClient();
 
@@ -92,8 +90,8 @@ const AnimatedRoutes = () => {
           <Route path="/nieuwsbrief" element={<PageTransition><Nieuwsbrief /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
-          <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
-          <Route path="/blog/:slug" element={<PageTransition><BlogPost /></PageTransition>} />
+          <Route path="/blog" element={<Navigate to="/recepten" replace />} />
+          <Route path="/blog/:slug" element={<Navigate to="/recepten" replace />} />
           <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
           <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
