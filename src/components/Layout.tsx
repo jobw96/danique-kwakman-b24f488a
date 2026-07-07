@@ -150,8 +150,8 @@ export const Layout: React.FC<LayoutProps> = ({
     name: 'Over mij',
     href: '/over-mij'
   }, {
-    name: 'FAQ',
-    href: '/faq'
+    name: 'Blog',
+    href: '/blog'
   }, {
     name: 'Contact',
     href: '/contact'

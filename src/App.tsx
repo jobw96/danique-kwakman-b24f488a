@@ -37,6 +37,8 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Linktree = lazy(() => import("./pages/Linktree"));
 const Nieuwsbrief = lazy(() => import("./pages/Nieuwsbrief"));
 const Behandelingen = lazy(() => import("./pages/Behandelingen"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 const queryClient = new QueryClient();
 
@@ -90,6 +92,8 @@ const AnimatedRoutes = () => {
           <Route path="/nieuwsbrief" element={<PageTransition><Nieuwsbrief /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
+          <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
+          <Route path="/blog/:slug" element={<PageTransition><BlogPost /></PageTransition>} />
           <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
           <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
