@@ -6,6 +6,7 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import SEO from '@/components/SEO';
 import { BLOG_POSTS } from './Blog';
+import bristolStoolChart from '@/assets/bristol-stool-chart.webp';
 
 // ISO publish dates per slug (for Article schema)
 const POST_DATES: Record<string, string> = {
@@ -121,6 +122,18 @@ const BLOG_CONTENT: Record<string, {
         <p><strong>Type 7 – Waterdun</strong><br />
           Diarree. Hierbij is het belangrijk om te kijken naar mogelijke oorzaken zoals een infectie, voedselintolerantie of darmontsteking.
         </p>
+
+        <figure className="my-8">
+          <img
+            src={bristolStoolChart}
+            alt="Bristol Stool Chart met de zeven ontlastingstypes"
+            className="w-full rounded-xl border border-border/40"
+            loading="lazy"
+          />
+          <figcaption className="text-center text-sm text-muted-foreground mt-2">
+            De Bristol Stool Chart – bron: Wikimedia Commons
+          </figcaption>
+        </figure>
 
         <p>
           Het doel? <strong>Type 3 of 4.</strong>
