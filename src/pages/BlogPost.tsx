@@ -6,17 +6,12 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import SEO from '@/components/SEO';
 import { BLOG_POSTS } from './Blog';
-import daniqueRelaxed from '@/assets/danique-relaxed.webp';
-import daniqueBeach from '@/assets/danique-beach.webp';
-import daniqueRunning from '@/assets/danique-running.webp';
 
 // ISO publish dates per slug (for Article schema)
 const POST_DATES: Record<string, string> = {
   'darmen-gezond-houden-5-tips': '2026-07-07',
-  'hormoonbalans-5-signalen': '2024-11-28',
-  'darmgezondheid-basis-welzijn': '2024-11-21',
-  'natuurlijke-energie-boost': '2024-11-14',
 };
+
 
 // Blog content for each post
 const BLOG_CONTENT: Record<string, {
