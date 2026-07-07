@@ -32,7 +32,7 @@ export const BLOG_POSTS: BlogPost[] = [{
   title: '5 simpele tips om je darmen gezond te houden',
   excerpt: 'Je darmen worden niet voor niets je tweede brein genoemd. Ontdek 5 eenvoudige dagelijkse gewoontes om je darmgezondheid te ondersteunen.',
   image: darmenGezondTips,
-  date: '7 juli 2026',
+  date: '29 juni 2026',
   readTime: '7 min',
   category: 'Darmgezondheid'
 }];

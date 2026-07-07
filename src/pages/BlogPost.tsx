@@ -10,7 +10,7 @@ import bristolStoolChart from '@/assets/bristol-stool-chart.webp';
 
 // ISO publish dates per slug (for Article schema)
 const POST_DATES: Record<string, string> = {
-  'darmen-gezond-houden-5-tips': '2026-07-07',
+  'darmen-gezond-houden-5-tips': '2026-06-29',
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
 };
 
