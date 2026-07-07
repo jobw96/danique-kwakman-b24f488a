@@ -189,7 +189,7 @@ const BlogPost: React.FC = () => {
         jsonLd={articleSchema}
       />
       {/* Content */}
-      <Section className="pt-4 pb-0">
+      <Section className="pt-8 pb-8">
         <div className="max-w-4xl mx-auto">
           {/* Back Link */}
           <FadeIn>
@@ -241,7 +241,7 @@ const BlogPost: React.FC = () => {
           duration: 0.5,
           delay: 0.3
         }}>
-            <div className="relative aspect-[21/9]">
+            <div className="relative aspect-[16/9]">
               <img src={post.image} alt={post.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </motion.div>
@@ -249,7 +249,7 @@ const BlogPost: React.FC = () => {
       </Section>
 
       {/* Article Content */}
-      <Section className="py-0 md:py-0">
+      <Section className="py-12 md:py-16">
         <motion.article className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground" initial={{
         opacity: 0,
         y: 20
