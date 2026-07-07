@@ -62,9 +62,6 @@ const Blog: React.FC = () => {
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3">
               Blog
             </h1>
-            <p className="text-muted-foreground leading-relaxed">
-              Artikelen over hormoonbalans, darmgezondheid en energie.
-            </p>
           </FadeIn>
         </div>
       </Section>
