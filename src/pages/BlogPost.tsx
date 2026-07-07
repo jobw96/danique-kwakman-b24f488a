@@ -10,6 +10,7 @@ import { BLOG_POSTS } from './Blog';
 // ISO publish dates per slug (for Article schema)
 const POST_DATES: Record<string, string> = {
   'darmen-gezond-houden-5-tips': '2026-07-07',
+  'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
 };
 
 
@@ -17,6 +18,156 @@ const POST_DATES: Record<string, string> = {
 const BLOG_CONTENT: Record<string, {
   content: React.ReactNode;
 }> = {
+  'wat-je-ontlasting-zegt-over-je-gezondheid': {
+    content: <>
+        <p className="lead">
+          Laten we eerlijk zijn… de meeste mensen trekken de wc door zonder ook maar één keer te kijken.
+        </p>
+
+        <p>Zonde…</p>
+
+        <p>
+          Want je ontlasting is misschien wel de meest eerlijke vorm van feedback die je lichaam je iedere dag geeft.
+        </p>
+
+        <p>
+          Toen ik zelf begon met het herstellen van mijn darmen, had ik gewild dat iemand me dit eerder had verteld. Ik had signalen veel eerder herkend en eerder aan de bel kunnen trekken.
+        </p>
+
+        <p>
+          Daarom deel ik vandaag de 3 belangrijkste dingen die je moet weten over je ontlasting.
+        </p>
+
+        <h2>1. De kleur van je ontlasting zegt meer dan je denkt</h2>
+        <p>
+          Een gezonde ontlasting is meestal mooi middelbruin. Dat betekent dat gal en je spijsvertering hun werk goed doen.
+        </p>
+        <p>
+          Maar ook andere kleuren kunnen waardevolle informatie geven.
+        </p>
+
+        <h3>🤎 Bruin</h3>
+        <p>
+          Dit is wat je het liefst ziet. Je vertering en galproductie lijken dan meestal goed te verlopen.
+        </p>
+
+        <h3>💛 Geel</h3>
+        <p>
+          Gele ontlasting kan wijzen op een minder goede vetvertering of een snelle doorloop door de darm. Dit zie je bijvoorbeeld bij langdurige stress, een voedingspatroon met veel vet en suiker of wanneer je lever of gal minder optimaal functioneren.
+        </p>
+
+        <h3>💚 Groen</h3>
+        <p>
+          Groene ontlasting ontstaat vaak doordat voeding sneller door de darm gaat of doordat je veel groene bladgroenten hebt gegeten. Soms kan een bacteriële infectie ook een rol spelen.
+        </p>
+
+        <h3>🖤 Zwart of heel donker</h3>
+        <p>
+          Dit kan komen door voeding, ijzersupplementen of bepaalde medicijnen. Maar zwarte ontlasting kan ook wijzen op oud bloed. Neem daarom altijd contact op met je huisarts om dit te bespreken.
+        </p>
+
+        <h2>2. Hoe vaak je poept is minstens zo belangrijk</h2>
+        <p>
+          Veel mensen denken dat drie keer per week normaal is.
+        </p>
+        <p>
+          Vanuit mijn orthomoleculaire visie streven we liever naar minimaal één keer per dag. Je lichaam is namelijk continu bezig met het afvoeren van afvalstoffen. Een deel daarvan verlaat je lichaam via je ontlasting.
+        </p>
+        <p>
+          Wanneer ontlasting te lang blijft zitten, kunnen afvalstoffen opnieuw worden opgenomen. Dat kan bijdragen aan klachten zoals:
+        </p>
+        <ul>
+          <li>een opgeblazen gevoel</li>
+          <li>vermoeidheid</li>
+          <li>hormonale klachten</li>
+          <li>huidproblemen</li>
+          <li>hoofdpijn</li>
+        </ul>
+        <p>
+          Poepen is dus letterlijk een belangrijk onderdeel van je natuurlijke detoxproces.
+        </p>
+
+        <h2>3. De vorm van je ontlasting vertelt hoe het met je darmen gaat</h2>
+        <p>
+          Niet alleen de kleur en frequentie zijn belangrijk. Ook de vorm geeft veel informatie.
+        </p>
+        <p>
+          De welbekende Bristol Stool Chart zette ik voorheen in toen ik nog werkzaam was als verpleegkundige, maar ook nu zet ik hem dagelijks in bij klanten in mijn praktijk.
+        </p>
+
+        <h3>De Bristol Stool Chart</h3>
+        <p>
+          De Bristol Stool Chart verdeelt ontlasting in zeven verschillende types.
+        </p>
+
+        <p><strong>Type 1 – Losse harde keutels</strong><br />
+          Vaak een teken van verstopping.
+        </p>
+        <p><strong>Type 2 – Worstvormig maar bobbelig</strong><br />
+          Nog steeds aan de harde kant; vaak te weinig vocht, vezels of beweging.
+        </p>
+        <p><strong>Type 3 – Worstvormig met scheurtjes</strong><br />
+          Vrijwel perfect.
+        </p>
+        <p><strong>Type 4 – Gladde, zachte 'boomstam'</strong><br />
+          Dit is de ideale ontlasting. Goed gevormd, soepel en makkelijk uit te scheiden.
+        </p>
+        <p><strong>Type 5 – Zachte klontjes</strong><br />
+          Kan wijzen op iets te snelle darmpassage.
+        </p>
+        <p><strong>Type 6 – Brijachtige ontlasting</strong><br />
+          Vaak een teken dat voeding te snel door de darm gaat of dat de darm geïrriteerd is.
+        </p>
+        <p><strong>Type 7 – Waterdun</strong><br />
+          Diarree. Hierbij is het belangrijk om te kijken naar mogelijke oorzaken zoals een infectie, voedselintolerantie of darmontsteking.
+        </p>
+
+        <p>
+          Het doel? <strong>Type 3 of 4.</strong>
+        </p>
+
+        <h2>Let ook op deze signalen</h2>
+        <p>
+          Naast kleur en vorm zijn er nog andere dingen waar je op mag letten.
+        </p>
+
+        <h3>Onverteerde voedselresten</h3>
+        <p>
+          Zie je regelmatig stukjes groente, noten of andere voeding terug? Dat kan betekenen dat voeding onvoldoende wordt afgebroken. Dit kan samenhangen met een lage maagzuurproductie, een verminderde enzymwerking of te snel eten.
+        </p>
+
+        <h3>Slijm</h3>
+        <p>
+          Een klein beetje slijm kan normaal zijn. Zie je regelmatig veel slijm? Dan kan dit wijzen op irritatie of ontsteking van de darmwand.
+        </p>
+
+        <h3>Een extreem sterke geur</h3>
+        <p>
+          Ontlasting ruikt natuurlijk nooit naar bloementjes. Maar het kan wijzen op een verstoorde darmflora of een minder goede vertering van eiwitten en vetten.
+        </p>
+
+        <p>
+          <em>Je ontlasting is het eerlijkste feedbacksysteem van je lijf.</em>
+        </p>
+
+        <h2>Wil jij ontdekken wat jouw darmen je proberen te vertellen?</h2>
+        <p>
+          Heb je regelmatig last van een opgeblazen buik, obstipatie, diarree, vermoeidheid, hormonale klachten of wisselende ontlasting? Dan is de kans groot dat je darmen aandacht nodig hebben.
+        </p>
+        <p>
+          In mijn 6 maanden durende darmhersteltraject kijken we niet alleen naar de symptomen, maar vooral naar de oorzaak. Stap voor stap werken we aan het herstellen van je darmgezondheid, zodat je meer energie krijgt, je hormonen beter in balans komen en je lichaam weer kan doen waar het voor gemaakt is.
+        </p>
+
+        <p>
+          <Link to="/darmtraject">Klik hier om meer te lezen over het 1:1 darmtraject.</Link>
+        </p>
+
+        <p>
+          Succes,<br />
+          Liefs Danique
+        </p>
+      </>
+  },
   'darmen-gezond-houden-5-tips': {
     content: <>
         <p className="lead">

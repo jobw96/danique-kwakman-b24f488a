@@ -41,6 +41,7 @@ export const STATIC_ROUTES: SitemapRoute[] = [
   { path: '/contact', changefreq: 'weekly', priority: 0.8 },
   { path: '/blog', changefreq: 'weekly', priority: 0.8 },
   { path: '/blog/darmen-gezond-houden-5-tips', changefreq: 'monthly', priority: 0.7 },
+  { path: '/blog/wat-je-ontlasting-zegt-over-je-gezondheid', changefreq: 'monthly', priority: 0.7 },
 
 
 

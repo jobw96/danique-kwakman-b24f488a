@@ -5,6 +5,7 @@ import { Calendar, ArrowRight } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
+import ontlastingSignalen from '@/assets/ontlasting-gezondheid-signalen.webp';
 
 export interface BlogPost {
   id: string;
@@ -17,6 +18,15 @@ export interface BlogPost {
   category: string;
 }
 export const BLOG_POSTS: BlogPost[] = [{
+  id: '5',
+  slug: 'wat-je-ontlasting-zegt-over-je-gezondheid',
+  title: 'Wat jouw ontlasting je vertelt over je gezondheid',
+  excerpt: 'Je ontlasting is misschien wel de meest eerlijke feedback die je lichaam je iedere dag geeft. Ontdek wat kleur, frequentie en vorm vertellen over je darmgezondheid.',
+  image: ontlastingSignalen,
+  date: '7 juli 2026',
+  readTime: '6 min',
+  category: 'Darmgezondheid'
+}, {
   id: '4',
   slug: 'darmen-gezond-houden-5-tips',
   title: '5 simpele tips om je darmen gezond te houden',
