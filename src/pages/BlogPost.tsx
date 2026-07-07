@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import SEO from '@/components/SEO';
@@ -221,10 +221,6 @@ const BlogPost: React.FC = () => {
               <Calendar className="w-4 h-4" />
               {post.date}
             </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" />
-              {post.readTime} leestijd
-            </span>
             <button className="flex items-center gap-1.5 hover:text-primary transition-colors ml-auto" onClick={() => navigator.share?.({
             title: post.title,
             url: window.location.href
@@ -299,7 +295,7 @@ const BlogPost: React.FC = () => {
                     <h3 className="font-serif text-base text-foreground group-hover:text-primary transition-colors line-clamp-2">
                       {relatedPost.title}
                     </h3>
-                    <span className="text-muted-foreground text-xs mt-1">{relatedPost.readTime}</span>
+                    
                   </div>
                 </Link>
               </motion.article>)}
