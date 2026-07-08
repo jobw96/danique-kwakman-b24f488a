@@ -217,27 +217,6 @@ const Index = () => {
               <CustomButton variant="outline" className="w-full">Mijn methode</CustomButton>
             </Link>
           </div>
-          <motion.p
-            className="text-white font-normal mt-4 text-center md:text-left"
-            style={{ fontSize: '14px' }}
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8, ease: 'easeOut' }}
-          >
-            <motion.span
-              className="text-secondary inline-block origin-center"
-              animate={{ opacity: [0.4, 1, 0.4], scale: [0.9, 1.15, 0.9] }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              ✦
-            </motion.span>{' '}
-            <motion.span
-              animate={{ opacity: [0.82, 1, 0.82] }}
-              transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1.4 }}
-            >
-              Klaar voor jouw volgende stap? Deze maand met zachte zomerkorting
-            </motion.span>
-          </motion.p>
         </div>
       </div>
     </section>
