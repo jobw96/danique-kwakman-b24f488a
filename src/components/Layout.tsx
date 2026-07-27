@@ -193,9 +193,11 @@ export const Layout: React.FC<LayoutProps> = ({
   };
   return <div className="min-h-screen flex flex-col font-sans text-muted-foreground" role="document">
       <div
+        ref={headerWrapperRef}
         className="fixed top-0 left-0 right-0 z-50"
         style={{ transform: `translateY(-${bannerOffset}px)` }}
       >
+
       <div ref={bannerRef}>
         <PromoBanner />
       </div>
