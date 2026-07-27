@@ -82,6 +82,7 @@ const AnimatedRoutes = () => {
           <Route path="/hormoontraject" element={<PageTransition><Hormoontraject /></PageTransition>} />
           <Route path="/glowup" element={<PageTransition><Hormoontraject /></PageTransition>} />
           <Route path="/darmtraject" element={<PageTransition><Darmtraject /></PageTransition>} />
+          <Route path="/bloedsuikertraject" element={<PageTransition><Bloedsuikertraject /></PageTransition>} />
           
           <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />
           <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />

@@ -126,7 +126,7 @@ export const Layout: React.FC<LayoutProps> = ({
       icon: UtensilsCrossed
     }]
   }, {
-    name: 'Aanbod Trajecten',
+    name: 'Aanbod',
     subItems: [{
     name: 'Aanbod',
       href: '/behandelingen',
@@ -140,6 +140,11 @@ export const Layout: React.FC<LayoutProps> = ({
     }, {
       name: '1:1 Darmtraject',
       href: '/darmtraject',
+      description: '',
+      icon: Activity
+    }, {
+      name: '1:1 Bloedsuikertraject',
+      href: '/bloedsuikertraject',
       description: '',
       icon: Activity
     }]
