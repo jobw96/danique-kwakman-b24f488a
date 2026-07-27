@@ -41,7 +41,7 @@ const EbookWeekmenu = () => {
           <div className="mb-20">
             <FadeIn>
               <SectionTag text="Gratis E-book" />
-              <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
                 Hormoonproof en <span className="italic text-secondary">darmvriendelijk</span> weekmenu
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">

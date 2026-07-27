@@ -78,7 +78,7 @@ const Hormoontraject = () => {
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="1:1 Traject" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Hormoontraject</h1>
+                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Hormoontraject</h1>
                 <p className="text-xl text-primary font-medium mb-6">In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf</p>
                 <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                   <p>

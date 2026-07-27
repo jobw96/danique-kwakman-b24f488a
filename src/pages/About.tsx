@@ -29,7 +29,7 @@ const About = () => {
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="Over mij" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
+                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
                   Over mij <span className="italic">— Danique Kwakman</span>,<br />Orthomoleculair Therapeut
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
