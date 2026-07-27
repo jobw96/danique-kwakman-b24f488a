@@ -133,6 +133,11 @@ export const Layout: React.FC<LayoutProps> = ({
       description: '',
       icon: LayoutGrid
     }, {
+      name: '1:1 Bloedsuikertraject',
+      href: '/bloedsuikertraject',
+      description: '',
+      icon: Activity
+    }, {
       name: '1:1 Hormoontraject',
       href: '/hormoontraject',
       description: '',
@@ -140,11 +145,6 @@ export const Layout: React.FC<LayoutProps> = ({
     }, {
       name: '1:1 Darmtraject',
       href: '/darmtraject',
-      description: '',
-      icon: Activity
-    }, {
-      name: '1:1 Bloedsuikertraject',
-      href: '/bloedsuikertraject',
       description: '',
       icon: Activity
     }]
