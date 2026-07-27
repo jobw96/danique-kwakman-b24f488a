@@ -41,7 +41,7 @@ const EbookCravings = () => {
             <div className="lg:w-[65%]">
               <FadeIn>
                 <SectionTag text="Gratis E-book" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
+                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
                   5 recepten om je zoete cravings rondom je <span className="italic text-secondary">menstruatie</span> te stillen
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">

@@ -50,7 +50,7 @@ const Darmtraject = () => {
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="1:1 Traject" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">1:1 Darmtherapie</h1>
+                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">1:1 Darmtherapie</h1>
                 <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                   <p>
                     Heb je vaak last van een opgeblazen gevoel, wisselende stoelgang, buikpijn of vermoeidheid? Word je beperkt door je darmklachten, voel je je onzeker over wat je wel of niet kunt eten en beïnvloedt dit je dagelijks leven?

@@ -22,14 +22,14 @@ const About = () => {
         description="Maak kennis met Danique Kwakman, orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen."
         canonicalUrl="/over-mij"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-8 md:pt-16 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="Over mij" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
+                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
                   Over mij <span className="italic">— Danique Kwakman</span>,<br />Orthomoleculair Therapeut
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">

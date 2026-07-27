@@ -27,7 +27,7 @@ const Bloedsuikertraject = () => {
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="1:1 Traject" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Bloedsuikertraject</h1>
+                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Bloedsuikertraject</h1>
                 <p className="text-xl text-primary font-medium mb-6">In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam.</p>
                 <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                   <p>
