@@ -216,7 +216,7 @@ const Hormoontraject = () => {
           {/* Hoe het traject eruitziet */}
           <FadeIn className="mb-20">
             <div className="text-center mb-12">
-              <SectionTag text="Het Proces" />
+              
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Hoe het traject eruitziet</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
