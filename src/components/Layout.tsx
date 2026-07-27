@@ -491,9 +491,13 @@ export const Layout: React.FC<LayoutProps> = ({
       </motion.header>
       </div>
 
-      <main className="flex-grow bg-background relative z-10">
+      <main
+        className="flex-grow bg-background relative z-10"
+        style={isHomePage ? undefined : { paddingTop: headerHeight }}
+      >
         {children}
       </main>
+
 
       <footer ref={footerRef} className="relative min-h-[480px] md:min-h-[500px] w-full overflow-hidden z-0" style={{
       backgroundColor: 'hsl(var(--background))',
