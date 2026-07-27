@@ -36,6 +36,7 @@ export const STATIC_ROUTES: SitemapRoute[] = [
   { path: '/behandelingen', changefreq: 'weekly', priority: 0.8 },
   { path: '/hormoontraject', changefreq: 'weekly', priority: 0.8 },
   { path: '/darmtraject', changefreq: 'weekly', priority: 0.8 },
+  { path: '/bloedsuikertraject', changefreq: 'weekly', priority: 0.8 },
   { path: '/recepten', changefreq: 'weekly', priority: 0.8 },
   { path: '/podcast', changefreq: 'weekly', priority: 0.8 },
   { path: '/contact', changefreq: 'weekly', priority: 0.8 },

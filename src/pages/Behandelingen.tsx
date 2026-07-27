@@ -8,6 +8,7 @@ import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBloedsuiker from '@/assets/danique-bloedsuiker.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
@@ -27,6 +28,13 @@ const treatments = [
     title: "1:1 Darmtraject Therapie",
     description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
     href: "/darmtraject"
+  },
+  {
+    id: 'bloedsuikertraject',
+    image: daniqueBloedsuiker,
+    title: "1:1 Bloedsuikertraject",
+    description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.",
+    href: "/bloedsuikertraject"
   }
 ];
 
@@ -38,11 +46,11 @@ const Behandelingen = () => {
         <div className="text-center mb-16">
           <FadeIn>
           <SectionTag text="Trajecten" />
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod — Behandelingen voor Hormoonbalans en Darmgezondheid</h1>
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod — Behandelingen voor Hormoonbalans, Darmgezondheid en Bloedsuiker</h1>
           </FadeIn>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {treatments.map((treatment, index) => (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={treatment.href} className="h-full block">
