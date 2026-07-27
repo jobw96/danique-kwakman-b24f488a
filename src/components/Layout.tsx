@@ -35,10 +35,13 @@ export const Layout: React.FC<LayoutProps> = ({
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [bannerOffset, setBannerOffset] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(0);
   const isHomePage = location.pathname === '/';
   const useDarkHeader = scrolled || !isHomePage || mobileMenuOpen;
   const footerRef = useRef<HTMLDivElement>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
+  const headerWrapperRef = useRef<HTMLDivElement>(null);
+
   const {
     scrollYProgress
   } = useScroll({
