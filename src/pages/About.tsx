@@ -22,7 +22,7 @@ const About = () => {
         description="Maak kennis met Danique Kwakman, orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen."
         canonicalUrl="/over-mij"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-8 md:pt-16 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
