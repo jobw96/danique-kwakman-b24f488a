@@ -26,6 +26,11 @@ import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
 import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
 
 const TREATMENTS = [{
+  id: 'bloedsuikertraject',
+  title: "1:1 Bloedsuikertraject",
+  description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met behulp van een 14-daagse glucosesensor.",
+  image: daniqueRelaxed
+}, {
   id: 'hormoontraject',
   title: "1:1 Hormoontraject",
   description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
@@ -35,11 +40,6 @@ const TREATMENTS = [{
   title: "1:1 Darmtraject Therapie",
   description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
   image: daniqueDarm
-}, {
-  id: 'bloedsuikertraject',
-  title: "1:1 Bloedsuikertraject",
-  description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met behulp van een 14-daagse glucosesensor.",
-  image: daniqueRelaxed
 }];
 
 const SERVICES: ServiceItem[] = [{
