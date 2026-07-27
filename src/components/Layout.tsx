@@ -58,6 +58,9 @@ export const Layout: React.FC<LayoutProps> = ({
       const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
       const bh = bannerRef.current?.offsetHeight ?? 0;
       setBannerOffset(isDesktop ? 0 : Math.min(window.scrollY, bh));
+      // Track total header (banner + navbar) height for subpage top padding.
+      const hh = headerWrapperRef.current?.offsetHeight ?? 0;
+      setHeaderHeight(hh);
     };
     handleScroll();
     window.addEventListener('scroll', handleScroll);
@@ -67,6 +70,7 @@ export const Layout: React.FC<LayoutProps> = ({
       window.removeEventListener('resize', handleScroll);
     };
   }, []);
+
 
   // Scroll to top on route change, or smooth scroll to hash
   useEffect(() => {
