@@ -67,7 +67,7 @@ const Method = () => {
         <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-20">
             <SectionTag text="Mijn Methode" />
-            <h1 className="font-serif text-5xl md:text-6xl text-[#1D1D1B] mb-6">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1D1D1B] mb-6">
               De CIRCLE methode
             </h1>
             <p className="text-[#757575] max-w-2xl mx-auto leading-relaxed text-lg">
@@ -135,7 +135,7 @@ const Method = () => {
         
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center p-8 min-h-[80vh] md:min-h-screen">
           <FadeIn>
-            <h2 className="font-serif text-4xl md:text-6xl text-white mb-8 leading-tight drop-shadow-2xl">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight drop-shadow-2xl">
               Klaar om van overleven<br />naar leven te gaan?
             </h2>
             <CustomButton 
