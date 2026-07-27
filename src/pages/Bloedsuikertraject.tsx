@@ -22,50 +22,23 @@ const Bloedsuikertraject = () => {
       />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
-          {/* Hero */}
+          {/* Hero Section */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
             <div className="lg:w-1/2">
               <FadeIn>
                 <SectionTag text="1:1 Traject" />
-                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-6 leading-tight">1:1 Bloedsuikertraject</h1>
-                <p className="text-lg text-foreground/80 mb-4">In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam.</p>
+                <h1 className="font-serif text-5xl lg:text-6xl text-foreground mb-4 leading-tight">1:1 Bloedsuikertraject</h1>
+                <p className="text-xl text-primary font-medium mb-6">In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam.</p>
                 <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                   <p>
                     Je doet je best om gezond te eten en kiest bewust voor voedzame maaltijden, probeert minder te snoepen en let op wat je lichaam nodig heeft.
                   </p>
-                  <p>Toch blijf je last houden van:</p>
-                  <ul className="space-y-2 pl-1">
-                    {[
-                      'Energie dips',
-                      'Cravings',
-                      'Brain fog',
-                      'Moeite met afvallen',
-                      'Schommelingen in energie',
-                      'Een opgeblazen gevoel',
-                      'Darmklachten',
-                      'Acne',
-                      'PCOS/PMOS of insulineresistentie',
-                      'Moeite met (in)slapen en doorslapen',
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#6B7B8A] mt-2 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p>Je merkt dat je:</p>
-                  <ul className="space-y-2 pl-1">
-                    {[
-                      'Na de lunch achter je laptop in slaap valt',
-                      'Moeite hebt om af te vallen',
-                      'Vaak trek hebt of simpelweg niet begrijpt waarom je je voelt zoals je je voelt.',
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#6B7B8A] mt-2 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p>
+                    Geen enkel lichaam reageert hetzelfde op voeding. Wat voor de één werkt, hoeft voor de ander niet te werken.
+                  </p>
+                  <p>
+                    Tijdens het 1:1 bloedsuikertraject gaan we met behulp van een 14-daagse glucosesensor kijken we hoe jouw lichaam reageert op voeding, beweging, stress en slaap.
+                  </p>
                 </div>
                 <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
               </FadeIn>
@@ -81,20 +54,57 @@ const Bloedsuikertraject = () => {
             </div>
           </div>
 
-          {/* Intro tekst */}
-          <FadeIn>
-            <div className="max-w-3xl mx-auto text-center mb-20 space-y-4 text-muted-foreground leading-relaxed">
-              <p>Geen enkel lichaam reageert hetzelfde op voeding. Wat voor de één werkt, hoeft voor de ander niet te werken.</p>
-              <p>Tijdens het 1:1 bloedsuikertraject gaan we met behulp van een 14-daagse glucosesensor kijken we hoe jouw lichaam reageert op voeding, beweging, stress en slaap.</p>
-              <p>Zo ontdekken we waar jouw lichaam uit balans raakt en welke kleine veranderingen een groot verschil kunnen maken.</p>
-              <p>Want hoe beter je jouw lichaam begrijpt, hoe makkelijker het wordt om keuzes te maken die zorgen voor meer energie, minder cravings en een gezondheid waar je op kunt vertrouwen.</p>
-            </div>
-          </FadeIn>
-
-          {/* Na dit traject */}
+          {/* Wat kun je verwachten */}
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Na dit traject:</h2>
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wat kun je verwachten?</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+                <p>Toch blijf je last houden van:</p>
+              </div>
+              <ul className="space-y-3 mb-8">
+                {[
+                  'Energie dips',
+                  'Cravings',
+                  'Brain fog',
+                  'Moeite met afvallen',
+                  'Schommelingen in energie',
+                  'Een opgeblazen gevoel',
+                  'Darmklachten',
+                  'Acne',
+                  'PCOS/PMOS of insulineresistentie',
+                  'Moeite met (in)slapen en doorslapen',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
+                      <Check size={14} className="text-[#6B7B8A]" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="text-muted-foreground mb-4">Je merkt dat je:</p>
+              <ul className="space-y-3 mb-8">
+                {[
+                  'Na de lunch achter je laptop in slaap valt',
+                  'Moeite hebt om af te vallen',
+                  'Vaak trek hebt of simpelweg niet begrijpt waarom je je voelt zoals je je voelt.',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
+                      <Check size={14} className="text-[#6B7B8A]" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>Zo ontdekken we waar jouw lichaam uit balans raakt en welke kleine veranderingen een groot verschil kunnen maken.</p>
+                <p>Want hoe beter je jouw lichaam begrijpt, hoe makkelijker het wordt om keuzes te maken die zorgen voor meer energie, minder cravings en een gezondheid waar je op kunt vertrouwen.</p>
+              </div>
+
+              <h3 className="font-serif text-xl text-foreground mt-10 mb-4">Na dit traject:</h3>
               <ul className="space-y-3 mb-8">
                 {[
                   'Begrijp je hoe jouw lichaam reageert op voeding, beweging, stress en slaap',
@@ -133,7 +143,7 @@ const Bloedsuikertraject = () => {
               </ul>
 
               <h3 className="font-serif text-xl text-foreground mb-4">En als je klaar bent om:</h3>
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3">
                 {[
                   'Te stoppen met gokken wat gezond is voor jou',
                   'Je lichaam beter te begrijpen',
@@ -143,19 +153,20 @@ const Bloedsuikertraject = () => {
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
-                      <Check size={14} className="text-[#6B7B8A]" />
+                      <Zap size={14} className="text-[#6B7B8A]" />
                     </div>
                     <span className="text-muted-foreground">{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="text-muted-foreground leading-relaxed">
+
+              <p className="text-muted-foreground mt-8">
                 Je staat open voor nieuwe inzichten, bent bereid om eerlijk naar je gewoontes te kijken en wilt eindelijk begrijpen wat jouw lichaam probeert te vertellen.
               </p>
             </div>
           </FadeIn>
 
-          {/* Niet passend */}
+          {/* Wanneer dit traject niet passend is */}
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wanneer dit traject niet passend is</h2>
@@ -264,7 +275,7 @@ const Bloedsuikertraject = () => {
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
-              <p className="text-5xl md:text-6xl font-serif text-primary mb-8">325,-</p>
+              <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€325</p>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
