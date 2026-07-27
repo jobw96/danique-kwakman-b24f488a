@@ -8,7 +8,7 @@ import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
-import daniqueBloedsuiker from '@/assets/danique-bloedsuiker.webp';
+import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
