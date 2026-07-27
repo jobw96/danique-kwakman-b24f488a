@@ -16,6 +16,13 @@ const SectionTag = ({ text }: { text: string }) => (
 
 const treatments = [
   {
+    id: 'bloedsuikertraject',
+    image: daniqueBloedsuiker,
+    title: "1:1 Bloedsuikertraject",
+    description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.",
+    href: "/bloedsuikertraject"
+  },
+  {
     id: 'hormoontraject',
     image: daniqueGlowup,
     title: "1:1 Hormoontraject",
@@ -28,13 +35,6 @@ const treatments = [
     title: "1:1 Darmtraject Therapie",
     description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
     href: "/darmtraject"
-  },
-  {
-    id: 'bloedsuikertraject',
-    image: daniqueBloedsuiker,
-    title: "1:1 Bloedsuikertraject",
-    description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.",
-    href: "/bloedsuikertraject"
   }
 ];
 
