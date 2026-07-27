@@ -5,7 +5,7 @@ import { Check, X, Users, ClipboardList, Activity, MessageCircle, Heart, Zap } f
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
-import daniqueBloedsuiker from '@/assets/danique-bloedsuiker.webp';
+import daniqueBloedsuiker from '@/assets/danique-relaxed.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
