@@ -214,7 +214,7 @@ const Index = () => {
             Balans in hormonen, darmen <span className="text-secondary">&</span> energie via mijn CIRCLE-methode
           </h1>
           <p className="text-white/90 text-base md:text-lg mb-8 leading-relaxed max-w-2xl">
-            Persoonlijke begeleiding voor vrouwen die weer rust, energie en vertrouwen in hun lijf willen voelen&nbsp; in 3 maanden naar jouw nieuwe way of life.
+            Persoonlijke begeleiding voor vrouwen die weer rust, energie en vertrouwen in hun lijf willen voelen op weg naar jouw nieuwe way of life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
             <CustomButton variant="secondary" onClick={openModal} className="w-56 max-w-full">Gratis kennismaking</CustomButton>
