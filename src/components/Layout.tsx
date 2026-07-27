@@ -35,10 +35,13 @@ export const Layout: React.FC<LayoutProps> = ({
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [bannerOffset, setBannerOffset] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(0);
   const isHomePage = location.pathname === '/';
   const useDarkHeader = scrolled || !isHomePage || mobileMenuOpen;
   const footerRef = useRef<HTMLDivElement>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
+  const headerWrapperRef = useRef<HTMLDivElement>(null);
+
   const {
     scrollYProgress
   } = useScroll({
@@ -55,6 +58,9 @@ export const Layout: React.FC<LayoutProps> = ({
       const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
       const bh = bannerRef.current?.offsetHeight ?? 0;
       setBannerOffset(isDesktop ? 0 : Math.min(window.scrollY, bh));
+      // Track total header (banner + navbar) height for subpage top padding.
+      const hh = headerWrapperRef.current?.offsetHeight ?? 0;
+      setHeaderHeight(hh);
     };
     handleScroll();
     window.addEventListener('scroll', handleScroll);
@@ -64,6 +70,7 @@ export const Layout: React.FC<LayoutProps> = ({
       window.removeEventListener('resize', handleScroll);
     };
   }, []);
+
 
   // Scroll to top on route change, or smooth scroll to hash
   useEffect(() => {
@@ -186,9 +193,11 @@ export const Layout: React.FC<LayoutProps> = ({
   };
   return <div className="min-h-screen flex flex-col font-sans text-muted-foreground" role="document">
       <div
+        ref={headerWrapperRef}
         className="fixed top-0 left-0 right-0 z-50"
         style={{ transform: `translateY(-${bannerOffset}px)` }}
       >
+
       <div ref={bannerRef}>
         <PromoBanner />
       </div>
@@ -482,9 +491,13 @@ export const Layout: React.FC<LayoutProps> = ({
       </motion.header>
       </div>
 
-      <main className="flex-grow bg-background relative z-10">
+      <main
+        className="flex-grow bg-background relative z-10"
+        style={isHomePage ? undefined : { paddingTop: headerHeight }}
+      >
         {children}
       </main>
+
 
       <footer ref={footerRef} className="relative min-h-[480px] md:min-h-[500px] w-full overflow-hidden z-0" style={{
       backgroundColor: 'hsl(var(--background))',
