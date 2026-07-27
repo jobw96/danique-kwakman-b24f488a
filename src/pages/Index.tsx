@@ -35,6 +35,11 @@ const TREATMENTS = [{
   title: "1:1 Darmtraject Therapie",
   description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
   image: daniqueDarm
+}, {
+  id: 'bloedsuikertraject',
+  title: "1:1 Bloedsuikertraject",
+  description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met behulp van een 14-daagse glucosesensor.",
+  image: daniqueRelaxed
 }];
 
 const SERVICES: ServiceItem[] = [{
@@ -240,9 +245,9 @@ const Index = () => {
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h2>
         </FadeIn>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {TREATMENTS.map((treatment, index) => {
-          const linkPath = treatment.id === 'hormoontraject' ? '/hormoontraject' : '/darmtraject';
+          const linkPath = `/${treatment.id}`;
           return (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={linkPath} className="h-full block">
