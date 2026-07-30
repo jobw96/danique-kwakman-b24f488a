@@ -7,10 +7,10 @@ import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 
 const LINKS = [
   {
-    title: "Tijd om van je darmklachten af te komen? klik hier",
-    href: "/darmtraject",
+    title: "Nourish Your Body – 50+ hormoonproof recepten",
+    href: "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body",
     icon: Sparkles,
-    internal: true,
+    internal: false,
     variant: "primary"
   },
   {
