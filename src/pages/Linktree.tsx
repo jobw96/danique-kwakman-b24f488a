@@ -14,23 +14,9 @@ const LINKS = [
     variant: "primary"
   },
   {
-    title: "Gratis e-book: 5 recepten om je zoete cravings rondom je menstruatie te stillen 🍫",
-    href: "/e-book-recepten-snacks",
-    icon: Cookie,
-    internal: true,
-    variant: "primary"
-  },
-  {
     title: "Ontvang elke week mijn gratis nieuwsbrief vol exclusieve inspiratie, tips en inzichten 💌",
     href: "/nieuwsbrief",
     icon: Mail,
-    internal: true,
-    variant: "primary"
-  },
-  {
-    title: "Gratis e-book: 5 ontbijt recepten voor je meest energieke start van de dag",
-    href: "/e-book",
-    icon: Sunrise,
     internal: true,
     variant: "primary"
   },
