@@ -5,7 +5,7 @@ import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
-import nourishCover from '@/assets/nourish-your-body-cover.jpeg.asset.json';
+import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
 
 
 const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body";
