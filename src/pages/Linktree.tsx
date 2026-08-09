@@ -238,13 +238,13 @@ const Linktree: React.FC = () => {
                 className={`w-full shrink-0 px-5 sm:px-8 py-1 flex flex-col gap-3.5 ${tab === 'links' ? '' : 'pointer-events-none'}`}
                 aria-hidden={tab !== 'links'}
               >
-                {LINKS.slice(0, 2).map(renderButton)}
+                {LINKS.slice(0, 1).map(renderButton)}
 
                 <p className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]">
                   Ontdek hoe ik je kan helpen
                 </p>
 
-                {LINKS.slice(2).map(renderButton)}
+                {LINKS.slice(1).map(renderButton)}
 
                 <p className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]">
                   Connect
