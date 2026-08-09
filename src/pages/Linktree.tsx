@@ -47,16 +47,16 @@ const CONNECT_LINKS = [
     internal: false
   },
   {
+    title: "Mijn verhaal en missie",
+    href: "/over-mij",
+    icon: Heart,
+    internal: true
+  },
+  {
     title: "Nieuwsbrief",
     subtitle: "Ontvang mijn gratis nieuwsbrief voor exclusieve inspiratie, tips en inzichten",
     href: "/nieuwsbrief",
     icon: Mail,
-    internal: true
-  },
-  {
-    title: "Mijn verhaal en missie",
-    href: "/over-mij",
-    icon: Heart,
     internal: true
   }
 ];
