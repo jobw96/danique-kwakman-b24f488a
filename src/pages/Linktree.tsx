@@ -166,7 +166,7 @@ const Linktree: React.FC = () => {
         </motion.div>
 
         {/* Footer */}
-        <p className="mt-8 text-center text-xs text-primary-foreground/70">
+        <p className="mt-8 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} Danique Kwakman
         </p>
       </div>
