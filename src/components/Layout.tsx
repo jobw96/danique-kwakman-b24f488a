@@ -612,8 +612,21 @@ export const Layout: React.FC<LayoutProps> = ({
           <div className="text-center">
             <p className="text-xs text-muted-foreground opacity-60 font-light tracking-wide">
               © {new Date().getFullYear()} Danique Kwakman. Alle rechten voorbehouden.
+              <span className="mx-2 hidden sm:inline">·</span>
+              <span className="block sm:inline mt-1 sm:mt-0">
+                Website gemaakt door{' '}
+                <a
+                  href="https://nieuwblik.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-primary transition-colors"
+                >
+                  nieuwblik.com
+                </a>
+              </span>
             </p>
           </div>
+
         </div>
       </footer>
       
