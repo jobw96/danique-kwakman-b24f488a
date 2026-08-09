@@ -161,6 +161,11 @@ const Linktree: React.FC = () => {
       whileTap={{ scale: 0.98 }}
     >
       {link.title}
+      {link.subtitle && (
+        <span className="block mt-0.5 text-xs sm:text-sm font-normal text-foreground/60">
+          {link.subtitle}
+        </span>
+      )}
     </motion.button>
   );
 
