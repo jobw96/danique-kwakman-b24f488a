@@ -13,6 +13,7 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 const LINKS = [
   {
     title: "E-Book Nourish Your Body",
+    subtitle: "50+ hormoonproof en darmvriendelijke recepten",
     href: NOURISH_URL,
     icon: Sparkles,
     internal: false
@@ -111,7 +112,7 @@ const itemVariants = {
 
 
 
-type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
+type LinkItem = { title: string; subtitle?: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
 
 const Linktree: React.FC = () => {
   const { openModal } = useBookingModal();
@@ -160,6 +161,11 @@ const Linktree: React.FC = () => {
       whileTap={{ scale: 0.98 }}
     >
       {link.title}
+      {link.subtitle && (
+        <span className="block mt-0.5 text-xs sm:text-sm font-normal text-foreground/60">
+          {link.subtitle}
+        </span>
+      )}
     </motion.button>
   );
 
