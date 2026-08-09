@@ -222,6 +222,8 @@ const Linktree: React.FC = () => {
               )}
             </motion.div>
           </AnimatePresence>
+          </motion.div>
+
 
 
           {/* Socials */}
