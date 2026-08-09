@@ -262,7 +262,7 @@ const Linktree: React.FC = () => {
                     src={nourishCover.url}
                     alt="Nourish Your Body — 50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen"
                     title="50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen"
-                    className="w-full aspect-[4/5] object-cover"
+                    className="w-full h-auto"
                     loading="lazy"
                     decoding="async"
                   />
