@@ -79,18 +79,24 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.06, delayChildren: 0.2 }
+    transition: { staggerChildren: 0.03, delayChildren: 0.02 }
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.1, ease: "easeIn" as const }
   }
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 12 },
+  hidden: { opacity: 0, y: 8 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.4, ease: "easeOut" as const }
-  }
+    transition: { duration: 0.18, ease: [0.22, 1, 0.36, 1] as const }
+  },
+  exit: { opacity: 0, y: -6, transition: { duration: 0.1 } }
 };
+
 
 type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
 
@@ -178,7 +184,7 @@ const Linktree: React.FC = () => {
                   <motion.span
                     layoutId="linktree-tab"
                     className="absolute inset-0 bg-background rounded-full"
-                    transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                    transition={{ type: 'spring', stiffness: 700, damping: 40, mass: 0.5 }}
                   />
                 )}
                 <span className="relative z-10">{t === 'links' ? 'Links' : 'Shop'}</span>
@@ -187,15 +193,17 @@ const Linktree: React.FC = () => {
           </div>
 
           {/* Links / Shop */}
-          <AnimatePresence mode="wait">
+          <motion.div layout transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}>
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={tab}
               className="mt-6 flex flex-col gap-3.5"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              exit={{ opacity: 0 }}
+              exit="exit"
             >
+
               {tab === 'links' ? (
                 <>
                   {LINKS.map(renderButton)}
@@ -214,6 +222,8 @@ const Linktree: React.FC = () => {
               )}
             </motion.div>
           </AnimatePresence>
+          </motion.div>
+
 
 
           {/* Socials */}
