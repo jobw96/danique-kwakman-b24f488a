@@ -92,11 +92,14 @@ const itemVariants = {
   }
 };
 
+type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
+
 const Linktree: React.FC = () => {
   const { openModal } = useBookingModal();
+  const [tab, setTab] = useState<'links' | 'shop'>('links');
 
-  const handleLinkClick = (link: typeof LINKS[0]) => {
-    if ('isBooking' in link && link.isBooking) {
+  const handleLinkClick = (link: LinkItem) => {
+    if (link.isBooking) {
       openModal();
     } else if (link.internal) {
       window.location.href = link.href;
@@ -104,6 +107,20 @@ const Linktree: React.FC = () => {
       window.open(link.href, '_blank');
     }
   };
+
+  const renderButton = (link: LinkItem, index: number) => (
+    <motion.button
+      key={`${link.title}-${index}`}
+      onClick={() => handleLinkClick(link)}
+      className="w-full bg-background text-foreground rounded-full py-4 px-6 text-sm sm:text-base font-medium text-center transition-colors hover:bg-background/90"
+      variants={itemVariants}
+      whileHover={{ scale: 1.02, y: -2 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      {link.title}
+    </motion.button>
+  );
+
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center px-4 py-6 md:py-10">
