@@ -195,7 +195,7 @@ export const recipes: Recipe[] = [
     id: 'zoete-aardappel-pannenkoekjes',
     slug: 'zoete-aardappel-pannenkoekjes',
     title: 'Zoete aardappel pannenkoekjes',
-    intro: 'Ik bak het liefst in 1 keer een flinke stapel en vries een deel in. Zo hoef je ze de volgende keer alleen te laten ontdooien en je favo toppings toe te voegen. Cook once, eat twice!',
+    intro: 'Mijn favoriete toppings zijn: aardbeien, Griekse yoghurt, hennepzaad, amandelen en amandelpasta.',
     image: zoeteAardappelAsset.url,
     ingredientsNote: '2 personen',
     ingredients: [
