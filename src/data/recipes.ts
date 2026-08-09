@@ -1,5 +1,5 @@
-import granolaImage from '@/assets/recipe-granola.webp';
-import gingerShotsImage from '@/assets/recipe-ginger-shots.webp';
+import granolaImage from '@/assets/recepten/homemade-granola.webp.asset.json';
+import gingerShotsImage from '@/assets/recepten/gembershots.webp.asset.json';
 import eggMuffinsImage from '@/assets/recipe-egg-muffins.webp';
 import chocoladeSmoothieAsset from '@/assets/recepten/chocolade-smoothie.webp.asset.json';
 import mangoChiaAsset from '@/assets/recepten/mango-chia-pudding.webp.asset.json';
@@ -34,7 +34,7 @@ export const recipes: Recipe[] = [
     slug: 'homemade-chocolade-granola',
     title: 'Homemade Chocolade Granola',
     intro: 'Granola en chocola zijn voor mij de perfecte combinatie. Ik maak mijn granola het liefst zelf, omdat de varianten uit de supermarkt vaak onnodige toevoegingen bevatten. Zelfgemaakt is niet alleen voedzamer en gezonder, maar ook echt véél lekkerder.',
-    image: granolaImage,
+    image: granolaImage.url,
     ingredientsNote: 'voor een grote pot',
     ingredients: [
       '200 g havermout',
@@ -60,7 +60,7 @@ export const recipes: Recipe[] = [
     slug: 'homemade-gembershotjes',
     title: 'Homemade Gembershotjes',
     intro: 'Gember ondersteunt je spijsvertering, helpt bij een opgeblazen buik en geeft je immuunsysteem een boost. Super simpel om te maken en perfect om elke ochtend mee te starten.',
-    image: gingerShotsImage,
+    image: gingerShotsImage.url,
     ingredients: [
       '2 bio appels',
       '2 citroenen',
