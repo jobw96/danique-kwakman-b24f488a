@@ -204,10 +204,11 @@ const Linktree: React.FC = () => {
           </div>
 
           {/* Links / Shop */}
-          <motion.div layout transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}>
-          <AnimatePresence mode="wait" initial={false}>
+          <motion.div layout transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }} className="overflow-hidden">
+          <AnimatePresence mode="wait" initial={false} custom={direction}>
             <motion.div
               key={tab}
+              custom={direction}
               className="mt-6 flex flex-col gap-3.5"
               variants={containerVariants}
               initial="hidden"
@@ -229,10 +230,37 @@ const Linktree: React.FC = () => {
                   {CONNECT_LINKS.map(renderButton)}
                 </>
               ) : (
-                SHOP_LINKS.map(renderButton)
+                <motion.button
+                  variants={itemVariants}
+                  onClick={() => window.open(NOURISH_URL, '_blank')}
+                  className="w-full bg-background rounded-3xl overflow-hidden text-left"
+                  whileHover={{ scale: 1.015, y: -3 }}
+                  whileTap={{ scale: 0.985 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 26 }}
+                >
+                  <img
+                    src={nourishCover.url}
+                    alt="Nourish Your Body — 50+ hormoonproof recepten van Danique Kwakman"
+                    className="w-full aspect-[3/4] object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="p-5">
+                    <p className="text-base sm:text-lg font-medium text-foreground">
+                      Nourish Your Body
+                    </p>
+                    <p className="mt-1.5 text-sm text-foreground/70 leading-relaxed">
+                      50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen.
+                    </p>
+                    <span className="mt-4 inline-flex items-center justify-center w-full rounded-full bg-primary text-primary-foreground py-3 text-sm font-medium">
+                      Bekijk het e-book
+                    </span>
+                  </div>
+                </motion.button>
               )}
             </motion.div>
           </AnimatePresence>
+
           </motion.div>
 
 
