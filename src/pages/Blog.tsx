@@ -94,7 +94,7 @@ const Blog: React.FC = () => {
               <Link to={`/blog/${post.slug}`} className="block h-full">
                 <div className="bg-card rounded-xl overflow-hidden border border-border/50 h-full flex flex-col">
                   {/* Image */}
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-60 overflow-hidden">
                     <motion.img loading="lazy" decoding="async" src={post.image} alt={post.title} className="w-full h-full object-cover object-top" whileHover={{
                   scale: 1.05
                 }} transition={{
