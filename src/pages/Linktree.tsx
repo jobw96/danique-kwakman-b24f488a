@@ -208,36 +208,38 @@ const Linktree: React.FC = () => {
           </div>
 
           {/* Links / Shop */}
-          <motion.div layout transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }} className="-mx-4 px-4 overflow-x-clip overflow-y-visible">
-          <AnimatePresence mode="wait" initial={false} custom={direction}>
+          <motion.div
+            className="mt-6 -mx-5 sm:-mx-8 overflow-x-clip"
+            animate={{ height: panelHeight }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
             <motion.div
-              key={tab}
-              custom={direction}
-              className="mt-6 flex flex-col gap-3.5 py-1"
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
+              className="flex items-start"
+              animate={{ x: tab === 'links' ? '0%' : '-100%' }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             >
+              <div
+                ref={linksRef}
+                className={`w-full shrink-0 px-5 sm:px-8 py-1 flex flex-col gap-3.5 ${tab === 'links' ? '' : 'pointer-events-none'}`}
+                aria-hidden={tab !== 'links'}
+              >
+                {LINKS.map(renderButton)}
 
-              {tab === 'links' ? (
-                <>
-                  {LINKS.map(renderButton)}
+                <p className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]">
+                  Connect
+                </p>
 
-                  <motion.p
-                    variants={itemVariants}
-                    className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]"
-                  >
-                    Connect
-                  </motion.p>
+                {CONNECT_LINKS.map(renderButton)}
+              </div>
 
-                  {CONNECT_LINKS.map(renderButton)}
-                </>
-              ) : (
+              <div
+                ref={shopRef}
+                className={`w-full shrink-0 px-5 sm:px-8 py-1 ${tab === 'shop' ? '' : 'pointer-events-none'}`}
+                aria-hidden={tab !== 'shop'}
+              >
                 <motion.button
-                  variants={itemVariants}
                   onClick={() => window.open(NOURISH_URL, '_blank')}
-                  className="w-full max-w-[260px] mx-auto bg-background rounded-[28px] overflow-hidden text-left"
+                  className="w-full max-w-[260px] mx-auto block bg-background rounded-[28px] overflow-hidden text-left"
                   whileHover={{ scale: 1.015, y: -3 }}
                   whileTap={{ scale: 0.985 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 26 }}
@@ -258,11 +260,10 @@ const Linktree: React.FC = () => {
                     </span>
                   </div>
                 </motion.button>
-              )}
+              </div>
             </motion.div>
-          </AnimatePresence>
-
           </motion.div>
+
 
 
 
