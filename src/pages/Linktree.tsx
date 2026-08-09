@@ -163,26 +163,58 @@ const Linktree: React.FC = () => {
             Orthomoleculair hormoon- & darmtherapeut
           </p>
 
-          {/* Links */}
-          <motion.div
-            className="mt-8 flex flex-col gap-3.5"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {LINKS.map((link, index) => (
-              <motion.button
-                key={index}
-                onClick={() => handleLinkClick(link)}
-                className="w-full bg-background text-foreground rounded-full py-4 px-6 text-sm sm:text-base font-medium text-center transition-colors hover:bg-background/90"
-                variants={itemVariants}
-                whileHover={{ scale: 1.02, y: -2 }}
-                whileTap={{ scale: 0.98 }}
+          {/* Tabs */}
+          <div className="mt-7 mx-auto w-full max-w-xs bg-background/15 rounded-full p-1 flex relative">
+            {(['links', 'shop'] as const).map((t) => (
+              <button
+                key={t}
+                onClick={() => setTab(t)}
+                className={`relative flex-1 rounded-full py-2 text-sm font-medium transition-colors ${
+                  tab === t ? 'text-foreground' : 'text-primary-foreground/80'
+                }`}
+                aria-pressed={tab === t}
               >
-                {link.title}
-              </motion.button>
+                {tab === t && (
+                  <motion.span
+                    layoutId="linktree-tab"
+                    className="absolute inset-0 bg-background rounded-full"
+                    transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                  />
+                )}
+                <span className="relative z-10">{t === 'links' ? 'Links' : 'Shop'}</span>
+              </button>
             ))}
-          </motion.div>
+          </div>
+
+          {/* Links / Shop */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={tab}
+              className="mt-6 flex flex-col gap-3.5"
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              exit={{ opacity: 0 }}
+            >
+              {tab === 'links' ? (
+                <>
+                  {LINKS.map(renderButton)}
+
+                  <motion.p
+                    variants={itemVariants}
+                    className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]"
+                  >
+                    Connect
+                  </motion.p>
+
+                  {CONNECT_LINKS.map(renderButton)}
+                </>
+              ) : (
+                SHOP_LINKS.map(renderButton)
+              )}
+            </motion.div>
+          </AnimatePresence>
+
 
           {/* Socials */}
           <div className="mt-9 flex items-center justify-center gap-7">
