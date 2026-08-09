@@ -48,6 +48,7 @@ const CONNECT_LINKS = [
   },
   {
     title: "Nieuwsbrief",
+    subtitle: "Ontvang mijn gratis nieuwsbrief voor exclusieve inspiratie, tips en inzichten",
     href: "/nieuwsbrief",
     icon: Mail,
     internal: true
