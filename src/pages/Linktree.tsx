@@ -79,18 +79,24 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.06, delayChildren: 0.2 }
+    transition: { staggerChildren: 0.03, delayChildren: 0.02 }
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.1, ease: "easeIn" as const }
   }
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 12 },
+  hidden: { opacity: 0, y: 8 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.4, ease: "easeOut" as const }
-  }
+    transition: { duration: 0.18, ease: [0.22, 1, 0.36, 1] as const }
+  },
+  exit: { opacity: 0, y: -6, transition: { duration: 0.1 } }
 };
+
 
 type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
 
