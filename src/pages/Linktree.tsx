@@ -240,13 +240,13 @@ const Linktree: React.FC = () => {
               >
                 {LINKS.slice(0, 1).map(renderButton)}
 
-                <p className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]">
+                <p className="mt-4 text-center text-primary-foreground/80 text-xs font-semibold uppercase tracking-[0.18em]">
                   Ontdek hoe ik je kan helpen
                 </p>
 
                 {LINKS.slice(1).map(renderButton)}
 
-                <p className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]">
+                <p className="mt-4 text-center text-primary-foreground/80 text-xs font-semibold uppercase tracking-[0.18em]">
                   Connect
                 </p>
 
