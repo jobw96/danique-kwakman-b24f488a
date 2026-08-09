@@ -120,9 +120,16 @@ const Linktree: React.FC = () => {
       if (el) setPanelHeight(el.offsetHeight);
     };
     measure();
+    const ro = new ResizeObserver(measure);
+    if (linksRef.current) ro.observe(linksRef.current);
+    if (shopRef.current) ro.observe(shopRef.current);
     window.addEventListener('resize', measure);
-    return () => window.removeEventListener('resize', measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('resize', measure);
+    };
   }, [tab]);
+
 
 
 
