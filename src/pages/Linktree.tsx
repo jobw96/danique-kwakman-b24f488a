@@ -12,8 +12,8 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "E-Book Nourish Your Body",
-    subtitle: "50+ hormoonproof en darmvriendelijke recepten",
+    title: "E-Book: Nourish Your Body",
+    subtitle: "50+ hormoonproof en darmproof recepten",
     href: NOURISH_URL,
     icon: Sparkles,
     internal: false
@@ -41,7 +41,7 @@ const LINKS = [
 
 const CONNECT_LINKS = [
   {
-    title: "Podcast – Health and Hormone Secrets",
+    title: "Podcast: Health and Hormone Secrets",
     href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA",
     icon: Mic,
     internal: false
