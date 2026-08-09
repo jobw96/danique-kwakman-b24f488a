@@ -114,6 +114,8 @@ type LinkItem = { title: string; href: string; icon: any; internal: boolean; isB
 const Linktree: React.FC = () => {
   const { openModal } = useBookingModal();
   const [tab, setTab] = useState<'links' | 'shop'>('links');
+  const direction = tab === 'shop' ? 1 : -1;
+
 
   const handleLinkClick = (link: LinkItem) => {
     if (link.isBooking) {
