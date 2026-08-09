@@ -54,7 +54,11 @@ const ReceptDetail = () => {
               />
             </div>
 
-            <p className="text-muted-foreground leading-relaxed mb-10">{recipe.intro}</p>
+            <div className="mb-10 space-y-4">
+              {recipe.intro.split('\n\n').filter(Boolean).map((p, i) => (
+                <p key={i} className="text-muted-foreground leading-relaxed">{p}</p>
+              ))}
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
               <div className="bg-[#FDF8F3] rounded-2xl p-6">
