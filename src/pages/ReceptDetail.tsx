@@ -102,6 +102,30 @@ const ReceptDetail = () => {
             {recipe.afterNote && (
               <p className="text-muted-foreground text-sm italic mt-6">{recipe.afterNote}</p>
             )}
+
+            {recipe.notes && recipe.notes.length > 0 && (
+              <div className="mt-8 space-y-4">
+                {recipe.notes.map((note, i) => (
+                  <p key={i} className="text-muted-foreground text-sm leading-relaxed">{note}</p>
+                ))}
+              </div>
+            )}
+
+            {recipe.videoUrl && (
+              <div className="mt-8">
+                {recipe.videoText && (
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-2">{recipe.videoText}</p>
+                )}
+                <a
+                  href={recipe.videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm font-medium underline underline-offset-4 break-all"
+                >
+                  {recipe.videoUrl}
+                </a>
+              </div>
+            )}
           </FadeIn>
 
           {/* Andere recepten */}
