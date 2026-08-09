@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, MessageCircle, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
+import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
@@ -47,8 +48,10 @@ const LINKS = [
 
 const SOCIAL_LINKS = [
   { name: "E-mail", href: "mailto:info@daniquekwakman.nl", icon: Mail },
-  { name: "WhatsApp", href: "https://wa.me/31682018727", icon: MessageCircle },
-  { name: "Instagram", href: "https://instagram.com/daniquekwakman", icon: Instagram }
+  { name: "WhatsApp", href: "https://wa.me/31682018727", icon: WhatsAppIcon },
+  { name: "Instagram", href: "https://instagram.com/daniquekwakman", icon: Instagram },
+  { name: "TikTok", href: "https://www.tiktok.com/@daniquekwakman", icon: TikTokIcon },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/daniquekwakman", icon: Linkedin }
 ];
 
 const containerVariants = {
