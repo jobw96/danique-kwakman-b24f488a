@@ -260,17 +260,15 @@ const Linktree: React.FC = () => {
                 >
                   <img
                     src={nourishCover.url}
-                    alt="Nourish Your Body — 50+ hormoonproof recepten van Danique Kwakman"
-                    className="w-full aspect-[3/4] object-cover"
+                    alt="Nourish Your Body — 50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen"
+                    title="50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen"
+                    className="w-full aspect-[4/5] object-cover"
                     loading="lazy"
                     decoding="async"
                   />
                   <div className="p-4">
-                    <p className="text-xs text-foreground/70 leading-relaxed">
-                      50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen.
-                    </p>
-                    <span className="mt-3 inline-flex items-center justify-center w-full rounded-full bg-primary text-primary-foreground py-2.5 text-xs font-medium">
-                      Bekijk het e-book
+                    <span className="inline-flex items-center justify-center w-full rounded-full bg-primary text-primary-foreground py-2.5 text-xs font-medium">
+                      Bekijk e-book
                     </span>
                   </div>
                 </motion.button>
