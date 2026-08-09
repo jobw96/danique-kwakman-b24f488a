@@ -6,6 +6,8 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
 import ontlastingSignalen from '@/assets/ontlasting-gezondheid-signalen.webp';
+import ontbijtjesCover from '@/assets/recepten/ontbijtbordje.webp.asset.json';
+
 
 export interface BlogPost {
   id: string;
@@ -18,6 +20,15 @@ export interface BlogPost {
   category: string;
 }
 export const BLOG_POSTS: BlogPost[] = [{
+  id: '6',
+  slug: 'hormoonproof-darmvriendelijke-ontbijtjes',
+  title: '5 hormoonproof en darmvriendelijke ontbijtjes die je energie een boost geven',
+  excerpt: 'Een voedzaam ontbijt houdt je bloedsuiker stabiel en ondersteunt je hormonen én darmen. Ontdek 5 van mijn favoriete hormoonproof ontbijtjes.',
+  image: ontbijtjesCover.url,
+  date: '9 augustus 2026',
+  readTime: '8 min',
+  category: 'Voeding'
+}, {
   id: '5',
   slug: 'wat-je-ontlasting-zegt-over-je-gezondheid',
   title: 'Wat jouw ontlasting je vertelt over je gezondheid',
