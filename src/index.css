@@ -43,6 +43,7 @@ body {
     --popover-foreground: 60 4% 11%;
     
     --primary: 220 27% 69%; /* #9CAAC6 - Primary accent (buttons, CTA) */
+    --primary-dark: 220 27% 56%; /* Deeper blue for backgrounds */
     --primary-foreground: 0 0% 100%; /* White text on primary */
     
     --secondary: 44 38% 76%; /* #D8CCAB - Secondary accent (subtle highlights) */
@@ -84,6 +85,7 @@ body {
     --popover-foreground: 0 0% 100%;
 
     --primary: 220 27% 69%;
+    --primary-dark: 220 27% 56%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 44 38% 76%;
