@@ -12,7 +12,7 @@ const ReceptDetail = () => {
 
   if (!recipe) return <Navigate to="/recepten" replace />;
 
-  const others = recipes.filter((r) => r.slug !== recipe.slug);
+  const others = recipes.filter((r) => r.slug !== recipe.slug).slice(0, 4);
 
   return (
     <div className="min-h-screen">
@@ -134,7 +134,7 @@ const ReceptDetail = () => {
 
           {/* Andere recepten */}
           <div className="mt-20 pt-10 border-t border-secondary/40">
-            <h2 className="font-serif text-2xl text-foreground mb-6">Andere recepten</h2>
+            <h2 className="font-serif text-2xl text-foreground mb-6">Meer recepten</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {others.map((r) => (
                 <Link
@@ -153,6 +153,14 @@ const ReceptDetail = () => {
                   </div>
                 </Link>
               ))}
+            </div>
+            <div className="mt-10 flex justify-center">
+              <Link
+                to="/recepten"
+                className="inline-flex items-center justify-center h-11 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium transition-colors hover:bg-primary/90"
+              >
+                Alle recepten
+              </Link>
             </div>
           </div>
         </div>
