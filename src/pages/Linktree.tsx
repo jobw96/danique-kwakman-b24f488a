@@ -116,7 +116,21 @@ type LinkItem = { title: string; href: string; icon: any; internal: boolean; isB
 const Linktree: React.FC = () => {
   const { openModal } = useBookingModal();
   const [tab, setTab] = useState<'links' | 'shop'>('links');
-  const direction = tab === 'shop' ? 1 : -1;
+  const linksRef = React.useRef<HTMLDivElement>(null);
+  const shopRef = React.useRef<HTMLDivElement>(null);
+  const [panelHeight, setPanelHeight] = useState<number | 'auto'>('auto');
+
+  React.useLayoutEffect(() => {
+    const measure = () => {
+      const el = tab === 'links' ? linksRef.current : shopRef.current;
+      if (el) setPanelHeight(el.offsetHeight);
+    };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, [tab]);
+
+
 
 
   const handleLinkClick = (link: LinkItem) => {
