@@ -84,7 +84,7 @@ const Blog: React.FC = () => {
                 <div className="bg-card rounded-xl overflow-hidden border border-border/50 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
-                    <motion.img src={post.image} alt={post.title} className="w-full h-full object-cover" whileHover={{
+                    <motion.img loading="lazy" decoding="async" src={post.image} alt={post.title} className="w-full h-full object-cover" whileHover={{
                   scale: 1.05
                 }} transition={{
                   duration: 0.6,

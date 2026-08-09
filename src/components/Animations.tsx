@@ -86,8 +86,25 @@ export const ParallaxImage: React.FC<{
   alt: string; 
   className?: string; 
   speed?: number;
-}> = ({ src, alt, className = '', speed = 0.15 }) => {
+  eager?: boolean;
+}> = ({ src, alt, className = '', speed = 0.15, eager = false }) => {
   const ref = useRef(null);
+  // Scroll-linked transforms are expensive; skip them on touch/small screens
+  // and when the visitor prefers reduced motion.
+  const [enabled, setEnabled] = React.useState(false);
+  React.useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const apply = () => setEnabled(mq.matches && !reduce.matches);
+    apply();
+    mq.addEventListener('change', apply);
+    reduce.addEventListener('change', apply);
+    return () => {
+      mq.removeEventListener('change', apply);
+      reduce.removeEventListener('change', apply);
+    };
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"]
@@ -101,7 +118,9 @@ export const ParallaxImage: React.FC<{
       <motion.img
         src={src}
         alt={alt}
-        style={{ y, scale }}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+        style={enabled ? { y, scale, willChange: 'transform' } : undefined}
         className="w-full h-full object-cover"
       />
     </div>

@@ -136,7 +136,7 @@ const RecipeDetail = ({ recipe, onClose }: { recipe: Recipe; onClose: () => void
     >
       {/* Header with image */}
       <div className="relative h-32 sm:h-36 flex-shrink-0">
-        <motion.img 
+        <motion.img loading="lazy" decoding="async" 
           src={recipe.image} 
           alt={`${recipe.title} - voedzaam recept van orthomoleculair therapeut Danique Kwakman`} 
           className="w-full h-full object-cover"
