@@ -1,40 +1,36 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass, Heart, ShoppingBag } from 'lucide-react';
 import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
 
+const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body";
+
 const LINKS = [
   {
-    title: "Nourish Your Body – 50+ hormoonproof recepten",
-    href: "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body",
+    title: "Aanbod",
+    href: "/#behandelingen",
+    icon: Compass,
+    internal: true
+  },
+  {
+    title: "E-Book Nourish Your Body",
+    href: NOURISH_URL,
     icon: Sparkles,
     internal: false
   },
   {
-    title: "Ontvang elke week mijn gratis nieuwsbrief",
-    href: "/nieuwsbrief",
-    icon: Mail,
-    internal: true
-  },
-  {
-    title: "Podcast: Health & Hormone secrets",
-    href: "/podcast",
-    icon: Mic,
-    internal: true
-  },
-  {
-    title: "Plan jouw gratis kennismakingsgesprek in",
+    title: "Gratis kennismaking",
     href: "",
     icon: Calendar,
     internal: false,
     isBooking: true
   },
   {
-    title: "Aanbod",
-    href: "/#behandelingen",
+    title: "Aanbod & trajecten",
+    href: "/behandelingen",
     icon: Compass,
     internal: true
   },
@@ -46,6 +42,30 @@ const LINKS = [
   }
 ];
 
+const CONNECT_LINKS = [
+  {
+    title: "Podcast – Health and Hormone Secrets",
+    href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA",
+    icon: Mic,
+    internal: false
+  },
+  {
+    title: "Mijn verhaal en missie",
+    href: "/over-mij",
+    icon: Heart,
+    internal: true
+  }
+];
+
+const SHOP_LINKS = [
+  {
+    title: "Nourish Your Body – 50+ hormoonproof recepten",
+    href: NOURISH_URL,
+    icon: ShoppingBag,
+    internal: false
+  }
+];
+
 const SOCIAL_LINKS = [
   { name: "E-mail", href: "mailto:info@daniquekwakman.nl", icon: Mail },
   { name: "WhatsApp", href: "https://wa.me/31682018727", icon: WhatsAppIcon },
@@ -53,6 +73,7 @@ const SOCIAL_LINKS = [
   { name: "TikTok", href: "https://www.tiktok.com/@daniquekwakman", icon: TikTokIcon },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/daniquekwakman", icon: Linkedin }
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -71,11 +92,14 @@ const itemVariants = {
   }
 };
 
+type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
+
 const Linktree: React.FC = () => {
   const { openModal } = useBookingModal();
+  const [tab, setTab] = useState<'links' | 'shop'>('links');
 
-  const handleLinkClick = (link: typeof LINKS[0]) => {
-    if ('isBooking' in link && link.isBooking) {
+  const handleLinkClick = (link: LinkItem) => {
+    if (link.isBooking) {
       openModal();
     } else if (link.internal) {
       window.location.href = link.href;
@@ -83,6 +107,20 @@ const Linktree: React.FC = () => {
       window.open(link.href, '_blank');
     }
   };
+
+  const renderButton = (link: LinkItem, index: number) => (
+    <motion.button
+      key={`${link.title}-${index}`}
+      onClick={() => handleLinkClick(link)}
+      className="w-full bg-background text-foreground rounded-full py-4 px-6 text-sm sm:text-base font-medium text-center transition-colors hover:bg-background/90"
+      variants={itemVariants}
+      whileHover={{ scale: 1.02, y: -2 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      {link.title}
+    </motion.button>
+  );
+
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center px-4 py-6 md:py-10">
@@ -125,26 +163,58 @@ const Linktree: React.FC = () => {
             Orthomoleculair hormoon- & darmtherapeut
           </p>
 
-          {/* Links */}
-          <motion.div
-            className="mt-8 flex flex-col gap-3.5"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {LINKS.map((link, index) => (
-              <motion.button
-                key={index}
-                onClick={() => handleLinkClick(link)}
-                className="w-full bg-background text-foreground rounded-full py-4 px-6 text-sm sm:text-base font-medium text-center transition-colors hover:bg-background/90"
-                variants={itemVariants}
-                whileHover={{ scale: 1.02, y: -2 }}
-                whileTap={{ scale: 0.98 }}
+          {/* Tabs */}
+          <div className="mt-7 mx-auto w-full max-w-xs bg-background/15 rounded-full p-1 flex relative">
+            {(['links', 'shop'] as const).map((t) => (
+              <button
+                key={t}
+                onClick={() => setTab(t)}
+                className={`relative flex-1 rounded-full py-2 text-sm font-medium transition-colors ${
+                  tab === t ? 'text-foreground' : 'text-primary-foreground/80'
+                }`}
+                aria-pressed={tab === t}
               >
-                {link.title}
-              </motion.button>
+                {tab === t && (
+                  <motion.span
+                    layoutId="linktree-tab"
+                    className="absolute inset-0 bg-background rounded-full"
+                    transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                  />
+                )}
+                <span className="relative z-10">{t === 'links' ? 'Links' : 'Shop'}</span>
+              </button>
             ))}
-          </motion.div>
+          </div>
+
+          {/* Links / Shop */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={tab}
+              className="mt-6 flex flex-col gap-3.5"
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              exit={{ opacity: 0 }}
+            >
+              {tab === 'links' ? (
+                <>
+                  {LINKS.map(renderButton)}
+
+                  <motion.p
+                    variants={itemVariants}
+                    className="mt-4 text-center text-primary-foreground/70 text-xs uppercase tracking-[0.18em]"
+                  >
+                    Connect
+                  </motion.p>
+
+                  {CONNECT_LINKS.map(renderButton)}
+                </>
+              ) : (
+                SHOP_LINKS.map(renderButton)
+              )}
+            </motion.div>
+          </AnimatePresence>
+
 
           {/* Socials */}
           <div className="mt-9 flex items-center justify-center gap-7">
