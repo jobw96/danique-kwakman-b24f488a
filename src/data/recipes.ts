@@ -100,10 +100,10 @@ export const recipes: Recipe[] = [
     afterNote: 'Je kunt ze meerdere dagen in de koelkast bewaren of invriezen dus maak vooral een voorraadje.'
   },
   {
-    id: 'choco-smoothie',
-    slug: 'choco-smoothie',
-    title: 'Choco smoothie',
-    intro: '',
+    id: 'chocolade-smoothie',
+    slug: 'chocolade-smoothie',
+    title: 'Chocolade smoothie',
+    intro: 'Op zoek naar een zoete snack voor je luteale fase die je hormonen ondersteunt én helpt tegen cravings?\n\nDeze chocolade smoothie is binnen 5 minuten klaar, zit vol voedzame ingrediënten en is een heerlijke hormoonproof snack voor de luteale fase.',
     image: chocoladeSmoothieAsset.url,
     ingredients: [
       '1 banaan',
