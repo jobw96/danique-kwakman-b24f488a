@@ -1,40 +1,36 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass, Heart, ShoppingBag } from 'lucide-react';
 import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
 
+const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body";
+
 const LINKS = [
   {
-    title: "Nourish Your Body – 50+ hormoonproof recepten",
-    href: "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body",
+    title: "Aanbod",
+    href: "/#behandelingen",
+    icon: Compass,
+    internal: true
+  },
+  {
+    title: "E-Book Nourish Your Body",
+    href: NOURISH_URL,
     icon: Sparkles,
     internal: false
   },
   {
-    title: "Ontvang elke week mijn gratis nieuwsbrief",
-    href: "/nieuwsbrief",
-    icon: Mail,
-    internal: true
-  },
-  {
-    title: "Podcast: Health & Hormone secrets",
-    href: "/podcast",
-    icon: Mic,
-    internal: true
-  },
-  {
-    title: "Plan jouw gratis kennismakingsgesprek in",
+    title: "Gratis kennismaking",
     href: "",
     icon: Calendar,
     internal: false,
     isBooking: true
   },
   {
-    title: "Aanbod",
-    href: "/#behandelingen",
+    title: "Aanbod & trajecten",
+    href: "/behandelingen",
     icon: Compass,
     internal: true
   },
@@ -46,6 +42,30 @@ const LINKS = [
   }
 ];
 
+const CONNECT_LINKS = [
+  {
+    title: "Podcast – Health and Hormone Secrets",
+    href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA",
+    icon: Mic,
+    internal: false
+  },
+  {
+    title: "Mijn verhaal en missie",
+    href: "/over-mij",
+    icon: Heart,
+    internal: true
+  }
+];
+
+const SHOP_LINKS = [
+  {
+    title: "Nourish Your Body – 50+ hormoonproof recepten",
+    href: NOURISH_URL,
+    icon: ShoppingBag,
+    internal: false
+  }
+];
+
 const SOCIAL_LINKS = [
   { name: "E-mail", href: "mailto:info@daniquekwakman.nl", icon: Mail },
   { name: "WhatsApp", href: "https://wa.me/31682018727", icon: WhatsAppIcon },
@@ -53,6 +73,7 @@ const SOCIAL_LINKS = [
   { name: "TikTok", href: "https://www.tiktok.com/@daniquekwakman", icon: TikTokIcon },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/daniquekwakman", icon: Linkedin }
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
