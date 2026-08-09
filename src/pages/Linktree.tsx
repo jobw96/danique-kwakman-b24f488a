@@ -82,7 +82,7 @@ const Linktree: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-primary/25 flex flex-col items-center px-4 py-6 md:py-10">
+    <div className="min-h-screen bg-primary-dark flex flex-col items-center px-4 py-6 md:py-10">
       <h1 className="sr-only">Danique Kwakman — Links en Resources</h1>
 
       <div className="w-full max-w-xl">
@@ -166,7 +166,7 @@ const Linktree: React.FC = () => {
         </motion.div>
 
         {/* Footer */}
-        <p className="mt-8 text-center text-xs text-foreground/60">
+        <p className="mt-8 text-center text-xs text-primary-foreground/70">
           © {new Date().getFullYear()} Danique Kwakman
         </p>
       </div>
