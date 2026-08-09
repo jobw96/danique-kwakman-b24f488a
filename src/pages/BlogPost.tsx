@@ -12,6 +12,7 @@ import bristolStoolChart from '@/assets/bristol-stool-chart.webp';
 const POST_DATES: Record<string, string> = {
   'darmen-gezond-houden-5-tips': '2026-06-29',
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
+  'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
 };
 
 
@@ -19,6 +20,240 @@ const POST_DATES: Record<string, string> = {
 const BLOG_CONTENT: Record<string, {
   content: React.ReactNode;
 }> = {
+  'hormoonproof-darmvriendelijke-ontbijtjes': {
+    content: <>
+        <p className="lead">
+          Heb je last van vermoeidheid, een opgeblazen buik, hormonale klachten of energiedips gedurende de dag?
+        </p>
+
+        <p>Voeding is een echt medicijn als je het op de juiste manier inzet!</p>
+
+        <p>
+          Zodra je de stap hebt gezet om te gaan werken aan je hormonale gezondheid en je darmgezondheid kan dat best wel overwhelming zijn.
+        </p>
+
+        <p>
+          Ik weet dat zelf nog zo goed van toen ik net begon! Daarom ga ik die overwhelm wegnemen.
+        </p>
+
+        <p>
+          Wat moet je nu wel eten? Wat juist niet? En waar begin je als je meer energie wilt, je hormonen wilt ondersteunen en tegelijkertijd je darmgezondheid wilt verbeteren?
+        </p>
+
+        <p>Het hoeft niet ingewikkeld te zijn.</p>
+
+        <p>
+          In mijn praktijk start ik vaak met het optimaliseren van het ontbijt. Een voedzaam ontbijt helpt namelijk om je bloedsuikerspiegel stabiel te houden, ondersteunt de aanmaak en balans van hormonen en geeft je lichaam de voedingsstoffen die het nodig heeft om energie aan te maken.
+        </p>
+
+        <p>
+          In deze blog deel ik 5 van mijn favoriete hormoonproof ontbijtjes. Ze zijn voedzaam, makkelijk te maken en ondersteunen zowel je hormonen als je darmen.
+        </p>
+
+        <h2>Waarom een hormoonproof ontbijt zo belangrijk is</h2>
+        <p>Je eerste maaltijd van de dag zet de toon voor de rest van je dag.</p>
+        <p>
+          Als je ontbijt voornamelijk bestaat uit snelle suikers of weinig voedingsstoffen bevat, ontstaat er vaak een piek in je bloedsuikerspiegel gevolgd door een energiedip.
+        </p>
+        <p>
+          Dit kan zorgen voor meer trek, cravings, vermoeidheid en op de lange termijn zelfs bijdragen aan hormonale disbalansen.
+        </p>
+        <p>Een hormoonproof ontbijt bevat daarom altijd een combinatie van:</p>
+        <ul>
+          <li>Eiwitten</li>
+          <li>Gezonde vetten</li>
+          <li>Vezels</li>
+          <li>Langzame koolhydraten</li>
+        </ul>
+        <p>
+          Deze combinatie zorgt voor een stabielere energie, een verzadigd gevoel en ondersteuning van je hormonen en darmgezondheid.
+        </p>
+
+        <h2>1. Mango chiapudding</h2>
+        <h3>Ingrediënten (1 p)</h3>
+        <ul>
+          <li>200 ml (amandel) melk</li>
+          <li>3 eetlepels chiazaad</li>
+          <li>2 eetlepels Griekse yoghurt van Dodoni</li>
+          <li>Een handje mango</li>
+          <li>Een handje granola</li>
+          <li>1 banaan</li>
+        </ul>
+        <h3>Bereiding</h3>
+        <ol>
+          <li>Voeg de chiazaad toe aan een afsluitbaar bakje</li>
+          <li>Voeg vervolgens de amandelmelk en Griekse yoghurt toe en roer het geheel goed door</li>
+          <li>Zet het bakje in de koelkast en laat dit minimaal 15 minuten staan. Heb je in de ochtend weinig tijd? Dan kun je dit ook de avond van tevoren alvast voorbereiden</li>
+          <li>Snijd de mango en pureer deze tot een gladde mousse</li>
+          <li>Haal de chiapudding uit de koelkast en verdeel de mango, granola en banaan eroverheen</li>
+        </ol>
+        <p>
+          <strong>Waarom dit ontbijt hormoonproof is</strong><br />
+          Chiazaad bevat vezels en omega 3-vetzuren die bijdragen aan een gezonde darmen en een stabielere bloedsuikerspiegel. In combinatie met yoghurt en fruit ontstaat een voedzaam ontbijt dat zorgt voor een lange verzadiging.
+        </p>
+
+        <h2>2. Shakshuka</h2>
+        <h3>Ingrediënten (2 personen)</h3>
+        <ul>
+          <li>4 eitjes</li>
+          <li>1 courgette</li>
+          <li>2 punt paprika's</li>
+          <li>Tomatenblokjes uit blik</li>
+          <li>3 tomaten</li>
+          <li>Feta hoeveelheid naar smaak</li>
+          <li>1 ui</li>
+          <li>Een paar teentjes knoflook</li>
+          <li>1 blikje tomaten puree</li>
+          <li>Kruiden naar keuze</li>
+          <li>Zuurdesem brood</li>
+        </ul>
+        <h3>Bereiding</h3>
+        <ol>
+          <li>Snij alle groente, de ui en de knoflook</li>
+          <li>Fruit de ui en knoflook en voeg vervolgens de tomaten puree toe</li>
+          <li>Bak de courgette</li>
+          <li>Voeg de overige groente toe en bak dit nog eventjes</li>
+          <li>Voeg kruiden toe naar keuze</li>
+          <li>Als de groente gaar begint te worden, maak je per ei een kuiltje en breek je daarin het eitje</li>
+          <li>Plaats een deksel op de pan om de eitjes te laten stollen</li>
+          <li>Als de eitjes gestold zijn verdeel je de shakshuka over 2 borden (of 1 portie in een afsluitbaar bakje)</li>
+          <li>Verdeel de tonijn en verkruimel je de feta over je bord heen</li>
+        </ol>
+        <p>
+          <strong>Waarom dit ontbijt hormoonproof is</strong><br />
+          Eitjes zijn lekker hoog in eiwitten die belangrijk zijn voor de aanmaak van hormonen en neurotransmitters. De grote hoeveelheid groenten ondersteunt daarnaast je darmgezondheid en ontgifting.
+        </p>
+
+        <h2>3. Zoete aardappel pannenkoekjes</h2>
+        <h3>Ingrediënten (2 personen)</h3>
+        <ul>
+          <li>250 gram zoete aardappel</li>
+          <li>180 gram havermout</li>
+          <li>250 ml amandelmelk</li>
+          <li>2 eieren</li>
+          <li>1 theelepel kaneel</li>
+          <li>1 theelepel bakpoeder</li>
+          <li>1 eetlepel amandelpasta</li>
+        </ul>
+        <h3>Bereiding</h3>
+        <ol>
+          <li>Bak de zoete aardappel in de oven op 180 graden tot deze beetgaar is</li>
+          <li>Doe ondertussen de havermout in je blender en mix dit tot het glad gemixt is. (super snelle manier om havermeel te maken)</li>
+          <li>Voeg vervolgend de amandelmelk, de eitjes, kaneel, bakpoeder en amandelpasta toe en mix het geheel</li>
+          <li>Ondertussen kan je de zoete aardappel uit de oven halen en voeg deze ook toe aan het beslag. Mix het geheel nog even goed glad</li>
+          <li>Verwarm een pan met boter of olie en bak de pannenkoekjes goud bruin</li>
+          <li>Leg de pannenkoekjes op je bord en voeg je favo toppings toe</li>
+        </ol>
+        <p>Mijn favoriete toppings zijn:</p>
+        <ul>
+          <li>Aardbeien</li>
+          <li>Griekse yoghurt</li>
+          <li>Hennepzaad</li>
+          <li>Amandelen</li>
+          <li>Amandelpasta</li>
+        </ul>
+        <p>
+          <strong>Waarom dit ontbijt hormoonproof is</strong><br />
+          Zoete aardappel bevat langzame koolhydraten die zorgen dat er langzaam energie wordt afgegeven. Dit in combinatie met de eiwitten uit eitjes en Griekse yoghurt en gezonde vetten voorkom je grote schommelingen in je bloedsuiker. Een stabiele bloedsuikerspiegel is de basis van een stabiele hormoon balans.
+        </p>
+
+        <h2>4. Baked oats met frambozen</h2>
+        <h3>Ingrediënten (1 persoon)</h3>
+        <ul>
+          <li>1 banaan</li>
+          <li>1 ei</li>
+          <li>40 gram havermout</li>
+          <li>70 ml amandelmelk</li>
+          <li>1 theelepel bakpoeder</li>
+          <li>Een halve theelepel vanille-extract</li>
+          <li>1 theelepel kaneel</li>
+          <li>Een handje frambozen</li>
+          <li>1 eetlepel notenpasta</li>
+        </ul>
+        <h3>Bereiding</h3>
+        <ol>
+          <li>Prak de banaan in een schaaltje die ook in de oven mag</li>
+          <li>Breek het ei in het schaaltje</li>
+          <li>Voeg de havermout, melk, kaneel, bakpoeder en vanille toe en mix goed door elkaar</li>
+          <li>Voeg de frambozen en notenpasta toe</li>
+          <li>Bak het geheel ongeveer 20 minuten op 180 graden</li>
+          <li>Ik vind het lekker om af te toppen met wat Griekse yoghurt</li>
+        </ol>
+        <p>
+          <strong>Waarom dit ontbijt hormoonproof is</strong><br />
+          Havermout bevat oplosbare vezels die je darmbacteriën voeden en bijdragen aan een stabielere bloedsuikerspiegel. De combinatie van vezels uit onder andere de frambozen, eiwitten en gezonde vetten helpt om je energie langer vast te houden.
+        </p>
+
+        <h2>5. Carrot Cake Overnight Oats</h2>
+        <h3>Ingrediënten (1 persoon)</h3>
+        <ul>
+          <li>1 à 2 wortels</li>
+          <li>40 gram havermout</li>
+          <li>250 ml amandelmelk</li>
+          <li>1 eetlepel chiazaad</li>
+          <li>1 eetlepel lijnzaad</li>
+          <li>Een paar eetlepels Griekse yoghurt</li>
+          <li>1 theelepel Ceylon kaneel</li>
+          <li>Optioneel: 1 schepje eiwitpoeder zonder troep</li>
+          <li>Een handje walnoten</li>
+        </ul>
+        <h3>Bereiding</h3>
+        <ol>
+          <li>Rasp de wortels en houd een klein beetje apart voor de topping.</li>
+          <li>Voeg de geraspte wortel, havermout, amandelmelk, chiazaad, gemalen lijnzaad, kaneel en eventueel het eiwitpoeder toe aan een afsluitbaar bakje.</li>
+          <li>Voeg een paar eetlepels Griekse yoghurt toe en roer alles goed door.</li>
+          <li>Zet het bakje een nacht in de koelkast.</li>
+          <li>Top de volgende ochtend af met extra Griekse yoghurt, de achtergehouden geraspte wortel en een handje walnoten.</li>
+        </ol>
+        <p>
+          <strong>Waarom dit ontbijt hormoonproof is</strong><br />
+          Dit ontbijt bevat mega vezels uit havermout, chiazaad, lijnzaad én rauwe wortel. Vezels ondersteunen een gezonde darmflora en helpen je lichaam bij het afvoeren van overtollige hormonen via de ontlasting.
+        </p>
+        <p>
+          Rauwe wortel bevat daarnaast unieke vezels die zich kunnen binden aan overtollig oestrogeen in de darm. Een teveel aan oestrogeen wordt regelmatig in verband gebracht met klachten zoals PMS, gevoelige borsten en hormonale migraine.
+        </p>
+        <p>
+          De walnoten leveren gezonde omega 3-vetzuren die bijdragen aan gezonde hersenen en een gezonde ontstekingsbalans. Dankzij de combinatie van eiwitten, gezonde vetten, vezels en langzame koolhydraten geeft dit ontbijt langdurige energie én een verzadigd gevoel.
+        </p>
+
+        <h3>Bekijk hoe ik dit recept maak</h3>
+        <p>
+          Bekijk de video waarin ik stap voor stap laat zien hoe je deze Carrot Cake Overnight Oats maakt:{' '}
+          <a href="https://www.instagram.com/p/DZkBhZFspl5/" target="_blank" rel="noopener noreferrer">
+            bekijk de video op Instagram
+          </a>.
+        </p>
+
+        <h2>Gezond eten hoeft niet ingewikkeld te zijn</h2>
+        <p>Om gezond te eten hoef je niet elke dag opnieuw het wiel uit te vinden.</p>
+        <p>Ik adviseer mijn klanten altijd om 3 favo ontbijtjes te kiezen die je lekker afwisselt.</p>
+        <p>
+          Ontbijtjes die je echt heel lekker vindt, die goed voelen voor jouw lichaam en die passen binnen jouw routine. Wissel deze af gedurende de week.
+        </p>
+        <p>
+          Zo creëer je rust, maak je gezonde keuzes makkelijker en bouw je stap voor stap aan meer energie, een betere darmgezondheid en een sterkere hormoonbalans.
+        </p>
+        <p>
+          Kan je wel wat inspiratie gebruiken? <Link to="/recepten">Klik hier voor meer van mijn recepten.</Link>
+        </p>
+
+        <h2>Wil je ontdekken welke voeding jouw hormonen en darmen écht ondersteunt?</h2>
+        <p>
+          Loop je vast in vermoeidheid, darmklachten, hormonale disbalans of heb je het gevoel dat je van alles probeert zonder blijvend resultaat? Dan kijk ik graag met je mee!
+        </p>
+        <p>
+          Samen onderzoeken we waar jouw klachten vandaan komen en wat jouw lichaam nodig heeft om weer in balans te komen.
+        </p>
+        <p>
+          <Link to="/behandelingen">Lees hier meer over mijn trajecten</Link> of <Link to="/kennismaking">plan een vrijblijvende kennismaking in</Link>.
+        </p>
+
+        <p>
+          Succes,<br />
+          Liefs Danique
+        </p>
+      </>
+  },
   'wat-je-ontlasting-zegt-over-je-gezondheid': {
     content: <>
         <p className="lead">
