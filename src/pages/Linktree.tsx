@@ -112,7 +112,7 @@ const itemVariants = {
 
 
 
-type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
+type LinkItem = { title: string; subtitle?: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
 
 const Linktree: React.FC = () => {
   const { openModal } = useBookingModal();
