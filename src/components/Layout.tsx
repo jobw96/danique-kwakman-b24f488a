@@ -413,7 +413,7 @@ export const Layout: React.FC<LayoutProps> = ({
           delay: 0.1,
           duration: 0.3
         }}>
-            <img loading="lazy" decoding="async" src={logoFull} alt="Danique Kwakman" className="h-8 w-auto cursor-pointer" onClick={() => handleNavigation('/')} loading="lazy" decoding="async" />
+            <img loading="lazy" decoding="async" src={logoFull} alt="Danique Kwakman" className="h-8 w-auto cursor-pointer" onClick={() => handleNavigation('/')} />
           </motion.div>
 
           <nav id="mobile-menu" className="flex flex-col gap-1 flex-1 overflow-y-auto" aria-label="Mobiele navigatie">
