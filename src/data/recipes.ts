@@ -158,9 +158,9 @@ export const recipes: Recipe[] = [
     videoUrl: 'https://www.instagram.com/p/DXBzzFGjEDJ/'
   },
   {
-    id: 'shakshua',
-    slug: 'shakshua',
-    title: 'Shakshua',
+    id: 'shakshuka-feta-tonijn',
+    slug: 'shakshuka-feta-tonijn',
+    title: 'Shakshuka feta tonijn',
     intro: 'Eitjes zijn lekker hoog in eiwitten die belangrijk zijn voor de aanmaak van hormonen en neurotransmitters. De grote hoeveelheid groenten ondersteunt daarnaast je darmgezondheid en ontgifting.',
     image: shakshukaAsset.url,
     ingredientsNote: '2 personen',
