@@ -76,15 +76,25 @@ const SOCIAL_LINKS = [
 
 
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: (dir: number) => ({
+    opacity: 0,
+    x: dir > 0 ? 48 : -48
+  }),
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.03, delayChildren: 0.02 }
+    x: 0,
+    transition: {
+      x: { duration: 0.28, ease: [0.22, 1, 0.36, 1] as const },
+      opacity: { duration: 0.2 },
+      staggerChildren: 0.03,
+      delayChildren: 0.02
+    }
   },
-  exit: {
+  exit: (dir: number) => ({
     opacity: 0,
-    transition: { duration: 0.1, ease: "easeIn" as const }
-  }
+    x: dir > 0 ? -48 : 48,
+    transition: { duration: 0.16, ease: "easeIn" as const }
+  })
 };
 
 const itemVariants = {
@@ -94,8 +104,9 @@ const itemVariants = {
     y: 0,
     transition: { duration: 0.18, ease: [0.22, 1, 0.36, 1] as const }
   },
-  exit: { opacity: 0, y: -6, transition: { duration: 0.1 } }
+  exit: { opacity: 0, transition: { duration: 0.1 } }
 };
+
 
 
 type LinkItem = { title: string; href: string; icon: any; internal: boolean; isBooking?: boolean };
