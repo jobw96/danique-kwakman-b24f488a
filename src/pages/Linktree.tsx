@@ -208,12 +208,12 @@ const Linktree: React.FC = () => {
           </div>
 
           {/* Links / Shop */}
-          <motion.div layout transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }} className="overflow-hidden">
+          <motion.div layout transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }} className="-mx-4 px-4 overflow-x-clip overflow-y-visible">
           <AnimatePresence mode="wait" initial={false} custom={direction}>
             <motion.div
               key={tab}
               custom={direction}
-              className="mt-6 flex flex-col gap-3.5"
+              className="mt-6 flex flex-col gap-3.5 py-1"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
@@ -237,7 +237,7 @@ const Linktree: React.FC = () => {
                 <motion.button
                   variants={itemVariants}
                   onClick={() => window.open(NOURISH_URL, '_blank')}
-                  className="w-full bg-background rounded-3xl overflow-hidden text-left"
+                  className="w-full max-w-[260px] mx-auto bg-background rounded-[28px] overflow-hidden text-left"
                   whileHover={{ scale: 1.015, y: -3 }}
                   whileTap={{ scale: 0.985 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 26 }}
@@ -249,14 +249,14 @@ const Linktree: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="p-5">
-                    <p className="text-base sm:text-lg font-medium text-foreground">
+                  <div className="p-4">
+                    <p className="text-sm font-medium text-foreground">
                       Nourish Your Body
                     </p>
-                    <p className="mt-1.5 text-sm text-foreground/70 leading-relaxed">
+                    <p className="mt-1 text-xs text-foreground/70 leading-relaxed">
                       50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen.
                     </p>
-                    <span className="mt-4 inline-flex items-center justify-center w-full rounded-full bg-primary text-primary-foreground py-3 text-sm font-medium">
+                    <span className="mt-3 inline-flex items-center justify-center w-full rounded-full bg-primary text-primary-foreground py-2.5 text-xs font-medium">
                       Bekijk het e-book
                     </span>
                   </div>
