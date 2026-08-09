@@ -184,7 +184,7 @@ const Linktree: React.FC = () => {
                   <motion.span
                     layoutId="linktree-tab"
                     className="absolute inset-0 bg-background rounded-full"
-                    transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                    transition={{ type: 'spring', stiffness: 700, damping: 40, mass: 0.5 }}
                   />
                 )}
                 <span className="relative z-10">{t === 'links' ? 'Links' : 'Shop'}</span>
@@ -193,15 +193,17 @@ const Linktree: React.FC = () => {
           </div>
 
           {/* Links / Shop */}
-          <AnimatePresence mode="wait">
+          <motion.div layout transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}>
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={tab}
               className="mt-6 flex flex-col gap-3.5"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              exit={{ opacity: 0 }}
+              exit="exit"
             >
+
               {tab === 'links' ? (
                 <>
                   {LINKS.map(renderButton)}
