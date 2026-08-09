@@ -181,21 +181,6 @@ const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const { openModal } = useBookingModal();
 
-  // Load ActiveCampaign newsletter form script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://daniquekwakman.activehosted.com/f/embed.php?id=27';
-    script.charset = 'utf-8';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      const existingScript = document.querySelector('script[src*="activehosted.com/f/embed.php?id=27"]');
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, []);
 
   return <>
     <SEO 
@@ -363,23 +348,6 @@ const Index = () => {
       </div>
     </Section>
 
-    {/* Newsletter Section */}
-    <Section id="nieuwsbrief" className="bg-[#FDF8F3]">
-      <div className="max-w-2xl mx-auto text-center">
-        <FadeIn>
-          <SectionTag text="Nieuwsbrief" />
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Maandelijkse Glow & Nourish recepten</h2>
-          <p className="text-muted-foreground mb-8">
-            Schrijf je in voor mijn maandelijkse nieuwsbrief en ontvang gratis recepten, tips en inspiratie voor een gezonde leefstijl.
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.2}>
-          <div className="newsletter-form-wrapper">
-            <div className="_form_27"></div>
-          </div>
-        </FadeIn>
-      </div>
-    </Section>
 
   </article>
   </>;
