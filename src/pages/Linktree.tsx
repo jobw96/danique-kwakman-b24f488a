@@ -41,7 +41,7 @@ const LINKS = [
 
 const CONNECT_LINKS = [
   {
-    title: "Podcast – Health and Hormone Secrets",
+    title: "Podcast: Health and Hormone Secrets",
     href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA",
     icon: Mic,
     internal: false
