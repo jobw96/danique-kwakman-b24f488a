@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, MessageCircle, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
+import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
