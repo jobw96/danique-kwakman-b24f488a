@@ -6,6 +6,8 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
 import ontlastingSignalen from '@/assets/ontlasting-gezondheid-signalen.webp';
+import ontbijtjesCover from '@/assets/recepten/ontbijtbordje.webp.asset.json';
+
 
 export interface BlogPost {
   id: string;
