@@ -4,7 +4,7 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowDown, Sparkles, ShoppingBasket, Sprout, ListChecks } from 'lucide-react';
 import { SEO } from '@/components/SEO';
-import ebookCover from '@/assets/ebook-cover-boodschappenlijst.jpg';
+import ebookCover from '@/assets/ebook-cover-boodschappenlijst.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">

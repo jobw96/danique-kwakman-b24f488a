@@ -449,7 +449,7 @@ const BlogPost: React.FC = () => {
           }} className="group">
                 <Link to={`/blog/${relatedPost.slug}`} className="flex gap-4 items-center">
                   <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
-                    <motion.img src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover" whileHover={{
+                    <motion.img loading="lazy" decoding="async" src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover" whileHover={{
                   scale: 1.05
                 }} transition={{
                   duration: 0.6

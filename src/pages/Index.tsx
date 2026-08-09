@@ -329,7 +329,7 @@ const Index = () => {
                   duration: 0.6,
                   ease: "easeOut"
                 }} className="relative h-80 rounded-3xl overflow-hidden shadow-md group">
-                  <img src={step.image} alt={`Stap ${step.id}`} className="w-full h-full object-cover" />
+                  <img loading="lazy" decoding="async" src={step.image} alt={`Stap ${step.id}`} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
                 </motion.div>
               </FadeIn>
