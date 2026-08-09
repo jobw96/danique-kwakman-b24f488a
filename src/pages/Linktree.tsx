@@ -122,7 +122,7 @@ const Linktree: React.FC = () => {
 
           {/* Bio */}
           <p className="mt-5 text-center text-primary-foreground/90 text-sm sm:text-base leading-relaxed max-w-md mx-auto">
-            Ik help vrouwen naar balans in hormonen, darmen en energie via mijn CIRCLE-methode.
+            Orthomoleculair hormoon- & darmtherapeut
           </p>
 
           {/* Links */}
