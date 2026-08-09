@@ -5,7 +5,7 @@ import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
-import nourishCover from '@/assets/nourish-your-body.jpeg.asset.json';
+import nourishCover from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 
 
 const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body";
@@ -250,10 +250,7 @@ const Linktree: React.FC = () => {
                     decoding="async"
                   />
                   <div className="p-4">
-                    <p className="text-sm font-medium text-foreground">
-                      Nourish Your Body
-                    </p>
-                    <p className="mt-1 text-xs text-foreground/70 leading-relaxed">
+                    <p className="text-xs text-foreground/70 leading-relaxed">
                       50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen.
                     </p>
                     <span className="mt-3 inline-flex items-center justify-center w-full rounded-full bg-primary text-primary-foreground py-2.5 text-xs font-medium">
