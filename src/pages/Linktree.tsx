@@ -208,12 +208,12 @@ const Linktree: React.FC = () => {
           </div>
 
           {/* Links / Shop */}
-          <motion.div layout transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }} className="overflow-hidden">
+          <motion.div layout transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }} className="-mx-4 px-4 overflow-x-clip overflow-y-visible">
           <AnimatePresence mode="wait" initial={false} custom={direction}>
             <motion.div
               key={tab}
               custom={direction}
-              className="mt-6 flex flex-col gap-3.5"
+              className="mt-6 flex flex-col gap-3.5 py-1"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
