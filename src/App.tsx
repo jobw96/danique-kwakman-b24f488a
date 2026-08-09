@@ -23,6 +23,7 @@ const Darmtraject = lazy(() => import("./pages/Darmtraject"));
 const Bloedsuikertraject = lazy(() => import("./pages/Bloedsuikertraject"));
 
 const Recepten = lazy(() => import("./pages/Recepten"));
+const ReceptDetail = lazy(() => import("./pages/ReceptDetail"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Podcast = lazy(() => import("./pages/Podcast"));
@@ -85,6 +86,7 @@ const AnimatedRoutes = () => {
           <Route path="/bloedsuikertraject" element={<PageTransition><Bloedsuikertraject /></PageTransition>} />
           
           <Route path="/recepten" element={<PageTransition><Recepten /></PageTransition>} />
+          <Route path="/recepten/:slug" element={<PageTransition><ReceptDetail /></PageTransition>} />
           <Route path="/podcast" element={<PageTransition><Podcast /></PageTransition>} />
           <Route path="/e-book" element={<PageTransition><Ebook /></PageTransition>} />
           <Route path="/e-book-recepten-snacks" element={<PageTransition><EbookCravings /></PageTransition>} />
