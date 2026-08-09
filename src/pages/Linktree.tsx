@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, MessageCircle, Mail, Sparkles, Heart, Mic, Calendar, Globe, Cookie, Sunrise, Compass } from 'lucide-react';
+import { Instagram, MessageCircle, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
@@ -10,79 +10,52 @@ const LINKS = [
     title: "Nourish Your Body – 50+ hormoonproof recepten",
     href: "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body",
     icon: Sparkles,
-    internal: false,
-    variant: "primary"
+    internal: false
   },
   {
-    title: "Ontvang elke week mijn gratis nieuwsbrief vol exclusieve inspiratie, tips en inzichten 💌",
+    title: "Ontvang elke week mijn gratis nieuwsbrief",
     href: "/nieuwsbrief",
     icon: Mail,
-    internal: true,
-    variant: "primary"
+    internal: true
   },
   {
     title: "Podcast: Health & Hormone secrets",
     href: "/podcast",
     icon: Mic,
-    internal: true,
-    variant: "primary"
+    internal: true
   },
   {
     title: "Plan jouw gratis kennismakingsgesprek in",
     href: "",
     icon: Calendar,
     internal: false,
-    isBooking: true,
-    variant: "primary"
+    isBooking: true
   },
-
   {
     title: "Aanbod",
     href: "/#behandelingen",
     icon: Compass,
-    internal: true,
-    variant: "primary"
+    internal: true
   },
   {
     title: "Website",
     href: "/",
     icon: Globe,
-    internal: true,
-    variant: "primary"
+    internal: true
   }
 ];
 
-const variantStyles: Record<string, string> = {
-  primary: "bg-primary text-primary-foreground border border-primary hover:bg-primary/90"
-};
-
-const iconBgStyles: Record<string, string> = {
-  primary: "bg-white/20 text-primary-foreground"
-};
-
 const SOCIAL_LINKS = [
-  {
-    name: "Instagram",
-    href: "https://instagram.com/daniquekwakman",
-    icon: Instagram,
-    color: "bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400"
-  },
-  {
-    name: "WhatsApp",
-    href: "https://wa.me/31682018727",
-    icon: MessageCircle,
-    color: "bg-[#25D366]"
-  }
+  { name: "E-mail", href: "mailto:info@daniquekwakman.nl", icon: Mail },
+  { name: "WhatsApp", href: "https://wa.me/31682018727", icon: MessageCircle },
+  { name: "Instagram", href: "https://instagram.com/daniquekwakman", icon: Instagram }
 ];
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.06,
-      delayChildren: 0.2
-    }
+    transition: { staggerChildren: 0.06, delayChildren: 0.2 }
   }
 };
 
@@ -91,36 +64,8 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.4,
-      ease: "easeOut" as const
-    }
+    transition: { duration: 0.4, ease: "easeOut" as const }
   }
-};
-
-const profileVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut" as const
-    }
-  }
-};
-
-const socialVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: (i: number) => ({
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.3,
-      ease: "easeOut" as const,
-      delay: 0.3 + i * 0.08
-    }
-  })
 };
 
 const Linktree: React.FC = () => {
@@ -137,139 +82,93 @@ const Linktree: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-card flex flex-col items-center px-4 py-8 md:py-12">
+    <div className="min-h-screen bg-primary/25 flex flex-col items-center px-4 py-6 md:py-10">
       <h1 className="sr-only">Danique Kwakman — Links en Resources</h1>
-      <div className="w-full max-w-md relative z-10">
-        {/* Profile Section */}
-        <motion.div 
-          className="flex flex-col items-center mb-6"
-          initial="hidden"
-          animate="visible"
+
+      <div className="w-full max-w-xl">
+        {/* Card */}
+        <motion.div
+          className="bg-primary rounded-3xl px-5 sm:px-8 pt-10 pb-12"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          {/* Profile Image */}
-          <motion.div 
-            className="relative mb-4"
-            variants={profileVariants}
-          >
-            <div className="w-24 h-24 rounded-full overflow-hidden border-3 border-primary/20 shadow-lg">
-              <img 
-                src={daniqueRelaxed} 
-                alt="Danique Kwakman" 
+          {/* Avatar */}
+          <div className="flex justify-center">
+            <div className="w-24 h-24 rounded-full overflow-hidden ring-4 ring-background/40">
+              <img
+                src={daniqueRelaxed}
+                alt="Danique Kwakman"
                 className="w-full h-full object-cover"
-              loading="lazy" decoding="async" />
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-            <motion.div 
-              className="absolute -bottom-1 -right-1 bg-primary text-white rounded-full p-1.5"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5, type: "spring", stiffness: 400 }}
-            >
-              <Sparkles className="w-3 h-3" />
-            </motion.div>
-          </motion.div>
+          </div>
 
-          {/* Name/Logo */}
+          {/* Logo */}
+          <div className="flex justify-center mt-6">
+            <img
+              src={logoFull}
+              alt="Danique Kwakman"
+              className="h-7 w-auto brightness-0 invert opacity-95"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          {/* Bio */}
+          <p className="mt-5 text-center text-primary-foreground/90 text-sm sm:text-base leading-relaxed max-w-md mx-auto">
+            Ik help vrouwen naar balans in hormonen, darmen en energie via mijn CIRCLE-methode.
+          </p>
+
+          {/* Links */}
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            <img 
-              src={logoFull} 
-              alt="Danique Kwakman" 
-              className="h-6 w-auto mb-4"
-            loading="lazy" decoding="async" />
-          </motion.div>
-
-          {/* Social Icons */}
-          <motion.div 
-            className="flex gap-3 mb-6"
+            className="mt-8 flex flex-col gap-3.5"
+            variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-            {SOCIAL_LINKS.map((social, index) => (
+            {LINKS.map((link, index) => (
+              <motion.button
+                key={index}
+                onClick={() => handleLinkClick(link)}
+                className="w-full bg-background text-foreground rounded-full py-4 px-6 text-sm sm:text-base font-medium text-center transition-colors hover:bg-background/90"
+                variants={itemVariants}
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {link.title}
+              </motion.button>
+            ))}
+          </motion.div>
+
+          {/* Socials */}
+          <div className="mt-9 flex items-center justify-center gap-7">
+            {SOCIAL_LINKS.map((social, i) => (
               <motion.a
                 key={social.name}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className={`${social.color} text-white p-2.5 rounded-full shadow-md`}
-                variants={socialVariants}
-                custom={index}
-                whileHover={{ 
-                  scale: 1.15, 
-                  rotate: [0, -5, 5, 0],
-                  transition: { duration: 0.3 }
-                }}
-                whileTap={{ scale: 0.95 }}
+                className="text-primary-foreground"
+                initial={{ opacity: 0, scale: 0.85 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.5 + i * 0.08, duration: 0.3, ease: "easeOut" }}
+                whileHover={{ scale: 1.18 }}
+                whileTap={{ scale: 0.94 }}
               >
-                <social.icon className="w-5 h-5" />
+                <social.icon className="w-6 h-6" strokeWidth={1.75} />
               </motion.a>
             ))}
-          </motion.div>
-
-          {/* Bio Text */}
-          <motion.div 
-            className="text-center mb-8 px-2"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-          >
-            <p className="text-foreground text-sm leading-relaxed mb-1">
-              Ik help vrouwen in 3 maanden te transformeren via mijn CIRCLE-methode
-            </p>
-            <p className="text-foreground text-sm leading-relaxed mb-2">
-              naar balans in hormonen, darmen en energie.
-            </p>
-            <p className="text-muted-foreground text-sm flex items-center justify-center gap-1">
-              <span>👋</span> 8+ jaar ervaring in zorg & health
-            </p>
-          </motion.div>
-        </motion.div>
-
-        {/* Links */}
-        <motion.div 
-          className="flex flex-col gap-3"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {LINKS.map((link, index) => {
-            const Icon = link.icon;
-            const variant = (link as { variant?: string }).variant || "primary";
-            return (
-              <motion.button
-                key={index}
-                onClick={() => handleLinkClick(link)}
-                className={`w-full ${variantStyles[variant]} py-4 px-5 rounded-md text-sm font-medium relative overflow-hidden group transition-colors flex items-center gap-3 text-left`}
-                variants={itemVariants}
-                whileHover={{
-                  scale: 1.02,
-                  y: -2,
-                }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span className={`shrink-0 w-9 h-9 rounded-full ${iconBgStyles[variant]} flex items-center justify-center`}>
-                  <Icon className="w-4 h-4" />
-                </span>
-                <span className="relative z-10 leading-snug flex-1">{link.title}</span>
-              </motion.button>
-            );
-          })}
+          </div>
         </motion.div>
 
         {/* Footer */}
-        <motion.div 
-          className="mt-10 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.5 }}
-        >
-          <p className="text-muted-foreground text-xs flex items-center justify-center gap-1">
-            Made with <Heart className="w-3 h-3 text-secondary fill-secondary" /> by Danique
-          </p>
-        </motion.div>
+        <p className="mt-8 text-center text-xs text-foreground/60">
+          © {new Date().getFullYear()} Danique Kwakman
+        </p>
       </div>
     </div>
   );
