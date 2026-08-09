@@ -41,7 +41,7 @@ export const STATIC_ROUTES: SitemapRoute[] = [
   { path: '/recepten/homemade-chocolade-granola', changefreq: 'monthly', priority: 0.7 },
   { path: '/recepten/homemade-gembershotjes', changefreq: 'monthly', priority: 0.7 },
   { path: '/recepten/eimuffins', changefreq: 'monthly', priority: 0.7 },
-  { path: '/recepten/choco-smoothie', changefreq: 'monthly', priority: 0.7 },
+  { path: '/recepten/chocolade-smoothie', changefreq: 'monthly', priority: 0.7 },
   { path: '/recepten/mango-chiapudding', changefreq: 'monthly', priority: 0.7 },
   { path: '/recepten/shakshuka-feta-tonijn', changefreq: 'monthly', priority: 0.7 },
   { path: '/recepten/zoete-aardappel-pannenkoekjes', changefreq: 'monthly', priority: 0.7 },
