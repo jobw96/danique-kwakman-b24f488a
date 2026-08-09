@@ -49,27 +49,47 @@ export const Layout: React.FC<LayoutProps> = ({
     offset: ["start end", "end end"]
   });
   const footerY = useTransform(scrollYProgress, [0, 1], ["-20%", "0%"]);
+  // Measure banner/header heights with a ResizeObserver instead of reading
+  // offsetHeight on every scroll event (that forces a reflow → scroll jank).
+  const [bannerHeight, setBannerHeight] = useState(0);
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-      setShowBackToTop(window.scrollY > 500);
-      // On mobile, slide the banner up out of view as the user scrolls,
-      // so only the navbar stays sticky. On desktop (lg+) keep banner visible.
-      const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
-      const bh = bannerRef.current?.offsetHeight ?? 0;
-      setBannerOffset(isDesktop ? 0 : Math.min(window.scrollY, bh));
-      // Track total header (banner + navbar) height for subpage top padding.
-      const hh = headerWrapperRef.current?.offsetHeight ?? 0;
-      setHeaderHeight(hh);
+    const measure = () => {
+      setBannerHeight(bannerRef.current?.offsetHeight ?? 0);
+      setHeaderHeight(headerWrapperRef.current?.offsetHeight ?? 0);
     };
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (bannerRef.current) ro.observe(bannerRef.current);
+    if (headerWrapperRef.current) ro.observe(headerWrapperRef.current);
+    window.addEventListener('resize', measure);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
+      ro.disconnect();
+      window.removeEventListener('resize', measure);
     };
   }, []);
+
+  useEffect(() => {
+    let ticking = false;
+    const isDesktopMq = window.matchMedia('(min-width: 1024px)');
+    const update = () => {
+      ticking = false;
+      const y = window.scrollY;
+      setScrolled(prev => (prev !== y > 20 ? y > 20 : prev));
+      setShowBackToTop(prev => (prev !== y > 500 ? y > 500 : prev));
+      const next = isDesktopMq.matches ? 0 : Math.min(y, bannerHeight);
+      setBannerOffset(prev => (prev !== next ? next : prev));
+    };
+    const handleScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
+    update();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [bannerHeight]);
+
 
 
   // Scroll to top on route change, or smooth scroll to hash
