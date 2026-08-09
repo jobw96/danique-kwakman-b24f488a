@@ -12,12 +12,6 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "Aanbod",
-    href: "/#behandelingen",
-    icon: Compass,
-    internal: true
-  },
-  {
     title: "E-Book Nourish Your Body",
     href: NOURISH_URL,
     icon: Sparkles,
