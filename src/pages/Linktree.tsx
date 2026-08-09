@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Instagram, MessageCircle, Mail, Sparkles, Mic, Calendar, Globe, Compass } from 'lucide-react';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
-import daniqueRelaxed from '@/assets/danique-relaxed.webp';
+import daniquePortret from '@/assets/danique-portret.webp';
 
 const LINKS = [
   {
@@ -97,7 +97,7 @@ const Linktree: React.FC = () => {
           <div className="flex justify-center">
             <div className="w-24 h-24 rounded-full overflow-hidden ring-4 ring-background/40">
               <img
-                src={daniqueRelaxed}
+                src={daniquePortret}
                 alt="Danique Kwakman"
                 className="w-full h-full object-cover"
                 loading="lazy"
