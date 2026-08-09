@@ -66,7 +66,7 @@ const SOCIAL_LINKS = [
   { name: "E-mail", href: "mailto:info@daniquekwakman.nl", icon: Mail },
   { name: "WhatsApp", href: "https://wa.me/31682018727", icon: WhatsAppIcon },
   { name: "Instagram", href: "https://instagram.com/daniquekwakman", icon: Instagram },
-  { name: "TikTok", href: "https://www.tiktok.com/@daniquekwakman", icon: TikTokIcon },
+  { name: "TikTok", href: "https://www.tiktok.com/@danique.kwakman?_r=1", icon: TikTokIcon },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/daniquekwakman", icon: Linkedin }
 ];
 

@@ -528,7 +528,7 @@ export const Layout: React.FC<LayoutProps> = ({
           }}>
               <Instagram size={26} strokeWidth={1.5} />
             </motion.a>
-            <motion.a href="https://www.tiktok.com/@daniquekwakman" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{
+            <motion.a href="https://www.tiktok.com/@danique.kwakman?_r=1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
