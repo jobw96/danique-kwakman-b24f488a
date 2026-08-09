@@ -56,8 +56,9 @@ const ReceptDetail = () => {
 
             <p className="text-muted-foreground leading-relaxed mb-10">{recipe.intro}</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-              <div className="bg-[#FDF8F3] rounded-2xl p-6 h-fit">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
+              <div className="bg-[#FDF8F3] rounded-2xl p-6">
+
                 <h2 className="font-serif text-xl text-foreground mb-4 flex items-baseline gap-2">
                   Ingrediënten
                   {recipe.ingredientsNote && (
@@ -74,7 +75,7 @@ const ReceptDetail = () => {
                 </ul>
               </div>
 
-              <div>
+              <div className="rounded-2xl p-6 border border-secondary/30">
                 <h2 className="font-serif text-xl text-foreground mb-4">Bereiding</h2>
                 <ol className="space-y-4">
                   {recipe.steps.map((step, i) => (
