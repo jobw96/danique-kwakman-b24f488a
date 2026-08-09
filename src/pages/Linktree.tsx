@@ -158,9 +158,16 @@ const Linktree: React.FC = () => {
                 className="text-primary-foreground"
                 initial={{ opacity: 0, scale: 0.85 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 + i * 0.08, duration: 0.3, ease: "easeOut" }}
-                whileHover={{ scale: 1.18 }}
-                whileTap={{ scale: 0.94 }}
+                transition={{
+                  opacity: { delay: 0.5 + i * 0.08, duration: 0.3, ease: "easeOut" },
+                  scale: { delay: 0.5 + i * 0.08, duration: 0.3, ease: "easeOut" },
+                }}
+                whileHover={{
+                  scale: 1.18,
+                  y: -2,
+                  transition: { type: "spring", stiffness: 400, damping: 22, mass: 0.5, delay: 0 },
+                }}
+                whileTap={{ scale: 0.94, transition: { duration: 0.1, delay: 0 } }}
               >
                 <social.icon className="w-6 h-6" strokeWidth={1.75} />
               </motion.a>
