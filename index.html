@@ -194,7 +194,9 @@
         var meta = routes[path];
         if (!meta) return;
 
-        var canonical = BASE + (path === '/' ? '/' : path);
+        var canonicalPath = meta.canonical || path;
+        var canonical = BASE + (canonicalPath === '/' ? '/' : canonicalPath);
+
 
         function setMeta(selector, attr, value) {
           var el = document.querySelector(selector);

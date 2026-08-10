@@ -30,7 +30,8 @@ export const SEO = ({
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   const fullTitle = title 
     ? `${title} | Danique Kwakman - Orthomoleculair Therapeut`
-    : 'Danique Kwakman - Orthomoleculair Therapeut | Hormoonbalans & Darmgezondheid';
+    : 'Danique Kwakman | Orthomoleculair Therapeut & Hormoonbalans';
+
   
   const canonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : undefined;
 
