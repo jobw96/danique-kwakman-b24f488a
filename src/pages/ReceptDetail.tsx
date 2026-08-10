@@ -148,7 +148,7 @@ const ReceptDetail = () => {
                   <div className="p-5">
                     <h3 className="font-serif text-lg text-foreground mb-2">{r.title}</h3>
                     <span className="inline-flex items-center text-primary text-sm font-medium">
-                      Bekijk recept <ChefHat className="w-4 h-4 ml-2" />
+                      Bekijk recept<span className="sr-only"> voor {r.title}</span> <ChefHat className="w-4 h-4 ml-2" />
                     </span>
                   </div>
                 </Link>

@@ -263,7 +263,7 @@ const Index = () => {
                       stiffness: 300,
                       damping: 25
                     }}>
-                      Bekijk traject <ArrowRight className="w-4 h-4 ml-2" />
+                      Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
                     </motion.div>
                   </div>
                 </motion.div>
