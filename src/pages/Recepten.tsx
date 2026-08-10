@@ -28,7 +28,7 @@ const RecipeCard = ({ recipe }: { recipe: Recipe }) => (
         <h2 className="font-serif text-xl text-foreground mb-3">{recipe.title}</h2>
         <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 flex-grow">{recipe.intro}</p>
         <div className="flex items-center text-primary font-medium mt-4 text-sm">
-          Bekijk recept <ChefHat className="w-4 h-4 ml-2" />
+          Bekijk recept<span className="sr-only"> voor {recipe.title}</span> <ChefHat className="w-4 h-4 ml-2" />
         </div>
       </div>
     </Link>
