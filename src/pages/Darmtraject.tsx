@@ -282,20 +282,10 @@ const Darmtraject = () => {
 
           {/* Investering */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 bg-primary/10 py-2">
-                <span className="text-primary text-sm font-medium tracking-wide">⚡ Zomeractie — geldig t/m 1 augustus 2026</span>
-              </div>
-              <div className="pt-6">
-                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
-
-                <div className="flex items-center justify-center mb-2">
-                  <span className="text-xl md:text-2xl text-muted-foreground line-through decoration-primary/50">€350</span>
-                </div>
-                <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€299<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
-
-                <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
-              </div>
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center">
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
+              <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€350<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
+              <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
         </div>

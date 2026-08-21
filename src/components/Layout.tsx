@@ -6,7 +6,6 @@ import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
 
-import { PromoBanner } from '@/components/PromoBanner';
 import { useBookingModal } from '@/components/BookingModal';
 import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
 interface LayoutProps {
@@ -218,9 +217,8 @@ export const Layout: React.FC<LayoutProps> = ({
         style={{ transform: `translateY(-${bannerOffset}px)` }}
       >
 
-      <div ref={bannerRef}>
-        <PromoBanner />
-      </div>
+      <div ref={bannerRef} />
+
       <motion.header className="w-full border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
