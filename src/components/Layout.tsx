@@ -218,9 +218,8 @@ export const Layout: React.FC<LayoutProps> = ({
         style={{ transform: `translateY(-${bannerOffset}px)` }}
       >
 
-      <div ref={bannerRef}>
-        <PromoBanner />
-      </div>
+      <div ref={bannerRef} />
+
       <motion.header className="w-full border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
