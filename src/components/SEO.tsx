@@ -28,9 +28,17 @@ export const SEO = ({
   jsonLd,
 }: SEOProps) => {
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
-  const fullTitle = title 
-    ? `${title} | Danique Kwakman - Orthomoleculair Therapeut`
-    : 'Danique Kwakman | Orthomoleculair Therapeut & Hormoonbalans';
+
+  // Bouw de titel zonder dubbele staart: pagina-titels die het merk of de
+  // beroepsaanduiding al bevatten krijgen die niet nogmaals aangeplakt.
+  const DEFAULT_TITLE = 'Danique Kwakman | Orthomoleculair Therapeut & Hormoonbalans';
+  const buildTitle = (pageTitle: string) => {
+    const hasBrand = /danique\s+kwakman/i.test(pageTitle);
+    if (hasBrand) return pageTitle;
+    return `${pageTitle} | ${SITE_NAME}`;
+  };
+  const fullTitle = title ? buildTitle(title) : DEFAULT_TITLE;
+
 
   
   const canonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : undefined;
