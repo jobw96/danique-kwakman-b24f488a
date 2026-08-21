@@ -6,7 +6,6 @@ import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
 
-import { PromoBanner } from '@/components/PromoBanner';
 import { useBookingModal } from '@/components/BookingModal';
 import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
 interface LayoutProps {
