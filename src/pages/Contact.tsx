@@ -48,9 +48,6 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <FadeIn>
             <SectionTag text="Contact" />
-            <h1 className="font-serif text-3xl md:text-4xl text-foreground mt-4">
-              Contact &amp; afspraak maken
-            </h1>
           </FadeIn>
 
           
