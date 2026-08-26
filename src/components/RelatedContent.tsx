@@ -40,7 +40,7 @@ export const RelatedContent = ({
 }: RelatedContentProps) => {
   if (!items?.length) return null;
 
-  const HeadingTag = `h${headingLevel}` as React.ElementType;
+  const HeadingTag = `h${headingLevel}` as ElementType;
 
   return (
     <aside
