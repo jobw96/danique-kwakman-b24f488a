@@ -1,3 +1,4 @@
+import type { ElementType } from 'react';
 import { Link } from '@/lib/router-compat';
 import { ArrowRight } from 'lucide-react';
 
