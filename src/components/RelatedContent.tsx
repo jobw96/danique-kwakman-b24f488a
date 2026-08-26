@@ -39,7 +39,7 @@ export const RelatedContent = ({
 }: RelatedContentProps) => {
   if (!items?.length) return null;
 
-  const HeadingTag = (`h${headingLevel}` as unknown) as keyof JSX.IntrinsicElements;
+  const HeadingTag = `h${headingLevel}` as React.ElementType;
 
   return (
     <aside
