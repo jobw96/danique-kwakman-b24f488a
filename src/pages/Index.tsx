@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/router-compat';
 import { motion } from 'framer-motion';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
@@ -124,7 +124,7 @@ const SectionTag = ({
   text
 }: {
   text: string;
-}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
+}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>;
 
 const ServiceAccordion = () => {
   const [activeId, setActiveId] = useState<string>(SERVICES[0].id);
@@ -138,7 +138,7 @@ const ServiceAccordion = () => {
     </motion.div>
     <div className="flex flex-col justify-center">
       {SERVICES.map(service => <div key={service.id} className="border-b border-secondary/30 last:border-none">
-        <motion.button onClick={() => setActiveId(service.id)} className="w-full py-6 flex justify-between items-center text-left group focus:outline-none" whileHover={{
+        <motion.button onClick={() => setActiveId(service.id)} className="w-full py-6 flex justify-between items-center text-left group focus:outline-hidden" whileHover={{
           x: 4
         }} transition={{
           type: "spring",
@@ -236,7 +236,7 @@ const Index = () => {
           return (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={linkPath} className="h-full block">
-                <motion.div className="bg-card rounded-2xl overflow-hidden shadow-sm border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
+                <motion.div className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
                   y: -8,
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                   borderColor: "hsl(var(--primary) / 0.3)"

@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from '@/lib/router-compat';
 
 /**
  * Site-wide SEO constants. Update here when the canonical domain or
@@ -389,7 +389,7 @@ export const countWords = (input: string): number => {
   return text.split(' ').length;
 };
 
-/** Estimated reading time in minutes (rounded up, min 1). */
+/** Estimated reading time in minutes (rounded-sm up, min 1). */
 export const readingTimeMinutes = (
   input: string | number,
   wordsPerMinute = WORDS_PER_MINUTE,

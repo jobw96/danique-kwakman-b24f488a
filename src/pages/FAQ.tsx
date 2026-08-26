@@ -35,7 +35,7 @@ const FAQ_ITEMS: FaqItem[] = [
 ];
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
     {text}
   </div>
 );
@@ -82,7 +82,7 @@ const FAQ = () => {
               >
                 <motion.button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                  className="w-full py-6 flex justify-between items-center text-left focus:outline-none group"
+                  className="w-full py-6 flex justify-between items-center text-left focus:outline-hidden group"
                   whileHover={{ x: 4 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link, Navigate } from '@/lib/router-compat';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';

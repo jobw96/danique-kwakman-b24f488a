@@ -13,7 +13,7 @@ const SectionTag = ({
   text
 }: {
   text: string;
-}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>;
+}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>;
 const About = () => {
   const { openModal } = useBookingModal();
   return <div className="min-h-screen">
@@ -47,7 +47,7 @@ const About = () => {
 
           {/* Overleven naar leven */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Overleven naar leven</h2>
@@ -96,7 +96,7 @@ const About = () => {
 
           {/* Inzicht cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <FadeIn delay={0.1} className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30">
+            <FadeIn delay={0.1} className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30">
               <div className="w-14 h-14 min-w-14 min-h-14 flex-shrink-0 bg-[#FDF8F3] rounded-full flex items-center justify-center mb-6">
                 <Heart size={24} className="text-[#6B7B8A]" />
               </div>
@@ -105,7 +105,7 @@ const About = () => {
                 Wanneer je je cyclus leert volgen en ondersteunen, krijg je veel meer grip op je energie, stemming en dagelijkse keuzes. Kleine, gerichte aanpassingen maken een groot verschil in hoe je je voelt.
               </p>
             </FadeIn>
-            <FadeIn delay={0.2} className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30">
+            <FadeIn delay={0.2} className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30">
               <div className="w-14 h-14 min-w-14 min-h-14 flex-shrink-0 bg-[#FDF8F3] rounded-full flex items-center justify-center mb-6">
                 <Sparkles size={24} className="text-[#6B7B8A]" />
               </div>
@@ -118,7 +118,7 @@ const About = () => {
 
           {/* Mijn werkwijze */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Mijn werkwijze</h2>
@@ -148,7 +148,7 @@ const About = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {["Verpleegkunde", "Orthomoleculaire therapeut Basis", "Orthomoleculair therapeut Gevorderd", "Orthomoleculaire Epigenetisch therapeut"].map((item, i) => <FadeIn key={i} delay={i * 0.1} className="bg-white p-6 rounded-xl border border-secondary/30 shadow-sm hover:border-primary/50 transition-colors group">
+              {["Verpleegkunde", "Orthomoleculaire therapeut Basis", "Orthomoleculair therapeut Gevorderd", "Orthomoleculaire Epigenetisch therapeut"].map((item, i) => <FadeIn key={i} delay={i * 0.1} className="bg-white p-6 rounded-xl border border-secondary/30 shadow-xs hover:border-primary/50 transition-colors group">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 min-w-12 min-h-12 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <GraduationCap size={20} className="text-[#6B7B8A]" />
@@ -164,7 +164,7 @@ const About = () => {
 
           {/* Waarom */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Waarom ik doe wat ik doe</h2>
               <p className="text-muted-foreground leading-relaxed max-w-3xl">
                 Ik weet hoe het is om constant moe te zijn, met klachten te worstelen en het gevoel te hebben dat niemand je echt begrijpt. Daarom combineer ik mijn kennis en ervaring om vrouwen te helpen ontdekken hoe ze hun lichaam écht kunnen begrijpen, weer vertrouwen kunnen krijgen in hun eigen lijf en duurzaam in balans kunnen komen.

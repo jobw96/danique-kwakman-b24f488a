@@ -31,7 +31,7 @@ const DARM_TESTIMONIALS = [
 
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
 );
 
 const Darmtraject = () => {
@@ -75,7 +75,7 @@ const Darmtraject = () => {
 
           {/* Wat dit traject voor je betekent */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wat dit traject voor je betekent</h2>
               <ul className="space-y-3 mb-8">
                 {[
@@ -119,7 +119,7 @@ const Darmtraject = () => {
 
           {/* Wanneer dit traject niet passend is */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wanneer dit traject niet passend is</h2>
               <ul className="space-y-3">
                 {[
@@ -177,7 +177,7 @@ const Darmtraject = () => {
                   desc: "Voor extra begeleiding tussen de consulten door. Precies wanneer je het nodig hebt." 
                 }
               ].map((item, i) => (
-                <FadeIn key={i} delay={i * 0.1} className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30">
+                <FadeIn key={i} delay={i * 0.1} className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 min-w-12 min-h-12 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center">
                       <item.icon size={20} className="text-[#6B7B8A]" />
@@ -195,7 +195,7 @@ const Darmtraject = () => {
 
           {/* 4 Fases van de darmtherapie */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">4 fases van de darmtherapie</h2>
               <p className="text-muted-foreground mb-8">
                 Het 1:1 Darmtherapie traject duurt ± 6 maanden. Afhankelijk van jouw situatie kan dit langer of korter zijn. Op basis van jouw labonderzoek doorlopen we de 4 fases van de darmtherapie.
@@ -240,7 +240,7 @@ const Darmtraject = () => {
 
           {/* Wat zit erbij? */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Wat zit erbij?</h2>
               <div className="space-y-4 mb-8">
                 {[
@@ -282,7 +282,7 @@ const Darmtraject = () => {
 
           {/* Investering */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-secondary/30 mb-20 text-center">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20 text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
               <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€350<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>

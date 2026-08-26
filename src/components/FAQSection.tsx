@@ -50,7 +50,7 @@ export const FAQSection: React.FC = () => {
           >
             <motion.button
               onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-              className="w-full py-6 flex justify-between items-center text-left focus:outline-none group"
+              className="w-full py-6 flex justify-between items-center text-left focus:outline-hidden group"
               whileHover={{ x: 4 }}
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
               aria-expanded={openFaq === idx}

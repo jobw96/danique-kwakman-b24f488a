@@ -5,7 +5,7 @@ import SEO from '@/components/SEO';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
     {text}
   </div>
 );
