@@ -179,13 +179,17 @@ body {
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-muted-foreground font-sans antialiased;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif text-foreground;
+  }
+
+  a, button, [role="button"], [type="button"], [type="submit"], [type="reset"], summary, label[for] {
+    cursor: pointer;
   }
 }
 
