@@ -15,13 +15,13 @@ interface State {
  * Logt naar de error-tracker zodat regressies zichtbaar worden in GA4/GTM.
  */
 export class ErrorBoundary extends Component<Props, State> {
-  state: State = { error: null };
+  override state: State = { error: null };
 
   static getDerivedStateFromError(error: Error): State {
     return { error };
   }
 
-  componentDidCatch(error: Error, info: ErrorInfo) {
+  override componentDidCatch(error: Error, info: ErrorInfo) {
     trackRuntimeError(error, { componentStack: info.componentStack });
   }
 
@@ -29,7 +29,7 @@ export class ErrorBoundary extends Component<Props, State> {
     this.setState({ error: null });
   };
 
-  render() {
+  override render() {
     if (this.state.error) {
       return <ServerError onRetry={this.handleReset} />;
     }

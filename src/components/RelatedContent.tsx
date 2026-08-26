@@ -1,3 +1,4 @@
+import type { ElementType } from 'react';
 import { Link } from '@/lib/router-compat';
 import { ArrowRight } from 'lucide-react';
 
@@ -39,7 +40,7 @@ export const RelatedContent = ({
 }: RelatedContentProps) => {
   if (!items?.length) return null;
 
-  const HeadingTag = (`h${headingLevel}` as unknown) as keyof JSX.IntrinsicElements;
+  const HeadingTag = `h${headingLevel}` as ElementType;
 
   return (
     <aside

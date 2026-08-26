@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@/lib/helmet';
 import { motion } from 'framer-motion';
 import {
     Home,
