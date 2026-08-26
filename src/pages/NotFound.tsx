@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "@/lib/router-compat";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@/lib/helmet";
 import { Search } from "lucide-react";
 import SEO from "@/components/SEO";
 import { STATIC_ROUTES } from "@/config/sitemap-routes";
