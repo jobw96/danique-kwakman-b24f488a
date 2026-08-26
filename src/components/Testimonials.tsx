@@ -39,7 +39,7 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
       <CarouselContent>
         {testimonials.map((testimonial) => (
           <CarouselItem className="lg:basis-1/3" key={testimonial.id}>
-            <div className="bg-card rounded-2xl shadow-sm border border-secondary/30 p-6 flex flex-col gap-3 min-h-[280px]">
+            <div className="bg-card rounded-2xl shadow-xs border border-secondary/30 p-6 flex flex-col gap-3 min-h-[280px]">
               <Quote className="w-6 h-6 text-secondary flex-shrink-0" />
               <div className="flex gap-1 flex-shrink-0">
                 {[...Array(testimonial.rating)].map((_, i) => (

@@ -7,7 +7,7 @@ import { SEO } from '@/components/SEO';
 import ebookCover from '@/assets/ebook-cover-boodschappenlijst.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
     {text}
   </div>
 );
@@ -101,7 +101,7 @@ const EbookBoodschappenlijst = () => {
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <motion.div
-                  className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30 h-full"
+                  className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full"
                   whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >

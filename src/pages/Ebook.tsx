@@ -9,7 +9,7 @@ const SectionTag = ({
   text
 }: {
   text: string;
-}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
+}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
     {text}
   </div>;
 const Ebook = () => {
@@ -78,7 +78,7 @@ const Ebook = () => {
             title: "Hormonale Balans",
             desc: "Ontdek hoe kleine aanpassingen een groot verschil maken voor je hormonen."
           }].map((item, i) => <FadeIn key={i} delay={i * 0.1}>
-                <motion.div className="bg-white p-8 rounded-2xl shadow-sm border border-secondary/30 h-full" whileHover={{
+                <motion.div className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full" whileHover={{
               y: -8,
               boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
             }} transition={{
@@ -97,7 +97,7 @@ const Ebook = () => {
 
           {/* Content & Form Section - Integrated */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-sm border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                 {/* Left: Content */}
                 <div>

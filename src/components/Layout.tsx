@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from '@/lib/router-compat';
 import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';

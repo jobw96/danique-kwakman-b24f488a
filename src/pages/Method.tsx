@@ -15,7 +15,7 @@ const SectionTag = ({
   text
 }: {
   text: string;
-}) => <div className="inline-block bg-[#9CAAC6] text-white text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">
+}) => <div className="inline-block bg-[#9CAAC6] text-white text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
     {text}
   </div>;
 

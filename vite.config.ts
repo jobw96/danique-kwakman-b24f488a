@@ -1,59 +1,20 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
+// or the app will break with duplicate plugins:
+//   - TanStack devtools (dev-only, first), tanstackStart, viteReact, tailwindcss, tsConfigPaths,
+//     nitro (build-only using cloudflare as a default target), VITE_* env injection, @ path alias,
+//     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
+// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { sitemapPlugin } from "./vite-plugin-sitemap";
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    warmup: {
-      // Pre-transform veelgebruikte modules zodra de dev server start
-      // → Snellere eerste paint in de preview
-      clientFiles: [
-        "./src/main.tsx",
-        "./src/App.tsx",
-        "./src/pages/Index.tsx",
-        "./src/components/Layout.tsx",
-      ],
-    },
+export default defineConfig({
+  tanstackStart: {
+    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
+    // nitro/vite builds from this
+    server: { entry: "server" },
   },
-  plugins: [
-    react(),
-    sitemapPlugin(),
-    mode === "development" && componentTagger(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+  vite: {
+    // ported from the old vite.config.ts: generates public/sitemap.xml at dev-start and build
+    plugins: [sitemapPlugin()],
   },
-  // Pre-bundle zware dependencies bij dev start → minder losse module-requests
-  optimizeDeps: {
-    include: [
-      "react",
-      "react-dom",
-      "react-router-dom",
-      "framer-motion",
-      "lucide-react",
-      "react-helmet-async",
-      "@tanstack/react-query",
-    ],
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        // Split heavy vendor libs into separate chunks → smaller main bundle,
-        // less unused JS per route, better long-term caching.
-        manualChunks: {
-          "react-vendor": ["react", "react-dom", "react-router-dom"],
-          "motion-vendor": ["framer-motion"],
-          "query-vendor": ["@tanstack/react-query"],
-          "helmet-vendor": ["react-helmet-async"],
-        },
-      },
-    },
-  },
-}));
+});

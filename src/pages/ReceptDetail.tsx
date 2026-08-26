@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { Link, useParams, Navigate } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { SEO } from '@/components/SEO';

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/router-compat';
 import { ArrowRight } from 'lucide-react';
 
 export interface RelatedItem {
@@ -54,7 +54,7 @@ export const RelatedContent = ({
           <li key={item.href}>
             <Link
               to={item.href}
-              className="group block h-full rounded-md border border-slate-200 bg-white p-5 transition-colors hover:border-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+              className="group block h-full rounded-md border border-slate-200 bg-white p-5 transition-colors hover:border-slate-400 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-slate-400"
             >
               <span className="flex items-center gap-2 text-base font-medium text-slate-900 group-hover:text-slate-700">
                 {item.title}

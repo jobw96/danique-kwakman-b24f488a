@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/router-compat';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
@@ -11,7 +11,7 @@ import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-sm tracking-wide">{text}</div>
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
 );
 
 const treatments = [
@@ -55,7 +55,7 @@ const Behandelingen = () => {
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={treatment.href} className="h-full block">
                 <motion.div 
-                  className="bg-card rounded-2xl overflow-hidden shadow-sm border border-secondary/30 h-full flex flex-col cursor-pointer" 
+                  className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer" 
                   whileHover={{
                     y: -8,
                     boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
