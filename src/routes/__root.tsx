@@ -43,7 +43,7 @@ const SEO_BOOTSTRAP = `(function () {
     '/method': { title: 'De CIRCLE-methode | Danique Kwakman', description: 'Ontdek de CIRCLE-methode: een holistische aanpak voor hormoonbalans, darmherstel en duurzame energie bij vrouwen.' },
     '/behandelingen': { title: 'Aanbod Trajecten | Danique Kwakman', description: 'Bekijk de 1:1 trajecten van Danique Kwakman: Hormoontraject en Darmtraject voor hormoonbalans en darmherstel.' },
     '/hormoontraject': { title: '1:1 Hormoontraject | Hormoonbalans & Energie | Danique Kwakman', description: 'Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf.' },
-    '/glowup': { title: '1:1 Hormoontraject | Hormoonbalans & Energie | Danique Kwakman', description: 'Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf.', canonical: '/hormoontraject' },
+    '/glowup': { title: 'GlowUp traject voor vrouwen | Danique Kwakman', description: 'De GlowUp-pagina verwijst naar het 1:1 Hormoontraject: persoonlijke begeleiding voor vrouwen die weer energie, rust en hormonale balans willen voelen.', canonical: '/hormoontraject' },
     '/darmtraject': { title: '1:1 Darmtraject Therapie | Lab onderzoek | Danique Kwakman', description: 'Diepgaand 1:1 darmtraject inclusief laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman.' },
     '/recepten': { title: 'Gezonde Recepten | Hormoonbalans & Darmgezondheid | Danique Kwakman', description: 'Voedzame, hormoon- en darmvriendelijke recepten van orthomoleculair therapeut Danique Kwakman. Ondersteunend voor energie en welzijn.' },
     '/kennismaking': { title: 'Gratis Kennismaking | Danique Kwakman', description: 'Plan een gratis kennismakingsgesprek met orthomoleculair therapeut Danique Kwakman en ontdek hoe ik jou kan helpen naar meer balans.' },
@@ -112,7 +112,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "canonical", href: "https://daniquekwakman.nl/" },
       { rel: "icon", href: "/favicon.ico", sizes: "any" },
       { rel: "icon", href: "/favicon-512.png", type: "image/png", sizes: "512x512" },
       { rel: "icon", href: "/favicon-light.svg", type: "image/svg+xml" },
