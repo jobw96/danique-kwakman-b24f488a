@@ -6,6 +6,7 @@ import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowRight } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
+import SEO from '@/components/SEO';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
@@ -42,6 +43,11 @@ const Behandelingen = () => {
   const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Aanbod Trajecten | Hormonen, Darmen & Bloedsuiker"
+        description="Bekijk de 1:1 trajecten van Danique Kwakman: Bloedsuiker-, Hormoon- en Darmtraject voor stabiele energie, hormoonbalans en darmherstel."
+        canonicalUrl="/behandelingen"
+      />
       <Section className="pt-4 bg-background">
         <div className="text-center mb-16">
           <FadeIn>

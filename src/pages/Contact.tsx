@@ -57,9 +57,9 @@ const Contact = () => {
               {/* Priority CTA */}
               <FadeIn>
                 <div className="space-y-6 pb-8 border-b border-border/50">
-                  <h2 className="font-serif text-4xl md:text-5xl text-foreground">
+                  <h1 className="font-serif text-4xl md:text-5xl text-foreground">
                     Maak een afspraak
-                  </h2>
+                  </h1>
                   <p className="text-muted-foreground leading-relaxed text-base py-0 pt-0 pb-[20px]">
                     Met de volgende button kan je bij mij een afspraak maken voor een intakegesprek of een gratis vrijblijvend kennismakingsgesprek
                   </p>

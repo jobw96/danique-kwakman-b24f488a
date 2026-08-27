@@ -62,13 +62,21 @@ const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
 );
 
-const Hormoontraject = () => {
+interface HormoontrajectProps {
+  seoTitle?: string;
+  seoDescription?: string;
+}
+
+const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) => {
   const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
       <SEO
-        title="1:1 Hormoontraject | Hormoonbalans & Energie"
-        description="Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf."
+        title={seoTitle ?? "1:1 Hormoontraject | Hormoonbalans & Energie"}
+        description={
+          seoDescription ??
+          "Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf."
+        }
         canonicalUrl="/hormoontraject"
       />
       <Section className="pt-4 bg-background">
