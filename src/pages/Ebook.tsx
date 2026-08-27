@@ -5,6 +5,7 @@ import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowDown, Sparkles, Coffee, Zap } from 'lucide-react';
 import ebookCoverFront from '@/assets/ebook-cover-front.webp';
 import ebookCoverOpen from '@/assets/ebook-cover-open.webp';
+import SEO from '@/components/SEO';
 const SectionTag = ({
   text
 }: {
@@ -29,6 +30,11 @@ const Ebook = () => {
     };
   }, []);
   return <div className="min-h-screen">
+      <SEO
+        title="Gratis E-book: 5 ontbijtrecepten voor meer energie"
+        description="Download het gratis e-book van Danique Kwakman met 5 hormoonvriendelijke ontbijtrecepten voor een energieke start van je dag."
+        canonicalUrl="/e-book"
+      />
       <Section className="pt-4 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section - Glow Up Style */}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { Headphones, ExternalLink } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const SPOTIFY_SHOW_URL = 'https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0';
 const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed-podcast/show/21JMWSXjs1SziLcNNNFHZf?utm_source=generator';
@@ -13,6 +14,11 @@ const SectionTag = ({ text }: { text: string }) => (
 const Podcast = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Podcast Health & Hormone Secrets"
+        description="Luister naar de podcast van Danique Kwakman over hormoonbalans, darmgezondheid, voeding en leefstijl voor vrouwen."
+        canonicalUrl="/podcast"
+      />
       <Section className="bg-background pt-4">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>

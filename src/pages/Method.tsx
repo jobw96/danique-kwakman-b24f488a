@@ -2,6 +2,7 @@ import { Section } from "@/components/Section";
 import { FadeIn, ParallaxImage, PageTransition, StaggerContainer } from "@/components/Animations";
 import { CustomButton } from "@/components/CustomButton";
 import { useBookingModal } from "@/components/BookingModal";
+import SEO from "@/components/SEO";
 import deKern from "@/assets/de-kern.webp";
 import groei from "@/assets/groei.webp";
 import hetProces from "@/assets/het-proces.webp";
@@ -62,6 +63,11 @@ const METHOD_CARDS = [{
 const Method = () => {
   const { openModal } = useBookingModal();
   return <PageTransition>
+      <SEO
+        title="De CIRCLE-methode | Holistische aanpak voor vrouwen"
+        description="Ontdek de CIRCLE-methode: een holistische aanpak voor hormoonbalans, darmherstel en duurzame energie bij vrouwen."
+        canonicalUrl="/method"
+      />
       {/* Hero Section */}
       <Section className="bg-[#FCF9F2] pt-4">
         <div className="max-w-6xl mx-auto">
