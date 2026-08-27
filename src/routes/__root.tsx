@@ -102,7 +102,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Danique Kwakman" },
       { property: "og:title", content: SITE_TITLE },
       { property: "og:description", content: SITE_DESCRIPTION },
-      { property: "og:url", content: "https://daniquekwakman.nl/" },
+      
       { property: "og:locale", content: "nl_NL" },
       { property: "og:image", content: "https://daniquekwakman.nl/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
