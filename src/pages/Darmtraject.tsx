@@ -40,7 +40,7 @@ const Darmtraject = () => {
     <div className="min-h-screen">
       <SEO
         title="1:1 Darmtraject Therapie | Lab onderzoek"
-        description="Diepgaand 1:1 darmtraject inclusief laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman."
+        description="Diepgaand 1:1 darmtraject met gericht laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman."
         canonicalUrl="/darmtraject"
       />
       <Section className="pt-4 bg-background">
@@ -248,8 +248,6 @@ const Darmtraject = () => {
                   "5 persoonlijke 1:1 sessies van 60 minuten",
                   "Intensieve begeleiding en support via WhatsApp",
                   "Persoonlijk behandelplan op basis van o.a. jouw lab uitslagen, voeding, leefstijl, mindset, je cyclus en darmgezondheid",
-                  "Ontlastingsonderzoek (t.w.v. €490)",
-                  "Voedselintolerantietest van 31 voedingsmiddelen (t.w.v. €115)",
                   "Hulpmiddelen die je ondersteunen tijdens het traject, zoals cyclus-trackers, receptenboeken en werkboeken"
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -264,6 +262,7 @@ const Darmtraject = () => {
               <div className="p-6 rounded-xl border border-secondary/30 bg-background/50">
                 <h4 className="font-medium text-foreground mb-3">Exclusief</h4>
                 <ul className="space-y-2 text-muted-foreground text-sm">
+                  <li>– Labkosten: het ontlastingsonderzoek en de voedselintolerantietest zijn niet inbegrepen in de trajectprijs. De kosten hiervoor bedragen €600 en worden rechtstreeks door het lab aan jou gefactureerd.</li>
                   <li>– Eventuele aanvullende onderzoeken of her-testen</li>
                   <li>– Supplementen</li>
                 </ul>
@@ -284,7 +283,8 @@ const Darmtraject = () => {
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20 text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
-              <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€350<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
+              <p className="text-5xl md:text-6xl font-serif text-primary mb-4">€299<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
+              <p className="text-muted-foreground text-sm mb-8">Exclusief labkosten: €600, rechtstreeks gefactureerd door het lab.</p>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
