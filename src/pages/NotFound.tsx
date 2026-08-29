@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "@/lib/router-compat";
 import { Helmet } from "@/lib/helmet";
 import { Search } from "lucide-react";
 import SEO from "@/components/SEO";
-import { STATIC_ROUTES } from "@/config/sitemap-routes";
+import { routeTree } from "@/routeTree.gen";
 import { track404 } from "@/lib/errorTracking";
 
 /** Populaire bestemmingen — getoond als suggesties op de 404-pagina. */
@@ -15,12 +15,23 @@ const POPULAR_LINKS: Array<{ to: string; label: string; description: string }> =
   { to: "/contact", label: "Contact", description: "Stel je vraag of plan een kennismaking." },
 ];
 
+/** Alle statische paden uit de router (geen handmatige lijst). */
+const ALL_PATHS: string[] = (() => {
+  const out: string[] = [];
+  const walk = (route: any) => {
+    const full = route?.fullPath as string | undefined;
+    if (full && !full.includes("$") && !full.includes("*")) out.push(full.replace(/(.)\/$/, "$1"));
+    for (const child of (route?.children ?? []) as any[]) walk(child);
+  };
+  walk(routeTree as any);
+  return [...new Set(out)];
+})();
+
 /** Eenvoudige fuzzy-match op pad-segmenten — geen DB nodig. */
 const suggestRoutes = (pathname: string) => {
   const token = pathname.replace(/[^a-z0-9]+/gi, " ").trim().toLowerCase();
   if (!token) return [] as string[];
-  return STATIC_ROUTES
-    .map((r) => r.path)
+  return ALL_PATHS
     .filter((p) => p !== "/" && token.split(" ").some((t) => t.length > 2 && p.includes(t)))
     .slice(0, 3);
 };
@@ -55,9 +66,9 @@ const NotFound = () => {
     const q = query.trim().toLowerCase();
     if (!q) return;
     // Probeer een directe match op een bestaande route.
-    const direct = STATIC_ROUTES.find((r) => r.path.includes(q));
+    const direct = ALL_PATHS.find((p) => p.includes(q));
     if (direct) {
-      navigate(direct.path);
+      navigate(direct);
       return;
     }
     // Fallback: stuur naar recepten/blog-overzicht waar relevant kan zijn.
