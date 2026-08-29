@@ -574,7 +574,7 @@ export const Layout: React.FC<LayoutProps> = ({
           <div className="max-w-lg mb-6">
             <div className="flex items-center justify-center gap-4 mb-4">
               <img src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" loading="lazy" decoding="async" />
-              <img alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" src="/lovable-uploads/a74f49d6-b23c-40c2-8368-c8460118ab8d.png" loading="lazy" decoding="async" />
+              <img alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" src="/gat-logo.png" loading="lazy" decoding="async" />
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed mb-2">
               Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).
