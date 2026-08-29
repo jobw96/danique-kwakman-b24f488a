@@ -38,6 +38,8 @@ export const REDIRECTS: RedirectRule[] = [
   { from: '/over', to: '/over-mij', type: 'permanent' },
   { from: '/about', to: '/over-mij', type: 'permanent' },
   { from: '/ebook', to: '/e-book', type: 'permanent' },
+  { from: '/darmtherapie-traject', to: '/darmtraject', type: 'permanent', note: 'Oude URL in Google-index' },
+
 ];
 
 /**

@@ -32,58 +32,6 @@ const JSONLD_BUSINESS = `{"@context":"https://schema.org","@type":"LocalBusiness
 const JSONLD_WEBSITE = `{"@context":"https://schema.org","@type":"WebSite","url":"https://daniquekwakman.nl","name":"Danique Kwakman","inLanguage":"nl-NL"}`;
 const JSONLD_PERSON = `{"@context":"https://schema.org","@type":"Person","@id":"https://daniquekwakman.nl/#person","name":"Danique Kwakman","jobTitle":"Orthomoleculair Therapeut","description":"Orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen.","url":"https://daniquekwakman.nl/over-mij","image":"https://daniquekwakman.nl/og-image.jpg","sameAs":["https://www.instagram.com/daniquekwakman/"],"knowsAbout":["Orthomoleculaire therapie","Hormoonbalans","Darmgezondheid","Voeding","Vrouwengezondheid"],"worksFor":{"@id":"https://daniquekwakman.nl/#business"}}`;
 
-// ported from index.html — per-route SEO bootstrap for crawlers hitting deep links.
-// Runs before React mounts; Helmet keeps tags in sync during client navigation.
-const SEO_BOOTSTRAP = `(function () {
-  var BASE = 'https://daniquekwakman.nl';
-  var path = window.location.pathname.replace(/\\/+$/, '') || '/';
-  var routes = {
-    '/': { title: ${JSON.stringify(SITE_TITLE)}, description: ${JSON.stringify(SITE_DESCRIPTION)} },
-    '/over-mij': { title: 'Over mij - Danique Kwakman | Orthomoleculair Therapeut', description: 'Maak kennis met Danique Kwakman, orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen.' },
-    '/method': { title: 'De CIRCLE-methode | Danique Kwakman', description: 'Ontdek de CIRCLE-methode: een holistische aanpak voor hormoonbalans, darmherstel en duurzame energie bij vrouwen.' },
-    '/behandelingen': { title: 'Aanbod Trajecten | Danique Kwakman', description: 'Bekijk de 1:1 trajecten van Danique Kwakman: Hormoontraject en Darmtraject voor hormoonbalans en darmherstel.' },
-    '/hormoontraject': { title: '1:1 Hormoontraject | Hormoonbalans & Energie | Danique Kwakman', description: 'Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf.' },
-    '/glowup': { title: 'GlowUp traject voor vrouwen | Danique Kwakman', description: 'De GlowUp-pagina verwijst naar het 1:1 Hormoontraject: persoonlijke begeleiding voor vrouwen die weer energie, rust en hormonale balans willen voelen.', canonical: '/hormoontraject' },
-    '/darmtraject': { title: '1:1 Darmtraject Therapie | Lab onderzoek | Danique Kwakman', description: 'Diepgaand 1:1 darmtraject inclusief laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman.' },
-    '/recepten': { title: 'Gezonde Recepten | Hormoonbalans & Darmgezondheid | Danique Kwakman', description: 'Voedzame, hormoon- en darmvriendelijke recepten van orthomoleculair therapeut Danique Kwakman. Ondersteunend voor energie en welzijn.' },
-    '/kennismaking': { title: 'Gratis Kennismaking | Danique Kwakman', description: 'Plan een gratis kennismakingsgesprek met orthomoleculair therapeut Danique Kwakman en ontdek hoe ik jou kan helpen naar meer balans.' },
-    '/podcast': { title: 'Podcast | Danique Kwakman | Hormonen, Darmen & Energie', description: 'Luister naar de podcast van Danique Kwakman over hormoonbalans, darmgezondheid, voeding en leefstijl voor vrouwen.' },
-    '/e-book': { title: 'Gratis E-book | Danique Kwakman', description: 'Download het gratis e-book van Danique Kwakman met inzichten en praktische tips voor hormoonbalans en darmgezondheid.' },
-    '/e-book-recepten-snacks': { title: '5 Recepten om je Cravings te Stillen | Gratis E-book | Danique Kwakman', description: 'Download gratis het e-book met 5 recepten om je zoete cravings rondom je menstruatie te stillen. Voedzaam, darmvriendelijk en snel klaar.' },
-    '/nieuwsbrief': { title: 'Nieuwsbrief | Danique Kwakman', description: 'Schrijf je in voor de wekelijkse nieuwsbrief van Danique Kwakman en ontvang exclusieve inspiratie, tips en inzichten voor hormoonbalans en darmgezondheid.' },
-    '/contact': { title: 'Contact | Danique Kwakman | Orthomoleculair Therapeut', description: 'Neem contact op met Danique Kwakman, orthomoleculair therapeut, voor vragen over trajecten, kennismaking of samenwerking.' },
-    '/faq': { title: 'Veelgestelde Vragen | Danique Kwakman', description: 'Antwoorden op veelgestelde vragen over orthomoleculaire therapie, vergoeding, trajecten en werkwijze van Danique Kwakman.' },
-    '/blog': { title: 'Blog | Hormoonbalans, Darmen & Energie | Danique Kwakman', description: 'Lees artikelen over hormoonbalans, darmgezondheid, voeding en leefstijl op de blog van orthomoleculair therapeut Danique Kwakman.' },
-    '/privacy': { title: 'Privacybeleid | Danique Kwakman', description: 'Lees het privacybeleid van Danique Kwakman over de verwerking van persoonsgegevens.' },
-    '/cookie-policy': { title: 'Cookiebeleid | Danique Kwakman', description: 'Informatie over het cookiebeleid van de website van Danique Kwakman.' },
-    '/terms': { title: 'Algemene Voorwaarden | Danique Kwakman', description: 'Algemene voorwaarden van orthomoleculair therapeut Danique Kwakman.' }
-  };
-  var meta = routes[path];
-  if (!meta) return;
-  var canonicalPath = meta.canonical || path;
-  var canonical = BASE + (canonicalPath === '/' ? '/' : canonicalPath);
-  function setMeta(selector, attr, value) {
-    var el = document.querySelector(selector);
-    if (el) el.setAttribute(attr, value);
-  }
-  function setLink(rel, href) {
-    var el = document.querySelector('link[rel="' + rel + '"]');
-    if (!el) {
-      el = document.createElement('link');
-      el.setAttribute('rel', rel);
-      document.head.appendChild(el);
-    }
-    el.setAttribute('href', href);
-  }
-  document.title = meta.title;
-  setMeta('meta[name="description"]', 'content', meta.description);
-  setMeta('meta[property="og:title"]', 'content', meta.title);
-  setMeta('meta[property="og:description"]', 'content', meta.description);
-  setMeta('meta[property="og:url"]', 'content', canonical);
-  setMeta('meta[name="twitter:title"]', 'content', meta.title);
-  setMeta('meta[name="twitter:description"]', 'content', meta.description);
-  setLink('canonical', canonical);
-})();`;
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -128,7 +76,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { type: "application/ld+json", children: JSONLD_BUSINESS },
       { type: "application/ld+json", children: JSONLD_WEBSITE },
       { type: "application/ld+json", children: JSONLD_PERSON },
-      { children: SEO_BOOTSTRAP },
     ],
   }),
   shellComponent: RootShell,

@@ -29,43 +29,18 @@ export const SEO = ({
 }: SEOProps) => {
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
-  // Bouw de titel zonder dubbele staart: pagina-titels die het merk of de
-  // beroepsaanduiding al bevatten krijgen die niet nogmaals aangeplakt.
-  const DEFAULT_TITLE = 'Danique Kwakman | Orthomoleculair Therapeut & Hormoonbalans';
-  const buildTitle = (pageTitle: string) => {
-    const hasBrand = /danique\s+kwakman/i.test(pageTitle);
-    if (hasBrand) return pageTitle;
-    return `${pageTitle} | ${SITE_NAME}`;
-  };
-  const fullTitle = title ? buildTitle(title) : DEFAULT_TITLE;
-
-
-  
-  const canonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : undefined;
+  // Titel, description, canonical, og:*, twitter:* en robots worden per route
+  // gezet via `head()` (src/lib/seo.ts) zodat ze in de server-response staan.
+  // Deze component levert alleen nog aanvullende tags die daar niet in zitten.
+  void title;
+  void description;
+  void canonicalUrl;
+  void ogImage;
 
   return (
     <Helmet>
-      {/* Primary Meta Tags */}
-      <title>{fullTitle}</title>
-      <meta name="description" content={description} />
       {noIndex && <meta name="robots" content="noindex,nofollow" />}
-      {canonical && <link rel="canonical" href={canonical} />}
-      
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content={ogType} />
-      <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImage} />
-      {canonical && <meta property="og:url" content={canonical} />}
-      <meta property="og:locale" content="nl_NL" />
-      
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
-      
+
       {/* Article specific (for blog posts) */}
       {ogType === 'article' && publishedTime && (
         <meta property="article:published_time" content={publishedTime} />
@@ -86,5 +61,6 @@ export const SEO = ({
     </Helmet>
   );
 };
+
 
 export default SEO;

@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as LayoutRouteImport } from './routes/_layout'
+import { Route as DarmtherapieTrajectRouteImport } from './routes/darmtherapie-traject'
 import { Route as LinktreeRouteImport } from './routes/linktree'
 import { Route as LayoutIndexRouteImport } from './routes/_layout/index'
 import { Route as LayoutBehandelingenRouteImport } from './routes/_layout/behandelingen'
@@ -38,6 +39,11 @@ import { Route as LayoutReceptenSlugRouteImport } from './routes/_layout/recepte
 
 const LayoutRoute = LayoutRouteImport.update({
   id: '/_layout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DarmtherapieTrajectRoute = DarmtherapieTrajectRouteImport.update({
+  id: '/darmtherapie-traject',
+  path: '/darmtherapie-traject',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LinktreeRoute = LinktreeRouteImport.update({
@@ -172,6 +178,7 @@ const LayoutReceptenSlugRoute = LayoutReceptenSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof LayoutIndexRoute
+  '/darmtherapie-traject': typeof DarmtherapieTrajectRoute
   '/linktree': typeof LinktreeRoute
   '/behandelingen': typeof LayoutBehandelingenRoute
   '/bloedsuikertraject': typeof LayoutBloedsuikertrajectRoute
@@ -198,6 +205,7 @@ export interface FileRoutesByFullPath {
   '/recepten/': typeof LayoutReceptenIndexRoute
 }
 export interface FileRoutesByTo {
+  '/darmtherapie-traject': typeof DarmtherapieTrajectRoute
   '/linktree': typeof LinktreeRoute
   '/behandelingen': typeof LayoutBehandelingenRoute
   '/bloedsuikertraject': typeof LayoutBloedsuikertrajectRoute
@@ -227,6 +235,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_layout': typeof LayoutRouteWithChildren
+  '/darmtherapie-traject': typeof DarmtherapieTrajectRoute
   '/linktree': typeof LinktreeRoute
   '/_layout/behandelingen': typeof LayoutBehandelingenRoute
   '/_layout/bloedsuikertraject': typeof LayoutBloedsuikertrajectRoute
@@ -257,6 +266,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/darmtherapie-traject'
     | '/linktree'
     | '/behandelingen'
     | '/bloedsuikertraject'
@@ -283,6 +293,7 @@ export interface FileRouteTypes {
     | '/recepten/'
   fileRoutesByTo: FileRoutesByTo
   to:
+    | '/darmtherapie-traject'
     | '/linktree'
     | '/behandelingen'
     | '/bloedsuikertraject'
@@ -311,6 +322,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/_layout'
+    | '/darmtherapie-traject'
     | '/linktree'
     | '/_layout/behandelingen'
     | '/_layout/bloedsuikertraject'
@@ -340,6 +352,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   LayoutRoute: typeof LayoutRouteWithChildren
+  DarmtherapieTrajectRoute: typeof DarmtherapieTrajectRoute
   LinktreeRoute: typeof LinktreeRoute
 }
 
@@ -350,6 +363,13 @@ declare module '@tanstack/react-router' {
       path: ''
       fullPath: '/'
       preLoaderRoute: typeof LayoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/darmtherapie-traject': {
+      id: '/darmtherapie-traject'
+      path: '/darmtherapie-traject'
+      fullPath: '/darmtherapie-traject'
+      preLoaderRoute: typeof DarmtherapieTrajectRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/linktree': {
@@ -589,6 +609,7 @@ const LayoutRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   LayoutRoute: LayoutRouteWithChildren,
+  DarmtherapieTrajectRoute: DarmtherapieTrajectRoute,
   LinktreeRoute: LinktreeRoute,
 }
 export const routeTree = rootRouteImport
