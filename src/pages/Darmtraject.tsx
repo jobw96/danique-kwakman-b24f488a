@@ -83,7 +83,7 @@ const Darmtraject = () => {
                   "gedag zeggen tegen buikpijn, constipatie, diarree, winderigheid of een opgeblazen gevoel",
                   "betere opname van voedingsstoffen, waardoor je meer energie en veerkracht ervaart",
                   "inzicht in welke voeding, leefstijl en routines jouw lichaam ondersteunen",
-                  "een uitgebreid darmonderzoek en voedselintolerantietest om precies te achterhalen waar je gevoelig voor bent, wat je lichaam nodig heeft en waar de oorzaak ligt van je klachten",
+                  "een uitgebreid darmonderzoek en voedselintolerantietest om precies te achterhalen waar je gevoelig voor bent, wat je lichaam nodig heeft en waar de oorzaak ligt van je klachten (de labkosten hiervoor zijn niet inbegrepen in de trajectprijs)",
                   "praktische stappen en persoonlijke begeleiding om klachten stap voor stap te verhelpen",
                   "begeleiding die afgestemd is op jouw energie, tempo en situatie, zodat verandering haalbaar en duurzaam is",
                   "meer rust en vertrouwen in je lichaam, zodat je weet hoe je je spijsvertering en gezondheid kunt ondersteunen"
