@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -159,6 +159,11 @@ export const Layout: React.FC<LayoutProps> = ({
       description: '',
       icon: LayoutGrid
     }, {
+      name: 'Mijn methode',
+      href: '/method',
+      description: '',
+      icon: Compass
+    }, {
       name: '1:1 Bloedsuikertraject',
       href: '/bloedsuikertraject',
       description: '',
@@ -175,8 +180,8 @@ export const Layout: React.FC<LayoutProps> = ({
       icon: Activity
     }]
   }, {
-    name: 'Mijn methode',
-    href: '/method'
+    name: 'Webshop',
+    href: '/webshop'
   }, {
     name: 'Over mij',
     href: '/over-mij'
