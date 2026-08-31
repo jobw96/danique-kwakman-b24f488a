@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SITE_URL } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
 import Webshop, { CHECKOUT_URL, PRICE_AMOUNT, faqs } from "@/pages/Webshop";
-import nourishCover from "@/assets/nourish-your-body-cover-2.jpeg.asset.json";
+import nourishCover from "@/assets/nourish-your-body-cover-2.webp.asset.json";
 
 
 const TITLE = "Nourish Your Body — e-book met 50+ hormoonproof recepten";
 const DESCRIPTION =
-  "Nourish Your Body: e-book met 50+ hormoonproof recepten voor cyclusgerichte voeding, darmgezondheid en hormoonbalans. €24,95, direct te downloaden.";
+  "Nourish Your Body: e-book met 50+ hormoonproof recepten voor cyclusgerichte voeding, darmgezondheid en hormoonbalans. €39,99, direct te downloaden.";
 const URL = `${SITE_URL}/webshop`;
 const OG_IMAGE = `${SITE_URL}/og-nourish-your-body-ebook.jpg`;
 
