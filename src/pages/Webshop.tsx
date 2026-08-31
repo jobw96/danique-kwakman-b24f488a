@@ -49,19 +49,24 @@ const reviews = [
 
 const trajectories = [
   {
+    href: '/bloedsuikertraject',
+    image: daniqueBloedsuiker,
+    title: '1:1 Bloedsuikertraject',
+    description:
+      'In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.',
+  },
+  {
     href: '/hormoontraject',
+    image: daniqueGlowup,
     title: '1:1 Hormoontraject',
-    description: 'In 3 maanden terug naar hormonale balans, rust en vertrouwen in je lijf.',
+    description:
+      'In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.',
   },
   {
     href: '/darmtraject',
-    title: '1:1 Darmtraject',
-    description: 'Een diepgaand traject inclusief labonderzoek om de kern van je darmklachten te vinden.',
-  },
-  {
-    href: '/bloedsuikertraject',
-    title: '1:1 Bloedsuikertraject',
-    description: 'In 2 weken naar stabiele energie en minder cravings met een glucosesensor.',
+    image: daniqueDarm,
+    title: '1:1 Darmtraject Therapie',
+    description: 'Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.',
   },
 ];
 
