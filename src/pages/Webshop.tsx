@@ -154,7 +154,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 5. Over Danique */}
+          {/* 4. Over Danique */}
           <FadeIn>
             <section className={`${PANEL} p-8 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
@@ -180,7 +180,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 6. Reviews */}
+          {/* 5. Reviews */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Wat anderen zeggen</h2>
@@ -197,7 +197,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 7. Binnenkort */}
+          {/* 6. Binnenkort */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Binnenkort in de shop</h2>
@@ -245,7 +245,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 8. FAQ */}
+          {/* 7. FAQ */}
           <FadeIn>
             <section className="mb-20 md:mb-28 max-w-3xl mx-auto">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">Veelgestelde vragen</h2>
@@ -264,7 +264,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 9. Afsluitende CTA */}
+          {/* 8. Afsluitende CTA */}
           <FadeIn>
             <motion.section className="rounded-2xl bg-primary/10 px-6 py-14 md:py-20 text-center">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-3">Klaar om te beginnen?</h2>
