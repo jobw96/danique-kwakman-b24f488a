@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "@/lib/router-compat";
+import { useRouter } from "@tanstack/react-router";
 import { Helmet } from "@/lib/helmet";
 import { Search } from "lucide-react";
 import SEO from "@/components/SEO";
-import { routeTree } from "@/routeTree.gen";
 import { track404 } from "@/lib/errorTracking";
 
 /** Populaire bestemmingen — getoond als suggesties op de 404-pagina. */
@@ -16,29 +16,32 @@ const POPULAR_LINKS: Array<{ to: string; label: string; description: string }> =
 ];
 
 /** Alle statische paden uit de router (geen handmatige lijst). */
-const ALL_PATHS: string[] = (() => {
+const collectPaths = (root: any): string[] => {
   const out: string[] = [];
   const walk = (route: any) => {
     const full = route?.fullPath as string | undefined;
     if (full && !full.includes("$") && !full.includes("*")) out.push(full.replace(/(.)\/$/, "$1"));
     for (const child of (route?.children ?? []) as any[]) walk(child);
   };
-  walk(routeTree as any);
+  walk(root);
   return [...new Set(out)];
-})();
+};
 
 /** Eenvoudige fuzzy-match op pad-segmenten — geen DB nodig. */
-const suggestRoutes = (pathname: string) => {
+const suggestRoutes = (pathname: string, allPaths: string[]) => {
   const token = pathname.replace(/[^a-z0-9]+/gi, " ").trim().toLowerCase();
   if (!token) return [] as string[];
-  return ALL_PATHS
+  return allPaths
     .filter((p) => p !== "/" && token.split(" ").some((t) => t.length > 2 && p.includes(t)))
     .slice(0, 3);
 };
 
+
 const NotFound = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const router = useRouter();
+  const allPaths = useMemo(() => collectPaths(router.routeTree as any), [router]);
   const [query, setQuery] = useState("");
 
   // Log de 404 (dev: console, prod: dataLayer voor GA4/GTM).
@@ -59,14 +62,14 @@ const NotFound = () => {
     };
   }, []);
 
-  const suggestions = useMemo(() => suggestRoutes(location.pathname), [location.pathname]);
+  const suggestions = useMemo(() => suggestRoutes(location.pathname, allPaths), [location.pathname, allPaths]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     const q = query.trim().toLowerCase();
     if (!q) return;
     // Probeer een directe match op een bestaande route.
-    const direct = ALL_PATHS.find((p) => p.includes(q));
+    const direct = allPaths.find((p) => p.includes(q));
     if (direct) {
       navigate(direct);
       return;
