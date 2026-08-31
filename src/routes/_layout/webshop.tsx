@@ -35,7 +35,8 @@ export const Route = createFileRoute("/_layout/webshop")({
     ],
     links: [
       { rel: "canonical", href: URL },
-      { rel: "preload", as: "image", href: OG_IMAGE, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: nourishCover.url, fetchpriority: "high" },
+
     ],
     scripts: [
       {
