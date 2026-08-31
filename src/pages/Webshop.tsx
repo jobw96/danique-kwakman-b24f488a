@@ -208,55 +208,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 6. Binnenkort */}
-          <FadeIn>
-            <section className="mb-20 md:mb-28">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Binnenkort in de shop</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                {upcoming.map((u) => (
-                  <article key={u.title} className={`${PANEL} overflow-hidden`}>
-                    <div className="h-40 bg-primary/10" aria-hidden="true" />
-                    <div className="p-6">
-                      <span className="inline-block rounded-full bg-primary/15 text-primary text-xs font-medium px-3 py-1 mb-3">
-                        Binnenkort
-                      </span>
-                      <h3 className="font-serif text-lg text-foreground mb-1.5">{u.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{u.text}</p>
-                    </div>
-                  </article>
-                ))}
-              </div>
-              <form
-                className="mt-10 max-w-md mx-auto flex flex-col sm:flex-row gap-3"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSignedUp(true);
-                }}
-              >
-                <label htmlFor="shop-notify" className="sr-only">E-mailadres</label>
-                <input
-                  id="shop-notify"
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Je e-mailadres"
-                  className="grow rounded-md border border-border/60 bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-hidden focus:ring-2 focus:ring-primary/40"
-                />
-                <button
-                  type="submit"
-                  className="rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-dark cursor-pointer"
-                >
-                  Hou me op de hoogte
-                </button>
-              </form>
-              {signedUp && (
-                <p className="mt-3 text-center text-sm text-muted-foreground">Fijn, ik laat het je weten zodra er iets nieuws is.</p>
-              )}
-            </section>
-          </FadeIn>
-
-          {/* 7. FAQ */}
+          {/* 6. FAQ */}
           <FadeIn>
             <section className="mb-20 md:mb-28 max-w-3xl mx-auto">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">Veelgestelde vragen</h2>
