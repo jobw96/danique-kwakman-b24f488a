@@ -10,8 +10,6 @@ import {
 } from '@/components/ui/accordion';
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ListChecks } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
-import nourishPage1 from '@/assets/nourish-your-body-cover.jpeg.asset.json';
-import nourishPage2 from '@/assets/nourish-your-body.jpeg.asset.json';
 import daniquePortret from '@/assets/danique-portret.webp';
 
 const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
@@ -34,13 +32,6 @@ const OrderButton = ({ className = '' }: { className?: string }) => (
     Bestel nu
   </a>
 );
-
-const previewPages = [
-  { src: nourishPage1.url, caption: 'Ontbijt' },
-  { src: nourishPage2.url, caption: 'Lunch & diner' },
-  { src: nourishCover.url, caption: 'Snacks' },
-  { src: nourishPage1.url, caption: 'Mealprep' },
-];
 
 const features = [
   { icon: BookOpen, title: '50+ recepten', text: 'Voedzame recepten voor elk moment van de dag.' },
@@ -147,30 +138,7 @@ const Webshop = () => {
             </div>
           </FadeIn>
 
-          {/* 3. Inkijkexemplaar */}
-          <FadeIn>
-            <section className="mb-20 md:mb-28">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
-                Even meekijken in het boek
-              </h2>
-              <div className="flex md:grid md:grid-cols-4 gap-4 md:gap-6 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0 md:overflow-visible">
-                {previewPages.map((p, i) => (
-                  <figure key={i} className="shrink-0 w-56 md:w-auto">
-                    <img
-                      src={p.src}
-                      alt={`Voorbeeldpagina ${i + 1} uit Nourish Your Body: ${p.caption}`}
-                      className="w-full h-56 md:h-64 object-cover rounded-xl shadow-[0_12px_32px_-16px_rgba(148,120,88,0.25)]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <figcaption className="mt-2 text-xs text-muted-foreground text-center">{p.caption}</figcaption>
-                  </figure>
-                ))}
-              </div>
-            </section>
-          </FadeIn>
-
-          {/* 4. Wat je krijgt */}
+          {/* 3. Wat je krijgt */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Wat je krijgt</h2>
@@ -186,7 +154,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 5. Over Danique */}
+          {/* 4. Over Danique */}
           <FadeIn>
             <section className={`${PANEL} p-8 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
@@ -212,7 +180,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 6. Reviews */}
+          {/* 5. Reviews */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Wat anderen zeggen</h2>
@@ -229,7 +197,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 7. Binnenkort */}
+          {/* 6. Binnenkort */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Binnenkort in de shop</h2>
@@ -277,7 +245,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 8. FAQ */}
+          {/* 7. FAQ */}
           <FadeIn>
             <section className="mb-20 md:mb-28 max-w-3xl mx-auto">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">Veelgestelde vragen</h2>
@@ -296,7 +264,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 9. Afsluitende CTA */}
+          {/* 8. Afsluitende CTA */}
           <FadeIn>
             <motion.section className="rounded-2xl bg-primary/10 px-6 py-14 md:py-20 text-center">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-3">Klaar om te beginnen?</h2>
