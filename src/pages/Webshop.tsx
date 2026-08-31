@@ -44,11 +44,6 @@ const features = [
   { icon: ListChecks, title: 'Boodschappenlijsten', text: 'Kant-en-klare lijstjes zodat je niets vergeet.' },
 ];
 
-const reviews = [
-  { quote: 'Placeholder-review: de recepten zijn simpel en ik merk echt verschil in mijn energie.', name: 'Naam', age: '32' },
-  { quote: 'Placeholder-review: eindelijk een boek dat rekening houdt met mijn cyclus.', name: 'Naam', age: '28' },
-  { quote: 'Placeholder-review: mijn buik is rustiger en koken kost me minder tijd.', name: 'Naam', age: '41' },
-];
 
 const trajectories = [
   {
@@ -200,22 +195,6 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 5. Reviews */}
-          <FadeIn>
-            <section className="mb-20 md:mb-28">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Wat anderen zeggen</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                {reviews.map((r, i) => (
-                  <figure key={i} className={`${PANEL} p-6 flex flex-col`}>
-                    <blockquote className="text-sm text-muted-foreground leading-relaxed grow">“{r.quote}”</blockquote>
-                    <figcaption className="mt-5 text-sm text-foreground">
-                      {r.name} <span className="text-muted-foreground">· {r.age}</span>
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            </section>
-          </FadeIn>
 
           {/* 6. FAQ */}
           <FadeIn>
