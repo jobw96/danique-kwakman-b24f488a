@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SITE_URL } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
 import Webshop, { CHECKOUT_URL, PRICE_AMOUNT, faqs } from "@/pages/Webshop";
+import nourishCover from "@/assets/nourish-your-body-cover-2.jpeg.asset.json";
+
 
 const TITLE = "Nourish Your Body — e-book met 50+ hormoonproof recepten";
 const DESCRIPTION =
