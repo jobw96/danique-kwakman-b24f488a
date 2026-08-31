@@ -181,8 +181,10 @@ const Webshop = () => {
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
                 <img
                   src={daniquePortret}
-                  alt="Portret van Danique Kwakman, hormoon- en darmtherapeut"
+                  alt="Danique Kwakman, orthomoleculair therapeut en auteur van het e-book Nourish Your Body"
                   className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto"
+                  width={192}
+                  height={192}
                   loading="lazy"
                   decoding="async"
                 />
@@ -195,9 +197,15 @@ const Webshop = () => {
                     je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en
                     leven.
                   </p>
+                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                    Lees meer <Link to="/over-mij" className="text-primary underline underline-offset-4">over mijn werkwijze en achtergrond</Link>,
+                    ontdek <Link to="/blog/darmen-gezond-houden-5-tips" className="text-primary underline underline-offset-4">5 simpele tips om je darmen gezond te houden</Link>{' '}
+                    of start met het <Link to="/e-book" className="text-primary underline underline-offset-4">gratis e-book met hormoonproof recepten</Link>.
+                  </p>
                   <p className="mt-5 text-sm text-foreground font-medium">Danique Kwakman</p>
                   <p className="text-sm text-muted-foreground">Orthomoleculair Therapeut</p>
                 </div>
+
               </div>
             </section>
           </FadeIn>
