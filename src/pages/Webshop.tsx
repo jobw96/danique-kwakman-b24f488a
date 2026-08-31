@@ -33,13 +33,6 @@ const OrderButton = ({ className = '' }: { className?: string }) => (
   </a>
 );
 
-const previewPages = [
-  { src: nourishPage1.url, caption: 'Ontbijt' },
-  { src: nourishPage2.url, caption: 'Lunch & diner' },
-  { src: nourishCover.url, caption: 'Snacks' },
-  { src: nourishPage1.url, caption: 'Mealprep' },
-];
-
 const features = [
   { icon: BookOpen, title: '50+ recepten', text: 'Voedzame recepten voor elk moment van de dag.' },
   { icon: CalendarHeart, title: 'Cyclusgerichte voeding', text: 'Eten dat aansluit bij elke fase van je cyclus.' },
