@@ -104,11 +104,11 @@ const Webshop = () => {
             <FadeIn>
               <SectionTag text="Webshop" />
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                Webshop
+                Nourish Your Body
               </h1>
               <p className="max-w-2xl mx-auto text-muted-foreground leading-relaxed">
-                Praktische e-books en tools voor hormoonbalans, darmgezondheid en meer energie.
-                Direct te downloaden na je bestelling.
+                Het e-book met 50+ hormoonproof recepten voor cyclusgerichte voeding,
+                darmgezondheid en hormoonbalans. Direct te downloaden na je bestelling.
               </p>
             </FadeIn>
           </div>
@@ -119,9 +119,12 @@ const Webshop = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 <img
                   src={nourishCover.url}
-                  alt="Mockup van het e-book Nourish Your Body van Danique Kwakman"
+                  alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
                   className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
+                  width={1080}
+                  height={1101}
                   loading="eager"
+                  fetchPriority="high"
                   decoding="async"
                 />
                 <div>
@@ -129,8 +132,9 @@ const Webshop = () => {
                     E-book
                   </span>
                   <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground mb-4 leading-tight">
-                    Nourish Your Body
+                    Hormoonproof recepten voor je cyclus, darmen en energie
                   </h2>
+
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     Voedzame, cyclusgerichte recepten die je hormonen, darmen en energie ondersteunen.
                     Zonder ingewikkelde ingrediënten of eindeloos in de keuken staan.
