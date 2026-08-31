@@ -236,16 +236,6 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 7. Afsluitende CTA */}
-          <FadeIn>
-            <motion.section className="rounded-2xl bg-primary/10 px-6 py-14 md:py-20 text-center">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-3">Klaar om te beginnen?</h2>
-              <p className="text-muted-foreground mb-7 max-w-xl mx-auto">
-                Begin vandaag nog met voeding die je hormonen, darmen en energie steunt.
-              </p>
-              <OrderButton />
-            </motion.section>
-          </FadeIn>
 
           {/* 8. Andere trajecten */}
           <FadeIn>
