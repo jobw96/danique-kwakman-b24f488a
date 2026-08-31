@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
-import { FadeIn } from '@/components/Animations';
+import { FadeIn, ParallaxImage } from '@/components/Animations';
 import {
   Accordion,
   AccordionContent,
@@ -12,6 +12,9 @@ import {
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ListChecks, ArrowRight } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
 import daniquePortret from '@/assets/danique-portret.webp';
+import daniqueGlowup from '@/assets/danique-glowup.webp';
+import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
 /** Placeholder — vervang door de definitieve prijs. */
@@ -184,13 +187,14 @@ const Webshop = () => {
                 <div>
                   <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-4">Over Danique</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    In mijn praktijk zie ik dagelijks vrouwen die willen eten wat hun lijf steunt, maar niet weten
-                    waar ze moeten beginnen. Daarom bundelde ik mijn favoriete recepten in dit boek: voedzaam,
-                    afgestemd op je cyclus en simpel genoeg voor een doordeweekse avond. Zodat gezond eten weer
-                    licht en vanzelfsprekend voelt.
+                    Ik help vrouwen hun lichaam opnieuw te begrijpen en stap voor stap van{' '}
+                    <strong className="text-foreground font-medium">overleven naar leven</strong> te gaan, met mijn
+                    unieke <strong className="text-foreground font-medium">CIRCLE-methode</strong>. Deze methode helpt
+                    je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en
+                    leven.
                   </p>
                   <p className="mt-5 text-sm text-foreground font-medium">Danique Kwakman</p>
-                  <p className="text-sm text-muted-foreground">hormoon- &amp; darmtherapeut</p>
+                  <p className="text-sm text-muted-foreground">Orthomoleculair Therapeut</p>
                 </div>
               </div>
             </section>
@@ -249,19 +253,41 @@ const Webshop = () => {
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
                 Liever persoonlijke begeleiding?
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                {trajectories.map((t) => (
-                  <Link
-                    key={t.href}
-                    to={t.href}
-                    className={`${PANEL} group block p-6 transition-colors hover:border-primary/30 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/40`}
-                  >
-                    <h3 className="font-serif text-lg text-foreground mb-2 flex items-center gap-2">
-                      {t.title}
-                      <ArrowRight className="w-4 h-4 text-primary transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{t.description}</p>
-                  </Link>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {trajectories.map((t, index) => (
+                  <FadeIn key={t.href} delay={index * 0.2} className="h-full">
+                    <Link to={t.href} className="h-full block">
+                      <motion.div
+                        className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer"
+                        whileHover={{
+                          y: -8,
+                          boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                          borderColor: "hsl(var(--primary) / 0.3)",
+                        }}
+                        transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                      >
+                        <div className="h-64 overflow-hidden relative">
+                          <ParallaxImage
+                            src={t.image}
+                            alt={`${t.title} - traject voor vrouwen met gezondheidsklachten`}
+                            className="w-full h-full"
+                          />
+                        </div>
+                        <div className="p-6 flex flex-col grow">
+                          <h3 className="font-serif text-xl text-card-foreground mb-3">{t.title}</h3>
+                          <p className="text-muted-foreground text-sm mb-6 leading-relaxed grow">{t.description}</p>
+                          <motion.div
+                            className="flex items-center text-primary font-medium mt-auto text-sm"
+                            whileHover={{ x: 8 }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                          >
+                            Bekijk traject<span className="sr-only"> {t.title}</span>{' '}
+                            <ArrowRight className="w-4 h-4 ml-2" />
+                          </motion.div>
+                        </div>
+                      </motion.div>
+                    </Link>
+                  </FadeIn>
                 ))}
               </div>
             </section>
