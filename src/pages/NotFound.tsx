@@ -40,6 +40,8 @@ const suggestRoutes = (pathname: string, allPaths: string[]) => {
 const NotFound = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const router = useRouter();
+  const allPaths = useMemo(() => collectPaths(router.routeTree as any), [router]);
   const [query, setQuery] = useState("");
 
   // Log de 404 (dev: console, prod: dataLayer voor GA4/GTM).
