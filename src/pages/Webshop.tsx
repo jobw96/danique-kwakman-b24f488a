@@ -89,9 +89,6 @@ const faqs = [
 ];
 
 const Webshop = () => {
-  const [email, setEmail] = useState('');
-  const [signedUp, setSignedUp] = useState(false);
-
   return (
     <div className="min-h-screen bg-background">
       <Section className="pt-4 bg-background">
