@@ -62,14 +62,14 @@ const NotFound = () => {
     };
   }, []);
 
-  const suggestions = useMemo(() => suggestRoutes(location.pathname), [location.pathname]);
+  const suggestions = useMemo(() => suggestRoutes(location.pathname, allPaths), [location.pathname, allPaths]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     const q = query.trim().toLowerCase();
     if (!q) return;
     // Probeer een directe match op een bestaande route.
-    const direct = ALL_PATHS.find((p) => p.includes(q));
+    const direct = allPaths.find((p) => p.includes(q));
     if (direct) {
       navigate(direct);
       return;
