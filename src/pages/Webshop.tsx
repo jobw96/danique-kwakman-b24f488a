@@ -16,9 +16,10 @@ import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
-const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
-/** Placeholder — vervang door de definitieve prijs. */
+export const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
+export const PRICE_AMOUNT = '24.95';
 const PRICE = '€24,95';
+
 
 const PANEL = 'rounded-2xl bg-card shadow-[0_12px_32px_-16px_rgba(148,120,88,0.25)]';
 
@@ -31,11 +32,13 @@ const SectionTag = ({ text }: { text: string }) => (
 const OrderButton = ({ className = '' }: { className?: string }) => (
   <a
     href={CHECKOUT_URL}
+    rel="noopener"
     className={`inline-flex items-center justify-center gap-2 rounded-md bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-dark cursor-pointer ${className}`}
   >
     Bestel nu
   </a>
 );
+
 
 const features = [
   { icon: BookOpen, title: '50+ recepten', text: 'Voedzame recepten voor elk moment van de dag.' },
@@ -68,7 +71,7 @@ const trajectories = [
   },
 ];
 
-const faqs = [
+export const faqs = [
   {
     q: 'Hoe ontvang ik het e-book?',
     a: 'Direct na je bestelling ontvang je een mail met je downloadlink. Meestal is dat binnen een paar minuten; check anders even je spammap.',
@@ -101,11 +104,11 @@ const Webshop = () => {
             <FadeIn>
               <SectionTag text="Webshop" />
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                Webshop
+                Nourish Your Body
               </h1>
               <p className="max-w-2xl mx-auto text-muted-foreground leading-relaxed">
-                Praktische e-books en tools voor hormoonbalans, darmgezondheid en meer energie.
-                Direct te downloaden na je bestelling.
+                Het e-book met 50+ hormoonproof recepten voor cyclusgerichte voeding,
+                darmgezondheid en hormoonbalans. Direct te downloaden na je bestelling.
               </p>
             </FadeIn>
           </div>
@@ -116,9 +119,12 @@ const Webshop = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 <img
                   src={nourishCover.url}
-                  alt="Mockup van het e-book Nourish Your Body van Danique Kwakman"
+                  alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
                   className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
+                  width={1080}
+                  height={1101}
                   loading="eager"
+                  fetchPriority="high"
                   decoding="async"
                 />
                 <div>
@@ -126,8 +132,9 @@ const Webshop = () => {
                     E-book
                   </span>
                   <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground mb-4 leading-tight">
-                    Nourish Your Body
+                    Hormoonproof recepten voor je cyclus, darmen en energie
                   </h2>
+
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     Voedzame, cyclusgerichte recepten die je hormonen, darmen en energie ondersteunen.
                     Zonder ingewikkelde ingrediënten of eindeloos in de keuken staan.
@@ -174,8 +181,10 @@ const Webshop = () => {
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
                 <img
                   src={daniquePortret}
-                  alt="Portret van Danique Kwakman, hormoon- en darmtherapeut"
+                  alt="Danique Kwakman, orthomoleculair therapeut en auteur van het e-book Nourish Your Body"
                   className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto"
+                  width={192}
+                  height={192}
                   loading="lazy"
                   decoding="async"
                 />
@@ -188,9 +197,15 @@ const Webshop = () => {
                     je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en
                     leven.
                   </p>
+                  <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                    Lees meer <Link to="/over-mij" className="text-primary underline underline-offset-4">over mijn werkwijze en achtergrond</Link>,
+                    ontdek <Link to="/blog/darmen-gezond-houden-5-tips" className="text-primary underline underline-offset-4">5 simpele tips om je darmen gezond te houden</Link>{' '}
+                    of start met het <Link to="/e-book" className="text-primary underline underline-offset-4">gratis e-book met hormoonproof recepten</Link>.
+                  </p>
                   <p className="mt-5 text-sm text-foreground font-medium">Danique Kwakman</p>
                   <p className="text-sm text-muted-foreground">Orthomoleculair Therapeut</p>
                 </div>
+
               </div>
             </section>
           </FadeIn>
