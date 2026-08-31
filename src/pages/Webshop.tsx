@@ -10,8 +10,6 @@ import {
 } from '@/components/ui/accordion';
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ListChecks } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
-import nourishPage1 from '@/assets/nourish-your-body-cover.jpeg.asset.json';
-import nourishPage2 from '@/assets/nourish-your-body.jpeg.asset.json';
 import daniquePortret from '@/assets/danique-portret.webp';
 
 const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
