@@ -234,8 +234,10 @@ const BLOG_CONTENT: Record<string, {
           Zo creëer je rust, maak je gezonde keuzes makkelijker en bouw je stap voor stap aan meer energie, een betere darmgezondheid en een sterkere hormoonbalans.
         </p>
         <p>
-          Kan je wel wat inspiratie gebruiken? <Link to="/recepten">Klik hier voor meer van mijn recepten.</Link>
+          Kan je wel wat inspiratie gebruiken? <Link to="/recepten">Klik hier voor meer van mijn recepten.</Link> Of bestel{' '}
+          <Link to="/webshop">het e-book met 50+ hormoonproof recepten</Link> voor een compleet weekmenu vol cyclusgerichte ontbijtjes.
         </p>
+
 
         <h2>Wil je ontdekken welke voeding jouw hormonen en darmen écht ondersteunt?</h2>
         <p>
@@ -496,8 +498,10 @@ const BLOG_CONTENT: Record<string, {
           Denk aan havermout of een warme scramble. Een warm ontbijt is makkelijker te verteren voor je spijsvertering en zorgt ervoor dat je lijf minder hard hoeft te werken om je maaltijd te verwerken.
         </p>
         <p>
-          Kan je wel wat inspiratie gebruiken voor darmvriendelijke ontbijtjes? <Link to="/recepten">Check hier mijn recepten.</Link>
+          Kan je wel wat inspiratie gebruiken voor darmvriendelijke ontbijtjes? <Link to="/recepten">Check hier mijn recepten.</Link> In{' '}
+          <Link to="/webshop">het e-book met 50+ hormoonproof recepten</Link> vind je bovendien darmvriendelijke maaltijden voor elk moment van de dag.
         </p>
+
 
         <h2>5. Beweeg elke dag minimaal 20 minuten</h2>
         <p>
