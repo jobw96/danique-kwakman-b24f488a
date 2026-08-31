@@ -71,7 +71,7 @@ const trajectories = [
   },
 ];
 
-const faqs = [
+export const faqs = [
   {
     q: 'Hoe ontvang ik het e-book?',
     a: 'Direct na je bestelling ontvang je een mail met je downloadlink. Meestal is dat binnen een paar minuten; check anders even je spammap.',
