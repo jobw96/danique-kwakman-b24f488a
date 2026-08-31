@@ -51,52 +51,50 @@ const products: Product[] = [
 ];
 
 const ProductCard = ({ product }: { product: Product }) => (
-  <FadeIn className="h-full">
-    <article className="group h-full bg-card rounded-xl overflow-hidden border border-border/50 flex flex-col transition-colors duration-300 hover:border-primary/30">
-      <a
-        href={product.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block h-full flex flex-col"
-      >
-        <div className="relative h-60 overflow-hidden">
-          <img
-            src={product.image}
-            alt={`${product.title} — ${product.description}`}
-            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
-            decoding="async"
-          />
+  <motion.article variants={cardVariants} className="group h-full">
+    <a
+      href={product.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block h-full bg-card rounded-xl overflow-hidden border border-border/50 flex flex-col transition-colors duration-300 hover:border-primary/30"
+    >
+      <div className="relative h-60 overflow-hidden">
+        <img
+          src={product.image}
+          alt={`${product.title} — ${product.description}`}
+          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div className="p-5 flex flex-col grow">
+        <h2 className="font-serif text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+          {product.title}
+        </h2>
+        <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
+          {product.description}
+        </p>
+        <ul className="mt-4 space-y-2">
+          {product.highlights.map((h) => (
+            <li key={h} className="flex items-start gap-2 text-sm text-muted-foreground">
+              <Check className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+              <span>{h}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-6 pt-3 border-t border-border/30 flex items-center justify-between gap-4">
+          {product.price && (
+            <span className="font-serif text-lg text-foreground">{product.price}</span>
+          )}
+          <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
+            <ShoppingBag className="w-4 h-4" />
+            Bestel nu
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+          </span>
         </div>
-        <div className="p-5 flex flex-col grow">
-          <h2 className="font-serif text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-            {product.title}
-          </h2>
-          <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
-            {product.description}
-          </p>
-          <ul className="mt-4 space-y-2">
-            {product.highlights.map((h) => (
-              <li key={h} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Check className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                <span>{h}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-6 pt-3 border-t border-border/30 flex items-center justify-between gap-4">
-            {product.price && (
-              <span className="font-serif text-lg text-foreground">{product.price}</span>
-            )}
-            <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
-              <ShoppingBag className="w-4 h-4" />
-              Bestel nu
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </span>
-          </div>
-        </div>
-      </a>
-    </article>
-  </FadeIn>
+      </div>
+    </a>
+  </motion.article>
 );
 
 const Webshop = () => (
