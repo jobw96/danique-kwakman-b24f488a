@@ -120,16 +120,20 @@ const Webshop = () => {
           <FadeIn>
             <div className={`${PANEL} p-6 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                <img
-                  src={nourishCover.url}
-                  alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
-                  className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
-                  width={1080}
-                  height={1101}
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                />
+                <picture className="block">
+                  <source srcSet={nourishCover.url} type="image/webp" />
+                  <img
+                    src={nourishCoverJpeg.url}
+                    alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
+                    className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
+                    width={1080}
+                    height={1101}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                  />
+                </picture>
+
                 <div>
                   <span className="inline-block rounded-full bg-primary/15 text-primary text-xs font-medium px-3 py-1 mb-4">
                     E-book
