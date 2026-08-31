@@ -11,14 +11,19 @@ import {
 } from '@/components/ui/accordion';
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ListChecks, ArrowRight } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
+import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
+
 import daniquePortret from '@/assets/danique-portret.webp';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 export const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
+/** Enige bron van waarheid voor de prijs: zichtbare prijs én JSON-LD komen hier vandaan. */
 export const PRICE_AMOUNT = '39.99';
-const PRICE = '€39,99';
+export const PRICE_DISPLAY = `€${PRICE_AMOUNT.replace('.', ',')}`;
+const PRICE = PRICE_DISPLAY;
+
 
 
 const PANEL = 'rounded-2xl bg-card shadow-[0_12px_32px_-16px_rgba(148,120,88,0.25)]';
@@ -117,16 +122,20 @@ const Webshop = () => {
           <FadeIn>
             <div className={`${PANEL} p-6 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                <img
-                  src={nourishCover.url}
-                  alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
-                  className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
-                  width={1080}
-                  height={1101}
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                />
+                <picture className="block">
+                  <source srcSet={nourishCover.url} type="image/webp" />
+                  <img
+                    src={nourishCoverJpeg.url}
+                    alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
+                    className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
+                    width={1080}
+                    height={1101}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                  />
+                </picture>
+
                 <div>
                   <span className="inline-block rounded-full bg-primary/15 text-primary text-xs font-medium px-3 py-1 mb-4">
                     E-book

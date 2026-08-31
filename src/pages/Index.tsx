@@ -286,6 +286,13 @@ const Index = () => {
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Ik help je je lichaam opnieuw te leren begrijpen en weer in balans te brengen. Samen bouwen we aan je nieuwe way of life, zodat je lichaam weer met je meewerkt in plaats van tegen je, en je eindelijk de energie, rust en kracht voelt waar je naar verlangt.
             </p>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed mt-4">
+              Liever zelf aan de slag in de keuken? Start met{' '}
+              <Link to="/webshop" className="text-primary underline underline-offset-4">
+                het e-book met 50+ hormoonproof recepten
+              </Link>.
+            </p>
+
           </FadeIn>
         </div>
         <div className="relative">
