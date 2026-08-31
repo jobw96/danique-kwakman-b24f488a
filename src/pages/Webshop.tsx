@@ -16,9 +16,10 @@ import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
-const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
-/** Placeholder — vervang door de definitieve prijs. */
+export const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
+export const PRICE_AMOUNT = '24.95';
 const PRICE = '€24,95';
+
 
 const PANEL = 'rounded-2xl bg-card shadow-[0_12px_32px_-16px_rgba(148,120,88,0.25)]';
 
