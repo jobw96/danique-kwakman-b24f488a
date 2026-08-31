@@ -37,7 +37,8 @@ const SectionTag = ({ text }: { text: string }) => (
 const OrderButton = ({ className = '' }: { className?: string }) => (
   <a
     href={CHECKOUT_URL}
-    rel="noopener"
+    target="_blank"
+    rel="noopener noreferrer"
     className={`inline-flex items-center justify-center gap-2 rounded-md bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-dark cursor-pointer ${className}`}
   >
     Bestel nu
