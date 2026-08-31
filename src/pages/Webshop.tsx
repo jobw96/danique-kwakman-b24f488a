@@ -227,7 +227,7 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 8. Afsluitende CTA */}
+          {/* 7. Afsluitende CTA */}
           <FadeIn>
             <motion.section className="rounded-2xl bg-primary/10 px-6 py-14 md:py-20 text-center">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-3">Klaar om te beginnen?</h2>
@@ -236,6 +236,30 @@ const Webshop = () => {
               </p>
               <OrderButton />
             </motion.section>
+          </FadeIn>
+
+          {/* 8. Andere trajecten */}
+          <FadeIn>
+            <section className="mt-20 md:mt-28">
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
+                Liever persoonlijke begeleiding?
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                {trajectories.map((t) => (
+                  <Link
+                    key={t.href}
+                    to={t.href}
+                    className={`${PANEL} group block p-6 transition-colors hover:border-primary/30 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/40`}
+                  >
+                    <h3 className="font-serif text-lg text-foreground mb-2 flex items-center gap-2">
+                      {t.title}
+                      <ArrowRight className="w-4 h-4 text-primary transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{t.description}</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
           </FadeIn>
         </div>
       </Section>
