@@ -11,6 +11,9 @@ const DESCRIPTION =
 
 const URL = `${SITE_URL}/webshop`;
 const OG_IMAGE = `${SITE_URL}/og-nourish-your-body-ebook.jpg`;
+const PRODUCT_IMAGE_1X1 = `${SITE_URL}/nourish-mockup-1x1.webp`;
+const PRODUCT_IMAGE_4X3 = `${SITE_URL}/nourish-mockup-4x3.webp`;
+const PRODUCT_IMAGE_16X9 = `${SITE_URL}/nourish-mockup-16x9.webp`;
 
 export const Route = createFileRoute("/_layout/webshop")({
   head: () => ({
