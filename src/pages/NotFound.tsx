@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "@/lib/router-compat";
+import { useRouter } from "@tanstack/react-router";
 import { Helmet } from "@/lib/helmet";
 import { Search } from "lucide-react";
 import SEO from "@/components/SEO";
-import { routeTree } from "@/routeTree.gen";
 import { track404 } from "@/lib/errorTracking";
 
 /** Populaire bestemmingen — getoond als suggesties op de 404-pagina. */
