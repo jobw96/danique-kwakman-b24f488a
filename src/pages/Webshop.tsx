@@ -1,7 +1,8 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { ShoppingBag, Check } from 'lucide-react';
+import { ShoppingBag, Check, ArrowRight } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
 
 const SectionTag = ({ text }: { text: string }) => (
@@ -9,6 +10,23 @@ const SectionTag = ({ text }: { text: string }) => (
     {text}
   </div>
 );
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as const }
+  }
+};
 
 interface Product {
   id: string;
@@ -34,20 +52,29 @@ const products: Product[] = [
 ];
 
 const ProductCard = ({ product }: { product: Product }) => (
-  <FadeIn className="h-full">
-    <article className="bg-white rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-primary/30">
-      <div className="bg-secondary/10 flex items-center justify-center p-6">
+  <motion.article variants={cardVariants} className="group h-full">
+    <a
+      href={product.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block h-full bg-card rounded-xl overflow-hidden border border-border/50 flex flex-col transition-colors duration-300 hover:border-primary/30"
+    >
+      <div className="relative h-60 overflow-hidden">
         <img
           src={product.image}
           alt={`${product.title} — ${product.description}`}
-          className="w-full max-w-[260px] h-auto rounded-xl"
+          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
           decoding="async"
         />
       </div>
-      <div className="p-6 flex flex-col grow">
-        <h2 className="font-serif text-xl md:text-2xl text-foreground mb-3">{product.title}</h2>
-        <p className="text-muted-foreground text-sm leading-relaxed">{product.description}</p>
+      <div className="p-5 flex flex-col grow">
+        <h2 className="font-serif text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+          {product.title}
+        </h2>
+        <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
+          {product.description}
+        </p>
         <ul className="mt-4 space-y-2">
           {product.highlights.map((h) => (
             <li key={h} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -56,21 +83,19 @@ const ProductCard = ({ product }: { product: Product }) => (
             </li>
           ))}
         </ul>
-        <div className="mt-6 pt-4 border-t border-secondary/30 flex items-center justify-between gap-4 mt-auto">
-          {product.price && <span className="font-serif text-lg text-foreground">{product.price}</span>}
-          <a
-            href={product.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-5 py-3 text-sm font-medium cursor-pointer transition-colors hover:bg-primary/90 w-full sm:w-auto"
-          >
+        <div className="mt-6 pt-3 border-t border-border/30 flex items-center justify-between gap-4">
+          {product.price && (
+            <span className="font-serif text-lg text-foreground">{product.price}</span>
+          )}
+          <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
             <ShoppingBag className="w-4 h-4" />
             Bestel nu
-          </a>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+          </span>
         </div>
       </div>
-    </article>
-  </FadeIn>
+    </a>
+  </motion.article>
 );
 
 const Webshop = () => (
@@ -90,11 +115,16 @@ const Webshop = () => (
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </Section>
   </div>
