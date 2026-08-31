@@ -47,9 +47,22 @@ const reviews = [
   { quote: 'Placeholder-review: mijn buik is rustiger en koken kost me minder tijd.', name: 'Naam', age: '41' },
 ];
 
-const upcoming = [
-  { title: 'Hormoonproof Mealplan', text: 'Een compleet weekmenu voor meer balans en energie.' },
-  { title: 'Darmherstel Gids', text: 'Stap voor stap werken aan een rustige, blije buik.' },
+const trajectories = [
+  {
+    href: '/hormoontraject',
+    title: '1:1 Hormoontraject',
+    description: 'In 3 maanden terug naar hormonale balans, rust en vertrouwen in je lijf.',
+  },
+  {
+    href: '/darmtraject',
+    title: '1:1 Darmtraject',
+    description: 'Een diepgaand traject inclusief labonderzoek om de kern van je darmklachten te vinden.',
+  },
+  {
+    href: '/bloedsuikertraject',
+    title: '1:1 Bloedsuikertraject',
+    description: 'In 2 weken naar stabiele energie en minder cravings met een glucosesensor.',
+  },
 ];
 
 const faqs = [
