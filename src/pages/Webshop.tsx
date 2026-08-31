@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { ShoppingBag, Check } from 'lucide-react';
+import { ShoppingBag, Check, ArrowRight } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
 
 const SectionTag = ({ text }: { text: string }) => (
