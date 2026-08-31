@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/Section';
+import { FadeIn } from '@/components/Animations';
 import { ShoppingBag, Check, ArrowRight } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.jpeg.asset.json';
 
