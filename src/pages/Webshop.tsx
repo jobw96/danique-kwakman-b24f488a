@@ -35,40 +35,49 @@ const products: Product[] = [
 
 const ProductCard = ({ product }: { product: Product }) => (
   <FadeIn className="h-full">
-    <article className="bg-white rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-primary/30">
-      <div className="bg-secondary/10 flex items-center justify-center p-6">
-        <img
-          src={product.image}
-          alt={`${product.title} — ${product.description}`}
-          className="w-full max-w-[260px] h-auto rounded-xl"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <div className="p-6 flex flex-col grow">
-        <h2 className="font-serif text-xl md:text-2xl text-foreground mb-3">{product.title}</h2>
-        <p className="text-muted-foreground text-sm leading-relaxed">{product.description}</p>
-        <ul className="mt-4 space-y-2">
-          {product.highlights.map((h) => (
-            <li key={h} className="flex items-start gap-2 text-sm text-muted-foreground">
-              <Check className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-              <span>{h}</span>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-6 pt-4 border-t border-secondary/30 flex items-center justify-between gap-4 mt-auto">
-          {product.price && <span className="font-serif text-lg text-foreground">{product.price}</span>}
-          <a
-            href={product.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-5 py-3 text-sm font-medium cursor-pointer transition-colors hover:bg-primary/90 w-full sm:w-auto"
-          >
-            <ShoppingBag className="w-4 h-4" />
-            Bestel nu
-          </a>
+    <article className="group h-full bg-card rounded-xl overflow-hidden border border-border/50 flex flex-col transition-colors duration-300 hover:border-primary/30">
+      <a
+        href={product.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block h-full flex flex-col"
+      >
+        <div className="relative h-60 overflow-hidden">
+          <img
+            src={product.image}
+            alt={`${product.title} — ${product.description}`}
+            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-      </div>
+        <div className="p-5 flex flex-col grow">
+          <h2 className="font-serif text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+            {product.title}
+          </h2>
+          <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
+            {product.description}
+          </p>
+          <ul className="mt-4 space-y-2">
+            {product.highlights.map((h) => (
+              <li key={h} className="flex items-start gap-2 text-sm text-muted-foreground">
+                <Check className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                <span>{h}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-6 pt-3 border-t border-border/30 flex items-center justify-between gap-4">
+            {product.price && (
+              <span className="font-serif text-lg text-foreground">{product.price}</span>
+            )}
+            <span className="inline-flex items-center gap-2 text-primary font-medium text-sm">
+              <ShoppingBag className="w-4 h-4" />
+              Bestel nu
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </span>
+          </div>
+        </div>
+      </a>
     </article>
   </FadeIn>
 );
