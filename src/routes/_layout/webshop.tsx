@@ -49,9 +49,10 @@ export const Route = createFileRoute("/_layout/webshop")({
           "@context": "https://schema.org",
           "@type": "Product",
           name: "Nourish Your Body",
+          url: URL,
           description:
             "E-book met 50+ hormoonproof recepten voor cyclusgerichte voeding, darmgezondheid en hormoonbalans.",
-          image: OG_IMAGE,
+          image: [PRODUCT_IMAGE_1X1, PRODUCT_IMAGE_4X3, PRODUCT_IMAGE_16X9],
           category: "E-book",
           inLanguage: "nl-NL",
           brand: { "@type": "Brand", name: "Danique Kwakman" },
@@ -61,7 +62,7 @@ export const Route = createFileRoute("/_layout/webshop")({
             price: PRICE_AMOUNT,
             priceCurrency: "EUR",
             availability: "https://schema.org/InStock",
-            url: CHECKOUT_URL,
+            url: URL,
             priceValidUntil: "2027-12-31",
 
           },
