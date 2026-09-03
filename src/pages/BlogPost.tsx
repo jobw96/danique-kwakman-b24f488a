@@ -364,7 +364,7 @@ const BLOG_CONTENT: Record<string, {
         </p>
 
         <figure className="my-8">
-          <img
+          <img width={1748} height={899}
             src={bristolStoolChart}
             alt="Bristol Stool Chart met de zeven ontlastingstypes"
             className="w-full rounded-xl border border-border/40"

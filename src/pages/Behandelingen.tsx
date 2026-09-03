@@ -90,7 +90,7 @@ const Behandelingen = () => {
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h3>
+                    <h2 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h2>
                     <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
                     <motion.div 
                       className="flex items-center text-primary font-medium mt-auto text-sm" 

@@ -67,13 +67,16 @@ const FAQ = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               >
+                {/* De vraag staat in een h2 zodat Google en screenreaders de
+                    koppenstructuur zien; visueel verandert er niets. */}
                 <motion.button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full py-6 flex justify-between items-center text-left focus:outline-hidden group"
                   whileHover={{ x: 4 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                  aria-expanded={openFaq === idx}
                 >
-                  <motion.span
+                  <motion.h2
                     className="text-lg font-medium pr-4"
                     animate={{
                       color: openFaq === idx ? 'hsl(var(--primary))' : 'hsl(var(--foreground))'
@@ -81,7 +84,7 @@ const FAQ = () => {
                     transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                   >
                     {item.question}
-                  </motion.span>
+                  </motion.h2>
                   <motion.div
                     animate={{
                       rotate: openFaq === idx ? 45 : 0,

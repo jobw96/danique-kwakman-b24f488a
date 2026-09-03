@@ -6,7 +6,7 @@ import Bloedsuikertraject from "@/pages/Bloedsuikertraject";
 export const Route = createFileRoute("/_layout/bloedsuikertraject")({
   head: () => seoHead({
     path: "/bloedsuikertraject",
-    title: "1:1 Bloedsuikertraject | Glucosesensor & begeleiding",
+    title: "1:1 Bloedsuikertraject met glucosesensor",
     description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam. 1:1 Bloedsuikertraject met glucosesensor door Danique Kwakman.",
     schemas: [
       serviceSchema({

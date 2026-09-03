@@ -186,7 +186,7 @@ const Linktree: React.FC = () => {
           {/* Avatar */}
           <div className="flex justify-center">
             <div className="w-24 h-24 rounded-full overflow-hidden ring-4 ring-background/40">
-              <img
+              <img width={400} height={400}
                 src={daniquePortret}
                 alt="Danique Kwakman"
                 className="w-full h-full object-cover"

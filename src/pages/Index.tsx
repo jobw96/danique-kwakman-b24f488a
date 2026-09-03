@@ -190,8 +190,13 @@ const Index = () => {
     <article className="min-h-screen">
     <section className="relative h-screen flex items-center overflow-hidden bg-foreground" aria-label="Hero">
       <div className="absolute inset-0 z-0">
-        <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="md:hidden w-full h-full object-cover object-center" loading="eager" fetchPriority="high" decoding="async" />
-        <img src={heroImage} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="hidden md:block w-full h-full object-cover object-right" loading="eager" fetchPriority="high" decoding="async" />
+        {/* Eén <picture> in plaats van twee <img>-tags met CSS-toggle: zo
+            downloadt de browser alleen het beeld dat hij echt toont, in
+            plaats van beide met hoge prioriteit. */}
+        <picture>
+          <source media="(min-width: 768px)" srcSet={heroImage} />
+          <img src={heroImageMobile} alt="Danique Kwakman orthomoleculair therapeut - hormoonbalans en darmgezondheid specialist" className="w-full h-full object-cover object-center md:object-right" loading="eager" fetchPriority="high" decoding="async" />
+        </picture>
       </div>
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-3xl text-center md:text-left">

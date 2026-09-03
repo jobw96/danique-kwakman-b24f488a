@@ -48,6 +48,8 @@ export const FAQSection: React.FC = () => {
             whileHover={{ scale: 1.01 }}
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
           >
+            {/* De vraag staat in een h3 zodat Google en screenreaders de
+                koppenstructuur zien; visueel verandert er niets. */}
             <motion.button
               onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
               className="w-full py-6 flex justify-between items-center text-left focus:outline-hidden group"
@@ -55,7 +57,7 @@ export const FAQSection: React.FC = () => {
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
               aria-expanded={openFaq === idx}
             >
-              <motion.span
+              <motion.h3
                 className="text-lg font-medium pr-4"
                 animate={{
                   color: openFaq === idx ? 'hsl(var(--primary))' : 'hsl(var(--foreground))',
@@ -63,7 +65,7 @@ export const FAQSection: React.FC = () => {
                 transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
               >
                 {item.question}
-              </motion.span>
+              </motion.h3>
               <motion.div
                 animate={{
                   rotate: openFaq === idx ? 45 : 0,

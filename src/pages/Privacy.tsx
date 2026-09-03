@@ -153,9 +153,9 @@ const Privacy = () => {
 
           {/* Disclaimer Section */}
           <div className="mt-20 pt-12 border-t border-border">
-            <h1 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">
+            <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">
               Disclaimer
-            </h1>
+            </h2>
             
             <div className="prose prose-lg max-w-none space-y-8 text-muted-foreground">
               <section>

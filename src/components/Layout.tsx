@@ -667,7 +667,7 @@ export const Layout: React.FC<LayoutProps> = ({
           {/* CAT & GAT info */}
           <div className="max-w-lg mb-6">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <img src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" loading="lazy" decoding="async" />
+              <img width={237} height={235} src={logoCat} alt="CAT - Collectief Alternatieve Therapeuten" className="h-12 w-auto" loading="lazy" decoding="async" />
               <img alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" src="/gat-logo.png" loading="lazy" decoding="async" />
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed mb-2">
