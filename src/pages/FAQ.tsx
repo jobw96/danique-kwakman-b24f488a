@@ -4,14 +4,13 @@ import { Plus, Instagram } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn, StaggerContainer } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
-import SEO from '@/components/SEO';
 
 interface FaqItem {
   question: string;
   answer: string;
 }
 
-const FAQ_ITEMS: FaqItem[] = [
+export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Worden de trajecten vergoed?',
     answer: 'Nee, ondanks dat ik de juiste opleidingen heb gevolgd werk ik niet meer samen met zorgverzekeraars. Ik hoop dat mijn klanten de trajecten zien als een duurzame investering in zichzelf. Deze investering verdien je terug door de energie die je ervaart, hormonale balans, een blije buik en mentaal welzijn door een gezond lijf. Je gezondheid is elke cent waard.'
@@ -43,22 +42,10 @@ const SectionTag = ({ text }: { text: string }) => (
 const FAQ = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: FAQ_ITEMS.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  };
-
   return (
     <div className="min-h-screen pb-20">
-      <SEO canonicalUrl="/faq" jsonLd={faqSchema} />
+      {/* Het FAQPage-schema staat in src/routes/_layout/faq.tsx, zodat het in
+          de server-response staat in plaats van pas na hydratie. */}
       <Section className="pt-4">
         <div className="text-center mb-16">
           <FadeIn>

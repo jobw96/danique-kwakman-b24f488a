@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useParams, Navigate } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { SEO } from '@/components/SEO';
 import { ArrowLeft, Lightbulb, ChefHat } from 'lucide-react';
 import { getRecipeBySlug, recipes } from '@/data/recipes';
 
@@ -16,20 +15,9 @@ const ReceptDetail = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO
-        title={recipe.title}
-        description={recipe.intro.slice(0, 155)}
-        canonicalUrl={`/recepten/${recipe.slug}`}
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Recipe',
-          name: recipe.title,
-          description: recipe.intro,
-          recipeIngredient: recipe.ingredients,
-          recipeInstructions: recipe.steps.map((s) => ({ '@type': 'HowToStep', text: s })),
-          author: { '@type': 'Person', name: 'Danique Kwakman' },
-        }}
-      />
+      {/* Titel, description, canonical en het Recipe-schema staan in
+          src/routes/_layout/recepten/$slug.tsx, zodat ze in de
+          server-response staan in plaats van pas na hydratie. */}
 
       <Section className="pt-4 bg-background">
         <div className="max-w-3xl mx-auto">

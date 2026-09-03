@@ -4,12 +4,11 @@ import { motion } from 'framer-motion';
 import { Calendar, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import SEO from '@/components/SEO';
 import { BLOG_POSTS } from './Blog';
 import bristolStoolChart from '@/assets/bristol-stool-chart.webp';
 
 // ISO publish dates per slug (for Article schema)
-const POST_DATES: Record<string, string> = {
+export const POST_DATES: Record<string, string> = {
   'darmen-gezond-houden-5-tips': '2026-06-29',
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
@@ -551,46 +550,10 @@ const BlogPost: React.FC = () => {
   // Get related posts (excluding current)
   const relatedPosts = BLOG_POSTS.filter(p => p.slug !== slug).slice(0, 2);
 
-  const publishedISO = slug ? POST_DATES[slug] : undefined;
-  const canonical = `/blog/${slug}`;
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.excerpt,
-    image: `https://daniquekwakman.nl${post.image}`,
-    datePublished: publishedISO,
-    dateModified: publishedISO,
-    author: {
-      '@type': 'Person',
-      name: 'Danique Kwakman',
-      url: 'https://daniquekwakman.nl/over-mij',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Danique Kwakman',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://daniquekwakman.nl/og-image.webp',
-      },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://daniquekwakman.nl${canonical}`,
-    },
-    articleSection: post.category,
-  };
-
   return <div className="min-h-screen">
-      <SEO
-        title={post.title}
-        description={post.excerpt}
-        canonicalUrl={canonical}
-        ogType="article"
-        publishedTime={publishedISO}
-        modifiedTime={publishedISO}
-        jsonLd={articleSchema}
-      />
+      {/* Metadata en het Article-schema staan in
+          src/routes/_layout/blog/$slug.tsx, zodat ze in de server-response
+          staan in plaats van pas na hydratie. */}
       {/* Content */}
       <Section className="pt-8 pb-8">
         <div className="max-w-4xl mx-auto">

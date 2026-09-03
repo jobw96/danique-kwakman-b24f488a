@@ -3,8 +3,7 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
-import SEO from '@/components/SEO';
-import { FAQSection, FAQ_ITEMS } from '@/components/FAQSection';
+import { FAQSection } from '@/components/FAQSection';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 
 const SectionTag = ({
@@ -27,22 +26,10 @@ const Contact = () => {
       document.body.removeChild(script);
     };
   }, []);
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: FAQ_ITEMS.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: { '@type': 'Answer', text: item.answer },
-    })),
-  };
   return <div className="min-h-screen">
-      <SEO
-        title="Contact | Orthomoleculair Therapeut"
-        description="Neem contact op met Danique Kwakman, orthomoleculair therapeut, voor vragen over trajecten, kennismaking of samenwerking."
-        canonicalUrl="/contact"
-        jsonLd={faqSchema}
-      />
+      {/* Metadata en het ContactPage-schema staan in
+          src/routes/_layout/contact.tsx, zodat ze in de server-response
+          staan in plaats van pas na hydratie. */}
       {/* Main Content Section */}
       <Section className="pt-4">
         <div className="max-w-6xl mx-auto">
