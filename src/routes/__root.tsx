@@ -28,9 +28,9 @@ const SITE_DESCRIPTION =
   "Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding via de CIRCLE-methode voor duurzame gezondheid.";
 
 // ported from index.html — JSON-LD structured data, visible to Google before JS runs
-const JSONLD_BUSINESS = `{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://daniquekwakman.nl/#business","name":"Danique Kwakman - Orthomoleculair Therapeut","description":"Orthomoleculaire therapie voor hormoonbalans, darmgezondheid en energie. Persoonlijke begeleiding voor vrouwen via de CIRCLE-methode.","url":"https://daniquekwakman.nl","image":"https://daniquekwakman.nl/og-image.jpg","priceRange":"€€","address":{"@type":"PostalAddress","addressCountry":"NL"},"areaServed":"NL","founder":{"@type":"Person","name":"Danique Kwakman","jobTitle":"Orthomoleculair Therapeut"}}`;
+const JSONLD_BUSINESS = `{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://daniquekwakman.nl/#business","name":"Danique Kwakman - Orthomoleculair Therapeut","description":"Orthomoleculaire therapie voor hormoonbalans, darmgezondheid en energie. Persoonlijke begeleiding voor vrouwen via de CIRCLE-methode.","url":"https://daniquekwakman.nl","image":"https://daniquekwakman.nl/og-image.webp","priceRange":"€€","address":{"@type":"PostalAddress","addressCountry":"NL"},"areaServed":"NL","founder":{"@type":"Person","name":"Danique Kwakman","jobTitle":"Orthomoleculair Therapeut"}}`;
 const JSONLD_WEBSITE = `{"@context":"https://schema.org","@type":"WebSite","url":"https://daniquekwakman.nl","name":"Danique Kwakman","inLanguage":"nl-NL"}`;
-const JSONLD_PERSON = `{"@context":"https://schema.org","@type":"Person","@id":"https://daniquekwakman.nl/#person","name":"Danique Kwakman","jobTitle":"Orthomoleculair Therapeut","description":"Orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen.","url":"https://daniquekwakman.nl/over-mij","image":"https://daniquekwakman.nl/og-image.jpg","sameAs":["https://www.instagram.com/daniquekwakman/"],"knowsAbout":["Orthomoleculaire therapie","Hormoonbalans","Darmgezondheid","Voeding","Vrouwengezondheid"],"worksFor":{"@id":"https://daniquekwakman.nl/#business"}}`;
+const JSONLD_PERSON = `{"@context":"https://schema.org","@type":"Person","@id":"https://daniquekwakman.nl/#person","name":"Danique Kwakman","jobTitle":"Orthomoleculair Therapeut","description":"Orthomoleculair therapeut gespecialiseerd in hormoonbalans, darmgezondheid en energie voor vrouwen.","url":"https://daniquekwakman.nl/over-mij","image":"https://daniquekwakman.nl/og-image.webp","sameAs":["https://www.instagram.com/daniquekwakman/"],"knowsAbout":["Orthomoleculaire therapie","Hormoonbalans","Darmgezondheid","Voeding","Vrouwengezondheid"],"worksFor":{"@id":"https://daniquekwakman.nl/#business"}}`;
 
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -52,11 +52,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: SITE_DESCRIPTION },
       
       { property: "og:locale", content: "nl_NL" },
-      { property: "og:image", content: "https://daniquekwakman.nl/og-image.jpg" },
+      { property: "og:image", content: "https://daniquekwakman.nl/og-image.webp" },
+      { property: "og:image:type", content: "image/webp" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Danique Kwakman, orthomoleculair therapeut" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: SITE_TITLE },
       { name: "twitter:description", content: SITE_DESCRIPTION },
-      { name: "twitter:image", content: "https://daniquekwakman.nl/og-image.jpg" },
+      { name: "twitter:image", content: "https://daniquekwakman.nl/og-image.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

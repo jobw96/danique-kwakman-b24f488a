@@ -13,7 +13,7 @@ interface SEOProps {
 }
 
 const BASE_URL = 'https://daniquekwakman.nl';
-const DEFAULT_IMAGE = 'https://daniquekwakman.nl/og-image.jpg';
+const DEFAULT_IMAGE = 'https://daniquekwakman.nl/og-image.webp';
 const SITE_NAME = 'Danique Kwakman';
 
 export const SEO = ({

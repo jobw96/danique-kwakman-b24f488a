@@ -571,7 +571,7 @@ const BlogPost: React.FC = () => {
       name: 'Danique Kwakman',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://daniquekwakman.nl/og-image.jpg',
+        url: 'https://daniquekwakman.nl/og-image.webp',
       },
     },
     mainEntityOfPage: {

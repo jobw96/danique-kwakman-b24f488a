@@ -9,7 +9,7 @@ const SITE_NAME = "Danique Kwakman";
 const DEFAULT_TITLE = "Danique Kwakman | Orthomoleculair Therapeut & Hormoonbalans";
 const DEFAULT_DESCRIPTION =
   "Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding via de CIRCLE-methode voor duurzame gezondheid.";
-const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.webp`;
 
 export interface SeoOptions {
   /** Pagina-titel zonder merknaam; merk wordt automatisch toegevoegd. */
@@ -57,6 +57,10 @@ export function seoHead({
       { property: "og:description", content: description },
       { property: "og:url", content: canonical },
       { property: "og:image", content: image },
+      { property: "og:image:type", content: "image/webp" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Danique Kwakman, orthomoleculair therapeut" },
       { property: "og:locale", content: "nl_NL" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: fullTitle },

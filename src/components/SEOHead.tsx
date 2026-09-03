@@ -7,7 +7,7 @@ import { useLocation } from '@/lib/router-compat';
  */
 export const SITE_NAME = 'Danique Kwakman';
 export const SITE_URL = 'https://daniquekwakman.nl';
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.webp`;
 export const DEFAULT_DESCRIPTION =
   'Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding voor duurzame gezondheid.';
 export const TWITTER_HANDLE = '@daniquekwakman';
@@ -260,7 +260,7 @@ export const organizationSchema = (overrides: Record<string, unknown> = {}) => (
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
-  logo: `${SITE_URL}/og-image.jpg`,
+  logo: `${SITE_URL}/og-image.webp`,
   ...overrides,
 });
 
