@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import { FadeIn, StaggerContainer } from '@/components/Animations';
 
@@ -43,21 +43,21 @@ export const FAQSection: React.FC = () => {
     <StaggerContainer className="max-w-3xl mx-auto">
       {FAQ_ITEMS.map((item, idx) => (
         <FadeIn key={idx} delay={idx * 0.05}>
-          <motion.div
+          <m.div
             className="border-b border-secondary/30 mb-4 last:mb-0"
             whileHover={{ scale: 1.01 }}
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
           >
             {/* De vraag staat in een h3 zodat Google en screenreaders de
                 koppenstructuur zien; visueel verandert er niets. */}
-            <motion.button
+            <m.button
               onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
               className="w-full py-6 flex justify-between items-center text-left focus:outline-hidden group"
               whileHover={{ x: 4 }}
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
               aria-expanded={openFaq === idx}
             >
-              <motion.h3
+              <m.h3
                 className="text-lg font-medium pr-4"
                 animate={{
                   color: openFaq === idx ? 'hsl(var(--primary))' : 'hsl(var(--foreground))',
@@ -65,8 +65,8 @@ export const FAQSection: React.FC = () => {
                 transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
               >
                 {item.question}
-              </motion.h3>
-              <motion.div
+              </m.h3>
+              <m.div
                 animate={{
                   rotate: openFaq === idx ? 45 : 0,
                   scale: openFaq === idx ? 1.1 : 1,
@@ -79,9 +79,9 @@ export const FAQSection: React.FC = () => {
                 className="shrink-0"
               >
                 <Plus className="w-5 h-5" />
-              </motion.div>
-            </motion.button>
-            <motion.div
+              </m.div>
+            </m.button>
+            <m.div
               initial={false}
               animate={{
                 height: openFaq === idx ? 'auto' : 0,
@@ -93,8 +93,8 @@ export const FAQSection: React.FC = () => {
               <div className="pb-6">
                 <p className="text-muted-foreground leading-relaxed">{item.answer}</p>
               </div>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         </FadeIn>
       ))}
     </StaggerContainer>

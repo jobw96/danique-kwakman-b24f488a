@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowDown, Sparkles, Coffee, Zap } from 'lucide-react';
@@ -48,7 +48,7 @@ const Ebook = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Een gezond ontbijt is de beste start van je dag. Het geeft je de brandstof om je hormonen aan ta maken, scherp en energiek te zijn, je beter te voelen en vol focus de dag door te gaan.
                 </p>
-                <motion.button onClick={() => {
+                <m.button onClick={() => {
                 document.getElementById('download-form')?.scrollIntoView({
                   behavior: 'smooth'
                 });
@@ -59,7 +59,7 @@ const Ebook = () => {
               }} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium hover:bg-primary/90 transition-colors">
                   Ontvang gratis e-book
                   <ArrowDown className="w-5 h-5" />
-                </motion.button>
+                </m.button>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
@@ -84,7 +84,7 @@ const Ebook = () => {
             title: "Hormonale Balans",
             desc: "Ontdek hoe kleine aanpassingen een groot verschil maken voor je hormonen."
           }].map((item, i) => <FadeIn key={i} delay={i * 0.1}>
-                <motion.div className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full" whileHover={{
+                <m.div className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full" whileHover={{
               y: -8,
               boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
             }} transition={{
@@ -97,7 +97,7 @@ const Ebook = () => {
                   </div>
                   <h3 className="font-serif text-xl text-foreground mb-3">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
-                </motion.div>
+                </m.div>
               </FadeIn>)}
           </div>
 
@@ -118,7 +118,7 @@ const Ebook = () => {
                     <div>
                       <p className="font-medium text-foreground mb-4">Dit e-book is voor jou als je:</p>
                       <div className="space-y-3">
-                        {["Op zoek bent naar makkelijke, voedzame en heerlijke ontbijtjes", "Recepten wilt die je energie geven en je een goede start van de dag bezorgen", "Wil ontdekken hoe kleine aanpassingen in je ontbijt een groot verschil kunnen maken"].map((item, i) => <motion.div key={i} className="flex items-start gap-3" initial={{
+                        {["Op zoek bent naar makkelijke, voedzame en heerlijke ontbijtjes", "Recepten wilt die je energie geven en je een goede start van de dag bezorgen", "Wil ontdekken hoe kleine aanpassingen in je ontbijt een groot verschil kunnen maken"].map((item, i) => <m.div key={i} className="flex items-start gap-3" initial={{
                         opacity: 0,
                         x: -20
                       }} whileInView={{
@@ -133,7 +133,7 @@ const Ebook = () => {
                               <Sparkles size={14} />
                             </div>
                             <span>{item}</span>
-                          </motion.div>)}
+                          </m.div>)}
                       </div>
                     </div>
                   </div>
@@ -141,7 +141,7 @@ const Ebook = () => {
 
                 {/* Right: Form */}
                 <div id="download-form">
-                  <motion.div className="p-4 sm:p-8 rounded-2xl sticky top-24" initial={{
+                  <m.div className="p-4 sm:p-8 rounded-2xl sticky top-24" initial={{
                   opacity: 0,
                   y: 20
                 }} whileInView={{
@@ -159,7 +159,7 @@ const Ebook = () => {
                     <div id="ac-form-container">
                       <div className="_form_1"></div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ const Ebook = () => {
           {/* E-book Preview Images */}
           <FadeIn delay={0.3}>
             <div className="flex flex-col md:flex-row gap-8 items-center justify-center max-w-4xl mx-auto">
-              <motion.div className="relative" whileHover={{
+              <m.div className="relative" whileHover={{
               scale: 1.05,
               rotate: -2
             }} transition={{
@@ -179,8 +179,8 @@ const Ebook = () => {
                 <div className="rounded-2xl overflow-hidden max-w-[280px]">
                   
                 </div>
-              </motion.div>
-              <motion.div className="relative" whileHover={{
+              </m.div>
+              <m.div className="relative" whileHover={{
               scale: 1.05,
               rotate: 2
             }} transition={{
@@ -191,7 +191,7 @@ const Ebook = () => {
                 <div className="rounded-2xl overflow-hidden max-w-[320px]">
                   
                 </div>
-              </motion.div>
+              </m.div>
             </div>
           </FadeIn>
         </div>

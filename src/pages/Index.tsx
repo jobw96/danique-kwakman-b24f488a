@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from '@/lib/router-compat';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
 import { Plus, Minus, Star, ArrowRight, Quote } from 'lucide-react';
@@ -130,22 +130,24 @@ const ServiceAccordion = () => {
   const [activeId, setActiveId] = useState<string>(SERVICES[0].id);
   const activeService = SERVICES.find(s => s.id === activeId) || SERVICES[0];
   return <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-    <motion.div className="h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-md" layout transition={{
+    {/* Vaste hoogte en vaste plek in de grid, dus `layout` had hier niets te
+        animeren; weggelaten zodat LazyMotion met domAnimation toekan. */}
+    <m.div className="h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-md" transition={{
       duration: 0.5,
       ease: "easeInOut"
     }}>
       <ParallaxImage key={activeService.id} src={activeService.image} alt={`${activeService.title} - orthomoleculaire therapie bij Danique Kwakman`} className="w-full h-full object-cover" />
-    </motion.div>
+    </m.div>
     <div className="flex flex-col justify-center">
       {SERVICES.map(service => <div key={service.id} className="border-b border-secondary/30 last:border-none">
-        <motion.button onClick={() => setActiveId(service.id)} className="w-full py-6 flex justify-between items-center text-left group focus:outline-hidden" whileHover={{
+        <m.button onClick={() => setActiveId(service.id)} className="w-full py-6 flex justify-between items-center text-left group focus:outline-hidden" whileHover={{
           x: 4
         }} transition={{
           type: "spring",
           stiffness: 300,
           damping: 25
         }}>
-          <motion.span className="font-serif text-2xl md:text-3xl" animate={{
+          <m.span className="font-serif text-2xl md:text-3xl" animate={{
             color: activeId === service.id ? 'hsl(var(--foreground))' : 'hsl(var(--muted-foreground))'
           }} whileHover={{
             color: 'hsl(var(--foreground))'
@@ -153,16 +155,16 @@ const ServiceAccordion = () => {
             duration: 0.3
           }}>
             {service.title}
-          </motion.span>
-          <motion.div animate={{
+          </m.span>
+          <m.div animate={{
             rotate: activeId === service.id ? 0 : 0
           }} transition={{
             duration: 0.3
           }}>
             {activeId === service.id ? <Minus className="w-5 h-5 text-foreground" /> : <Plus className="w-5 h-5 text-secondary" />}
-          </motion.div>
-        </motion.button>
-        <motion.div initial={false} animate={{
+          </m.div>
+        </m.button>
+        <m.div initial={false} animate={{
           height: activeId === service.id ? "auto" : 0,
           opacity: activeId === service.id ? 1 : 0,
           marginBottom: activeId === service.id ? 24 : 0
@@ -171,7 +173,7 @@ const ServiceAccordion = () => {
           ease: [0.4, 0, 0.2, 1]
         }} className="overflow-hidden">
           <p className="text-muted-foreground leading-relaxed pr-8">{service.description}</p>
-        </motion.div>
+        </m.div>
       </div>)}
     </div>
   </div>;
@@ -241,7 +243,7 @@ const Index = () => {
           return (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={linkPath} className="h-full block">
-                <motion.div className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
+                <m.div className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
                   y: -8,
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                   borderColor: "hsl(var(--primary) / 0.3)"
@@ -252,7 +254,7 @@ const Index = () => {
                 }}>
                   <div className="h-64 overflow-hidden relative">
                     <ParallaxImage src={treatment.image} alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
-                    <motion.div className="absolute inset-0 bg-foreground/0" whileHover={{
+                    <m.div className="absolute inset-0 bg-foreground/0" whileHover={{
                       backgroundColor: "hsl(var(--foreground) / 0.1)"
                     }} transition={{
                       duration: 0.5
@@ -261,7 +263,7 @@ const Index = () => {
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h3>
                     <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
-                    <motion.div className="flex items-center text-primary font-medium mt-auto text-sm" whileHover={{
+                    <m.div className="flex items-center text-primary font-medium mt-auto text-sm" whileHover={{
                       x: 8
                     }} transition={{
                       type: "spring",
@@ -269,9 +271,9 @@ const Index = () => {
                       damping: 25
                     }}>
                       Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
-                    </motion.div>
+                    </m.div>
                   </div>
-                </motion.div>
+                </m.div>
               </Link>
             </FadeIn>
           );
@@ -301,7 +303,7 @@ const Index = () => {
           </FadeIn>
         </div>
         <div className="relative">
-          <motion.div className="hidden lg:block absolute left-1/2 top-0 w-px bg-secondary -translate-x-1/2" initial={{
+          <m.div className="hidden lg:block absolute left-1/2 top-0 w-px bg-secondary -translate-x-1/2" initial={{
             height: 0
           }} whileInView={{
             height: "100%"
@@ -314,7 +316,7 @@ const Index = () => {
           <div className="flex flex-col gap-24">
             {STEPS.map((step, index) => <div key={step.id} className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
               <FadeIn direction={index % 2 === 0 ? 'left' : 'right'} className="w-full lg:w-1/2 relative">
-                <motion.div initial={{
+                <m.div initial={{
                   scale: 0.8,
                   opacity: 0
                 }} whileInView={{
@@ -328,7 +330,7 @@ const Index = () => {
                 }} className="relative h-80 rounded-3xl overflow-hidden shadow-md group">
                   <img loading="lazy" decoding="async" src={step.image} alt={`${step.title} - CIRCLE-methode van Danique Kwakman`} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
-                </motion.div>
+                </m.div>
               </FadeIn>
               <FadeIn direction={index % 2 === 0 ? 'right' : 'left'} delay={0.2} className="w-full lg:w-1/2 text-center lg:text-left">
                 <h3 className="font-serif text-2xl md:text-3xl mb-4 text-foreground">

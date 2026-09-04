@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
@@ -251,7 +251,7 @@ const Webshop = () => {
                 {trajectories.map((t, index) => (
                   <FadeIn key={t.href} delay={index * 0.2} className="h-full">
                     <Link to={t.href} className="h-full block">
-                      <motion.div
+                      <m.div
                         className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer"
                         whileHover={{
                           y: -8,
@@ -270,16 +270,16 @@ const Webshop = () => {
                         <div className="p-6 flex flex-col grow">
                           <h3 className="font-serif text-xl text-card-foreground mb-3">{t.title}</h3>
                           <p className="text-muted-foreground text-sm mb-6 leading-relaxed grow">{t.description}</p>
-                          <motion.div
+                          <m.div
                             className="flex items-center text-primary font-medium mt-auto text-sm"
                             whileHover={{ x: 8 }}
                             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                           >
                             Bekijk traject<span className="sr-only"> {t.title}</span>{' '}
                             <ArrowRight className="w-4 h-4 ml-2" />
-                          </motion.div>
+                          </m.div>
                         </div>
-                      </motion.div>
+                      </m.div>
                     </Link>
                   </FadeIn>
                 ))}

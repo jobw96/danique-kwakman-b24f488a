@@ -8,6 +8,7 @@ import {
   Scripts,
   useRouter,
 } from "@tanstack/react-router";
+import { LazyMotion, domAnimation } from "framer-motion";
 import { HelmetProvider } from "@/lib/helmet";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -165,21 +166,28 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <HelmetProvider>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <BookingModalProvider>
-            <Toaster />
-            <Sonner />
-            <ScrollToHash />
-            <RedirectHandler />
-            <ErrorBoundary>
-              <Outlet />
-            </ErrorBoundary>
-          </BookingModalProvider>
-        </TooltipProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
+    // Componenten gebruiken <m.*> in plaats van <motion.*>; LazyMotion laadt
+    // alleen de features die de site echt gebruikt. `domAnimation` volstaat:
+    // er zijn geen layout- of drag-animaties meer (zie Index en Linktree).
+    // `strict` laat een vergeten <motion.*> meteen falen in plaats van
+    // stilletjes de volledige bundel terug te trekken.
+    <LazyMotion features={domAnimation} strict>
+      <HelmetProvider>
+        <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
+            <BookingModalProvider>
+              <Toaster />
+              <Sonner />
+              <ScrollToHash />
+              <RedirectHandler />
+              <ErrorBoundary>
+                <Outlet />
+              </ErrorBoundary>
+            </BookingModalProvider>
+          </TooltipProvider>
+        </QueryClientProvider>
+      </HelmetProvider>
+    </LazyMotion>
   );
 }
 

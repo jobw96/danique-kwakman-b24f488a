@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 interface Card {
   title: string;
@@ -26,7 +26,7 @@ export const ParallaxCardStack = ({ cards }: ParallaxCardStackProps) => {
             }}
             className="mb-[400px] last:mb-0 md:mb-[400px] md:[&:not(:last-child)]:mb-[-140px]"
           >
-            <motion.div
+            <m.div
               initial={{ 
                 opacity: 0, 
                 y: 30 
@@ -65,7 +65,7 @@ export const ParallaxCardStack = ({ cards }: ParallaxCardStackProps) => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           </div>
         );
       })}

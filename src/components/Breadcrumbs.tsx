@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
 import { Helmet } from '@/lib/helmet';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
     Home,
     User,
@@ -131,7 +131,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
         <Helmet>
             <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         </Helmet>
-        <motion.nav
+        <m.nav
             aria-label="Breadcrumb"
             className={`container mx-auto px-6 pt-24 pb-2 ${className || ''}`}
             initial={{ opacity: 0, y: -5 }}
@@ -164,7 +164,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) =>
                     );
                 })}
             </ol>
-        </motion.nav>
+        </m.nav>
         </>
     );
 };

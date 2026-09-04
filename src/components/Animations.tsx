@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { m, useScroll, useTransform } from 'framer-motion';
 
 const LUXE_EASE: [number, number, number, number] = [0.6, 0.01, 0.05, 0.95];
 
 export const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, scale: 0.96, y: -40 }}
       animate={{ 
         opacity: 1, 
@@ -22,7 +22,7 @@ export const PageTransition: React.FC<{ children: React.ReactNode }> = ({ childr
       className="w-full"
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 };
 
@@ -53,7 +53,7 @@ export const FadeIn: React.FC<{
   };
 
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
@@ -61,13 +61,13 @@ export const FadeIn: React.FC<{
       className={`${className} ${fullWidth ? 'w-full' : ''}`}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 };
 
 export const StaggerContainer: React.FC<{ children: React.ReactNode; className?: string; delay?: number }> = ({ children, className = '', delay = 0 }) => {
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-10%" }}
@@ -77,7 +77,7 @@ export const StaggerContainer: React.FC<{ children: React.ReactNode; className?:
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 };
 
@@ -115,7 +115,7 @@ export const ParallaxImage: React.FC<{
 
   return (
     <div ref={ref} className={`overflow-hidden ${className}`}>
-      <motion.img
+      <m.img
         src={src}
         alt={alt}
         loading={eager ? 'eager' : 'lazy'}

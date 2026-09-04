@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link, Navigate } from '@/lib/router-compat';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Calendar, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
@@ -573,7 +573,7 @@ const BlogPost: React.FC = () => {
           </FadeIn>
 
           {/* Meta */}
-          <motion.div className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm mb-8 pb-8 border-b border-border/50" initial={{
+          <m.div className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm mb-8 pb-8 border-b border-border/50" initial={{
           opacity: 0,
           y: 10
         }} animate={{
@@ -594,10 +594,10 @@ const BlogPost: React.FC = () => {
               <Share2 className="w-4 h-4" />
               Delen
             </button>
-          </motion.div>
+          </m.div>
 
           {/* Featured Image Card */}
-          <motion.div className="rounded-2xl overflow-hidden shadow-md mb-12 border border-border/30" initial={{
+          <m.div className="rounded-2xl overflow-hidden shadow-md mb-12 border border-border/30" initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -610,13 +610,13 @@ const BlogPost: React.FC = () => {
             <div className="relative aspect-[16/9]">
               <img src={post.image} alt={post.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </Section>
 
       {/* Article Content */}
       <Section className="py-12 md:py-16">
-        <motion.article className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground" initial={{
+        <m.article className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-a:text-primary prose-strong:text-foreground" initial={{
         opacity: 0,
         y: 20
       }} animate={{
@@ -627,7 +627,7 @@ const BlogPost: React.FC = () => {
         delay: 0.3
       }}>
           {content.content}
-        </motion.article>
+        </m.article>
       </Section>
 
       {/* Related Posts */}
@@ -639,7 +639,7 @@ const BlogPost: React.FC = () => {
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {relatedPosts.map((relatedPost, index) => <motion.article key={relatedPost.id} initial={{
+            {relatedPosts.map((relatedPost, index) => <m.article key={relatedPost.id} initial={{
             opacity: 0,
             y: 20
           }} animate={{
@@ -651,7 +651,7 @@ const BlogPost: React.FC = () => {
           }} className="group">
                 <Link to={`/blog/${relatedPost.slug}`} className="flex gap-4 items-center">
                   <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
-                    <motion.img loading="lazy" decoding="async" src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover" whileHover={{
+                    <m.img loading="lazy" decoding="async" src={relatedPost.image} alt={relatedPost.title} className="w-full h-full object-cover" whileHover={{
                   scale: 1.05
                 }} transition={{
                   duration: 0.6
@@ -664,7 +664,7 @@ const BlogPost: React.FC = () => {
                     
                   </div>
                 </Link>
-              </motion.article>)}
+              </m.article>)}
           </div>
         </div>
       </Section>

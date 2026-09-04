@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowDown, Sparkles, Zap, UtensilsCrossed } from 'lucide-react';
@@ -47,7 +47,7 @@ const EbookCravings = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Ken je dat gevoel dat je rondom je menstruatie mega veel cravings ervaart naar iets zoets? Dat je het liefst direct na het avondeten begint aan een pak koekjes of dat je NU naar de winkel wilt om chocola te halen. Je bent zeker niet de enige en er is een manier om daar slimmer mee om te gaan, zonder je hormonen of darmen uit balans te brengen en bakken met suiker naar binnen te werken.
                 </p>
-                <motion.button
+                <m.button
                   onClick={() => {
                     document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
                   }}
@@ -57,7 +57,7 @@ const EbookCravings = () => {
                 >
                   Ontvang gratis e-book
                   <ArrowDown className="w-5 h-5" />
-                </motion.button>
+                </m.button>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
@@ -92,7 +92,7 @@ const EbookCravings = () => {
               }
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <motion.div
+                <m.div
                   className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full"
                   whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
@@ -102,7 +102,7 @@ const EbookCravings = () => {
                   </div>
                   <h3 className="font-serif text-xl text-foreground mb-3">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
-                </motion.div>
+                </m.div>
               </FadeIn>
             ))}
           </div>
@@ -129,7 +129,7 @@ const EbookCravings = () => {
                           "Snacks wilt die je makkelijk en snel in elkaar draait",
                           "Nieuwsgierig bent hoe kleine aanpassingen in je voeding een groot verschil kunnen maken"
                         ].map((item, i) => (
-                          <motion.div
+                          <m.div
                             key={i}
                             className="flex items-start gap-3"
                             initial={{ opacity: 0, x: -20 }}
@@ -141,7 +141,7 @@ const EbookCravings = () => {
                               <Sparkles size={14} />
                             </div>
                             <span>{item}</span>
-                          </motion.div>
+                          </m.div>
                         ))}
                       </div>
                     </div>
@@ -149,7 +149,7 @@ const EbookCravings = () => {
                 </div>
 
                 <div id="download-form">
-                  <motion.div
+                  <m.div
                     className="p-4 sm:p-8 rounded-2xl sticky top-24"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const EbookCravings = () => {
                     <div id="ac-form-container">
                       <div className="_form_31"></div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </div>
             </div>

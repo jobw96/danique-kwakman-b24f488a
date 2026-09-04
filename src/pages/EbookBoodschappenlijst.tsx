@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowDown, Sparkles, ShoppingBasket, Sprout, ListChecks } from 'lucide-react';
@@ -53,7 +53,7 @@ const EbookBoodschappenlijst = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Als jij precies weet welke basics je standaard in huis wilt hebben, pak je je hormoonproof en darmvriendelijke producten straks met je ogen dicht en ga je je hormonen stapje voor stapje in balans brengen.
                 </p>
-                <motion.button
+                <m.button
                   onClick={() => {
                     document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
                   }}
@@ -63,7 +63,7 @@ const EbookBoodschappenlijst = () => {
                 >
                   Ontvang gratis e-book
                   <ArrowDown className="w-5 h-5" />
-                </motion.button>
+                </m.button>
               </FadeIn>
             </div>
             <div className="lg:w-[35%]">
@@ -100,7 +100,7 @@ const EbookBoodschappenlijst = () => {
               }
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <motion.div
+                <m.div
                   className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full"
                   whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
@@ -110,7 +110,7 @@ const EbookBoodschappenlijst = () => {
                   </div>
                   <h3 className="font-serif text-xl text-foreground mb-3">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
-                </motion.div>
+                </m.div>
               </FadeIn>
             ))}
           </div>
@@ -138,7 +138,7 @@ const EbookBoodschappenlijst = () => {
                           "Makkelijkere en betere keuzes wilt maken zonder moeite",
                           "Je lichaam wilt ondersteunen met simpele basics"
                         ].map((item, i) => (
-                          <motion.div
+                          <m.div
                             key={i}
                             className="flex items-start gap-3"
                             initial={{ opacity: 0, x: -20 }}
@@ -150,7 +150,7 @@ const EbookBoodschappenlijst = () => {
                               <Sparkles size={14} />
                             </div>
                             <span>{item}</span>
-                          </motion.div>
+                          </m.div>
                         ))}
                       </div>
                     </div>
@@ -158,7 +158,7 @@ const EbookBoodschappenlijst = () => {
                 </div>
 
                 <div id="download-form">
-                  <motion.div
+                  <m.div
                     className="p-4 sm:p-8 rounded-2xl sticky top-24"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -168,7 +168,7 @@ const EbookBoodschappenlijst = () => {
                     <div id="ac-form-container">
                       <div className="_form_41"></div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </div>
             </div>

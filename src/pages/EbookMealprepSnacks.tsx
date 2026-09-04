@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowDown, Sparkles, Zap, Heart, Clock } from 'lucide-react';
@@ -51,7 +51,7 @@ const EbookMealprepSnacks = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Ik heb mijn 6 favoriete mealprep snacks verzameld, zodat jij altijd iets voedzaams bij de hand hebt, ook op je drukste dagen.
               </p>
-              <motion.button
+              <m.button
                 onClick={() => {
                   document.getElementById('download-form')?.scrollIntoView({ behavior: 'smooth' });
                 }}
@@ -61,7 +61,7 @@ const EbookMealprepSnacks = () => {
               >
                 Ontvang gratis e-book
                 <ArrowDown className="w-5 h-5" />
-              </motion.button>
+              </m.button>
             </FadeIn>
           </div>
 
@@ -85,7 +85,7 @@ const EbookMealprepSnacks = () => {
               }
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <motion.div
+                <m.div
                   className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30 h-full"
                   whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
@@ -95,7 +95,7 @@ const EbookMealprepSnacks = () => {
                   </div>
                   <h3 className="font-serif text-xl text-foreground mb-3">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
-                </motion.div>
+                </m.div>
               </FadeIn>
             ))}
           </div>
@@ -123,7 +123,7 @@ const EbookMealprepSnacks = () => {
                           "Houdt van praktische, snelle oplossingen",
                           "Goed voor jezelf wilt zorgen, ook op drukke dagen"
                         ].map((item, i) => (
-                          <motion.div
+                          <m.div
                             key={i}
                             className="flex items-start gap-3"
                             initial={{ opacity: 0, x: -20 }}
@@ -135,7 +135,7 @@ const EbookMealprepSnacks = () => {
                               <Sparkles size={14} />
                             </div>
                             <span>{item}</span>
-                          </motion.div>
+                          </m.div>
                         ))}
                       </div>
                     </div>
@@ -143,7 +143,7 @@ const EbookMealprepSnacks = () => {
                 </div>
 
                 <div id="download-form">
-                  <motion.div
+                  <m.div
                     className="p-4 sm:p-8 rounded-2xl sticky top-24"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -153,7 +153,7 @@ const EbookMealprepSnacks = () => {
                     <div id="ac-form-container">
                       <div className="_form_33"></div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, HTMLMotionProps } from 'framer-motion';
+import { m, HTMLMotionProps } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
 interface CustomButtonProps extends Omit<HTMLMotionProps<"button">, 'children'> {
@@ -25,7 +25,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
   };
 
   return (
-    <motion.button 
+    <m.button 
       className={`${baseStyles} ${variants[variant]} ${className}`}
       whileHover={{ 
         y: -2,
@@ -41,6 +41,6 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
     >
       {children}
       {icon && <ArrowUpRight className="w-4 h-4" />}
-    </motion.button>
+    </m.button>
   );
 };

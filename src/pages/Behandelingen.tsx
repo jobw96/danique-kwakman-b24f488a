@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from '@/lib/router-compat';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowRight } from 'lucide-react';
@@ -104,7 +104,7 @@ const Behandelingen = () => {
           {treatments.map((treatment, index) => (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
               <Link to={treatment.href} className="h-full block">
-                <motion.div 
+                <m.div 
                   className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer" 
                   whileHover={{
                     y: -8,
@@ -123,7 +123,7 @@ const Behandelingen = () => {
                       alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} 
                       className="w-full h-full" 
                     />
-                    <motion.div 
+                    <m.div 
                       className="absolute inset-0 bg-foreground/0" 
                       whileHover={{
                         backgroundColor: "hsl(var(--foreground) / 0.1)"
@@ -136,7 +136,7 @@ const Behandelingen = () => {
                   <div className="p-6 flex flex-col flex-grow">
                     <h2 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h2>
                     <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
-                    <motion.div 
+                    <m.div 
                       className="flex items-center text-primary font-medium mt-auto text-sm" 
                       whileHover={{
                         x: 8
@@ -148,9 +148,9 @@ const Behandelingen = () => {
                       }}
                     >
                       Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
-                    </motion.div>
+                    </m.div>
                   </div>
-                </motion.div>
+                </m.div>
               </Link>
             </FadeIn>
           ))}

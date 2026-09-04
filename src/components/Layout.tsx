@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
 import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass } from 'lucide-react';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
@@ -12,7 +12,7 @@ import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
 // Navigatie-items zijn echte <a href>-links zodat crawlers ze volgen en
 // bezoekers ze in een nieuw tabblad kunnen openen. MotionLink geeft die
 // anchors dezelfde framer-motion-animaties als de knoppen die ze vervangen.
-const MotionLink = motion.create(Link);
+const MotionLink = m.create(Link);
 
 // Footernavigatie — dekt ook de pagina's die in de header achter een dropdown
 // zitten, zodat elke pagina vanaf elke pagina één klik verwijderd is.
@@ -278,7 +278,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
       <div ref={bannerRef} />
 
-      <motion.header className="w-full border-b" animate={{
+      <m.header className="w-full border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
       paddingTop: scrolled ? '0.5rem' : '1rem',
       paddingBottom: scrolled ? '0.5rem' : '1rem',
@@ -300,7 +300,7 @@ export const Layout: React.FC<LayoutProps> = ({
           stiffness: 400,
           damping: 25
         }}>
-            <motion.img loading="lazy" decoding="async" src={logoFull} alt="Danique Kwakman" className="h-10 w-auto" animate={{
+            <m.img loading="lazy" decoding="async" src={logoFull} alt="Danique Kwakman" className="h-10 w-auto" animate={{
             opacity: 1,
             filter: useDarkHeader ? 'brightness(1) invert(0)' : 'brightness(0) invert(1)'
           }} transition={{
@@ -329,26 +329,26 @@ export const Layout: React.FC<LayoutProps> = ({
             };
             const triggerLabel = <>
                 {link.name}
-                {link.subItems && <motion.div animate={{
+                {link.subItems && <m.div animate={{
                 rotate: activeDropdown === link.name ? 180 : 0
               }} transition={{
                 duration: 0.3,
                 ease: "easeInOut"
               }}>
                     <ChevronDown className="w-3.5 h-3.5 opacity-70" />
-                  </motion.div>}
+                  </m.div>}
               </>;
             return <div key={link.name} className="relative px-3 py-2" onMouseEnter={() => link.subItems && setActiveDropdown(link.name)} onMouseLeave={() => link.subItems && setActiveDropdown(null)}>
                 {link.href ? <MotionLink to={link.href} onClick={closeMenus} {...triggerProps}>
                     {triggerLabel}
-                  </MotionLink> : <motion.button type="button" aria-haspopup="true" aria-expanded={activeDropdown === link.name} onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} {...triggerProps}>
+                  </MotionLink> : <m.button type="button" aria-haspopup="true" aria-expanded={activeDropdown === link.name} onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} {...triggerProps}>
                     {triggerLabel}
-                  </motion.button>}
+                  </m.button>}
 
                 {link.subItems && <AnimatePresence mode="wait">
                     {activeDropdown === link.name && <>
                         <div className="absolute top-full left-0 w-full h-4"></div>
-                        <motion.div className="absolute top-[calc(100%+10px)] left-0 w-[340px]" initial={{
+                        <m.div className="absolute top-[calc(100%+10px)] left-0 w-[340px]" initial={{
                   opacity: 0,
                   y: -10,
                   scale: 0.95
@@ -367,7 +367,7 @@ export const Layout: React.FC<LayoutProps> = ({
                     duration: 0.25
                   }
                 }}>
-                          <motion.div className="bg-background/95 backdrop-blur-xl shadow-lg rounded-2xl border border-secondary/60 p-3 overflow-hidden" initial={{
+                          <m.div className="bg-background/95 backdrop-blur-xl shadow-lg rounded-2xl border border-secondary/60 p-3 overflow-hidden" initial={{
                     opacity: 0
                   }} animate={{
                     opacity: 1
@@ -375,7 +375,7 @@ export const Layout: React.FC<LayoutProps> = ({
                     delay: 0.05,
                     duration: 0.2
                   }}>
-                            <motion.div className="grid grid-cols-1 gap-1" initial="hidden" animate="visible" variants={{
+                            <m.div className="grid grid-cols-1 gap-1" initial="hidden" animate="visible" variants={{
                       visible: {
                         transition: {
                           staggerChildren: 0.04,
@@ -393,7 +393,7 @@ export const Layout: React.FC<LayoutProps> = ({
                           x: 0
                         }
                       }}>
-                                  <motion.div className="w-10 h-10 rounded-lg bg-white/50 border border-secondary/50 flex items-center justify-center text-primary" whileHover={{
+                                  <m.div className="w-10 h-10 rounded-lg bg-white/50 border border-secondary/50 flex items-center justify-center text-primary" whileHover={{
                           backgroundColor: "hsl(var(--primary) / 0.2)",
                           borderColor: "hsl(var(--primary) / 0.2)",
                           color: "hsl(var(--foreground))"
@@ -401,21 +401,21 @@ export const Layout: React.FC<LayoutProps> = ({
                           duration: 0.2
                         }}>
                                     <sub.icon size={18} strokeWidth={2} />
-                                  </motion.div>
+                                  </m.div>
                                   <div>
                                     <div className="text-sm font-light text-foreground">{sub.name}</div>
                                   </div>
                                 </MotionLink>)}
-                            </motion.div>
-                          </motion.div>
-                        </motion.div>
+                            </m.div>
+                          </m.div>
+                        </m.div>
                       </>}
                   </AnimatePresence>}
               </div>;
           })}
 
             <div className="ml-4">
-              <motion.button onClick={handleExternalLink} className="text-xs font-medium px-5 py-2.5 rounded-md shadow-md bg-primary text-primary-foreground" whileHover={{
+              <m.button onClick={handleExternalLink} className="text-xs font-medium px-5 py-2.5 rounded-md shadow-md bg-primary text-primary-foreground" whileHover={{
               y: -2,
               opacity: 0.9
             }} whileTap={{
@@ -426,11 +426,11 @@ export const Layout: React.FC<LayoutProps> = ({
               damping: 25
             }}>
                 Kennismaking
-              </motion.button>
+              </m.button>
             </div>
           </nav>
 
-          <motion.button 
+          <m.button 
             className="lg:hidden p-2 relative z-[60]" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
             animate={{
@@ -450,11 +450,11 @@ export const Layout: React.FC<LayoutProps> = ({
             aria-controls="mobile-menu"
           >
             {mobileMenuOpen ? <X /> : <Menu />}
-          </motion.button>
+          </m.button>
         </div>
 
         <AnimatePresence>
-          {mobileMenuOpen && <motion.div className="fixed inset-0 bg-black/20 backdrop-blur-sm lg:hidden z-[55]" initial={{
+          {mobileMenuOpen && <m.div className="fixed inset-0 bg-black/20 backdrop-blur-sm lg:hidden z-[55]" initial={{
           opacity: 0
         }} animate={{
           opacity: 1
@@ -465,7 +465,7 @@ export const Layout: React.FC<LayoutProps> = ({
         }} onClick={() => setMobileMenuOpen(false)} />}
         </AnimatePresence>
 
-        <motion.div className="fixed top-0 right-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 lg:hidden flex flex-col z-[58] shadow-2xl" initial={{
+        <m.div className="fixed top-0 right-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 lg:hidden flex flex-col z-[58] shadow-2xl" initial={{
         x: "100%"
       }} animate={{
         x: mobileMenuOpen ? 0 : "100%"
@@ -476,7 +476,7 @@ export const Layout: React.FC<LayoutProps> = ({
         mass: 0.8
       }}>
           {/* Logo */}
-          <motion.div className="mb-8" initial={{
+          <m.div className="mb-8" initial={{
           opacity: 0,
           y: -10
         }} animate={{
@@ -489,10 +489,10 @@ export const Layout: React.FC<LayoutProps> = ({
             <Link to="/" aria-label="Danique Kwakman — naar de homepage" onClick={closeMenus}>
               <img loading="lazy" decoding="async" src={logoFull} alt="Danique Kwakman" className="h-8 w-auto cursor-pointer" />
             </Link>
-          </motion.div>
+          </m.div>
 
           <nav id="mobile-menu" className="flex flex-col gap-1 flex-1 overflow-y-auto" aria-label="Mobiele navigatie">
-            {navLinks.map((link, index) => <motion.div key={link.name} initial={{
+            {navLinks.map((link, index) => <m.div key={link.name} initial={{
             opacity: 0,
             x: 20
           }} animate={{
@@ -504,21 +504,21 @@ export const Layout: React.FC<LayoutProps> = ({
             ease: [0.25, 0.1, 0.25, 1]
           }}>
                 {link.subItems ? <div>
-                    <motion.button type="button" aria-expanded={activeDropdown === link.name} onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} className="flex justify-between items-center w-full text-base font-light text-foreground py-3" whileTap={{
+                    <m.button type="button" aria-expanded={activeDropdown === link.name} onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)} className="flex justify-between items-center w-full text-base font-light text-foreground py-3" whileTap={{
                 scale: 0.98
               }}>
                       {link.name}
-                      <motion.div animate={{
+                      <m.div animate={{
                   rotate: activeDropdown === link.name ? 180 : 0
                 }} transition={{
                   duration: 0.35,
                   ease: [0.4, 0, 0.2, 1]
                 }}>
                         <ChevronDown className="w-4 h-4 opacity-50" />
-                      </motion.div>
-                    </motion.button>
+                      </m.div>
+                    </m.button>
                     <AnimatePresence initial={false}>
-                      {activeDropdown === link.name && <motion.div initial={{
+                      {activeDropdown === link.name && <m.div initial={{
                   height: 0,
                   opacity: 0
                 }} animate={{
@@ -557,17 +557,17 @@ export const Layout: React.FC<LayoutProps> = ({
                                 <span className="text-sm font-light">{sub.name}</span>
                               </MotionLink>)}
                           </div>
-                        </motion.div>}
+                        </m.div>}
                     </AnimatePresence>
                   </div> : <MotionLink to={link.href!} onClick={closeMenus} className="block text-base font-light text-foreground w-full text-left py-3" whileTap={{
               scale: 0.98
             }}>
                     {link.name}
                   </MotionLink>}
-              </motion.div>)}
+              </m.div>)}
           </nav>
 
-          <motion.button onClick={handleExternalLink} className="bg-primary text-primary-foreground font-light text-center py-3.5 rounded-lg mt-6 w-full" initial={{
+          <m.button onClick={handleExternalLink} className="bg-primary text-primary-foreground font-light text-center py-3.5 rounded-lg mt-6 w-full" initial={{
           opacity: 0,
           y: 10
         }} animate={{
@@ -581,9 +581,9 @@ export const Layout: React.FC<LayoutProps> = ({
           scale: 0.98
         }}>
             Gratis kennismaking
-          </motion.button>
-        </motion.div>
-      </motion.header>
+          </m.button>
+        </m.div>
+      </m.header>
       </div>
 
       <main
@@ -598,7 +598,7 @@ export const Layout: React.FC<LayoutProps> = ({
       backgroundColor: 'hsl(var(--background))',
       boxShadow: '0 -4px 20px rgba(0,0,0,0.06)'
     }}>
-        <motion.div className="absolute inset-0 w-full h-[120%] -top-[10%]" style={{
+        <m.div className="absolute inset-0 w-full h-[120%] -top-[10%]" style={{
         y: footerY,
         background: 'linear-gradient(135deg, rgba(157,170,198,0.12) 0%, rgba(216,204,171,0.08) 100%)'
       }} />
@@ -630,7 +630,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </nav>
 
           <div className="flex items-center gap-8 mb-8">
-            <motion.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op Instagram" whileHover={{
+            <m.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op Instagram" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
@@ -639,8 +639,8 @@ export const Layout: React.FC<LayoutProps> = ({
             damping: 25
           }}>
               <Instagram size={26} strokeWidth={1.5} />
-            </motion.a>
-            <motion.a href="https://www.tiktok.com/@danique.kwakman?_r=1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{
+            </m.a>
+            <m.a href="https://www.tiktok.com/@danique.kwakman?_r=1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
@@ -651,8 +651,8 @@ export const Layout: React.FC<LayoutProps> = ({
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
               </svg>
-            </motion.a>
-            <motion.a href="mailto:info@daniquekwakman.nl" className="text-muted-foreground" aria-label="Mail Danique Kwakman" whileHover={{
+            </m.a>
+            <m.a href="mailto:info@daniquekwakman.nl" className="text-muted-foreground" aria-label="Mail Danique Kwakman" whileHover={{
             color: "hsl(var(--foreground))",
             y: -4
           }} transition={{
@@ -661,7 +661,7 @@ export const Layout: React.FC<LayoutProps> = ({
             damping: 25
           }}>
               <Mail size={26} strokeWidth={1.5} />
-            </motion.a>
+            </m.a>
           </div>
 
           {/* CAT & GAT info */}
@@ -731,7 +731,7 @@ export const Layout: React.FC<LayoutProps> = ({
       </footer>
       
       <AnimatePresence>
-        {showBackToTop && <motion.button 
+        {showBackToTop && <m.button 
           initial={{
             opacity: 0,
             scale: 0.8,
@@ -764,7 +764,7 @@ export const Layout: React.FC<LayoutProps> = ({
           aria-label="Terug naar boven"
         >
           <ArrowUp size={20} aria-hidden="true" />
-        </motion.button>}
+        </m.button>}
       </AnimatePresence>
     </div>;
 };

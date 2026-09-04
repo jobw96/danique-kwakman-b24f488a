@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 
 export const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -25,7 +25,7 @@ export const CookieConsent = () => {
   return (
     <AnimatePresence>
       {showBanner && (
-        <motion.div
+        <m.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
@@ -64,7 +64,7 @@ export const CookieConsent = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

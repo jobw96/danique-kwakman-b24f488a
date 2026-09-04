@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from '@/lib/router-compat';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Calendar, ArrowRight } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
@@ -89,13 +89,13 @@ const Blog: React.FC = () => {
 
       {/* Blog Posts Grid */}
       <Section className="py-10 md:py-12">
-        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" animate="visible">
-          {BLOG_POSTS.map(post => <motion.article key={post.id} variants={cardVariants} className="group h-full">
+        <m.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" animate="visible">
+          {BLOG_POSTS.map(post => <m.article key={post.id} variants={cardVariants} className="group h-full">
               <Link to={`/blog/${post.slug}`} className="block h-full">
                 <div className="bg-card rounded-xl overflow-hidden border border-border/50 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative h-60 overflow-hidden">
-                    <motion.img loading="lazy" decoding="async" src={post.image} alt={post.title} className="w-full h-full object-cover object-top" whileHover={{
+                    <m.img loading="lazy" decoding="async" src={post.image} alt={post.title} className="w-full h-full object-cover object-top" whileHover={{
                   scale: 1.05
                 }} transition={{
                   duration: 0.6,
@@ -131,8 +131,8 @@ const Blog: React.FC = () => {
                   </div>
                 </div>
               </Link>
-            </motion.article>)}
-        </motion.div>
+            </m.article>)}
+        </m.div>
       </Section>
     </div>;
 };

@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { X, Loader2 } from 'lucide-react';
 
 const BOOKING_URL = 'https://daniquekwakman.clientomgeving.nl/afspraak-maken?t=QqtG5FOC';
@@ -74,7 +74,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <m.div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -83,7 +83,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
           onClick={handleOverlayClick}
         >
           {/* Backdrop */}
-          <motion.div
+          <m.div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -91,7 +91,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
           />
 
           {/* Modal Content */}
-          <motion.div
+          <m.div
             className="relative z-10 w-[95%] h-[70vh] md:w-[60%] md:max-w-[1000px] bg-card rounded-2xl shadow-2xl overflow-hidden border border-secondary/30"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -99,7 +99,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
             transition={{ duration: 0.3, ease: 'easeOut' }}
           >
             {/* Close Button */}
-            <motion.button
+            <m.button
               onClick={onClose}
               className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-accent flex items-center justify-center shadow-lg"
               whileHover={{ scale: 1.1 }}
@@ -108,17 +108,17 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
               aria-label="Sluiten"
             >
               <X className="w-5 h-5 text-white" />
-            </motion.button>
+            </m.button>
 
             {/* Loading Spinner */}
             {isLoading && (
               <div className="absolute inset-0 flex items-center justify-center bg-card z-10">
-                <motion.div
+                <m.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
                 >
                   <Loader2 className="w-10 h-10 text-secondary" />
-                </motion.div>
+                </m.div>
               </div>
             )}
 
@@ -130,8 +130,8 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
               onLoad={handleIframeLoad}
               allow="payment"
             />
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

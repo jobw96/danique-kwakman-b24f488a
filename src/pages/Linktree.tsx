@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass, Heart, ShoppingBag } from 'lucide-react';
 import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
@@ -153,7 +153,7 @@ const Linktree: React.FC = () => {
   };
 
   const renderButton = (link: LinkItem, index: number) => (
-    <motion.button
+    <m.button
       key={`${link.title}-${index}`}
       onClick={() => handleLinkClick(link)}
       className="w-full bg-background text-foreground rounded-full py-4 px-6 text-sm sm:text-base font-medium text-center transition-colors hover:bg-background/90"
@@ -167,7 +167,7 @@ const Linktree: React.FC = () => {
           {link.subtitle}
         </span>
       )}
-    </motion.button>
+    </m.button>
   );
 
 
@@ -177,7 +177,7 @@ const Linktree: React.FC = () => {
 
       <div className="w-full max-w-xl">
         {/* Card */}
-        <motion.div
+        <m.div
           className="bg-primary rounded-3xl px-5 sm:px-8 pt-10 pb-12"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -214,34 +214,36 @@ const Linktree: React.FC = () => {
 
           {/* Tabs */}
           <div className="mt-7 mx-auto w-full max-w-xs bg-background/15 rounded-full p-1 flex relative">
+            {/* Eén pil die meeschuift met een transform, in plaats van een
+                layoutId per knop. Zelfde beweging, maar zonder de
+                layout-feature van framer-motion. */}
+            <m.span
+              aria-hidden="true"
+              className="absolute top-1 bottom-1 left-1 w-[calc(50%-0.25rem)] bg-background rounded-full"
+              animate={{ x: tab === 'links' ? '0%' : '100%' }}
+              transition={{ type: 'spring', stiffness: 700, damping: 40, mass: 0.5 }}
+            />
             {(['links', 'shop'] as const).map((t) => (
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className={`relative flex-1 rounded-full py-2 text-sm font-medium transition-colors ${
+                className={`relative z-10 flex-1 rounded-full py-2 text-sm font-medium transition-colors ${
                   tab === t ? 'text-foreground' : 'text-primary-foreground/80'
                 }`}
                 aria-pressed={tab === t}
               >
-                {tab === t && (
-                  <motion.span
-                    layoutId="linktree-tab"
-                    className="absolute inset-0 bg-background rounded-full"
-                    transition={{ type: 'spring', stiffness: 700, damping: 40, mass: 0.5 }}
-                  />
-                )}
-                <span className="relative z-10">{t === 'links' ? 'Links' : 'Shop'}</span>
+                {t === 'links' ? 'Links' : 'Shop'}
               </button>
             ))}
           </div>
 
           {/* Links / Shop */}
-          <motion.div
+          <m.div
             className="mt-6 -mx-5 sm:-mx-8 overflow-x-clip"
             animate={{ height: panelHeight }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-            <motion.div
+            <m.div
               className="flex items-start"
               animate={{ x: tab === 'links' ? '0%' : '-100%' }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
@@ -271,7 +273,7 @@ const Linktree: React.FC = () => {
                 className={`w-full shrink-0 px-5 sm:px-8 py-1 ${tab === 'shop' ? '' : 'pointer-events-none'}`}
                 aria-hidden={tab !== 'shop'}
               >
-                <motion.button
+                <m.button
                   onClick={() => window.open(NOURISH_URL, '_blank')}
                   className="w-full max-w-[260px] mx-auto block bg-background rounded-[28px] overflow-hidden text-left"
                   whileHover={{ scale: 1.015, y: -3 }}
@@ -291,10 +293,10 @@ const Linktree: React.FC = () => {
                       Bekijk e-book
                     </span>
                   </div>
-                </motion.button>
+                </m.button>
               </div>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
 
 
 
@@ -302,7 +304,7 @@ const Linktree: React.FC = () => {
           {/* Socials */}
           <div className="mt-9 flex items-center justify-center gap-7">
             {SOCIAL_LINKS.map((social, i) => (
-              <motion.a
+              <m.a
                 key={social.name}
                 href={social.href}
                 target="_blank"
@@ -323,10 +325,10 @@ const Linktree: React.FC = () => {
                 whileTap={{ scale: 0.94, transition: { duration: 0.1, delay: 0 } }}
               >
                 <social.icon className="w-6 h-6" strokeWidth={1.75} />
-              </motion.a>
+              </m.a>
             ))}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Footer */}
         <p className="mt-8 text-center text-xs text-muted-foreground">
