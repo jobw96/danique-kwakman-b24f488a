@@ -39,6 +39,47 @@ const treatments = [
   }
 ];
 
+/**
+ * Toelichting per traject. De inhoud is samengevat uit de trajectpagina's
+ * zelf (voor wie, wat erbij zit, looptijd), zodat deze pagina en de
+ * detailpagina's hetzelfde verhaal vertellen.
+ */
+const explanations = [
+  {
+    id: 'bloedsuikertraject',
+    title: '1:1 Bloedsuikertraject',
+    href: '/bloedsuikertraject',
+    meta: '2 weken · online of in Hoorn',
+    linkLabel: 'Alles over het Bloedsuikertraject',
+    body: [
+      'Dit traject is er voor jou als je door de dag heen energiedips hebt, steeds trek houdt in iets zoets en merkt dat eten onrust geeft in plaats van rust. Twee weken lang draag je een glucosesensor die continu meet hoe jouw lichaam op voeding, beweging en stress reageert. Daarmee stoppen we met gissen: je ziet zwart-op-wit waar je bloedsuiker piekt en daalt.',
+      'Je begint met een kennismakingsgesprek en een uitgebreide intake. Na een week volgt een check-in, na twee weken het eindconsult waarin we jouw glucosegegevens samen doornemen. Je krijgt een persoonlijk plan op basis van voeding en leefstijl, een boodschappenlijst en een weekmenu, en tussendoor kun je me bereiken via WhatsApp.',
+    ],
+  },
+  {
+    id: 'hormoontraject',
+    title: '1:1 Hormoontraject',
+    href: '/hormoontraject',
+    meta: '3 maanden · online of in Hoorn',
+    linkLabel: 'Alles over het Hormoontraject',
+    body: [
+      'Herken je PMS, PCOS, aanhoudende vermoeidheid of het gevoel dat je hormonen je dag bepalen? In drie maanden werken we toe naar meer rust in je lijf én je hoofd. Niet met een standaardprotocol, maar met een aanpak die volgt wat jouw cyclus en jouw klachten laten zien.',
+      'Je krijgt drie persoonlijke sessies van een uur, een behandelplan dat voeding, leefstijl, mindset, je cyclus en je darmgezondheid samenneemt, en praktische hulpmiddelen zoals cyclus-trackers, receptenboeken en werkboeken. Tussen de sessies door heb je intensieve begeleiding via WhatsApp, zodat je niet twee weken met een vraag blijft zitten.',
+    ],
+  },
+  {
+    id: 'darmtraject',
+    title: '1:1 Darmtraject Therapie',
+    href: '/darmtraject',
+    meta: '± 6 maanden · online of in Hoorn',
+    linkLabel: 'Alles over het Darmtraject',
+    body: [
+      'Het meest diepgaande traject, voor als je al langere tijd darmklachten hebt die je dagelijks leven beïnvloeden. Je merkt dat voeding, stress of je cyclus invloed heeft op hoe je buik reageert, maar je komt er niet achter waaróm. Daarom starten we hier met gericht laboratoriumonderzoek: een ontlastingsonderzoek en een voedselintolerantietest.',
+      'Op basis van die uitslagen doorlopen we vier fases: voorbereiding, opruimen, versterken en stabiliseren. Je hebt vijf sessies van een uur, een behandelplan dat op jouw labuitslagen is gebouwd, en WhatsApp-support gedurende het hele traject. De labkosten zijn niet inbegrepen; het lab factureert die rechtstreeks aan jou.',
+    ],
+  },
+];
+
 const Behandelingen = () => {
   const { openModal } = useBookingModal();
   return (
@@ -53,6 +94,9 @@ const Behandelingen = () => {
           <FadeIn>
           <SectionTag text="Trajecten" />
             <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Behandelingen voor Hormoonbalans, Darmgezondheid en Bloedsuiker</h1>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Drie 1:1 trajecten, elk met een eigen startpunt: je bloedsuiker, je hormonen of je darmen. Welk traject bij je past hangt af van je klachten en van hoe diep je wilt gaan. Weet je het niet zeker? Plan dan een gratis kennismaking, dan kijken we er samen naar.
+            </p>
           </FadeIn>
         </div>
         
@@ -112,7 +156,46 @@ const Behandelingen = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        {/* Toelichting per traject, zodat deze pagina op zichzelf uitlegt
+            waar de trajecten in verschillen. */}
+        <div className="max-w-3xl mx-auto mt-24">
+          <FadeIn>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-3 text-center">
+              Welk traject past bij jou?
+            </h2>
+            <p className="text-muted-foreground text-center mb-14 leading-relaxed">
+              Hieronder lees je per traject voor wie het bedoeld is en wat je krijgt.
+            </p>
+          </FadeIn>
+
+          <div className="space-y-14">
+            {explanations.map((item, index) => (
+              <FadeIn key={item.id} delay={index * 0.1}>
+                <article className="border-t border-secondary/40 pt-8">
+                  <h3 className="font-serif text-2xl text-foreground mb-1">{item.title}</h3>
+                  <p className="text-xs uppercase tracking-wider text-primary mb-5">{item.meta}</p>
+                  <div className="space-y-4">
+                    {item.body.map((paragraph, i) => (
+                      <p key={i} className="text-muted-foreground leading-relaxed">{paragraph}</p>
+                    ))}
+                  </div>
+                  <Link
+                    to={item.href}
+                    className="inline-flex items-center text-primary font-medium mt-5 text-sm hover:underline underline-offset-4"
+                  >
+                    {item.linkLabel}
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </article>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mt-20">
+          <p className="text-muted-foreground max-w-xl mx-auto mb-6 leading-relaxed">
+            Twijfel je welk traject het beste aansluit? In een gratis kennismakingsgesprek bespreken we je klachten en kijken we samen wat past.
+          </p>
           <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
         </div>
       </Section>
