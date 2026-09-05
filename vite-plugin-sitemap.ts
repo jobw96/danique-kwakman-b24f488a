@@ -5,8 +5,8 @@ import { execFileSync } from 'node:child_process';
 
 export const SITE_BASE_URL = 'https://daniquekwakman.nl';
 
-/** Routes die nooit in de sitemap horen (redirects, 404, aliassen). */
-const EXCLUDED_PATHS = new Set(['/darmtherapie-traject']);
+/** Routes die nooit in de sitemap horen (redirects, 404, aliassen, juridische pagina's). */
+const EXCLUDED_PATHS = new Set(['/darmtherapie-traject', '/privacy', '/terms', '/cookie-policy']);
 
 const root = process.cwd();
 const readIfExists = (p: string) => (existsSync(p) ? readFileSync(p, 'utf-8') : '');
