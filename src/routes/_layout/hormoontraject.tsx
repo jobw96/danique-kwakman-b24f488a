@@ -13,7 +13,7 @@ export const Route = createFileRoute("/_layout/hormoontraject")({
         name: "1:1 Hormoontraject",
         description: "Persoonlijk traject van drie maanden voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
         path: "/hormoontraject",
-        monthlyPrice: 296,
+        monthlyPrice: 249,
         duration: "P3M",
       }),
       breadcrumbs([
