@@ -345,7 +345,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20 text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
-              <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€296<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
+              <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€249<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
