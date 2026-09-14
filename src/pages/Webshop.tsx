@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ListChecks, ArrowRight } from 'lucide-react';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 
@@ -50,7 +50,6 @@ const features = [
   { icon: BookOpen, title: '50+ recepten', text: 'Voedzame recepten voor elk moment van de dag.' },
   { icon: CalendarHeart, title: 'Cyclusgerichte voeding', text: 'Eten dat aansluit bij elke fase van je cyclus.' },
   { icon: ChefHat, title: 'Mealprep & hacks', text: 'Slim voorbereiden, ook op drukke dagen.' },
-  { icon: ListChecks, title: 'Boodschappenlijsten', text: 'Kant-en-klare lijstjes zodat je niets vergeet.' },
 ];
 
 
@@ -173,7 +172,7 @@ const Webshop = () => {
           <FadeIn>
             <section className="mb-20 md:mb-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Wat je krijgt</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                 {features.map(({ icon: Icon, title, text }) => (
                   <div key={title}>
                     <Icon className="w-6 h-6 text-primary mb-3" strokeWidth={1.5} />
