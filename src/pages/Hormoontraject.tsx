@@ -281,20 +281,51 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Wat zit erbij?</h2>
-              <div className="space-y-4">
+              <div className="space-y-5">
                 {[
-                  "Online kennismakingsgesprek om elkaar te leren kennen, je vragen te bespreken en jouw hulpvraag helder te krijgen",
-                  "3 persoonlijke 1:1 sessies van 60 minuten",
-                  "Intensieve begeleiding en support via WhatsApp",
-                  "Persoonlijk behandelplan op basis van o.a. voeding, leefstijl, mindset, je cyclus en darmgezondheid",
-                  "Praktische tools en opdrachten om groei tastbaar te maken",
-                  "Hulpmiddelen die je ondersteunen tijdens het traject, zoals cyclus-trackers, receptenboeken en werkboeken"
+                  {
+                    title: "Online kennismakingsgesprek",
+                    desc: "Om elkaar te leren kennen, je vragen te bespreken en jouw hulpvraag helder te krijgen.",
+                  },
+                  {
+                    title: "3 persoonlijke 1:1 sessies van 60 minuten",
+                    desc: "",
+                  },
+                  {
+                    title: "Drie maanden persoonlijke begeleiding",
+                    desc: "Drie maanden lang sta ik naast je. Mijn begeleiding stopt niet zodra onze 1:1 sessie voorbij is. Ook tussen de sessies door kun je bij mij terecht met vragen, ervaringen en dingen waar je tegenaan loopt. We kijken samen wat er speelt, sturen bij waar nodig en bepalen steeds wat voor jou de volgende stap is.",
+                  },
+                  {
+                    title: "Een behandelplan dat met je meebeweegt",
+                    desc: "We kijken naar het geheel: van je hormonen en darmgezondheid tot voeding, slaap, stress, leefstijl, mindset en je cyclus. Tijdens het traject evalueren we wat er verandert, wat wel en niet werkt en wat er in jouw dagelijks leven speelt. Op basis daarvan pas ik je persoonlijke behandelplan steeds aan, zodat het blijft aansluiten bij jouw klachten, behoeften en voortgang.",
+                  },
+                  {
+                    title: "Persoonlijke WhatsApp-begeleiding",
+                    desc: "Heb je tussen de sessies door een vraag, loop je ergens tegenaan of wil je even overleggen? Dan kun je me via WhatsApp bereiken wanneer je daar behoefte aan hebt. Zo hoef je niet te wachten tot onze volgende sessie.",
+                  },
+                  {
+                    title: "Praktische tools en opdrachten",
+                    desc: "Om niet alleen te begrijpen wat er speelt, maar ook stap voor stap te ervaren wat voor jou werkt.",
+                  },
+                  {
+                    title: "Jouw persoonlijke health dashboard",
+                    desc: "Een online omgeving die je helpt je lichaam beter te begrijpen en praktische stappen te zetten die passen bij jou. Alles wat je tijdens je traject nodig hebt, vind je overzichtelijk op één plek: van 100+ recepten en een maaltijdplanner tot cyclus-trackers, inzichten over je hormonen en darmen en praktische tools voor slaap, stress en ontspanning.",
+                  },
+                  {
+                    title: "Nourish Your Body e-book",
+                    desc: "Met 50+ hormoonproof recepten, cyclusgerichte voeding en praktische inspiratie voor maaltijden die je hormonen en darmen ondersteunen.",
+                  },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
                       <Check size={14} className="text-[#6B7B8A]" />
                     </div>
-                    <span className="text-muted-foreground">{item}</span>
+                    <div>
+                      <span className="text-foreground">{item.title}</span>
+                      {item.desc && (
+                        <p className="text-muted-foreground text-sm mt-1 leading-relaxed">{item.desc}</p>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
