@@ -30,7 +30,7 @@ const About = () => {
               <FadeIn>
                 <SectionTag text="Over mij" />
                 <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                  Danique Kwakman,<br />Orthomoleculair hormoon- en darmtherapeut
+                  Danique Kwakman,<br />Orthomoleculair hormoon- en darmtherapeut in Hoorn
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   Ik help vrouwen hun lichaam opnieuw te begrijpen en stap voor stap van <strong>overleven naar leven</strong> te gaan, met mijn unieke <strong>CIRCLE-methode</strong>. Deze methode helpt je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en leven.
