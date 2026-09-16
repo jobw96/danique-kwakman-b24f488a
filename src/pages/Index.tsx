@@ -104,7 +104,7 @@ const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
   paragraphs: ['Je ontdekt wat jouw lichaam nodig heeft en leert de signalen herkennen voordat je klachten je weer in de weg zitten.']
 }, {
   title: 'Het proces',
-  paragraphs: ['De puzzelstukjes vallen op hun plek en je begrijpt wat voeding, hormonen, darmen, stress en leefstijl met elkaar te maken hebben.']
+  paragraphs: ['De puzzelstukjes vallen op hun plek en je begrijpt wat voeding, hormonen, darmen, stress en leefstijl betekenen voor jouw klachten en wat er nodig is om deze op te lossen.']
 }, {
   title: 'Nieuw proces',
   paragraphs: ['Je weet wat voor jou werkt en hoeft niet meer achter iedere nieuwe tip, dieet of supplement aan.']
