@@ -600,7 +600,7 @@ export const Layout: React.FC<LayoutProps> = ({
           </div>
 
           <p className="text-muted-foreground max-w-xl text-sm md:text-base leading-relaxed mb-6">
-            Orthomoleculair therapeut voor vrouwen die hun lijf en gezondheid willen begrijpen. Zodat je je klachten kunt doorgronden, kunt transformeren en weer volledig in je kracht staat.
+            Orthomoleculair hormoon- en darmtherapeut voor vrouwen in Hoorn en online. Ik help bij hormonale disbalans, PCOS, PMS, PDS, darmklachten en bloedsuikerschommelingen. Zodat je begrijpt wat er in je lichaam speelt en weer grip krijgt op je gezondheid.
           </p>
 
           {/* Elke pagina is vanaf elke pagina bereikbaar: de dropdowns in de
