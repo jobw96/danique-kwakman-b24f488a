@@ -7,6 +7,7 @@ import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
 
 import { useBookingModal } from '@/components/BookingModal';
+import { SpotifyIcon } from '@/components/BrandIcons';
 import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
 
 // Navigatie-items zijn echte <a href>-links zodat crawlers ze volgen en
@@ -651,7 +652,17 @@ export const Layout: React.FC<LayoutProps> = ({
             stiffness: 400,
             damping: 25
           }}>
-              <Mail size={26} strokeWidth={1.5} />
+            <Mail size={26} strokeWidth={1.5} />
+            </m.a>
+            <m.a href="https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Luister naar de podcast Health & Hormone Secrets op Spotify" whileHover={{
+            color: "hsl(var(--foreground))",
+            y: -4
+          }} transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 25
+          }}>
+              <SpotifyIcon width={26} height={26} />
             </m.a>
           </div>
 
