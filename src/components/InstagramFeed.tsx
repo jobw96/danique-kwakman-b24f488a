@@ -87,7 +87,7 @@ export const InstagramFeed: React.FC = () => (
     </div>
 
     <div className="overflow-x-auto pb-4 -mx-6 px-6 md:mx-0 md:px-0 [scrollbar-width:thin]">
-      <div className="flex gap-5 md:gap-6 w-max mx-auto">
+      <div className="flex items-start gap-5 md:gap-6 w-max mx-auto">
         {POSTS.map((post, index) => (
           <m.div
             key={post.code}
@@ -97,16 +97,19 @@ export const InstagramFeed: React.FC = () => (
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
           >
-            <iframe
-              src={`https://www.instagram.com/${post.type}/${post.code}/embed`}
-              title={post.alt}
-              width={320}
-              height={580}
-              loading="lazy"
-              scrolling="no"
-              frameBorder={0}
-              className="w-full h-[580px]"
-            />
+            <div className="overflow-hidden" style={{ height: post.crop }}>
+              <iframe
+                src={`https://www.instagram.com/${post.type}/${post.code}/embed`}
+                title={post.alt}
+                width={320}
+                height={post.crop + 120}
+                loading="lazy"
+                scrolling="no"
+                frameBorder={0}
+                className="w-full"
+                style={{ height: post.crop + 120 }}
+              />
+            </div>
           </m.div>
         ))}
       </div>
