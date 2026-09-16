@@ -183,7 +183,7 @@ const Index = () => {
         <FadeIn>
           <SectionTag text="Specialisaties" />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Start je nieuwe way of life</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Voel je weer energiek en lekker in je vel, zonder eindeloos te zoeken naar wat je nu weer moet eten, slikken of veranderen. Samen brengen we in kaart wat er speelt en werken we stap voor stap toe naar meer energie, een rustige buik en minder hormonale klachten.
+          <p className="text-muted-foreground max-w-2xl mx-auto">Voel je weer energiek en lekker in je vel, zonder eindeloos te zoeken naar wat je nu weer moet eten of veranderen. Samen brengen we in kaart wat er speelt en werken we stap voor stap toe naar meer energie, een rustige buik en minder hormonale klachten.
           </p>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-4">Hier help ik je onder andere bij:</p>
         </FadeIn>
