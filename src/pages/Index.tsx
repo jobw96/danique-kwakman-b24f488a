@@ -220,7 +220,7 @@ const Index = () => {
       </div>
     </Section>
 
-    <Section id="werkwijze" className="bg-background relative overflow-hidden">
+    <Section id="over-mij" className="bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         <FadeIn direction="left">
           <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
