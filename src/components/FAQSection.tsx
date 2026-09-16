@@ -34,6 +34,11 @@ export const FAQ_ITEMS: FaqItem[] = [
     answer:
       "De basis van mijn aanbod vind je hier op de website. Andere programma's, gratis videotrainingen, masterclasses en trainingen deel ik niet altijd op mijn website. Wil je niets missen en op de hoogte blijven? Volg me dan op Instagram",
   },
+  {
+    question: 'Begeleid je ook mannen?',
+    answer:
+      'Ja zeker, zoals als je kan zien begeleid ik in de basis vooral vrouwen, maar ook mannen zijn welkom en kunnen ook mijn trajecten volgen',
+  },
 ];
 
 export const FAQSection: React.FC = () => {
