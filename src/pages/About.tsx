@@ -148,7 +148,7 @@ const About = () => {
                     Het vrouwenlichaam fascineerde me, maar mijn klachten zorgden ervoor dat ik er écht in wilde duiken.
                   </p>
                   <p>
-                    Ik volgde aanvullende opleidingen en scholingen en verdiepte me verder in de materie. Niet alleen om mezelf beter te begrijpen — ik wilde weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
+                    Ik volgde aanvullende opleidingen en scholingen en verdiepte me verder in de materie. Niet alleen om mezelf beter te begrijpen. Ik wilde weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
                   </p>
                   <p>
                     Mijn verpleegkundige achtergrond neem ik nog iedere dag mee: ik combineer mijn ervaring uit de reguliere zorg met mijn orthomoleculaire kennis en specialisatie in vrouwengezondheid.
