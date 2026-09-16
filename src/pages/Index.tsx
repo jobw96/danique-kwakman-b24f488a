@@ -103,7 +103,7 @@ const SectionTag = ({
 
 const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
   title: 'Hormonen en cyclus',
-  complaints: ['Veel last van PMS', 'Pijnlijke of hevige menstruaties', 'Een onregelmatige of lange cyclus', 'PCOS of klachten die daarbij passen', 'Schildklierproblemen', 'Zwanger worden of je voorbereiden op een zwangerschap', 'Klachten rondom de overgang of menopauze']
+  complaints: ['Veel last van PMS', 'Pijnlijke of hevige menstruaties', 'Een onregelmatige cyclus', 'PCOS/ PMOS', 'Schildklierproblemen', 'Zwanger worden of je voorbereiden op een zwangerschap', 'Klachten rondom de overgang of menopauze']
 }, {
   title: 'Darmen en spijsvertering',
   complaints: ['Een opgeblazen buik (na het eten)', 'Veel last van winderigheid', 'Vaak verstopt zitten of juist diarree', 'Prikkelbare darm (PDS)', 'Maagzuur of andere verteringsklachten', 'Voedselintoleranties of het vermoeden daarvan']
