@@ -243,9 +243,9 @@ const Index = () => {
             Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten.
             Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek. We brengen niet alleen je klachten in kaart, maar kijken ook naar de mogelijke samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
           </p>
-          <CustomButton variant="secondary">
-            <Link to="/over-mij" className="inline-flex items-center gap-2">Lees meer over mij <ArrowRight size={16} /></Link>
-          </CustomButton>
+          <Link to="/over-mij">
+            <CustomButton variant="secondary">Lees meer over mij</CustomButton>
+          </Link>
         </FadeIn>
       </div>
     </Section>
