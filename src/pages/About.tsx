@@ -280,9 +280,6 @@ const About = () => {
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-8">
               Daarnaast volg ik regelmatig aanvullende scholingen en verdiep ik mij in actuele wetenschappelijke literatuur. Omdat ik vind dat je als therapeut nooit bent uitgeleerd.
             </p>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-3">
-              {'\n'}
-            </p>
           </FadeIn>
 
           {/* CTA Section */}
