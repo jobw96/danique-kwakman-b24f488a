@@ -69,9 +69,6 @@ export const InstagramFeed: React.FC = () => (
       <FadeIn>
         <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Instagram</div>
         <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Volg me op Instagram</h2>
-        <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-          Tips, inzichten en een kijkje in mijn praktijk — elke week nieuwe posts over hormonen, darmen en energie.
-        </p>
       </FadeIn>
     </div>
 
