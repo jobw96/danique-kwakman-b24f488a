@@ -407,7 +407,8 @@ const About = () => {
           </FadeIn>
         </div>
       </Section>
-    </div>;
+    </div>
+  );
 };
 
 export default About;
