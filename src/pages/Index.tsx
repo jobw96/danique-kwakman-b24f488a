@@ -96,6 +96,26 @@ const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
   complaints: ['Acne die steeds terugkomt', 'Een droge of gevoelige huid', 'Eczeem of rode, geïrriteerde plekken', 'Rosacea', 'Haaruitval', 'Een onrustige huid die regelmatig opvlamt']
 }];
 
+const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
+  title: 'De kern',
+  paragraphs: ['Je krijgt eindelijk helder wat er speelt en waar je klachten vandaan komen. Waarom ben je zo moe terwijl je genoeg slaapt? Waarom is je cyclus zo onvoorspelbaar? Waarom zet je buik na het eten steeds op?']
+}, {
+  title: 'Groei',
+  paragraphs: ['Je ontdekt wat jouw lichaam nodig heeft en leert steeds beter begrijpen wat je lichaam je probeert te vertellen. Je herkent signalen eerder en merkt dat kleine aanpassingen al verschil kunnen maken.']
+}, {
+  title: 'Het proces',
+  paragraphs: ['Je gaat verbanden zien tussen je klachten, voeding, hormonen, darmen, stress, slaap en leefstijl. Ineens vallen puzzelstukjes op hun plek en begrijp je waarom je lichaam doet wat het doet.']
+}, {
+  title: 'Nieuw proces',
+  paragraphs: ['Je weet wat voor jou werkt en hoeft niet meer eindeloos nieuwe diëten, supplementen of tips van Instagram uit te proberen. Geen volgende hype, maar weten wat jíj nodig hebt.']
+}, {
+  title: 'Stap voor stap',
+  paragraphs: ['Gezonde keuzes worden steeds makkelijker. Je hoeft niet meer bij iedere maaltijd na te denken of je het \u2018goed\u2019 doet. Je weet wat bij jou past en maakt die keuzes steeds meer vanzelf.']
+}, {
+  title: 'Verandering',
+  paragraphs: ['Je voelt je weer zoals je wilt voelen. Je hoeft niet meer bang te zijn voor een etentje omdat je weet dat je buik daarna opblaast. Je kunt spontaan iets eten zonder meteen te denken: \u201cO nee, hier krijg ik straks last van.\u201d Je hebt weer energie om te sporten, af te spreken en te doen waar je zin in hebt. Je hoeft je niet meer iedere maand af te vragen wanneer je menstruatie komt of waarom je cyclus weer zo lang is.', 'Je begrijpt je lichaam, vertrouwt erop dat je weet wat je nodig hebt én weet ook na het traject wat je kunt doen als je lichaam weer signalen geeft.']
+}];
+
 const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
   {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full">
     <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
@@ -293,6 +313,39 @@ const Index = () => {
 
           </CustomButton>
         </FadeIn>
+      </div>
+    </Section>
+
+    <Section id="circle-methode">
+      <div className="text-center mb-16">
+        <FadeIn>
+          <SectionTag text="Mijn methode" />
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">De CIRCLE-methode</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Een systemische en liefdevolle structuur die jou helpt je lichaam opnieuw te begrijpen, klachten te doorgronden en weer in balans te komen. Stap voor stap, op jouw eigen tempo.
+          </p>
+          <p className="text-primary font-medium mt-6">Wat verandert er voor jou?</p>
+        </FadeIn>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+        {CIRCLE_STEPS.map((step, index) => <FadeIn key={step.title} delay={index * 0.1} className="h-full">
+          <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
+            <div className="flex items-start gap-5">
+              <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div>
+                <h3 className="font-serif text-2xl text-foreground mb-5">{step.title}</h3>
+                {step.paragraphs.map((paragraph, pIndex) => <p key={pIndex} className="text-muted-foreground text-sm leading-relaxed">{paragraph}</p>)}
+              </div>
+            </div>
+          </div>
+        </FadeIn>)}
+      </div>
+      <div className="text-center mt-12">
+        <Link to="/method">
+          <CustomButton variant="secondary">Bekijk mijn methode</CustomButton>
+        </Link>
       </div>
     </Section>
 
