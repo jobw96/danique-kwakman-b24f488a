@@ -158,6 +158,22 @@ const Index = () => {
       </div>
     </section>
 
+    <Section className="pb-0 md:pb-0">
+      <div className="text-center max-w-3xl mx-auto">
+        <FadeIn>
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground leading-snug mb-8">
+            Je voelt dat er iets niet klopt
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-5">
+            Je bent al zo vaak van huisarts naar huisarts gegaan. Je bloedwaarden zijn &ldquo;goed&rdquo;, je krijgt te horen dat het waarschijnlijk stress is of dat je er maar mee moet leren leven of je terug kan komen als je zwanger wilt worden. Maar ondertussen blijf jij zitten met een opgeblazen buik, vermoeidheid, cravings, een onregelmatige cyclus of andere vervelende klachten.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Je voelt aan alles dat dit er niet zomaar bij hoort..
+          </p>
+        </FadeIn>
+      </div>
+    </Section>
+
     <Section id="services">
       <div className="text-center mb-16">
         <FadeIn>
