@@ -228,7 +228,7 @@ const Index = () => {
           </div>
         </FadeIn>
         <FadeIn direction="right" delay={0.15}>
-          <SectionTag text="Werkwijze" />
+          <SectionTag text="Over mij" />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">Creëer je nieuwe way of life via de CIRCLE-methode.</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Ik help je je lichaam opnieuw te leren begrijpen en weer in balans te brengen. Samen bouwen we aan je nieuwe way of life, zodat je lichaam weer met je meewerkt in plaats van tegen je, en je eindelijk de energie, rust en kracht voelt waar je naar verlangt.
