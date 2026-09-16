@@ -158,6 +158,22 @@ const Index = () => {
       </div>
     </section>
 
+    <Section className="pb-0 md:pb-0">
+      <div className="text-center max-w-3xl mx-auto">
+        <FadeIn>
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground leading-snug mb-8">
+            Je voelt dat er iets niet klopt
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-5">
+            Je bent al zo vaak van huisarts naar huisarts gegaan. Je bloedwaarden zijn &ldquo;goed&rdquo;, je krijgt te horen dat het waarschijnlijk stress is of dat je er maar mee moet leren leven of je terug kan komen als je zwanger wilt worden. Maar ondertussen blijf jij zitten met een opgeblazen buik, vermoeidheid, cravings, een onregelmatige cyclus of andere vervelende klachten.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Je voelt aan alles dat dit er niet zomaar bij hoort..
+          </p>
+        </FadeIn>
+      </div>
+    </Section>
+
     <Section id="services">
       <div className="text-center mb-16">
         <FadeIn>
@@ -253,6 +269,22 @@ const Index = () => {
           <Link to="/over-mij">
             <CustomButton variant="secondary">Lees meer over mij</CustomButton>
           </Link>
+          <FadeIn delay={0.2}>
+            <div className="mt-14 max-w-xl">
+              <h2 className="font-serif text-2xl sm:text-3xl text-foreground leading-snug mb-6">
+                Je wilt je gewoon weer goed voelen
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-5">
+                Niet meer je broek losmaken na het eten omdat je buik zo opgezet is. Niet om 15.00 uur compleet instorten. Niet iedere maand denken: wanneer komt mijn menstruatie nou weer? Of steeds twijfelen of je dat etentje wel moet doen omdat je bang bent voor hoe je buik daarna voelt.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-5">
+                Je wilt wakker worden met energie, lekker kunnen eten zonder gedoe, je goed voelen in je lichaam en niet de hele dag met je gezondheid bezig zijn.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Gewoon weer kunnen sporten, werken, afspreken en genieten zonder dat je klachten steeds op de voorgrond staan.
+              </p>
+            </div>
+          </FadeIn>
         </FadeIn>
       </div>
     </Section>
