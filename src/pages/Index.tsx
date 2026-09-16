@@ -228,7 +228,7 @@ const Index = () => {
           </div>
         </FadeIn>
         <FadeIn direction="right" delay={0.15}>
-          <SectionTag text="Hi, ik ben Danique" />
+          <p className="text-sm uppercase tracking-[0.2em] text-primary mb-4">Hi, ik ben Danique</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Van 10+ jaar hormonale klachten naar een klachtenvrij lijf</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Jarenlang ging ik van huisarts naar huisarts om na de zoveelste 'leer er mee leven' de diagnose PCOS te krijgen.
@@ -240,9 +240,12 @@ const Index = () => {
             Die zoektocht vormt nu de basis van hoe ik jou begeleid.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten. Ik combineer mijn kennis uit de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en waar nodig laboratoriumonderzoek. Zo kijk ik naar het hele plaatje en onderzoeken we wat er bij jou speelt.
+            Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten.
+            Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek. We brengen niet alleen je klachten in kaart, maar kijken ook naar de mogelijke samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
           </p>
-          <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
+          <CustomButton variant="secondary">
+            <Link to="/over-mij" className="inline-flex items-center gap-2">Lees meer over mij <ArrowRight size={16} /></Link>
+          </CustomButton>
         </FadeIn>
       </div>
     </Section>
