@@ -324,7 +324,7 @@ const Index = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Een systemische en liefdevolle structuur die jou helpt je lichaam opnieuw te begrijpen, klachten te doorgronden en weer in balans te komen. Stap voor stap, op jouw eigen tempo.
           </p>
-          <p className="text-primary font-medium mt-6">Wat verandert er voor jou?</p>
+          
         </FadeIn>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
