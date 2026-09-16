@@ -57,7 +57,7 @@ const About = () => {
                 </h1>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed mb-8">
                   <p>
-                    Ik ging van een pijnlijke, onregelatige menstruatiecyclus en jarenlang zoeken naar antwoorden naar een vrouw die haar lichaam begrijpt en zich weer sterk en energiek voelt.
+                    Ik ging van een pijnlijke, onregelmatige menstruatiecyclus en jarenlang zoeken naar antwoorden naar een vrouw die haar lichaam begrijpt en zich weer sterk en energiek voelt.
                   </p>
                   <p>
                     Daarom weet ik hoe het voelt als je lichaam signalen blijft geven en je niet weet wat je ermee moet.
