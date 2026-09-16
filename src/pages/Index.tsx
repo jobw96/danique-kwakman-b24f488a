@@ -19,6 +19,11 @@ import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
 import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
+import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
+import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
+
+const EBOOK_CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
+const EBOOK_PRICE = '€39,99';
 
 const TREATMENTS = [{
   id: 'bloedsuikertraject',
@@ -261,6 +266,45 @@ const Index = () => {
       </div>
       <div className="max-w-6xl mx-auto">
         <Testimonials testimonials={TESTIMONIALS} />
+      </div>
+    </Section>
+
+    <Section className="bg-secondary/30">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <FadeIn>
+          <picture className="block">
+            <source srcSet={nourishCover.url} type="image/webp" />
+            <img
+              src={nourishCoverJpeg.url}
+              alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
+              className="w-full max-w-md mx-auto h-auto object-contain rounded-xl"
+              width={1080}
+              height={1101}
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-primary mb-4">E-book Nourish Your Body</p>
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+            Hormoonproof recepten voor je cyclus, darmen en energie
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Voedzame, cyclusgerichte recepten die je hormonen, darmen en energie ondersteunen.
+            Zonder ingewikkelde ingrediënten of eindeloos in de keuken staan. Met 50+ recepten,
+            direct te downloaden na je bestelling.
+          </p>
+          <p className="font-serif text-3xl md:text-4xl text-foreground mb-8">Nu voor {EBOOK_PRICE}</p>
+          <div className="flex flex-wrap items-center gap-4">
+            <a href={EBOOK_CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              <CustomButton>Bestel direct</CustomButton>
+            </a>
+            <Link to="/webshop">
+              <CustomButton variant="secondary">Meer info</CustomButton>
+            </Link>
+          </div>
+        </FadeIn>
       </div>
     </Section>
 
