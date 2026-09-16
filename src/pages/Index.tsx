@@ -289,7 +289,8 @@ const Index = () => {
             Gewoon weer kunnen sporten, werken, afspreken en genieten zonder dat je klachten steeds op de voorgrond staan.
           </p>
           <CustomButton variant="secondary" onClick={openModal}>
-            Yesss, ik wil aan de slag!
+            yesss, ik wil aan de slag!
+
           </CustomButton>
         </FadeIn>
       </div>
