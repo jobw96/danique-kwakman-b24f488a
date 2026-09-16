@@ -13,10 +13,7 @@ import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import heroImage from '@/assets/hero-foto.webp';
 import heroImageMobile from '@/assets/hero-foto-mobile.webp';
-import stap1Image from '@/assets/stap-1.webp';
-import stap2Image from '@/assets/stap-2.webp';
-import stap3Image from '@/assets/stap-3.webp';
-import stap4Image from '@/assets/stap-4.webp';
+import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
@@ -72,28 +69,6 @@ const FAQ: FaqItem[] = [{
 }, {
   question: 'Kan ik ook online afspreken?',
   answer: 'Zeker. Videoconsulten zijn mogelijk en net zo effectief als afspraken op de praktijk.'
-}];
-
-const STEPS = [{
-  id: 1,
-  title: "Stap 1: De kern ontdekken",
-  description: "We starten met een intake waarin we samen jouw situatie en klachten in kaart brengen. Ik luister naar je verhaal, onderzoek de oorzaak van je klachten en samen brengen we in kaart wat jij nodig hebt. Dit is jouw startpunt: helderheid over waar je nu staat en wat je wilt bereiken.",
-  image: stap1Image
-}, {
-  id: 2,
-  title: "Stap 2: Groei in kleine stappen",
-  description: "Na de intake starten we direct met de eerste concrete stappen. Tijdens de opvolgafspraken bouwen we verder voort op wat we hebben ontdekt en afgestemd op jouw situatie. We kijken naar voeding, leefstijl en hormoon- of darmfactoren die voor jou belangrijk zijn. Kleine, haalbare aanpassingen helpen je om te ervaren wat werkt en je voelt al snel de eerste successen die je vertrouwen en energie geven.",
-  image: stap2Image
-}, {
-  id: 3,
-  title: "Stap 3: Het proces verdiepen",
-  description: "We samen de diepte in: patronen, gewoonten en signalen van je lichaam worden zichtbaar. We werken cyclisch en afgestemd op jouw ritme, zodat je leert je lichaam écht te begrijpen. In de vervolgafspraken verfijnen we de strategie, zodat de veranderingen duurzaam worden en je steeds meer grip krijgt op je energie en balans.",
-  image: stap3Image
-}, {
-  id: 4,
-  title: "Stap 4: Nieuwe routines en verandering",
-  description: "Tijdens het traject bouwen we stap voor stap nieuwe routines op die natuurlijk voelen en je dagelijks ondersteunen. Je lichaam werkt met je mee, je energie wordt stabieler en je voelt je meer in balans. Zo ontwikkel je handvatten én vertrouwen om je nieuwe way of life ook op de lange termijn zelfstandig voort te zetten.",
-  image: stap4Image
 }];
 
 const SectionTag = ({
@@ -245,69 +220,27 @@ const Index = () => {
       </div>
     </Section>
 
-    <Section id="steps" className="bg-background relative overflow-hidden">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-20">
-          <FadeIn>
-            <SectionTag text="Werkwijze" />
-            <h2 className="font-serif text-4xl mb-6 text-foreground md:text-4xl">Creëer je nieuwe way of life via de CIRCLE-methode.</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Ik help je je lichaam opnieuw te leren begrijpen en weer in balans te brengen. Samen bouwen we aan je nieuwe way of life, zodat je lichaam weer met je meewerkt in plaats van tegen je, en je eindelijk de energie, rust en kracht voelt waar je naar verlangt.
-            </p>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed mt-4">
-              Liever zelf aan de slag in de keuken? Start met{' '}
-              <Link to="/webshop" className="text-primary underline underline-offset-4">
-                het e-book met 50+ hormoonproof recepten
-              </Link>.
-            </p>
-
-          </FadeIn>
-        </div>
-        <div className="relative">
-          <m.div className="hidden lg:block absolute left-1/2 top-0 w-px bg-secondary -translate-x-1/2" initial={{
-            height: 0
-          }} whileInView={{
-            height: "100%"
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 1.5,
-            ease: "easeInOut"
-          }} />
-          <div className="flex flex-col gap-24">
-            {STEPS.map((step, index) => <div key={step.id} className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-              <FadeIn direction={index % 2 === 0 ? 'left' : 'right'} className="w-full lg:w-1/2 relative">
-                <m.div initial={{
-                  scale: 0.8,
-                  opacity: 0
-                }} whileInView={{
-                  scale: 1,
-                  opacity: 1
-                }} viewport={{
-                  once: true
-                }} transition={{
-                  duration: 0.6,
-                  ease: "easeOut"
-                }} className="relative h-80 rounded-3xl overflow-hidden shadow-md group">
-                  <img loading="lazy" decoding="async" src={step.image} alt={`${step.title} - CIRCLE-methode van Danique Kwakman`} className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
-                </m.div>
-              </FadeIn>
-              <FadeIn direction={index % 2 === 0 ? 'right' : 'left'} delay={0.2} className="w-full lg:w-1/2 text-center lg:text-left">
-                <h3 className="font-serif text-2xl md:text-3xl mb-4 text-foreground">
-                  {step.title.split('&').map((part, i, arr) => <React.Fragment key={i}>
-                    {part}
-                    {i < arr.length - 1 && <span className="text-secondary">&</span>}
-                  </React.Fragment>)}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-              </FadeIn>
-            </div>)}
+    <Section id="werkwijze" className="bg-background relative overflow-hidden">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+        <FadeIn direction="left">
+          <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
+            <img loading="lazy" decoding="async" src={daniqueAbout} alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn" className="w-full h-full object-cover object-top" />
           </div>
-        </div>
-        <div className="text-center mt-16">
+        </FadeIn>
+        <FadeIn direction="right" delay={0.15}>
+          <SectionTag text="Werkwijze" />
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">Creëer je nieuwe way of life via de CIRCLE-methode.</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Ik help je je lichaam opnieuw te leren begrijpen en weer in balans te brengen. Samen bouwen we aan je nieuwe way of life, zodat je lichaam weer met je meewerkt in plaats van tegen je, en je eindelijk de energie, rust en kracht voelt waar je naar verlangt.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Liever zelf aan de slag in de keuken? Start met{' '}
+            <Link to="/webshop" className="text-primary underline underline-offset-4">
+              het e-book met 50+ hormoonproof recepten
+            </Link>.
+          </p>
           <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
-        </div>
+        </FadeIn>
       </div>
     </Section>
 
