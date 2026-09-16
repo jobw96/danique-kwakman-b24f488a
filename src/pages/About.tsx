@@ -22,7 +22,7 @@ const SAMENHANG_ITEMS = [
   'slaap en herstel',
   'stress en leefstijl',
   'beweging',
-  'en waar relevant ook naar laboratoriumonderzoek',
+  'Waar nodig ook naar laboratoriumonderzoek',
 ];
 
 const OPLEIDINGEN = [
