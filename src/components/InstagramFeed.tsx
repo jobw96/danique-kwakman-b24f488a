@@ -10,57 +10,71 @@ interface IgPost {
   code: string;
   type: 'p' | 'reel';
   alt: string;
+  /** Zichtbare hoogte in px: snijdt de like-balk en alles daaronder weg. */
+  crop: number;
 }
 
 /** Nieuwste posts van @daniquekwakman (handmatig bij te werken). */
 const POSTS: IgPost[] = [{
   code: 'DbqbBLEM_3o',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 545
 }, {
   code: 'DbhqqcZsWa8',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 545
 }, {
   code: 'DaXCjgIsR-r',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 545
 }, {
   code: 'DaFKUtgM4--',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 545
 }, {
   code: 'DdTDLhYDD6Z',
   type: 'p',
-  alt: 'Post: inmiddels heb ik al 50+ vrouwen geholpen'
+  alt: 'Post: inmiddels heb ik al 50+ vrouwen geholpen',
+  crop: 573
 }, {
   code: 'DV0aoj8jF0L',
   type: 'p',
-  alt: 'Post: "Kom maar terug als je zwanger wil worden"'
+  alt: 'Post: "Kom maar terug als je zwanger wil worden"',
+  crop: 545
 }, {
   code: 'DdWnM6jMZZ_',
   type: 'reel',
-  alt: 'Reel over PCOS-klachten'
+  alt: 'Reel over PCOS-klachten',
+  crop: 545
 }, {
   code: 'DdRZncOsLNk',
   type: 'reel',
-  alt: 'Reel: was dit echt hoe jij je zomer wilde doorbrengen?'
+  alt: 'Reel: was dit echt hoe jij je zomer wilde doorbrengen?',
+  crop: 545
 }, {
   code: 'DcsVy0HsyRk',
   type: 'reel',
-  alt: 'Reel: inzichten na 14 dagen glucosemonitoring'
+  alt: 'Reel: inzichten na 14 dagen glucosemonitoring',
+  crop: 545
 }, {
   code: 'DcYdQVNDAnI',
   type: 'p',
-  alt: 'Post: home made amandelpasta'
+  alt: 'Post: home made amandelpasta',
+  crop: 545
 }, {
   code: 'DcME2JsMSHt',
   type: 'reel',
-  alt: 'Reel: je lichaam boeit die calorieën helemaal niet'
+  alt: 'Reel: je lichaam boeit die calorieën helemaal niet',
+  crop: 545
 }, {
   code: 'DcIpvnvjClq',
   type: 'p',
-  alt: 'Post: wat je kunt doen tegen energiedips'
+  alt: 'Post: wat je kunt doen tegen energiedips',
+  crop: 542
 }];
 
 export const InstagramFeed: React.FC = () => (
