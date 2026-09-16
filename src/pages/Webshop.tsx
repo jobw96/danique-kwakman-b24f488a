@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight } from 'lucide-react';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 
@@ -47,9 +47,36 @@ const OrderButton = ({ className = '' }: { className?: string }) => (
 
 
 const features = [
-  { icon: BookOpen, title: '50+ recepten', text: 'Voedzame recepten voor elk moment van de dag.' },
-  { icon: CalendarHeart, title: 'Cyclusgerichte voeding', text: 'Eten dat aansluit bij elke fase van je cyclus.' },
-  { icon: ChefHat, title: 'Mealprep & hacks', text: 'Slim voorbereiden, ook op drukke dagen.' },
+  {
+    icon: BookOpen,
+    title: '50+ hormoonproof recepten',
+    text: 'Voedzame, hormoonproof en darmvriendelijke recepten voor elk moment van de dag, zonder ingewikkelde ingrediënten.',
+  },
+  {
+    icon: CalendarHeart,
+    title: 'Eten volgens je cyclus',
+    text: 'Praktische handvatten om cyclusgericht te eten, zodat je voeding aansluit bij elke fase van je cyclus.',
+  },
+  {
+    icon: ChefHat,
+    title: 'Mealprep- & keukenhacks',
+    text: 'Slimme hacks om voor te bereiden en sneller op de tafel te zetten, ook op drukke dagen.',
+  },
+  {
+    icon: UtensilsCrossed,
+    title: 'Tools om zelf samen te stellen',
+    text: 'Handige tools om zelf voedzame maaltijden samen te stellen, helemaal afgestemd op wat jij lekker vindt.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Voor hormonen, darmen & energie',
+    text: 'Zodat gezond eten voor je hormonen, darmen en energie makkelijker wordt, zonder uren in de keuken.',
+  },
+  {
+    icon: Tablet,
+    title: 'Direct te downloaden',
+    text: 'Na je bestelling direct in je mail, te lezen op telefoon, tablet en laptop en om te printen.',
+  },
 ];
 
 
