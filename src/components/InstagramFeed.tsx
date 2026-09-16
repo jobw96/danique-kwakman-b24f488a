@@ -14,6 +14,22 @@ interface IgPost {
 
 /** Nieuwste posts van @daniquekwakman (handmatig bij te werken). */
 const POSTS: IgPost[] = [{
+  code: 'DbqbBLEM_3o',
+  type: 'p',
+  alt: 'Post van Danique Kwakman op Instagram'
+}, {
+  code: 'DbhqqcZsWa8',
+  type: 'p',
+  alt: 'Post van Danique Kwakman op Instagram'
+}, {
+  code: 'DaXCjgIsR-r',
+  type: 'p',
+  alt: 'Post van Danique Kwakman op Instagram'
+}, {
+  code: 'DaFKUtgM4--',
+  type: 'p',
+  alt: 'Post van Danique Kwakman op Instagram'
+}, {
   code: 'DdTDLhYDD6Z',
   type: 'p',
   alt: 'Post: inmiddels heb ik al 50+ vrouwen geholpen'
