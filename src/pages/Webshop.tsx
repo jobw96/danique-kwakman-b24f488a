@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight } from 'lucide-react';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles } from 'lucide-react';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 
