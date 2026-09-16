@@ -240,8 +240,10 @@ const Index = () => {
             Die zoektocht vormt nu de basis van hoe ik jou begeleid.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten.
-            Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek. We brengen niet alleen je klachten in kaart, maar kijken ook naar de mogelijke samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
+            Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten. Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek.&nbsp;
+
+            We brengen niet alleen je klachten in kaart, maar kijken ook naar de samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
+
           </p>
           <Link to="/over-mij">
             <CustomButton variant="secondary">Lees meer over mij</CustomButton>
