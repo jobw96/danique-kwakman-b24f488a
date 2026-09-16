@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         httpEquiv: "Content-Security-Policy",
         content:
-          "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://daniquekwakman.activehosted.com; style-src 'self' 'unsafe-inline' https://daniquekwakman.activehosted.com; font-src 'self' data:; img-src 'self' data: https: blob:; connect-src 'self' https://daniquekwakman.activehosted.com https://*.supabase.co https://*.supabase.in wss://*.supabase.co; frame-src 'self' https://daniquekwakman.clientomgeving.nl https://open.spotify.com https://*.spotify.com;",
+          "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://daniquekwakman.activehosted.com https://www.instagram.com; style-src 'self' 'unsafe-inline' https://daniquekwakman.activehosted.com; font-src 'self' data:; img-src 'self' data: https: blob:; connect-src 'self' https://daniquekwakman.activehosted.com https://*.supabase.co https://*.supabase.in wss://*.supabase.co https://www.instagram.com; frame-src 'self' https://daniquekwakman.clientomgeving.nl https://open.spotify.com https://*.spotify.com https://www.instagram.com;",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Danique Kwakman" },
