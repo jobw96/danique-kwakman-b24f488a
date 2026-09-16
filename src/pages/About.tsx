@@ -90,16 +90,31 @@ const About = () => {
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">“Leer er maar mee leven.”</h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      Dat was een zin die ik niet kon loslaten toen de huisarts dat tegen mij zei. Mijn lichaam gaf jarenlang allerlei signalen: een pijnlijke en onregelmatige menstruatiecyclus, acne, moodswings, een opgeblazen buik, darmklachten en extreme vermoeidheid. Ik probeerde van alles en zocht steeds naar manieren om me beter te voelen. Maar ik begreep nog niet waarom mijn lichaam deed wat het deed. En dat maakte het lastig om er echt iets aan te veranderen.
+                      Dat was een zin die ik niet kon loslaten toen de huisarts dat tegen mij zei.
                     </p>
                     <p>
-                      In mijn twintiger jaren werden mijn klachten steeds duidelijker. Ik kwam bij verschillende zorgverleners en kreeg regelmatig te horen dat bepaalde klachten er nu eenmaal bij konden horen. Maar voor mij voelde dat niet als een oplossing. Ik wilde mijn klachten niet leren accepteren. Ik wilde begrijpen wat er aan de hand was.
+                      Mijn lichaam gaf jarenlang signalen: een pijnlijke en onregelmatige menstruatiecyclus, acne, moodswings, een opgeblazen buik, darmklachten en extreme vermoeidheid.
                     </p>
                     <p>
-                      Uiteindelijk kreeg ik na ruim 10 jaar eindelijk de diagnose PCOS. Die diagnose gaf me een verklaring voor een deel van mijn klachten. Maar het gaf me nog niet het antwoord op de vraag: wat kan ik hier zelf mee? De reguliere zorg had mij geholpen om de diagnose te krijgen, maar ik miste handvatten voor hoe ik mijn lichaam en klachten in het dagelijks leven kon ondersteunen. Juist daar begon mijn zoektocht naar het waarom pas echt.
+                      Ik probeerde van alles om me beter te voelen, maar ik begreep niet waarom mijn lichaam deed wat het deed. Dat maakte het lastig om er iets aan te veranderen.
                     </p>
                     <p>
-                      Ik wilde niet alleen weten dát ik PCOS had. Ik wilde begrijpen wat er in mijn lichaam gebeurde en welke rol voeding, leefstijl, stress, slaap en andere factoren daarin konden spelen. Ik ben me hierin steeds verder gaan verdiepen en ging mijn lichaam op een andere manier ondersteunen. De klachten waar ik jarenlang mee had geleefd, zijn inmiddels verdwenen. Ik voel me weer sterk, energiek en verbonden met mijn lichaam. En juist die persoonlijke ervaring heeft de basis gelegd voor het werk dat ik nu doe.
+                      In mijn twintiger jaren werden mijn klachten duidelijker. Bij verschillende zorgverleners kreeg ik te horen dat bepaalde klachten er nu eenmaal bij hoorden.
+                    </p>
+                    <p>
+                      Voor mij voelde dat niet als een oplossing. Ik wilde mijn klachten niet leren accepteren — ik wilde begrijpen wat er aan de hand was.
+                    </p>
+                    <p>
+                      Na ruim 10 jaar kreeg ik de diagnose PCOS. Die gaf me een verklaring voor een deel van mijn klachten, maar niet het antwoord op de vraag: wat kan ik hier zelf mee?
+                    </p>
+                    <p>
+                      De reguliere zorg hielp me aan de diagnose, maar ik miste handvatten om mijn lichaam en klachten in het dagelijks leven te ondersteunen. Daar begon mijn zoektocht naar het waarom.
+                    </p>
+                    <p>
+                      Ik wilde begrijpen wat er in mijn lichaam gebeurde en welke rol voeding, leefstijl, stress en slaap daarin spelen. Ik verdiepte me erin en ging mijn lichaam op een andere manier ondersteunen.
+                    </p>
+                    <p>
+                      De klachten waar ik jarenlang mee had geleefd, zijn verdwenen. Ik voel me weer sterk, energiek en verbonden met mijn lichaam. Die ervaring legde de basis voor het werk dat ik nu doe.
                     </p>
                   </div>
                 </div>
@@ -189,10 +204,19 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Jouw klachten staan niet op zichzelf</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Een onregelmatige cyclus staat niet los van de rest van je gezondheid. Darmklachten kunnen samengaan met veranderingen in je voeding, leefstijl en hormonale gezondheid. Vermoeidheid kan verschillende oorzaken hebben. En wanneer je al langere tijd klachten hebt, is het vaak te makkelijk om één oorzaak aan te wijzen.
+                  Een onregelmatige cyclus staat niet los van de rest van je gezondheid.
                 </p>
                 <p>
-                  Daarom kijk ik naar het hele plaatje. Mijn doel is dat jij niet alleen weet wat je moet doen, maar vooral begrijpt waarom we bepaalde keuzes maken.
+                  Darmklachten kunnen samengaan met veranderingen in je voeding, leefstijl en hormonale gezondheid. Vermoeidheid kan verschillende oorzaken hebben.
+                </p>
+                <p>
+                  Als je al langere tijd klachten hebt, is het vaak te makkelijk om één oorzaak aan te wijzen.
+                </p>
+                <p>
+                  Daarom kijk ik naar het hele plaatje.
+                </p>
+                <p>
+                  Mijn doel is dat jij niet alleen weet wat je moet doen, maar vooral begrijpt waarom we bepaalde keuzes maken.
                 </p>
               </div>
             </div>
