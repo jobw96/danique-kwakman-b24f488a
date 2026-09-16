@@ -113,7 +113,7 @@ const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
   paragraphs: ['Gezonde keuzes worden steeds makkelijker. Je hoeft niet meer bij iedere maaltijd na te denken of je het \u2018goed\u2019 doet. Je weet wat bij jou past en maakt die keuzes steeds meer vanzelf.']
 }, {
   title: 'Verandering',
-  paragraphs: ['Je voelt je weer energiek, zit lekker in je lijf en vertrouwt erop dat je weet wat je nodig hebt. Ook na het traject.']
+  paragraphs: ['Je bent niet meer bang voor een opgeblazen buik na een etentje omdat je weet dat je buik daarna opblaast en je hoeft je niet meer iedere maand af te hoe je menstruatie gaat verlopen.', 'Je begrijpt je lichaam en weet ook na het traject precies wat je moet doen.']
 }];
 
 const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
