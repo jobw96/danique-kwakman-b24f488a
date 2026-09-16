@@ -19,6 +19,11 @@ import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
 import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
+import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
+import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
+
+const EBOOK_CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
+const EBOOK_PRICE = '€39,99';
 
 const TREATMENTS = [{
   id: 'bloedsuikertraject',
