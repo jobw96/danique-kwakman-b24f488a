@@ -3,8 +3,8 @@ import { Link } from '@/lib/router-compat';
 import { m } from 'framer-motion';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
-import { Plus, Minus, Star, ArrowRight, Quote } from 'lucide-react';
-import { ServiceItem, Testimonial, FaqItem, Stat } from '@/types';
+import { ArrowRight } from 'lucide-react';
+import { Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage, StaggerContainer } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
 
@@ -40,28 +40,6 @@ const TREATMENTS = [{
   title: "1:1 Darmtraject",
   description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
   image: daniqueDarm
-}];
-
-const SERVICES: ServiceItem[] = [{
-  id: 'hormonal',
-  title: 'Hormonale Balans',
-  description: 'Je hormonen beïnvloeden letterlijk alles in je lichaam: je energie, je humeur, je slaap, je focus en zelfs je zelfvertrouwen. Wanneer ze weer in balans zijn, merk je dat je rustiger reageert, je krachtiger voelt en weer in je eigen energie staat. Het is alsof je eindelijk één voelt met je lijf en je lijf niet meer tegenwerkt. Door samen te werken met mijn aanpak ontdek je wat jouw lichaam nodig heeft om dit gevoel vast te houden, zodat je weer vrij, energiek en verbonden door je dag kunt bewegen.',
-  image: daniqueGlowup
-}, {
-  id: 'gut',
-  title: 'Darmgezondheid',
-  description: 'Darmklachten kunnen je energie, je humeur en je vertrouwen in je lijf volledig onderuit halen. Je verlangt naar: een rustige buik, geen constante spanning en weer vrij kunnen leven zonder ongemak. Ik help je stap voor stap te ontdekken wat jouw darmen écht nodig hebben, zodat je buik rustiger wordt, je energie terugkomt en je je weer volledig in je lijf voelt.',
-  image: daniqueDarm
-}, {
-  id: 'energy',
-  title: 'Energie',
-  description: 'Moe wakker worden na een hele nacht, energie dipjes, brainfog of niet doorslapen? Dit zijn signalen dat je lichaam niet in balans is. In mijn coaching kijken we samen naar wat jouw lichaam écht nodig heeft. Zo krijg je je energie terug, voel je je veerkrachtiger, kun je je dagen weer vol vertrouwen en zonder weerstand beleven. En misschien wel het allerbelangrijkste: een leven waarbij jij het leven weer fantastisch vindt, zodat je naast je werk, gezin, sociale leven en sport nog energie en plezier over hebt voor jezelf!',
-  image: daniqueWalkingBeach
-}, {
-  id: 'prevention',
-  title: 'Preventie',
-  description: 'In plaats van steeds klachten te herstellen, leer je signalen van je lichaam herkennen en ernaar handelen. Zo bouw je een duurzame basis van gezondheid en vertrouwen, zodat je nieuwe way of life stabiel blijft en je lichaam je ondersteunt in plaats van tegenwerkt.',
-  image: daniqueRelaxed
 }];
 
 const STATS: Stat[] = [{
