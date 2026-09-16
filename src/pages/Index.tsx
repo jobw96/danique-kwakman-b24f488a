@@ -334,10 +334,10 @@ const Index = () => {
               <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
                 {String(index + 1).padStart(2, '0')}
               </span>
-              <div>
-                <h3 className="font-serif text-2xl text-foreground mb-5">{step.title}</h3>
-                {step.paragraphs.map((paragraph, pIndex) => <p key={pIndex} className="text-muted-foreground text-sm leading-relaxed">{paragraph}</p>)}
-              </div>
+                <div className="space-y-3">
+                  <h3 className="font-serif text-2xl text-foreground mb-5">{step.title}</h3>
+                  {step.paragraphs.map((paragraph, pIndex) => <p key={pIndex} className="text-muted-foreground text-sm leading-relaxed">{paragraph}</p>)}
+                </div>
             </div>
           </div>
         </FadeIn>)}
