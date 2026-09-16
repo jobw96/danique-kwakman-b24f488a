@@ -254,22 +254,22 @@ const About = () => {
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
-                  <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Daarom ontwikkelde ik mijn CIRCLE-methode</h2>
+                    <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Daarom ontwikkelde ik mijn CIRCLE-methode</h2>
                   <div className="space-y-6 text-muted-foreground leading-relaxed mb-8">
                     <p>
-                      Door mijn eigen zoektocht én door de vrouwen die ik begeleid, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen.
+                      Door mijn eigen zoektocht én door de vrouwen die ik begeleid, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen. Daarom ontwikkelde ik mijn eigen CIRCLE-methode.
                     </p>
                     <p>
-                      Daarom ontwikkelde ik mijn eigen CIRCLE-methode.
+                      {'\n'}
                     </p>
                     <p>
-                      Een persoonlijke manier van werken waarin we jouw klachten, leefstijl en gezondheid in 6 stappen, stap voor stap in kaart brengen. We kijken naar de verbanden, bepalen waar op dit moment de meeste winst te behalen is en maken daar een concreet plan van.
+                      Een gerichte en systemische aanpak waarbij we werken aan wat jouw lichaam nodig heeft. Een manier van werken waarin we jouw klachten, leefstijl en gezondheid in 6 stappen, stap voor stap in kaart brengen. We kijken naar de verbanden, bepalen waar op dit moment de meeste winst te behalen is en maken daar een concreet plan van.
                     </p>
                     <p>
-                      Vervolgens kijken we wat het effect is, wat er verandert en waar we moeten bijsturen.
+                      {'\n'}
                     </p>
                     <p>
-                      Een gerichte en systemische aanpak waarbij we werken aan wat jouw lichaam nodig heeft.
+                      {'\n'}
                     </p>
                   </div>
                   <a href="/method">
@@ -383,10 +383,10 @@ const About = () => {
               ))}
             </div>
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-8">
-              Daarnaast volg ik regelmatig aanvullende scholingen en verdiep ik mij in actuele wetenschappelijke literatuur.
+              Daarnaast volg ik regelmatig aanvullende scholingen en verdiep ik mij in actuele wetenschappelijke literatuur. Omdat ik vind dat je als therapeut nooit bent uitgeleerd.
             </p>
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-3">
-              Omdat ik vind dat je als therapeut nooit bent uitgeleerd.
+              {'\n'}
             </p>
           </FadeIn>
 
