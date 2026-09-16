@@ -37,7 +37,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Begeleid je ook mannen?',
     answer:
-      'Ja zeker, zoals als je kan zien begeleid ik in de basis vooral vrouwen, maar ook mannen zijn welkom en kunnen ook mijn trajecten volgen',
+      'Ja zeker! Zoals je kunt zien begeleid ik in de basis vooral vrouwen, maar ook mannen zijn welkom en kunnen mijn trajecten volgen.',
   },
 ];
 
