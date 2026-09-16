@@ -167,13 +167,13 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Niet zomaar iets proberen, maar begrijpen wat er speelt</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                 <p>
-                  Er is ontzettend veel informatie over hormonen en gezondheid. Je hoort dat je dit supplement moet nemen, die voeding moet schrappen of dat een protocol dé oplossing is.
+                  Er is ontzettend veel informatie over hormonen en gezondheid. Je hoort dat je dit supplement moet nemen, die voeding moet schrappen of dat een protocol dé oplossing is. Maar zo werk ik niet!
                 </p>
                 <p>
-                  Maar zo werk ik niet. Ik vind het belangrijk dat we weten waarom we iets doen.
+                  Ik vind het belangrijk dat we weten waarom we iets doen. Daarom gebruik ik wetenschappelijke onderzoeken, actuele kennis en mijn ervaring als basis voor mijn keuzes.
                 </p>
                 <p>
-                  Daarom gebruik ik wetenschappelijke onderzoeken, actuele kennis en mijn ervaring als basis voor mijn keuzes.
+                  {"\n"}
                 </p>
                 <p>
                   Vervolgens vertaal ik die kennis naar jouw persoonlijke situatie. We kijken bijvoorbeeld naar de samenhang tussen:
@@ -189,10 +189,10 @@ const About = () => {
               </ul>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Niet ieder onderzoek is voor iedere vrouw nodig en niet iedere klacht vraagt om hetzelfde antwoord.
+                  Niet ieder onderzoek is voor iedere vrouw nodig en niet iedere klacht vraagt om hetzelfde antwoord. Daarom begint mijn begeleiding met begrijpen wat er bij jou speelt.
                 </p>
                 <p>
-                  Daarom begint mijn begeleiding met begrijpen wat er bij jou speelt.
+                  {"\n"}
                 </p>
               </div>
             </div>
