@@ -267,10 +267,10 @@ const About = () => {
                   In een wereld waarin vrouwen soms leren om klachten te accepteren of te onderdrukken, wil ik het anders doen.
                 </p>
                 <p>
-                  Ik wil dat je begrijpt waarom je bepaalde klachten ervaart en wat jij daar zelf mee kunt.
+                  Ik wil dat je begrijpt waarom je bepaalde klachten ervaart en wat jij daar zelf mee kunt. Ik geloof niet in één perfecte manier van gezond leven. Wat voor de ene vrouw werkt, hoeft niet automatisch bij jou te passen.
                 </p>
                 <p>
-                  Ik geloof niet in één perfecte manier van gezond leven. Wat voor de ene vrouw werkt, hoeft niet automatisch bij jou te passen.
+                  {"\n"}
                 </p>
                 <p>
                   Mijn missie? Gezondheid begrijpelijk, menselijk en haalbaar maken. Niet perfect, maar passend.
