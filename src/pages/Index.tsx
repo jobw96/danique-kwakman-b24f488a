@@ -206,7 +206,8 @@ const Index = () => {
             Balans in hormonen, darmen <span className="text-secondary">&</span> energie via mijn CIRCLE-methode
           </h1>
           <p className="text-white/90 text-base md:text-lg mb-8 leading-relaxed max-w-2xl">
-            Persoonlijke begeleiding voor vrouwen die weer rust, energie en vertrouwen in hun lijf willen voelen op weg naar hun nieuwe way of life.
+             Van een opgeblazen buik, vermoeidheid en een onregelmatige cyclus tot cravings, PMS of het gevoel dat je lichaam niet meer meewerkt.
+             Met mijn CIRCLE-methode kijken we naar het geheel en werken we stap voor stap aan de oorzaken achter jouw klachten.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
             <CustomButton variant="secondary" onClick={openModal} className="w-56 max-w-full">Gratis kennismaking</CustomButton>
