@@ -352,12 +352,7 @@ const Index = () => {
 
     <Section className="bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
-        <FadeIn direction="left">
-          <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
-            <img loading="lazy" decoding="async" src={daniqueMatchCall} alt="Danique Kwakman tijdens een online kennismakingsgesprek" className="w-full h-full object-cover object-top" />
-          </div>
-        </FadeIn>
-        <FadeIn direction="right" delay={0.15}>
+        <FadeIn direction="left" delay={0.15}>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Laten we kennismaken</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Misschien weet je al precies waar je hulp bij wilt of misschien heb je juist nog geen idee welk traject bij je past. Allebei is helemaal oké.
