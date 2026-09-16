@@ -204,19 +204,19 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Jouw klachten staan niet op zichzelf</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Een onregelmatige cyclus staat niet los van de rest van je gezondheid.
+                  Een onregelmatige cyclus staat niet los van de rest van je gezondheid. Darmklachten kunnen samengaan met veranderingen in je voeding, leefstijl en hormonale gezondheid. Vermoeidheid kan verschillende oorzaken hebben. Als je al langere tijd klachten hebt, is het vaak te makkelijk om één oorzaak aan te wijzen.
                 </p>
                 <p>
-                  Darmklachten kunnen samengaan met veranderingen in je voeding, leefstijl en hormonale gezondheid. Vermoeidheid kan verschillende oorzaken hebben.
+                  {"\n"}
                 </p>
                 <p>
-                  Als je al langere tijd klachten hebt, is het vaak te makkelijk om één oorzaak aan te wijzen.
+                  {"\n"}
                 </p>
                 <p>
-                  Daarom kijk ik naar het hele plaatje.
+                  Daarom kijk ik naar het hele plaatje en mijn doel is dat jij niet alleen weet wat je moet doen, maar vooral begrijpt waarom we bepaalde keuzes maken
                 </p>
                 <p>
-                  Mijn doel is dat jij niet alleen weet wat je moet doen, maar vooral begrijpt waarom we bepaalde keuzes maken.
+                  .
                 </p>
               </div>
             </div>
