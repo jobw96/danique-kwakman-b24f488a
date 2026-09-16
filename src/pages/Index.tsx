@@ -126,58 +126,40 @@ const SectionTag = ({
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>;
 
-const ServiceAccordion = () => {
-  const [activeId, setActiveId] = useState<string>(SERVICES[0].id);
-  const activeService = SERVICES.find(s => s.id === activeId) || SERVICES[0];
-  return <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-    {/* Vaste hoogte en vaste plek in de grid, dus `layout` had hier niets te
-        animeren; weggelaten zodat LazyMotion met domAnimation toekan. */}
-    <m.div className="h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-md" transition={{
-      duration: 0.5,
-      ease: "easeInOut"
-    }}>
-      <ParallaxImage key={activeService.id} src={activeService.image} alt={`${activeService.title} - orthomoleculaire therapie bij Danique Kwakman`} className="w-full h-full object-cover" />
-    </m.div>
-    <div className="flex flex-col justify-center">
-      {SERVICES.map(service => <div key={service.id} className="border-b border-secondary/30 last:border-none">
-        <m.button onClick={() => setActiveId(service.id)} className="w-full py-6 flex justify-between items-center text-left group focus:outline-hidden" whileHover={{
-          x: 4
-        }} transition={{
-          type: "spring",
-          stiffness: 300,
-          damping: 25
-        }}>
-          <m.span className="font-serif text-2xl md:text-3xl" animate={{
-            color: activeId === service.id ? 'hsl(var(--foreground))' : 'hsl(var(--muted-foreground))'
-          }} whileHover={{
-            color: 'hsl(var(--foreground))'
-          }} transition={{
-            duration: 0.3
-          }}>
-            {service.title}
-          </m.span>
-          <m.div animate={{
-            rotate: activeId === service.id ? 0 : 0
-          }} transition={{
-            duration: 0.3
-          }}>
-            {activeId === service.id ? <Minus className="w-5 h-5 text-foreground" /> : <Plus className="w-5 h-5 text-secondary" />}
-          </m.div>
-        </m.button>
-        <m.div initial={false} animate={{
-          height: activeId === service.id ? "auto" : 0,
-          opacity: activeId === service.id ? 1 : 0,
-          marginBottom: activeId === service.id ? 24 : 0
-        }} transition={{
-          duration: 0.5,
-          ease: [0.4, 0, 0.2, 1]
-        }} className="overflow-hidden">
-          <p className="text-muted-foreground leading-relaxed pr-8">{service.description}</p>
-        </m.div>
-      </div>)}
+const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
+  title: 'Hormonen en cyclus',
+  complaints: ['PMS en menstruatieklachten', 'PCOS of een onregelmatige cyclus', 'Overgangsklachten', 'Stemmingswisselingen', 'Vermoeidheid die niet wegtrekt']
+}, {
+  title: 'Darmen en spijsvertering',
+  complaints: ['Een opgeblazen buik en winderigheid', 'Prikkelbare darm (PDS)', 'Obstipatie of diarree', 'Maagzuur en verteringsklachten', 'Voedselovergevoeligheden']
+}, {
+  title: 'Energie en bloedsuiker',
+  complaints: ['Energiedipjes over de dag', 'Moe wakker worden', 'Cravings en zoete trek', 'Brainfog en weinig focus', 'Slecht doorslapen']
+}, {
+  title: 'Huidproblemen',
+  complaints: ['Acne', 'Eczeem en droge huid', 'Rosacea', 'Haaruitval', 'Rode en geïrriteerde huid']
+}];
+
+const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+  {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full">
+    <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
+      <div className="flex items-start gap-5">
+        <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <div>
+          <h3 className="font-serif text-2xl text-foreground mb-5">{block.title}</h3>
+          <ul className="space-y-2.5">
+            {block.complaints.map(complaint => <li key={complaint} className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+              <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-secondary shrink-0" aria-hidden="true" />
+              {complaint}
+            </li>)}
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>;
-};
+  </FadeIn>)}
+</div>;
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
