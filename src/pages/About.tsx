@@ -57,13 +57,19 @@ const About = () => {
                 </h1>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed mb-8">
                   <p>
-                    Ik ging van een pijnlijke, onregelmatige menstruatiecyclus en jarenlang zoeken naar antwoorden naar een vrouw die haar lichaam begrijpt en zich weer sterk en energiek voelt. En juist daarom weet ik hoe het voelt als je lichaam signalen blijft geven, maar je niet weet wat je ermee moet.
+                    Ik ging van een pijnlijke, onregelatige menstruatiecyclus en jarenlang zoeken naar antwoorden naar een vrouw die haar lichaam begrijpt en zich weer sterk en energiek voelt.
                   </p>
                   <p>
-                    Nu help ik andere vrouwen om die signalen wél te leren begrijpen. Met een persoonlijke en wetenschappelijk onderbouwde aanpak, waarbij we niet zomaar wat proberen, maar gericht onderzoeken wat er bij jou speelt. Geen standaard protocol en losse gezondheidsadviezen, maar een aanpak waarbij we kijken naar de samenhang tussen jouw klachten, hormonen, darmen, voeding, leefstijl en wat er verder in jouw situatie speelt.
+                    Daarom weet ik hoe het voelt als je lichaam signalen blijft geven en je niet weet wat je ermee moet.
                   </p>
                   <p>
-                    Het is mijn missie om gezondheid weer begrijpelijk, menselijk en haalbaar maken. Zodat je niet eindeloos blijft zoeken naar losse oplossingen, maar weet waar je kunt beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven.
+                    Nu help ik andere vrouwen om die signalen wél te leren begrijpen. Met een persoonlijke en wetenschappelijk onderbouwde aanpak, waarbij we niet zomaar wat proberen, maar gericht onderzoeken wat er bij jou speelt.
+                  </p>
+                  <p>
+                    Geen standaard protocol of losse gezondheidsadviezen, maar een aanpak die kijkt naar de samenhang tussen jouw klachten, hormonen, darmen, voeding en leefstijl.
+                  </p>
+                  <p>
+                    Mijn missie: gezondheid begrijpelijk, menselijk en haalbaar maken. Zodat je weet waar je kunt beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven.
                   </p>
                 </div>
                 <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
@@ -118,13 +124,22 @@ const About = () => {
                 <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Van verpleegkundige naar orthomoleculair hormoon- en darmtherapeut</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Op dat moment werkte ik al als verpleegkundige. Ik begeleidde mensen in kwetsbare periodes van hun leven en had een stevige basis in de reguliere zorg. Maar tegelijkertijd ontdekte ik tijdens mijn eigen zoektocht hoeveel kennis er nog te leren was over voeding, leefstijl, hormonen, de vrouwelijke cyclus en darmgezondheid. Dat vond ik fascinerend. Het vrouwenlichaam heeft me altijd geïnteresseerd, maar mijn eigen klachten zorgden ervoor dat ik er écht in wilde duiken.
+                    Op dat moment werkte ik al als verpleegkundige. Ik begeleidde mensen in kwetsbare periodes van hun leven en had een stevige basis in de reguliere zorg.
                   </p>
                   <p>
-                    Ik volgde allerlei aanvullende opleidingen en scholingen en verdiepte me steeds verder in de materie. Niet alleen om mezelf beter te begrijpen. Ik wilde weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
+                    Tijdens mijn zoektocht ontdekte ik hoeveel kennis er nog te leren viel over voeding, leefstijl, hormonen, de vrouwelijke cyclus en darmgezondheid.
                   </p>
                   <p>
-                    Mijn verpleegkundige achtergrond neem ik daar nog iedere dag in mee. Ik combineer mijn ervaring uit de reguliere zorg met mijn orthomoleculaire kennis en mijn specialisatie in vrouwengezondheid. Vanuit mijn praktijk in Hoorn én online begeleid ik vrouwen met hormonale en darmklachten die hun lichaam beter willen begrijpen en gericht aan hun gezondheid willen werken.
+                    Het vrouwenlichaam fascineerde me, maar mijn klachten zorgden ervoor dat ik er écht in wilde duiken.
+                  </p>
+                  <p>
+                    Ik volgde aanvullende opleidingen en scholingen en verdiepte me verder in de materie. Niet alleen om mezelf beter te begrijpen — ik wilde weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
+                  </p>
+                  <p>
+                    Mijn verpleegkundige achtergrond neem ik nog iedere dag mee: ik combineer mijn ervaring uit de reguliere zorg met mijn orthomoleculaire kennis en specialisatie in vrouwengezondheid.
+                  </p>
+                  <p>
+                    Vanuit mijn praktijk in Hoorn én online begeleid ik vrouwen met hormonale en darmklachten die hun lichaam beter willen begrijpen en gericht aan hun gezondheid willen werken.
                   </p>
                 </div>
               </FadeIn>
@@ -137,10 +152,16 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Niet zomaar iets proberen, maar begrijpen wat er speelt</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                 <p>
-                  Er is tegenwoordig ontzettend veel informatie over hormonen en gezondheid. Je hoort dat je dit supplement moet nemen, dat je bepaalde voeding moet schrappen of dat een bepaald protocol dé oplossing is voor je klachten. Maar zo werk ik niet. Ik vind het belangrijk dat we weten waarom we iets doen.
+                  Er is ontzettend veel informatie over hormonen en gezondheid. Je hoort dat je dit supplement moet nemen, die voeding moet schrappen of dat een protocol dé oplossing is.
                 </p>
                 <p>
-                  Daarom gebruik ik wetenschappelijke onderzoeken, actuele kennis en mijn professionele ervaring als basis voor mijn keuzes. Vervolgens vertaal ik die kennis naar jouw persoonlijke situatie. We kijken bijvoorbeeld naar de samenhang tussen:
+                  Maar zo werk ik niet. Ik vind het belangrijk dat we weten waarom we iets doen.
+                </p>
+                <p>
+                  Daarom gebruik ik wetenschappelijke onderzoeken, actuele kennis en mijn ervaring als basis voor mijn keuzes.
+                </p>
+                <p>
+                  Vervolgens vertaal ik die kennis naar jouw persoonlijke situatie. We kijken bijvoorbeeld naar de samenhang tussen:
                 </p>
               </div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 mb-8">
@@ -153,7 +174,10 @@ const About = () => {
               </ul>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Niet ieder onderzoek is voor iedere vrouw nodig en niet iedere klacht vraagt om hetzelfde antwoord. Juist daarom begint mijn begeleiding met begrijpen wat er bij jou speelt.
+                  Niet ieder onderzoek is voor iedere vrouw nodig en niet iedere klacht vraagt om hetzelfde antwoord.
+                </p>
+                <p>
+                  Daarom begint mijn begeleiding met begrijpen wat er bij jou speelt.
                 </p>
               </div>
             </div>
