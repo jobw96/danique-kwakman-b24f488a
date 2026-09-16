@@ -17,7 +17,7 @@ import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
-import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
+import daniqueMatchCall from '@/assets/danique-match-call.webp';
 import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
@@ -349,6 +349,29 @@ const Index = () => {
     </Section>
 
     <InstagramFeed />
+
+    <Section className="bg-background relative overflow-hidden">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+        <FadeIn direction="left">
+          <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
+            <img loading="lazy" decoding="async" src={daniqueMatchCall} alt="Danique Kwakman tijdens een online kennismakingsgesprek" className="w-full h-full object-cover object-top" />
+          </div>
+        </FadeIn>
+        <FadeIn direction="right" delay={0.15}>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Laten we kennismaken</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Misschien weet je al precies waar je hulp bij wilt of misschien heb je juist nog geen idee welk traject bij je past. Allebei is helemaal oké.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Tijdens de kennismaking kun je vertellen waar je tegenaan loopt en al je vragen stellen. Ik luister naar jouw verhaal, denk met je mee en samen bespreken we welk traject het beste aansluit bij jouw situatie.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Zo weet je na dit gesprek waar je aan toe bent en kijken we samen of er een match is.
+          </p>
+          <CustomButton variant="secondary" onClick={openModal}>Vrijblijvend kennismaken</CustomButton>
+        </FadeIn>
+      </div>
+    </Section>
   </article>
   </>;
 };
