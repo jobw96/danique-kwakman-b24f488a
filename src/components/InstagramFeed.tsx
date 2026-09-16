@@ -10,57 +10,71 @@ interface IgPost {
   code: string;
   type: 'p' | 'reel';
   alt: string;
+  /** Zichtbare hoogte in px op desktop: snijdt de like-balk en alles daaronder weg. Op mobiel 25px minder. */
+  crop: number;
 }
 
 /** Nieuwste posts van @daniquekwakman (handmatig bij te werken). */
 const POSTS: IgPost[] = [{
   code: 'DbqbBLEM_3o',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 499
 }, {
   code: 'DbhqqcZsWa8',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 499
 }, {
   code: 'DaXCjgIsR-r',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 499
 }, {
   code: 'DaFKUtgM4--',
   type: 'p',
-  alt: 'Post van Danique Kwakman op Instagram'
+  alt: 'Post van Danique Kwakman op Instagram',
+  crop: 499
 }, {
   code: 'DdTDLhYDD6Z',
   type: 'p',
-  alt: 'Post: inmiddels heb ik al 50+ vrouwen geholpen'
+  alt: 'Post: inmiddels heb ik al 50+ vrouwen geholpen',
+  crop: 528
 }, {
   code: 'DV0aoj8jF0L',
   type: 'p',
-  alt: 'Post: "Kom maar terug als je zwanger wil worden"'
+  alt: 'Post: "Kom maar terug als je zwanger wil worden"',
+  crop: 499
 }, {
   code: 'DdWnM6jMZZ_',
   type: 'reel',
-  alt: 'Reel over PCOS-klachten'
+  alt: 'Reel over PCOS-klachten',
+  crop: 499
 }, {
   code: 'DdRZncOsLNk',
   type: 'reel',
-  alt: 'Reel: was dit echt hoe jij je zomer wilde doorbrengen?'
+  alt: 'Reel: was dit echt hoe jij je zomer wilde doorbrengen?',
+  crop: 499
 }, {
   code: 'DcsVy0HsyRk',
   type: 'reel',
-  alt: 'Reel: inzichten na 14 dagen glucosemonitoring'
+  alt: 'Reel: inzichten na 14 dagen glucosemonitoring',
+  crop: 499
 }, {
   code: 'DcYdQVNDAnI',
   type: 'p',
-  alt: 'Post: home made amandelpasta'
+  alt: 'Post: home made amandelpasta',
+  crop: 499
 }, {
   code: 'DcME2JsMSHt',
   type: 'reel',
-  alt: 'Reel: je lichaam boeit die calorieën helemaal niet'
+  alt: 'Reel: je lichaam boeit die calorieën helemaal niet',
+  crop: 499
 }, {
   code: 'DcIpvnvjClq',
   type: 'p',
-  alt: 'Post: wat je kunt doen tegen energiedips'
+  alt: 'Post: wat je kunt doen tegen energiedips',
+  crop: 498
 }];
 
 export const InstagramFeed: React.FC = () => (
@@ -73,7 +87,7 @@ export const InstagramFeed: React.FC = () => (
     </div>
 
     <div className="overflow-x-auto pb-4 -mx-6 px-6 md:mx-0 md:px-0 [scrollbar-width:thin]">
-      <div className="flex gap-5 md:gap-6 w-max mx-auto">
+      <div className="flex items-start gap-5 md:gap-6 w-max mx-auto">
         {POSTS.map((post, index) => (
           <m.div
             key={post.code}
@@ -83,16 +97,22 @@ export const InstagramFeed: React.FC = () => (
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
           >
-            <iframe
-              src={`https://www.instagram.com/${post.type}/${post.code}/embed`}
-              title={post.alt}
-              width={320}
-              height={580}
-              loading="lazy"
-              scrolling="no"
-              frameBorder={0}
-              className="w-full h-[580px]"
-            />
+            <div
+              className="overflow-hidden h-[var(--crop-m)] md:h-[var(--crop)]"
+              style={{ '--crop': `${post.crop}px`, '--crop-m': `${post.crop - 25}px` } as React.CSSProperties}
+            >
+              <iframe
+                src={`https://www.instagram.com/${post.type}/${post.code}/embed`}
+                title={post.alt}
+                width={320}
+                height={post.crop + 120}
+                loading="lazy"
+                scrolling="no"
+                frameBorder={0}
+                className="w-full"
+                style={{ height: post.crop + 120 }}
+              />
+            </div>
           </m.div>
         ))}
       </div>
