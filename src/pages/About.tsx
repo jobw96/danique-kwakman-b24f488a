@@ -206,10 +206,16 @@ const About = () => {
                     <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Daarom ontwikkelde ik mijn CIRCLE-methode</h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                     <p>
-                      Door mijn eigen zoektocht én door de vrouwen die ik begeleid, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen. Daarom ontwikkelde ik mijn eigen CIRCLE-methode.
+                      Door mijn zoektocht én door de vrouwen die ik begeleid, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen.
                     </p>
                     <p>
-                      Een gerichte en systemische aanpak waarbij we werken aan wat jouw lichaam nodig heeft. Een manier van werken waarin we jouw klachten, leefstijl en gezondheid in 6 stappen, stap voor stap in kaart brengen. We kijken naar de verbanden, bepalen waar op dit moment de meeste winst te behalen is en maken daar een concreet plan van.
+                      Daarom ontwikkelde ik mijn CIRCLE-methode.
+                    </p>
+                    <p>
+                      Een gerichte aanpak waarbij we werken aan wat jouw lichaam nodig heeft.
+                    </p>
+                    <p>
+                      In 6 stappen brengen we jouw klachten, leefstijl en gezondheid in kaart. We kijken naar de verbanden, bepalen waar de meeste winst zit en maken een concreet plan.
                     </p>
                   </div>
                   <a href="/method">
@@ -231,10 +237,19 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Waar ik in geloof</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Ik geloof dat gezondheid niet begint bij nóg meer controle, regels of lijstjes, maar bij begrijpen wat jouw lichaam je vertelt. In een wereld waarin het makkelijk is om eindeloos te zoeken naar antwoorden en waarin vrouwen soms leren om klachten maar te accepteren of te onderdrukken, wil ik het anders doen. Ik wil dat je begrijpt waarom je bepaalde klachten ervaart, welke factoren daarin een rol kunnen spelen en wat jij daar zelf mee kunt.
+                  Ik geloof dat gezondheid niet begint bij nóg meer controle, regels of lijstjes, maar bij begrijpen wat jouw lichaam je vertelt.
                 </p>
                 <p>
-                  Daarbij geloof ik niet in één perfecte manier van gezond leven. Wat voor de ene vrouw werkt, hoeft niet automatisch bij jou te passen. Mijn missie? Gezondheid weer begrijpelijk, menselijk en haalbaar maken. Zodat je niet eindeloos blijft zoeken naar losse oplossingen, maar weet waar je kunt beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven. Niet perfect, maar passend.
+                  In een wereld waarin vrouwen soms leren om klachten te accepteren of te onderdrukken, wil ik het anders doen.
+                </p>
+                <p>
+                  Ik wil dat je begrijpt waarom je bepaalde klachten ervaart en wat jij daar zelf mee kunt.
+                </p>
+                <p>
+                  Ik geloof niet in één perfecte manier van gezond leven. Wat voor de ene vrouw werkt, hoeft niet automatisch bij jou te passen.
+                </p>
+                <p>
+                  Mijn missie? Gezondheid begrijpelijk, menselijk en haalbaar maken. Niet perfect, maar passend.
                 </p>
               </div>
             </div>
@@ -246,10 +261,19 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Van mijn eigen zoektocht naar mijn eigen praktijk in Hoorn</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Jaren geleden had ik nooit gedacht dat mijn zoektocht naar antwoorden uiteindelijk zou leiden tot mijn eigen praktijk. Maar juist doordat ik mijn klachten serieus ben gaan nemen, ben ik mijn lichaam steeds beter gaan begrijpen. Ik leerde dat gezondheid niet draait om alles perfect doen. Het gaat erom dat je begrijpt wat jouw lichaam nodig heeft en leert herkennen welke keuzes voor jou werken.
+                  Jaren geleden had ik nooit gedacht dat mijn zoektocht zou leiden tot mijn eigen praktijk.
                 </p>
                 <p>
-                  Die kennis heeft mijn eigen manier van leven veranderd en inmiddels help ik daar dagelijks andere vrouwen mee in mijn mooie praktijk in Hoorn en online. Vrouwen die niet langer genoegen willen nemen met “leer er maar mee leven”.
+                  Doordat ik mijn klachten serieus nam, leerde ik mijn lichaam steeds beter begrijpen.
+                </p>
+                <p>
+                  Gezondheid draait niet om alles perfect doen. Het gaat erom te begrijpen wat jouw lichaam nodig heeft en te herkennen welke keuzes voor jou werken.
+                </p>
+                <p>
+                  Die kennis veranderde mijn manier van leven. Inmiddels help ik dagelijks andere vrouwen mee, in mijn praktijk in Hoorn en online.
+                </p>
+                <p>
+                  Vrouwen die niet langer genoegen willen nemen met “leer er maar mee leven”.
                 </p>
               </div>
             </div>
@@ -284,7 +308,7 @@ const About = () => {
               <SectionTag text="Achtergrond" />
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Opleidingen &amp; expertise</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Mijn kennis blijft zich ontwikkelen. Ik vind het belangrijk om mezelf te blijven bijscholen en mijn werkwijze steeds verder te verdiepen.
+                Mijn kennis blijft zich ontwikkelen: ik blijf mezelf bijscholen en verdiep mijn werkwijze steeds verder.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -302,7 +326,7 @@ const About = () => {
               ))}
             </div>
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-8">
-              Daarnaast volg ik regelmatig aanvullende scholingen en verdiep ik mij in actuele wetenschappelijke literatuur. Omdat ik vind dat je als therapeut nooit bent uitgeleerd.
+              Daarnaast volg ik regelmatig scholingen en verdiep ik mij in actuele wetenschappelijke literatuur. Als therapeut ben je nooit uitgeleerd.
             </p>
           </FadeIn>
 
@@ -311,7 +335,7 @@ const About = () => {
             <div className="text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wil je kennismaken?</h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Wil je ontdekken hoe ik jou kan helpen en hoe mijn begeleiding eruitziet? <strong>Plan een gratis kennismaking</strong> of <strong>volg me op Instagram</strong> voor inspiratie, tips en praktische adviezen.
+                Wil je ontdekken hoe ik jou kan helpen? <strong>Plan een gratis kennismaking</strong> of <strong>volg me op Instagram</strong> voor inspiratie en praktische adviezen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
