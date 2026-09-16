@@ -111,10 +111,10 @@ const About = () => {
                       De reguliere zorg hielp me aan de diagnose, maar ik miste handvatten om mijn lichaam en klachten in het dagelijks leven te ondersteunen. Daar begon mijn zoektocht naar het waarom.
                     </p>
                     <p>
-                      Ik wilde begrijpen wat er in mijn lichaam gebeurde en welke rol voeding, leefstijl, stress en slaap daarin spelen. Ik verdiepte me erin en ging mijn lichaam op een andere manier ondersteunen.
+                      Ik wilde begrijpen wat er in mijn lichaam gebeurde en welke rol voeding, leefstijl, stress en slaap daarin spelen. Ik verdiepte me erin en ging mijn lichaam op een andere manier ondersteunen. De klachten waar ik jarenlang mee had geleefd, zijn verdwenen. Ik voel me weer sterk, energiek en verbonden met mijn lichaam. Die ervaring legde de basis voor het werk dat ik nu doe.
                     </p>
                     <p>
-                      De klachten waar ik jarenlang mee had geleefd, zijn verdwenen. Ik voel me weer sterk, energiek en verbonden met mijn lichaam. Die ervaring legde de basis voor het werk dat ik nu doe.
+                      {"\n"}
                     </p>
                   </div>
                 </div>
