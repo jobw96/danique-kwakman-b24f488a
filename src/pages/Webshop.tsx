@@ -138,15 +138,17 @@ const Webshop = () => {
 
                 <div>
                   <span className="inline-block rounded-full bg-primary/15 text-primary text-xs font-medium px-3 py-1 mb-4">
-                    E-book
+                    Nourish Your Body
                   </span>
                   <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground mb-4 leading-tight">
-                    Hormoonproof recepten voor je cyclus, darmen en energie
+                    E-BOOK NOURISH YOUR BODY
                   </h2>
 
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    Voedzame, cyclusgerichte recepten die je hormonen, darmen en energie ondersteunen.
-                    Zonder ingewikkelde ingrediënten of eindeloos in de keuken staan.
+                    Je krijgt niet alleen 50+ hormoonproof en darmvriendelijke recepten, maar ook praktische
+                    handvatten om te eten volgens je cyclus, mealprep- en keukenhacks en tools om zelf voedzame
+                    maaltijden samen te stellen. Zodat gezond eten voor je hormonen, darmen en energie makkelijker
+                    wordt, zonder ingewikkelde ingrediënten of uren in de keuken.
                   </p>
                   <ul className="space-y-3 mb-8">
                     {['50+ recepten', 'Cyclusgerichte voeding', 'Hormoon- & darmproof', 'Direct te downloaden'].map((h) => (
