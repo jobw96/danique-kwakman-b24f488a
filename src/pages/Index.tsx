@@ -285,9 +285,12 @@ const Index = () => {
           <p className="text-muted-foreground leading-relaxed mb-5">
             Je wilt wakker worden met energie, lekker kunnen eten zonder gedoe, je goed voelen in je lichaam en niet de hele dag met je gezondheid bezig zijn.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground leading-relaxed mb-8">
             Gewoon weer kunnen sporten, werken, afspreken en genieten zonder dat je klachten steeds op de voorgrond staan.
           </p>
+          <CustomButton variant="secondary" onClick={openModal}>
+            Yesss, ik wil aan de slag!
+          </CustomButton>
         </FadeIn>
       </div>
     </Section>
