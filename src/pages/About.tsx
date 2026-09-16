@@ -227,19 +227,19 @@ const About = () => {
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
-                    <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Daarom ontwikkelde ik mijn CIRCLE-methode</h2>
+                    <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Mijn CIRCLE-methode</h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                     <p>
-                      Door mijn zoektocht én door de vrouwen die ik begeleid, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen.
+                      Door mijn zoektocht én door de vrouwen die ik de afgelopen jaren heb mogen begeleiden, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen. Daarom ontwikkelde ik mijn CIRCLE-methode.&nbsp;
                     </p>
                     <p>
-                      Daarom ontwikkelde ik mijn CIRCLE-methode.
+                      {"\n"}
                     </p>
                     <p>
-                      Een gerichte aanpak waarbij we werken aan wat jouw lichaam nodig heeft.
+                      {"\n"}
                     </p>
                     <p>
-                      In 6 stappen brengen we jouw klachten, leefstijl en gezondheid in kaart. We kijken naar de verbanden, bepalen waar de meeste winst zit en maken een concreet plan.
+                      In 6 stappen brengen we jouw klachten, leefstijl en gezondheid in kaart. We kijken naar de verbanden, bepalen waar de winst zit en maken een concreet plan om jouw klachten te laten verdwijnen.
                     </p>
                   </div>
                   <a href="/method">
