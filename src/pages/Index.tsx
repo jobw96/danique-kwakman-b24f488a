@@ -3,9 +3,9 @@ import { Link } from '@/lib/router-compat';
 import { m } from 'framer-motion';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
-import { Plus, Minus, Star, ArrowRight, Quote } from 'lucide-react';
-import { ServiceItem, Testimonial, FaqItem, Stat } from '@/types';
-import { FadeIn, ParallaxImage, StaggerContainer } from '@/components/Animations';
+import { ArrowRight } from 'lucide-react';
+import { Testimonial, FaqItem, Stat } from '@/types';
+import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
 
 import { useBookingModal } from '@/components/BookingModal';
@@ -16,10 +16,7 @@ import stap1Image from '@/assets/stap-1.webp';
 import stap2Image from '@/assets/stap-2.webp';
 import stap3Image from '@/assets/stap-3.webp';
 import stap4Image from '@/assets/stap-4.webp';
-import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
-import daniqueWalking from '@/assets/danique-walking.webp';
-import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
 import daniqueKleedZand from '@/assets/danique-kleed-zand.webp';
@@ -40,28 +37,6 @@ const TREATMENTS = [{
   title: "1:1 Darmtraject",
   description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
   image: daniqueDarm
-}];
-
-const SERVICES: ServiceItem[] = [{
-  id: 'hormonal',
-  title: 'Hormonale Balans',
-  description: 'Je hormonen beïnvloeden letterlijk alles in je lichaam: je energie, je humeur, je slaap, je focus en zelfs je zelfvertrouwen. Wanneer ze weer in balans zijn, merk je dat je rustiger reageert, je krachtiger voelt en weer in je eigen energie staat. Het is alsof je eindelijk één voelt met je lijf en je lijf niet meer tegenwerkt. Door samen te werken met mijn aanpak ontdek je wat jouw lichaam nodig heeft om dit gevoel vast te houden, zodat je weer vrij, energiek en verbonden door je dag kunt bewegen.',
-  image: daniqueGlowup
-}, {
-  id: 'gut',
-  title: 'Darmgezondheid',
-  description: 'Darmklachten kunnen je energie, je humeur en je vertrouwen in je lijf volledig onderuit halen. Je verlangt naar: een rustige buik, geen constante spanning en weer vrij kunnen leven zonder ongemak. Ik help je stap voor stap te ontdekken wat jouw darmen écht nodig hebben, zodat je buik rustiger wordt, je energie terugkomt en je je weer volledig in je lijf voelt.',
-  image: daniqueDarm
-}, {
-  id: 'energy',
-  title: 'Energie',
-  description: 'Moe wakker worden na een hele nacht, energie dipjes, brainfog of niet doorslapen? Dit zijn signalen dat je lichaam niet in balans is. In mijn coaching kijken we samen naar wat jouw lichaam écht nodig heeft. Zo krijg je je energie terug, voel je je veerkrachtiger, kun je je dagen weer vol vertrouwen en zonder weerstand beleven. En misschien wel het allerbelangrijkste: een leven waarbij jij het leven weer fantastisch vindt, zodat je naast je werk, gezin, sociale leven en sport nog energie en plezier over hebt voor jezelf!',
-  image: daniqueWalkingBeach
-}, {
-  id: 'prevention',
-  title: 'Preventie',
-  description: 'In plaats van steeds klachten te herstellen, leer je signalen van je lichaam herkennen en ernaar handelen. Zo bouw je een duurzame basis van gezondheid en vertrouwen, zodat je nieuwe way of life stabiel blijft en je lichaam je ondersteunt in plaats van tegenwerkt.',
-  image: daniqueRelaxed
 }];
 
 const STATS: Stat[] = [{
@@ -126,58 +101,40 @@ const SectionTag = ({
   text: string;
 }) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>;
 
-const ServiceAccordion = () => {
-  const [activeId, setActiveId] = useState<string>(SERVICES[0].id);
-  const activeService = SERVICES.find(s => s.id === activeId) || SERVICES[0];
-  return <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-    {/* Vaste hoogte en vaste plek in de grid, dus `layout` had hier niets te
-        animeren; weggelaten zodat LazyMotion met domAnimation toekan. */}
-    <m.div className="h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-md" transition={{
-      duration: 0.5,
-      ease: "easeInOut"
-    }}>
-      <ParallaxImage key={activeService.id} src={activeService.image} alt={`${activeService.title} - orthomoleculaire therapie bij Danique Kwakman`} className="w-full h-full object-cover" />
-    </m.div>
-    <div className="flex flex-col justify-center">
-      {SERVICES.map(service => <div key={service.id} className="border-b border-secondary/30 last:border-none">
-        <m.button onClick={() => setActiveId(service.id)} className="w-full py-6 flex justify-between items-center text-left group focus:outline-hidden" whileHover={{
-          x: 4
-        }} transition={{
-          type: "spring",
-          stiffness: 300,
-          damping: 25
-        }}>
-          <m.span className="font-serif text-2xl md:text-3xl" animate={{
-            color: activeId === service.id ? 'hsl(var(--foreground))' : 'hsl(var(--muted-foreground))'
-          }} whileHover={{
-            color: 'hsl(var(--foreground))'
-          }} transition={{
-            duration: 0.3
-          }}>
-            {service.title}
-          </m.span>
-          <m.div animate={{
-            rotate: activeId === service.id ? 0 : 0
-          }} transition={{
-            duration: 0.3
-          }}>
-            {activeId === service.id ? <Minus className="w-5 h-5 text-foreground" /> : <Plus className="w-5 h-5 text-secondary" />}
-          </m.div>
-        </m.button>
-        <m.div initial={false} animate={{
-          height: activeId === service.id ? "auto" : 0,
-          opacity: activeId === service.id ? 1 : 0,
-          marginBottom: activeId === service.id ? 24 : 0
-        }} transition={{
-          duration: 0.5,
-          ease: [0.4, 0, 0.2, 1]
-        }} className="overflow-hidden">
-          <p className="text-muted-foreground leading-relaxed pr-8">{service.description}</p>
-        </m.div>
-      </div>)}
+const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
+  title: 'Hormonen en cyclus',
+  complaints: ['PMS en menstruatieklachten', 'PCOS of een onregelmatige cyclus', 'Overgangsklachten', 'Stemmingswisselingen', 'Vermoeidheid die niet wegtrekt']
+}, {
+  title: 'Darmen en spijsvertering',
+  complaints: ['Een opgeblazen buik en winderigheid', 'Prikkelbare darm (PDS)', 'Obstipatie of diarree', 'Maagzuur en verteringsklachten', 'Voedselovergevoeligheden']
+}, {
+  title: 'Energie en bloedsuiker',
+  complaints: ['Energiedipjes over de dag', 'Moe wakker worden', 'Cravings en zoete trek', 'Brainfog en weinig focus', 'Slecht doorslapen']
+}, {
+  title: 'Huidproblemen',
+  complaints: ['Acne', 'Eczeem en droge huid', 'Rosacea', 'Haaruitval', 'Rode en geïrriteerde huid']
+}];
+
+const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+  {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full">
+    <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
+      <div className="flex items-start gap-5">
+        <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <div>
+          <h3 className="font-serif text-2xl text-foreground mb-5">{block.title}</h3>
+          <ul className="space-y-2.5">
+            {block.complaints.map(complaint => <li key={complaint} className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+              <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-secondary shrink-0" aria-hidden="true" />
+              {complaint}
+            </li>)}
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>;
-};
+  </FadeIn>)}
+</div>;
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -230,7 +187,7 @@ const Index = () => {
           </p>
         </FadeIn>
       </div>
-      <ServiceAccordion />
+      <ComplaintBlocks />
     </Section>
 
     <Section id="behandelingen" className="bg-background">
