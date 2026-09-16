@@ -365,6 +365,11 @@ const Index = () => {
           </p>
           <CustomButton variant="secondary" onClick={openModal}>Vrijblijvend kennismaken</CustomButton>
         </FadeIn>
+        <FadeIn direction="right">
+          <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
+            <img loading="lazy" decoding="async" src={daniqueMatchCall} alt="Danique Kwakman tijdens een online kennismakingsgesprek" className="w-full h-full object-cover object-top" />
+          </div>
+        </FadeIn>
       </div>
     </Section>
   </article>
