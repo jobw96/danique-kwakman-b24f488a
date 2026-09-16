@@ -142,10 +142,10 @@ const About = () => {
                     Op dat moment werkte ik al als verpleegkundige. Ik begeleidde mensen in kwetsbare periodes van hun leven en had een stevige basis in de reguliere zorg.
                   </p>
                   <p>
-                    Tijdens mijn zoektocht ontdekte ik hoeveel kennis er nog te leren viel over voeding, leefstijl, hormonen, de vrouwelijke cyclus en darmgezondheid.
+                    Tijdens mijn zoektocht ontdekte ik hoeveel kennis er nog te leren viel over voeding, leefstijl, hormonen, de vrouwelijke cyclus en darmgezondheid. Het vrouwenlichaam fascineerde me, maar mijn klachten zorgden ervoor dat ik er écht in wilde duiken.
                   </p>
                   <p>
-                    Het vrouwenlichaam fascineerde me, maar mijn klachten zorgden ervoor dat ik er écht in wilde duiken.
+                    {"\n"}
                   </p>
                   <p>
                     Ik volgde aanvullende opleidingen en scholingen en verdiepte me verder in de materie. Niet alleen om mezelf beter te begrijpen. Ik wilde weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
