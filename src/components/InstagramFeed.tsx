@@ -10,7 +10,7 @@ interface IgPost {
   code: string;
   type: 'p' | 'reel';
   alt: string;
-  /** Zichtbare hoogte in px: snijdt de like-balk en alles daaronder weg. */
+  /** Zichtbare hoogte in px op desktop: snijdt de like-balk en alles daaronder weg. Op mobiel 25px minder. */
   crop: number;
 }
 
@@ -19,62 +19,62 @@ const POSTS: IgPost[] = [{
   code: 'DbqbBLEM_3o',
   type: 'p',
   alt: 'Post van Danique Kwakman op Instagram',
-  crop: 545
+  crop: 499
 }, {
   code: 'DbhqqcZsWa8',
   type: 'p',
   alt: 'Post van Danique Kwakman op Instagram',
-  crop: 545
+  crop: 499
 }, {
   code: 'DaXCjgIsR-r',
   type: 'p',
   alt: 'Post van Danique Kwakman op Instagram',
-  crop: 545
+  crop: 499
 }, {
   code: 'DaFKUtgM4--',
   type: 'p',
   alt: 'Post van Danique Kwakman op Instagram',
-  crop: 545
+  crop: 499
 }, {
   code: 'DdTDLhYDD6Z',
   type: 'p',
   alt: 'Post: inmiddels heb ik al 50+ vrouwen geholpen',
-  crop: 573
+  crop: 528
 }, {
   code: 'DV0aoj8jF0L',
   type: 'p',
   alt: 'Post: "Kom maar terug als je zwanger wil worden"',
-  crop: 545
+  crop: 499
 }, {
   code: 'DdWnM6jMZZ_',
   type: 'reel',
   alt: 'Reel over PCOS-klachten',
-  crop: 545
+  crop: 499
 }, {
   code: 'DdRZncOsLNk',
   type: 'reel',
   alt: 'Reel: was dit echt hoe jij je zomer wilde doorbrengen?',
-  crop: 545
+  crop: 499
 }, {
   code: 'DcsVy0HsyRk',
   type: 'reel',
   alt: 'Reel: inzichten na 14 dagen glucosemonitoring',
-  crop: 545
+  crop: 499
 }, {
   code: 'DcYdQVNDAnI',
   type: 'p',
   alt: 'Post: home made amandelpasta',
-  crop: 545
+  crop: 499
 }, {
   code: 'DcME2JsMSHt',
   type: 'reel',
   alt: 'Reel: je lichaam boeit die calorieën helemaal niet',
-  crop: 545
+  crop: 499
 }, {
   code: 'DcIpvnvjClq',
   type: 'p',
   alt: 'Post: wat je kunt doen tegen energiedips',
-  crop: 542
+  crop: 498
 }];
 
 export const InstagramFeed: React.FC = () => (
@@ -97,7 +97,10 @@ export const InstagramFeed: React.FC = () => (
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
           >
-            <div className="overflow-hidden" style={{ height: post.crop }}>
+            <div
+              className="overflow-hidden h-[var(--crop-m)] md:h-[var(--crop)]"
+              style={{ '--crop': `${post.crop}px`, '--crop-m': `${post.crop - 25}px` } as React.CSSProperties}
+            >
               <iframe
                 src={`https://www.instagram.com/${post.type}/${post.code}/embed`}
                 title={post.alt}
