@@ -269,6 +269,22 @@ const Index = () => {
           <Link to="/over-mij">
             <CustomButton variant="secondary">Lees meer over mij</CustomButton>
           </Link>
+          <FadeIn delay={0.2}>
+            <div className="mt-14 max-w-xl">
+              <h2 className="font-serif text-2xl sm:text-3xl text-foreground leading-snug mb-6">
+                Je wilt je gewoon weer goed voelen
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-5">
+                Niet meer je broek losmaken na het eten omdat je buik zo opgezet is. Niet om 15.00 uur compleet instorten. Niet iedere maand denken: wanneer komt mijn menstruatie nou weer? Of steeds twijfelen of je dat etentje wel moet doen omdat je bang bent voor hoe je buik daarna voelt.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-5">
+                Je wilt wakker worden met energie, lekker kunnen eten zonder gedoe, je goed voelen in je lichaam en niet de hele dag met je gezondheid bezig zijn.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Gewoon weer kunnen sporten, werken, afspreken en genieten zonder dat je klachten steeds op de voorgrond staan.
+              </p>
+            </div>
+          </FadeIn>
         </FadeIn>
       </div>
     </Section>
