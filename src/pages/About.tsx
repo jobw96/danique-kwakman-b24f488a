@@ -60,7 +60,7 @@ const About = () => {
                     Ik ging van een pijnlijke, onregelmatige menstruatiecyclus en jarenlang zoeken naar antwoorden naar een vrouw die haar lichaam begrijpt en zich weer sterk en energiek voelt.
                   </p>
                   <p>
-                    Daarom weet ik hoe het voelt als je lichaam signalen blijft geven en je niet weet wat je ermee moet.
+                    Daarom weet ik hoe het voelt als je lichaam klachten blijft geven en je niet weet wat je ermee moet.
                   </p>
                   <p>
                     Nu help ik andere vrouwen om die signalen wél te leren begrijpen. Met een persoonlijke en wetenschappelijk onderbouwde aanpak, waarbij we niet zomaar wat proberen, maar gericht onderzoeken wat er bij jou speelt.
@@ -69,7 +69,7 @@ const About = () => {
                     Geen standaard protocol of losse gezondheidsadviezen, maar een aanpak die kijkt naar de samenhang tussen jouw klachten, hormonen, darmen, voeding en leefstijl.
                   </p>
                   <p>
-                    Mijn missie: gezondheid begrijpelijk, menselijk en haalbaar maken. Zodat je weet waar je kunt beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven.
+                    Mijn missie: gezondheid begrijpelijk, menselijk en haalbaar maken. Zodat je weet waar je mag beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven.
                   </p>
                 </div>
                 <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
@@ -93,16 +93,16 @@ const About = () => {
                       Dat was een zin die ik niet kon loslaten toen de huisarts dat tegen mij zei.
                     </p>
                     <p>
-                      Mijn lichaam gaf jarenlang signalen: een pijnlijke en onregelmatige menstruatiecyclus, acne, moodswings, een opgeblazen buik, darmklachten en extreme vermoeidheid.
+                      Mijn lichaam gaf jarenlang signalen: een pijnlijke en onregelmatige menstruatiecyclus, acne, moodswings, een opgeblazen buik, darmklachten en extreme vermoeidheid. Ik probeerde van alles om me beter te voelen, maar ik begreep niet waarom mijn lichaam deed wat het deed. Dat maakte het lastig om er iets aan te veranderen.
                     </p>
                     <p>
-                      Ik probeerde van alles om me beter te voelen, maar ik begreep niet waarom mijn lichaam deed wat het deed. Dat maakte het lastig om er iets aan te veranderen.
+                      {"\n"}
                     </p>
                     <p>
-                      In mijn twintiger jaren werden mijn klachten duidelijker. Bij verschillende zorgverleners kreeg ik te horen dat bepaalde klachten er nu eenmaal bij hoorden.
+                      In mijn twintiger jaren werden mijn klachten duidelijker. Bij verschillende zorgverleners kreeg ik te horen dat bepaalde klachten er nu eenmaal bij hoorden. Voor mij voelde dat niet als een oplossing. Ik wilde mijn klachten niet leren accepteren. Ik wilde begrijpen wat er aan de hand was.
                     </p>
                     <p>
-                      Voor mij voelde dat niet als een oplossing. Ik wilde mijn klachten niet leren accepteren — ik wilde begrijpen wat er aan de hand was.
+                      {"\n"}
                     </p>
                     <p>
                       Na ruim 10 jaar kreeg ik de diagnose PCOS. Die gaf me een verklaring voor een deel van mijn klachten, maar niet het antwoord op de vraag: wat kan ik hier zelf mee?
