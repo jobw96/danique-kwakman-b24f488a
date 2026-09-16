@@ -291,9 +291,10 @@ const Index = () => {
             Hormoonproof recepten voor je cyclus, darmen en energie
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Voedzame, cyclusgerichte recepten die je hormonen, darmen en energie ondersteunen.
-            Zonder ingewikkelde ingrediënten of eindeloos in de keuken staan. Met 50+ recepten,
-            direct te downloaden na je bestelling.
+            Je krijgt niet alleen&nbsp;50+ hormoonproof en darmvriendelijke recepten, maar ook&nbsp;
+            praktische handvatten om&nbsp;te eten volgens je cyclus, mealprep- en keukenhacks en tools&nbsp;
+            om zelf voedzame maaltijden samen te stellen. Zodat gezond eten voor je&nbsp;
+            hormonen, darmen en energie&nbsp;makkelijker wordt, zonder ingewikkelde ingrediënten of uren in de keuken.
           </p>
           <p className="font-serif text-3xl md:text-4xl text-foreground mb-8">Nu voor {EBOOK_PRICE}</p>
           <div className="flex flex-wrap items-center gap-4">
