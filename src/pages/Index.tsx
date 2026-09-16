@@ -103,16 +103,16 @@ const SectionTag = ({
 
 const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
   title: 'Hormonen en cyclus',
-  complaints: ['PMS en menstruatieklachten', 'PCOS of een onregelmatige cyclus', 'Overgangsklachten', 'Stemmingswisselingen', 'Vermoeidheid die niet wegtrekt']
+  complaints: ['Veel last van PMS', 'Pijnlijke of hevige menstruaties', 'Een onregelmatige of lange cyclus', 'PCOS of klachten die daarbij passen', 'Schildklierproblemen', 'Zwanger worden of je voorbereiden op een zwangerschap', 'Klachten rondom de overgang of menopauze']
 }, {
   title: 'Darmen en spijsvertering',
-  complaints: ['Een opgeblazen buik en winderigheid', 'Prikkelbare darm (PDS)', 'Obstipatie of diarree', 'Maagzuur en verteringsklachten', 'Voedselovergevoeligheden']
+  complaints: ['Een opgeblazen buik (na het eten)', 'Veel last van winderigheid', 'Vaak verstopt zitten of juist diarree', 'Prikkelbare darm (PDS)', 'Maagzuur of andere verteringsklachten', 'Voedselintoleranties of het vermoeden daarvan']
 }, {
   title: 'Energie en bloedsuiker',
-  complaints: ['Energiedipjes over de dag', 'Moe wakker worden', 'Cravings en zoete trek', 'Brainfog en weinig focus', 'Slecht doorslapen']
+  complaints: ['Moe wakker worden, ook na genoeg slaap', 'Energiedips gedurende de dag', 'Cravings of veel trek in zoet', 'Brain fog en moeite met focussen', 'Moeite met inslapen of doorslapen', 'Schommelingen in je bloedsuikerspiegel']
 }, {
-  title: 'Huidproblemen',
-  complaints: ['Acne', 'Eczeem en droge huid', 'Rosacea', 'Haaruitval', 'Rode en geïrriteerde huid']
+  title: 'Huid en haar',
+  complaints: ['Acne die steeds terugkomt', 'Een droge of gevoelige huid', 'Eczeem of rode, geïrriteerde plekken', 'Rosacea', 'Haaruitval', 'Een onrustige huid die regelmatig opvlamt']
 }];
 
 const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
