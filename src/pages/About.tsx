@@ -285,16 +285,16 @@ const About = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Van mijn eigen zoektocht naar mijn eigen praktijk in Hoorn</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Jaren geleden had ik nooit gedacht dat mijn zoektocht zou leiden tot mijn eigen praktijk.
+                  Jaren geleden had ik nooit gedacht dat mijn zoektocht zou leiden tot mijn eigen praktijk. Doordat ik mijn klachten serieus nam, leerde ik mijn lichaam steeds beter begrijpen.
                 </p>
                 <p>
-                  Doordat ik mijn klachten serieus nam, leerde ik mijn lichaam steeds beter begrijpen.
+                  {"\n"}
                 </p>
                 <p>
                   Gezondheid draait niet om alles perfect doen. Het gaat erom te begrijpen wat jouw lichaam nodig heeft en te herkennen welke keuzes voor jou werken.
                 </p>
                 <p>
-                  Die kennis veranderde mijn manier van leven. Inmiddels help ik dagelijks andere vrouwen mee, in mijn praktijk in Hoorn en online.
+                  Die kennis veranderde mijn manier van leven en inmiddels help ik dagelijks andere vrouwen mee, in mijn praktijk in Hoorn en online.
                 </p>
                 <p>
                   Vrouwen die niet langer genoegen willen nemen met “leer er maar mee leven”.
