@@ -220,7 +220,7 @@ const Index = () => {
       </div>
     </Section>
 
-    <Section id="werkwijze" className="bg-background relative overflow-hidden">
+    <Section id="over-mij" className="bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         <FadeIn direction="left">
           <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
@@ -228,7 +228,7 @@ const Index = () => {
           </div>
         </FadeIn>
         <FadeIn direction="right" delay={0.15}>
-          <SectionTag text="Werkwijze" />
+          <SectionTag text="Over mij" />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">Creëer je nieuwe way of life via de CIRCLE-methode.</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Ik help je je lichaam opnieuw te leren begrijpen en weer in balans te brengen. Samen bouwen we aan je nieuwe way of life, zodat je lichaam weer met je meewerkt in plaats van tegen je, en je eindelijk de energie, rust en kracht voelt waar je naar verlangt.
