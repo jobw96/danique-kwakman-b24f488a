@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import { Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
+import { InstagramFeed } from '@/components/InstagramFeed';
 
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
