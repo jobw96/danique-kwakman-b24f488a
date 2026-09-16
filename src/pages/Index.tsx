@@ -98,22 +98,22 @@ const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
 
 const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
   title: 'De kern',
-  paragraphs: ['Je krijgt eindelijk helder wat er speelt en waar je klachten vandaan komen. Waarom ben je zo moe terwijl je genoeg slaapt? Waarom is je cyclus zo onvoorspelbaar? Waarom zet je buik na het eten steeds op?']
+  paragraphs: ['Van blijven zoeken naar eindelijk begrijpen wat er met je lichaam speelt.']
 }, {
   title: 'Groei',
-  paragraphs: ['Je ontdekt wat jouw lichaam nodig heeft en leert steeds beter begrijpen wat je lichaam je probeert te vertellen. Je herkent signalen eerder en merkt dat kleine aanpassingen al verschil kunnen maken.']
+  paragraphs: ['Je ontdekt wat jouw lichaam nodig heeft en leert de signalen herkennen voordat je klachten je weer in de weg zitten.']
 }, {
   title: 'Het proces',
-  paragraphs: ['Je gaat verbanden zien tussen je klachten, voeding, hormonen, darmen, stress, slaap en leefstijl. Ineens vallen puzzelstukjes op hun plek en begrijp je waarom je lichaam doet wat het doet.']
+  paragraphs: ['De puzzelstukjes vallen op hun plek en je begrijpt wat voeding, hormonen, darmen, stress en leefstijl met elkaar te maken hebben.']
 }, {
   title: 'Nieuw proces',
-  paragraphs: ['Je weet wat voor jou werkt en hoeft niet meer eindeloos nieuwe diëten, supplementen of tips van Instagram uit te proberen. Geen volgende hype, maar weten wat jíj nodig hebt.']
+  paragraphs: ['Je weet wat voor jou werkt en hoeft niet meer achter iedere nieuwe tip, dieet of supplement aan.']
 }, {
   title: 'Stap voor stap',
-  paragraphs: ['Gezonde keuzes worden steeds makkelijker. Je hoeft niet meer bij iedere maaltijd na te denken of je het \u2018goed\u2019 doet. Je weet wat bij jou past en maakt die keuzes steeds meer vanzelf.']
+  paragraphs: ['Gezonde keuzes worden vanzelfsprekend, zonder dat je bij iedere maaltijd hoeft te twijfelen of je het wel goed doet.']
 }, {
   title: 'Verandering',
-  paragraphs: ['Je bent niet meer bang voor een opgeblazen buik na een etentje omdat je weet dat je buik daarna opblaast en je hoeft je niet meer iedere maand af te hoe je menstruatie gaat verlopen.', 'Je begrijpt je lichaam en weet ook na het traject precies wat je moet doen.']
+  paragraphs: ['Je kunt weer uit eten, sporten, afspreken en leven zonder steeds rekening te houden met je buik, energie of cyclus en je weet ook na het traject wat je nodig hebt als je lichaam weer signalen geeft.']
 }];
 
 const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
