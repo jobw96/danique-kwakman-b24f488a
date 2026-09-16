@@ -293,6 +293,7 @@ const Index = () => {
     </Section>
 
     <Section>
+      <div className="text-center mb-16">
         <FadeIn>
           <SectionTag text="Ervaringen" />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Wat mijn cliënten zeggen</h2>
