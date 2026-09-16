@@ -323,7 +323,7 @@ const Index = () => {
       </div>
     </Section>
 
-
+    <InstagramFeed />
   </article>
   </>;
 };
