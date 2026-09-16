@@ -180,21 +180,12 @@ const About = () => {
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
                     <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Daarom ontwikkelde ik mijn CIRCLE-methode</h2>
-                  <div className="space-y-6 text-muted-foreground leading-relaxed mb-8">
+                  <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                     <p>
                       Door mijn eigen zoektocht én door de vrouwen die ik begeleid, merkte ik dat er behoefte is aan iets anders dan nóg een standaard lijstje met leefstijladviezen. Daarom ontwikkelde ik mijn eigen CIRCLE-methode.
                     </p>
                     <p>
-                      {'\n'}
-                    </p>
-                    <p>
                       Een gerichte en systemische aanpak waarbij we werken aan wat jouw lichaam nodig heeft. Een manier van werken waarin we jouw klachten, leefstijl en gezondheid in 6 stappen, stap voor stap in kaart brengen. We kijken naar de verbanden, bepalen waar op dit moment de meeste winst te behalen is en maken daar een concreet plan van.
-                    </p>
-                    <p>
-                      {'\n'}
-                    </p>
-                    <p>
-                      {'\n'}
                     </p>
                   </div>
                   <a href="/method">
@@ -214,24 +205,12 @@ const About = () => {
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Waar ik in geloof</h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Ik geloof dat gezondheid niet begint bij nóg meer controle, regels of lijstjes, maar bij begrijpen wat jouw lichaam je vertelt.
+                  Ik geloof dat gezondheid niet begint bij nóg meer controle, regels of lijstjes, maar bij begrijpen wat jouw lichaam je vertelt. In een wereld waarin het makkelijk is om eindeloos te zoeken naar antwoorden en waarin vrouwen soms leren om klachten maar te accepteren of te onderdrukken, wil ik het anders doen. Ik wil dat je begrijpt waarom je bepaalde klachten ervaart, welke factoren daarin een rol kunnen spelen en wat jij daar zelf mee kunt.
                 </p>
                 <p>
-                  In een wereld waarin het makkelijk is om eindeloos te zoeken naar antwoorden en waarin vrouwen soms leren om klachten maar te accepteren of te onderdrukken, wil ik het anders doen.
-                </p>
-                <p>
-                  Ik wil dat je begrijpt waarom je bepaalde klachten ervaart, welke factoren daarin een rol kunnen spelen en wat jij daar zelf mee kunt.
-                </p>
-                <p>
-                  Daarbij geloof ik niet in één perfecte manier van gezond leven. Wat voor de ene vrouw werkt, hoeft niet automatisch bij jou te passen.
-                </p>
-                <p>
-                  Mijn missie? Gezondheid weer begrijpelijk, menselijk en haalbaar maken. Zodat je niet eindeloos blijft zoeken naar losse oplossingen, maar weet waar je kunt beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven.
-                </p>
-                <p>
-                  Niet perfect, maar passend.
+                  Daarbij geloof ik niet in één perfecte manier van gezond leven. Wat voor de ene vrouw werkt, hoeft niet automatisch bij jou te passen. Mijn missie? Gezondheid weer begrijpelijk, menselijk en haalbaar maken. Zodat je niet eindeloos blijft zoeken naar losse oplossingen, maar weet waar je kunt beginnen, begrijpt waarom je bepaalde keuzes maakt en een manier vindt die past bij jouw lichaam én jouw leven. Niet perfect, maar passend.
                 </p>
               </div>
             </div>
@@ -241,21 +220,12 @@ const About = () => {
           <FadeIn>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Van mijn eigen zoektocht naar mijn eigen praktijk in Hoorn</h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Jaren geleden had ik nooit gedacht dat mijn zoektocht naar antwoorden uiteindelijk zou leiden tot mijn eigen praktijk.
+                  Jaren geleden had ik nooit gedacht dat mijn zoektocht naar antwoorden uiteindelijk zou leiden tot mijn eigen praktijk. Maar juist doordat ik mijn klachten serieus ben gaan nemen, ben ik mijn lichaam steeds beter gaan begrijpen. Ik leerde dat gezondheid niet draait om alles perfect doen. Het gaat erom dat je begrijpt wat jouw lichaam nodig heeft en leert herkennen welke keuzes voor jou werken.
                 </p>
                 <p>
-                  Maar juist doordat ik mijn klachten serieus ben gaan nemen, ben ik mijn lichaam steeds beter gaan begrijpen.
-                </p>
-                <p>
-                  Ik leerde dat gezondheid niet draait om alles perfect doen. Het gaat erom dat je begrijpt wat jouw lichaam nodig heeft en leert herkennen welke keuzes voor jou werken.
-                </p>
-                <p>
-                  Die kennis heeft mijn eigen manier van leven veranderd en inmiddels help ik daar dagelijks andere vrouwen mee in mijn mooie praktijk in Hoorn en online.
-                </p>
-                <p>
-                  Vrouwen die niet langer genoegen willen nemen met “leer er maar mee leven”.
+                  Die kennis heeft mijn eigen manier van leven veranderd en inmiddels help ik daar dagelijks andere vrouwen mee in mijn mooie praktijk in Hoorn en online. Vrouwen die niet langer genoegen willen nemen met “leer er maar mee leven”.
                 </p>
               </div>
             </div>
