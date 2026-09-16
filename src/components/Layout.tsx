@@ -55,15 +55,6 @@ const footerNav = [{
     name: 'E-book: zoete cravings',
     href: '/e-book-recepten-snacks'
   }, {
-    name: 'E-book: weekmenu',
-    href: '/e-book-weekmenu'
-  }, {
-    name: 'E-book: boodschappenlijst',
-    href: '/e-book-boodschappenlijst'
-  }, {
-    name: 'E-book: mealprep snacks',
-    href: '/e-book-mealprep-snacks'
-  }, {
     name: 'Nieuwsbrief',
     href: '/nieuwsbrief'
   }]
