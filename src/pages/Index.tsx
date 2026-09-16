@@ -228,16 +228,19 @@ const Index = () => {
           </div>
         </FadeIn>
         <FadeIn direction="right" delay={0.15}>
-          <SectionTag text="Over mij" />
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">Creëer je nieuwe way of life via de CIRCLE-methode.</h2>
+          <SectionTag text="Hi, ik ben Danique" />
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Van 10+ jaar hormonale klachten naar een klachtenvrij lijf</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Ik help je je lichaam opnieuw te leren begrijpen en weer in balans te brengen. Samen bouwen we aan je nieuwe way of life, zodat je lichaam weer met je meewerkt in plaats van tegen je, en je eindelijk de energie, rust en kracht voelt waar je naar verlangt.
+            Jarenlang ging ik van huisarts naar huisarts om na de zoveelste 'leer er mee leven' de diagnose PCOS te krijgen.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            De reguliere zorg hielp me aan de diagnose, maar ik miste handvatten om mijn lichaam en klachten in het dagelijks leven te ondersteunen. Daar begon mijn zoektocht naar het waarom.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Die zoektocht vormt nu de basis van hoe ik jou begeleid.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Liever zelf aan de slag in de keuken? Start met{' '}
-            <Link to="/webshop" className="text-primary underline underline-offset-4">
-              het e-book met 50+ hormoonproof recepten
-            </Link>.
+            Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten. Ik combineer mijn kennis uit de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en waar nodig laboratoriumonderzoek. Zo kijk ik naar het hele plaatje en onderzoeken we wat er bij jou speelt.
           </p>
           <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
         </FadeIn>
