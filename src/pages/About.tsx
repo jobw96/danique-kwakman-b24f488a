@@ -148,13 +148,13 @@ const About = () => {
                     {"\n"}
                   </p>
                   <p>
-                    Ik volgde aanvullende opleidingen en scholingen en verdiepte me verder in de materie. Niet alleen om mezelf beter te begrijpen. Ik wilde weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
+                    Ik volgde aanvullende opleidingen en scholingen en verdiepte me verder in de materie. Niet alleen om mezelf beter te begrijpen, maar ik wilde ook weten hoe ik deze kennis kon inzetten om andere vrouwen te helpen.
                   </p>
                   <p>
-                    Mijn verpleegkundige achtergrond neem ik nog iedere dag mee: ik combineer mijn ervaring uit de reguliere zorg met mijn orthomoleculaire kennis en specialisatie in vrouwengezondheid.
+                    Mijn verpleegkundige achtergrond neem ik nog iedere dag mee. Ik combineer mijn ervaring uit de reguliere zorg met mijn orthomoleculaire kennis en specialisatie in vrouwengezondheid. Vanuit mijn praktijk in Hoorn én online begeleid ik vrouwen met hormonale en darmklachten die hun lichaam beter willen begrijpen en gericht aan hun gezondheid willen werken.
                   </p>
                   <p>
-                    Vanuit mijn praktijk in Hoorn én online begeleid ik vrouwen met hormonale en darmklachten die hun lichaam beter willen begrijpen en gericht aan hun gezondheid willen werken.
+                    {"\n"}
                   </p>
                 </div>
               </FadeIn>
