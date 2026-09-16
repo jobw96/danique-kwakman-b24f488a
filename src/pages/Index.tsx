@@ -212,7 +212,7 @@ const Index = () => {
           </p>
         </FadeIn>
       </div>
-      <ServiceAccordion />
+      <ComplaintBlocks />
     </Section>
 
     <Section id="behandelingen" className="bg-background">
