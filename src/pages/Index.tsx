@@ -286,9 +286,9 @@ const Index = () => {
           </picture>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-primary mb-4">E-book Nourish Your Body</p>
+          <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-primary mb-4">{"\n"}</p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-            Hormoonproof recepten voor je cyclus, darmen en energie
+            E-BOOK NOURISH YOUR BODY{"\n"}
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             Je krijgt niet alleen&nbsp;50+ hormoonproof en darmvriendelijke recepten, maar ook&nbsp;
