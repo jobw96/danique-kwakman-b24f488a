@@ -401,8 +401,6 @@ const Index = () => {
       </div>
     </Section>
 
-    <InstagramFeed />
-
     <Section className="bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         <FadeIn direction="left" delay={0.15}>
@@ -425,6 +423,8 @@ const Index = () => {
         </FadeIn>
       </div>
     </Section>
+
+    <InstagramFeed />
   </article>
   </>;
 };
