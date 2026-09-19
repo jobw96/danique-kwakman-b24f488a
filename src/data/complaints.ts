@@ -4,30 +4,40 @@
  */
 
 export type ComplaintCategory =
-  | 'Klachten en symptomen'
-  | 'Hormonale disbalans'
-  | 'Levensfase en situatie'
-  | 'Aandoeningen';
+  | 'Hormonen en cyclus'
+  | 'Darmen en spijsvertering'
+  | 'Energie en bloedsuiker'
+  | 'Huid en haar';
 
 export const complaintCategories: {
   name: ComplaintCategory;
+  slug: string;
+  number: string;
   description: string;
 }[] = [
   {
-    name: 'Klachten en symptomen',
-    description: 'Waar je in het dagelijks leven last van hebt.',
+    name: 'Hormonen en cyclus',
+    slug: 'hormonen-en-cyclus',
+    number: '01',
+    description: 'Van PMS en menstruatieklachten tot PCOS/PMOS, schildklierproblemen, kinderwens en overgang.',
   },
   {
-    name: 'Hormonale disbalans',
-    description: 'Patronen in je hormonen die klachten kunnen geven.',
+    name: 'Darmen en spijsvertering',
+    slug: 'darmen-en-spijsvertering',
+    number: '02',
+    description: 'Van een opgeblazen buik en winderigheid tot PDS, maagzuur en voedselintoleranties.',
   },
   {
-    name: 'Levensfase en situatie',
-    description: 'Periodes waarin je lichaam extra ondersteuning vraagt.',
+    name: 'Energie en bloedsuiker',
+    slug: 'energie-en-bloedsuiker',
+    number: '03',
+    description: 'Van moe wakker worden en energiedips tot cravings, brain fog en een schommelende bloedsuiker.',
   },
   {
-    name: 'Aandoeningen',
-    description: 'Diagnoses waarbij voeding en leefstijl veel kunnen doen.',
+    name: 'Huid en haar',
+    slug: 'huid-en-haar',
+    number: '04',
+    description: 'Van acne en een gevoelige huid tot eczeem, rosacea, haaruitval en terugkerende onrust.',
   },
 ];
 
@@ -57,8 +67,8 @@ export interface Complaint {
 export const complaints: Complaint[] = [
   {
     slug: 'menstruatieklachten',
-    category: 'Klachten en symptomen',
-    title: 'Menstruatieklachten',
+    category: 'Hormonen en cyclus',
+    title: 'Pijnlijke of hevige menstruaties',
     pageTitle: 'Menstruatieklachten',
     seoTitle: 'Menstruatieklachten: herkennen en aanpak',
     seoDescription:
@@ -86,8 +96,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'onregelmatige-cyclus',
-    category: 'Klachten en symptomen',
-    title: 'Onregelmatige cyclus',
+    category: 'Hormonen en cyclus',
+    title: 'Een onregelmatige cyclus',
     pageTitle: 'Een onregelmatige cyclus',
     seoTitle: 'Onregelmatige cyclus: wat betekent dat?',
     seoDescription:
@@ -115,8 +125,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'opgeblazen-buik',
-    category: 'Klachten en symptomen',
-    title: 'Opgeblazen buik',
+    category: 'Darmen en spijsvertering',
+    title: 'Een opgeblazen buik (na het eten)',
     pageTitle: 'Een opgeblazen buik',
     seoTitle: 'Opgeblazen buik: oorzaken en aanpak',
     seoDescription:
@@ -144,7 +154,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'darmklachten',
-    category: 'Klachten en symptomen',
+    category: 'Darmen en spijsvertering',
     title: 'Darmklachten',
     pageTitle: 'Darmklachten',
     seoTitle: 'Darmklachten herkennen en aanpakken',
@@ -173,8 +183,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'vermoeidheid',
-    category: 'Klachten en symptomen',
-    title: 'Vermoeidheid',
+    category: 'Energie en bloedsuiker',
+    title: 'Moe wakker worden, ook na genoeg slaap',
     pageTitle: 'Vermoeidheid en energiedips',
     seoTitle: 'Vermoeidheid: oorzaken en aanpak',
     seoDescription:
@@ -202,8 +212,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'cravings-en-bloedsuiker',
-    category: 'Klachten en symptomen',
-    title: 'Cravings & bloedsuiker',
+    category: 'Energie en bloedsuiker',
+    title: 'Cravings of veel trek in zoet',
     pageTitle: 'Cravings en bloedsuikerschommelingen',
     seoTitle: 'Cravings en bloedsuikerschommelingen',
     seoDescription:
@@ -231,8 +241,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'slaapproblemen',
-    category: 'Klachten en symptomen',
-    title: 'Slaapproblemen',
+    category: 'Energie en bloedsuiker',
+    title: 'Moeite met inslapen of doorslapen',
     pageTitle: 'Slaapproblemen',
     seoTitle: 'Slaapproblemen: oorzaken en aanpak',
     seoDescription:
@@ -260,7 +270,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'huid-en-haar',
-    category: 'Klachten en symptomen',
+    category: 'Huid en haar',
     title: 'Huid- & haarklachten',
     pageTitle: 'Huid- en haarklachten',
     seoTitle: 'Acne, huidklachten en haaruitval',
@@ -289,7 +299,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'stemmingswisselingen',
-    category: 'Klachten en symptomen',
+    category: 'Hormonen en cyclus',
     title: 'Stemmingswisselingen',
     pageTitle: 'Stemmingswisselingen en een kort lontje',
     seoTitle: 'Stemmingswisselingen en hormonen',
@@ -318,7 +328,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'stress-en-herstel',
-    category: 'Klachten en symptomen',
+    category: 'Energie en bloedsuiker',
     title: 'Stress & herstel',
     pageTitle: 'Stress en moeilijk herstellen',
     seoTitle: 'Stress en moeizaam herstel',
@@ -347,7 +357,7 @@ export const complaints: Complaint[] = [
 
   {
     slug: 'oestrogeendominantie',
-    category: 'Hormonale disbalans',
+    category: 'Hormonen en cyclus',
     title: 'Oestrogeendominantie',
     pageTitle: 'Oestrogeendominantie',
     seoTitle: 'Oestrogeendominantie herkennen',
@@ -376,7 +386,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'progesterontekort',
-    category: 'Hormonale disbalans',
+    category: 'Hormonen en cyclus',
     title: 'Progesterontekort',
     pageTitle: 'Een progesterontekort',
     seoTitle: 'Progesterontekort: signalen en aanpak',
@@ -405,7 +415,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'insulineresistentie',
-    category: 'Hormonale disbalans',
+    category: 'Energie en bloedsuiker',
     title: 'Insulineresistentie',
     pageTitle: 'Insulineresistentie',
     seoTitle: 'Insulineresistentie herkennen',
@@ -434,8 +444,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'schildklierdisbalans',
-    category: 'Hormonale disbalans',
-    title: 'Schildklierdisbalans',
+    category: 'Hormonen en cyclus',
+    title: 'Schildklierproblemen',
     pageTitle: 'Een schildklier die minder goed meewerkt',
     seoTitle: 'Schildklierklachten herkennen',
     seoDescription:
@@ -463,7 +473,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'cortisol-uit-balans',
-    category: 'Hormonale disbalans',
+    category: 'Energie en bloedsuiker',
     title: 'Cortisol uit balans',
     pageTitle: 'Cortisol uit balans',
     seoTitle: 'Cortisol uit balans: signalen',
@@ -492,8 +502,8 @@ export const complaints: Complaint[] = [
 
   {
     slug: 'kinderwens',
-    category: 'Levensfase en situatie',
-    title: 'Kinderwens',
+    category: 'Hormonen en cyclus',
+    title: 'Zwanger worden of voorbereiden op een zwangerschap',
     pageTitle: 'Kinderwens en je cyclus voorbereiden',
     seoTitle: 'Kinderwens: je lichaam voorbereiden',
     seoDescription:
@@ -521,7 +531,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'herstel-na-anticonceptie',
-    category: 'Levensfase en situatie',
+    category: 'Hormonen en cyclus',
     title: 'Gestopt met anticonceptie',
     pageTitle: 'Gestopt met de pil of andere anticonceptie',
     seoTitle: 'Herstel na stoppen met de pil',
@@ -550,8 +560,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'overgang',
-    category: 'Levensfase en situatie',
-    title: 'Overgangsklachten',
+    category: 'Hormonen en cyclus',
+    title: 'Klachten rondom de overgang of menopauze',
     pageTitle: 'Klachten rondom de overgang',
     seoTitle: 'Overgangsklachten: herkennen en aanpak',
     seoDescription:
@@ -580,8 +590,8 @@ export const complaints: Complaint[] = [
 
   {
     slug: 'pms',
-    category: 'Aandoeningen',
-    title: 'PMS',
+    category: 'Hormonen en cyclus',
+    title: 'Veel last van PMS',
     pageTitle: 'PMS en stemmingswisselingen',
     seoTitle: 'PMS herkennen en aanpakken',
     seoDescription:
@@ -609,8 +619,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'pcos-pmos',
-    category: 'Aandoeningen',
-    title: 'PCOS / PMOS',
+    category: 'Hormonen en cyclus',
+    title: 'PCOS/ PMOS',
     pageTitle: 'PCOS (PMOS)',
     seoTitle: 'PCOS en PMOS: herkennen en aanpak',
     seoDescription:
@@ -638,8 +648,8 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'pds',
-    category: 'Aandoeningen',
-    title: 'PDS',
+    category: 'Darmen en spijsvertering',
+    title: 'Prikkelbare darm (PDS)',
     pageTitle: 'PDS (prikkelbare darm syndroom)',
     seoTitle: 'PDS: prikkelbare darm aanpakken',
     seoDescription:
@@ -667,7 +677,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'endometriose',
-    category: 'Aandoeningen',
+    category: 'Hormonen en cyclus',
     title: 'Endometriose',
     pageTitle: 'Endometriose en adenomyose',
     seoTitle: 'Endometriose: voeding en leefstijl',
@@ -694,9 +704,143 @@ export const complaints: Complaint[] = [
     ],
     traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
   },
+  {
+    slug: 'winderigheid', category: 'Darmen en spijsvertering', title: 'Veel last van winderigheid',
+    pageTitle: 'Veel last van winderigheid', seoTitle: 'Winderigheid: oorzaken en aanpak',
+    seoDescription: 'Veel last van winderigheid of een borrelende buik? Lees hoe je dit herkent, wat er achter kan zitten en hoe ik je hierin begeleid.',
+    teaser: 'Veel lucht, een borrelende buik of ongemak na het eten.',
+    intro: ['Af en toe winderigheid is normaal. Heb je er dagelijks veel last van of pas je jouw dag erop aan, dan kan dat wijzen op een spijsvertering die niet optimaal verloopt.', 'We kijken naar wat je eet, hoe je verteert en welke rol je darmflora en stress hierbij spelen.'],
+    signals: ['Veel lucht na maaltijden', 'Een borrelende of gespannen buik', 'Klachten bij specifieke voedingsmiddelen', 'Winderigheid samen met buikpijn of wisselende ontlasting'],
+    causes: ['Onvolledige vertering van voeding', 'Een verstoorde balans in je darmflora', 'Te snel eten, stress of onvoldoende kauwen', 'Voedselintoleranties of gevoeligheid voor bepaalde vezels'],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'verstopping-of-diarree', category: 'Darmen en spijsvertering', title: 'Vaak verstopt zitten of juist diarree',
+    pageTitle: 'Verstopping of diarree', seoTitle: 'Verstopping of diarree begrijpen',
+    seoDescription: 'Vaak verstopt of juist diarree? Lees wat wisselende ontlasting kan vertellen over je spijsvertering en hoe ik je hierin begeleid.',
+    teaser: 'Ontlasting die te weinig, te vaak of steeds anders komt.',
+    intro: ['Je ontlasting vertelt veel over hoe je spijsvertering werkt. Verstopping, diarree of een wisselend patroon zijn signalen om serieus te nemen.', 'In plaats van alleen het symptoom te onderdrukken, kijken we naar wat jouw darmen nodig hebben om weer rustiger te functioneren.'],
+    signals: ['Minder dan drie keer per week ontlasting', 'Harde ontlasting of veel moeten persen', 'Dunne ontlasting of plotselinge aandrang', 'Een patroon dat wisselt tussen verstopping en diarree'],
+    causes: ['Vocht, vezels en beweging', 'De balans van je darmflora', 'Maagzuur, gal en verteringsenzymen', 'Stress, hormonen en medicatiegebruik'],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'maagzuur-en-verteringsklachten', category: 'Darmen en spijsvertering', title: 'Maagzuur of andere verteringsklachten',
+    pageTitle: 'Maagzuur en verteringsklachten', seoTitle: 'Maagzuur en verteringsklachten',
+    seoDescription: 'Last van maagzuur, oprispingen of een zwaar gevoel na het eten? Lees wat er achter kan zitten en hoe ik je hierin begeleid.',
+    teaser: 'Maagzuur, oprispingen of een zwaar gevoel na het eten.',
+    intro: ['Maagzuur en een zwaar gevoel na het eten kunnen betekenen dat je voeding niet soepel wordt verteerd. Dat kan verderop in je darmen opnieuw klachten geven.', 'We brengen daarom de hele route van je spijsvertering in beeld.'],
+    signals: ['Een branderig gevoel achter je borstbeen', 'Oprispingen of veel boeren', 'Snel vol zitten', 'Misselijkheid of zwaar gevoel na maaltijden'],
+    causes: ['De aanmaak van maagzuur en verteringsenzymen', 'Eettempo, portiegrootte en timing', 'Stress en spanning rond maaltijden', 'Voedingsmiddelen die jouw klachten uitlokken'],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'voedselintoleranties', category: 'Darmen en spijsvertering', title: 'Voedselintoleranties of het vermoeden daarvan',
+    pageTitle: 'Voedselintoleranties', seoTitle: 'Voedselintoleranties herkennen',
+    seoDescription: 'Vermoed je een voedselintolerantie? Lees welke signalen daarbij passen en waarom we breder kijken dan alleen voeding weglaten.',
+    teaser: 'Klachten na voeding zonder precies te weten waarop je reageert.',
+    intro: ['Wanneer je na het eten steeds klachten krijgt, kan het voelen alsof je op alles reageert. Steeds meer voeding schrappen geeft dan niet altijd rust.', 'Ik kijk niet alleen naar het voedingsmiddel, maar ook naar je vertering, darmwand, darmflora en totale belasting.'],
+    signals: ['Een opgeblazen buik of buikpijn na voeding', 'Winderigheid of wisselende ontlasting', 'Huidklachten, hoofdpijn of vermoeidheid na het eten', 'Een steeds kleiner wordende lijst met veilige voeding'],
+    causes: ['Onvoldoende vertering', 'Een verstoorde darmflora of darmbarrière', 'De hoeveelheid en combinatie van voedingsmiddelen', 'Stress en een gevoelig darm-brein-systeem'],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'energiedips', category: 'Energie en bloedsuiker', title: 'Energiedips gedurende de dag',
+    pageTitle: 'Energiedips gedurende de dag', seoTitle: 'Energiedips gedurende de dag',
+    seoDescription: 'Heb je dagelijks energiedips, vooral na het eten of in de middag? Lees wat dit kan zeggen over je bloedsuiker en herstel.',
+    teaser: 'Na een maaltijd of in de middag zakt je energie plotseling weg.',
+    intro: ['Een dagelijkse energiedip is niet iets wat je alleen met koffie hoeft op te lossen. Het tijdstip en de omstandigheden geven vaak duidelijke aanwijzingen.', 'We kijken onder andere naar je maaltijden, bloedsuiker, slaap en stressbelasting.'],
+    signals: ['Een dip na ontbijt of lunch', 'In de middag nauwelijks vooruitkomen', 'Koffie of zoet nodig hebben om door te gaan', 'Prikkelbaar of wazig worden als je te laat eet'],
+    causes: ['De opbouw en timing van je maaltijden', 'Bloedsuikerschommelingen', 'Slaapkwaliteit en dagritme', 'Tekorten, stress en hormonale factoren'],
+    traject: { href: '/bloedsuikertraject', label: 'Bekijk het 1:1 Bloedsuikertraject' },
+  },
+  {
+    slug: 'brain-fog', category: 'Energie en bloedsuiker', title: 'Brain fog en moeite met focussen',
+    pageTitle: 'Brain fog en moeite met focussen', seoTitle: 'Brain fog en concentratieproblemen',
+    seoDescription: 'Een mistig hoofd of moeite met focussen? Lees hoe brain fog kan samenhangen met bloedsuiker, darmen, hormonen en slaap.',
+    teaser: 'Een mistig hoofd, vergeetachtigheid en moeite om scherp te blijven.',
+    intro: ['Brain fog kan voelen alsof je hoofd niet meewerkt. Je zoekt naar woorden, vergeet afspraken of hebt moeite om een taak af te maken.', 'Dat staat vaak niet los van je energie, slaap, darmen en hormonen.'],
+    signals: ['Moeite om je aandacht erbij te houden', 'Woorden of afspraken vergeten', 'Een wazig gevoel na maaltijden', 'Minder scherp zijn rond je menstruatie of overgang'],
+    causes: ['Bloedsuikerschommelingen', 'Onvoldoende of onrustige slaap', 'Darmklachten en ontstekingsgevoeligheid', 'Hormonale veranderingen en tekorten'],
+    traject: { href: '/bloedsuikertraject', label: 'Bekijk het 1:1 Bloedsuikertraject' },
+  },
+  {
+    slug: 'bloedsuikerschommelingen', category: 'Energie en bloedsuiker', title: 'Schommelingen in je bloedsuikerspiegel',
+    pageTitle: 'Bloedsuikerschommelingen', seoTitle: 'Bloedsuikerschommelingen herkennen',
+    seoDescription: 'Cravings, dips of trillerigheid kunnen passen bij bloedsuikerschommelingen. Lees hoe je ze herkent en waar we naar kijken.',
+    teaser: 'Dips, cravings of trillerigheid wanneer je niet op tijd eet.',
+    intro: ['Je bloedsuiker beweegt de hele dag, maar grote pieken en dalen kunnen je energie, stemming, slaap en hormonen beïnvloeden.', 'Met de juiste opbouw van maaltijden en leefstijl kun je vaak veel meer rust creëren.'],
+    signals: ['Trillerig, slap of prikkelbaar worden', 'Veel trek in zoet of snelle koolhydraten', 'Een dip kort na het eten', 'Nachtelijk wakker worden of onrustig slapen'],
+    causes: ['Te weinig eiwit, vet of vezels in maaltijden', 'Onregelmatig eten of maaltijden overslaan', 'Stress en te weinig slaap', 'Insulineresistentie en hormonale factoren'],
+    traject: { href: '/bloedsuikertraject', label: 'Bekijk het 1:1 Bloedsuikertraject' },
+  },
+  {
+    slug: 'acne', category: 'Huid en haar', title: 'Acne die steeds terugkomt',
+    pageTitle: 'Acne die steeds terugkomt', seoTitle: 'Terugkerende acne en hormonen',
+    seoDescription: 'Acne die steeds terugkomt kan samenhangen met hormonen, bloedsuiker en darmen. Lees hoe ik naar de mogelijke oorzaken kijk.',
+    teaser: 'Puistjes die blijven terugkomen, vaak rond kin of kaaklijn.',
+    intro: ['Terugkerende acne is vaak meer dan alleen een huidprobleem. De plek, timing en combinatie met andere klachten kunnen waardevolle signalen geven.', 'We kijken naar hormonen, bloedsuiker, darmen, voeding en voedingsstoffen.'],
+    signals: ['Acne rond kin, kaaklijn of hals', 'Opvlammingen rondom je menstruatie', 'Een vette én gevoelige huid', 'Acne samen met een onregelmatige cyclus'],
+    causes: ['Androgenen en hormonale schommelingen', 'Bloedsuiker en insuline', 'Darmgezondheid en ontstekingsgevoeligheid', 'Tekorten en persoonlijke voedingstriggers'],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'droge-gevoelige-huid', category: 'Huid en haar', title: 'Een droge of gevoelige huid',
+    pageTitle: 'Een droge of gevoelige huid', seoTitle: 'Droge of gevoelige huid begrijpen',
+    seoDescription: 'Een droge, trekkerige of snel reagerende huid? Lees hoe huidklachten kunnen samenhangen met voeding, darmen en hormonen.',
+    teaser: 'Een huid die trekt, schilfert of snel op producten en voeding reageert.',
+    intro: ['Een droge of gevoelige huid kan een signaal zijn dat de huidbarrière ondersteuning nodig heeft. Ook factoren van binnenuit kunnen meespelen.', 'Daarom kijken we verder dan alleen huidverzorging.'],
+    signals: ['Een trekkerige of schilferige huid', 'Snel rood of geïrriteerd raken', 'Reageren op veel verzorgingsproducten', 'Klachten die wisselen met seizoen of cyclus'],
+    causes: ['Voldoende vetzuren, eiwitten en vocht', 'Darmgezondheid en opname van voedingsstoffen', 'Hormonale veranderingen', 'Persoonlijke triggers en ontstekingsgevoeligheid'],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'eczeem', category: 'Huid en haar', title: 'Eczeem of rode, geïrriteerde plekken',
+    pageTitle: 'Eczeem en geïrriteerde huid', seoTitle: 'Eczeem en geïrriteerde huid',
+    seoDescription: 'Eczeem of rode, geïrriteerde plekken kunnen van binnenuit worden beïnvloed. Lees waar we bij terugkerende huidklachten naar kijken.',
+    teaser: 'Jeukende, rode of geïrriteerde plekken die terug blijven komen.',
+    intro: ['Eczeem kan veel invloed hebben op je dagelijks leven en slaap. De huidreactie staat vaak in verbinding met je immuunsysteem en darmgezondheid.', 'We zoeken rustig uit welke factoren jouw huid mogelijk extra belasten.'],
+    signals: ['Droge, jeukende of schilferige plekken', 'Roodheid die regelmatig opvlamt', 'Krabben en slechter slapen', 'Reacties na stress, voeding of huidcontact'],
+    causes: ['De huid- en darmbarrière', 'Ontstekingsgevoeligheid en immuunsysteem', 'Voeding en persoonlijke triggers', 'Stress, slaap en voedingsstoffen'],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'rosacea', category: 'Huid en haar', title: 'Rosacea',
+    pageTitle: 'Rosacea en een rode, gevoelige huid', seoTitle: 'Rosacea en darmgezondheid',
+    seoDescription: 'Rosacea met roodheid en opvlammingen? Lees hoe darmen, voeding, stress en hormonen mogelijk invloed hebben op jouw huid.',
+    teaser: 'Roodheid, warmte en opvlammingen in je gezicht.',
+    intro: ['Rosacea is zichtbaar aan de buitenkant, maar verschillende factoren van binnenuit kunnen opvlammingen beïnvloeden.', 'We kijken naar patronen in voeding, darmen, stress, hormonen en herstel zonder te doen alsof er één standaardoorzaak is.'],
+    signals: ['Blijvende roodheid op wangen of neus', 'Een branderig of warm gevoel', 'Bultjes of zichtbare vaatjes', 'Opvlammingen na voeding, warmte of stress'],
+    causes: ['Darmgezondheid en ontstekingsgevoeligheid', 'Persoonlijke voedingstriggers', 'Stress en slaap', 'Hormonale veranderingen en huidbarrière'],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'haaruitval', category: 'Huid en haar', title: 'Haaruitval',
+    pageTitle: 'Haaruitval', seoTitle: 'Haaruitval bij vrouwen begrijpen',
+    seoDescription: 'Last van haaruitval of dunner haar? Lees welke rol hormonen, schildklier, stress en voedingsstoffen kunnen spelen.',
+    teaser: 'Meer haar verliezen dan normaal of merken dat je haar dunner wordt.',
+    intro: ['Haaruitval is vaak een vertraagd signaal: wat je nu ziet, kan maanden eerder zijn begonnen. Dat maakt het belangrijk om naar de tijdlijn te kijken.', 'We nemen hormonen, schildklier, stress, voeding en mogelijke tekorten mee.'],
+    signals: ['Meer haren in borstel, douche of kleding', 'Een bredere scheiding of dunnere staart', 'Haarverlies na stress, ziekte of zwangerschap', 'Haaruitval samen met vermoeidheid of cyclusklachten'],
+    causes: ['IJzer, zink, vitamine D, B12 en eiwitten', 'Schildklier en hormonale veranderingen', 'Langdurige stress of herstel na ziekte', 'Darmgezondheid en opname van voedingsstoffen'],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'onrustige-huid', category: 'Huid en haar', title: 'Een onrustige huid die regelmatig opvlamt',
+    pageTitle: 'Een onrustige huid die opvlamt', seoTitle: 'Onrustige huid en opvlammingen',
+    seoDescription: 'Een onrustige huid die steeds opvlamt? Lees hoe patronen in cyclus, voeding, darmen en stress aanwijzingen kunnen geven.',
+    teaser: 'Wisselende roodheid, bultjes of irritatie zonder duidelijke aanleiding.',
+    intro: ['Wanneer je huid de ene week rustig is en daarna ineens opvlamt, loont het om naar het patroon te kijken.', 'De timing rond voeding, stress en je cyclus kan helpen om verbanden zichtbaar te maken.'],
+    signals: ['Roodheid of bultjes die komen en gaan', 'Een huid die snel reageert op veranderingen', 'Opvlammingen rond je menstruatie', 'Klachten na drukte, weinig slaap of bepaalde voeding'],
+    causes: ['Hormonale schommelingen', 'Darmen en persoonlijke voedingstriggers', 'Bloedsuiker en ontstekingsgevoeligheid', 'Stress, slaap en huidbarrière'],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+
 ];
 
 export const findComplaint = (slug: string) => complaints.find((item) => item.slug === slug);
+
+export const findComplaintCategory = (slug: string) =>
+  complaintCategories.find((category) => category.slug === slug);
 
 export const complaintsByCategory = complaintCategories.map((category) => ({
   ...category,
