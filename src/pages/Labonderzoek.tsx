@@ -33,7 +33,7 @@ const TESTS = [
       'Ontstekingswaarden, zoals calprotectine',
       'Secretorisch IgA (darmimmuniteit)',
       'Pathogenen, zoals bacteriën, gisten en parasieten',
-      'Markers voor darmwandintegriteit',
+      { label: 'Meer over het 1:1 Darmtraject', href: '/darmtraject' },
     ],
   },
   {
