@@ -25,7 +25,7 @@ const irregularCycleContent = {
     },
     {
       title: 'PCOS/PMOS, bloedsuiker en insuline',
-      text: 'Bij PCOS/PMOS komen een onregelmatige ovulatie en lange cycli vaak voor. Insuline speelt hierbij regelmatig een rol. Grote bloedsuikerschommelingen en een verhoogde aanmaak van insuline kunnen de hormonale aansturing beïnvloeden. Cravings, energiedips, acne of makkelijker aankomen zijn daarom relevante signalen om mee te nemen.',
+      text: 'Bij PCOS/PMOS komen een onregelmatige ovulatie en een lange cyclus vaak voor. Insuline speelt hierbij regelmatig een rol. Grote bloedsuikerschommelingen en een verhoogde aanmaak van insuline kunnen de hormonale aansturing beïnvloeden. Cravings, energiedips, acne of makkelijker aankomen zijn daarom relevante signalen om mee te nemen.',
     },
     {
       title: 'Voeding, energie-inname en beweging',
