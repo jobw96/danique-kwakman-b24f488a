@@ -48,20 +48,38 @@ const Klachten = () => {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 border-l border-t border-secondary/40 sm:grid-cols-2 lg:grid-cols-3">
-            {complaints.map((complaint, index) => (
-              <FadeIn key={complaint.slug} delay={index * 0.04} className="h-full">
-                <Link
-                  to={`/klachten/${complaint.slug}`}
-                  className="group flex h-full flex-col border-b border-r border-secondary/40 bg-background p-6 transition-colors hover:bg-secondary/15"
-                >
-                  <h3 className="mb-3 font-serif text-xl text-foreground">{complaint.title}</h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{complaint.teaser}</p>
-                  <span className="mt-6 flex items-center justify-end text-primary" aria-hidden="true">
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              </FadeIn>
+          <div className="space-y-14">
+            {complaintsByCategory.map((category) => (
+              <div key={category.name}>
+                <FadeIn className="mb-6 border-b border-secondary/40 pb-4">
+                  <h3 className="font-serif text-2xl text-foreground md:text-3xl">{category.name}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {category.description}
+                  </p>
+                </FadeIn>
+
+                <div className="grid grid-cols-1 border-l border-t border-secondary/40 sm:grid-cols-2 lg:grid-cols-3">
+                  {category.items.map((complaint, index) => (
+                    <FadeIn key={complaint.slug} delay={index * 0.04} className="h-full">
+                      <Link
+                        to={`/klachten/${complaint.slug}`}
+                        className="group flex h-full flex-col border-b border-r border-secondary/40 bg-background p-6 transition-colors hover:bg-secondary/15"
+                      >
+                        <h4 className="mb-3 font-serif text-xl text-foreground">{complaint.title}</h4>
+                        <p className="text-sm leading-relaxed text-muted-foreground">
+                          {complaint.teaser}
+                        </p>
+                        <span
+                          className="mt-6 flex items-center justify-end text-primary"
+                          aria-hidden="true"
+                        >
+                          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      </Link>
+                    </FadeIn>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
