@@ -26,6 +26,7 @@ import { Route as LayoutEBookWeekmenuRouteImport } from './routes/_layout/e-book
 import { Route as LayoutFaqRouteImport } from './routes/_layout/faq'
 import { Route as LayoutGlowupRouteImport } from './routes/_layout/glowup'
 import { Route as LayoutHormoontrajectRouteImport } from './routes/_layout/hormoontraject'
+import { Route as LayoutKlachtenRouteImport } from './routes/_layout/klachten'
 import { Route as LayoutLabonderzoekRouteImport } from './routes/_layout/labonderzoek'
 import { Route as LayoutMethodRouteImport } from './routes/_layout/method'
 import { Route as LayoutNieuwsbriefRouteImport } from './routes/_layout/nieuwsbrief'
@@ -127,6 +128,11 @@ const LayoutHormoontrajectRoute = LayoutHormoontrajectRouteImport.update({
   path: '/hormoontraject',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutKlachtenRoute = LayoutKlachtenRouteImport.update({
+  id: '/klachten',
+  path: '/klachten',
+  getParentRoute: () => LayoutRoute,
+} as any)
 const LayoutLabonderzoekRoute = LayoutLabonderzoekRouteImport.update({
   id: '/labonderzoek',
   path: '/labonderzoek',
@@ -205,6 +211,7 @@ export interface FileRoutesByFullPath {
   '/faq': typeof LayoutFaqRoute
   '/glowup': typeof LayoutGlowupRoute
   '/hormoontraject': typeof LayoutHormoontrajectRoute
+  '/klachten': typeof LayoutKlachtenRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
   '/method': typeof LayoutMethodRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -234,6 +241,7 @@ export interface FileRoutesByTo {
   '/faq': typeof LayoutFaqRoute
   '/glowup': typeof LayoutGlowupRoute
   '/hormoontraject': typeof LayoutHormoontrajectRoute
+  '/klachten': typeof LayoutKlachtenRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
   '/method': typeof LayoutMethodRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -266,6 +274,7 @@ export interface FileRoutesById {
   '/_layout/faq': typeof LayoutFaqRoute
   '/_layout/glowup': typeof LayoutGlowupRoute
   '/_layout/hormoontraject': typeof LayoutHormoontrajectRoute
+  '/_layout/klachten': typeof LayoutKlachtenRoute
   '/_layout/labonderzoek': typeof LayoutLabonderzoekRoute
   '/_layout/method': typeof LayoutMethodRoute
   '/_layout/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -299,6 +308,7 @@ export interface FileRouteTypes {
     | '/faq'
     | '/glowup'
     | '/hormoontraject'
+    | '/klachten'
     | '/labonderzoek'
     | '/method'
     | '/nieuwsbrief'
@@ -328,6 +338,7 @@ export interface FileRouteTypes {
     | '/faq'
     | '/glowup'
     | '/hormoontraject'
+    | '/klachten'
     | '/labonderzoek'
     | '/method'
     | '/nieuwsbrief'
@@ -359,6 +370,7 @@ export interface FileRouteTypes {
     | '/_layout/faq'
     | '/_layout/glowup'
     | '/_layout/hormoontraject'
+    | '/_layout/klachten'
     | '/_layout/labonderzoek'
     | '/_layout/method'
     | '/_layout/nieuwsbrief'
@@ -501,6 +513,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutHormoontrajectRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/klachten': {
+      id: '/_layout/klachten'
+      path: '/klachten'
+      fullPath: '/klachten'
+      preLoaderRoute: typeof LayoutKlachtenRouteImport
+      parentRoute: typeof LayoutRoute
+    }
     '/_layout/labonderzoek': {
       id: '/_layout/labonderzoek'
       path: '/labonderzoek'
@@ -602,6 +621,7 @@ interface LayoutRouteChildren {
   LayoutFaqRoute: typeof LayoutFaqRoute
   LayoutGlowupRoute: typeof LayoutGlowupRoute
   LayoutHormoontrajectRoute: typeof LayoutHormoontrajectRoute
+  LayoutKlachtenRoute: typeof LayoutKlachtenRoute
   LayoutLabonderzoekRoute: typeof LayoutLabonderzoekRoute
   LayoutMethodRoute: typeof LayoutMethodRoute
   LayoutNieuwsbriefRoute: typeof LayoutNieuwsbriefRoute
@@ -631,6 +651,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutFaqRoute: LayoutFaqRoute,
   LayoutGlowupRoute: LayoutGlowupRoute,
   LayoutHormoontrajectRoute: LayoutHormoontrajectRoute,
+  LayoutKlachtenRoute: LayoutKlachtenRoute,
   LayoutLabonderzoekRoute: LayoutLabonderzoekRoute,
   LayoutMethodRoute: LayoutMethodRoute,
   LayoutNieuwsbriefRoute: LayoutNieuwsbriefRoute,
