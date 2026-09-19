@@ -84,7 +84,7 @@ const TESTS = [
       'Vitamine B12, D en foliumzuur',
       { label: 'Bloedsuiker', href: '/bloedsuikertraject' },
       'Algemeen bloedbeeld',
-      'Gezondheidsscreening vrouw: hormonen, schildklier, lever, nieren, vetstofwisseling, ontstekingswaarden en het bloedbeeld',
+      'Gezondheidsscreening vrouw: hormonen, schildklier, lever, nieren, vetstofwisseling, ontstekingswaarden en het algemeen bloedbeeld',
     ],
   },
   {
