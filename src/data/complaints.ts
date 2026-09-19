@@ -45,6 +45,8 @@ export interface Complaint {
   slug: string;
   /** Categorie waaronder de klacht op /klachten staat. */
   category: ComplaintCategory;
+  /** Extra categorieën waar de klacht ook terugkomt. */
+  alsoIn?: ComplaintCategory[];
   /** Korte titel voor het blok. */
   title: string;
   /** Titel voor de detailpagina (H1). */
@@ -416,6 +418,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'insulineresistentie',
     category: 'Energie en bloedsuiker',
+    alsoIn: ['Hormonen en cyclus'],
     title: 'Insulineresistentie',
     pageTitle: 'Insulineresistentie',
     seoTitle: 'Insulineresistentie herkennen',
@@ -844,5 +847,7 @@ export const findComplaintCategory = (slug: string) =>
 
 export const complaintsByCategory = complaintCategories.map((category) => ({
   ...category,
-  items: complaints.filter((item) => item.category === category.name),
+  items: complaints.filter(
+    (item) => item.category === category.name || item.alsoIn?.includes(category.name)
+  ),
 }));
