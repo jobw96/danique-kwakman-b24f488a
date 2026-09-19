@@ -115,10 +115,10 @@ const Labonderzoek = () => {
               </h1>
               <div className="mb-8 space-y-4 leading-relaxed text-muted-foreground">
                 <p>
-                  Je voelt dat er iets niet klopt, maar krijgt geen grip op waar je klachten vandaan komen. Misschien heb je al van alles geprobeerd en blijf je zitten met vermoeidheid, hormonale klachten, darmproblemen of het gevoel dat je lichaam niet meewerkt.
+                  Je hebt klachten, maar weet niet waar ze vandaan komen. Misschien loop je al langer rond met vermoeidheid, hormonale klachten, darmklachten, PCOS of een onregelmatige cyclus. En ondanks alles wat je al hebt geprobeerd, blijven de klachten aanwezig.
                 </p>
                 <p>
-                  Laboratoriumonderzoek kan helpen om gerichter te kijken. Niet om jouw lichaam terug te brengen tot een rijtje waarden, maar om extra puzzelstukjes te verzamelen. We starten altijd bij jouw verhaal en kiezen alleen een onderzoek dat past bij jouw klachten en hulpvraag.
+                  Laboratoriumonderzoek kan helpen om gerichter naar je gezondheid te kijken. En om extra puzzelstukjes te verzamelen op zoek naar de oorzaak. We starten altijd bij jouw verhaal en kiezen alleen een onderzoek dat past bij jouw klachten en hulpvraag.
                 </p>
               </div>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
