@@ -30,7 +30,7 @@ const TESTS = [
     description:
       'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Dit onderzoek voeren we uit bij het 1:1 darmtraject.',
     markers: [
-      'Darmmicrobioom in kaart, waaronder bacteriën, dysbiose, parasieten, ontstekingen en spijsvertering',
+      'Darmmicrobioom en spijsvertering in kaart',
       'Spijsverteringsmarkers, zoals pancreas-elastase',
       'Ontstekingswaarden, zoals calprotectine',
       'Secretorisch IgA (darmimmuniteit)',
