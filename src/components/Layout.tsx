@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
