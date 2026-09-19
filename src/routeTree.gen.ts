@@ -26,7 +26,6 @@ import { Route as LayoutEBookWeekmenuRouteImport } from './routes/_layout/e-book
 import { Route as LayoutFaqRouteImport } from './routes/_layout/faq'
 import { Route as LayoutGlowupRouteImport } from './routes/_layout/glowup'
 import { Route as LayoutHormoontrajectRouteImport } from './routes/_layout/hormoontraject'
-import { Route as LayoutKlachtenRouteImport } from './routes/_layout/klachten'
 import { Route as LayoutLabonderzoekRouteImport } from './routes/_layout/labonderzoek'
 import { Route as LayoutMethodRouteImport } from './routes/_layout/method'
 import { Route as LayoutNieuwsbriefRouteImport } from './routes/_layout/nieuwsbrief'
@@ -37,6 +36,8 @@ import { Route as LayoutTermsRouteImport } from './routes/_layout/terms'
 import { Route as LayoutWebshopRouteImport } from './routes/_layout/webshop'
 import { Route as LayoutBlogIndexRouteImport } from './routes/_layout/blog/index'
 import { Route as LayoutBlogSlugRouteImport } from './routes/_layout/blog/$slug'
+import { Route as LayoutKlachtenIndexRouteImport } from './routes/_layout/klachten/index'
+import { Route as LayoutKlachtenSlugRouteImport } from './routes/_layout/klachten/$slug'
 import { Route as LayoutReceptenIndexRouteImport } from './routes/_layout/recepten/index'
 import { Route as LayoutReceptenSlugRouteImport } from './routes/_layout/recepten/$slug'
 
@@ -128,11 +129,6 @@ const LayoutHormoontrajectRoute = LayoutHormoontrajectRouteImport.update({
   path: '/hormoontraject',
   getParentRoute: () => LayoutRoute,
 } as any)
-const LayoutKlachtenRoute = LayoutKlachtenRouteImport.update({
-  id: '/klachten',
-  path: '/klachten',
-  getParentRoute: () => LayoutRoute,
-} as any)
 const LayoutLabonderzoekRoute = LayoutLabonderzoekRouteImport.update({
   id: '/labonderzoek',
   path: '/labonderzoek',
@@ -183,6 +179,16 @@ const LayoutBlogSlugRoute = LayoutBlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutKlachtenIndexRoute = LayoutKlachtenIndexRouteImport.update({
+  id: '/klachten/',
+  path: '/klachten/',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutKlachtenSlugRoute = LayoutKlachtenSlugRouteImport.update({
+  id: '/klachten/$slug',
+  path: '/klachten/$slug',
+  getParentRoute: () => LayoutRoute,
+} as any)
 const LayoutReceptenIndexRoute = LayoutReceptenIndexRouteImport.update({
   id: '/recepten/',
   path: '/recepten/',
@@ -211,7 +217,6 @@ export interface FileRoutesByFullPath {
   '/faq': typeof LayoutFaqRoute
   '/glowup': typeof LayoutGlowupRoute
   '/hormoontraject': typeof LayoutHormoontrajectRoute
-  '/klachten': typeof LayoutKlachtenRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
   '/method': typeof LayoutMethodRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -221,8 +226,10 @@ export interface FileRoutesByFullPath {
   '/terms': typeof LayoutTermsRoute
   '/webshop': typeof LayoutWebshopRoute
   '/blog/$slug': typeof LayoutBlogSlugRoute
+  '/klachten/$slug': typeof LayoutKlachtenSlugRoute
   '/recepten/$slug': typeof LayoutReceptenSlugRoute
   '/blog/': typeof LayoutBlogIndexRoute
+  '/klachten/': typeof LayoutKlachtenIndexRoute
   '/recepten/': typeof LayoutReceptenIndexRoute
 }
 export interface FileRoutesByTo {
@@ -241,7 +248,6 @@ export interface FileRoutesByTo {
   '/faq': typeof LayoutFaqRoute
   '/glowup': typeof LayoutGlowupRoute
   '/hormoontraject': typeof LayoutHormoontrajectRoute
-  '/klachten': typeof LayoutKlachtenRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
   '/method': typeof LayoutMethodRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -252,8 +258,10 @@ export interface FileRoutesByTo {
   '/webshop': typeof LayoutWebshopRoute
   '/': typeof LayoutIndexRoute
   '/blog/$slug': typeof LayoutBlogSlugRoute
+  '/klachten/$slug': typeof LayoutKlachtenSlugRoute
   '/recepten/$slug': typeof LayoutReceptenSlugRoute
   '/blog': typeof LayoutBlogIndexRoute
+  '/klachten': typeof LayoutKlachtenIndexRoute
   '/recepten': typeof LayoutReceptenIndexRoute
 }
 export interface FileRoutesById {
@@ -274,7 +282,6 @@ export interface FileRoutesById {
   '/_layout/faq': typeof LayoutFaqRoute
   '/_layout/glowup': typeof LayoutGlowupRoute
   '/_layout/hormoontraject': typeof LayoutHormoontrajectRoute
-  '/_layout/klachten': typeof LayoutKlachtenRoute
   '/_layout/labonderzoek': typeof LayoutLabonderzoekRoute
   '/_layout/method': typeof LayoutMethodRoute
   '/_layout/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -285,8 +292,10 @@ export interface FileRoutesById {
   '/_layout/webshop': typeof LayoutWebshopRoute
   '/_layout/': typeof LayoutIndexRoute
   '/_layout/blog/$slug': typeof LayoutBlogSlugRoute
+  '/_layout/klachten/$slug': typeof LayoutKlachtenSlugRoute
   '/_layout/recepten/$slug': typeof LayoutReceptenSlugRoute
   '/_layout/blog/': typeof LayoutBlogIndexRoute
+  '/_layout/klachten/': typeof LayoutKlachtenIndexRoute
   '/_layout/recepten/': typeof LayoutReceptenIndexRoute
 }
 export interface FileRouteTypes {
@@ -308,7 +317,6 @@ export interface FileRouteTypes {
     | '/faq'
     | '/glowup'
     | '/hormoontraject'
-    | '/klachten'
     | '/labonderzoek'
     | '/method'
     | '/nieuwsbrief'
@@ -318,8 +326,10 @@ export interface FileRouteTypes {
     | '/terms'
     | '/webshop'
     | '/blog/$slug'
+    | '/klachten/$slug'
     | '/recepten/$slug'
     | '/blog/'
+    | '/klachten/'
     | '/recepten/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -338,7 +348,6 @@ export interface FileRouteTypes {
     | '/faq'
     | '/glowup'
     | '/hormoontraject'
-    | '/klachten'
     | '/labonderzoek'
     | '/method'
     | '/nieuwsbrief'
@@ -349,8 +358,10 @@ export interface FileRouteTypes {
     | '/webshop'
     | '/'
     | '/blog/$slug'
+    | '/klachten/$slug'
     | '/recepten/$slug'
     | '/blog'
+    | '/klachten'
     | '/recepten'
   id:
     | '__root__'
@@ -370,7 +381,6 @@ export interface FileRouteTypes {
     | '/_layout/faq'
     | '/_layout/glowup'
     | '/_layout/hormoontraject'
-    | '/_layout/klachten'
     | '/_layout/labonderzoek'
     | '/_layout/method'
     | '/_layout/nieuwsbrief'
@@ -381,8 +391,10 @@ export interface FileRouteTypes {
     | '/_layout/webshop'
     | '/_layout/'
     | '/_layout/blog/$slug'
+    | '/_layout/klachten/$slug'
     | '/_layout/recepten/$slug'
     | '/_layout/blog/'
+    | '/_layout/klachten/'
     | '/_layout/recepten/'
   fileRoutesById: FileRoutesById
 }
@@ -513,13 +525,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutHormoontrajectRouteImport
       parentRoute: typeof LayoutRoute
     }
-    '/_layout/klachten': {
-      id: '/_layout/klachten'
-      path: '/klachten'
-      fullPath: '/klachten'
-      preLoaderRoute: typeof LayoutKlachtenRouteImport
-      parentRoute: typeof LayoutRoute
-    }
     '/_layout/labonderzoek': {
       id: '/_layout/labonderzoek'
       path: '/labonderzoek'
@@ -590,6 +595,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutBlogSlugRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/klachten/': {
+      id: '/_layout/klachten/'
+      path: '/klachten'
+      fullPath: '/klachten/'
+      preLoaderRoute: typeof LayoutKlachtenIndexRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/klachten/$slug': {
+      id: '/_layout/klachten/$slug'
+      path: '/klachten/$slug'
+      fullPath: '/klachten/$slug'
+      preLoaderRoute: typeof LayoutKlachtenSlugRouteImport
+      parentRoute: typeof LayoutRoute
+    }
     '/_layout/recepten/': {
       id: '/_layout/recepten/'
       path: '/recepten'
@@ -621,7 +640,6 @@ interface LayoutRouteChildren {
   LayoutFaqRoute: typeof LayoutFaqRoute
   LayoutGlowupRoute: typeof LayoutGlowupRoute
   LayoutHormoontrajectRoute: typeof LayoutHormoontrajectRoute
-  LayoutKlachtenRoute: typeof LayoutKlachtenRoute
   LayoutLabonderzoekRoute: typeof LayoutLabonderzoekRoute
   LayoutMethodRoute: typeof LayoutMethodRoute
   LayoutNieuwsbriefRoute: typeof LayoutNieuwsbriefRoute
@@ -632,8 +650,10 @@ interface LayoutRouteChildren {
   LayoutWebshopRoute: typeof LayoutWebshopRoute
   LayoutIndexRoute: typeof LayoutIndexRoute
   LayoutBlogSlugRoute: typeof LayoutBlogSlugRoute
+  LayoutKlachtenSlugRoute: typeof LayoutKlachtenSlugRoute
   LayoutReceptenSlugRoute: typeof LayoutReceptenSlugRoute
   LayoutBlogIndexRoute: typeof LayoutBlogIndexRoute
+  LayoutKlachtenIndexRoute: typeof LayoutKlachtenIndexRoute
   LayoutReceptenIndexRoute: typeof LayoutReceptenIndexRoute
 }
 
@@ -651,7 +671,6 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutFaqRoute: LayoutFaqRoute,
   LayoutGlowupRoute: LayoutGlowupRoute,
   LayoutHormoontrajectRoute: LayoutHormoontrajectRoute,
-  LayoutKlachtenRoute: LayoutKlachtenRoute,
   LayoutLabonderzoekRoute: LayoutLabonderzoekRoute,
   LayoutMethodRoute: LayoutMethodRoute,
   LayoutNieuwsbriefRoute: LayoutNieuwsbriefRoute,
@@ -662,8 +681,10 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutWebshopRoute: LayoutWebshopRoute,
   LayoutIndexRoute: LayoutIndexRoute,
   LayoutBlogSlugRoute: LayoutBlogSlugRoute,
+  LayoutKlachtenSlugRoute: LayoutKlachtenSlugRoute,
   LayoutReceptenSlugRoute: LayoutReceptenSlugRoute,
   LayoutBlogIndexRoute: LayoutBlogIndexRoute,
+  LayoutKlachtenIndexRoute: LayoutKlachtenIndexRoute,
   LayoutReceptenIndexRoute: LayoutReceptenIndexRoute,
 }
 
