@@ -401,7 +401,7 @@ export const huidContent: ComplaintContentMap = {
   'rosacea': {
     intro: [
       'Je stapt de sportschool uit of neemt een slokje wijn, en meteen kleuren je wangen felrood, alsof iedereen het ziet. Rosacea maakt dat je huid soms een eigen leven lijkt te leiden, met blozen dat niet meer weggaat en zichtbare adertjes die je liever camoufleert.',
-      'Rosacea komt vaak voort uit een combinatie van een gevoelige huidbarrière en signalen van binnenuit. Warmte, alcohol, pittig eten en zon zijn bekende triggers, maar ook wat er in je darmen gebeurt, zoals SIBO, en hoeveel maagzuur je aanmaakt, kunnen meespelen. Ook in en rond de overgang zien veel vrouwen hun rosacea veranderen.",
+      'Rosacea komt vaak voort uit een combinatie van een gevoelige huidbarrière en signalen van binnenuit. Warmte, alcohol, pittig eten en zon zijn bekende triggers, maar ook wat er in je darmen gebeurt, zoals SIBO, en hoeveel maagzuur je aanmaakt, kunnen meespelen. Ook in en rond de overgang zien veel vrouwen hun rosacea veranderen.',
       'Je wilt niet steeds nadenken of die ene wijn op een verjaardag je gezicht weer in de fik zet. Dat begint met begrijpen welke triggers en onderliggende factoren bij jou samenkomen.',
     ],
     recognition: [
