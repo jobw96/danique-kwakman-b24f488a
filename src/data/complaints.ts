@@ -126,7 +126,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'opgeblazen-buik',
     category: 'Darmen en spijsvertering',
-    title: 'Opgeblazen buik',
+    title: 'Een opgeblazen buik (na het eten)',
     pageTitle: 'Een opgeblazen buik',
     seoTitle: 'Opgeblazen buik: oorzaken en aanpak',
     seoDescription:
@@ -184,7 +184,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'vermoeidheid',
     category: 'Energie en bloedsuiker',
-    title: 'Vermoeidheid',
+    title: 'Moe wakker worden, ook na genoeg slaap',
     pageTitle: 'Vermoeidheid en energiedips',
     seoTitle: 'Vermoeidheid: oorzaken en aanpak',
     seoDescription:
@@ -213,7 +213,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'cravings-en-bloedsuiker',
     category: 'Energie en bloedsuiker',
-    title: 'Cravings & bloedsuiker',
+    title: 'Cravings of veel trek in zoet',
     pageTitle: 'Cravings en bloedsuikerschommelingen',
     seoTitle: 'Cravings en bloedsuikerschommelingen',
     seoDescription:
@@ -242,7 +242,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'slaapproblemen',
     category: 'Energie en bloedsuiker',
-    title: 'Slaapproblemen',
+    title: 'Moeite met inslapen of doorslapen',
     pageTitle: 'Slaapproblemen',
     seoTitle: 'Slaapproblemen: oorzaken en aanpak',
     seoDescription:
@@ -620,7 +620,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'pcos-pmos',
     category: 'Hormonen en cyclus',
-    title: 'PCOS / PMOS',
+    title: 'PCOS/ PMOS',
     pageTitle: 'PCOS (PMOS)',
     seoTitle: 'PCOS en PMOS: herkennen en aanpak',
     seoDescription:
