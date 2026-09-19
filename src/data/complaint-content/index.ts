@@ -4,6 +4,7 @@ import { energieContent1 } from './energie-1';
 import { energieContent2 } from './energie-2';
 import { hormonenContent1 } from './hormonen-1';
 import { hormonenContent2 } from './hormonen-2';
+import { huidContent } from './huid';
 import { onregelmatigeCyclusContent } from './onregelmatige-cyclus';
 import type { ComplaintContentMap } from './types';
 
