@@ -101,9 +101,9 @@ export const complaints: Complaint[] = [
     category: 'Hormonen en cyclus',
     title: 'Een onregelmatige cyclus',
     pageTitle: 'Een onregelmatige cyclus',
-    seoTitle: 'Onregelmatige cyclus: wat betekent dat?',
+    seoTitle: 'Onregelmatige cyclus: oorzaken',
     seoDescription:
-      'Een cyclus die wisselt, uitblijft of niet te voorspellen is. Lees hoe je dit herkent, wat het kan betekenen en hoe ik je begeleid.',
+      'Is je menstruatie onregelmatig, blijft deze uit of wisselt je cyclus sterk? Lees wat er kan meespelen en hoe ik naar jouw klachten kijk.',
     teaser: 'Een cyclus die wisselt, uitblijft of lastig te voorspellen is.',
     intro: [
       'Je cyclus is een soort maandelijkse gezondheidsmeter. Wisselt de lengte sterk, blijft je menstruatie weg of weet je nooit wanneer je hem kunt verwachten, dan is dat een signaal dat je hormonen uit balans zijn.',
