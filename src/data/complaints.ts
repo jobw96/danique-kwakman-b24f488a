@@ -646,7 +646,7 @@ export const complaints: Complaint[] = [
       'De diagnose PDS betekent niet dat je ermee moet leren leven. Lees hoe je klachten herkent en waar we bij een prikkelbare darm naar kijken.',
     teaser: 'De diagnose prikkelbare darm, met wisselende klachten.',
     intro: [
-      'PDS is een diagnose die gestaan wordt als andere oorzaken zijn uitgesloten. Het zegt vooral dat je darm overgevoelig reageert, niet waarom dat zo is.',
+      'PDS is een diagnose die gesteld wordt als andere oorzaken zijn uitgesloten. Het zegt vooral dat je darm overgevoelig reageert, niet waarom dat zo is.',
       'Juist die waarom-vraag is waar ik naar kijk: wat maakt jouw darm op dit moment zo prikkelbaar?',
     ],
     signals: [
