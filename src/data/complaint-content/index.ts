@@ -16,4 +16,5 @@ export const complaintContent: ComplaintContentMap = {
   ...darmenContent2,
   ...energieContent1,
   ...energieContent2,
+  ...huidContent,
 };
