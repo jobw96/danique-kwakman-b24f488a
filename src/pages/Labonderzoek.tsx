@@ -25,6 +25,8 @@ const TESTS = [
   {
     title: 'Darm- en ontlastingsonderzoek',
     icon: Microscope,
+    usefulFor:
+      'Slim in te zetten bij buikklachten, een opgeblazen gevoel, PDS-achtige klachten, wisselende ontlasting of het vermoeden dat je darmen een rol spelen bij je klachten.',
     description:
       'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Afhankelijk van jouw klachten kan worden gekeken naar onder andere:',
     markers: [
@@ -39,6 +41,8 @@ const TESTS = [
   {
     title: 'Hormoonprofiel vrouw',
     icon: Droplets,
+    usefulFor:
+      'Slim in te zetten bij een onregelmatige cyclus, PMS, PCOS, klachten rond de overgang of het gevoel dat je hormonen niet in balans zijn.',
     description:
       'Brengt de vrouwelijke hormoonhuishouding in kaart via speeksel. Afhankelijk van jouw klachten en cyclus kan worden gekeken naar:',
     markers: [
@@ -51,12 +55,16 @@ const TESTS = [
   {
     title: 'Cortisol-dagprofiel',
     icon: Activity,
+    usefulFor:
+      'Slim in te zetten bij aanhoudende vermoeidheid, veel stress, slaapproblemen of energiedippen over de dag.',
     description:
       'Brengt het verloop van cortisol over de dag in beeld via meerdere speekselmonsters. Dit kan aanvullende informatie geven wanneer stress, vermoeidheid of slaapproblemen een rol spelen.',
   },
   {
     title: 'Voedselintoleranties',
     icon: Salad,
+    usefulFor:
+      'Slim in te zetten bij buikklachten, huidklachten of vermoeidheid waarbij het vermoeden bestaat dat bepaalde voeding een rol speelt.',
     description:
       'Wanneer klachten mogelijk met voeding te maken hebben, kan gericht onderzoek naar voedselintoleranties uitkomst bieden:',
     markers: [
@@ -67,6 +75,8 @@ const TESTS = [
   {
     title: 'Bloedonderzoek',
     icon: TestTubes,
+    usefulFor:
+      'Slim in te zetten bij vermoeidheid, haaruitval, een vermoeden van tekorten zoals ijzer of vitamine D, of bloedsuikerschommelingen.',
     description:
       'Afhankelijk van je hulpvraag kunnen bloedwaarden aanvullende informatie geven. Denk aan:',
     markers: [
@@ -79,6 +89,8 @@ const TESTS = [
   {
     title: 'Schildklierprogramma plus',
     icon: Activity,
+    usefulFor:
+      'Slim in te zetten bij vermoeidheid, traag metabolisme, haaruitval of klachten terwijl je schildklierwaarden volgens de huisarts "normaal" zijn.',
     description:
       'Geeft een vollediger beeld van de schildklierfunctie dan alleen de standaardwaarden. Denk aan:',
     markers: [
@@ -91,6 +103,8 @@ const TESTS = [
   {
     title: 'Aanvullend onderzoek',
     icon: FlaskConical,
+    usefulFor:
+      'Slim in te zetten bij een specifieke hulpvraag, zoals vermoeden van histamine-intolerantie of een klacht die met de andere onderzoeken niet volledig in beeld komt.',
     description:
       'Soms past een andere gerichte test beter bij jouw situatie. Denk bijvoorbeeld aan:',
     markers: [
