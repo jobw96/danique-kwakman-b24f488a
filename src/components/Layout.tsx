@@ -23,6 +23,9 @@ const footerNav = [{
     name: 'Alle trajecten',
     href: '/behandelingen'
   }, {
+    name: '1:1 Bloedsuikertraject',
+    href: '/bloedsuikertraject'
+  }, {
     name: '1:1 Hormoontraject',
     href: '/hormoontraject'
   }, {
@@ -31,9 +34,6 @@ const footerNav = [{
   }, {
     name: 'Labonderzoek',
     href: '/labonderzoek'
-  }, {
-    name: '1:1 Bloedsuikertraject',
-    href: '/bloedsuikertraject'
   }, {
     name: 'De CIRCLE-methode',
     href: '/method'
