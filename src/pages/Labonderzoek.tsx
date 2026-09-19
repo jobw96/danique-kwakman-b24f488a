@@ -166,7 +166,7 @@ const Labonderzoek = () => {
                   {test.markers && test.markers.length > 0 && (
                     <ul className="mt-4 space-y-2">
                       {test.markers.map((marker) => {
-                        const item =
+                        const item: { label: string; href?: string } =
                           typeof marker === 'string' ? { label: marker } : marker;
                         return (
                           <li key={item.label} className="flex gap-2.5 text-sm leading-relaxed text-foreground">
