@@ -58,31 +58,60 @@ const irregularCycleContent = {
   faqs: [
     {
       question: 'Wanneer is een menstruatiecyclus onregelmatig?',
-      answer: 'Een cyclus hoeft niet precies 28 dagen te duren. Veel volwassen vrouwen hebben een cyclus van ongeveer 21 tot 35 dagen. Vooral sterke verschillen tussen de ene cyclus en de andere, een heel korte of juist lange cyclus en een menstruatie die herhaaldelijk uitblijft zijn redenen om verder te kijken. Eén afwijkende maand na ziekte, reizen of een stressvolle periode vertelt nog niet het hele verhaal. Wil je weten of er bij jou iets speelt, dan brengen we in een kennismaking of intake samen in kaart hoe jouw cyclus verloopt en welke signalen de moeite waard zijn om op te volgen.',
+      answer: [
+        'Een cyclus hoeft niet precies 28 dagen te duren. Een cyclus tussen ongeveer 21 en 35 dagen komt regelmatig voor, maar vooral het patroon is interessant. Duurt je cyclus de ene maand 28 dagen en de volgende maand ineens 45 dagen? Of blijft je menstruatie regelmatig langer dan een maand weg? Dan is het interessant om verder te kijken.',
+        'Ook een cyclus die steeds langer of juist korter wordt, tussentijds bloedverlies of het ontbreken van duidelijke signalen van een ovulatie kunnen aanwijzingen zijn dat er meer speelt. Eén afwijkende cyclus na bijvoorbeeld ziekte, veel stress of een periode van weinig slaap zegt daarbij niet meteen alles.',
+        'Tijdens een traject kijken we daarom niet alleen naar het aantal dagen tussen je menstruaties, maar naar je cyclus als geheel en naar de klachten en signalen die je daarnaast ervaart.',
+      ],
     },
     {
       question: 'Wat betekent het als mijn cyclus 40 of 60 dagen duurt?',
-      answer: 'Bij een lange cyclus vindt de ovulatie vaak later plaats of blijft deze uit. Dat kan samenhangen met onder andere PCOS/PMOS, stress, onvoldoende energie-inname, intensief sporten, veranderingen in gewicht, de schildklier of herstel na hormonale anticonceptie. Blijft je menstruatie regelmatig lang uit, dan is het verstandig om dit ook bij je huisarts te laten beoordelen. Wat ik daarbij voor je kan betekenen: tijdens de intake brengen we in kaart wat jouw verhaal, cyclus en leefstijl vertellen en kijken we of aanvullend onderzoek, zoals een hormoonprofiel of schildkliercheck, meer duidelijkheid geeft. Vanuit daar kijken we wat jouw cyclus praktisch kan helpen.',
+      answer: [
+        'Bij een cyclus van 40 of 60 dagen zit er veel tijd tussen je menstruaties. Vaak betekent dit dat de ovulatie later plaatsvindt dan gemiddeld of dat er in die cyclus geen ovulatie is geweest.',
+        'Een lange cyclus kan verschillende oorzaken hebben. Denk aan PCOS, onvoldoende energie-inname, veel sporten, veranderingen in gewicht, langdurige stress, onvoldoende herstel of veranderingen in de hormonale aansturing na het stoppen met anticonceptie. Ook je schildklier speelt een rol bij de regulatie van je cyclus.',
+        'In mijn begeleiding kijken we daarom verder dan alleen de lengte van je cyclus. We brengen je cyclus, voeding, energie-inname, stress, slaap, beweging en andere hormonale signalen samen in kaart. Zo kunnen we beter bepalen waar bij jou de aandacht nodig is en welke stappen passend zijn.',
+      ],
     },
     {
       question: 'Kan ik een onregelmatige cyclus hebben en toch ovuleren?',
-      answer: 'Ja. Bij een wisselende cyclus kan er wel een ovulatie zijn, maar deze valt dan niet iedere maand rond hetzelfde moment. En soms blijft de ovulatie een keer uit. Een app voorspelt dit op basis van eerdere maanden en is daarom bij een onregelmatige cyclus niet altijd betrouwbaar. Wil je graag beter begrijpen of en wanneer je ovuleert, dan leer ik je tijdens een traject kijken naar de signalen van je lichaam en kijken we waar nodig met onderzoek mee.',
+      answer: [
+        'Ja. Een onregelmatige cyclus betekent niet automatisch dat je niet ovuleert.',
+        'Je kunt bijvoorbeeld iedere maand een ovulatie hebben, maar deze vindt niet iedere keer rond dezelfde dag plaats. Bij een wisselende cyclus kan de ene ovulatie bijvoorbeeld eerder plaatsvinden en de volgende veel later. Het kan ook voorkomen dat er in een bepaalde cyclus helemaal geen ovulatie plaatsvindt.',
+        'Een menstruatie-app voorspelt je vruchtbare dagen vooral op basis van je eerdere cyclus. Bij een onregelmatige cyclus is zo\u2019n voorspelling daarom minder betrouwbaar.',
+        'Als je beter wilt begrijpen of en wanneer je ovuleert, kunnen we tijdens een traject kijken naar signalen zoals cervixslijm, lichaamstemperatuur en je cycluspatroon. Zo leer je beter herkennen wat er gedurende je cyclus gebeurt.',
+      ],
     },
     {
       question: 'Kan stress mijn menstruatie onregelmatig maken?',
-      answer: 'Langdurige lichamelijke of mentale stress kan de hormonale aansturing van de ovulatie beïnvloeden. Ook weinig slaap, veel trainen en onvoldoende herstel zijn vormen van belasting. Daarom kijk ik niet alleen naar hoe druk je agenda is, maar ook naar wat je lichaam dagelijks moet opvangen. Samen kijken we waar de belasting bij jou vandaan komt en wat er praktisch mogelijk is, zodat je lichaam weer ruimte krijgt om je cyclus goed aan te sturen.',
+      answer: [
+        'Langdurige lichamelijke of mentale stress kan invloed hebben op de hormonale aansturing van je ovulatie. En stress is daarbij meer dan alleen een drukke agenda.',
+        'Ook weinig slaap, veel sporten, onvoldoende eten, weinig herstel of een langere periode waarin je lichaam veel moet opvangen, zijn vormen van belasting. Wanneer die belasting langere tijd hoog is, kan je lichaam de ovulatie vertragen of tijdelijk onderdrukken.',
+        'Daarom kijk ik bij een onregelmatige cyclus niet alleen naar hoeveel stress je ervaart. Tijdens de intake brengen we ook je slaap, voeding, beweging, herstel en energieniveau in kaart. Vervolgens kijken we waar de grootste belasting zit en wat je daarin praktisch kunt aanpassen.',
+      ],
     },
     {
       question: 'Welke rol spelen voeding en bloedsuiker bij mijn cyclus?',
-      answer: 'Voldoende energie en voedingsstoffen zijn nodig voor de aanmaak en aansturing van hormonen. Daarnaast kunnen sterke bloedsuikerschommelingen en veel insuline relevant zijn, vooral wanneer een onregelmatige cyclus samengaat met PCOS/PMOS, cravings, energiedips of acne. Ik werk daarom nooit met een standaard voedingslijst, maar met een aanpak die past bij jouw situatie, smaak en dagelijks leven.',
+      answer: [
+        'Je lichaam heeft voldoende energie en voedingsstoffen nodig voor de aanmaak en aansturing van hormonen. Structureel te weinig eten, maaltijden overslaan of veel sporten zonder voldoende voeding kan daarom invloed hebben op je cyclus.',
+        'Ook je bloedsuiker en insuline kunnen relevant zijn. Zeker wanneer een onregelmatige cyclus samengaat met cravings, energiedips, acne, gewichtsschommelingen of PCOS.',
+        'In mijn begeleiding kijk ik daarom niet alleen naar wat je eet, maar ook naar hoeveel energie je binnenkrijgt, hoe je maaltijden zijn opgebouwd en wat je gedurende de dag merkt aan energie, trek en cravings. Vanuit daar kunnen we heel concreet kijken waar je voeding aangepast kan worden.',
+      ],
     },
     {
       question: 'Wanneer komt mijn cyclus terug na stoppen met de pil?',
-      answer: 'Dat verschilt per vrouw. De bloeding tijdens de stopweek was geen natuurlijke menstruatie; na stoppen moet de eigen hormonale aansturing weer zichtbaar worden. Geef je lichaam tijd, maar neem contact op met je huisarts als je menstruatie langdurig uitblijft of als je je zorgen maakt. Komt je cyclus moeilijk op gang, dan kan ik je begeleiden met voeding, leefstijl en waar nodig onderzoek, zodat je lichaam alle bouwstenen krijgt om zelf weer goed aan te sturen.',
+      answer: [
+        'Na het stoppen met de pil moet je eigen hormonale cyclus weer op gang komen. De bloeding tijdens de stopweek van de pil is namelijk een onttrekkingsbloeding en geen menstruatie die volgt op een eigen ovulatie.',
+        'Bij de ene vrouw komt de eigen cyclus snel terug, bij de andere duurt het langer. Ook je cyclus vóór de pil is hierbij interessant. Had je toen al een lange of onregelmatige cyclus, dan kan dat belangrijke informatie geven over wat er nu gebeurt.',
+        'Wanneer je cyclus na het stoppen met de pil moeilijk op gang komt, kunnen we in een traject kijken naar je cyclusgeschiedenis, voeding, energie-inname, stress, slaap, beweging en andere hormonale signalen. Zo brengen we eerst in kaart wat er speelt voordat we bepalen waar je iets kunt aanpassen.',
+      ],
     },
     {
       question: 'Wanneer moet ik met een onregelmatige menstruatie naar de huisarts?',
-      answer: 'Neem contact op met je huisarts wanneer je menstruatie zonder duidelijke reden drie maanden uitblijft, bij een mogelijke zwangerschap, zeer hevig bloedverlies, ernstige pijn, bloedverlies na de overgang of wanneer je je zorgen maakt. Ook bij een kinderwens is het verstandig om een sterk wisselende of uitblijvende cyclus tijdig te bespreken. Naast die medische zorg kan ik je begeleiden bij alles wat je zelf kunt doen voor je cyclus, zoals voeding, bloedsuiker, stress en herstel.',
+      answer: [
+        'Een onregelmatige cyclus is niet altijd reden tot zorgen, maar er zijn situaties waarin het belangrijk is om medische beoordeling te laten plaatsvinden. Denk bijvoorbeeld aan een menstruatie die langere tijd uitblijft, zeer hevig bloedverlies, ernstige pijn, bloedverlies na de overgang of een mogelijke zwangerschap.',
+        'Ook wanneer je zwanger wilt worden en je menstruatie erg onregelmatig is of regelmatig uitblijft, is het goed om dit te bespreken.',
+        'Daarnaast kan een onregelmatige cyclus juist aanleiding zijn om verder te kijken naar wat er rondom je cyclus gebeurt. Tijdens mijn begeleiding kijken we onder andere naar de lengte en het verloop van je cyclus, signalen van een ovulatie en klachten zoals acne, haaruitval, cravings of vermoeidheid. Waar relevant kunnen we dit aanvullen met laboratoriumonderzoek.',
+      ],
     },
   ],
 };
@@ -123,7 +152,13 @@ const IrregularCycleFaq = () => {
               animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
               className="overflow-hidden"
             >
-              <p className="pb-6 leading-relaxed text-muted-foreground">{item.answer}</p>
+              <div className="space-y-4 pb-6">
+                {item.answer.map((paragraph) => (
+                  <p key={paragraph} className="leading-relaxed text-muted-foreground">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </m.div>
           </div>
         );
