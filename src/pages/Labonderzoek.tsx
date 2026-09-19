@@ -216,7 +216,7 @@ const Labonderzoek = () => {
               Wil je meer duidelijkheid over jouw klachten?
             </h2>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              Tijdens een gratis kennismaking bespreken we jouw klachten en hulpvraag. Vanuit daar kijken we wat er nodig is om beter te begrijpen wat er in jouw lichaam speelt en of laboratoriumonderzoek onderdeel kan zijn van jouw traject.
+              Tijdens een gratis kennismaking bespreken we jouw klachten en hulpvraag. Vanuit daar kijken we wat er nodig is om te begrijpen wat er in jouw lichaam speelt en of laboratoriumonderzoek onderdeel kan zijn van jouw traject.
             </p>
             <CustomButton onClick={openModal} className="mt-4">
               Plan een gratis kennismaking
