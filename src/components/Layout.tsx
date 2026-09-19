@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -28,6 +28,9 @@ const footerNav = [{
   }, {
     name: '1:1 Darmtraject',
     href: '/darmtraject'
+  }, {
+    name: 'Labonderzoek',
+    href: '/labonderzoek'
   }, {
     name: '1:1 Bloedsuikertraject',
     href: '/bloedsuikertraject'
@@ -242,6 +245,11 @@ export const Layout: React.FC<LayoutProps> = ({
       href: '/darmtraject',
       description: '',
       icon: Activity
+    }, {
+      name: 'Labonderzoek',
+      href: '/labonderzoek',
+      description: '',
+      icon: FlaskConical
     }]
   }, {
     name: 'Webshop',
