@@ -42,7 +42,7 @@ const TESTS = [
     title: 'Hormoonprofiel vrouw',
     icon: Droplets,
     usefulFor:
-      'Slim in te zetten bij een onregelmatige cyclus, PMS, PCOS, klachten rond de overgang of het gevoel dat je hormonen niet in balans zijn.',
+      'Slim in te zetten bij een onregelmatige cyclus, PMS, PCOS/PMOS, klachten rond de overgang of het gevoel dat je hormonen niet in balans zijn.',
     description:
       'Brengt de vrouwelijke hormoonhuishouding in kaart via speeksel. Afhankelijk van jouw klachten en cyclus kan worden gekeken naar:',
     markers: [
