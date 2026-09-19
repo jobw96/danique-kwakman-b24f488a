@@ -3,7 +3,7 @@ import { PageTransition } from '@/components/Animations';
 import { breadcrumbs, seoHead } from '@/lib/seo';
 import Klachten from '@/pages/Klachten';
 
-export const Route = createFileRoute('/_layout/klachten')({
+export const Route = createFileRoute('/_layout/klachten/')({
   head: () =>
     seoHead({
       path: '/klachten',
