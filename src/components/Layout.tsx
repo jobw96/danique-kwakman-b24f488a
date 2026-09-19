@@ -65,6 +65,9 @@ const footerNav = [{
 }, {
   title: 'Over',
   links: [{
+    name: 'Klachten',
+    href: '/klachten'
+  }, {
     name: 'Over mij',
     href: '/over-mij'
   }, {
@@ -195,6 +198,9 @@ export const Layout: React.FC<LayoutProps> = ({
   const navLinks: NavItem[] = [{
     name: 'Home',
     href: '/'
+  }, {
+    name: 'Klachten',
+    href: '/klachten'
   }, {
     name: 'Gratis',
     subItems: [{
