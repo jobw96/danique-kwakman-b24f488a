@@ -4,10 +4,10 @@
  */
 
 export type ComplaintCategory =
-  | 'Klachten en symptomen'
-  | 'Hormonale disbalans'
-  | 'Levensfase en situatie'
-  | 'Aandoeningen';
+  | 'Hormonen en cyclus'
+  | 'Darmen en spijsvertering'
+  | 'Energie en bloedsuiker'
+  | 'Huid en haar';
 
 export const complaintCategories: {
   name: ComplaintCategory;
@@ -67,7 +67,7 @@ export interface Complaint {
 export const complaints: Complaint[] = [
   {
     slug: 'menstruatieklachten',
-    category: 'Huid en haar',
+    category: 'Hormonen en cyclus',
     title: 'Pijnlijke of hevige menstruaties',
     pageTitle: 'Menstruatieklachten',
     seoTitle: 'Menstruatieklachten: herkennen en aanpak',
@@ -270,7 +270,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'huid-en-haar',
-    category: 'Klachten en symptomen',
+    category: 'Huid en haar',
     title: 'Huid- & haarklachten',
     pageTitle: 'Huid- en haarklachten',
     seoTitle: 'Acne, huidklachten en haaruitval',
@@ -838,6 +838,9 @@ export const complaints: Complaint[] = [
 ];
 
 export const findComplaint = (slug: string) => complaints.find((item) => item.slug === slug);
+
+export const findComplaintCategory = (slug: string) =>
+  complaintCategories.find((category) => category.slug === slug);
 
 export const complaintsByCategory = complaintCategories.map((category) => ({
   ...category,

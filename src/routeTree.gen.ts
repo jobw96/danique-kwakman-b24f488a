@@ -40,6 +40,7 @@ import { Route as LayoutKlachtenIndexRouteImport } from './routes/_layout/klacht
 import { Route as LayoutKlachtenSlugRouteImport } from './routes/_layout/klachten/$slug'
 import { Route as LayoutReceptenIndexRouteImport } from './routes/_layout/recepten/index'
 import { Route as LayoutReceptenSlugRouteImport } from './routes/_layout/recepten/$slug'
+import { Route as LayoutKlachtenOnderdeelCategoryRouteImport } from './routes/_layout/klachten/onderdeel/$category'
 
 const LayoutRoute = LayoutRouteImport.update({
   id: '/_layout',
@@ -199,6 +200,12 @@ const LayoutReceptenSlugRoute = LayoutReceptenSlugRouteImport.update({
   path: '/recepten/$slug',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutKlachtenOnderdeelCategoryRoute =
+  LayoutKlachtenOnderdeelCategoryRouteImport.update({
+    id: '/klachten/onderdeel/$category',
+    path: '/klachten/onderdeel/$category',
+    getParentRoute: () => LayoutRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof LayoutIndexRoute
@@ -231,6 +238,7 @@ export interface FileRoutesByFullPath {
   '/blog/': typeof LayoutBlogIndexRoute
   '/klachten/': typeof LayoutKlachtenIndexRoute
   '/recepten/': typeof LayoutReceptenIndexRoute
+  '/klachten/onderdeel/$category': typeof LayoutKlachtenOnderdeelCategoryRoute
 }
 export interface FileRoutesByTo {
   '/darmtherapie-traject': typeof DarmtherapieTrajectRoute
@@ -263,6 +271,7 @@ export interface FileRoutesByTo {
   '/blog': typeof LayoutBlogIndexRoute
   '/klachten': typeof LayoutKlachtenIndexRoute
   '/recepten': typeof LayoutReceptenIndexRoute
+  '/klachten/onderdeel/$category': typeof LayoutKlachtenOnderdeelCategoryRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -297,6 +306,7 @@ export interface FileRoutesById {
   '/_layout/blog/': typeof LayoutBlogIndexRoute
   '/_layout/klachten/': typeof LayoutKlachtenIndexRoute
   '/_layout/recepten/': typeof LayoutReceptenIndexRoute
+  '/_layout/klachten/onderdeel/$category': typeof LayoutKlachtenOnderdeelCategoryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -331,6 +341,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/klachten/'
     | '/recepten/'
+    | '/klachten/onderdeel/$category'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/darmtherapie-traject'
@@ -363,6 +374,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/klachten'
     | '/recepten'
+    | '/klachten/onderdeel/$category'
   id:
     | '__root__'
     | '/_layout'
@@ -396,6 +408,7 @@ export interface FileRouteTypes {
     | '/_layout/blog/'
     | '/_layout/klachten/'
     | '/_layout/recepten/'
+    | '/_layout/klachten/onderdeel/$category'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -623,6 +636,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutReceptenSlugRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/klachten/onderdeel/$category': {
+      id: '/_layout/klachten/onderdeel/$category'
+      path: '/klachten/onderdeel/$category'
+      fullPath: '/klachten/onderdeel/$category'
+      preLoaderRoute: typeof LayoutKlachtenOnderdeelCategoryRouteImport
+      parentRoute: typeof LayoutRoute
+    }
   }
 }
 
@@ -655,6 +675,7 @@ interface LayoutRouteChildren {
   LayoutBlogIndexRoute: typeof LayoutBlogIndexRoute
   LayoutKlachtenIndexRoute: typeof LayoutKlachtenIndexRoute
   LayoutReceptenIndexRoute: typeof LayoutReceptenIndexRoute
+  LayoutKlachtenOnderdeelCategoryRoute: typeof LayoutKlachtenOnderdeelCategoryRoute
 }
 
 const LayoutRouteChildren: LayoutRouteChildren = {
@@ -686,6 +707,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutBlogIndexRoute: LayoutBlogIndexRoute,
   LayoutKlachtenIndexRoute: LayoutKlachtenIndexRoute,
   LayoutReceptenIndexRoute: LayoutReceptenIndexRoute,
+  LayoutKlachtenOnderdeelCategoryRoute: LayoutKlachtenOnderdeelCategoryRoute,
 }
 
 const LayoutRouteWithChildren =
