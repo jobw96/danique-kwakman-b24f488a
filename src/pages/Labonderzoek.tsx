@@ -7,6 +7,7 @@ import {
   TestTubes,
 } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
+import { Link } from '@/lib/router-compat';
 import { useBookingModal } from '@/components/BookingModal';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
@@ -17,6 +18,8 @@ const SectionTag = ({ children }: { children: string }) => (
     {children}
   </span>
 );
+
+type TestMarker = string | { label: string; href?: string };
 
 const TESTS = [
   {
@@ -51,23 +54,16 @@ const TESTS = [
     title: 'Cortisol-dagprofiel',
     icon: Activity,
     description:
-      'Brengt het verloop van cortisol over de dag in beeld via meerdere speekselmonsters. Dit kan aanvullende informatie geven wanneer stress, vermoeidheid of slaapproblemen een rol spelen:',
-    markers: [
-      'Cortisol op meerdere momenten van de dag',
-      'Het cortisolritme van ochtend tot avond',
-      'DHEA ter aanvulling',
-      'De balans tussen belasting en herstel',
-    ],
+      'Brengt het verloop van cortisol over de dag in beeld via meerdere speekselmonsters. Dit kan aanvullende informatie geven wanneer stress, vermoeidheid of slaapproblemen een rol spelen.',
   },
   {
-    title: 'Voedingsreacties',
+    title: 'Voedselintoleranties',
     icon: Salad,
     description:
-      'Wanneer voeding mogelijk meespeelt, kijken we zorgvuldig welke vorm van onderzoek zinvol kan zijn, zoals:',
+      'Wanneer klachten mogelijk met voeding te maken hebben, kan gericht onderzoek naar voedselintoleranties uitkomst bieden:',
     markers: [
-      'Voedingsreacties op een breed pakket voedingsmiddelen',
-      'Markers rondom histamine-intolerantie',
-      'Aanvulling op een elimatiedieet of voedingsdagboek',
+      'IGG prescreening op 31 voedingsmiddelen',
+      'IGE totaal',
     ],
   },
   {
@@ -78,9 +74,20 @@ const TESTS = [
     markers: [
       'IJzer en ferritine',
       'Vitamine B12, D en foliumzuur',
-      'Schildklierwaarden, zoals TSH, fT4 en fT3',
-      'Bloedsuiker en HbA1c',
+      { label: 'Bloedsuiker en HbA1c', href: '/bloedsuikertraject' },
       'Algemeen bloedbeeld',
+    ],
+  },
+  {
+    title: 'Schildklierprogramma plus',
+    icon: Activity,
+    description:
+      'Geeft een vollediger beeld van de schildklierfunctie dan alleen de standaardwaarden. Denk aan:',
+    markers: [
+      'TSH',
+      'fT4 en fT3',
+      'Reverse T3',
+      'Antistoffen (anti-TPO, anti-Tg, TSH-receptor)',
     ],
   },
   {
@@ -89,7 +96,6 @@ const TESTS = [
     description:
       'Soms past een andere gerichte test beter bij jouw situatie. Denk bijvoorbeeld aan:',
     markers: [
-      'Urineonderzoek',
       'Histamineonderzoek',
       'Overige gerichte tests die passen bij jouw hulpvraag',
     ],
@@ -157,14 +163,29 @@ const Labonderzoek = () => {
                     <h3 className="font-serif text-xl text-foreground">{test.title}</h3>
                   </div>
                   <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{test.description}</p>
-                  <ul className="mt-4 space-y-2">
-                    {test.markers.map((marker) => (
-                      <li key={marker} className="flex gap-2.5 text-sm leading-relaxed text-foreground">
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                        <span>{marker}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {test.markers && test.markers.length > 0 && (
+                    <ul className="mt-4 space-y-2">
+                      {test.markers.map((marker) => {
+                        const item: { label: string; href?: string } =
+                          typeof marker === 'string' ? { label: marker } : marker;
+                        return (
+                          <li key={item.label} className="flex gap-2.5 text-sm leading-relaxed text-foreground">
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                            {item.href ? (
+                              <Link
+                                to={item.href}
+                                className="underline underline-offset-2 transition-colors hover:text-primary-dark"
+                              >
+                                {item.label}
+                              </Link>
+                            ) : (
+                              <span>{item.label}</span>
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
                 </article>
               </FadeIn>
             ))}
