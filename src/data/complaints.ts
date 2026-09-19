@@ -1,10 +1,40 @@
 /**
- * Klachten die op /klachten als klikbare blokken staan.
+ * Klachten die op /klachten als klikbare blokken staan, gegroepeerd per categorie.
  * Elke klacht heeft een eigen pagina: /klachten/{slug}
  */
 
+export type ComplaintCategory =
+  | 'Klachten en symptomen'
+  | 'Hormonale disbalans'
+  | 'Levensfase en situatie'
+  | 'Aandoeningen';
+
+export const complaintCategories: {
+  name: ComplaintCategory;
+  description: string;
+}[] = [
+  {
+    name: 'Klachten en symptomen',
+    description: 'Waar je in het dagelijks leven last van hebt.',
+  },
+  {
+    name: 'Hormonale disbalans',
+    description: 'Patronen in je hormonen die klachten kunnen geven.',
+  },
+  {
+    name: 'Levensfase en situatie',
+    description: 'Periodes waarin je lichaam extra ondersteuning vraagt.',
+  },
+  {
+    name: 'Aandoeningen',
+    description: 'Diagnoses waarbij voeding en leefstijl veel kunnen doen.',
+  },
+];
+
 export interface Complaint {
   slug: string;
+  /** Categorie waaronder de klacht op /klachten staat. */
+  category: ComplaintCategory;
   /** Korte titel voor het blok. */
   title: string;
   /** Titel voor de detailpagina (H1). */
@@ -27,6 +57,7 @@ export interface Complaint {
 export const complaints: Complaint[] = [
   {
     slug: 'menstruatieklachten',
+    category: 'Klachten en symptomen',
     title: 'Menstruatieklachten',
     pageTitle: 'Menstruatieklachten',
     seoTitle: 'Menstruatieklachten: herkennen en aanpak',
@@ -54,35 +85,8 @@ export const complaints: Complaint[] = [
     traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
   },
   {
-    slug: 'pms',
-    title: 'PMS',
-    pageTitle: 'PMS en stemmingswisselingen',
-    seoTitle: 'PMS herkennen en aanpakken',
-    seoDescription:
-      'PMS met stemmingswisselingen, prikkelbaarheid of somberheid voor je menstruatie? Lees hoe je het herkent en wat er achter kan zitten.',
-    teaser: 'De dagen voor je menstruatie voel je jezelf niet meer.',
-    intro: [
-      'Bij PMS veranderen je klachten mee met je cyclus. De week voor je menstruatie voel je je somber, prikkelbaar of emotioneel, en zodra je menstruatie begint, valt dat gevoel weg.',
-      'Dat patroon is juist waardevolle informatie. Het vertelt iets over hoe je lichaam omgaat met de hormonale wisselingen in de tweede helft van je cyclus.',
-    ],
-    signals: [
-      'Stemmingswisselingen of een kort lontje voor je menstruatie',
-      'Somberheid, onrust of huilerigheid die steeds terugkomt',
-      'Gespannen of pijnlijke borsten',
-      'Vocht vasthouden, een opgeblazen gevoel of trek in zoet',
-      'Slechter slapen in de dagen voor je menstruatie',
-    ],
-    causes: [
-      'Te weinig progesteron ten opzichte van oestrogeen',
-      'Bloedsuikerschommelingen die je stemming versterken',
-      'Langdurige stress en onvoldoende herstel',
-      'Tekorten die je aanmaak van neurotransmitters beïnvloeden',
-      'De rol van je darmen bij het afvoeren van hormonen',
-    ],
-    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
-  },
-  {
     slug: 'onregelmatige-cyclus',
+    category: 'Klachten en symptomen',
     title: 'Onregelmatige cyclus',
     pageTitle: 'Een onregelmatige cyclus',
     seoTitle: 'Onregelmatige cyclus: wat betekent dat?',
@@ -110,63 +114,8 @@ export const complaints: Complaint[] = [
     traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
   },
   {
-    slug: 'pcos-pmos',
-    title: 'PCOS / PMOS',
-    pageTitle: 'PCOS (PMOS)',
-    seoTitle: 'PCOS en PMOS: herkennen en aanpak',
-    seoDescription:
-      'PCOS of PMOS met een onregelmatige cyclus, acne, haargroei of gewichtstoename? Lees hoe je het herkent en hoe begeleiding eruitziet.',
-    teaser: 'Een onregelmatige cyclus, acne of haargroei die bij PCOS kan horen.',
-    intro: [
-      'PCOS, ook wel PMOS genoemd, is een verzameling klachten die vaak samenhangt met je bloedsuiker, hormonen en ontstekingsgevoeligheid. Geen twee vrouwen met PCOS hebben precies hetzelfde beeld.',
-      'Daarom werk ik niet met een standaardaanpak, maar kijk ik welke factoren bij jou de grootste rol spelen.',
-    ],
-    signals: [
-      'Een onregelmatige cyclus of een menstruatie die wegblijft',
-      'Acne, vette huid of overmatige haargroei',
-      'Haaruitval op het hoofd',
-      'Moeite met afvallen of juist snel in gewicht toenemen',
-      'Cravings, energiedips en trek in zoet',
-    ],
-    causes: [
-      'Insulineresistentie en bloedsuikerschommelingen',
-      'Verhoogde androgenen zoals testosteron',
-      'Laaggradige ontstekingen',
-      'Stress en cortisol die je cyclus beïnvloeden',
-      'Darmgezondheid en tekorten aan voedingsstoffen',
-    ],
-    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
-  },
-  {
-    slug: 'overgang',
-    title: 'Overgangsklachten',
-    pageTitle: 'Klachten rondom de overgang',
-    seoTitle: 'Overgangsklachten: herkennen en aanpak',
-    seoDescription:
-      'Opvliegers, slaapproblemen, stemmingswisselingen of gewichtstoename in de overgang. Lees hoe je klachten herkent en hoe ik je begeleid.',
-    teaser: 'Opvliegers, slechter slapen of jezelf niet meer herkennen.',
-    intro: [
-      'De overgang begint vaak jaren voor je laatste menstruatie. In die periode wisselen je hormonen sterker, waardoor klachten kunnen ontstaan die je niet altijd meteen aan de overgang koppelt.',
-      'Deze fase is niet iets om door te bijten. Met voeding, leefstijl en gerichte ondersteuning valt er veel te verzachten.',
-    ],
-    signals: [
-      'Opvliegers of nachtelijk transpireren',
-      'Slechter in- of doorslapen',
-      'Stemmingswisselingen, onrust of kort lontje',
-      'Gewichtstoename rond je buik zonder dat je anders eet',
-      'Minder energie, vergeetachtigheid of brain fog',
-    ],
-    causes: [
-      'Dalend oestrogeen en progesteron',
-      'Bloedsuikerschommelingen die opvliegers versterken',
-      'Verhoogde stressbelasting en minder herstel',
-      'Schildklier die in deze fase minder meebeweegt',
-      'Veranderende behoefte aan eiwitten en voedingsstoffen',
-    ],
-    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
-  },
-  {
     slug: 'opgeblazen-buik',
+    category: 'Klachten en symptomen',
     title: 'Opgeblazen buik',
     pageTitle: 'Een opgeblazen buik',
     seoTitle: 'Opgeblazen buik: oorzaken en aanpak',
@@ -195,11 +144,12 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'darmklachten',
+    category: 'Klachten en symptomen',
     title: 'Darmklachten',
-    pageTitle: 'Darmklachten en PDS',
-    seoTitle: 'Darmklachten en PDS herkennen',
+    pageTitle: 'Darmklachten',
+    seoTitle: 'Darmklachten herkennen en aanpakken',
     seoDescription:
-      'Buikpijn, wisselende ontlasting, verstopping of PDS-achtige klachten. Lees hoe je darmklachten herkent en hoe begeleiding werkt.',
+      'Buikpijn, wisselende ontlasting of verstopping. Lees hoe je darmklachten herkent, wat er achter kan zitten en hoe begeleiding werkt.',
     teaser: 'Buikpijn, verstopping, diarree of wisselende ontlasting.',
     intro: [
       'Darmklachten bepalen vaak meer van je dag dan je aan de buitenkant laat zien. Je let op wat je eet, houdt rekening met waar een toilet is en toch blijven de klachten komen.',
@@ -208,9 +158,9 @@ export const complaints: Complaint[] = [
     signals: [
       'Buikpijn of krampen, ook los van het eten',
       'Verstopping, diarree of wisselende ontlasting',
-      'De diagnose PDS of prikkelbare darm',
       'Maagzuur, misselijkheid of snel een vol gevoel',
       'Klachten die toenemen bij stress of drukke periodes',
+      'Klachten die per cyclusfase veranderen',
     ],
     causes: [
       'Dysbiose of een verstoorde darmflora',
@@ -223,6 +173,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'vermoeidheid',
+    category: 'Klachten en symptomen',
     title: 'Vermoeidheid',
     pageTitle: 'Vermoeidheid en energiedips',
     seoTitle: 'Vermoeidheid: oorzaken en aanpak',
@@ -251,6 +202,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'cravings-en-bloedsuiker',
+    category: 'Klachten en symptomen',
     title: 'Cravings & bloedsuiker',
     pageTitle: 'Cravings en bloedsuikerschommelingen',
     seoTitle: 'Cravings en bloedsuikerschommelingen',
@@ -279,6 +231,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'slaapproblemen',
+    category: 'Klachten en symptomen',
     title: 'Slaapproblemen',
     pageTitle: 'Slaapproblemen',
     seoTitle: 'Slaapproblemen: oorzaken en aanpak',
@@ -307,6 +260,7 @@ export const complaints: Complaint[] = [
   },
   {
     slug: 'huid-en-haar',
+    category: 'Klachten en symptomen',
     title: 'Huid- & haarklachten',
     pageTitle: 'Huid- en haarklachten',
     seoTitle: 'Acne, huidklachten en haaruitval',
@@ -334,7 +288,37 @@ export const complaints: Complaint[] = [
     traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
   },
   {
+    slug: 'stemmingswisselingen',
+    category: 'Klachten en symptomen',
+    title: 'Stemmingswisselingen',
+    pageTitle: 'Stemmingswisselingen en een kort lontje',
+    seoTitle: 'Stemmingswisselingen en hormonen',
+    seoDescription:
+      'Prikkelbaar, somber of emotioneel zonder duidelijke reden. Lees hoe stemmingswisselingen samenhangen met je hormonen en bloedsuiker.',
+    teaser: 'Prikkelbaar, somber of emotioneel zonder duidelijke reden.',
+    intro: [
+      'Je stemming staat niet los van je lichaam. Hormonen, bloedsuiker, darmen en slaap bepalen mede hoe veerkrachtig je je voelt.',
+      'Merk je dat je stemming wisselt met je cyclus of met je eetmomenten, dan is dat waardevolle informatie om mee te werken.',
+    ],
+    signals: [
+      'Een kort lontje of sneller geïrriteerd zijn',
+      'Somberheid of huilerigheid die komt en gaat',
+      'Onrust of een gejaagd gevoel',
+      'Stemming die duidelijk meebeweegt met je cyclus',
+      'Prikkelbaar worden als je een maaltijd overslaat',
+    ],
+    causes: [
+      'Hormonale wisselingen in de tweede helft van je cyclus',
+      'Bloedsuikerschommelingen door je dag heen',
+      'Langdurige stress en te weinig herstel',
+      'Tekorten die je aanmaak van neurotransmitters beïnvloeden',
+      'De wisselwerking tussen je darmen en je brein',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
     slug: 'stress-en-herstel',
+    category: 'Klachten en symptomen',
     title: 'Stress & herstel',
     pageTitle: 'Stress en moeilijk herstellen',
     seoTitle: 'Stress en moeizaam herstel',
@@ -360,6 +344,361 @@ export const complaints: Complaint[] = [
       'De wisselwerking tussen stress, darmen en hormonen',
     ],
   },
+
+  {
+    slug: 'oestrogeendominantie',
+    category: 'Hormonale disbalans',
+    title: 'Oestrogeendominantie',
+    pageTitle: 'Oestrogeendominantie',
+    seoTitle: 'Oestrogeendominantie herkennen',
+    seoDescription:
+      'Gevoelige borsten, hevige menstruaties of PMS kunnen wijzen op oestrogeendominantie. Lees hoe je het herkent en wat eraan te doen is.',
+    teaser: 'Te veel oestrogeen ten opzichte van progesteron.',
+    intro: [
+      'Bij oestrogeendominantie is er niet per se te veel oestrogeen, maar te weinig progesteron om het in balans te houden. Die verhouding bepaalt hoe je je in de tweede helft van je cyclus voelt.',
+      'Hoe goed je lichaam oestrogeen afvoert via je lever en darmen speelt hierin een grote rol.',
+    ],
+    signals: [
+      'Gespannen of pijnlijke borsten voor je menstruatie',
+      'Hevig bloedverlies of stolsels',
+      'PMS, prikkelbaarheid of vocht vasthouden',
+      'Hoofdpijn of migraine rond je cyclus',
+      'Moeite met afvallen rond heupen en bovenbenen',
+    ],
+    causes: [
+      'Te weinig progesteron door een zwakke of uitblijvende ovulatie',
+      'Een lever die oestrogeen minder goed afbreekt',
+      'Darmen die hormonen niet goed afvoeren of verstopping',
+      'Langdurige stress en bloedsuikerschommelingen',
+      'Tekorten aan bijvoorbeeld B-vitaminen, magnesium of zink',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'progesterontekort',
+    category: 'Hormonale disbalans',
+    title: 'Progesterontekort',
+    pageTitle: 'Een progesterontekort',
+    seoTitle: 'Progesterontekort: signalen en aanpak',
+    seoDescription:
+      'Korte cyclus, spotting, slecht slapen of PMS kunnen wijzen op te weinig progesteron. Lees hoe je dit herkent en wat er achter kan zitten.',
+    teaser: 'Te weinig progesteron in de tweede helft van je cyclus.',
+    intro: [
+      'Progesteron maak je pas aan na een ovulatie. Het is je kalmerende hormoon: het helpt je slapen, houdt je stemming stabiel en zorgt voor een rustige menstruatie.',
+      'Blijft de aanmaak achter, dan merk je dat vaak in de week voor je menstruatie.',
+    ],
+    signals: [
+      'Een cyclus korter dan 25 dagen',
+      'Spotting in de dagen voor je menstruatie',
+      'Slecht slapen of onrustig wakker worden',
+      'PMS, onrust of huilerigheid',
+      'Een korte tweede cyclushelft',
+    ],
+    causes: [
+      'Een ovulatie die uitblijft of zwak is',
+      'Langdurige stress en een hoog cortisolpatroon',
+      'Te weinig eten of te intensief sporten',
+      'Schildklier die minder goed meewerkt',
+      'Tekorten aan bijvoorbeeld zink, magnesium of vitamine B6',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'insulineresistentie',
+    category: 'Hormonale disbalans',
+    title: 'Insulineresistentie',
+    pageTitle: 'Insulineresistentie',
+    seoTitle: 'Insulineresistentie herkennen',
+    seoDescription:
+      'Energiedips, cravings, moeite met afvallen of PCOS-klachten kunnen wijzen op insulineresistentie. Lees hoe je dit herkent en aanpakt.',
+    teaser: 'Je cellen reageren minder goed op insuline.',
+    intro: [
+      'Bij insulineresistentie reageren je cellen minder goed op insuline, waardoor je lichaam er steeds meer van moet maken. Dat beïnvloedt je energie, je gewicht en je hormonen.',
+      'Het is een patroon dat vaak jaren opbouwt, maar juist goed te beïnvloeden is met voeding, beweging en herstel.',
+    ],
+    signals: [
+      'Energiedips na het eten of in de middag',
+      'Steeds trek in zoet of snelle koolhydraten',
+      'Moeite met afvallen, vooral rond je buik',
+      'Een onregelmatige cyclus of PCOS-klachten',
+      'Donkere plekjes in de hals of nek',
+    ],
+    causes: [
+      'Maaltijden met te weinig eiwit, vet en vezels',
+      'Weinig beweging of veel zitten',
+      'Langdurige stress en te weinig slaap',
+      'Erfelijke gevoeligheid en hormonale factoren',
+      'Laaggradige ontstekingen en darmgezondheid',
+    ],
+    traject: { href: '/bloedsuikertraject', label: 'Bekijk het 1:1 Bloedsuikertraject' },
+  },
+  {
+    slug: 'schildklierdisbalans',
+    category: 'Hormonale disbalans',
+    title: 'Schildklierdisbalans',
+    pageTitle: 'Een schildklier die minder goed meewerkt',
+    seoTitle: 'Schildklierklachten herkennen',
+    seoDescription:
+      'Vermoeidheid, kouwelijk zijn, haaruitval of een trage stofwisseling. Lees hoe schildklierklachten samenhangen met je hormonen en voeding.',
+    teaser: 'Vermoeidheid, kouwelijk zijn of een trage stofwisseling.',
+    intro: [
+      'Je schildklier bepaalt het tempo van je stofwisseling. Werkt hij minder goed, dan voel je dat in je energie, gewicht, stemming en cyclus.',
+      'Waarden kunnen binnen de referentie vallen terwijl je toch klachten hebt. Daarom kijk ik naar het volledige beeld en niet alleen naar één waarde.',
+    ],
+    signals: [
+      'Vermoeidheid die niet weggaat met rust',
+      'Snel koud hebben, koude handen en voeten',
+      'Haaruitval of dunner wordend haar',
+      'Verstopping en een trage spijsvertering',
+      'Gewichtstoename zonder dat je anders eet',
+    ],
+    causes: [
+      'Te weinig omzetting van fT4 naar fT3',
+      'Antistoffen zoals anti-TPO of anti-Tg',
+      'Tekorten aan jodium, selenium, zink, ijzer of vitamine D',
+      'Langdurige stress en een hoog cortisolpatroon',
+      'Darmgezondheid en ontstekingsgevoeligheid',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'cortisol-uit-balans',
+    category: 'Hormonale disbalans',
+    title: 'Cortisol uit balans',
+    pageTitle: 'Cortisol uit balans',
+    seoTitle: 'Cortisol uit balans: signalen',
+    seoDescription:
+      'Wired but tired, nachtelijk wakker worden of een energiedip in de ochtend. Lees hoe een verstoord cortisolpatroon voelt en wat helpt.',
+    teaser: 'Moe maar toch opgejaagd, of energie op de verkeerde momenten.',
+    intro: [
+      'Cortisol is je wekhormoon: het hoort in de ochtend hoog te zijn en in de avond laag. Bij langdurige belasting kan dat ritme verschuiven.',
+      'Dan ben je moe wanneer je wakker moet zijn en klaarwakker wanneer je wilt slapen.',
+    ],
+    signals: [
+      'Moeilijk opstarten in de ochtend',
+      "'s Avonds pas energie krijgen",
+      'Nachtelijk wakker worden rond drie of vier uur',
+      'Hartkloppingen, onrust of een gejaagd gevoel',
+      'Trek in zout of zoet bij spanning',
+    ],
+    causes: [
+      'Langdurige stress zonder herstelmomenten',
+      'Bloedsuikerschommelingen en maaltijden overslaan',
+      'Te weinig slaap of een verschoven dagritme',
+      'Intensief sporten zonder voldoende voeding',
+      'Onderliggende darm- of schildklierklachten',
+    ],
+  },
+
+  {
+    slug: 'kinderwens',
+    category: 'Levensfase en situatie',
+    title: 'Kinderwens',
+    pageTitle: 'Kinderwens en je cyclus voorbereiden',
+    seoTitle: 'Kinderwens: je lichaam voorbereiden',
+    seoDescription:
+      'Een kinderwens vraagt om een cyclus die goed werkt. Lees waar we naar kijken om je lichaam en hormonen voor te bereiden.',
+    teaser: 'Je lichaam en cyclus voorbereiden op een zwangerschap.',
+    intro: [
+      'Bij een kinderwens kijken we naar of jouw cyclus doet wat hij hoort te doen: een goede ovulatie, voldoende progesteron en een lichaam dat genoeg bouwstoffen binnenkrijgt.',
+      'Een goed werkende cyclus is niet alleen belangrijk om zwanger te worden, maar ook voor hoe je je tijdens en na een zwangerschap voelt.',
+    ],
+    signals: [
+      'Een onregelmatige cyclus of een cyclus die uitblijft',
+      'Geen duidelijke tekenen van een ovulatie',
+      'Een korte tweede cyclushelft of spotting',
+      'Net gestopt met anticonceptie en nog geen ritme',
+      'Vermoeidheid, cravings of darmklachten naast je kinderwens',
+    ],
+    causes: [
+      'Een ovulatie die uitblijft of zwak is',
+      'Te weinig energie, eiwit of micronutriënten binnenkrijgen',
+      'Bloedsuikerschommelingen en insulineresistentie',
+      'Schildklier en de rol daarvan bij vruchtbaarheid',
+      'Langdurige stress en te weinig herstel',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'herstel-na-anticonceptie',
+    category: 'Levensfase en situatie',
+    title: 'Gestopt met anticonceptie',
+    pageTitle: 'Gestopt met de pil of andere anticonceptie',
+    seoTitle: 'Herstel na stoppen met de pil',
+    seoDescription:
+      'Acne, een uitblijvende menstruatie of PMS na het stoppen met de pil. Lees hoe je je cyclus na anticonceptie weer op gang helpt.',
+    teaser: 'Je cyclus weer op gang helpen na de pil of het spiraal.',
+    intro: [
+      'Na het stoppen met anticonceptie moet je lichaam de eigen hormoonproductie weer opbouwen. Bij de een gaat dat vlot, bij de ander komt de cyclus moeizaam terug.',
+      'In die periode kun je je lichaam gericht ondersteunen, zodat je cyclus zich sneller herstelt.',
+    ],
+    signals: [
+      'Een menstruatie die weken of maanden wegblijft',
+      'Acne of een onrustige huid na het stoppen',
+      'Haaruitval of dunner wordend haar',
+      'PMS of stemmingswisselingen die nieuw zijn',
+      'Een onregelmatige of erg lange cyclus',
+    ],
+    causes: [
+      'Een ovulatie die nog niet op gang komt',
+      'Tekorten die tijdens pilgebruik zijn ontstaan, zoals zink en B-vitaminen',
+      'Bloedsuikerschommelingen en verhoogde androgenen',
+      'Darmflora en de afvoer van hormonen',
+      'Stress en te weinig herstel in deze fase',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'overgang',
+    category: 'Levensfase en situatie',
+    title: 'Overgangsklachten',
+    pageTitle: 'Klachten rondom de overgang',
+    seoTitle: 'Overgangsklachten: herkennen en aanpak',
+    seoDescription:
+      'Opvliegers, slaapproblemen, stemmingswisselingen of gewichtstoename in de overgang. Lees hoe je klachten herkent en hoe ik je begeleid.',
+    teaser: 'Opvliegers, slechter slapen of jezelf niet meer herkennen.',
+    intro: [
+      'De overgang begint vaak jaren voor je laatste menstruatie. In die periode wisselen je hormonen sterker, waardoor klachten kunnen ontstaan die je niet altijd meteen aan de overgang koppelt.',
+      'Deze fase is niet iets om door te bijten. Met voeding, leefstijl en gerichte ondersteuning valt er veel te verzachten.',
+    ],
+    signals: [
+      'Opvliegers of nachtelijk transpireren',
+      'Slechter in- of doorslapen',
+      'Stemmingswisselingen, onrust of kort lontje',
+      'Gewichtstoename rond je buik zonder dat je anders eet',
+      'Minder energie, vergeetachtigheid of brain fog',
+    ],
+    causes: [
+      'Dalend oestrogeen en progesteron',
+      'Bloedsuikerschommelingen die opvliegers versterken',
+      'Verhoogde stressbelasting en minder herstel',
+      'Schildklier die in deze fase minder meebeweegt',
+      'Veranderende behoefte aan eiwitten en voedingsstoffen',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+
+  {
+    slug: 'pms',
+    category: 'Aandoeningen',
+    title: 'PMS',
+    pageTitle: 'PMS en stemmingswisselingen',
+    seoTitle: 'PMS herkennen en aanpakken',
+    seoDescription:
+      'PMS met stemmingswisselingen, prikkelbaarheid of somberheid voor je menstruatie? Lees hoe je het herkent en wat er achter kan zitten.',
+    teaser: 'De dagen voor je menstruatie voel je jezelf niet meer.',
+    intro: [
+      'Bij PMS veranderen je klachten mee met je cyclus. De week voor je menstruatie voel je je somber, prikkelbaar of emotioneel, en zodra je menstruatie begint, valt dat gevoel weg.',
+      'Dat patroon is juist waardevolle informatie. Het vertelt iets over hoe je lichaam omgaat met de hormonale wisselingen in de tweede helft van je cyclus.',
+    ],
+    signals: [
+      'Stemmingswisselingen of een kort lontje voor je menstruatie',
+      'Somberheid, onrust of huilerigheid die steeds terugkomt',
+      'Gespannen of pijnlijke borsten',
+      'Vocht vasthouden, een opgeblazen gevoel of trek in zoet',
+      'Slechter slapen in de dagen voor je menstruatie',
+    ],
+    causes: [
+      'Te weinig progesteron ten opzichte van oestrogeen',
+      'Bloedsuikerschommelingen die je stemming versterken',
+      'Langdurige stress en onvoldoende herstel',
+      'Tekorten die je aanmaak van neurotransmitters beïnvloeden',
+      'De rol van je darmen bij het afvoeren van hormonen',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'pcos-pmos',
+    category: 'Aandoeningen',
+    title: 'PCOS / PMOS',
+    pageTitle: 'PCOS (PMOS)',
+    seoTitle: 'PCOS en PMOS: herkennen en aanpak',
+    seoDescription:
+      'PCOS of PMOS met een onregelmatige cyclus, acne, haargroei of gewichtstoename? Lees hoe je het herkent en hoe begeleiding eruitziet.',
+    teaser: 'Een onregelmatige cyclus, acne of haargroei die bij PCOS kan horen.',
+    intro: [
+      'PCOS, ook wel PMOS genoemd, is een verzameling klachten die vaak samenhangt met je bloedsuiker, hormonen en ontstekingsgevoeligheid. Geen twee vrouwen met PCOS hebben precies hetzelfde beeld.',
+      'Daarom werk ik niet met een standaardaanpak, maar kijk ik welke factoren bij jou de grootste rol spelen.',
+    ],
+    signals: [
+      'Een onregelmatige cyclus of een menstruatie die wegblijft',
+      'Acne, vette huid of overmatige haargroei',
+      'Haaruitval op het hoofd',
+      'Moeite met afvallen of juist snel in gewicht toenemen',
+      'Cravings, energiedips en trek in zoet',
+    ],
+    causes: [
+      'Insulineresistentie en bloedsuikerschommelingen',
+      'Verhoogde androgenen zoals testosteron',
+      'Laaggradige ontstekingen',
+      'Stress en cortisol die je cyclus beïnvloeden',
+      'Darmgezondheid en tekorten aan voedingsstoffen',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
+  {
+    slug: 'pds',
+    category: 'Aandoeningen',
+    title: 'PDS',
+    pageTitle: 'PDS (prikkelbare darm syndroom)',
+    seoTitle: 'PDS: prikkelbare darm aanpakken',
+    seoDescription:
+      'De diagnose PDS betekent niet dat je ermee moet leren leven. Lees hoe je klachten herkent en waar we bij een prikkelbare darm naar kijken.',
+    teaser: 'De diagnose prikkelbare darm, met wisselende klachten.',
+    intro: [
+      'PDS is een diagnose die gesteld wordt als andere oorzaken zijn uitgesloten. Het zegt vooral dat je darm overgevoelig reageert, niet waarom dat zo is.',
+      'Juist die waarom-vraag is waar ik naar kijk: wat maakt jouw darm op dit moment zo prikkelbaar?',
+    ],
+    signals: [
+      'Buikpijn of krampen die komen en gaan',
+      'Wisselende ontlasting, diarree of verstopping',
+      'Een opgeblazen buik die in de loop van de dag erger wordt',
+      'Klachten die toenemen bij stress of drukke periodes',
+      'Steeds minder voedingsmiddelen durven eten',
+    ],
+    causes: [
+      'Dysbiose of bacteriële overgroei in de dunne darm',
+      'Onvoldoende maagzuur of spijsverteringsenzymen',
+      'Een overgevoelig darm-brein-systeem bij stress',
+      'Voedselintoleranties of gevoeligheid voor vezels',
+      'De samenhang met je cyclus en hormonen',
+    ],
+    traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
+  },
+  {
+    slug: 'endometriose',
+    category: 'Aandoeningen',
+    title: 'Endometriose',
+    pageTitle: 'Endometriose en adenomyose',
+    seoTitle: 'Endometriose: voeding en leefstijl',
+    seoDescription:
+      'Bij endometriose of adenomyose kunnen voeding en leefstijl pijn en ontsteking verzachten. Lees waar we samen naar kijken.',
+    teaser: 'Heftige pijn en ontsteking rondom je cyclus.',
+    intro: [
+      'Bij endometriose en adenomyose is pijn niet iets wat tussen je oren zit. Er is sprake van ontstekingsactiviteit die veel van je lichaam vraagt.',
+      'Voeding en leefstijl nemen de aandoening niet weg, maar kunnen wel invloed hebben op ontstekingsgevoeligheid, hormoonafvoer en je energie.',
+    ],
+    signals: [
+      'Heftige menstruatiepijn, soms ook buiten je menstruatie',
+      'Pijn bij gemeenschap of bij ontlasting',
+      'Darmklachten rondom je menstruatie',
+      'Extreme vermoeidheid of ziek voelen tijdens je cyclus',
+      'Hevig bloedverlies of stolsels',
+    ],
+    causes: [
+      'Laaggradige ontstekingen en ontstekingsgevoeligheid',
+      'De afvoer van oestrogeen via lever en darmen',
+      'Darmgezondheid en de wisselwerking met je immuunsysteem',
+      'Tekorten aan bijvoorbeeld magnesium, omega 3 of vitamine D',
+      'Stress en een verstoord herstelvermogen',
+    ],
+    traject: { href: '/hormoontraject', label: 'Bekijk het 1:1 Hormoontraject' },
+  },
 ];
 
 export const findComplaint = (slug: string) => complaints.find((item) => item.slug === slug);
+
+export const complaintsByCategory = complaintCategories.map((category) => ({
+  ...category,
+  items: complaints.filter((item) => item.category === category.name),
+}));
