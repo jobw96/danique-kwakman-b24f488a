@@ -118,7 +118,7 @@ const Labonderzoek = () => {
                   Je hebt klachten, maar weet niet waar ze vandaan komen. Misschien loop je al langer rond met vermoeidheid, hormonale klachten, darmklachten, PCOS of een onregelmatige cyclus. En ondanks alles wat je al hebt geprobeerd, blijven de klachten aanwezig.
                 </p>
                 <p>
-                  Laboratoriumonderzoek kan helpen om gerichter naar je gezondheid te kijken. En om extra puzzelstukjes te verzamelen op zoek naar de oorzaak. We starten altijd bij jouw verhaal en kiezen alleen een onderzoek dat past bij jouw klachten en hulpvraag.
+                  Laboratoriumonderzoek kan helpen om gerichter naar je gezondheid te kijken. En om extra puzzelstukjes te verzamelen op zoek naar de oorzaak van je klachten. We starten altijd bij jouw verhaal en kiezen alleen een onderzoek dat past bij jouw klachten en hulpvraag.
                 </p>
               </div>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
