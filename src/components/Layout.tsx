@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -44,14 +44,14 @@ const footerNav = [{
 }, {
   title: 'Gratis',
   links: [{
-    name: 'Recepten',
-    href: '/recepten'
-  }, {
     name: 'Blog',
     href: '/blog'
   }, {
     name: 'Podcast',
     href: '/podcast'
+  }, {
+    name: 'Recepten',
+    href: '/recepten'
   }, {
     name: 'E-book: ontbijtrecepten',
     href: '/e-book'
@@ -198,6 +198,11 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Gratis',
     subItems: [{
+      name: 'Blog',
+      href: '/blog',
+      description: '',
+      icon: FileText
+    }, {
       name: 'Podcast',
       href: '/podcast',
       description: '',
@@ -257,9 +262,6 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Over mij',
     href: '/over-mij'
-  }, {
-    name: 'Blog',
-    href: '/blog'
   }, {
     name: 'Contact',
     href: '/contact'
