@@ -28,7 +28,7 @@ const TESTS = [
     usefulFor:
       'Slim in te zetten bij buikklachten, een opgeblazen gevoel, PDS-achtige klachten, wisselende ontlasting of het vermoeden dat je darmen een rol spelen bij je klachten.',
     description:
-      'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Afhankelijk van jouw klachten kan worden gekeken naar onder andere:',
+      'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Dit onderzoek voeren we uit bij het 1:1 darmtraject.',
     markers: [
       'Darmmicrobioom in kaart, waaronder bacteriën, dysbiose, parasieten, ontstekingen en spijsvertering',
       'Spijsverteringsmarkers, zoals pancreas-elastase',
@@ -160,7 +160,9 @@ const Labonderzoek = () => {
               Welk onderzoek past bij jouw klachten?
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Als je een traject bij mij volgt, start je met uitgebreide intakeformulieren en een persoonlijke intake. Daarmee krijg ik een compleet beeld van jouw klachten, gezondheid, leefstijl en eventuele hormonale of darmgerelateerde klachten. Vervolgens bekijken we samen of aanvullend laboratoriumonderzoek van meerwaarde is bij bijvoorbeeld hormonale klachten, een vermoeden van hormonale disbalans of darmklachten, en welke onderzoeken daarbij passen. Niet iedere situatie en ieder traject vraagt om aanvullend onderzoek.
+              Als je een traject bij mij volgt, start je met uitgebreide intakeformulieren en een persoonlijke intake. Daarmee krijg ik een compleet beeld van jouw klachten, gezondheid, leefstijl en eventuele hormonale of darmgerelateerde klachten.&nbsp;
+
+              Vervolgens bekijken we samen of aanvullend laboratoriumonderzoek van meerwaarde is bij bijvoorbeeld hormonale klachten, een vermoeden van hormonale disbalans of darmklachten, en welke onderzoeken daarbij passen. Niet iedere situatie en ieder traject vraagt om aanvullend onderzoek.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Hieronder zie je een kleine inkijk in de mogelijke onderzoeken die binnen een traject kunnen worden ingezet.
