@@ -3,7 +3,7 @@ import { FadeIn } from '@/components/Animations';
 import { useBookingModal } from '@/components/BookingModal';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
-import { complaints } from '@/data/complaints';
+import { complaintsByCategory } from '@/data/complaints';
 import { Link } from '@/lib/router-compat';
 
 const SectionTag = ({ children }: { children: string }) => (
