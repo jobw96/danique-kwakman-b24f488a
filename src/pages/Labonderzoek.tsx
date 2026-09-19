@@ -1,13 +1,9 @@
 import {
   Activity,
-  ClipboardCheck,
   Droplets,
   FlaskConical,
-  HeartPulse,
   Microscope,
-  PackageCheck,
   Salad,
-  ScanSearch,
   TestTubes,
 } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
@@ -27,64 +23,76 @@ const TESTS = [
     title: 'Darm- en ontlastingsonderzoek',
     icon: Microscope,
     description:
-      'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Afhankelijk van jouw klachten kan worden gekeken naar onder andere de samenstelling van het microbioom, spijsverteringsmarkers en ontstekingswaarden.',
+      'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Afhankelijk van jouw klachten kan worden gekeken naar onder andere:',
+    markers: [
+      'Samenstelling van het darmmicrobioom',
+      'Spijsverteringsmarkers, zoals pancreas-elastase',
+      'Ontstekingswaarden, zoals calprotectine',
+      'Secretorisch IgA (darmimmuniteit)',
+      'Pathogenen, zoals bacteriën, gisten en parasieten',
+      'Markers voor darmwandintegriteit',
+    ],
   },
   {
-    title: 'Hormoonprofiel via speeksel',
+    title: 'Hormoonprofiel vrouw',
     icon: Droplets,
     description:
-      'Kan inzicht geven in de verhouding tussen hormonen zoals oestradiol, progesteron, testosteron en DHEA. We bekijken altijd eerst of deze test past bij jouw klachten en cyclus.',
+      'Brengt de vrouwelijke hormoonhuishouding in kaart via speeksel. Afhankelijk van jouw klachten en cyclus kan worden gekeken naar:',
+    markers: [
+      'Oestradiol',
+      'Progesteron',
+      'DHEA',
+      'Testosteron',
+      'De verhouding tussen oestrogeen en progesteron',
+      'De wisseling van hormonen door je cyclus heen',
+    ],
   },
   {
     title: 'Cortisol-dagprofiel',
     icon: Activity,
     description:
-      'Brengt het verloop van cortisol op meerdere momenten van de dag in beeld. Dit kan aanvullende informatie geven wanneer stress, vermoeidheid of slaapproblemen een rol spelen.',
+      'Brengt het verloop van cortisol over de dag in beeld via meerdere speekselmonsters. Dit kan aanvullende informatie geven wanneer stress, vermoeidheid of slaapproblemen een rol spelen:',
+    markers: [
+      'Cortisol op meerdere momenten van de dag',
+      'Het cortisolritme van ochtend tot avond',
+      'DHEA ter aanvulling',
+      'De balans tussen belasting en herstel',
+    ],
   },
   {
     title: 'Voedingsreacties',
     icon: Salad,
     description:
-      'Wanneer voeding mogelijk meespeelt, kijken we zorgvuldig welke vorm van onderzoek zinvol kan zijn. Een uitslag staat nooit op zichzelf, maar wordt naast jouw klachten, voedingspatroon en gezondheidsgeschiedenis gelegd.',
+      'Wanneer voeding mogelijk meespeelt, kijken we zorgvuldig welke vorm van onderzoek zinvol kan zijn, zoals:',
+    markers: [
+      'Voedingsreacties op een breed pakket voedingsmiddelen',
+      'Markers rondom histamine-intolerantie',
+      'Aanvulling op een elimatiedieet of voedingsdagboek',
+    ],
   },
   {
     title: 'Bloedonderzoek',
     icon: TestTubes,
     description:
-      'Afhankelijk van je hulpvraag kunnen waarden rondom bijvoorbeeld ijzer, vitamines, schildklier of hormonen aanvullende informatie geven. Bloedafname vindt plaats via een passend prikpunt of in overleg met je arts.',
+      'Afhankelijk van je hulpvraag kunnen bloedwaarden aanvullende informatie geven. Denk aan:',
+    markers: [
+      'IJzer en ferritine',
+      'Vitamine B12, D en foliumzuur',
+      'Schildklierwaarden, zoals TSH, fT4 en fT3',
+      'Bloedsuiker en HbA1c',
+      'Algemeen bloedbeeld',
+    ],
   },
   {
     title: 'Aanvullend onderzoek',
     icon: FlaskConical,
     description:
-      'Soms past een urineonderzoek, histamineonderzoek of een andere gerichte test beter bij jouw situatie. Ik adviseer alleen onderzoek als de uitslag daadwerkelijk richting kan geven aan de volgende stap.',
-  },
-];
-
-const STEPS = [
-  {
-    title: 'Kennismaking',
-    icon: HeartPulse,
-    description:
-      'We bespreken waar je tegenaan loopt, wat je al hebt geprobeerd en waar je graag duidelijkheid over wilt. Zo voelen we samen of mijn manier van werken bij jou past.',
-  },
-  {
-    title: 'Intake en onderzoekskeuze',
-    icon: ClipboardCheck,
-    description:
-      'Met een uitgebreide intake brengen we jouw klachten, voeding, leefstijl, cyclus, stress en gezondheidsgeschiedenis in kaart. Daarna bepalen we samen welk onderzoek echt iets kan toevoegen. Soms is testen niet nodig, en dat vertel ik je ook eerlijk.',
-  },
-  {
-    title: 'Afname en analyse',
-    icon: PackageCheck,
-    description:
-      'Afhankelijk van het onderzoek neem je thuis speeksel, ontlasting of urine af, of laat je bloed prikken. Het laboratorium analyseert het materiaal en stuurt de uitslag naar mij.',
-  },
-  {
-    title: 'Persoonlijke uitleg en plan',
-    icon: ScanSearch,
-    description:
-      'Ik vertaal de waarden naar begrijpelijke taal en leg de verbinding met jouw verhaal. Je krijgt geen los rapport vol cijfers, maar duidelijkheid over wat de uitslag wel en niet zegt en welke vervolgstappen bij jou passen.',
+      'Soms past een andere gerichte test beter bij jouw situatie. Denk bijvoorbeeld aan:',
+    markers: [
+      'Urineonderzoek',
+      'Histamineonderzoek',
+      'Overige gerichte tests die passen bij jouw hulpvraag',
+    ],
   },
 ];
 
@@ -141,42 +149,22 @@ const Labonderzoek = () => {
           <div className="grid grid-cols-1 gap-x-10 md:grid-cols-2">
             {TESTS.map((test, index) => (
               <FadeIn key={test.title} delay={index * 0.05}>
-                <article className="flex h-full gap-4 border-t border-secondary/50 py-7">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/15 text-primary-dark">
-                    <test.icon aria-hidden="true" size={19} strokeWidth={1.7} />
-                  </div>
-                  <div>
-                    <h3 className="mb-2 font-serif text-xl text-foreground">{test.title}</h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">{test.description}</p>
-                  </div>
-                </article>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      <Section className="py-16 md:py-24">
-        <div className="mx-auto max-w-5xl">
-          <FadeIn className="mb-12 text-center">
-            <SectionTag>Werkwijze</SectionTag>
-            <h2 className="font-serif text-3xl text-foreground md:text-4xl">
-              Van jouw verhaal naar een helder plan
-            </h2>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {STEPS.map((step, index) => (
-              <FadeIn key={step.title} delay={index * 0.08} className="h-full">
-                <article className="h-full rounded-md border border-secondary/40 bg-card p-7 md:p-8">
-                  <div className="mb-6 flex items-center justify-between">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-md bg-secondary/30 text-foreground">
-                      <step.icon aria-hidden="true" size={20} strokeWidth={1.6} />
+                <article className="flex h-full flex-col border-t border-secondary/50 py-7">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/15 text-primary-dark">
+                      <test.icon aria-hidden="true" size={19} strokeWidth={1.7} />
                     </div>
-                    <span className="text-sm text-primary-dark">0{index + 1}</span>
+                    <h3 className="font-serif text-xl text-foreground">{test.title}</h3>
                   </div>
-                  <h3 className="mb-3 font-serif text-2xl text-foreground">{step.title}</h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{test.description}</p>
+                  <ul className="mt-4 space-y-2">
+                    {test.markers.map((marker) => (
+                      <li key={marker} className="flex gap-2.5 text-sm leading-relaxed text-foreground">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                        <span>{marker}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </article>
               </FadeIn>
             ))}
