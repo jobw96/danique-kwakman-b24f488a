@@ -131,8 +131,7 @@ export const hormonenContent2: ComplaintContentMap = {
   'herstel-na-anticonceptie': {
     intro: [
       'Je bent gestopt met de pil, hebt je spiraaltje laten verwijderen of bent gestopt met de prikpil, en nu gebeurt er van alles. Misschien blijft je menstruatie uit, krijg je ineens acne die je nooit eerder had, of valt je haar meer uit dan je gewend bent. Je vraagt je af: is dit normaal, en hoe lang duurt dit nog?',
-      'Anticonceptie onderdrukt je eigen cyclus, en na het stoppen moet je lichaam die cyclus weer zelf oppakken. Dat gaat niet bij iedereen even soepel of snel. Sommige klachten die je nu ervaart, waren er misschien ook al vóór je met anticonceptie begon, maar werden door de pil onderdrukt. Andere klachten zijn een reactie van je lichaam op het stoppen zelf.
-',
+      'Anticonceptie onderdrukt je eigen cyclus, en na het stoppen moet je lichaam die cyclus weer zelf oppakken. Dat gaat niet bij iedereen even soepel of snel. Sommige klachten die je nu ervaart, waren er misschien ook al vóór je met anticonceptie begon, maar werden door de pil onderdrukt. Andere klachten zijn een reactie van je lichaam op het stoppen zelf.',
       'Ik begeleid vrouwen die na het stoppen met anticonceptie willen begrijpen wat er in hun lichaam gebeurt en die concreet aan de slag willen met hun cyclus, huid, haar en energie. Met uitgebreide intakeformulieren en de CIRCLE-methode kijk ik naar jouw situatie, niet naar een standaard "detox na de pil" protocol.',
     ],
     recognition: [
