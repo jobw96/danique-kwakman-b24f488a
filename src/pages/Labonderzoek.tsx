@@ -82,7 +82,7 @@ const TESTS = [
     markers: [
       'IJzer en ferritine',
       'Vitamine B12, D en foliumzuur',
-      { label: 'Bloedsuiker en HbA1c', href: '/bloedsuikertraject' },
+      { label: 'Bloedsuiker', href: '/bloedsuikertraject' },
       'Algemeen bloedbeeld',
     ],
   },
