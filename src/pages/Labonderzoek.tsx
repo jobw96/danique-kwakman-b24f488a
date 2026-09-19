@@ -209,17 +209,19 @@ const Labonderzoek = () => {
         </div>
       </Section>
 
-      <Section className="bg-primary py-16 md:py-20">
-        <FadeIn className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-5 font-serif text-3xl text-primary-foreground md:text-4xl">
-            Geen losse uitslag, maar inzicht in jouw lichaam
-          </h2>
-          <p className="mb-8 leading-relaxed text-primary-foreground/90">
-            Ik neem de tijd om jouw uitslag rustig uit te leggen en samen te bekijken wat deze betekent binnen het grotere geheel. Zo weet je welke stappen passend zijn, zonder te verdwalen in cijfers of medisch jargon.
-          </p>
-          <CustomButton variant="white" onClick={openModal}>
-            Laat mij met je meedenken
-          </CustomButton>
+      <Section className="py-16 md:py-20">
+        <FadeIn>
+          <div className="mx-auto max-w-3xl bg-card rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 text-center">
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
+              Wil je meer duidelijkheid over jouw klachten?
+            </h2>
+            <p className="mb-4 leading-relaxed text-muted-foreground">
+              Tijdens een gratis kennismaking bespreken we jouw klachten en hulpvraag. Vanuit daar kijken we wat er nodig is om beter te begrijpen wat er in jouw lichaam speelt en of laboratoriumonderzoek onderdeel kan zijn van jouw traject.
+            </p>
+            <CustomButton onClick={openModal} className="mt-4">
+              Plan een gratis kennismaking
+            </CustomButton>
+          </div>
         </FadeIn>
       </Section>
 
