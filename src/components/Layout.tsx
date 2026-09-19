@@ -208,6 +208,11 @@ export const Layout: React.FC<LayoutProps> = ({
       description: '',
       icon: Headphones
     }, {
+      name: 'Recepten',
+      href: '/recepten',
+      description: '',
+      icon: UtensilsCrossed
+    }, {
       name: 'E-book: 5 gratis ontbijtrecepten',
       href: '/e-book',
       description: '',
@@ -217,11 +222,6 @@ export const Layout: React.FC<LayoutProps> = ({
       href: '/e-book-recepten-snacks',
       description: '',
       icon: BookOpen
-    }, {
-      name: 'Recepten',
-      href: '/recepten',
-      description: '',
-      icon: UtensilsCrossed
     }]
   }, {
     name: 'Aanbod',
