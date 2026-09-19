@@ -28,7 +28,7 @@ const TESTS = [
     description:
       'Geeft inzicht in verschillende aspecten van je spijsvertering en darmmilieu. Afhankelijk van jouw klachten kan worden gekeken naar onder andere:',
     markers: [
-      'Samenstelling van het darmmicrobioom',
+      'Darmmicrobioom in kaart, waaronder bacteriën, dysbiose, parasieten, ontstekingen en spijsvertering',
       'Spijsverteringsmarkers, zoals pancreas-elastase',
       'Ontstekingswaarden, zoals calprotectine',
       'Secretorisch IgA (darmimmuniteit)',
@@ -46,8 +46,6 @@ const TESTS = [
       'Progesteron',
       'DHEA',
       'Testosteron',
-      'De verhouding tussen oestrogeen en progesteron',
-      'De wisseling van hormonen door je cyclus heen',
     ],
   },
   {
@@ -148,7 +146,7 @@ const Labonderzoek = () => {
               Welk onderzoek past bij jouw klachten?
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Geen lichaam en geen hulpvraag is hetzelfde. Daarom werken we niet met een standaardpakket, maar kijken we welke test gerichte informatie kan geven en welke juist niets toevoegt.
+              Als je een traject bij mij volgt krijg je voorafgaand uitgebreide intakeformulieren en doen we een uitgebreiden intake, waarmee ik jouw gezondheidspuzzel ga leggen. Afhankelijk van jouw situatie bekijken we tijdens de intake welke onderzoeken er van toepassingen kunnen zijn voor jouw situatie.
             </p>
           </FadeIn>
 
