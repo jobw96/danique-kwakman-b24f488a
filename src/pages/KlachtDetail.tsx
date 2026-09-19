@@ -41,12 +41,12 @@ const irregularCycleContent = {
     },
   ],
   widerSignals: [
-    'energie en bloedsuikerschommelingen door de dag heen',
-    'acne, haaruitval of toegenomen haargroei',
+    'Energie en bloedsuikerschommelingen door de dag heen',
+    'Acne, haaruitval of toegenomen haargroei',
     'PMS, pijnlijke menstruaties of hevig bloedverlies',
-    'darmklachten en hoe je voeding wordt verteerd',
-    'slaap, stressbelasting en ruimte voor herstel',
-    'je eetpatroon, beweging en of je voldoende energie binnenkrijgt',
+    'Darmklachten en hoe je voeding wordt verteerd',
+    'Slaap, stressbelasting en ruimte voor herstel',
+    'Je eetpatroon, beweging en of je voldoende energie binnenkrijgt',
   ],
   together: [
     'Je cyclusverloop, menstruaties, mogelijke ovulaties en klachten door de maand heen',
@@ -58,31 +58,31 @@ const irregularCycleContent = {
   faqs: [
     {
       question: 'Wanneer is een menstruatiecyclus onregelmatig?',
-      answer: 'Een cyclus hoeft niet precies 28 dagen te duren. Veel volwassen vrouwen hebben een cyclus van ongeveer 21 tot 35 dagen. Vooral sterke verschillen tussen opeenvolgende cycli, heel korte of lange cycli en een menstruatie die herhaaldelijk uitblijft zijn redenen om verder te kijken. Eén afwijkende maand na ziekte, reizen of een stressvolle periode vertelt nog niet het hele verhaal.',
+      answer: 'Een cyclus hoeft niet precies 28 dagen te duren. Veel volwassen vrouwen hebben een cyclus van ongeveer 21 tot 35 dagen. Vooral sterke verschillen tussen de ene cyclus en de andere, een heel korte of juist lange cyclus en een menstruatie die herhaaldelijk uitblijft zijn redenen om verder te kijken. Eén afwijkende maand na ziekte, reizen of een stressvolle periode vertelt nog niet het hele verhaal. Wil je weten of er bij jou iets speelt, dan brengen we in een kennismaking of intake samen in kaart hoe jouw cyclus verloopt en welke signalen de moeite waard zijn om op te volgen.',
     },
     {
       question: 'Wat betekent het als mijn cyclus 40 of 60 dagen duurt?',
-      answer: 'Bij een lange cyclus vindt de ovulatie vaak later plaats of blijft deze uit. Dat kan samenhangen met onder andere PCOS/PMOS, stress, onvoldoende energie-inname, intensief sporten, veranderingen in gewicht, de schildklier of herstel na hormonale anticonceptie. Laat een menstruatie die regelmatig lang uitblijft medisch beoordelen.',
+      answer: 'Bij een lange cyclus vindt de ovulatie vaak later plaats of blijft deze uit. Dat kan samenhangen met onder andere PCOS/PMOS, stress, onvoldoende energie-inname, intensief sporten, veranderingen in gewicht, de schildklier of herstel na hormonale anticonceptie. Blijft je menstruatie regelmatig lang uit, dan is het verstandig om dit ook bij je huisarts te laten beoordelen. Wat ik daarbij voor je kan betekenen: tijdens de intake brengen we in kaart wat jouw verhaal, cyclus en leefstijl vertellen en kijken we of aanvullend onderzoek, zoals een hormoonprofiel of schildkliercheck, meer duidelijkheid geeft. Vanuit daar kijken we wat jouw cyclus praktisch kan helpen.',
     },
     {
       question: 'Kan ik een onregelmatige cyclus hebben en toch ovuleren?',
-      answer: 'Ja. Bij wisselende cycli kan er wel een ovulatie zijn, maar deze valt dan niet iedere maand rond hetzelfde moment. Bij sommige cycli blijft de ovulatie uit. Een app voorspelt dit op basis van eerdere maanden en is daarom bij een onregelmatige cyclus niet altijd betrouwbaar.',
+      answer: 'Ja. Bij een wisselende cyclus kan er wel een ovulatie zijn, maar deze valt dan niet iedere maand rond hetzelfde moment. En soms blijft de ovulatie een keer uit. Een app voorspelt dit op basis van eerdere maanden en is daarom bij een onregelmatige cyclus niet altijd betrouwbaar. Wil je graag beter begrijpen of en wanneer je ovuleert, dan leer ik je tijdens een traject kijken naar de signalen van je lichaam en kijken we waar nodig met onderzoek mee.',
     },
     {
       question: 'Kan stress mijn menstruatie onregelmatig maken?',
-      answer: 'Langdurige lichamelijke of mentale stress kan de hormonale aansturing van de ovulatie beïnvloeden. Ook weinig slaap, veel trainen en onvoldoende herstel zijn vormen van belasting. Daarom kijk ik niet alleen naar hoe druk je agenda is, maar ook naar wat je lichaam dagelijks moet opvangen.',
+      answer: 'Langdurige lichamelijke of mentale stress kan de hormonale aansturing van de ovulatie beïnvloeden. Ook weinig slaap, veel trainen en onvoldoende herstel zijn vormen van belasting. Daarom kijk ik niet alleen naar hoe druk je agenda is, maar ook naar wat je lichaam dagelijks moet opvangen. Samen kijken we waar de belasting bij jou vandaan komt en wat er praktisch mogelijk is, zodat je lichaam weer ruimte krijgt om je cyclus goed aan te sturen.',
     },
     {
       question: 'Welke rol spelen voeding en bloedsuiker bij mijn cyclus?',
-      answer: 'Voldoende energie en voedingsstoffen zijn nodig voor de aanmaak en aansturing van hormonen. Daarnaast kunnen sterke bloedsuikerschommelingen en veel insuline relevant zijn, vooral wanneer een onregelmatige cyclus samengaat met PCOS/PMOS, cravings, energiedips of acne. De aanpak verschilt per vrouw en is geen standaard voedingslijst.',
+      answer: 'Voldoende energie en voedingsstoffen zijn nodig voor de aanmaak en aansturing van hormonen. Daarnaast kunnen sterke bloedsuikerschommelingen en veel insuline relevant zijn, vooral wanneer een onregelmatige cyclus samengaat met PCOS/PMOS, cravings, energiedips of acne. Ik werk daarom nooit met een standaard voedingslijst, maar met een aanpak die past bij jouw situatie, smaak en dagelijks leven.',
     },
     {
       question: 'Wanneer komt mijn cyclus terug na stoppen met de pil?',
-      answer: 'Dat verschilt per vrouw. De bloeding tijdens de stopweek was geen natuurlijke menstruatie; na stoppen moet de eigen hormonale aansturing weer zichtbaar worden. Geef je lichaam tijd, maar neem contact op met je huisarts als je menstruatie langdurig uitblijft of als je je zorgen maakt.',
+      answer: 'Dat verschilt per vrouw. De bloeding tijdens de stopweek was geen natuurlijke menstruatie; na stoppen moet de eigen hormonale aansturing weer zichtbaar worden. Geef je lichaam tijd, maar neem contact op met je huisarts als je menstruatie langdurig uitblijft of als je je zorgen maakt. Komt je cyclus moeilijk op gang, dan kan ik je begeleiden met voeding, leefstijl en waar nodig onderzoek, zodat je lichaam alle bouwstenen krijgt om zelf weer goed aan te sturen.',
     },
     {
       question: 'Wanneer moet ik met een onregelmatige menstruatie naar de huisarts?',
-      answer: 'Neem contact op met je huisarts wanneer je menstruatie zonder duidelijke reden drie maanden uitblijft, bij een mogelijke zwangerschap, zeer hevig bloedverlies, ernstige pijn, bloedverlies na de overgang of wanneer je je zorgen maakt. Ook bij een kinderwens is het verstandig om een sterk wisselende of uitblijvende cyclus tijdig te bespreken.',
+      answer: 'Neem contact op met je huisarts wanneer je menstruatie zonder duidelijke reden drie maanden uitblijft, bij een mogelijke zwangerschap, zeer hevig bloedverlies, ernstige pijn, bloedverlies na de overgang of wanneer je je zorgen maakt. Ook bij een kinderwens is het verstandig om een sterk wisselende of uitblijvende cyclus tijdig te bespreken. Naast die medische zorg kan ik je begeleiden bij alles wat je zelf kunt doen voor je cyclus, zoals voeding, bloedsuiker, stress en herstel.',
     },
   ],
 };
@@ -189,7 +189,7 @@ const KlachtDetail = () => {
                   Je menstruatiecyclus loopt van de eerste dag van je menstruatie tot de eerste dag van je volgende menstruatie. Een cyclus hoeft daarbij echt niet precies 28 dagen te duren. Bij veel volwassen vrouwen ligt de cyclus ergens tussen ongeveer 21 en 35 dagen. Belangrijker is of jouw cyclus een herkenbaar ritme heeft en hoe groot de verschillen tussen de maanden zijn.
                 </p>
                 <p>
-                  Als je cyclus de ene maand 29 dagen en de volgende maand 32 dagen duurt, is dat iets anders dan cycli die wisselen tussen 30, 45 en 60 dagen. Ook een menstruatie die herhaaldelijk uitblijft, een heel korte cyclus of onverwacht bloedverlies vraagt om aandacht. Zeker als je daarnaast acne, haaruitval, vermoeidheid, pijn, cravings of problemen met zwanger worden ervaart.
+                  Als je cyclus de ene maand 29 dagen en de volgende maand 32 dagen duurt, is dat iets anders dan een cyclus die wisselt tussen 30, 45 en 60 dagen. Ook een menstruatie die herhaaldelijk uitblijft, een heel korte cyclus of onverwacht bloedverlies vraagt om aandacht. Zeker als je daarnaast acne, haaruitval, vermoeidheid, pijn, cravings of problemen met zwanger worden ervaart.
                 </p>
                 <p>
                   Vaak zit de wisseling in het moment van de ovulatie. Vindt je eisprong later plaats, dan wordt je cyclus langer. Blijft een ovulatie uit, dan kan je menstruatie lang op zich laten wachten. De vraag is daarom niet alleen: “Waarom word ik niet op tijd ongesteld?”, maar ook: “Wat heeft mijn lichaam nodig om een ovulatie en cyclus goed aan te sturen?”
@@ -246,20 +246,6 @@ const KlachtDetail = () => {
               </p>
             </FadeIn>
           </div>
-        </Section>
-
-        <Section className="bg-card py-14 md:py-20">
-          <FadeIn className="mx-auto max-w-3xl border-l-2 border-secondary pl-6 md:pl-8">
-            <h2 className="mb-4 font-serif text-3xl text-foreground">Weten waar je aan toe bent</h2>
-            <div className="space-y-4 leading-relaxed text-muted-foreground">
-              <p>
-                Het doel is niet om je cyclus in een perfect schema te dwingen. Het gaat erom dat je begrijpt welke signalen jouw lichaam geeft en welke factoren bij jou relevant zijn.
-              </p>
-              <p>
-                Zodat je niet iedere maand opnieuw verrast wordt, gerichter keuzes kunt maken rondom voeding, beweging en herstel en weet wanneer het verstandig is om medische hulp in te schakelen. Bij een kinderwens geeft inzicht in je cyclus bovendien meer duidelijkheid over je mogelijke ovulatie, zonder dat we vooraf een resultaat beloven.
-              </p>
-            </div>
-          </FadeIn>
         </Section>
 
         <Section className="py-14 md:py-20">
