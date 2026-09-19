@@ -33,7 +33,7 @@ const TESTS = [
       'Ontstekingswaarden, zoals calprotectine',
       'Secretorisch IgA (darmimmuniteit)',
       'Pathogenen, zoals bacteriën, gisten en parasieten',
-      'Markers voor darmwandintegriteit',
+      { label: 'Meer over het 1:1 Darmtraject', href: '/darmtraject' },
     ],
   },
   {
@@ -146,7 +146,10 @@ const Labonderzoek = () => {
               Welk onderzoek past bij jouw klachten?
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Als je een traject bij mij volgt krijg je voorafgaand uitgebreide intakeformulieren en doen we een uitgebreiden intake, waarmee ik jouw gezondheidspuzzel ga leggen. Afhankelijk van jouw situatie bekijken we tijdens de intake welke onderzoeken er van toepassingen kunnen zijn voor jouw situatie.
+              Als je een traject bij mij volgt, start je met uitgebreide intakeformulieren en een persoonlijke intake. Daarmee krijg ik een compleet beeld van jouw klachten, gezondheid, leefstijl en eventuele hormonale of darmgerelateerde klachten. Vervolgens bekijken we samen of aanvullend laboratoriumonderzoek van meerwaarde is bij bijvoorbeeld hormonale klachten, een vermoeden van hormonale disbalans of darmklachten, en welke onderzoeken daarbij passen. Niet iedere situatie en ieder traject vraagt om aanvullend onderzoek.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Hieronder zie je een kleine inkijk in de mogelijke onderzoeken die binnen een traject kunnen worden ingezet.
             </p>
           </FadeIn>
 
