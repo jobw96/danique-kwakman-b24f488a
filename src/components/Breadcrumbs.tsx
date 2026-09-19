@@ -43,6 +43,7 @@ const routeNames: Record<string, string> = {
     '/glowup': '1:1 Hormoontraject',
     '/hormoontraject': '1:1 Hormoontraject',
     '/darmtraject': 'Darmtraject',
+    '/labonderzoek': 'Labonderzoek',
     
     '/e-book': 'E-book',
     '/podcast': 'Podcast',
@@ -63,6 +64,7 @@ const routeIcons: Record<string, React.ElementType> = {
     '/glowup': Sparkles,
     '/hormoontraject': Sparkles,
     '/darmtraject': Activity,
+    '/labonderzoek': Activity,
     
     '/e-book': Book,
     '/podcast': Mic,
