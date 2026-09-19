@@ -177,7 +177,8 @@ const Labonderzoek = () => {
                     </div>
                     <h3 className="font-serif text-xl text-foreground">{test.title}</h3>
                   </div>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{test.description}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-foreground/80">{test.usefulFor}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{test.description}</p>
                   {test.markers && test.markers.length > 0 && (
                     <ul className="mt-4 space-y-2">
                       {test.markers.map((marker) => {
