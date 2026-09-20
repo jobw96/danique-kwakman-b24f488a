@@ -98,24 +98,24 @@ export const darmenContent2: ComplaintContentMap = {
 
   'diarree': {
     intro: [
-      'Je kent elk openbaar toilet op je route naar je werk. Na de lunch moet je rennen en uit eten gaan voelt als een gok, want je weet niet hoe je darmen die avond reageren. Diarree en een plotselinge, onhoudbare aandrang bepalen misschien meer van je dag dan je lief is.',
-      'Misschien merk je dat het erger wordt onder stress, na koffie of na vet eten. Of het lijkt zomaar te gebeuren, zonder duidelijk patroon. Regelmatig dunne ontlasting is niet iets waar je bij hoort te blijven lopen – het is een signaal dat je spijsvertering sneller werkt dan goed voor je is.',
-      'Je wilt weer rustig kunnen eten zonder meteen te moeten nadenken over waar het toilet is. Een dag waarop je darmen gewoon meewerken in plaats van je plannen overnemen. Daar is met de juiste uitzoekslag echt aan te werken.',
+      'Je kent elk openbaar toilet op je route naar je werk. Soms moet je  hard rennend naar het toilet en uit eten gaan voelt als een gok, want je weet niet hoe je darmen die avond reageren. Diarree en een plotselinge, onhoudbare aandrang bepalen misschien meer van je dag dan je lief is.',
+      'Misschien merk je dat het erger wordt onder stress, na koffie of na vet eten. Of het lijkt zomaar te gebeuren, zonder duidelijk patroon. Regelmatig dunne ontlasting is niet iets waar je bij hoort te blijven lopen. Het is een signaal dat je spijsvertering sneller werkt dan goed voor je is.',
+      'Je wilt weer rustig kunnen eten zonder meteen te moeten nadenken over waar het toilet is en waarbij je darmen gewoon meewerken in plaats van je plannen overnemen.',
     ],
     recognition: [
-      'Je hebt meerdere keren per dag dunne of waterige ontlasting.',
+      'Je hebt meerdere keren per dag dunne of waterige ontlasting of meerdere keren per week.',
       'Na het eten, vooral ’s ochtends of na koffie, moet je direct naar het toilet.',
       'Je houdt bij het plannen van je dag al rekening met waar toiletten zijn.',
-      'Bepaalde voeding – zuivel, vet eten, koffie – lijkt je darmen meteen in gang te zetten.',
+      'Bepaalde voeding, zoals zuivel, vet eten, koffie lijken je darmen meteen in gang te zetten.',
       'Stressvolle momenten, zoals een presentatie of een drukke periode, gaan gepaard met een versnelde stoelgang.',
       'Je voelt je futloos of uitgeput na dagen met veel toiletbezoeken.',
       'Je hebt weleens sporten, een lange wandeling of een weekend weg afgezegd vanwege je darmen.',
     ],
     explanationHeading: 'Waarom je darmen te snel kunnen werken',
     explanation: [
-      'Bij diarree beweegt voeding te snel door je darmen. Er is dan te weinig tijd om vocht uit de ontlasting op te nemen, waardoor die dun blijft. Die versnelling kan verschillende oorzaken hebben: een overgevoelige darm, een darmflora uit balans, galzouten die niet goed worden teruggenomen of een zenuwstelsel dat je spijsvertering constant versnelt.',
-      'Galzouten zijn daarbij een vaak gemiste factor. Ze zijn nodig om vetten te verteren en worden normaal gesproken aan het einde van de dunne darm weer opgenomen. Lukt dat niet goed, dan belanden ze in de dikke darm en trekken ze daar vocht aan – met dunne ontlasting tot gevolg, vooral na vetrijke maaltijden. Ook voedselintoleranties en een verstoorde darmflora kunnen je darmen chronisch prikkelen.',
-      'En dan is er de darm-hersenas: de rechtstreekse lijn tussen je hoofd en je darmen. Bij spanning schakelt je lichaam over op een overlevingsstand en bij veel vrouwen betekent dat een versnelde darm. Dit verklaart waarom je darmen op de ene dag geen probleem geven en op een stressvolle dag volledig losgaan.',
+      'Bij diarree beweegt voeding te snel door je darmen. Er is dan te weinig tijd om vocht uit de ontlasting op te nemen, waardoor die dun blijft. Die versnelling kan verschillende oorzaken hebben. Een overgevoelige darm, een darmflora uit balans, galzouten die niet goed worden teruggenomen of een zenuwstelsel dat je spijsvertering constant versnelt.',
+      'Ook voedselintoleranties en een verstoorde darmflora kunnen je darmen chronisch prikkelen.',
+      'En de darm-hersenas. De rechtstreekse lijn tussen je hoofd en je darmen. Bij spanning schakelt je lichaam over op een overlevingsstand en bij veel vrouwen betekent dat een versnelde darm. Dit verklaart waarom je darmen op de ene dag geen probleem geven en op een stressvolle dag volledig losgaan.',
     ],
     factorsHeading: 'Wat kan meespelen bij diarree',
     factorsIntro: 'Bij het uitzoeken van jouw versnelde darmwerking kijken we naar een combinatie van factoren die vaak over het hoofd worden gezien:',
