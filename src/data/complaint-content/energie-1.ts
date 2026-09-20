@@ -121,24 +121,24 @@ export const energieContent1: ComplaintContentMap = {
   },
   'cravings-en-bloedsuiker': {
     intro: [
-      'Je hebt net gegeten en toch trekt de trommel met koekjes aan je. ’s Avonds op de bank sluipt de hand steeds weer naar de chipszak, terwijl je eigenlijk helemaal geen trek had voordat je ging zitten. En als een maaltijd te lang uitblijft, word je ronduit chagrijnig: hangry, zoals dat tegenwoordig heet.',
-      'Cravings voelen vaak als een gebrek aan wilskracht, maar meestal is het een signaal van je bloedsuiker. Grote schommelingen zorgen voor pieken en dalen die je lichaam wil bijsturen en dat doet het het liefst met snelle suikers. Snap je hoe dat werkt, dan kun je er ook iets aan doen.',
-      'Ik kijk met je naar wat er in jouw dagelijkse eetpatroon gebeurt: hoe je maaltijden zijn opgebouwd, wat er rond sport en slaap speelt en of je cyclus een rol speelt in jouw cravings. Vanuit mijn ervaring als orthomoleculair hormoon- en darmtherapeut zoek ik naar wat bij jou werkt, in plaats van een standaard dieetadvies.',
+      'Je hebt net gegeten en toch trekt dat pak met koekjes aan je. ’s Avonds op de bank grijp je toch weer naar de chipszak, terwijl je eigenlijk helemaal geen trek had voordat je ging zitten. En als je een maaltijd iets te lang uitstelt, word je hangry.',
+      'Cravings zijn het een signaal van je bloedsuiker. Grote schommelingen zorgen voor pieken en dalen die je lichaam wil bijsturen en dat doet het het liefst met snelle suikers.',
+      'Ik kijk met je naar wat er in jouw dagelijkse eetpatroon gebeurt: hoe je maaltijden zijn opgebouwd, wat er rond sport en slaap speelt en of je cyclus een rol speelt in jouw cravings. Vanuit mijn ervaring als orthomoleculair hormoon- en darmtherapeut zoek ik naar wat bij jouw lichaam werkt. ',
     ],
     recognition: [
       'Je hebt na het avondeten bijna altijd trek in iets zoets.',
-      'Je snackt ’s avonds op de bank, ook als je overdag prima at.',
+      "Je hebt de hele dag ' goed ' gegeten en 's avonds trek je een pak koekjes open.",
       'Je wordt hangry als een maaltijd uitloopt of je een tussendoortje overslaat.',
       'Je merkt dat je cravings toenemen in de week voor je menstruatie.',
-      'Na het sporten heb je enorme trek en eet je al snel te veel of te snel.',
+      'Na het sporten heb je enorme trek ',
       'Na een nacht slecht slapen heb je de volgende dag meer trek in zoet en vet eten.',
-      'Je voelt je machteloos tegenover je cravings, hoeveel wilskracht je er ook tegenaan gooit.',
+      'Je weet niet hoe je je cravings onder controle krijgt. ',
     ],
     explanationHeading: 'Wat gebeurt er bij cravings en bloedsuikerschommelingen?',
     explanation: [
-      'Elke keer dat je eet, stijgt je bloedsuiker. Bij een maaltijd met vooral snelle koolhydraten, zoals wit brood, pasta of iets zoets, stijgt je bloedsuiker snel en hoog. Je lichaam maakt vervolgens veel insuline aan om dat weer te verlagen, waardoor je bloedsuiker net zo snel weer omlaag schiet. Die dip voelt als trek, vermoeidheid of onrust en je lichaam grijpt daarbij het liefst naar iets wat snel weer energie geeft: suiker.',
-      'Voldoende eiwit, vezels en gezonde vetten bij een maaltijd vertragen die opname van suikers, waardoor je bloedsuiker stabieler blijft en je langer verzadigd bent. Ontbreken deze bouwstenen, dan is de kans op cravings een paar uur later een stuk groter, ook als je “gezond” dacht te eten.',
-      'Ook factoren buiten je bord spelen mee. Slaaptekort verhoogt de hunkering naar suiker- en vetrijk eten, doordat je verzadigingshormonen dan minder goed werken. En in de week voor je menstruatie zorgt de daling van progesteron en oestrogeen er bij veel vrouwen voor dat cravings, vooral naar zoet en chocola, flink toenemen.',
+      'Elke keer dat je eet, stijgt je bloedsuiker. Bij een maaltijd met vooral snelle koolhydraten, zoals havermout, brood, pasta of iets zoets stijgt je bloedsuiker snel en hoog. Je lichaam maakt vervolgens veel insuline aan om dat weer te verlagen, waardoor je bloedsuiker net zo snel weer omlaag schiet. Die dip voelt als trek, vermoeidheid of onrust en je lichaam grijpt daarbij het liefst naar iets wat snel weer energie geeft, namelijk suiker.',
+      'Voldoende eiwit, vezels en gezonde vetten bij een maaltijd vertragen die opname van suikers, waardoor je bloedsuiker stabieler blijft en je langer verzadigd bent. Heb je je maaltijd niet met deze combi samengesteld, dan is de kans op cravings een paar uur later een stuk groter, ook als je “gezond” dacht te eten.',
+      'Ook factoren buiten je bord spelen mee. Slaaptekort verhoogt de hunkering naar suiker- en vetrijk eten, doordat je verzadigingshormonen dan minder goed werken. En in de week voor je menstruatie zorgt de daling van progesteron en oestrogeen er bij veel vrouwen voor dat cravings, vooral naar zoet en chocola, flink toenemen. Spoiler: Hier kun je heel veel aan doen als je met je hormonale gezondheid aan de slag gaat!',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw cravings?',
     factorsIntro:
@@ -158,11 +158,11 @@ export const energieContent1: ComplaintContentMap = {
       },
       {
         title: 'Slaaptekort',
-        text: 'Bij te weinig of slechte slaap verandert de aansturing van je verzadigingshormonen. Je voelt je hongeriger dan je daadwerkelijk bent en hebt meer trek in suiker- en vetrijk eten, ook als je aan tafel eigenlijk voldoende had.',
+        text: 'Bij te weinig of slechte slaap verandert de aansturing van je verzadigingshormonen. Je voelt je hongeriger en hebt meer trek in suiker- en vetrijk eten. ',
       },
       {
         title: 'Je cyclus',
-        text: 'In de tweede helft van je cyclus en vooral vlak voor je menstruatie, dalen oestrogeen en progesteron. Dat hangt samen met een toegenomen trek in zoet en chocola bij veel vrouwen. Weten dat dit cyclusgebonden is, maakt het makkelijker om er iets voor in te plannen.',
+        text: 'In de tweede helft van je cyclus en vooral vlak voor je menstruatie, dalen oestrogeen en progesteron. Dat hangt samen met een toegenomen trek in zoet en chocola bij veel vrouwen, omdat je bloedsuiker gevoeliger reageert in deze periode. Werken aan je hormonale balans en en begrijpen wat je lichaam in elke fase van je cyclus nodig heeft, zorgt ervoor dat je je cravings onder controle krijgt. ',
       },
     ],
     widerHeading: 'Verder kijken dan alleen je cravings',
