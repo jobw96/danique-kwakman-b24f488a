@@ -84,7 +84,7 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Ik heb altijd ijzertekort rond mijn menstruatie, hoe kan dat?',
         answer: [
-          'Hevig bloedverlies kost ijzer, en als je voorraad al laag is, wordt dat elke cyclus opnieuw aangesproken zonder tijd om aan te vullen.',
+          'Hevig bloedverlies kost ijzer en als je voorraad al laag is, wordt dat elke cyclus opnieuw aangesproken zonder tijd om aan te vullen.',
           'In mijn begeleiding kijk ik naar je ijzerstatus en voedingspatroon, zodat je niet blijft ronddraaien in dat tekort.',
         ],
       },
