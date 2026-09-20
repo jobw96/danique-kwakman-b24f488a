@@ -76,7 +76,7 @@ const FaqList = ({ faqs }: { faqs: ComplaintFaq[] }) => {
               <div className="space-y-4 pb-6">
                 {item.answer.map((paragraph) => (
                   <p key={paragraph} className="leading-relaxed text-muted-foreground">
-                    {paragraph}
+                    {linkifyTrajecten(paragraph)}
                   </p>
                 ))}
               </div>
