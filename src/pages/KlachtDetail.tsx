@@ -229,7 +229,7 @@ const KlachtDetail = () => {
               </h2>
               <div className="space-y-4">
                 {content.explanation.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
+                  <p key={paragraph}>{linkifyTrajecten(paragraph)}</p>
                 ))}
               </div>
             </FadeIn>
