@@ -3,9 +3,9 @@ import type { ComplaintContentMap } from './types';
 export const onregelmatigeCyclusContent: ComplaintContentMap = {
   'onregelmatige-cyclus': {
     intro: [
-      'De ene maand word je na 30 dagen ongesteld, de volgende maand pas na 45 dagen. Soms blijft je menstruatie helemaal uit. Daardoor weet je niet wanneer je menstruatie komt, of je een ovulatie hebt en wat er nu eigenlijk in je lichaam gebeurt.',
-      'Een onregelmatige cyclus is meer dan een lastige planning. Het kan onzeker maken, zeker wanneer je zwanger wilt worden, veel andere hormonale klachten hebt of gewoon wilt begrijpen waarom je menstruatie steeds wisselt. Je wilt niet iedere maand opnieuw hoeven gokken, maar weten waar je aan toe bent.',
-      'Ik herken die zoektocht. Zelf liep ik jarenlang rond met een pijnlijke, onregelmatige menstruatie en kreeg ik uiteindelijk de diagnose PCOS. Die ervaring, mijn achtergrond als voormalig verpleegkundige en mijn kennis als orthomoleculair hormoon- en darmtherapeut neem ik mee in hoe ik naar jouw cyclus kijk: nuchter, breed en zonder zomaar een standaard protocol te volgen.',
+      'De ene maand word je na 30 dagen ongesteld, de volgende maand pas na 45 dagen. Soms blijft je menstruatie helemaal uit. Daardoor weet je niet wanneer je menstruatie komt of je een ovulatie hebt en wat er nu eigenlijk in je lichaam gebeurt.',
+      'Een onregelmatige cyclus kan je onzeker maken. Zeker wanneer je zwanger wilt worden, veel andere hormonale klachten hebt of gewoon wilt begrijpen waarom je menstruatie steeds onregelmatig is. Je wilt niet iedere maand opnieuw te hoeven stressen, maar je wilt weten waar je aan toe bent.',
+      'Ik herken die zoektocht. Zelf liep ik jarenlang rond met een pijnlijke, onregelmatige menstruatie en kreeg ik uiteindelijk de diagnose PCOS. Die ervaring, mijn achtergrond als voormalig verpleegkundige en mijn kennis als orthomoleculair hormoon- en darmtherapeut neem ik mee in hoe ik naar jouw cyclus kijk.',
     ],
     recognition: [
       'Je cyclus duurt de ene maand 30 dagen en de volgende maand ineens 45 dagen of langer.',
