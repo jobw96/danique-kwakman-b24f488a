@@ -211,9 +211,9 @@ export const hormonenContent1: ComplaintContentMap = {
 
   'oestrogeendominantie': {
     intro: [
-      'Je borsten voelen de week voor je menstruatie zo gevoelig aan dat een omhelzing al pijn doet. Je ringen passen net iets strakker, je buik voelt opgeblazen, en op de weegschaal zie je een paar kilo die er de week erna weer af zijn. Je herkent het patroon, maar begrijpt niet goed waar het vandaan komt.',
+      'Je borsten voelen de week voor je menstruatie zo gevoelig aan dat een knuffel al pijn doet. Je ringen passen net iets strakker, je buik voelt opgeblazen, en op de weegschaal zie je een paar kilo die er de week erna weer af zijn. Je ziet het patroon, maar begrijpt niet goed waar het vandaan komt.',
       'Daarbij misschien ook hevig bloedverlies, stemmingsklachten en een gevoel van opgeblazen zijn dat niet alleen met je buik te maken heeft. Je vraagt je af of dit “gewoon bij vrouw-zijn” hoort, of dat er iets specifieks speelt met je hormonen.',
-      'Je wilt je lichaam niet elke maand als vijand ervaren. Minder vocht vasthouden, minder gevoelige borsten, een stabielere cyclus zonder die opeenstapeling van klachten in de tweede helft. Dat is waar we samen naar kijken.',
+      'Minder vocht vasthouden, minder gevoelige borsten, een stabielere cyclus zonder die opeenstapeling van klachten in de tweede helft. Dat is waar we samen naar kijken!',
     ],
     recognition: [
       'Je borsten zijn de week voor je menstruatie pijnlijk gevoelig, soms al bij lichte aanraking.',
@@ -221,14 +221,14 @@ export const hormonenContent1: ComplaintContentMap = {
       'Je hebt hevig bloedverlies tijdens je menstruatie.',
       'Je herkent PMS-klachten zoals prikkelbaarheid, hoofdpijn of stemmingswisselingen.',
       'Je merkt dat je gewicht schommelt met je cyclus mee.',
-      'Je hebt weleens cysten op je eierstokken of borsten gehad.',
+      '.',
       'Je gebruikt al langere tijd de anticonceptiepil of bent daar recent mee gestopt.',
       'Je herkent een opgezwollen, gespannen gevoel in je buik in de dagen voor je menstruatie.',
     ],
     explanationHeading: 'Wat is oestrogeendominantie?',
     explanation: [
       'Oestrogeendominantie betekent niet per se dat je te veel oestrogeen aanmaakt, maar dat de verhouding tussen oestrogeen en progesteron uit balans is. Progesteron werkt normaal gesproken als tegenhanger van oestrogeen: het zorgt voor rust en stabiliteit in je baarmoederslijmvlies en in je bredere hormoonhuishouding. Is er relatief te veel oestrogeen ten opzichte van progesteron, dan uit zich dat in klachten als gevoelige borsten, vocht vasthouden en hevig bloedverlies.',
-      'Je lever speelt een sleutelrol in het afbreken van oestrogeen. Verloopt die afbraak niet optimaal, bijvoorbeeld door alcoholgebruik, medicatie of een tekort aan bepaalde voedingsstoffen, dan blijft er meer actief oestrogeen in je bloed circuleren. Ook je darmen zijn hierbij betrokken: afgebroken oestrogeen wordt via je darmen uitgescheiden, maar bij een verstoorde darmflora of trage stoelgang kan oestrogeen daar opnieuw worden opgenomen in plaats van afgevoerd.',
+      'Je lever speelt een rol in het afbreken van oestrogeen. Verloopt die afbraak niet optimaal, bijvoorbeeld door alcoholgebruik, medicatie of een tekort aan bepaalde voedingsstoffen, dan blijft er meer actief oestrogeen in je bloed circuleren. Ook je darmen zijn hierbij betrokken. Afgebroken oestrogeen wordt via je darmen uitgescheiden, maar bij een verstoorde darmflora of trage stoelgang kan oestrogeen daar opnieuw worden opgenomen in plaats van afgevoerd.',
       'Daarnaast speelt vezelinname een rol, omdat vezels helpen om afgebroken oestrogeen aan zich te binden en af te voeren via de ontlasting. Een voedingspatroon met weinig vezels en veel bewerkte producten maakt het voor je lichaam lastiger om overtollig oestrogeen kwijt te raken. Dit alles maakt oestrogeendominantie een kwestie van balans en afvoer, niet alleen van aanmaak.',
     ],
     factorsHeading: 'Wat kan er meespelen bij oestrogeendominantie?',
@@ -244,17 +244,17 @@ export const hormonenContent1: ComplaintContentMap = {
     widerIntro: 'Oestrogeendominantie staat niet op zichzelf en hangt vaak samen met andere systemen in je lichaam.',
     widerSignals: [
       'Hoe je lever functioneert en of je regelmatig alcohol gebruikt.',
-      'Hoe je stoelgang eruitziet: dagelijks, traag of onregelmatig.',
+      'Hoe je stoelgang eruitziet. Ga je dagelijks, is het te traag of is het onregelmatig?',
       'Hoeveel vezels je dagelijks binnenkrijgt via je voeding.',
       'Of je andere PMS-klachten hebt zoals stemmingswisselingen of hoofdpijn.',
       'Of je weleens cysten hebt gehad op borsten of eierstokken.',
       'Of je gebruik maakt of hebt gemaakt van hormonale anticonceptie.',
     ],
-    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijk gesprek breng ik in kaart hoe jouw lever, darmen en cyclus samenhangen met je klachten. Met de CIRCLE-methode leggen we samen de puzzel achter jouw oestrogeen-progesteronbalans.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijk intake breng ik in kaart hoe jouw lever, darmen en cyclus samenhangen met je klachten. Met de CIRCLE-methode leggen we samen de puzzel achter jouw oestrogeen-progesteronbalans.',
     together: [
       'Je cyclus en de timing van je klachten in kaart brengen.',
       'Je voedingspatroon en vezelinname bespreken.',
-      'Je leverfunctie en alcoholgebruik meenemen.',
+      'Je leverfunctie meenemen.',
       'Je darmgezondheid en stoelgang in kaart brengen.',
       'Een persoonlijk plan opstellen gericht op een betere oestrogeen-progesteronbalans.',
     ],
