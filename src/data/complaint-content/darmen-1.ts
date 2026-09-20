@@ -244,8 +244,8 @@ export const darmenContent1: ComplaintContentMap = {
   'pds': {
     intro: [
       'Je hebt al onderzoek laten doen, misschien wel een gastroscopie of coloscopie en de uitslag was steeds “niets bijzonders gevonden”. Toch heb je bijna dagelijks buikpijn, krampen en een onvoorspelbare ontlasting die van diarree naar verstopping kan wisselen, soms binnen dezelfde week. De diagnose PDS is gesteld, maar daarmee is de klacht niet weg.',
-      'Je bent bang geworden voor bepaalde etentjes, een lange dag op kantoor zonder makkelijk toilet in de buurt, of een weekendje weg waarbij je niet weet hoe je darmen zich gaan gedragen. Je wilt niet je hele leven om je darmen heen blijven plannen, maar begrijpen wat jouw PDS precies triggert en wat je daaraan kunt doen.',
-      'Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige begeleid ik je met uitgebreide intakeformulieren en een persoonlijke intake. Met de CIRCLE-methode leg ik jouw gezondheidspuzzel: wat triggert jouw PDS, wat houdt het in stand en waar kun je concreet iets veranderen.',
+      'Je bent bang geworden voor bepaalde etentjes, een lange dag op kantoor zonder makkelijk toilet in de buurt of een weekendje weg waarbij je niet weet hoe je darmen zich gaan gedragen. Je wilt niet je hele leven om je darmen heen blijven plannen, maar begrijpen wat jouw PDS precies triggert en wat je daaraan kunt doen.',
+      '',
     ],
     recognition: [
       'Je hebt de diagnose PDS gekregen, nadat andere oorzaken door de huisarts of specialist zijn uitgesloten.',
