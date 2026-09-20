@@ -188,8 +188,8 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Helpt magnesium tegen stemmingswisselingen?',
         answer: [
-          'Magnesium speelt een rol bij de aanmaak van stoffen die je stemming reguleren, en een tekort kan prikkelbaarheid versterken, maar het is geen op zichzelf staande oplossing.',
-          'In mijn begeleiding kijk ik naar je totale voedingspatroon, niet naar één supplement als quick fix.',
+          'Magnesium speelt een rol bij de aanmaak van stoffen die je stemming reguleren, maar het is geen oplossing. Supplementen kunnen je lichaam ondersteunen, maar lossen niet het probleem op en daarom wil je juist gaan ontdekken waar je klachten vandaan komen.  ',
+          'We kijken naar je totale voedingspatroon, niet naar één supplement als quick fix.',
         ],
       },
       {
