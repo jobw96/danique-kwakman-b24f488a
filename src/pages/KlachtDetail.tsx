@@ -239,12 +239,11 @@ const KlachtDetail = () => {
               <BulletList items={content.together} />
               <p className="mt-5 leading-relaxed text-muted-foreground">
                 Mijn achtergrond als verpleegkundige neem ik mee in hoe ik naar jouw klachten kijk.
-                Ik ben gewend om klachten en medische informatie serieus te nemen en te herkennen
-                wanneer iets verder medisch onderzocht moet worden.
+                Ik ben gewend om klachten en medische informatie serieus te nemen en te herkennen.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Vanuit mijn orthomoleculaire kennis kijk ik vervolgens naar de rol van voeding,
-                voedingsstoffen en leefstijl. Waar het iets toevoegt, kan aanvullend{' '}
+                voedingsstoffen en leefstijl. Soms kan aanvullend{' '}
                 <Link
                   to="/labonderzoek"
                   className="underline underline-offset-4 transition-colors hover:text-primary-dark"
