@@ -3,15 +3,15 @@ import type { ComplaintContentMap } from './types';
 export const darmenContent1: ComplaintContentMap = {
   'opgeblazen-buik': {
     intro: [
-      'Je begint de dag met een platte buik en tegen de middag past je broek al niet meer lekker. Tegen de avond staat je buik zo strak dat je op foto’s soms lijkt of je zwanger bent, terwijl je alleen maar normaal hebt gegeten. De rits van je broek gaat open, je trekt een ruimer vest aan of je kiest bewust voor een jurk met rekbare tailleband.',
-      'Uit eten gaan of ergens gaan eten waar je niet weet wat er precies in het eten zit, voelt spannend. Je twijfelt of je die salade met bonen wel moet nemen, of dat brood en pasta je die avond weer opblazen. Je wilt gewoon een dag hebben waarop je buik hetzelfde blijft, ’s ochtends net als ’s avonds, zonder dat je daar voortdurend rekening mee moet houden.',
-      'Ik hoor dit verhaal vaak van vrouwen die al van alles hebben geprobeerd: minder brood, geen koolzuur, probiotica uit de drogist. Soms helpt dat tijdelijk, maar vaak keert de opgeblazen buik terug. Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige kijk ik breder dan alleen naar wat je eet. Via uitgebreide intakeformulieren en een persoonlijke intake leg ik met de CIRCLE-methode jouw gezondheidspuzzel, zodat we uitzoeken wat bij jou precies die opgezette buik veroorzaakt.',
+      'Je begint de dag met een platte buik en tegen de middag past je broek al niet meer lekker. Tegen de avond staat je buik zo strak dat je op foto’s soms lijkt of je zwanger bent, terwijl je alleen maar \'normaal\' hebt gegeten. De rits van je broek gaat open, je trekt een oversized shirt aan of je kiest bewust niet voor een strakke jurk.',
+      'Uit eten gaan of ergens gaan eten waar je niet weet wat er precies in het eten zit, voelt spannend. Je twijfelt of je die salade met bonen wel moet nemen of dat brood en pasta je die avond weer opblazen. Je wilt gewoon een dag hebben waarop je buik hetzelfde blijft, ’s ochtends net als ’s avonds zonder dat je daar voortdurend rekening mee moet houden.',
+      'Ik hoor dit verhaal vaak van vrouwen die al van alles hebben geprobeerd: minder brood, geen koolzuur, probiotica. Soms helpt dat tijdelijk, maar vaak keert de opgeblazen buik terug. Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige kijk ik breder dan alleen naar wat je eet. We gaan uitzoeken wat bij jou precies die opgezette buik veroorzaakt. ',
     ],
     recognition: [
       'Je buik is ’s ochtends plat, maar zwelt gedurende de dag steeds verder op.',
       'Je broek knelt tegen de avond, terwijl hij ’s ochtends nog los zat.',
       'Mensen vragen weleens of je zwanger bent, terwijl dat niet zo is.',
-      'Na bepaalde maaltijden, zoals brood, peulvruchten of koolzuurhoudende drank, voel je je buik meteen opzetten.',
+      'Na bepaalde maaltijden, zoals brood, peulvruchten of koolzuurhoudende drank voel je je buik meteen opzetten.',
       'Je vermijdt bepaalde gerechten of hele etentjes uit angst voor een opgeblazen gevoel.',
       'Je hebt naast de opgeblazen buik ook winderigheid, boeren of een vol gevoel na het eten.',
       'Rond je menstruatie merk je dat je buik nog sneller en heftiger opzet dan normaal.',
@@ -19,7 +19,7 @@ export const darmenContent1: ComplaintContentMap = {
     explanationHeading: 'Wat gebeurt er bij een opgeblazen buik?',
     explanation: [
       'Een opgeblazen buik ontstaat meestal door gasvorming in je darmen, door vasthouden van vocht, of door een combinatie van beide. Bacteriën in je darmen breken onverteerde koolhydraten af en produceren daarbij gassen. Hoe meer onverteerd voedsel er in je darmen achterblijft en hoe langer het daar blijft liggen, hoe meer gas er kan ontstaan.',
-      'Bij sommige vrouwen speelt SIBO een rol: een overgroei van bacteriën in de dunne darm, waar normaal veel minder bacteriën zitten. Bij anderen ligt de oorzaak meer bij trage stoelgang, waardoor voeding langer blijft liggen en fermenteert, of bij gevoeligheid voor fodmaps: koolhydraten in bijvoorbeeld ui, knoflook, peulvruchten en bepaald fruit die snel gaan gisten. Ook te snel eten, onvoldoende kauwen en veel lucht inslikken tijdens het praten en eten dragen bij aan een opgeblazen gevoel.',
+      'Bij sommige vrouwen speelt SIBO een rol. Dat is een overgroei van bacteriën in de dunne darm, waar normaal veel minder bacteriën zitten. Bij anderen ligt de oorzaak meer bij trage stoelgang, waardoor voeding langer blijft liggen en fermenteert. Ook te snel eten, onvoldoende kauwen en veel lucht inslikken tijdens het praten en eten dragen bij aan een opgeblazen gevoel.',
       'Daarnaast speelt je cyclus vaak een rol. In de week voor je menstruatie kan je lichaam meer vocht vasthouden en kan je spijsvertering trager werken door hormonale schommelingen, waardoor je buik sneller en heftiger opzet dan in de rest van je cyclus. Dat maakt een opgeblazen buik niet “gewoon iets van je spijsvertering”, maar iets waarbij spijsvertering, hormonen en leefstijl samen bekeken moeten worden.',
     ],
     factorsHeading: 'Wat kan bijdragen aan jouw opgeblazen buik?',
@@ -28,7 +28,7 @@ export const darmenContent1: ComplaintContentMap = {
     factors: [
       {
         title: 'Gasvorming, SIBO en dysbiose',
-        text: 'Wanneer de bacteriën in je darmen uit balans zijn, of wanneer er te veel bacteriën in je dunne darm zitten (SIBO), ontstaat er meer gas bij het verteren van je eten. Dat verklaart waarom je buik soms al binnen een uur na het eten opzet en waarom dit steeds terugkomt, ook als je “gezond” eet.',
+        text: 'Wanneer de bacteriën in je darmen uit balans zijn of wanneer er te veel bacteriën in je dunne darm zitten (SIBO), ontstaat er meer gas bij het verteren van je eten. Dat verklaart waarom je buik soms al binnen een uur na het eten opzet en waarom dit steeds terugkomt, ook als je “gezond” eet.',
       },
       {
         title: 'Fodmaps en koolhydraatgevoeligheid',
@@ -40,7 +40,7 @@ export const darmenContent1: ComplaintContentMap = {
       },
       {
         title: 'Obstipatie en traag darmwerk',
-        text: 'Als ontlasting langer blijft liggen, krijgen bacteriën meer tijd om te fermenteren en gas te vormen. Een buik die vooral tegen het einde van de dag opzet, of een buik die pas rustig wordt na een goede stoelgang, wijst vaak in deze richting.',
+        text: 'Als ontlasting langer in de darm blijft zitten, krijgen bacteriën meer tijd om te fermenteren en gas te vormen. Een buik die vooral tegen het einde van de dag opzet, of een buik die pas rustig wordt na een goede stoelgang, wijst vaak in deze richting.',
       },
       {
         title: 'Je cyclus en hormonale schommelingen',
@@ -51,12 +51,12 @@ export const darmenContent1: ComplaintContentMap = {
     widerIntro:
       'Een opgeblazen buik staat vrijwel nooit op zichzelf. Afhankelijk van jouw klachten kijk ik daarom breder mee naar:',
     widerSignals: [
-      'Je stoelgangpatroon: obstipatie, dunne ontlasting of afwisselend',
+      'Je stoelgang patroon. Obstipatie, dunne ontlasting of afwisselend',
       'Winderigheid, boeren en een vol gevoel na het eten',
       'Vermoeidheid, hoofdpijn of huidklachten die kunnen samenhangen met je darmen',
       'Je cyclus en of klachten rond je menstruatie erger worden',
       'Stressniveau en hoe rustig of gehaast je eet',
-      'Eerdere onderzoeken zoals een gastroscopie, ontlastingsonderzoek of ademtest voor SIBO',
+      'Eerdere onderzoeken zoals een ontlastingsonderzoek of testen op een SIBO',
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, spijsvertering en darmen in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw opgeblazen buik',
     together: [
