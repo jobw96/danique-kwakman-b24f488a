@@ -239,7 +239,7 @@ export const energieContent1: ComplaintContentMap = {
   },
   'slaapproblemen': {
     intro: [
-      'Je ligt in bed, doodmoe en toch blijven je gedachten malen zodra je licht uitdoet. Of je valt prima in slaap, maar wordt precies om 3 uur ’s nachts klaarwakker en ligt daarna te piekeren over de meest uiteenlopende dingen. Soms word je warm wakker, gooit het dekbed van je af en kun je daarna maar moeilijk weer inslapen.',
+      'Je ligt in bed, doodmoe en toch blijven je gedachten malen zodra je licht uitdoet. Of je valt prima in slaap, maar wordt precies om 3 uur ’s nachts klaarwakker en ligt daarna te piekeren over de meest uiteenlopende dingen.',
       'Slaapproblemen ondermijnen je hele dag: je energie, je concentratie en je humeur. Het advies om “gewoon eerder naar bed te gaan” helpt dan weinig, want het probleem zit vaak niet in de hoeveelheid tijd die je in bed doorbrengt, maar in wat je lichaam ’s nachts wel of niet met rust laat.',
       'Als orthomoleculair hormoon- en darmtherapeut kijk ik verder dan slaaphygiëne alleen. Samen zoeken we uit wat jouw nachtrust precies verstoort, of dat nu je hormonen, je bloedsuiker, je cortisol of iets anders is en wat daarin voor jou haalbaar is om aan te pakken.',
     ],
