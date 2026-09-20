@@ -129,23 +129,23 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'herstel-na-anticonceptie': {
     intro: [
-      'Je bent gestopt met de pil, hebt je spiraaltje laten verwijderen of bent gestopt met de prikpil, en nu gebeurt er van alles. Misschien blijft je menstruatie uit, krijg je ineens acne die je nooit eerder had, of valt je haar meer uit dan je gewend bent. Je vraagt je af: is dit normaal, en hoe lang duurt dit nog?',
-      'Anticonceptie onderdrukt je eigen cyclus, en na het stoppen moet je lichaam die cyclus weer zelf oppakken. Dat gaat niet bij iedereen even soepel of snel. Sommige klachten die je nu ervaart, waren er misschien ook al vóór je met anticonceptie begon, maar werden door de pil onderdrukt. Andere klachten zijn een reactie van je lichaam op het stoppen zelf.',
-      'Ik begeleid vrouwen die na het stoppen met anticonceptie willen begrijpen wat er in hun lichaam gebeurt en die concreet aan de slag willen met hun cyclus, huid, haar en energie. Met uitgebreide intakeformulieren en de CIRCLE-methode kijk ik naar jouw situatie, niet naar een standaard "detox na de pil" protocol.',
+      'Je bent gestopt met de pil, hebt je spiraaltje laten verwijderen of bent gestopt met de prikpil en nu gebeurt er van alles. Misschien blijft je menstruatie uit, krijg je ineens acne die je nooit eerder had of valt je haar meer uit dan je gewend bent. Je vraagt je af of dit normaal is en hoe lang duurt dit nog?',
+      'Anticonceptie onderdrukt je eigen cyclus en na het stoppen moet je lichaam die cyclus weer zelf oppakken. Dat gaat niet bij iedereen even soepel of snel. Sommige klachten die je nu ervaart, waren er misschien ook al vóór je met anticonceptie begon, maar werden door de pil onderdrukt. Andere klachten zijn een reactie van je lichaam op het stoppen zelf.',
+      'Ik begeleid vrouwen die na het stoppen met anticonceptie willen begrijpen wat er in hun lichaam gebeurt en die concreet aan de slag willen met hun cyclus, huid, haar en energie. Met uitgebreide intakeformulieren en de CIRCLE-methode kijk ik naar jouw situatie.',
     ],
     recognition: [
       'Je bent gestopt met de pil, hormoonspiraal, prikpil of ander hormonaal middel en je menstruatie blijft uit.',
       'Je hebt na het stoppen ineens last van acne, terwijl je huid op de pil rustig was.',
       'Je merkt dat je haar dunner wordt of meer uitvalt sinds je gestopt bent.',
       'Je weet niet goed of de bloeding die je op anticonceptie kreeg eigenlijk wel een echte menstruatie was.',
-      'Je twijfelt of je klachten van vóór de pil terugkomen, of dat het iets nieuws is.',
+      'Je twijfelt of je klachten van vóór de pil terugkomen of dat het iets nieuws is.',
       'Je wilt je lichaam ondersteunen in het herstellen van de eigen cyclus, maar weet niet waar je moet beginnen.',
       'Je hebt een spiraaltje of hormoonspiraal gehad en merkt dat je klachten veranderen na verwijdering.',
     ],
     explanationHeading: 'Wat gebeurt er in je lichaam na het stoppen met anticonceptie?',
     explanation: [
-      'Hormonale anticonceptie, zoals de pil, prikpil, hormoonspiraal of implantatiestaafje, onderdrukt in meer of mindere mate je eigen hormooncyclus. De bloeding die je op de pil krijgt tijdens de stopweek is een onttrekkingsbloeding: een reactie op het wegvallen van de hormonen uit de pil, niet het gevolg van een eigen ovulatie. Dat is een belangrijk verschil met een echte menstruatie, die volgt op een cyclus met een eigen hormonale opbouw.',
-      'Na het stoppen moet je lichaam die eigen cyclus weer oppakken. Bij de één gebeurt dat binnen enkele weken, bij de ander duurt het maanden voordat er weer een regelmatige cyclus met ovulatie op gang komt. Dit heet soms “post-pil amenorroe” als de menstruatie langdurig uitblijft. Ook acne en haaruitval na het stoppen zijn bekende klachten: de pil onderdrukte androgene hormonen, en na het stoppen kan er tijdelijk een periode zijn waarin die androgenen relatief meer invloed hebben, wat huid en haar kan beïnvloeden.',
+      'Hormonale anticonceptie, zoals de pil, prikpil, hormoonspiraal of implantatiestaafje, onderdrukt in meer of mindere mate je eigen hormooncyclus. De bloeding die je op de pil krijgt tijdens de stopweek is een onttrekkingsbloeding. Een reactie op het wegvallen van de hormonen uit de pil, niet het gevolg van een eigen ovulatie. Dat is een belangrijk verschil met een echte menstruatie, die volgt op een cyclus met een eigen hormonale opbouw.',
+      'Na het stoppen moet je lichaam die eigen cyclus weer oppakken. Bij de één gebeurt dat binnen enkele weken, bij de ander duurt het maanden voordat er weer een regelmatige cyclus met ovulatie op gang komt. Dit heet soms “post-pil amenorroe” als de menstruatie langdurig uitblijft. Ook acne en haaruitval na het stoppen zijn bekende klachten. De pil onderdrukte androgene hormonen, en na het stoppen kan er tijdelijk een periode zijn waarin die androgenen relatief meer invloed hebben, wat huid en haar kan beïnvloeden.',
       'Belangrijk om te beseffen: de pil onderdrukt klachten, maar lost de onderliggende oorzaak niet op. Als je vóór de pil al een onregelmatige cyclus, acne of PCOS had, kunnen deze klachten na het stoppen weer zichtbaar worden. Dat is dan niet per se een nieuw probleem, maar iets dat al eerder speelde en nu weer aan de oppervlakte komt.',
     ],
     factorsHeading: 'Wat kan er meespelen na het stoppen met anticonceptie?',
