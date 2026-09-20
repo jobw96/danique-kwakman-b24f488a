@@ -536,7 +536,7 @@ export const energieContent1: ComplaintContentMap = {
       'Je beweegpatroon, inclusief kracht- en dagelijkse beweging',
       'Je slaap en herstel',
       'Signalen die kunnen wijzen op PCOS of andere hormonale samenhang',
-      'Eerder bloedonderzoek, of het advies om dit via de huisarts te laten uitbreiden',
+      'Eerder bloedonderzoek ',
     ],
     faqHeading: 'Veelgestelde vragen over insulineresistentie',
     faqs: [
