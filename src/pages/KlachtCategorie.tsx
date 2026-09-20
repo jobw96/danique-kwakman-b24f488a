@@ -4,6 +4,17 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory, findComplaintCategory } from '@/data/complaints';
 import { Link, Navigate, useParams } from '@/lib/router-compat';
 
+const categoryIntros: Record<string, string> = {
+  'hormonen-en-cyclus':
+    'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van PMS, een onregelmatige cyclus en PCOS tot schildklierklachten, klachten rondom zwangerschap en de overgang.',
+  'darmen-en-spijsvertering':
+    'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van een opgeblazen buik en buikpijn tot PDS, obstipatie, maagzuur en voedselintoleranties.',
+  'energie-en-bloedsuiker':
+    'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van moe wakker worden en energiedips tot cravings, brain fog en bloedsuikerschommelingen die je hele dag bepalen.',
+  'huid-en-haar':
+    'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van acne en rosacea tot eczeem, een onrustige of gevoelige huid en haaruitval.',
+};
+
 const KlachtCategorie = () => {
   const { category: categorySlug } = useParams();
   const category = categorySlug ? findComplaintCategory(categorySlug) : undefined;
