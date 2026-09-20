@@ -121,7 +121,6 @@ export const darmenContent2: ComplaintContentMap = {
     factorsIntro: 'Bij het uitzoeken van jouw versnelde darmwerking kijken we naar een combinatie van factoren die vaak over het hoofd worden gezien:',
     factors: [
       { title: 'Stress en je zenuwstelsel', text: 'Spanning kan je spijsvertering versnellen via de darm-hersenas. Veel vrouwen merken dit als diarree voor een spannend moment of tijdens drukke periodes.' },
-      { title: 'Galzouten en vetvertering', text: 'Galzouten die niet goed worden teruggenomen trekken vocht je dikke darm in, wat dunne ontlasting geeft – vooral na vetrijke maaltijden.' },
       { title: 'Darmflora en darmwand', text: 'Een verstoorde balans van bacteriën of een geprikkelde darmwand kan je darmen chronisch overgevoelig maken voor normale maaltijden.' },
       { title: 'Voedselintoleranties', text: 'Een gevoeligheid voor bepaalde voedingsmiddelen kan zich uiten als diarree na het eten, zonder dat je precies weet waarop je reageert.' },
       { title: 'Schildklier en hormonen', text: 'Een te actieve schildklier versnelt je hele stofwisseling, inclusief je spijsvertering. Ook schommelingen in je cyclus kunnen je stoelgang beïnvloeden.' },
