@@ -1,103 +1,191 @@
 import type { ComplaintContentMap } from './types';
 
 export const darmenContent2: ComplaintContentMap = {
-  'verstopping-of-diarree': {
+  'obstipatie': {
     intro: [
-      'Vier dagen niks en dan opeens moet je rennen naar het toilet. Of andersom: je zit al drie dagen vast en voelt je opgeblazen en zwaar, terwijl je collega’s je zien staan met een pijnlijke grimas achter je bureau. Verstopping en diarree lijken tegenpolen, maar ze komen vaak uit dezelfde koker: een darmwerking die niet lekker loopt.',
-      'Misschien herken je het van je vakanties, waarbij je systeem drie dagen op slot gaat zodra je op een ander toilet zit. Of je hebt juist het patroon dat je ’s ochtends met stress naar je werk fietst en halverwege een openbaar toilet moet zoeken. Beide kanten van dezelfde medaille vertellen je iets over hoe je darmen, je zenuwstelsel en je voeding samenwerken.',
-      'Je wilt gewoon weer op een voorspelbaar moment naar de wc kunnen, zonder erover na te hoeven denken. Geen buikpijn vooraf, geen paniek over waar het dichtstbijzijnde toilet is, geen dagen bijhouden of het wel goed komt. Daar is met de juiste uitzoekslag echt aan te werken.',
+      'Je zit al drie dagen vast en voelt je opgeblazen en zwaar. Of je gaat wel naar de wc, maar moet zo persen dat je er met zere buikspieren vandaan komt en het gevoel hebt dat er nog van alles achterblijft. Misschien herken je het ook van vakanties: zodra je op een ander toilet zit, gaat je systeem dagenlang op slot.',
+      'Obstipatie is meer dan een vervelend toiletprobleem. Het kan invloed hebben op hoe energiek je je voelt, hoe je buik eruitziet aan het einde van de dag en zelfs op je stemming. En hoewel het advies vaak is om gewoon meer vezels en water te nemen, blijkt dat bij veel vrouwen niet genoeg.',
+      'Je wilt gewoon weer op een voorspelbaar moment naar de wc kunnen, zonder erover na te hoeven denken. Geen buikpijn vooraf, geen dagen bijhouden of het wel goed komt, geen broek die aan het einde van de dag te strak zit. Daar is met de juiste uitzoekslag echt aan te werken.',
     ],
     recognition: [
       'Je gaat minder dan drie keer per week naar het toilet, of de ontlasting is hard en brokkelig, alsof je moet persen om iets kwijt te raken.',
-      'Je herkent jezelf juist in het andere uiterste: meerdere keren per dag dunne ontlasting, met soms haast om op tijd bij een toilet te zijn.',
-      'De consistentie wisselt binnen dezelfde week van keihard naar waterdun, zonder dat je snapt waarom.',
+      'Je hebt na het toiletbezoek het gevoel dat je niet helemaal leeg bent.',
+      'Je buik zet op naarmate de dag vordert, zeker als je een dag niet naar de wc bent geweest.',
+      'Op vakantie of bij een verandering in je dagritme raakt je stoelgang meteen van slag.',
       'Je hebt weleens de Bristol-stoelgangschaal opgezocht om te checken of jouw ontlasting normaal is.',
-      'Na het eten van bepaalde producten – koffie, gluten, zuivel, vet eten – merk je dat je darmen sneller reageren.',
-      'Je voelt je opgeblazen, futloos of prikkelbaar rond de dagen dat je darmen niet meewerken.',
-      'Stressvolle periodes, zoals een deadline of familieaangelegenheid, gaan gepaard met een ander wc-patroon dan normaal.',
+      'Je voelt je futloos, prikkelbaar of vol in je buik op de dagen dat je darmen niet meewerken.',
+      'Stressvolle periodes, zoals een deadline of een drukke agenda, vertragen je stoelgang merkbaar.',
     ],
-    explanationHeading: 'Waarom je darmen zo wisselend kunnen reageren',
+    explanationHeading: 'Waarom je darmen te traag kunnen werken',
     explanation: [
-      'De snelheid waarmee voeding door je darmen beweegt – de darmmotiliteit – wordt door veel meer aangestuurd dan alleen wat je eet. Je zenuwstelsel, je schildklier, je vochtbalans en zelfs je slaap spelen mee. Te weinig vezels of te weinig water geven harde, moeilijk passeerbare ontlasting. Te snelle darmbewegingen, bijvoorbeeld door stress of een overgevoelige darm, geven juist dunne ontlasting omdat er te weinig tijd is om vocht op te nemen.',
-      'Magnesium is daarbij een onderschatte factor: het ontspant de darmspier en een tekort kan bijdragen aan trage stoelgang. Ook je schildklier heeft rechtstreeks invloed op je stofwisseling en dus op de snelheid van je spijsvertering – een tragere schildklier gaat vaak samen met verstopping, een te actieve schildklier juist vaker met diarree. Galzouten, die nodig zijn om vetten te verteren, spelen een rol bij zowel te trage als te snelle darmwerking, afhankelijk van of er te veel of te weinig van aanwezig zijn.',
-      'En dan is er de rechtstreekse lijn tussen je hoofd en je darmen: de darm-hersenas. Bij spanning schakelt je lichaam over op een overlevingsstand waarin spijsvertering geen prioriteit heeft, wat bij de één de darmen vertraagt en bij de ander juist versnelt. Dit verklaart waarom hetzelfde eten op de ene dag geen probleem geeft en op de andere dag klachten oplevert.',
+      'Bij obstipatie beweegt voeding te langzaam door je darmen. Hoe langer ontlasting in de dikke darm blijft, hoe meer vocht eruit wordt opgenomen en hoe harder en moeilijker het wordt om kwijt te raken. De snelheid van die darmwerking – de darmmotiliteit – wordt door veel meer aangestuurd dan alleen vezels. Je zenuwstelsel, je schildklier, je vochtbalans, je beweging en zelfs je slaap spelen mee.',
+      'Magnesium is daarbij een onderschatte factor: dit mineraal is nodig om de darmspier te ontspannen en een tekort kan bijdragen aan een tragere stoelgang. Ook je schildklier heeft rechtstreeks invloed op je stofwisseling en dus op de snelheid van je spijsvertering – een tragere schildklier gaat vaak samen met obstipatie. En via de darm-hersenas kan spanning je spijsvertering op een lager pitje zetten, omdat je lichaam in een overlevingsstand schakelt waarin vertering geen prioriteit heeft.',
+      'Ook je hormonen doen mee. In de tweede helft van je cyclus, als progesteron hoger is, vertraagt de darmwerking bij veel vrouwen merkbaar. Daarom kan obstipatie juist rond je menstruatie opvallen of verergeren.',
     ],
-    factorsHeading: 'Wat kan meespelen bij verstopping of diarree',
-    factorsIntro: 'Bij het uitzoeken van jouw darmwerking kijkt Danique naar een combinatie van factoren die vaak over het hoofd worden gezien:',
+    factorsHeading: 'Wat kan meespelen bij obstipatie',
+    factorsIntro: 'Bij het uitzoeken van jouw trage stoelgang kijken we naar een combinatie van factoren die vaak over het hoofd worden gezien:',
     factors: [
       { title: 'Vezels en vocht', text: 'Te weinig vezelrijke voeding of te weinig water maakt ontlasting harder en moeilijker om kwijt te raken. Te veel vezels ineens kan juist weer voor een opgeblazen gevoel zorgen.' },
       { title: 'Magnesiumstatus', text: 'Een tekort aan magnesium kan bijdragen aan een tragere darmwerking, omdat dit mineraal nodig is voor het ontspannen van de darmspier.' },
-      { title: 'Schildklierwerking', text: 'Zowel een tragere als een snellere schildklier heeft directe invloed op de snelheid van je spijsvertering en dus op je stoelgangpatroon.' },
-      { title: 'Galzouten en vetvertering', text: 'Onvoldoende of juist te veel galzouten kunnen bijdragen aan wisselende ontlasting, vooral na vetrijke maaltijden.' },
-      { title: 'Stress en beweging', text: 'Spanning zet je spijsvertering op een laag pitje of versnelt hem juist. Te weinig beweging vertraagt de darmwerking extra.' },
+      { title: 'Schildklierwerking', text: 'Een tragere schildklier heeft directe invloed op de snelheid van je spijsvertering en kan een belangrijke speler zijn bij aanhoudende obstipatie.' },
+      { title: 'Beweging en dagritme', text: 'Te weinig beweging en het uitstellen van de aandrang vertragen je darmwerking verder. Een vast toiletmoment helpt je darmen ritme te krijgen.' },
+      { title: 'Stress en hormonen', text: 'Spanning zet je spijsvertering op een laag pitje. Ook progesteron in de tweede cyclushelft vertraagt je darmen, wat klachten rond je menstruatie verklaart.' },
     ],
-    widerHeading: 'Wat een wisselend toiletpatroon nog meer kan vertellen',
-    widerIntro: 'Verstopping of diarree staat zelden op zichzelf. Andere signalen die vaak samen opduiken:',
+    widerHeading: 'Wat obstipatie nog meer kan vertellen',
+    widerIntro: 'Obstipatie staat zelden op zichzelf. Andere signalen die vaak samen opduiken:',
     widerSignals: [
       'Een opgeblazen buik die in de loop van de dag erger wordt',
       'Vermoeidheid die niet overgaat na een goede nacht slaap',
       'Huidklachten zoals onzuiverheden of eczeem',
       'Hoofdpijn rond de dagen dat je darmen niet meewerken',
       'Prikkelbaarheid of somberheid die samenhangt met je buikklachten',
-      'Onverklaarbare gewichtsschommelingen',
+      'Kouwelijkheid of een trage stofwisseling die op je schildklier kan wijzen',
     ],
-    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eet-, leef- en toiletpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw verstopping of diarree',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eet-, leef- en toiletpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw obstipatie.',
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
-      'Tijdens de persoonlijke intake bespreken jullie je Bristol-schaal patroon en wat eraan voorafgaat',
-      'Met de CIRCLE-methode brengt Danique factoren als vezels, vocht, mineralen en schildklier samen in beeld',
+      'Tijdens de persoonlijke intake bespreken we je stoelgangpatroon en wat eraan voorafgaat',
+      'Met de CIRCLE-methode brengen we factoren als vezels, vocht, mineralen, schildklier en cyclus samen in beeld',
       'Je krijgt een plan op maat, geen standaard vezeladvies dat voor iedereen hetzelfde is',
-      'Waar nodig verwijst Danique je door voor bloedonderzoek of naar de huisarts bij alarmsymptomen',
+      'Waar nodig kan laboratoriumonderzoek extra informatie geven, bijvoorbeeld over je schildklier',
     ],
-    faqHeading: 'Veelgestelde vragen over verstopping en diarree',
+    faqHeading: 'Veelgestelde vragen over obstipatie',
     faqs: [
       {
-        question: 'Wanneer moet ik met verstopping of diarree naar de huisarts?',
+        question: 'Wanneer moet ik met obstipatie naar de huisarts?',
         answer: [
-          'Ga altijd naar de huisarts bij bloed bij de ontlasting, onbedoeld gewichtsverlies, aanhoudende koorts, klachten die je ’s nachts wakker houden, of als de klachten langer dan een paar weken aanhouden zonder duidelijke oorzaak. Dit zijn signalen die eerst medisch beoordeeld moeten worden, voordat je verder kijkt naar voeding en leefstijl.',
-          'Danique werkt nooit in plaats van je huisarts, maar kan wel met je meedenken zodra alarmsymptomen zijn uitgesloten en je op zoek bent naar de onderliggende factoren.',
+          'Ga naar de huisarts bij bloed bij de ontlasting, onbedoeld gewichtsverlies, ernstige buikpijn, of als je stoelgangpatroon plotseling en blijvend verandert zonder duidelijke oorzaak. Dit zijn signalen die eerst medisch beoordeeld moeten worden.',
+          'Zijn alarmsymptomen uitgesloten, dan kan ik met je meekijken naar de onderliggende factoren in voeding en leefstijl.',
         ],
       },
       {
-        question: 'Kan stress echt zorgen voor diarree of verstopping?',
+        question: 'Helpen extra vezels altijd bij obstipatie?',
         answer: [
-          'Ja. Je darmen en hersenen zijn nauw verbonden via de darm-hersenas. Bij spanning kan je lichaam de spijsvertering versnellen of juist vertragen, afhankelijk van hoe jouw systeem daarop reageert. Dit verklaart waarom je tijdens een drukke periode ineens ander wc-gedrag hebt dan normaal.',
-          'In de intake kijkt Danique specifiek naar wat er speelde vóór klachten begonnen, zodat stress als factor niet over het hoofd wordt gezien.',
+          'Niet altijd. Bij sommige vrouwen verergeren extra vezels juist een opgeblazen gevoel, zeker als de vochtinname of darmflora niet op orde is. Vezels werken het beste in combinatie met voldoende water en een goed werkende darmspier.',
+          'In een traject kijken we eerst naar jouw situatie voordat we iets aanpassen, in plaats van een standaard vezeladvies dat voor iedereen hetzelfde is.',
         ],
       },
       {
-        question: 'Helpen extra vezels altijd bij verstopping?',
+        question: 'Wat heeft mijn schildklier te maken met obstipatie?',
         answer: [
-          'Niet altijd. Bij sommige mensen verergeren extra vezels juist een opgeblazen gevoel, vooral als de darmflora of vochtinname niet op orde is. Vezels werken het beste in combinatie met voldoende water en een goed werkende darmspier.',
-          'Danique kijkt naar jouw situatie voordat ze een vezeladvies geeft, in plaats van een standaard advies dat voor iedereen hetzelfde is.',
+          'Je schildklier stuurt je stofwisseling aan en daarmee ook de snelheid van je darmbewegingen. Een tragere schildklierwerking gaat vaak samen met obstipatie, samen met signalen als vermoeidheid en kouwelijkheid.',
+          'Bij aanhoudende klachten kan laboratoriumonderzoek naar je schildklierwaarden een logische stap zijn om dit verder te onderzoeken.',
         ],
       },
       {
-        question: 'Wat heeft mijn schildklier te maken met mijn stoelgang?',
+        question: 'Kan magnesium helpen bij obstipatie?',
         answer: [
-          'Je schildklier stuurt je stofwisseling aan en daarmee ook de snelheid van je darmbewegingen. Een tragere schildklierwerking gaat vaak samen met verstopping, een snellere juist vaker met diarree of frequente stoelgang.',
-          'Bij aanhoudende klachten kan Danique met je meedenken over gericht bloedonderzoek naar je schildklierwaarden.',
+          'Magnesium speelt een rol bij het ontspannen van de darmspier en een tekort kan bijdragen aan een tragere stoelgang. Maar een supplement is geen oplossing op zichzelf – je wilt weten waarom je darmen traag zijn.',
+          'Daarom kijken we naar je totale voedingspatroon en leefstijl, niet naar één supplement als quick fix.',
         ],
       },
       {
-        question: 'Kan magnesium helpen bij verstopping?',
+        question: 'Waarom ben ik juist rond mijn menstruatie verstopt?',
         answer: [
-          'Magnesium speelt een rol bij het ontspannen van de darmspier en een tekort kan bijdragen aan een tragere stoelgang. Of dit bij jou meespeelt, hangt af van je totale voedingspatroon en leefstijl.',
-          'Danique brengt in de intake in kaart of magnesium een factor kan zijn en denkt mee over een aanpak die bij jou past.',
-        ],
-      },
-      {
-        question: 'Waarom wisselt mijn ontlasting zo van hard naar dun?',
-        answer: [
-          'Dit kan komen door een combinatie van voeding, stress, vochtinname en de snelheid van je darmbewegingen. Bij de één overheerst op de ene dag een trage darm en op de andere dag een snelle reactie op bijvoorbeeld koffie of vet eten.',
-          'Met de CIRCLE-methode zoekt Danique uit welke combinatie van factoren bij jou de wisselingen veroorzaakt.',
+          'In de tweede helft van je cyclus is progesteron hoger en dat hormoon vertraagt je darmwerking. Veel vrouwen merken daardoor dat ze in de week voor hun menstruatie meer last hebben van obstipatie en een opgeblazen buik.',
+          'Dit is een voorbeeld van hoe je cyclus en je darmen met elkaar samenhangen. In een traject nemen we dat soort patronen mee in het volledige beeld.',
         ],
       },
       {
         question: 'Is het normaal om niet elke dag naar de wc te gaan?',
         answer: [
           'Dat verschilt per persoon. Drie keer per week tot drie keer per dag wordt over het algemeen als normaal beschouwd, zolang de ontlasting soepel is en zonder persen komt. Belangrijker dan de frequentie is of het patroon voor jou prettig en voorspelbaar is.',
-          'Twijfel je of jouw patroon normaal is, dan kun je dit rustig bespreken tijdens de intake bij Danique.',
+          'Twijfel je of jouw patroon normaal is, dan bespreken we dat rustig tijdens de intake.',
+        ],
+      },
+    ],
+  },
+
+  'diarree': {
+    intro: [
+      'Je kent elk openbaar toilet op je route naar je werk. Na de lunch moet je rennen en uit eten gaan voelt als een gok, want je weet niet hoe je darmen die avond reageren. Diarree en een plotselinge, onhoudbare aandrang bepalen misschien meer van je dag dan je lief is.',
+      'Misschien merk je dat het erger wordt onder stress, na koffie of na vet eten. Of het lijkt zomaar te gebeuren, zonder duidelijk patroon. Regelmatig dunne ontlasting is niet iets waar je bij hoort te blijven lopen – het is een signaal dat je spijsvertering sneller werkt dan goed voor je is.',
+      'Je wilt weer rustig kunnen eten zonder meteen te moeten nadenken over waar het toilet is. Een dag waarop je darmen gewoon meewerken in plaats van je plannen overnemen. Daar is met de juiste uitzoekslag echt aan te werken.',
+    ],
+    recognition: [
+      'Je hebt meerdere keren per dag dunne of waterige ontlasting.',
+      'Na het eten, vooral ’s ochtends of na koffie, moet je direct naar het toilet.',
+      'Je houdt bij het plannen van je dag al rekening met waar toiletten zijn.',
+      'Bepaalde voeding – zuivel, vet eten, koffie – lijkt je darmen meteen in gang te zetten.',
+      'Stressvolle momenten, zoals een presentatie of een drukke periode, gaan gepaard met een versnelde stoelgang.',
+      'Je voelt je futloos of uitgeput na dagen met veel toiletbezoeken.',
+      'Je hebt weleens sporten, een lange wandeling of een weekend weg afgezegd vanwege je darmen.',
+    ],
+    explanationHeading: 'Waarom je darmen te snel kunnen werken',
+    explanation: [
+      'Bij diarree beweegt voeding te snel door je darmen. Er is dan te weinig tijd om vocht uit de ontlasting op te nemen, waardoor die dun blijft. Die versnelling kan verschillende oorzaken hebben: een overgevoelige darm, een darmflora uit balans, galzouten die niet goed worden teruggenomen of een zenuwstelsel dat je spijsvertering constant versnelt.',
+      'Galzouten zijn daarbij een vaak gemiste factor. Ze zijn nodig om vetten te verteren en worden normaal gesproken aan het einde van de dunne darm weer opgenomen. Lukt dat niet goed, dan belanden ze in de dikke darm en trekken ze daar vocht aan – met dunne ontlasting tot gevolg, vooral na vetrijke maaltijden. Ook voedselintoleranties en een verstoorde darmflora kunnen je darmen chronisch prikkelen.',
+      'En dan is er de darm-hersenas: de rechtstreekse lijn tussen je hoofd en je darmen. Bij spanning schakelt je lichaam over op een overlevingsstand en bij veel vrouwen betekent dat een versnelde darm. Dit verklaart waarom je darmen op de ene dag geen probleem geven en op een stressvolle dag volledig losgaan.',
+    ],
+    factorsHeading: 'Wat kan meespelen bij diarree',
+    factorsIntro: 'Bij het uitzoeken van jouw versnelde darmwerking kijken we naar een combinatie van factoren die vaak over het hoofd worden gezien:',
+    factors: [
+      { title: 'Stress en je zenuwstelsel', text: 'Spanning kan je spijsvertering versnellen via de darm-hersenas. Veel vrouwen merken dit als diarree voor een spannend moment of tijdens drukke periodes.' },
+      { title: 'Galzouten en vetvertering', text: 'Galzouten die niet goed worden teruggenomen trekken vocht je dikke darm in, wat dunne ontlasting geeft – vooral na vetrijke maaltijden.' },
+      { title: 'Darmflora en darmwand', text: 'Een verstoorde balans van bacteriën of een geprikkelde darmwand kan je darmen chronisch overgevoelig maken voor normale maaltijden.' },
+      { title: 'Voedselintoleranties', text: 'Een gevoeligheid voor bepaalde voedingsmiddelen kan zich uiten als diarree na het eten, zonder dat je precies weet waarop je reageert.' },
+      { title: 'Schildklier en hormonen', text: 'Een te actieve schildklier versnelt je hele stofwisseling, inclusief je spijsvertering. Ook schommelingen in je cyclus kunnen je stoelgang beïnvloeden.' },
+    ],
+    widerHeading: 'Wat diarree nog meer kan vertellen',
+    widerIntro: 'Regelmatig diarree staat zelden op zichzelf. Andere signalen die vaak samen opduiken:',
+    widerSignals: [
+      'Een opgeblazen of rommelende buik na het eten',
+      'Vermoeidheid die niet overgaat na een goede nacht slaap',
+      'Onverklaard gewichtsverlies of moeite om op gewicht te blijven',
+      'Huidklachten zoals onzuiverheden of eczeem',
+      'Krampen of aandrang die samenhangen met stressvolle momenten',
+      'Klachten die opvallen na zuivel, koffie of vet eten',
+    ],
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eet-, leef- en toiletpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw diarree.',
+    together: [
+      'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
+      'Tijdens de persoonlijke intake bespreken we wanneer de diarree optreedt en wat eraan voorafgaat',
+      'Met de CIRCLE-methode brengen we factoren als darmflora, vetvertering, stress en voedselintoleranties samen in beeld',
+      'Je krijgt een plan op maat, geen standaard advies om maar wat weg te laten',
+      'Waar relevant kan laboratoriumonderzoek extra informatie geven, bijvoorbeeld naar voedselreacties of je schildklier',
+    ],
+    faqHeading: 'Veelgestelde vragen over diarree',
+    faqs: [
+      {
+        question: 'Wanneer moet ik met diarree naar de huisarts?',
+        answer: [
+          'Ga naar de huisarts bij bloed of slijm bij de ontlasting, onbedoeld gewichtsverlies, aanhoudende koorts, klachten die je ’s nachts wakker houden, of als de diarree langer dan een paar weken aanhoudt zonder duidelijke oorzaak. Dit zijn signalen die eerst medisch beoordeeld moeten worden.',
+          'Zijn alarmsymptomen uitgesloten, dan kan ik met je meekijken naar de onderliggende factoren in voeding, leefstijl en je darmgezondheid.',
+        ],
+      },
+      {
+        question: 'Kan stress echt diarree veroorzaken?',
+        answer: [
+          'Ja. Je darmen en hersenen zijn nauw verbonden via de darm-hersenas. Bij spanning kan je lichaam de spijsvertering versnellen, wat zich uit als aandrang of dunne ontlasting – soms al binnen een half uur.',
+          'In de intake kijken we specifiek naar wat er speelde vóór je klachten begonnen, zodat stress als factor niet over het hoofd wordt gezien.',
+        ],
+      },
+      {
+        question: 'Waarom moet ik na koffie of vet eten meteen naar de wc?',
+        answer: [
+          'Koffie en vet eten stimuleren de darmbeweging. Als jouw darmen al gevoelig of versneld werken, is die prikkel genoeg voor directe aandrang. Ook galzouten spelen hierbij een rol: die zijn nodig voor vetvertering en kunnen bij een verstoorde terugname vocht in je dikke darm aantrekken.',
+          'We kijken daarom niet alleen naar welke voeding je mijdt, maar naar waarom je darmen zo snel reageren.',
+        ],
+      },
+      {
+        question: 'Wat heeft mijn schildklier te maken met diarree?',
+        answer: [
+          'Je schildklier stuurt je stofwisseling aan en daarmee ook de snelheid van je darmbewegingen. Een te actieve schildklier gaat vaker samen met diarree of frequente stoelgang, samen met signalen als hartkloppingen, zweten of onrust.',
+          'Bij aanhoudende klachten kan laboratoriumonderzoek naar je schildklierwaarden een logische stap zijn.',
+        ],
+      },
+      {
+        question: 'Kan een voedselintolerantie diarree geven?',
+        answer: [
+          'Ja. Een gevoeligheid voor bepaalde voedingsmiddelen kan zich uiten als diarree na het eten. Het lastige is dat je vaak niet precies weet waarop je reageert en steeds meer voeding gaat schrappen, wat je darmen niet per se rustiger maakt.',
+          'Ik kijk daarom breder dan alleen het voedingsmiddel: ook naar je vertering, darmwand en darmflora. Waar relevant kan een voedselintolerantietest onderdeel zijn van het uitzoeken.',
+        ],
+      },
+      {
+        question: 'Wat kan ik zelf al doen bij regelmatig diarree?',
+        answer: [
+          'Let op voldoende vocht en mineralen, want bij diarree verlies je meer dan je denkt. Verder helpt het om patronen bij te houden: wanneer treedt het op, wat at je ervoor en hoe was je stressniveau? Die informatie is goud waard in een intake.',
+          'Met die puzzelstukjes kunnen we gericht kijken naar wat jouw darmen nodig hebben om weer rustiger te functioneren.',
         ],
       },
     ],
