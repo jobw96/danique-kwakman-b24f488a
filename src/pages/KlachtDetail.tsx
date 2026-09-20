@@ -238,23 +238,22 @@ const KlachtDetail = () => {
               <p className="mb-5 leading-relaxed text-muted-foreground">{content.togetherIntro}</p>
               <BulletList items={content.together} />
               <p className="mt-5 leading-relaxed text-muted-foreground">
-                Mijn achtergrond als verpleegkundige neem ik mee in hoe ik naar jouw klachten kijk.
-                Ik ben gewend om klachten en medische informatie serieus te nemen en te herkennen.
+                Mijn verpleegkundige achtergrond helpt me om klachten en medische informatie goed
+                te beoordelen. Vanuit mijn orthomoleculaire kennis kijk ik daarnaast naar de rol
+                van voeding, voedingsstoffen en leefstijl.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Vanuit mijn orthomoleculaire kennis kijk ik vervolgens naar de rol van voeding,
-                voedingsstoffen en leefstijl. Soms kan aanvullend{' '}
+                Waar het iets toevoegt, kan aanvullend{' '}
                 <Link
                   to="/labonderzoek"
                   className="underline underline-offset-4 transition-colors hover:text-primary-dark"
                 >
                   laboratoriumonderzoek
                 </Link>{' '}
-                extra informatie geven. Die uitslagen neem ik mee in het totaalbeeld van jouw
-                gezondheid en in de keuzes die we binnen jouw begeleiding maken.
+                extra informatie geven. Die uitslagen neem ik mee in jouw begeleiding.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                *Het vervangt onderzoek door een arts niet.
+                Laboratoriumonderzoek vervangt onderzoek door een arts niet.
               </p>
             </FadeIn>
           </div>
