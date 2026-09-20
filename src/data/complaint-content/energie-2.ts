@@ -17,7 +17,7 @@ export const energieContent2: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat betekent een verstoord cortisolritme?',
     explanation: [
-      'Cortisol is een hormoon dat je bijnieren aanmaken en dat een duidelijk dagritme heeft. Normaal gesproken is het ’s ochtends het hoogst, zodat je wakker en alert wordt, en zakt het geleidelijk gedurende de dag, zodat je ’s avonds kunt ontspannen en in slaap kunt vallen. Dat ritme heet de cortisoldagcurve.',
+      'Cortisol is een hormoon dat je bijnieren aanmaken en dat een duidelijk dagritme heeft. Normaal gesproken is het ’s ochtends het hoogst, zodat je wakker en alert wordt en zakt het geleidelijk gedurende de dag, zodat je ’s avonds kunt ontspannen en in slaap kunt vallen. Dat ritme heet de cortisoldagcurve.',
       'Bij langdurige stress, te weinig slaap, onregelmatig eten of overtraining kan dit ritme verschuiven. De ochtendpiek is dan lager dan zou moeten, waardoor opstarten zwaar voelt, terwijl cortisol ’s avonds juist te hoog blijft, waardoor je je opgejaagd voelt op een moment dat je lichaam eigenlijk tot rust zou moeten komen. Dit noem ik bewust geen “bijnieruitputting”, want je bijnieren zelf raken niet op. Het gaat om de aansturing en het ritme, en dat is precies waar bijstelling mogelijk is.',
       'Cafeïne, te weinig eten overdag en hard blijven doorgaan houden dit patroon vaak in stand. Je pakt koffie om op te starten, drukt je hongersignalen weg met nog een kop koffie en jaagt je systeem ’s avonds weer aan met een laptop, scherm of drukke gedachten. Zo blijft het ritme scheef staan in plaats van dat het zich herstelt.',
     ],
@@ -61,7 +61,7 @@ export const energieContent2: ComplaintContentMap = {
     together: [
       'Je energieverloop gedurende de dag, van opstaan tot bedtijd',
       'Je voedingspatroon, maaltijdtijden en cafeïnegebruik',
-      'Je slaap, inslaap- en doorslaapklachten en hoe uitgerust je wakker wordt',
+      'Je slaap, inslapen, doorslapen en hoe uitgerust je wakker wordt',
       'Je trainingsbelasting, herstel en beweegpatroon',
       'Je stressbeleving en de opbouw van je dag',
     ],
