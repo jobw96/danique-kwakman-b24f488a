@@ -357,7 +357,7 @@ export const energieContent1: ComplaintContentMap = {
   },
   'stress-en-herstel': {
     intro: [
-      'Je staat aan, de hele dag door. Zelfs op een zondagmiddag lukt het je nauwelijks om echt stil te zitten: er is altijd nog iets te doen, te plannen of te regelen. En als er dan eindelijk een rustige week aankomt, of vakantie, word je juist ziek. Alsof je lichaam pas dan de kans grijpt om in te storten.',
+      'Je staat aan, de hele dag door. Zelfs op een zondagmiddag lukt het je nauwelijks om echt stil te zitten. Er is altijd nog iets te doen, te plannen of te regelen. En als er dan eindelijk een rustige week aankomt, of vakantie, word je juist ziek. ',
       'Je herkent misschien dat je na een drukke werkweek dagenlang nodig hebt om weer een beetje bij te komen, terwijl vroeger een avondje op de bank al genoeg was. Dat gevoel van “opgejaagd zijn zonder duidelijke reden” is vermoeiend en het went niet, hoe lang het ook al duurt.',
       'Ik kijk met je naar het verschil tussen wat je van jezelf vraagt en wat je lichaam op dit moment aankan. Vanuit mijn achtergrond als voormalig verpleegkundige en orthomoleculair hormoon- en darmtherapeut zoek ik met je uit wat jouw herstel in de weg zit en wat daarin praktisch haalbaar is.',
     ],
@@ -372,9 +372,9 @@ export const energieContent1: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat gebeurt er als je stress zich opstapelt?',
     explanation: [
-      'Je lichaam is goed uitgerust om met korte periodes van stress om te gaan. Een spannende deadline of een drukke dag kost energie, maar met voldoende rust erna herstel je daar prima van. Het wordt anders wanneer de stressbelasting structureel groter is dan je herstelcapaciteit: als je lichaam nooit écht de kans krijgt om bij te komen, stapelt de belasting zich op.',
+      'Je lichaam is goed uitgerust om met korte periodes van stress om te gaan. Een spannende deadline of een drukke dag kost energie, maar met voldoende rust erna herstel je daar prima van. Het wordt anders wanneer de stressbelasting structureel groter is dan je herstelcapaciteit. Als je lichaam nooit écht de kans krijgt om bij te komen, stapelt de belasting zich op.',
       'Cortisol, je belangrijkste stresshormoon, hoort een duidelijk dagritme te hebben: hoog in de ochtend om je op gang te helpen, geleidelijk dalend richting de avond zodat je tot rust kunt komen. Bij langdurige overbelasting kan dit ritme verstoord raken, wat zich uit in moe-maar-opgejaagd voelen, slechter slapen en trager herstellen na een drukke periode. Ziek worden zodra de druk wegvalt, is daarbij een bekend patroon: zolang je “aan” staat, houdt je lichaam vol, maar zodra de spanning wegvalt, grijpt het de rust aan om alsnog te reageren.',
-      'Herstel is niet alleen een kwestie van meer vrije tijd inplannen. Ook je ademhaling, beweging en wat je eet spelen een rol. Te weinig eten, of onregelmatig eten tijdens drukke periodes, is zelf ook een stressfactor voor je lichaam, ook al lijkt het in eerste instantie een besparing van tijd.',
+      'Herstel is niet alleen een kwestie van meer vrije tijd inplannen. Ook je ademhaling, beweging en wat je eet spelen een rol. Te weinig eten, of onregelmatig eten tijdens drukke periodes, is zelf ook een stressfactor voor je lichaam.',
     ],
     factorsHeading: 'Wat kan meespelen bij stress en moeilijk herstellen?',
     factorsIntro:
@@ -386,7 +386,7 @@ export const energieContent1: ComplaintContentMap = {
       },
       {
         title: 'Cortisolritme',
-        text: 'Bij langdurige stress kan het dagritme van cortisol verschuiven: minder scherp hoog in de ochtend, minder laag in de avond. Dat verklaart waarom je je tegelijk moe én rusteloos kunt voelen.',
+        text: 'Bij langdurige stress kan het dagritme van cortisol verschuiven. Minder scherp hoog in de ochtend, minder laag in de avond. Dat verklaart waarom je je tegelijk moe én rusteloos kunt voelen.',
       },
       {
         title: 'Ademhaling',
@@ -394,11 +394,11 @@ export const energieContent1: ComplaintContentMap = {
       },
       {
         title: 'Beweging die past bij jouw belasting',
-        text: 'Intensief sporten bovenop een toch al hoge stressbelasting kan averechts werken, terwijl passende, rustigere beweging juist kan helpen om te herstellen. Het gaat om beweging die aansluit bij wat je lichaam op dat moment aankan.',
+        text: 'Intensief sporten bovenop een toch al hoge stressbelasting kan averechts werken, terwijl passende, rustigere beweging juist kan helpen om te herstellen. Het gaat om beweging die aansluit bij wat je lichaam op dat moment aankan en waar het behoefte aan heeft. ',
       },
       {
         title: 'Voeding als stressfactor',
-        text: 'Te weinig of onregelmatig eten tijdens drukke periodes is zelf een belasting voor je lichaam. Onvoldoende brandstof maakt het lastiger om te herstellen, ook al voelt overslaan van een maaltijd in het moment als tijdwinst.',
+        text: 'Te weinig of onregelmatig eten tijdens drukke periodes is zelf een belasting voor je lichaam. Onvoldoende brandstof maakt het lastiger om te herstellen.',
       },
     ],
     widerHeading: 'Verder kijken dan alleen “minder stress ervaren”',
