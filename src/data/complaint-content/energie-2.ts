@@ -135,22 +135,22 @@ export const energieContent2: ComplaintContentMap = {
   },
   'energiedips': {
     intro: [
-      'Rond een uur of elf voel je je hoofd al zwaar worden, alsof de ochtend nog maar net begonnen is. Na de lunch wordt het nog erger: je ogen vallen bijna dicht achter je scherm en je grijpt naar koffie of iets zoets om overeind te blijven. Even later ben je weer wakker, tot de volgende dip zich aandient.',
-      'Je wilt niet elke dag tegen die muur oplopen. Je wilt een dag waarin je energie gelijkmatiger verloopt, zodat je niet afhankelijk bent van suiker of cafeïne om door de middag heen te komen.',
-      'Energiedips hebben vaak een heel logische verklaring in hoe je dag is opgebouwd: wat, wanneer en hoe je eet, en wat daarna gebeurt. Met de CIRCLE-methode kijk ik naar jouw specifieke patroon, zodat we niet zomaar wat aanpassen, maar precies daar bijsturen waar het verschil maakt.',
+      'Rond een uur of elf voel je je hoofd al zwaar worden, alsof de ochtend nog maar net begonnen is. Na de lunch wordt het nog erger: je ogen vallen bijna dicht achter je laptop en je grijpt naar koffie of iets zoets om overeind te blijven. Even later ben je weer wakker tot de volgende dip eraan komt...',
+      'Je wilt een dag waarin je energie gelijkmatiger verloopt, zodat je niet afhankelijk bent van suiker of cafeïne om door de middag heen te komen.',
+      'Energiedips hebben vaak een heel logische verklaring in hoe je dag is opgebouwd: wat, wanneer en hoe je eet en wat daarna gebeurt. Met de CIRCLE-methode kijk ik naar jouw specifieke patroon, zodat we niet zomaar wat aanpassen, maar precies daar bijsturen.',
     ],
     recognition: [
-      'Rond 11 uur ’s ochtends zak je al in, ook al heb je ontbeten.',
-      'Na de lunch voel je je slaperig en moet je jezelf er echt doorheen slepen.',
+      'Rond 11.00 uur ’s ochtends zak je al in, ook al heb je ontbeten.',
+      'Rond 15.00 uur voel je je slaperig en moet je jezelf er echt doorheen slepen.',
       'Je merkt dat je naar suiker of koffie grijpt zodra je energie wegzakt.',
-      'Je energie schiet omhoog na het eten, om daarna weer hard te dalen.',
+      'Je energie schiet omhoog na het eten om daarna weer hard te dalen.',
       'Je plant bewust geen belangrijke taken rond die momenten, omdat je weet dat je dip er toch aankomt.',
       'Je voelt je overdag wisselvallig, terwijl je ’s avonds soms weer wat meer energie hebt.',
     ],
     explanationHeading: 'Wat gebeurt er bij een energiedip?',
     explanation: [
-      'Een energiedip ontstaat meestal doordat je bloedsuiker eerst snel stijgt en daarna weer snel daalt. Eet je bijvoorbeeld een ontbijt dat vooral uit snelle koolhydraten bestaat, zoals witte boterhammen met jam of een ontbijtkoek, dan stijgt je bloedsuiker snel. Je lichaam reageert daarop met insuline, en die kan de bloedsuiker vervolgens weer flink laten dalen. Het resultaat: binnen een uur of twee voel je je moe, minder scherp of hongerig.',
-      'Na de lunch is dit effect vaak nog sterker, simpelweg omdat je lichaam op dat moment van de dag al een aantal uur actief is geweest en de opbouw van je lunch nog meer invloed heeft op hoe je je de rest van de middag voelt. Een lunch die vooral uit koolhydraten bestaat, zonder genoeg eiwitten, vezels of vet, geeft een grotere kans op een duidelijke dip.',
+      'Een energiedip ontstaat meestal doordat je bloedsuiker eerst snel stijgt en daarna weer snel daalt. Eet je bijvoorbeeld een ontbijt dat vooral uit snelle koolhydraten bestaat, zoals witte boterhammen met jam, een ontbijtkoek of havermout. Dan stijgt je bloedsuiker snel. Je lichaam reageert daarop met insuline, en die kan de bloedsuiker vervolgens weer flink laten dalen. Het resultaat is dat je binnen een uur of twee je moe voelt, minder scherp bent of hongerig bent.',
+      'Na de lunch is dit effect vaak nog sterker, omdat je lichaam op dat moment van de dag al een aantal uur actief is geweest en de opbouw van je lunch nog meer invloed heeft op hoe je je de rest van de middag voelt. Een lunch die vooral uit koolhydraten bestaat, zonder genoeg eiwitten, vezels of vet, geeft een grotere kans op een duidelijke dip.',
       'Ook cafeïne op een lege maag, te weinig water drinken en te lang stilzitten spelen mee. Cafeïne kan je tijdelijk alerter maken, maar verergert de onderliggende bloedsuikerschommeling vaak juist, waardoor de dip die volgt groter kan zijn.',
     ],
     factorsHeading: 'Wat kan meespelen bij energiedips?',
@@ -159,7 +159,7 @@ export const energieContent2: ComplaintContentMap = {
     factors: [
       {
         title: 'Opbouw van je ontbijt en lunch',
-        text: 'Een maaltijd die vooral uit snelle koolhydraten bestaat, zoals wit brood, ontbijtgranen of een broodje met weinig beleg, geeft sneller een piek en daarna een dip. Voldoende eiwitten, vezels en gezonde vetten zorgen voor een geleidelijkere afgifte van energie.',
+        text: 'Een maaltijd die vooral uit snelle koolhydraten bestaat, zoals wit brood, ontbijtgranen, een broodje met weinig beleg of havermout geeft sneller een piek en daarna een dip. Voldoende eiwitten, vezels en gezonde vetten zorgen voor een geleidelijkere afgifte van energie.',
       },
       {
         title: 'Cafeïne op een lege maag',
@@ -175,7 +175,7 @@ export const energieContent2: ComplaintContentMap = {
       },
       {
         title: 'Onregelmatige maaltijdtijden',
-        text: 'Lunch overslaan of pas heel laat eten, en dan in één keer een grote maaltijd nemen, vergroot de kans op een scherpe bloedsuikerpiek en -dip erna.',
+        text: 'Lunch overslaan of pas heel laat eten en dan in één keer een veel koolhydraten en suikers naar binnen werken, omdat je zoveel trek hebt? Dat vergroot de kans op een scherpe bloedsuikerpiek en -dip erna.',
       },
     ],
     widerHeading: 'Verder kijken dan je middagdip',
