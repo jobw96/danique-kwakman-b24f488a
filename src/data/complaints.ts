@@ -718,9 +718,9 @@ export const complaints: Complaint[] = [
     traject: { href: '/darmtraject', label: 'Bekijk het 1:1 Darmtraject' },
   },
   {
-    slug: 'verstopping-of-diarree', category: 'Darmen en spijsvertering', title: 'Vaak verstopt zitten of juist diarree',
+    slug: 'verstopping-of-diarree', category: 'Darmen en spijsvertering', title: 'Vaak obstipatie of juist diarree',
     pageTitle: 'Verstopping of diarree', seoTitle: 'Verstopping of diarree begrijpen',
-    seoDescription: 'Vaak verstopt of juist diarree? Lees wat wisselende ontlasting kan vertellen over je spijsvertering en hoe ik je hierin begeleid.',
+    seoDescription: 'Vaak obstipatie of juist diarree? Lees wat wisselende ontlasting kan vertellen over je spijsvertering en hoe ik je hierin begeleid.',
     teaser: 'Ontlasting die te weinig, te vaak of steeds anders komt.',
     intro: ['Je ontlasting vertelt veel over hoe je spijsvertering werkt. Verstopping, diarree of een wisselend patroon zijn signalen om serieus te nemen.', 'In plaats van alleen het symptoom te onderdrukken, kijken we naar wat jouw darmen nodig hebben om weer rustiger te functioneren.'],
     signals: ['Minder dan drie keer per week ontlasting', 'Harde ontlasting of veel moeten persen', 'Dunne ontlasting of plotselinge aandrang', 'Een patroon dat wisselt tussen verstopping en diarree'],
