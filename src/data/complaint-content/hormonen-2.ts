@@ -635,7 +635,7 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'endometriose': {
     intro: [
-      'Menstruatiepijn die je dubbelvouwt, waarvoor je van school of werk thuisblijft en die niet reageert op de gewone pijnstillers. Pijn tijdens het vrijen. Pijn bij het naar het toilet gaan tijdens je menstruatie. En bij dat alles hoorde je misschien jarenlang: "Dat hoort erbij, je bent gewoon een pechvogel."',
+      'Menstruatiepijn die je dubbelvouwt, waarvoor je van school of werk thuisblijft en die niet reageert op de gewone pijnstillers. Pijn tijdens het vrijen, pijn bij het naar het toilet gaan tijdens je menstruatie. En bij dat alles hoorde je misschien jarenlang: "Dat hoort erbij, je bent gewoon een pechvogel."',
       'Endometriose en adenomyose zijn aandoeningen waarbij weefsel dat lijkt op baarmoederslijmvlies zich buiten (endometriose) of in de spierwand van (adenomyose) de baarmoeder bevindt. De gemiddelde diagnosetijd is in Nederland en daarbuiten helaas nog altijd lang, vaak jaren, waarin vrouwen van het kastje naar de muur worden gestuurd. Dat wil je niet nóg langer hoeven volhouden.',
       'Ik begeleid vrouwen met (vermoede) endometriose of adenomyose vanuit mijn achtergrond als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige, altijd als aanvulling op medische diagnose en behandeling. Met uitgebreide intakeformulieren en de CIRCLE-methode kijken we naar wat jouw lichaam nodig heeft om beter met de klachten om te gaan.',
     ],
