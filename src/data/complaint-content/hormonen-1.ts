@@ -4,7 +4,7 @@ export const hormonenContent1: ComplaintContentMap = {
   'menstruatieklachten': {
     intro: [
       'Je zet een reminder in je telefoon voor de dag dat je menstruatie verwacht wordt, omdat je weet dat je die dag misschien niet kunt werken. Hevige krampen, een kruik tegen je buik, pijnstillers voor je uit bed stapt. Voor veel vrouwen is dit al jaren de normaalste zaak van de wereld, terwijl het dat niet is.',
-      'Hevig bloedverlies waarbij je elk uur naar het toilet moet, maandverband over je onderbroek als extra zekerheid, een tampon en maandverband tegelijk omdat je durft niet te vertrouwen op één. Misselijkheid, soms overgeven, duizelig worden als je opstaat. Dagen uit de agenda strepen omdat je weet dat je niet inzetbaar bent.',
+      'Hevig bloedverlies waarbij je elk uur naar het toilet moet, een tampon en maandverband tegelijk omdat je durft niet te vertrouwen op één. Misselijkheid, soms overgeven, duizelig worden als je opstaat. Dagen uit de agenda strepen omdat je weet dat je niet inzetbaar bent.',
       'Je wilt gewoon door je dag heen kunnen zonder dat je menstruatie de planning bepaalt. Sporten, werken, afspreken met vriendinnen, een dagje weg plannen zonder eerst te checken waar je in je cyclus zit. Dat is waar we samen naartoe werken: minder pijn, minder bloedverlies, meer voorspelbaarheid.',
     ],
     recognition: [
