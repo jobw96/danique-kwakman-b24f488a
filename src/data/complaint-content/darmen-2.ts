@@ -140,7 +140,6 @@ export const darmenContent2: ComplaintContentMap = {
       'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
       'Ee wanneer de diarree optreedt en wat eraan voorafgaat',
       'We brengen factoren als darmflora, vetvertering, stress en voedselintoleranties samen in beeld',
-      '\n',
       'Waar relevant kan laboratoriumonderzoek extra informatie geven, bijvoorbeeld naar voedselreacties of je schildklier',
     ],
     faqHeading: 'Veelgestelde vragen over diarree',
@@ -233,8 +232,9 @@ export const darmenContent2: ComplaintContentMap = {
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, eetpatroon en vertering in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw verteringsklachten',
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over eetgewoontes, medicatie en klachten',
-      'In de persoonlijke intake bespreken jullie wanneer je klachten precies opspelen',
-      'Met de CIRCLE-methode brengt Danique factoren als eettempo, voedingsstoffen en maagzuurgraad samen in beeld',
+      'In de persoonlijke intake bespreken jullie wanneer je klachten precies opspelen: direct na het eten, bij het gaan liggen of juist na een snelle maaltijd',
+      'Met de CIRCLE-methode brengt Danique je eettempo, maaltijdopbouw, maagzuurgraad en spijsverteringsenzymen samen in beeld',
+      'We letten op langdurig gebruik van maagzuurremmers en op signalen die kunnen wijzen op een tekort aan B12 of ijzer',
       'Je krijgt praktische aanpassingen die passen bij jouw dagelijks leven.',
     ],
     faqHeading: 'Veelgestelde vragen over maagzuur en verteringsklachten',
@@ -332,6 +332,7 @@ export const darmenContent2: ComplaintContentMap = {
     together: [
       'Je houdt samen met Danique een eetdagboek bij om patronen tussen voeding en klachten zichtbaar te maken',
       'In de persoonlijke intake bespreken jullie welke producten al zijn weggelaten en wat dat opleverde',
+      'We letten op signalen die passen bij lactose- of fructosemalabsorptie en histamine-gevoeligheid',
       'Waar nodig zetten we intolerantie onderzoek in om te kijken welke intoleranties er aanwezig zijn',
       'Je krijgt een plan waarin je voeding niet onnodig beperkt wordt, maar gericht wordt aangepast op wat bij jou speelt',
     ],
