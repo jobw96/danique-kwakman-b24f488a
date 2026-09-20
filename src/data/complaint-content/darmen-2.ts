@@ -318,9 +318,9 @@ export const darmenContent2: ComplaintContentMap = {
     factorsIntro: 'Bij het uitzoeken van mogelijke voedselintoleranties kijkt Danique breder dan alleen het schrappen van producten:',
     factors: [
       { title: 'Lactose-intolerantie', text: 'Een tekort aan het enzym lactase zorgt ervoor dat melksuiker onvoldoende wordt afgebroken, met een opgeblazen gevoel en winderigheid als gevolg.' },
-      { title: 'Fructose-opname', text: 'Sommige mensen nemen fructose minder goed op, wat klachten kan geven na veel fruit of producten met toegevoegde fruitsuikers.' },
+      { title: 'Stress en darmgevoeligheid', text: 'Stress beïnvloedt je darmen direct, waardoor je sneller op voeding lijkt te reageren dan je in een rustige periode zou doen.' },
       { title: 'Histamine-gevoeligheid', text: 'Producten als oude kaas, wijn en gerookte vis bevatten van nature veel histamine, wat bij gevoeligheid klachten als hoofdpijn kan geven.' },
-      { title: 'Gluten en coeliakie', text: 'Coeliakie moet altijd eerst medisch worden uitgesloten voordat gluten om andere redenen worden weggelaten.' },
+      { title: 'Eetritme en eetpatroon', text: 'Onregelmatig eten, maaltijden overslaan of snel eten kan klachten na het eten vererren, los van wat je eet.' },
       { title: 'Eetpatroon en spijsvertering', text: 'Een minder goed werkende spijsvertering kan ervoor zorgen dat je sneller op meerdere producten tegelijk lijkt te reageren.' },
     ],
     widerHeading: 'Wat klachten na het eten nog meer kunnen vertellen',
