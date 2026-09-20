@@ -193,12 +193,12 @@ export const darmenContent2: ComplaintContentMap = {
 
   'maagzuur-en-verteringsklachten': {
     intro: [
-      'Je neemt een hap van je lunch en binnen een half uur voel je een branderig gevoel opkomen in je borst. Of je zit na het avondeten met een bol gevoel op de bank, alsof de maaltijd nog uren blijft \'hangen\'.\u00a0',
+      'Je neemt een hap van je lunch en binnen een half uur voel je een branderig gevoel opkomen in je borst. Of je zit na het avondeten met een bol gevoel op de bank, alsof de maaltijd nog uren blijft liggen.',
       'Misschien slik je al een tijdje maagzuurremmers en heb je het gevoel dat je er niet meer vanaf komt. Of je merkt dat je al na een paar happen vol zit, terwijl je bord nog half vol ligt. Sommige vrouwen herkennen zich in misselijkheid na het eten, anderen in oprispingen die vooral ’s avonds laat opspelen na een snelle maaltijd achter je laptop.',
       'Je wilt gewoon weer zonder nadenken kunnen eten, zonder rekening te houden met wat je wel en niet verdraagt. Daar is met een gericht onderzoek naar de oorzaak van jouw klachten aan te werken.\u00a0',
     ],
     recognition: [
-      'Je hebt regelmatig een branderig gevoel achter je borstbeen, vooral na het eten of als je gaat liggen.',
+      'Je hebt regelmatig een branderig gevoel, vooral na het eten of als je gaat liggen.',
       'Oprispingen van zuur of eten komen bij je terug, soms uren na de maaltijd.',
       'Je zit al na een klein bord vol en voelt je daarna nog lang zwaar.',
       'Misselijkheid overvalt je regelmatig na het eten, zonder duidelijke reden.',
@@ -208,9 +208,9 @@ export const darmenContent2: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat er achter maagzuur- en verteringsklachten kan zitten',
     explanation: [
-      'Maagzuur krijgt vaak de schuld van branderige klachten, maar te weinig maagzuur kan precies dezelfde klachten geven als te veel. Voedsel wordt dan onvoldoende afgebroken, blijft langer liggen en de druk in de maag neemt toe, waardoor zuur makkelijker omhoog komt. Eettempo speelt hierin een grote rol: wie snel eet, kauwt onvoldoende en kauwen is de eerste stap van vertering die je maag daarna een hoop werk bespaart.',
-      'Langdurig gebruik van maagzuurremmers kan invloed hebben op de opname van vitamine B12 en ijzer, omdat maagzuur nodig is om deze stoffen goed uit voeding vrij te maken. Ook de vertering van eiwitten verloopt minder soepel bij een lagere maagzuurgraad, wat kan bijdragen aan een vol of zwaar gevoel. Dit betekent niet dat je zomaar met je medicatie moet stoppen – dat overleg je altijd met je (huis)arts – maar het is wel iets om samen met Danique in kaart te brengen als je al lange tijd klachten houdt.',
-      'Andere factoren die meespelen zijn laat op de avond eten, waardoor je lichaam onvoldoende tijd heeft om te verteren voor je gaat liggen, een hiatus hernia waarbij een deel van de maag door het middenrif omhoog verschuift en een infectie met Helicobacter pylori, een bacterie die de maagwand kan prikkelen. Deze laatste twee worden medisch vastgesteld en vallen buiten het werkterrein van Danique, maar ze helpt je wel te herkennen wanneer doorverwijzing zinvol is.',
+      'Maagzuur krijgt vaak de schuld van branderige klachten, maar te weinig maagzuur kan precies dezelfde klachten geven als te veel. Voedsel wordt dan onvoldoende afgebroken, blijft langer liggen en de druk in de maag neemt toe, waardoor zuur makkelijker omhoog komt. De snelheid waarmee je eet speelt hierbij ook een grote rol. Kauwen is de eerste stap van een goede vertering.',
+      'Langdurig gebruik van maagzuurremmers kan invloed hebben op de opname van vitamine B12 en ijzer, omdat maagzuur nodig is om deze stoffen goed uit voeding vrij te maken. Ook de vertering van eiwitten verloopt minder soepel bij een lagere maagzuurgraad, wat kan bijdragen aan een vol of zwaar gevoel. Dit betekent niet dat je zomaar met je medicatie moet stoppen. Dat overleg je altijd met je (huis)arts.',
+      'Andere factoren die meespelen zijn laat op de avond eten, waardoor je lichaam onvoldoende tijd heeft om te verteren voor je gaat liggen en een infectie met Helicobacter pylori, een bacterie die de maagwand kan prikkelen.\u00a0',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw verteringsklachten',
     factorsIntro: 'Bij het uitzoeken van maag- en verteringsklachten brengt Danique onder andere deze factoren in kaart:',
@@ -219,7 +219,7 @@ export const darmenContent2: ComplaintContentMap = {
       { title: 'Maagzuurgraad', text: 'Zowel te veel als te weinig maagzuur kan zorgen voor oprispingen, een vol gevoel of misselijkheid na het eten.' },
       { title: 'Langdurig medicatiegebruik', text: 'Jarenlang gebruik van maagzuurremmers kan invloed hebben op de opname van B12, ijzer en de vertering van eiwitten.' },
       { title: 'Eetmomenten', text: 'Laat op de avond eten geeft je spijsvertering minder tijd om zijn werk te doen voor je gaat liggen.' },
-      { title: 'Onderliggende oorzaken', text: 'Een hiatus hernia of een infectie met Helicobacter pylori kunnen bijdragen aan klachten en vragen om medische diagnostiek.' },
+      { title: 'Onderliggende oorzaken', text: 'Een infectie met Helicobacter pylori kan bijdragen aan klachten.' },
     ],
     widerHeading: 'Wat verteringsklachten nog meer kunnen betekenen',
     widerIntro: 'Maagklachten staan vaak niet op zichzelf. Andere signalen die geregeld samen opduiken:',
@@ -236,8 +236,8 @@ export const darmenContent2: ComplaintContentMap = {
       'Je vult vooraf uitgebreide intakeformulieren in over eetgewoontes, medicatie en klachten',
       'In de persoonlijke intake bespreken jullie wanneer je klachten precies opspelen',
       'Met de CIRCLE-methode brengt Danique factoren als eettempo, voedingsstoffen en maagzuurgraad samen in beeld',
-      'Je krijgt praktische aanpassingen die passen bij jouw dagelijks leven, geen standaard dieet',
-      'Gebruik je medicatie, dan overlegt Danique waar nodig hoe je dit samen met je (huis)arts kunt bespreken',
+      'Je krijgt praktische aanpassingen die passen bij jouw dagelijks leven.',
+      '',
     ],
     faqHeading: 'Veelgestelde vragen over maagzuur en verteringsklachten',
     faqs: [
