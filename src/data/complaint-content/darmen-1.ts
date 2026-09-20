@@ -58,8 +58,7 @@ export const darmenContent1: ComplaintContentMap = {
       'Stressniveau en hoe rustig of gehaast je eet',
       'Eerdere onderzoeken zoals een gastroscopie, ontlastingsonderzoek of ademtest voor SIBO',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je voeding, spijsvertering, cyclus en leefstijl. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel: geen standaard eliminatiedieet, maar de CIRCLE-methode die kijkt naar wat er bij jou precies samenkomt.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, spijsvertering en darmen in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw opgeblazen buik',
     together: [
       'Je klachtenpatroon: wanneer je buik opzet, hoe erg en hoe lang dit duurt',
       'Je voedingspatroon, eetsnelheid en maaltijdopbouw',
@@ -185,8 +184,7 @@ export const darmenContent1: ComplaintContentMap = {
       'Slaapkwaliteit en stressniveau',
       'Eerder onderzoek zoals bloedonderzoek, ontlastingsonderzoek of een gastroscopie',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je voeding, klachten en leefstijl. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel met de CIRCLE-methode, zodat we niet zomaar een standaard protocol volgen, maar kijken naar wat bij jou specifiek meespeelt.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en klachtenpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw darmklachten',
     together: [
       'Je klachtenpatroon: wanneer, hoe vaak en in welke situaties je klachten optreden',
       'Je voedingspatroon, vezelinname en mogelijke voedselgevoeligheden',
@@ -312,8 +310,7 @@ export const darmenContent1: ComplaintContentMap = {
       'Eerder onderzoek zoals een gastroscopie, coloscopie of ontlastingsonderzoek',
       'Andere klachten zoals vermoeidheid, hoofdpijn of huidproblemen',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je klachten, voeding en leefstijl. Tijdens de persoonlijke intake leggen we jouw gezondheidspuzzel via de CIRCLE-methode, zodat we uitzoeken welke triggers en factoren bij jouw PDS een rol spelen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en klachtenpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw PDS, zodat we uitzoeken welke triggers bij jou een rol spelen',
     together: [
       'Je klachtenpatroon: wanneer, hoe vaak en in welke situaties klachten optreden',
       'Je voedingspatroon en mogelijke fodmap- of andere trigger-gevoeligheden',
@@ -439,8 +436,7 @@ export const darmenContent1: ComplaintContentMap = {
       'Je cyclus en of klachten hormonaal beïnvloed worden',
       'Eerder onderzoek zoals een ademtest voor SIBO of lactose-intolerantie',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je voeding, klachten en leefstijl. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel via de CIRCLE-methode, zodat we uitzoeken wat bij jou de winderigheid precies veroorzaakt.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en eetpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw winderigheid',
     together: [
       'Je klachtenpatroon: wanneer, hoe vaak en na welke voeding je meer last hebt',
       'Je voedingspatroon, vezelinname en mogelijke lactose- of fructosegevoeligheid',

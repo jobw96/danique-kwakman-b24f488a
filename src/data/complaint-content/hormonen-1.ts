@@ -42,7 +42,7 @@ export const hormonenContent1: ComplaintContentMap = {
       'Hoe je slaap is in de dagen voor je menstruatie.',
       'Of er in de familie vaker sprake is van hevige menstruaties of endometriose.',
     ],
-    togetherIntro: 'Via de uitgebreide intakeformulieren en een persoonlijk intakegesprek breng ik jouw cyclus, klachten en leefstijl in kaart. Met de CIRCLE-methode leg ik samen met jou de puzzel achter jouw menstruatieklachten, zonder standaard protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, menstruatie en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw menstruatieklachten, zodat we naar de oorzaak kijken in plaats van alleen de klachten te verzachten',
     together: [
       'Je cyclus in kaart brengen: lengte, regelmaat, hevigheid en pijnpatroon.',
       'Je voedingspatroon en de invloed daarvan op ontsteking en bloedsuiker.',
@@ -147,7 +147,7 @@ export const hormonenContent1: ComplaintContentMap = {
       'Of er lichamelijke klachten zijn zoals gevoelige borsten of hoofdpijn rond je menstruatie.',
       'Of de klachten dusdanig heftig zijn dat medische beoordeling wenselijk is.',
     ],
-    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijk gesprek breng ik in kaart hoe jouw stemming samenhangt met je cyclus, voeding en leefstijl. Met de CIRCLE-methode leggen we samen de puzzel, want stemmingswisselingen hebben bij iedere vrouw een andere achtergrond.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, voeding en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw stemmingswisselingen, want die hebben bij iedere vrouw een andere achtergrond',
     together: [
       'Je cyclus en stemmingspatroon naast elkaar leggen.',
       'Je bloedsuikerhuishouding en eetpatroon in kaart brengen.',
@@ -250,7 +250,7 @@ export const hormonenContent1: ComplaintContentMap = {
       'Of je weleens cysten hebt gehad op borsten of eierstokken.',
       'Of je gebruik maakt of hebt gemaakt van hormonale anticonceptie.',
     ],
-    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijk intake breng ik in kaart hoe jouw lever, darmen en cyclus samenhangen met je klachten. Met de CIRCLE-methode leggen we samen de puzzel achter jouw oestrogeen-progesteronbalans.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, lever, darmen en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw oestrogeen-progesteronbalans',
     together: [
       'Je cyclus en de timing van je klachten in kaart brengen.',
       'Je voedingspatroon en vezelinname bespreken.',
@@ -456,7 +456,7 @@ export const hormonenContent1: ComplaintContentMap = {
       'Of je voedingspatroon voldoende jodium, selenium en zink bevat.',
       'Of er sprake is van andere hormonale klachten die tegelijk spelen.',
     ],
-    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijk gesprek breng ik in kaart wat er speelt rondom je schildklier, voeding en leefstijl. Met de CIRCLE-methode leg ik samen met jou de puzzel, altijd in aanvulling op de diagnose en behandeling die bij je huisarts of internist thuishoren.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw energie, cyclus, voeding en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel rond jouw schildklier, altijd in aanvulling op de zorg die bij je huisarts of internist thuishoort',
     together: [
       'Je klachten en de timing daarvan in kaart brengen.',
       'Kijken welk laboratoriumonderzoek al gedaan is en wat eventueel aanvullend zinvol is.',

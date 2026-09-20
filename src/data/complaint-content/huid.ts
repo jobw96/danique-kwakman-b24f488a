@@ -41,7 +41,7 @@ export const huidContent: ComplaintContentMap = {
       'Je hebt een sterke behoefte aan suiker of merkt energiedips na de lunch',
       'Je stemming schommelt sterk gedurende de maand',
     ],
-    togetherIntro: 'Danique begint altijd met uitgebreide intakeformulieren, gevolgd door een persoonlijke intake waarin ze doorvraagt op jouw specifieke situatie. Met de CIRCLE-methode legt ze stap voor stap de puzzel van jouw klachten, in plaats van een standaard protocol toe te passen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, hormonen en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw huid- en haarklachten',
     together: [
       'Ze brengt in kaart wat je eet, hoe je slaapt en hoe je cyclus verloopt',
       'Ze kijkt naar signalen van je hormonen, darmen en voedingsstoffen samen',
@@ -142,7 +142,7 @@ export const huidContent: ComplaintContentMap = {
       'Je hebt haaruitval of dunner wordend hoofdhaar',
       'Je vermoedt PCOS of hebt dit ooit horen noemen',
     ],
-    togetherIntro: 'In de intake gaat Danique met je in gesprek over je cyclus, je voeding en de periode waarin je acne opvlamt, aangevuld met uitgebreide intakeformulieren. Met de CIRCLE-methode zet ze deze informatie om in een plan dat past bij jouw hormoonhuishouding, zonder standaard protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, voeding en huid in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw acne',
     together: [
       'Ze brengt je cyclus en het patroon van je acne in kaart',
       'Ze bekijkt je bloedsuikerregulatie en eetpatroon',
@@ -243,7 +243,7 @@ export const huidContent: ComplaintContentMap = {
       'Je merkt vermoeidheid die niet overgaat met slapen',
       'Je zit in de overgang of perimenopauze',
     ],
-    togetherIntro: 'Danique start met uitgebreide intakeformulieren en een persoonlijke intake waarin ze doorvraagt op je voeding, spijsvertering en hormonen. Via de CIRCLE-methode zoekt ze uit waar jouw huidbarrière precies tekortkomt, in plaats van standaard vette crèmes te adviseren.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, spijsvertering en hormonen in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw droge en gevoelige huid',
     together: [
       'Ze brengt je vetinname en opname van voedingsstoffen in kaart',
       'Ze bekijkt signalen van maagzuur en spijsvertering',
@@ -337,7 +337,7 @@ export const huidContent: ComplaintContentMap = {
       'Je slaapt slecht door de jeuk, wat je overdag extra vermoeid maakt',
       'Je merkt duidelijk meer opvlammingen in drukke, stressvolle periodes',
     ],
-    togetherIntro: 'Danique werkt met uitgebreide intakeformulieren en een persoonlijke intake, waarin ze specifiek doorvraagt op jouw triggers, voeding en stressniveau. Via de CIRCLE-methode zoekt ze uit welke combinatie bij jou een opvlamming veroorzaakt, in plaats van één standaardadvies te geven.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en huid in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw eczeem',
     together: [
       'Ze brengt jouw persoonlijke triggerpatroon in kaart',
       'Ze kijkt naar signalen van je darmgezondheid en histamine-afbraak',
@@ -438,7 +438,7 @@ export const huidContent: ComplaintContentMap = {
       'Je hebt vaker hoofdpijn of migraine samen met opvlammingen',
       'Alcohol en pittig eten geven je ook merkbare buikreacties',
     ],
-    togetherIntro: 'Danique start met uitgebreide intakeformulieren en een persoonlijke intake waarin ze specifiek ingaat op jouw triggers, spijsvertering en hormonen. Met de CIRCLE-methode zoekt ze uit welke combinatie bij jouw rosacea past, in plaats van standaard alle bekende triggers te schrappen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en huid in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw rosacea',
     together: [
       'Ze brengt jouw persoonlijke triggers en het patroon van opvlammingen in kaart',
       'Ze kijkt naar signalen van SIBO en spijsvertering in het gesprek',
@@ -539,7 +539,7 @@ export const huidContent: ComplaintContentMap = {
       'Je cyclus is onregelmatig of je hebt last van overmatige haargroei elders',
       'Je merkt concentratieproblemen of stemmingswisselingen',
     ],
-    togetherIntro: 'Danique start met uitgebreide intakeformulieren en een persoonlijke intake, waarin ze precies uitvraagt wanneer je haaruitval begon en wat daaraan voorafging. Met de CIRCLE-methode zoekt ze uit welke combinatie van tekorten of hormonen bij jou meespeelt, in plaats van standaard een haarvitamine te adviseren.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, hormonen en ijzerstatus in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw haaruitval',
     together: [
       'Ze brengt de tijdlijn van je haaruitval en mogelijke aanleiding in kaart',
       'Ze kijkt naar signalen van ferritine, zink, B12 en vitamine D',
@@ -640,7 +640,7 @@ export const huidContent: ComplaintContentMap = {
       'Je merkt dat je huid rustiger is in vakanties of rustige weken',
       'Je twijfelt of je hormonen hierin een rol spelen',
     ],
-    togetherIntro: 'Danique start met uitgebreide intakeformulieren en een persoonlijke intake waarin ze precies in kaart brengt wanneer jouw huid opvlamt en wat daaraan voorafgaat. Met de CIRCLE-methode legt ze het patroon tussen jouw cyclus, stress en voeding bloot, in plaats van een standaard huidverzorgingsadvies te geven.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, stress en voeding in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw onrustige huid',
     together: [
       'Ze brengt jouw opvlampatroon in relatie tot je cyclus in kaart',
       'Ze kijkt naar je stressniveau en slaappatroon in drukke periodes',

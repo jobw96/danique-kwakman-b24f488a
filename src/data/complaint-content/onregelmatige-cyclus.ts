@@ -58,8 +58,7 @@ export const onregelmatigeCyclusContent: ComplaintContentMap = {
       'Slaap, stressbelasting en ruimte voor herstel',
       'Je eetpatroon, beweging en of je voldoende energie binnenkrijgt',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in. Tijdens de intake leggen we jouw gezondheidspuzzel: niet met een standaard lijstje, maar vanuit jouw cyclus, dagelijks leven en hulpvraag. Met mijn CIRCLE-methode brengen we verbanden in kaart en bepalen we waar je praktisch kunt beginnen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, ovulatie en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw onregelmatige cyclus',
     together: [
       'Je cyclusverloop, menstruaties, mogelijke ovulaties en klachten door de maand heen',
       'Je voeding, energie-inname, bloedsuiker, beweging en herstel',
