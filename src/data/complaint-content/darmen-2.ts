@@ -195,7 +195,7 @@ export const darmenContent2: ComplaintContentMap = {
     intro: [
       'Je neemt een hap van je lunch en binnen een half uur voel je een branderig gevoel opkomen in je borst. Of je zit na het avondeten met een bol gevoel op de bank, alsof de maaltijd nog uren blijft \'hangen\'.\u00a0',
       'Misschien slik je al een tijdje maagzuurremmers en heb je het gevoel dat je er niet meer vanaf komt. Of je merkt dat je al na een paar happen vol zit, terwijl je bord nog half vol ligt. Sommige vrouwen herkennen zich in misselijkheid na het eten, anderen in oprispingen die vooral ’s avonds laat opspelen na een snelle maaltijd achter je laptop.',
-      'Je wilt gewoon weer zonder nadenken kunnen eten, zonder rekening te houden met wat je wel en niet verdraagt. Daar is met een gerichte uitzoek naar de oorzaak van jouw klachten aan te werken.\u00a0',
+      'Je wilt gewoon weer zonder nadenken kunnen eten, zonder rekening te houden met wat je wel en niet verdraagt. Daar is met een gericht onderzoek naar de oorzaak van jouw klachten aan te werken.\u00a0',
     ],
     recognition: [
       'Je hebt regelmatig een branderig gevoel achter je borstbeen, vooral na het eten of als je gaat liggen.',
