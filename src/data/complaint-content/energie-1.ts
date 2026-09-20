@@ -491,7 +491,7 @@ export const energieContent1: ComplaintContentMap = {
     explanationHeading: 'Wat is insulineresistentie precies?',
     explanation: [
       'Insuline is het hormoon dat suiker uit je bloed je cellen in helpt, zodat het als energie gebruikt kan worden. Bij insulineresistentie reageren je cellen minder goed op insuline, waardoor je lichaam meer insuline moet aanmaken om hetzelfde effect te bereiken. Dit proces kan lange tijd onopgemerkt blijven, terwijl het al wel gevolgen heeft voor je energie, gewicht en hormonen.',
-      'Veel voorkomende signalen zijn moeilijker afvallen, extra buikvet, energiedips na de maaltijd en sterke cravings. Bij vrouwen met PCOS speelt insulineresistentie vaak een rol: verhoogde insulinespiegels kunnen de aanmaak van androgenen (mannelijke hormonen) stimuleren, wat weer samenhangt met een onregelmatige cyclus, acne of overbeharing.',
+      'Veel voorkomende signalen zijn moeilijker afvallen, extra buikvet, energiedips na de maaltijd en sterke cravings. Bij vrouwen met PCOS speelt insulineresistentie vaak een rol. Verhoogde insulinespiegels kunnen de aanmaak van androgenen (mannelijke hormonen) stimuleren, wat weer samenhangt met een onregelmatige cyclus, acne of overbeharing.',
       'Om insulineresistentie te verbeteren kunnen we onder andere aan de slag door middel van het 1:1 bloedsuiker traject. Daarbij kijk ik naar leefstijlfactoren die insulinegevoeligheid beïnvloeden, zoals beweging, voeding en slaap. Lees meer over het 1:1 bloedsuikertraject.',
     ],
     factorsHeading: 'Wat kan meespelen bij insulineresistentie?',
