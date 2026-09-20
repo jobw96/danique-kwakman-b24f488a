@@ -76,8 +76,9 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Kan voeding mijn menstruatiepijn verminderen?',
         answer: [
-          'Ja, voeding beïnvloedt de mate van ontsteking in je lichaam en daarmee de productie van prostaglandines, de stofjes die je baarmoedercontracties aansturen.',
-          'Tijdens een traject stel ik samen met jou een voedingspatroon op dat past bij jouw cyclus en klachten, geen standaard dieet.',
+          'Ja, voeding kan invloed hebben op de mate van ontsteking in je lichaam en daarmee op prostaglandines, de stofjes die betrokken zijn bij de samentrekkingen van je baarmoeder.',
+          'In een traject kijken we daarom juist naar wat je kunt toevoegen aan je voeding. Denk aan voldoende energie, eiwitten, gezonde vetten, vitamines en mineralen die je lichaam nodig heeft voor de hormoonaanmaak. We kunnen voeding ook gericht inzetten om de progesteronproductie te ondersteunen en de aanmaak en werking van andere hormonen te ondersteunen.',
+          'Ik maak dit passend bij jouw cyclus, klachten en dagelijkse leven, in plaats van je een standaard voedingslijst mee te geven.',
         ],
       },
       {
