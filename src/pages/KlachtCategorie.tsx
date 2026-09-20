@@ -40,7 +40,9 @@ const KlachtCategorie = () => {
               {category.name}
             </h1>
             <p className="max-w-3xl leading-relaxed text-muted-foreground">
-              {category.description} Klik op een klacht om te lezen hoe je deze kunt herkennen, wat er mogelijk achter kan zitten en hoe ik je hierin begeleid.
+              {category.description}{' '}
+              {categoryIntros[category.slug] ??
+                'Hieronder vind je de klachten waarmee ik vrouwen begeleid.'}
             </p>
           </FadeIn>
         </div>
