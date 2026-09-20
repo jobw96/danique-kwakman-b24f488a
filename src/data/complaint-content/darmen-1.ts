@@ -245,7 +245,6 @@ export const darmenContent1: ComplaintContentMap = {
     intro: [
       'Je hebt al onderzoek laten doen, misschien wel een gastroscopie of coloscopie en de uitslag was steeds “niets bijzonders gevonden”. Toch heb je bijna dagelijks buikpijn, krampen en een onvoorspelbare ontlasting die van diarree naar verstopping kan wisselen, soms binnen dezelfde week. De diagnose PDS is gesteld, maar daarmee is de klacht niet weg.',
       'Je bent bang geworden voor bepaalde etentjes, een lange dag op kantoor zonder makkelijk toilet in de buurt of een weekendje weg waarbij je niet weet hoe je darmen zich gaan gedragen. Je wilt niet je hele leven om je darmen heen blijven plannen, maar begrijpen wat jouw PDS precies triggert en wat je daaraan kunt doen.',
-      '',
     ],
     recognition: [
       'Je hebt de diagnose PDS gekregen, nadat andere oorzaken door de huisarts of specialist zijn uitgesloten.',
@@ -259,7 +258,6 @@ export const darmenContent1: ComplaintContentMap = {
     explanationHeading: 'Wat is PDS precies?',
     explanation: [
       'PDS, het prikkelbare darm syndroom, is een diagnose van uitsluiting. Dat betekent dat andere aandoeningen, zoals coeliakie, IBD of infecties, eerst zijn uitgesloten door de huisarts of maag-darm-leverarts, voordat de diagnose PDS wordt gesteld. Er is dan geen zichtbare afwijking te vinden in je darmen, terwijl de klachten wel degelijk reëel en vaak flink belastend zijn.',
-      '',
       'Bij PDS spelen vaak meerdere triggers tegelijk een rol. Bepaalde voedingsmiddelen, stress en angst voor klachten zelf, verstoringen in het darmmicrobioom en een verhoogde gevoeligheid van je darmzenuwstelsel. Die laatste factor betekent dat je darmen sneller reageren op prikkels die bij iemand anders geen enkele klacht geven. Dat maakt PDS geen “verzonnen” of “alleen psychisch” probleem, maar een samenhang tussen lichaam en zenuwstelsel.',
     ],
     factorsHeading: 'Wat kan jouw PDS-klachten triggeren of in stand houden?',
