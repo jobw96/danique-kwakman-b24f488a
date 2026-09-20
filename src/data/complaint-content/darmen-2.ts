@@ -138,9 +138,9 @@ export const darmenContent2: ComplaintContentMap = {
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eet-, leef- en toiletpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw diarree.',
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
-      'Tijdens de persoonlijke intake bespreken we wanneer de diarree optreedt en wat eraan voorafgaat',
-      'Met de CIRCLE-methode brengen we factoren als darmflora, vetvertering, stress en voedselintoleranties samen in beeld',
-      'Je krijgt een plan op maat, geen standaard advies om maar wat weg te laten',
+      'Ee wanneer de diarree optreedt en wat eraan voorafgaat',
+      'We brengen factoren als darmflora, vetvertering, stress en voedselintoleranties samen in beeld',
+      '\n',
       'Waar relevant kan laboratoriumonderzoek extra informatie geven, bijvoorbeeld naar voedselreacties of je schildklier',
     ],
     faqHeading: 'Veelgestelde vragen over diarree',
