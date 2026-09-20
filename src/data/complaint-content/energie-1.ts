@@ -4,12 +4,12 @@ export const energieContent1: ComplaintContentMap = {
   'vermoeidheid': {
     intro: [
       'Je wekker gaat, je hebt zeven of acht uur geslapen en toch voel je je alsof je een nacht hebt doorgehaald. De koffie helpt even, maar tegen elf uur zak je alweer in. Je haalt de dag door op automatische piloot en telt de uren tot je op de bank kunt ploffen.',
-      'Vermoeidheid bij vrouwen wordt vaak weggewuifd als “druk leven” of “gewoon ouder worden”, maar jij voelt dat het anders is. Je zegt sportafspraken af, hebt geen puf meer voor vrienden op een doordeweekse avond en vraagt je stiekem af of dit voortaan je nieuwe normaal is.',
-      'Ik ken dat gevoel van binnenuit. Als voormalig verpleegkundige heb ik jarenlang op onregelmatige diensten gedraaid en zelf ervaren hoe vermoeidheid je leven kan overnemen. Als orthomoleculair hormoon- en darmtherapeut zoek ik met je uit wat er bij jou aan de hand is, zonder meteen te concluderen dat het “gewoon stress” is.',
+      'Vermoeidheid bij vrouwen wordt vaak weggewuifd als “druk leven” of “het hoort erbij”, maar jij voelt dat het anders is. Je zegt sportafspraken af, hebt geen puf meer voor vrienden op een doordeweekse avond en vraagt je stiekem af of dit voortaan je nieuwe normaal is.',
+      'Ik ken dat gevoel van binnenuit. Als voormalig verpleegkundige heb ik jarenlang op onregelmatige diensten gedraaid en zelf ervaren hoe vermoeidheid je leven kan overnemen. Maar de oorzaak van mijn vermoeidheid lag niet alleen bij die onregelmatige diensten. Ook een hormonale disbalans en darmklachten waren hierbij flinke boosdoeners. Als orthomoleculair hormoon- en darmtherapeut zoek ik met je uit wat er bij jou aan de hand is, zonder meteen te concluderen dat het “gewoon stress” is.',
     ],
     recognition: [
       'Je wordt moe wakker, ook na een nacht van acht uur slaap.',
-      'Je hebt overdag meerdere energiedips, vaak rond het middaguur of in de vroege avond.',
+      'Je hebt overdag meerdere energiedips, vaak rond het middag uur of in de vroege avond.',
       'Sport of een avondje weg met vriendinnen kost je meer moeite dan dat het je oplevert.',
       'Je leunt zwaar op koffie of suiker om de dag door te komen.',
       'Je concentratie is minder scherp en je vergeet dingen sneller dan normaal.',
@@ -19,8 +19,8 @@ export const energieContent1: ComplaintContentMap = {
     explanationHeading: 'Wat zit er achter aanhoudende vermoeidheid?',
     explanation: [
       'Vermoeidheid is een signaal, geen op zichzelf staande klacht. Je lichaam laat je weten dat er ergens te veel wordt gevraagd of te weinig wordt aangevuld. Dat kan te maken hebben met je bloed, je hormonen, je bloedsuiker, je slaap of een combinatie daarvan. Daarom is “gewoon meer rusten” lang niet altijd de oplossing.',
-      'Bekende oorzaken zijn een laag ijzergehalte of ferritine, een tekort aan vitamine B12 of vitamine D en een schildklier die trager werkt dan zou moeten. Ook grote bloedsuikerschommelingen kosten je lichaam veel energie: na een koolhydraatrijke lunch een piek, daarna een dip. Slaapkwaliteit en langdurige stress spelen eveneens mee, ook als je op papier genoeg uren slaapt.',
-      'Bij aanhoudende, onverklaarde vermoeidheid is bloedonderzoek via de huisarts een logische eerste stap, bijvoorbeeld om ijzer, ferritine, B12, vitamine D en schildklierwaarden te laten controleren. Vaak vullen we dat aan met gerichter laboratoriumonderzoek, zodat we niet alleen weten dát je moe bent, maar ook waarom.',
+      'Bekende oorzaken zijn een laag ijzergehalte of ferritine, een tekort aan vitamine B12 of vitamine D en een schildklier die trager werkt dan zou moeten. Ook grote bloedsuikerschommelingen kosten je lichaam veel energie. Na een koolhydraatrijke lunch een piek, daarna een dip. Slaapkwaliteit en langdurige stress spelen eveneens mee, ook als je genoeg uren slaapt.',
+      'Bij aanhoudende, onverklaarde vermoeidheid is bloedonderzoek verstandig om in te zetten om ijzer, ferritine, B12, vitamine D en schildklierwaarden te laten controleren. Vaak vullen we dat aan met gerichter laboratoriumonderzoek, zodat we niet alleen weten dát je moe bent, maar ook waarom.',
     ],
     factorsHeading: 'Wat kan meespelen bij vermoeidheid en energiedips?',
     factorsIntro:
