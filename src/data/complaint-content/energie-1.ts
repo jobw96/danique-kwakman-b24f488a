@@ -134,7 +134,7 @@ export const energieContent1: ComplaintContentMap = {
       'Na een nacht slecht slapen heb je de volgende dag meer trek in zoet en vet eten.',
       'Je weet niet hoe je je cravings onder controle krijgt. ',
     ],
-    explanationHeading: 'Wat gebeurt er bij cravings en bloedsuikerschommelingen?',
+    explanationHeading: 'Wat gebeurt er bij cravings?',
     explanation: [
       'Elke keer dat je eet, stijgt je bloedsuiker. Bij een maaltijd met vooral snelle koolhydraten, zoals havermout, brood, pasta of iets zoets stijgt je bloedsuiker snel en hoog. Je lichaam maakt vervolgens veel insuline aan om dat weer te verlagen, waardoor je bloedsuiker net zo snel weer omlaag schiet. Die dip voelt als trek, vermoeidheid of onrust en je lichaam grijpt daarbij het liefst naar iets wat snel weer energie geeft, namelijk suiker.',
       'Voldoende eiwit, vezels en gezonde vetten bij een maaltijd vertragen die opname van suikers, waardoor je bloedsuiker stabieler blijft en je langer verzadigd bent. Heb je je maaltijd niet met deze combi samengesteld, dan is de kans op cravings een paar uur later een stuk groter, ook als je “gezond” dacht te eten.',
@@ -184,7 +184,7 @@ export const energieContent1: ComplaintContentMap = {
       'Je cyclus en hormonale schommelingen',
       'Praktische aanpassingen die passen bij jouw dagritme',
     ],
-    faqHeading: 'Veelgestelde vragen over cravings en bloedsuiker',
+    faqHeading: 'Veelgestelde vragen over cravings',
     faqs: [
       {
         question: 'Waarom heb ik na het eten alsnog trek in zoet?',
