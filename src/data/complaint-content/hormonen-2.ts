@@ -255,8 +255,8 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'overgang': {
     intro: [
-      'Opvliegers tijdens een vergadering, nachtzweten waardoor je wakker wordt met een nat kussen, of ineens huilen om iets waar je normaal overheen zou stappen. Rond je veertigste of vijftigste begint je lichaam te veranderen, en niet altijd op een manier die je van tevoren had verwacht.',
-      'De overgang is geen moment, maar een proces dat vaak jaren duurt. De perimenopauze, de periode vóór je laatste menstruatie, kan al beginnen vanaf je begin veertig, met een grillige cyclus, wisselende stemming en veranderende energie. Pas als je een jaar niet meer ongesteld bent geweest, spreken we van de menopauze. Die overgangsperiode wil je niet alleen "doorstaan", maar begrijpen en er goed doorheen komen.',
+      'Opvliegers tijdens een vergadering, nachtzweten waardoor je wakker wordt met een nat kussen of ineens huilen om iets waar je normaal overheen zou stappen. Rond je veertigste of vijftigste begint je lichaam te veranderen en niet altijd op een manier die je van tevoren had verwacht.',
+      'De overgang is geen moment, maar een proces dat vaak jaren duurt. De perimenopauze, de periode vóór je laatste menstruatie, kan al beginnen vanaf je begin veertig, met een veranderende cyclus, wisselende stemming en veranderende energie. Pas als je een jaar niet meer ongesteld bent geweest, spreken we van de menopauze. Die overgangsperiode wil je niet alleen "doorstaan", maar begrijpen en er goed doorheen komen.',
       'Ik begeleid vrouwen in de perimenopauze en menopauze vanuit mijn achtergrond als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige. Met uitgebreide intakeformulieren en de CIRCLE-methode kijken we naar jouw specifieke klachten en situatie, in plaats van een standaard overgangsadvies te volgen.',
     ],
     recognition: [
@@ -271,9 +271,9 @@ export const hormonenContent2: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat gebeurt er hormonaal in de overgang?',
     explanation: [
-      'In de perimenopauze, meestal vanaf ongeveer je begin tot midden veertig, beginnen je eierstokken minder voorspelbaar te werken. Je hormoonspiegels, met name oestrogeen en progesteron, gaan schommelen in plaats van geleidelijk dalen. Die schommelingen, en niet alleen een tekort, verklaren vaak waarom klachten zoals opvliegers, stemmingswisselingen en een onregelmatige cyclus in deze fase zo wisselend kunnen zijn: de ene maand voel je je prima, de andere maand lijkt alles tegen te zitten.',
-      'Naarmate je dichter bij de menopauze komt, daalt de oestrogeenproductie verder. Oestrogeen heeft invloed op veel meer dan alleen je cyclus: het speelt een rol bij je slaap, stemming, huid, gewrichten, botopbouw en de gezondheid van je bloedvaten. Dat verklaart waarom klachten in de overgang zo uiteenlopend kunnen zijn, van slecht slapen en gewrichtspijn tot een veranderend libido en meer buikvet, ook zonder dat je leefstijl is veranderd.',
-      'Na de menopauze, dus vanaf een jaar zonder menstruatie, blijft oestrogeen structureel laag. Dat is de reden waarom botgezondheid en hart- en vaatgezondheid in en na de overgang extra aandacht verdienen: oestrogeen beschermde deze systemen deels, en die bescherming valt goeddeels weg. Bloedverlies na de menopauze is nooit "gewoon weer een beetje ongesteld worden" en moet altijd door een arts beoordeeld worden.',
+      'In de perimenopauze, meestal vanaf ongeveer je begin tot midden veertig, beginnen je eierstokken minder voorspelbaar te werken. Je hormoonspiegels, met name oestrogeen en progesteron, gaan schommelen in plaats van geleidelijk dalen. Die schommelingen en niet alleen een tekort verklaren vaak waarom klachten zoals opvliegers, stemmingswisselingen en een onregelmatige cyclus in deze fase zo wisselend kunnen zijn. De ene maand voel je je prima, de andere maand lijkt alles tegen te zitten.',
+      'Naarmate je dichter bij de menopauze komt, daalt de oestrogeenproductie verder. Oestrogeen heeft invloed op veel meer dan alleen je cyclus. Het speelt een rol bij je slaap, stemming, huid, gewrichten, botopbouw en de gezondheid van je bloedvaten. Dat verklaart waarom klachten in de overgang zo uiteenlopend kunnen zijn, van slecht slapen en gewrichtspijn tot een veranderend libido en meer buikvet, ook zonder dat je leefstijl is veranderd.',
+      'Na de menopauze, dus vanaf een jaar zonder menstruatie, blijft oestrogeen structureel laag. Dat is de reden waarom botgezondheid en hart- en vaatgezondheid in en na de overgang extra aandacht verdienen. Oestrogeen beschermde deze systemen deels en die bescherming valt goeddeels weg.',
     ],
     factorsHeading: 'Wat kan er meespelen tijdens de overgang?',
     factorsIntro:
@@ -281,11 +281,11 @@ export const hormonenContent2: ComplaintContentMap = {
     factors: [
       {
         title: 'Schommelende hormonen',
-        text: 'In de perimenopauze schommelen oestrogeen en progesteron, in plaats van gelijkmatig te dalen. Dat verklaart waarom je klachten per maand kunnen verschillen: de ene cyclus mild, de volgende heftig.',
+        text: 'In de perimenopauze schommelen oestrogeen en progesteron, in plaats van gelijkmatig te dalen. Dat verklaart waarom je klachten per maand kunnen verschillen. De ene cyclus mild en de volgende heftig.',
       },
       {
         title: 'Bloedsuiker en buikvet',
-        text: 'Met het dalen van oestrogeen verandert vaak ook hoe je lichaam met bloedsuiker en insuline omgaat, wat kan bijdragen aan meer buikvet, ook bij een gelijkblijvend voedingspatroon. Dit is een bekend, maar vaak onderschat mechanisme in de overgang.',
+        text: 'Met het dalen van oestrogeen verandert vaak ook hoe je lichaam met bloedsuiker en insuline omgaat, wat kan bijdragen aan meer buikvet. Ook bij een gelijkblijvend voedingspatroon. Dit is een bekend, maar vaak onderschat mechanisme in de overgang.',
       },
       {
         title: 'Slaap, stemming en stress',
