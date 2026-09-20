@@ -175,7 +175,7 @@ export const darmenContent1: ComplaintContentMap = {
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en klachtenpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw darmklachten',
     together: [
       'Je klachtenpatroon: wanneer, hoe vaak en in welke situaties je klachten optreden',
-      'Je voedingspatroon, vezelinname en mogelijke voedselgevoeligheden',
+      'Je voedingspatroon en vezel inname',
       'Signalen die kunnen wijzen op dysbiose, te weinig maagzuur of enzymtekort',
       'Je stressniveau, slaap en de invloed daarvan op je spijsvertering',
       'Eerder onderzoek, medicatie en wat je zelf al hebt geprobeerd',
@@ -358,8 +358,8 @@ export const darmenContent1: ComplaintContentMap = {
   'winderigheid': {
     intro: [
       'Op je werk hou je in vergaderingen je buik zoveel mogelijk in bedwang en thuis probeer je niet te veel op te merken te laten vallen als er visite is. Je buik borrelt en rommelt, soms zo hoorbaar dat je bang bent dat anderen het horen. Winderigheid overkomt iedereen weleens, maar bij jou is het inmiddels een dagelijks terugkerend ongemak.',
-      'Je wilt niet steeds bezig zijn met de vraag of je wel of niet naar het toilet kunt gaan, of een houding kunnen aannemen zonder dat je buik zich meldt. Gewoon een dag door je heen kunnen zonder dat je darmen constant aandacht vragen, dat is wat je wilt.',
-      'Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige kijk ik met je mee naar wat er precies achter deze winderigheid zit. Via uitgebreide intakeformulieren en een persoonlijke intake leg ik met de CIRCLE-methode jouw gezondheidspuzzel, zodat we niet zomaar wat voedingsmiddelen schrappen, maar de oorzaak boven tafel krijgen.',
+      'Je wilt niet steeds bezig zijn met de vraag of je wel of niet naar het toilet kunt gaan of een houding kunnen aannemen zonder dat je buik herrie gaat maken.',
+      'Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige kijk ik met je mee naar wat er precies achter deze winderigheid zit, zodat we niet zomaar wat voedingsmiddelen schrappen, maar de oorzaak boven tafel krijgen.',
     ],
     recognition: [
       'Je hebt dagelijks veel last van winderigheid, soms zo veel dat het je ongemakkelijk maakt.',
@@ -367,14 +367,14 @@ export const darmenContent1: ComplaintContentMap = {
       'Op je werk of in gezelschap ben je bewust bezig met het inhouden of vermijden van winderigheid.',
       'Na bepaalde maaltijden, zoals koolhydraatrijke of vezelrijke gerechten, merk je duidelijk meer gas.',
       'Je hebt naast winderigheid ook een opgeblazen gevoel of wisselende ontlasting.',
-      'Je eet vaak snel, tussen bedrijven door, of praat veel tijdens het eten.',
+      'Je eet vaak snel, tussen bedrijven door of praat veel tijdens het eten.',
       'Je merkt dat de klachten toenemen in stressvolle periodes.',
     ],
-    explanationHeading: 'Waar komt overmatige winderigheid vandaan?',
+    explanationHeading: 'Waar komt (overmatige) winderigheid vandaan?',
     explanation: [
-      'Winderigheid ontstaat wanneer bacteriën in je darmen koolhydraten fermenteren die niet volledig zijn verteerd in je dunne darm. Bij die fermentatie komen gassen vrij die je lichaam via winderigheid kwijt moet. Een beetje gasvorming is volstrekt normaal, maar wanneer dit overmatig is of gepaard gaat met een opgeblazen buik en ongemak, is er meer aan de hand.',
-      'Een belangrijke oorzaak is de hoeveelheid en het type koolhydraten dat je eet: vezelrijke voeding, peulvruchten en bepaalde granen fermenteren makkelijker en geven meer gas. Ook lactosemalabsorptie, waarbij je lichaam onvoldoende het enzym lactase aanmaakt om melksuiker af te breken en fructosemalabsorptie, waarbij fruitsuiker slecht wordt opgenomen, zijn veelvoorkomende oorzaken van overmatige winderigheid.',
-      'Daarnaast speelt lucht inslikken een rol: snel eten, kauwgom kauwen, koolzuurhoudende drank drinken en veel praten tijdens het eten zorgen voor extra lucht in je spijsverteringskanaal. En bij dysbiose of SIBO, een overgroei van bacteriën in je dunne darm, ontstaat er vaak veel meer gas dan normaal, ook bij voeding die je voorheen goed verdroeg.',
+      'Winderigheid ontstaat wanneer bacteriën in je darmen koolhydraten fermenteren die niet volledig zijn verteerd in je dunne darm. Bij die fermentatie komen gassen vrij die je lichaam via winderigheid kwijt moet. Een beetje gasvorming is normaal, maar wanneer dit overmatig is of gepaard gaat met een opgeblazen buik en ongemak, is er vaak meer aan de hand.',
+      'Een belangrijke oorzaak is de hoeveelheid en het type koolhydraten dat je eet. Vezelrijke voeding, peulvruchten en bepaalde granen fermenteren makkelijker en geven meer gas. Ook lactosemalabsorptie, waarbij je lichaam onvoldoende het enzym lactase aanmaakt om melksuiker af te breken en fructosemalabsorptie, waarbij fruitsuiker slecht wordt opgenomen, zijn veelvoorkomende oorzaken van overmatige winderigheid.',
+      'Daarnaast speelt lucht inslikken een rol. Snel eten, kauwgom kauwen, koolzuurhoudende drank drinken en veel praten tijdens het eten zorgen voor extra lucht in je spijsverteringskanaal. En bij dysbiose of SIBO, een overgroei van bacteriën in je dunne darm, ontstaat er vaak veel meer gas dan normaal, ook bij voeding die je voorheen goed verdroeg.',
     ],
     factorsHeading: 'Wat kan jouw winderigheid veroorzaken of verergeren?',
     factorsIntro:
@@ -394,11 +394,11 @@ export const darmenContent1: ComplaintContentMap = {
       },
       {
         title: 'Dysbiose en SIBO',
-        text: 'Wanneer je darmflora uit balans is, of wanneer er te veel bacteriën in je dunne darm zitten, wordt er sneller en meer gas geproduceerd bij het verteren van voeding. Dit verklaart waarom je soms bij dezelfde voeding de ene periode wel en de andere periode geen klachten hebt.',
+        text: 'Wanneer je darmflora uit balans is of wanneer er te veel bacteriën in je dunne darm zitten, wordt er sneller en meer gas geproduceerd bij het verteren van voeding. Dit verklaart waarom je soms bij dezelfde voeding de ene periode wel en de andere periode geen klachten hebt.',
       },
       {
         title: 'Stress en spijsvertering',
-        text: 'Bij stress verandert de manier waarop je spijsvertering werkt: maagzuurproductie en darmbeweging veranderen, wat weer invloed heeft op fermentatie en gasvorming. Veel vrouwen merken dat hun winderigheid toeneemt in drukke periodes, ook zonder dat hun voeding is veranderd.',
+        text: 'Bij stress verandert de manier waarop je spijsvertering werkt. Maagzuurproductie en darmbeweging veranderen, wat weer invloed heeft op fermentatie en gasvorming. Veel vrouwen merken dat hun winderigheid toeneemt in drukke periodes, ook zonder dat hun voeding is veranderd.',
       },
     ],
     widerHeading: 'Verder kijken dan alleen de winderigheid',
@@ -410,7 +410,7 @@ export const darmenContent1: ComplaintContentMap = {
       'Je voedingspatroon en specifieke trigger-voedingsmiddelen',
       'Vermoeidheid of energiedips die kunnen samenhangen met je spijsvertering',
       'Je cyclus en of klachten hormonaal beïnvloed worden',
-      'Eerder onderzoek zoals een ademtest voor SIBO of lactose-intolerantie',
+      'Eerder onderzoek zoals SIBO test, lactose-intolerantie of ontlastingsonderzoek',
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en eetpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw winderigheid',
     together: [
