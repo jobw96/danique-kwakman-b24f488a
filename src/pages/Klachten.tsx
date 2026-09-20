@@ -92,6 +92,8 @@ const Klachten = () => {
           </FadeIn>
         </div>
       </Section>
-
+    </main>
+  );
+};
 
 export default Klachten;
