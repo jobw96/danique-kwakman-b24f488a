@@ -117,14 +117,14 @@ export const darmenContent1: ComplaintContentMap = {
 
   'darmklachten': {
     intro: [
-      'De ene week heb je bijna elke dag buikpijn, de andere week is je ontlasting wisselend van dun naar hard en alles daartussenin. Je herkent je niet meer in wat “normaal” voelt: het ene moment ren je naar het toilet, het andere moment zit je dagenlang vast. Een vol, zwaar gevoel na het eten hoort er inmiddels ook gewoon bij.',
-      'Je wilt niet elke dag rekening houden met je darmen. Geen scan van het menu voordat je bestelt, geen constant afwegen of je wel of niet naar die verjaardag gaat omdat je niet weet hoe je buik zich daar gaat gedragen. Je wilt gewoon kunnen eten en leven zonder dat je darmen de baas spelen over je dag.',
+      'De ene week heb je bijna elke dag buikpijn, de andere week is je ontlasting wisselend van dun naar hard en alles daartussenin. Je herkent je niet meer in wat “normaal” voelt. Het ene moment ren je naar het toilet, het andere moment zit het dagenlang vast. Een vol, zwaar gevoel na het eten hoort er inmiddels ook gewoon bij.',
+      'Je wilt niet elke dag rekening houden met je darmen. Geen scan van het menu voordat je bestelt, niet constant afwegen of je wel of niet naar die verjaardag gaat omdat je niet weet hoe je buik zich daar gaat gedragen. Je wilt gewoon kunnen eten en leven zonder dat je darmen je de baas zijn.',
       'Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige kijk ik verder dan alleen “minder gluten” of “geen zuivel”. Met uitgebreide intakeformulieren en een persoonlijke intake leg ik via de CIRCLE-methode jouw gezondheidspuzzel, zodat we samen uitzoeken wat jouw darmklachten precies voedt en in stand houdt.',
     ],
     recognition: [
       'Je hebt regelmatig buikpijn of krampen, soms zonder duidelijke aanleiding.',
-      'Je ontlasting wisselt van te dun naar te hard, of je hebt beide door elkaar.',
-      'Na het eten voel je je opgeblazen, vol of zwaar, ook bij relatief kleine porties.',
+      'Je ontlasting wisselt van te dun naar te hard of je hebt beide door elkaar.',
+      'Na het eten voel je je opgeblazen, vol of zwaar. Ook bij relatief kleine porties.',
       'Je merkt dat bepaalde voedingsmiddelen klachten lijken te geven, maar kunt geen vast patroon ontdekken.',
       'Stressvolle periodes gaan bij jou vaak gepaard met meer darmklachten.',
       'Je bent vermoeider dan je zou verwachten, wat je soms koppelt aan je spijsvertering.',
@@ -132,9 +132,9 @@ export const darmenContent1: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat zit er achter aanhoudende darmklachten?',
     explanation: [
-      'Je darmen doen veel meer dan alleen voeding verteren. Ze herbergen je darmmicrobioom, miljarden bacteriën die meewerken aan spijsvertering, vitaminevorming en je afweer. Wanneer dit microbioom uit balans raakt, spreken we van dysbiose: er zijn dan te weinig gunstige en te veel minder wenselijke bacteriën aanwezig. Dat kan zich uiten in buikpijn, wisselende ontlasting, een vol gevoel en gasvorming.',
-      'Ook je maagzuur en spijsverteringsenzymen spelen een grote rol. Is er onvoldoende maagzuur of onvoldoende enzymproductie, dan wordt voeding minder goed afgebroken voordat het je darmen bereikt. Onverteerde voedseldeeltjes zorgen daar voor extra gisting en irritatie. Daarnaast kan een tekort aan vezels, te weinig variatie in je voeding, of juist een overgevoeligheid voor bepaalde voedingsmiddelen bijdragen aan terugkerende klachten.',
-      'Tot slot is de verbinding tussen je hersenen en je darmen, de zogeheten stress-darm-as, belangrijk. Bij langdurige stress verandert de aanmaak van maagzuur, de darmbeweging en zelfs de samenstelling van je darmflora. Dat verklaart waarom drukke, stressvolle periodes bij veel vrouwen samenvallen met heftigere darmklachten, ook als hun voeding niet is veranderd.',
+      'Je darmen doen veel meer dan alleen voeding verteren. Je hebt een heel darmmicrobioom met miljarden bacteriën die meewerken aan spijsvertering, vitaminevorming en je afweer. Wanneer dit microbioom uit balans raakt, spreken we van dysbiose. Er zijn dan te weinig gunstige en te veel minder goede bacteriën aanwezig. Dat kan zich uiten in buikpijn, wisselende ontlasting, een vol gevoel en gasvorming.',
+      'Ook je maagzuur en spijsverteringsenzymen spelen een grote rol. Is er onvoldoende maagzuur of onvoldoende enzymproductie, dan wordt voeding minder goed afgebroken voordat het je darmen bereikt. Onverteerde voedseldeeltjes zorgen daar voor extra gisting en irritatie. Daarnaast kan een tekort aan vezels, te weinig variatie in je voeding of juist een overgevoeligheid voor bepaalde voedingsmiddelen bijdragen aan terugkerende klachten.',
+      'Tot slot is de verbinding, de zogeheten stress-darm-as, belangrijk. Bij langdurige stress verandert de aanmaak van maagzuur, de darmbeweging en zelfs de samenstelling van je darmflora. Dat verklaart waarom drukke, stressvolle periodes bij veel vrouwen samenvallen met heftigere darmklachten, ook als hun voeding niet is veranderd.',
     ],
     factorsHeading: 'Wat kan jouw darmklachten in stand houden?',
     factorsIntro:
@@ -158,7 +158,7 @@ export const darmenContent1: ComplaintContentMap = {
       },
       {
         title: 'Stress-darm-as',
-        text: 'Je hersenen en darmen staan voortdurend met elkaar in verbinding. Bij aanhoudende stress verandert je spijsvertering meetbaar: maagzuurproductie, darmbeweging en zelfs de samenstelling van je darmflora worden erdoor beïnvloed. Dit maakt stress een factor die zeker niet overgeslagen mag worden.',
+        text: 'Je hersenen en darmen staan voortdurend met elkaar in verbinding. Bij aanhoudende stress verandert je spijsvertering: maagzuurproductie, darmbeweging en zelfs de samenstelling van je darmflora worden erdoor beïnvloed. Dit maakt stress een factor die zeker niet overgeslagen mag worden.',
       },
     ],
     widerHeading: 'Verder kijken dan je buik',
