@@ -382,9 +382,9 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'pms': {
     intro: [
-      'Elke maand hetzelfde liedje: een week voor je menstruatie ben je opeens huilerig om een reclame, hebben je borsten pijn bij elke beweging, en kun je een zak chips zo leegeten. En dan slaat je stemming om zodra je menstruatie begint, alsof er een knop wordt omgezet.',
-      'PMS, premenstrueel syndroom, is meer dan "een beetje chagrijnig zijn". Het kan je relaties, je werk en hoe je jezelf voor jezelf ervaart, echt beïnvloeden. Het feit dat het "erbij hoort", betekent niet dat je er niets aan kunt doen of dat je het maar moet accepteren.',
-      'Ik begeleid vrouwen met PMS-klachten vanuit mijn achtergrond als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige. Met uitgebreide intakeformulieren en de CIRCLE-methode kijken we naar wat er bij jou in de tweede helft van je cyclus gebeurt, in plaats van een standaard PMS-advies te volgen.',
+      'Elke maand hetzelfde liedje: een week voor je menstruatie ben je opeens huilerig om een reclame op tv, hebben je borsten pijn bij elke beweging, kun je een zak chips zo leegeten en daarna het liefst nog een reep chocola. Je hebt moodwings, waardoor het thuis niet altijd gezellig is en zodra je menstruatie begint, zijn al je klachten weg.',
+      'PMS, premenstrueel syndroom, is meer dan "een beetje chagrijnig zijn". Het kan je relaties, je werk en hoe je jezelf voor jezelf ervaart echt beïnvloeden. Dit is niet iets wat er zomaar bijhoort en het betekent niet dat je er niets aan kunt doen of dat je het maar moet accepteren.',
+      'Ik begeleid vrouwen met PMS-klachten vanuit mijn achtergrond als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige. We kijken niet alleen naar wat er bij jou in de tweede helft van je cyclus gebeurt, maar naar het volledige plaatje en je gehele hormoonbalans. ',
     ],
     recognition: [
       'In de week voor je menstruatie merk je dat je sneller huilt of geïrriteerd raakt dan normaal.',
@@ -398,8 +398,8 @@ export const hormonenContent2: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat gebeurt er hormonaal bij PMS?',
     explanation: [
-      'PMS-klachten ontstaan in de luteale fase, de periode tussen je ovulatie en je menstruatie. In deze fase daalt progesteron geleidelijk, en bij sommige vrouwen schommelt ook oestrogeen op een manier die klachten kan uitlokken. Het gaat hierbij niet per se om te hoge of te lage hormoonspiegels op zich, maar om hoe gevoelig jouw lichaam en hersenen reageren op die schommelingen.',
-      'Progesteron heeft onder andere invloed op stoffen in je hersenen die met rust en stemming te maken hebben. Als progesteron daalt, kan dat effect wegvallen, wat kan bijdragen aan prikkelbaarheid, somberheid of huilerigheid. Ook cravings naar zoet of koolhydraatrijk eten in deze fase zijn deels hormonaal te verklaren: je lichaam vraagt in de luteale fase vaak iets meer energie, en bloedsuikerschommelingen kunnen klachten versterken.',
+      'PMS-klachten ontstaan in de luteale fase, de periode tussen je ovulatie en je menstruatie. In deze fase daalt progesteron geleidelijk en bij sommige vrouwen schommelt ook oestrogeen op een manier die klachten kan uitlokken. Het gaat hierbij niet per se om te hoge of te lage hormoonspiegels op zich, maar om hoe gevoelig jouw lichaam en hersenen reageren op die schommelingen.',
+      'Progesteron heeft onder andere invloed op stoffen in je hersenen die met rust en stemming te maken hebben. Als progesteron daalt, kan dat effect wegvallen, wat kan bijdragen aan prikkelbaarheid, somberheid of huilerigheid. Ook cravings naar zoet of koolhydraatrijk eten in deze fase zijn deels hormonaal te verklaren. Je lichaam vraagt in de luteale fase vaak iets meer energie en bloedsuikerschommelingen kunnen klachten versterken.',
       'Bij een klein deel van de vrouwen zijn de stemmingsklachten in de luteale fase zo heftig dat ze het dagelijks functioneren duidelijk verstoren. Dit wordt PMDD genoemd, premenstruele dysfore stoornis, en dat is een aandoening die medisch beoordeeld moet worden door de huisarts, omdat hier soms een andere aanpak nodig is dan bij "gewone" PMS-klachten.',
     ],
     factorsHeading: 'Wat kan er meespelen bij PMS?',
@@ -416,7 +416,7 @@ export const hormonenContent2: ComplaintContentMap = {
       },
       {
         title: 'Stress en slaap',
-        text: 'Stress verhoogt de gevoeligheid voor hormonale schommelingen, en slecht slapen maakt je prikkelbaarder en emotioneler. In een cyclus met veel stress zijn PMS-klachten dan ook vaak heftiger dan in een rustigere periode.',
+        text: 'Stress verhoogt de gevoeligheid voor hormonale schommelingen en slecht slapen maakt je prikkelbaarder en emotioneler. In een cyclus met veel stress zijn PMS-klachten dan ook vaak heftiger dan in een rustigere periode.',
       },
       {
         title: 'Voedingsstoffen zoals magnesium en B-vitaminen',
@@ -424,7 +424,7 @@ export const hormonenContent2: ComplaintContentMap = {
       },
       {
         title: 'PMDD, een heftigere variant',
-        text: 'Bij PMDD zijn de stemmingsklachten in de luteale fase zo intens dat ze het dagelijks functioneren duidelijk beperken, bijvoorbeeld met heftige somberheid, boosheid of angst. Dit vraagt om beoordeling door de huisarts, die kan bepalen of aanvullende behandeling nodig is.',
+        text: 'Bij PMDD zijn de stemmingsklachten in de luteale fase zo intens dat ze het dagelijks functioneren duidelijk beperken, bijvoorbeeld met heftige somberheid, boosheid of angst. Dit vraagt om beoordeling door de huisarts.',
       },
     ],
     widerHeading: 'Verder kijken dan alleen “een week voor je menstruatie”',
@@ -435,7 +435,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Je bloedsuiker, cravings en voedingspatroon',
       'Slaap en stressbelasting',
       'Lichamelijke klachten zoals gevoelige borsten, hoofdpijn en een opgeblazen gevoel',
-      'Of klachten mogelijk passen bij PMDD en medisch beoordeeld moeten worden',
+      'Of klachten mogelijk passen bij PMDD en daarbij dus medisch beoordeeld moeten worden, naast mijn begeleiding rondom voeding en leefstijl.',
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw klachten per cyclusfase, voeding en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw PMS, zodat we kijken naar wat er bij jou specifiek in de luteale fase gebeurt',
     together: [
