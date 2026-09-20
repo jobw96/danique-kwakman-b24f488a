@@ -108,6 +108,7 @@ export const onregelmatigeCyclusContent: ComplaintContentMap = {
           'Je lichaam heeft voldoende energie en voedingsstoffen nodig voor de aanmaak en aansturing van hormonen. Structureel te weinig eten, maaltijden overslaan of veel sporten zonder voldoende voeding kan daarom invloed hebben op je cyclus.',
           'Ook je bloedsuiker en insuline kunnen relevant zijn. Zeker wanneer een onregelmatige cyclus samengaat met cravings, energiedips, acne, gewichtsschommelingen of PCOS.',
           'In mijn begeleiding kijk ik daarom niet alleen naar wat je eet, maar ook naar hoeveel energie je binnenkrijgt, hoe je maaltijden zijn opgebouwd en wat je gedurende de dag merkt aan energie, trek en cravings. Vanuit daar kunnen we heel concreet kijken waar je voeding aangepast kan worden.',
+          'Wil je meer inzicht in je bloedsuiker? Dan kun je kiezen voor een Bloedsuikertraject met een 14-daagse glucosesensor. Binnen het 1:1 Hormoontraject kun je de glucosesensor ook als aanvulling inzetten.',
         ],
       },
       {
