@@ -57,8 +57,7 @@ export const energieContent2: ComplaintContentMap = {
       'Je cyclus, aangezien hormonen elkaar onderling beïnvloeden',
       'Signalen van langdurige overbelasting, zoals concentratieproblemen of prikkelbaarheid',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over onder andere je dagritme, voeding, slaap en energieniveau. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel met de CIRCLE-methode, zonder standaard protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw energie, slaap, stress en herstel in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw cortisolritme',
     together: [
       'Je energieverloop gedurende de dag, van opstaan tot bedtijd',
       'Je voedingspatroon, maaltijdtijden en cafeïnegebruik',
@@ -190,8 +189,7 @@ export const energieContent2: ComplaintContentMap = {
       'Je beweegpatroon overdag',
       'Je cyclus, omdat energiedips daarin kunnen wisselen',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over onder andere je voeding, energieverloop en dagindeling. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode jouw gezondheidspuzzel, zodat we gericht kunnen kijken naar wat bij jou speelt.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw energieverloop, voeding, slaap en bloedsuiker in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw energiedips',
     together: [
       'Je ontbijt-, lunch- en snackpatroon en de opbouw daarvan',
       'Het moment en de duur van je energiedips gedurende de dag',
@@ -316,8 +314,7 @@ export const energieContent2: ComplaintContentMap = {
       'Je slaapkwaliteit en herstel',
       'Je stressbelasting en energieniveau overdag',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over onder andere je concentratie, voeding, cyclus en energieniveau. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel met de CIRCLE-methode, zonder standaard protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw concentratie, voeding, slaap en hormonen in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw brain fog',
     together: [
       'Wanneer je brain fog het sterkst is en of dit samenhangt met je cyclus',
       'Je voeding, bloedsuiker en maaltijdpatroon',
@@ -441,8 +438,7 @@ export const energieContent2: ComplaintContentMap = {
       'Je cyclus, omdat hormonen invloed hebben op je bloedsuikergevoeligheid',
       'Je stressbelasting en hoe die je eetpatroon beïnvloedt',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over onder andere je voeding, klachten en dagritme. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode jouw gezondheidspuzzel, zodat we gericht kunnen kijken naar wat bij jou meespeelt.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw bloedsuiker, eetpatroon en energieverloop in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw bloedsuikerschommelingen',
     together: [
       'Je maaltijdpatroon, -tijden en de opbouw van je eten',
       'De momenten waarop je klachten van bloedsuikerschommelingen ervaart',

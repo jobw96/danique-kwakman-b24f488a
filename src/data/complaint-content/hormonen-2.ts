@@ -58,8 +58,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Eerdere miskramen, cyclusgeschiedenis en gebruikte anticonceptie',
       'De leefstijl van jullie beiden, inclusief mannelijke vruchtbaarheid',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je cyclus, gezondheid en kinderwens. Tijdens de persoonlijke intake leggen we samen de gezondheidspuzzel rond jouw vruchtbaarheid, met de CIRCLE-methode als leidraad in plaats van een standaard preconceptieprotocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, voeding en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel rond jouw vruchtbaarheid, in plaats van een standaard preconceptieprotocol',
     together: [
       'Je cyclusverloop, ovulatiesignalen en luteale fase',
       'Je voeding, bloedsuiker en de belangrijkste voedingsstoffen rond kinderwens',
@@ -185,8 +184,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Stemming, stress en slaap',
       'Signalen die kunnen passen bij PCOS of een andere onderliggende hormonale situatie',
     ],
-    togetherIntro:
-      'Via uitgebreide intakeformulieren breng je jouw cyclusgeschiedenis, klachten voor en na de anticonceptie en huidige situatie in kaart. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode de puzzel van wat er nu speelt, in plaats van te werken vanuit een standaard “stop met de pil” programma.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclusgeschiedenis, klachten voor en na de anticonceptie en huidige situatie in kaart. Met de CIRCLE-methode leggen we samen de puzzel van wat er nu speelt, in plaats van een standaard stop-met-de-pil-programma',
     together: [
       'Je cyclus en klachten van vóór, tijdens en na de anticonceptie',
       'Huid- en haarklachten en het tijdspad waarin deze ontstonden',
@@ -313,8 +311,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Libido en hoe je dat ervaart',
       'Botgezondheid en hart- en vaatgezondheid op langere termijn',
     ],
-    togetherIntro:
-      'Via uitgebreide intakeformulieren breng je jouw klachten, cyclus en leefstijl in kaart. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode de puzzel van jouw overgang, zodat de aanpak past bij wat jij nu ervaart, niet bij een standaard overgangsadvies.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw klachten, cyclus en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel van jouw overgang, zodat de aanpak past bij wat jij nu ervaart',
     together: [
       'Je cyclusverloop en de klachten die je momenteel ervaart',
       'Je slaap, stemming en energie door de dag heen',
@@ -440,8 +437,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Lichamelijke klachten zoals gevoelige borsten, hoofdpijn en een opgeblazen gevoel',
       'Of klachten mogelijk passen bij PMDD en medisch beoordeeld moeten worden',
     ],
-    togetherIntro:
-      'Via uitgebreide intakeformulieren breng je jouw klachten per cyclusfase in kaart. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode de puzzel van jouw PMS, zodat we kijken naar wat er bij jou specifiek in de luteale fase gebeurt.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw klachten per cyclusfase, voeding en leefstijl in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw PMS, zodat we kijken naar wat er bij jou specifiek in de luteale fase gebeurt',
     together: [
       'Je klachten en stemming door je hele cyclus heen, met focus op de luteale fase',
       'Je voeding, bloedsuiker en cravings',
@@ -568,8 +564,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Kinderwens en wat PCOS daarvoor kan betekenen',
       'Stemming, energie en stress in het dagelijks leven',
     ],
-    togetherIntro:
-      'Via uitgebreide intakeformulieren breng je jouw cyclus, huid, haar, bloedsuiker en klachten in kaart. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode jouw specifieke vorm van PCOS in kaart, zodat we niet werken vanuit één standaard PCOS-protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, huid, haar en bloedsuiker in kaart. Met de CIRCLE-methode leggen we samen de puzzel van jouw specifieke vorm van PCOS, in plaats van één standaard PCOS-protocol',
     together: [
       'Je cyclusverloop, ovulatiesignalen en menstruatiepatroon',
       'Je huid, haar en de plekken waar klachten zich uiten',
@@ -696,8 +691,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Stress, slaap en herstel',
       'Waar je in het medische traject staat en wat daarnaast passend is',
     ],
-    togetherIntro:
-      'Via uitgebreide intakeformulieren breng je jouw klachten, medische geschiedenis en dagelijks leven in kaart. Tijdens de persoonlijke intake leggen we met de CIRCLE-methode de puzzel van wat jij naast je medische behandeling nodig hebt, altijd in aanvulling op en nooit ter vervanging van diagnose en behandeling door een arts.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, klachten en medische geschiedenis in kaart. Met de CIRCLE-methode leggen we samen de puzzel van wat jij naast je medische behandeling nodig hebt, altijd in aanvulling op en nooit ter vervanging van diagnose en behandeling door een arts',
     together: [
       'Je pijnpatroon, klachten en medische voorgeschiedenis',
       'Je darmklachten en hoe deze samenhangen met je cyclus',

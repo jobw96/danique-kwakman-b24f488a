@@ -58,8 +58,7 @@ export const energieContent1: ComplaintContentMap = {
       'Schildklierklachten zoals kouwelijkheid, haaruitval of gewichtsverandering',
       'Eerder bloedonderzoek en de uitslagen die je al hebt',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je energie, voeding, slaap en leefstijl. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel, met mijn CIRCLE-methode, zonder standaard protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw energie, slaap, voeding en bloedsuiker in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw vermoeidheid, zodat we zien waar je energie blijft hangen',
     together: [
       'Je energieverloop door de dag en de week heen',
       'Je voeding, maaltijdopbouw en bloedsuikerschommelingen',
@@ -177,8 +176,7 @@ export const energieContent1: ComplaintContentMap = {
       'Stressniveau en emotie-eten',
       'Je algehele voedingspatroon, niet alleen het “probleemmoment”',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je eetpatroon en cravings. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel, met mijn CIRCLE-methode, gericht op jouw dagelijkse leven.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eetpatroon, cravings, bloedsuiker en dagritme in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw cravings',
     together: [
       'Je huidige maaltijdopbouw en eetmomenten',
       'De momenten waarop je cravings het sterkst zijn',
@@ -296,8 +294,7 @@ export const energieContent1: ComplaintContentMap = {
       'Vermoeidheid en energie overdag',
       'Piekeren en de rol van je zenuwstelsel',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je slaap, ritme en dagelijks leven. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel, met mijn CIRCLE-methode, gericht op wat jouw nachtrust concreet verstoort.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw slaap, ritme, stress en voeding in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw slaapproblemen, zodat we zien wat jouw nachtrust concreet verstoort',
     together: [
       'Je slaapritme, inslaap- en doorslaapproblemen',
       'Je stressbelasting en cortisolritme door de dag',
@@ -415,8 +412,7 @@ export const energieContent1: ComplaintContentMap = {
       'Je cyclus en hormonale schommelingen',
       'Hoe vaak je daadwerkelijk ontspant, versus hoe vaak het zo voelt',
     ],
-    togetherIntro:
-      'Wil je uitzoeken wat jouw herstel in de weg zit? In een gratis kennismaking bespreken we jouw situatie en kijken we of, en hoe, ik je daarbij verder kan helpen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw belasting, herstel, slaap en voeding in kaart. Met de CIRCLE-methode leggen we samen de puzzel rond jouw stress en herstel, zodat we zien waar jouw herstel vastloopt',
     together: [
       'Jouw stressbelasting en de momenten waarop dit oploopt',
       'Je herstelmomenten en of die daadwerkelijk werken',
@@ -534,8 +530,7 @@ export const energieContent1: ComplaintContentMap = {
       'Je beweegpatroon, inclusief kracht- en dagelijkse beweging',
       'Eerder bloedonderzoek, waaronder nuchtere insuline en glucose',
     ],
-    togetherIntro:
-      'Vooraf vul je uitgebreide intakeformulieren in over je voeding, beweging en klachten. Tijdens de persoonlijke intake leggen we samen jouw gezondheidspuzzel, met mijn CIRCLE-methode, gericht op jouw insulinegevoeligheid en de factoren daaromheen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw bloedsuiker, energie, voeding en beweging in kaart. Met de CIRCLE-methode leggen we samen de puzzel rond jouw insulinegevoeligheid en de factoren daaromheen',
     together: [
       'Je voedingspatroon en maaltijdopbouw',
       'Je beweegpatroon, inclusief kracht- en dagelijkse beweging',

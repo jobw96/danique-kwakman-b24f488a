@@ -41,7 +41,7 @@ export const darmenContent2: ComplaintContentMap = {
       'Prikkelbaarheid of somberheid die samenhangt met je buikklachten',
       'Onverklaarbare gewichtsschommelingen',
     ],
-    togetherIntro: 'Danique gebruikt uitgebreide intakeformulieren en een persoonlijke intake om jouw eet-, leef- en toiletpatroon in kaart te brengen, en legt met de CIRCLE-methode stap voor stap de gezondheidspuzzel achter jouw klachten – zonder standaard protocol.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eet-, leef- en toiletpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw verstopping of diarree',
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
       'Tijdens de persoonlijke intake bespreken jullie je Bristol-schaal patroon en wat eraan voorafgaat',
@@ -143,7 +143,7 @@ export const darmenContent2: ComplaintContentMap = {
       'Onrustige nachten door klachten die vooral liggend opspelen',
       'Wisselende stoelgang naast de maagklachten',
     ],
-    togetherIntro: 'Met uitgebreide intakeformulieren en een persoonlijke intake brengt Danique jouw eetgewoontes, medicatiegebruik en klachtenpatroon in kaart, om vervolgens met de CIRCLE-methode de gezondheidspuzzel achter jouw verteringsklachten te leggen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, eetpatroon en vertering in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw verteringsklachten',
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over eetgewoontes, medicatie en klachten',
       'In de persoonlijke intake bespreken jullie wanneer je klachten precies opspelen',
@@ -245,7 +245,7 @@ export const darmenContent2: ComplaintContentMap = {
       'Concentratieproblemen na een maaltijd',
       'Gewrichtsklachten die soms met voeding in verband worden gebracht',
     ],
-    togetherIntro: 'Danique gebruikt uitgebreide intakeformulieren en een persoonlijke intake om jouw voedingspatroon en klachten in kaart te brengen, en legt met de CIRCLE-methode de gezondheidspuzzel achter jouw reacties op voeding, zonder overhaast producten te schrappen.',
+    togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en klachtenpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw reacties op voeding, zonder overhaast voedingsmiddelen te schrappen',
     together: [
       'Je houdt samen met Danique een eetdagboek bij om patronen tussen voeding en klachten zichtbaar te maken',
       'In de persoonlijke intake bespreken jullie welke producten al zijn weggelaten en wat dat opleverde',
