@@ -265,6 +265,7 @@ export const darmenContent1: ComplaintContentMap = {
     factorsHeading: 'Wat kan jouw PDS-klachten triggeren of in stand houden?',
     factorsIntro:
       'Bij PDS is de combinatie van factoren vaak persoonlijk. Daarom breng ik in kaart welke triggers, gewoontes en omstandigheden bij jou een rol spelen.',
+    factors: [
       {
         title: 'Stress en het zenuwstelsel van je darmen',
         text: 'Je darmen hebben een eigen zenuwstelsel dat sterk communiceert met je hersenen. Bij PDS is dit systeem vaak overgevoelig, waardoor stress, spanning en zelfs angst voor klachten zelf de klachten kunnen versterken. Dit is een lichamelijk mechanisme, geen teken dat de klachten “tussen de oren” zitten.',
