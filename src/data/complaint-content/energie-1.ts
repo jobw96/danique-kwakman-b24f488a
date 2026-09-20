@@ -246,17 +246,17 @@ export const energieContent1: ComplaintContentMap = {
     recognition: [
       'Je ligt lang wakker voordat je in slaap valt, ondanks dat je moe bent.',
       'Je wordt midden in de nacht wakker, vaak rond dezelfde tijd en ligt dan te piekeren.',
-      'Je wordt warm of zelfs klam wakker, soms met een bonzend hart.',
+      'Je wordt warm of zelfs klam wakker.',
       'Je slaapt oppervlakkig en voelt je ’s ochtends niet uitgerust, ook na genoeg uren.',
       'Je merkt dat je slaap slechter is in de week voor je menstruatie.',
-      'Een kop koffie in de middag of een glas wijn ’s avonds verstoort duidelijk je nachtrust.',
+      'Een kopje koffie in de middag of een glas wijn ’s avonds verstoort duidelijk je nachtrust.',
       'Je slaapritme is onregelmatig door wisselende werktijden of drukte in je hoofd.',
     ],
     explanationHeading: 'Wat ligt er achter jouw slaapproblemen?',
     explanation: [
-      'Goed slapen hangt af van een goed opgebouwd dag- en nachtritme. Melatonine, het hormoon dat je slaperig maakt, wordt aangemaakt zodra het donker wordt, maar veel schermtijd en fel licht in de avond kunnen die aanmaak vertragen. Tegelijk speelt cortisol, je stresshormoon, een grote rol: is dat ’s avonds nog te hoog, dan blijft je lichaam alert terwijl je juist tot rust zou moeten komen.',
+      'Goed slapen hangt af van een goed opgebouwd dag- en nachtritme. Melatonine, het hormoon dat je slaperig maakt, wordt aangemaakt zodra het donker wordt, maar veel schermtijd en fel licht in de avond kunnen die aanmaak vertragen. Tegelijk speelt cortisol, je stresshormoon, een grote rol. Is dat ’s avonds nog te hoog, dan blijft je lichaam alert terwijl je juist tot rust zou moeten komen.',
       'Ook je bloedsuiker kan ’s nachts roet in het eten gooien. Een dip in bloedsuiker midden in de nacht kan je lichaam wakker maken, vaak gepaard met een licht onrustig of zelfs hongerig gevoel. Cafeïne laat op de dag en alcohol ’s avonds voelen ontspannend, maar verstoren allebei de diepere slaapfases, ook als je er zelf weinig van merkt.',
-      'Bij vrouwen speelt daarnaast progesteron een rol: dit hormoon heeft een licht kalmerend effect en daalt in de tweede helft van je cyclus, wat samengaat met slechter slapen vlak voor je menstruatie. In de perimenopauze, wanneer hormoonspiegels meer gaan schommelen, nemen slaapproblemen zoals ’s nachts wakker worden en opvliegers bij veel vrouwen toe.',
+      'Bij vrouwen speelt daarnaast progesteron een rol. Progesteron heeft een licht kalmerend effect en daalt in de tweede helft van je cyclus, wat samengaat met slechter slapen vlak voor je menstruatie. In de perimenopauze, wanneer hormoonspiegels meer gaan schommelen, nemen slaapproblemen zoals ’s nachts wakker worden en opvliegers bij veel vrouwen toe.',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw slaapproblemen?',
     factorsIntro:
