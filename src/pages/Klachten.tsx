@@ -13,7 +13,7 @@ const categoryDescriptions: Record<string, string> = {
     'Van een opgeblazen buik, buikpijn en winderigheid tot obstipatie, diarree, PDS, maagzuur en voedselintoleranties.',
   'energie-en-bloedsuiker':
     'Van moe wakker worden en energiedips tot cravings, een middagdip, brain fog en het gevoel dat je energie gedurende de dag alle kanten op gaat.',
-  'huid-en-haar': 'Van acne en rosacea tot eczeem en haaruitval.',
+  'huid-en-haar': 'Van acne tot eczeem en haaruitval.',
 };
 
 const Klachten = () => {

@@ -37,7 +37,7 @@ export const complaintCategories: {
     name: 'Huid en haar',
     slug: 'huid-en-haar',
     number: '04',
-    description: 'Van acne en een gevoelige huid tot eczeem, rosacea, haaruitval en terugkerende onrust.',
+    description: 'Van acne en een gevoelige huid tot eczeem, haaruitval en terugkerende onrust.',
   },
 ];
 

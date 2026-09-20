@@ -12,7 +12,7 @@ const categoryIntros: Record<string, string> = {
   'energie-en-bloedsuiker':
     'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van moe wakker worden en energiedips tot cravings, brain fog en bloedsuikerschommelingen die je hele dag bepalen.',
   'huid-en-haar':
-    'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van acne en rosacea tot eczeem, een onrustige of gevoelige huid en haaruitval.',
+    'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van acne tot eczeem, een gevoelige huid en haaruitval.',
 };
 
 const KlachtCategorie = () => {
