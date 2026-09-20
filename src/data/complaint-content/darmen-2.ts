@@ -320,7 +320,6 @@ export const darmenContent2: ComplaintContentMap = {
       { title: 'Lactose-intolerantie', text: 'Een tekort aan het enzym lactase zorgt ervoor dat melksuiker onvoldoende wordt afgebroken, met een opgeblazen gevoel en winderigheid als gevolg.' },
       { title: 'Stress en darmgevoeligheid', text: 'Stress beïnvloedt je darmen direct, waardoor je sneller op voeding lijkt te reageren dan je in een rustige periode zou doen.' },
       { title: 'Histamine-gevoeligheid', text: 'Producten als oude kaas, wijn en gerookte vis bevatten van nature veel histamine, wat bij gevoeligheid klachten als hoofdpijn kan geven.' },
-      { title: 'Eetritme en eettempo', text: 'Onregelmatig eten, maaltijden overslaan of snel eten kan klachten na het eten verergeren, los van wat je precies eet.' },
       { title: 'Eetpatroon en spijsvertering', text: 'Een minder goed werkende spijsvertering kan ervoor zorgen dat je sneller op meerdere producten tegelijk lijkt te reageren.' },
     ],
     widerHeading: 'Wat klachten na het eten nog meer kunnen vertellen',
