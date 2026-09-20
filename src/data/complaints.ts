@@ -303,7 +303,7 @@ export const complaints: Complaint[] = [
     slug: 'stemmingswisselingen',
     category: 'Hormonen en cyclus',
     title: 'Stemmingswisselingen',
-    pageTitle: 'Stemmingswisselingen en een kort lontje',
+    pageTitle: 'Stemmingswisselingen en moodswings',
     seoTitle: 'Stemmingswisselingen en hormonen',
     seoDescription:
       'Prikkelbaar, somber of emotioneel zonder duidelijke reden. Lees hoe stemmingswisselingen samenhangen met je hormonen en bloedsuiker.',
