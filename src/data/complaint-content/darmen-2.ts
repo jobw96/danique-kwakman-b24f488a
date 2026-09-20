@@ -333,7 +333,7 @@ export const darmenContent2: ComplaintContentMap = {
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en klachtenpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw reacties op voeding, zonder overhaast voedingsmiddelen te schrappen',
     together: [
-      'Je houdt samen met Danique een eetdagboek bij om patronen tussen voeding en klachten zichtbaar te maken',
+      'Je houdt een eetdagboek bij om patronen tussen voeding en klachten zichtbaar te maken',
       'In de persoonlijke intake bespreken jullie welke producten al zijn weggelaten en wat dat opleverde',
       'We letten op signalen die passen bij lactose- of fructosemalabsorptie en histamine-gevoeligheid',
       'Waar nodig zetten we intolerantie onderzoek in om te kijken welke intoleranties er aanwezig zijn',
