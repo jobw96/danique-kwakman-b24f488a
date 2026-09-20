@@ -433,7 +433,7 @@ export const hormonenContent1: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat betekent een schildklier die minder goed meewerkt?',
     explanation: [
-      'Je schildklier produceert de hormonen T4 en T3, die je stofwisseling in vrijwel elke cel van je lichaam aansturen. Werkt je schildklier trager dan nodig, een onderfunctie, dan vertraagt je hele systeem mee: je energieverbruik, je spijsvertering, je lichaamstemperatuur en zelfs je stemming. Dat verklaart waarom klachten als vermoeidheid, kouwelijkheid, haaruitval en verstopping vaak samen voorkomen.',
+      'Je schildklier produceert de hormonen T4 en T3, die je stofwisseling in vrijwel elke cel van je lichaam aansturen. Werkt je schildklier trager dan nodig, dan vertraagt je hele systeem mee. Je energieverbruik, je spijsvertering, je lichaamstemperatuur en zelfs je stemming. Dat verklaart waarom klachten als vermoeidheid, kouwelijkheid, haaruitval en verstopping vaak samen voorkomen.',
       'Bij laboratoriumonderzoek wordt meestal gestart met TSH, het hormoon dat je hypofyse afgeeft om je schildklier te stimuleren. Een verhoogde TSH kan wijzen op een tragere schildklier, maar geeft niet het complete beeld. Voor een vollediger beeld zijn ook fT4 en fT3, de vrije schildklierhormonen zelf, relevant, evenals schildklierantistoffen zoals TPO-antistoffen, die kunnen wijzen op Hashimoto, een auto-immuunaandoening waarbij het afweersysteem de schildklier aanvalt.',
       'Het vaststellen van een schildklierafwijking en het voorschrijven van medicatie, zoals levothyroxine, hoort bij de huisarts of internist. Wat ik wel met je in kaart breng, is hoe voeding, stress, darmgezondheid en tekorten aan voedingsstoffen zoals jodium, selenium en zink de schildklierfunctie en het omzetten van T4 naar het actievere T3 kunnen ondersteunen of juist belemmeren.',
     ],
@@ -460,7 +460,7 @@ export const hormonenContent1: ComplaintContentMap = {
     together: [
       'Je klachten en de timing daarvan in kaart brengen.',
       'Kijken welk laboratoriumonderzoek al gedaan is en wat eventueel aanvullend zinvol is.',
-      'Je voedingspatroon beoordelen op jodium, selenium en zink.',
+      'Je voedingspatroon beoordelen en daarbij ook lettend op jodium, selenium en zink.',
       'Je darmgezondheid en stressniveau meenemen in het geheel.',
       'Een persoonlijk plan opstellen dat je schildklierfunctie ondersteunt naast eventuele medische behandeling.',
     ],
