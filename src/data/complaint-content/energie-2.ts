@@ -18,7 +18,7 @@ export const energieContent2: ComplaintContentMap = {
     explanationHeading: 'Wat betekent een verstoord cortisolritme?',
     explanation: [
       'Cortisol is een hormoon dat je bijnieren aanmaken en dat een duidelijk dagritme heeft. Normaal gesproken is het ’s ochtends het hoogst, zodat je wakker en alert wordt en zakt het geleidelijk gedurende de dag, zodat je ’s avonds kunt ontspannen en in slaap kunt vallen. Dat ritme heet de cortisoldagcurve.',
-      'Bij langdurige stress, te weinig slaap, onregelmatig eten of overtraining kan dit ritme verschuiven. De ochtendpiek is dan lager dan zou moeten, waardoor opstarten zwaar voelt, terwijl cortisol ’s avonds juist te hoog blijft, waardoor je je opgejaagd voelt op een moment dat je lichaam eigenlijk tot rust zou moeten komen. Dit noem ik bewust geen “bijnieruitputting”, want je bijnieren zelf raken niet op. Het gaat om de aansturing en het ritme, en dat is precies waar bijstelling mogelijk is.',
+      'Bij langdurige stress, te weinig slaap, onregelmatig eten of overtraining kan dit ritme verschuiven. De ochtendpiek is dan lager dan zou moeten, waardoor opstarten zwaar voelt, terwijl cortisol ’s avonds juist te hoog blijft, waardoor je je opgejaagd voelt op een moment dat je lichaam eigenlijk tot rust zou moeten komen. Dit noem ik bewust geen “bijnieruitputting”, want je bijnieren zelf raken niet op. Het gaat om de aansturing en het ritme en dat is precies waar bijstelling mogelijk is.',
       'Cafeïne, te weinig eten overdag en hard blijven doorgaan houden dit patroon vaak in stand. Je pakt koffie om op te starten, drukt je hongersignalen weg met nog een kop koffie en jaagt je systeem ’s avonds weer aan met een laptop, scherm of drukke gedachten. Zo blijft het ritme scheef staan in plaats van dat het zich herstelt.',
     ],
     factorsHeading: 'Wat kan meespelen bij een verstoord cortisolritme?',
@@ -31,7 +31,7 @@ export const energieContent2: ComplaintContentMap = {
       },
       {
         title: 'Onregelmatig of te weinig eten',
-        text: 'Maaltijden overslaan of te weinig eten zorgt voor schommelingen in je bloedsuiker. Je lichaam vangt een lage bloedsuiker op met onder andere cortisol, wat een piek geeft op momenten dat dat niet nodig zou moeten zijn, en juist onvoldoende cortisol op momenten dat je het wel nodig hebt.',
+        text: 'Maaltijden overslaan of te weinig eten zorgt voor schommelingen in je bloedsuiker. Je lichaam vangt een lage bloedsuiker op met onder andere cortisol, wat een piek geeft op momenten dat dat niet nodig zou moeten zijn en juist onvoldoende cortisol op momenten dat je het wel nodig hebt.',
       },
       {
         title: 'Overtraining en te weinig herstel',
@@ -72,7 +72,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Cortisol is een hormoon dat je bijnieren aanmaken en dat je helpt om wakker te worden, alert te zijn en met stress om te gaan. Het volgt normaal gesproken een dagritme: hoog in de ochtend, geleidelijk dalend richting de avond.',
           'Cortisol is dus geen “slecht” hormoon, het is juist essentieel. Problemen ontstaan pas wanneer het ritme verstoord raakt, bijvoorbeeld doordat de ochtendpiek te laag is of de avondwaarde te hoog blijft.',
-          'In een traject kijk ik naar jouw energiepatroon over de dag om te begrijpen of en waar dat ritme is verschoven, en wat daarin meespeelt.',
+          'In een traject kijk ik naar jouw energiepatroon over de dag om te begrijpen of en waar dat ritme is verschoven en wat daarin meespeelt.',
         ],
       },
       {
@@ -94,7 +94,7 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Kan cafeïne mijn klachten verergeren?',
         answer: [
-          'Ja, dat kan. Cafeïne stimuleert je systeem, en als je dat vroeg op de dag op een lege maag drinkt of laat op de dag blijft gebruiken, kan het je toch al verstoorde ritme verder uit balans houden.',
+          'Ja, dat kan. Cafeïne stimuleert je systeem en als je dat vroeg op de dag op een lege maag drinkt of laat op de dag blijft gebruiken, kan het je toch al verstoorde ritme verder uit balans houden.',
           'Dat betekent niet dat je nooit meer koffie mag drinken, maar wel dat timing en hoeveelheid ertoe doen.',
           'Samen kijken we hoe jouw cafeïnegebruik past bij je dagritme en waar aanpassing zinvol kan zijn.',
         ],
@@ -102,7 +102,7 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Heeft mijn voeding invloed op mijn cortisolritme?',
         answer: [
-          'Zeker. Onregelmatig eten of maaltijden overslaan zorgt voor schommelingen in je bloedsuiker, en je lichaam gebruikt onder andere cortisol om die schommelingen op te vangen.',
+          'Zeker. Onregelmatig eten of maaltijden overslaan zorgt voor schommelingen in je bloedsuiker en je lichaam gebruikt onder andere cortisol om die schommelingen op te vangen.',
           'Een stabielere bloedsuiker door de dag heen, met voldoende eiwitten en vezels, kan bijdragen aan een rustiger dagritme.',
           'In de intake kijk ik naar je maaltijdopbouw en -timing om te zien of dit bij jou meespeelt.',
         ],
@@ -149,7 +149,7 @@ export const energieContent2: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat gebeurt er bij een energiedip?',
     explanation: [
-      'Een energiedip ontstaat meestal doordat je bloedsuiker eerst snel stijgt en daarna weer snel daalt. Eet je bijvoorbeeld een ontbijt dat vooral uit snelle koolhydraten bestaat, zoals witte boterhammen met jam, een ontbijtkoek of havermout. Dan stijgt je bloedsuiker snel. Je lichaam reageert daarop met insuline, en die kan de bloedsuiker vervolgens weer flink laten dalen. Het resultaat is dat je binnen een uur of twee je moe voelt, minder scherp bent of hongerig bent.',
+      'Een energiedip ontstaat meestal doordat je bloedsuiker eerst snel stijgt en daarna weer snel daalt. Eet je bijvoorbeeld een ontbijt dat vooral uit snelle koolhydraten bestaat, zoals witte boterhammen met jam, een ontbijtkoek of havermout. Dan stijgt je bloedsuiker snel. Je lichaam reageert daarop met insuline en die kan de bloedsuiker vervolgens weer flink laten dalen. Het resultaat is dat je binnen een uur of twee je moe voelt, minder scherp bent of hongerig bent.',
       'Na de lunch is dit effect vaak nog sterker, omdat je lichaam op dat moment van de dag al een aantal uur actief is geweest en de opbouw van je lunch nog meer invloed heeft op hoe je je de rest van de middag voelt. Een lunch die vooral uit koolhydraten bestaat, zonder genoeg eiwitten, vezels of vet, geeft een grotere kans op een duidelijke dip.',
       'Ook cafeïne op een lege maag, te weinig water drinken en te lang stilzitten spelen mee. Cafeïne kan je tijdelijk alerter maken, maar verergert de onderliggende bloedsuikerschommeling vaak juist, waardoor de dip die volgt groter kan zijn.',
     ],
@@ -203,7 +203,7 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Waarom krijg ik altijd rond dezelfde tijd een dip?',
         answer: [
           'Dat komt meestal doordat je maaltijden en dagritme zich herhalen: eet je bijvoorbeeld iedere dag rond hetzelfde tijdstip een vergelijkbaar ontbijt of lunch, dan herhaalt ook de bloedsuikerreactie zich op ongeveer hetzelfde moment.',
-          'Vaak valt de dip rond 11 uur samen met een koolhydraatrijk ontbijt, en de dip na de lunch met een maaltijd die weinig eiwitten of vezels bevat.',
+          'Vaak valt de dip rond 11 uur samen met een koolhydraatrijk ontbijt en de dip na de lunch met een maaltijd die weinig eiwitten of vezels bevat.',
           'In de intake kijken we naar wat je precies eet en op welke tijden, zodat we het patroon achter jouw dip kunnen achterhalen.',
         ],
       },
@@ -335,7 +335,7 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Kan mijn cyclus invloed hebben op hoe helder ik kan denken?',
         answer: [
-          'Ja. Oestrogeen en progesteron hebben allebei invloed op je hersenfunctie, en de schommelingen daarin gedurende je cyclus kunnen zich uiten in concentratie en geheugen. Veel vrouwen merken bijvoorbeeld rond de menstruatie of in de dagen ervoor dat ze minder scherp zijn.',
+          'Ja. Oestrogeen en progesteron hebben allebei invloed op je hersenfunctie en de schommelingen daarin gedurende je cyclus kunnen zich uiten in concentratie en geheugen. Veel vrouwen merken bijvoorbeeld rond de menstruatie of in de dagen ervoor dat ze minder scherp zijn.',
           'Ook tijdens de perimenopauze, wanneer hormoonspiegels grilliger worden, komt brain fog veel voor.',
           'In de intake kijken we of jouw klachten een patroon volgen dat samenhangt met je cyclus, zodat we daar gericht op kunnen inspelen.',
         ],
@@ -375,7 +375,7 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Wat kan ik zelf al doen tegen brain fog?',
         answer: [
-          'Zorg voor een stabiele bloedsuiker door regelmatig te eten met voldoende eiwitten en vezels, en let op voldoende water drinken gedurende de dag.',
+          'Zorg voor een stabiele bloedsuiker door regelmatig te eten met voldoende eiwitten en vezels en let op voldoende water drinken gedurende de dag.',
           'Houd bij op welke momenten in je cyclus of dag je klachten het sterkst zijn, dat geeft vaak al waardevolle aanwijzingen.',
           'Wil je uitzoeken wat er bij jou precies achter je brain fog zit, van bloedsuiker tot schildklier tot darmen? In een gratis kennismaking bekijken we samen jouw situatie.',
         ],
@@ -399,7 +399,7 @@ export const energieContent2: ComplaintContentMap = {
     explanationHeading: 'Wat zijn bloedsuikerschommelingen precies?',
     explanation: [
       'Je bloedsuiker, ofwel de hoeveelheid glucose in je bloed, schommelt de hele dag een beetje, dat is normaal. Bij bloedsuikerschommelingen gaat het om uitgesproken pieken en dalen: bijvoorbeeld een snelle stijging na een koolhydraatrijke maaltijd, gevolgd door een scherpe daling een uur of twee later. Die daling kan klachten geven zoals trillerigheid, licht gevoel in het hoofd, hartkloppingen, zweten en prikkelbaarheid.',
-      'Wanneer die daling duidelijk merkbaar is en samengaat met dit soort klachten, wordt dit soms reactieve hypoglykemie genoemd: een relatief lage bloedsuiker als reactie op een eerdere piek, niet te verwarren met de bloedsuikerwaarden die bij diabetes worden gemeten. Het is een functioneel patroon, geen diagnose op zich, en het kan bij vrijwel iedereen voorkomen, ook zonder dat er sprake is van diabetes of insulineresistentie.',
+      'Wanneer die daling duidelijk merkbaar is en samengaat met dit soort klachten, wordt dit soms reactieve hypoglykemie genoemd: een relatief lage bloedsuiker als reactie op een eerdere piek, niet te verwarren met de bloedsuikerwaarden die bij diabetes worden gemeten. Het is een functioneel patroon, geen diagnose op zich en het kan bij vrijwel iedereen voorkomen, ook zonder dat er sprake is van diabetes of insulineresistentie.',
       'Steeds meer vrouwen gebruiken een glucosemeter of CGM (continue glucosemeter) om dit soort schommelingen inzichtelijk te maken. Dat kan waardevolle informatie geven over hoe jouw lichaam op bepaalde maaltijden reageert, maar de cijfers zeggen niet alles: context, klachten en patroon over meerdere dagen zijn minstens zo belangrijk als één losse meting.',
     ],
     factorsHeading: 'Wat kan meespelen bij bloedsuikerschommelingen?',
@@ -420,11 +420,11 @@ export const energieContent2: ComplaintContentMap = {
       },
       {
         title: 'Alcohol en cafeïne',
-        text: 'Beide kunnen invloed hebben op je bloedsuikerregulatie. Alcohol kan bijvoorbeeld enkele uren later een daling geven, en cafeïne op een lege maag kan schommelingen juist versterken.',
+        text: 'Beide kunnen invloed hebben op je bloedsuikerregulatie. Alcohol kan bijvoorbeeld enkele uren later een daling geven en cafeïne op een lege maag kan schommelingen juist versterken.',
       },
       {
         title: 'Stress en slaaptekort',
-        text: 'Stresshormonen beïnvloeden je bloedsuikerregulatie, en te weinig slaap maakt je gevoeliger voor schommelingen. Dit verklaart waarom je op een drukke, slecht geslapen dag sneller trillerig of duizelig kunt worden.',
+        text: 'Stresshormonen beïnvloeden je bloedsuikerregulatie en te weinig slaap maakt je gevoeliger voor schommelingen. Dit verklaart waarom je op een drukke, slecht geslapen dag sneller trillerig of duizelig kunt worden.',
       },
     ],
     widerHeading: 'Verder kijken dan alleen je bloedsuiker',
@@ -492,7 +492,7 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Wat is het verschil met insulineresistentie?',
         answer: [
           'Bloedsuikerschommelingen zijn pieken en dalen in je bloedsuiker gedurende de dag, terwijl insulineresistentie betekent dat je lichaamscellen minder goed reageren op insuline, waardoor je bloedsuiker structureel moeilijker gereguleerd wordt.',
-          'De twee kunnen samenhangen: langdurige schommelingen kunnen bijdragen aan een verminderde insulinegevoeligheid, en insulineresistentie kan op zijn beurt weer schommelingen versterken.',
+          'De twee kunnen samenhangen: langdurige schommelingen kunnen bijdragen aan een verminderde insulinegevoeligheid en insulineresistentie kan op zijn beurt weer schommelingen versterken.',
           'Omdat insulineresistentie elders op deze site een eigen pagina heeft, ga ik daar hier niet dieper op in, maar in de intake kijken we of dit voor jou relevant is.',
         ],
       },

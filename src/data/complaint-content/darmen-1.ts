@@ -71,9 +71,9 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Waarom zet mijn buik in de loop van de dag steeds verder op?',
         answer: [
-          'Dit patroon, ’s ochtends plat en ’s avonds bol, wijst vaak op gasvorming die zich gedurende de dag opbouwt. Elke maaltijd levert weer nieuwe voeding voor bacteriën in je darmen, en als die te veel gas produceren of als je darmen trager werken, stapelt dit zich op naarmate de dag vordert.',
+          'Dit patroon, ’s ochtends plat en ’s avonds bol, wijst vaak op gasvorming die zich gedurende de dag opbouwt. Elke maaltijd levert weer nieuwe voeding voor bacteriën in je darmen en als die te veel gas produceren of als je darmen trager werken, stapelt dit zich op naarmate de dag vordert.',
           'Ook lucht die je inslikt tijdens het praten, eten en drinken telt mee, net als hoe snel je eet en hoeveel beweging je hebt gehad.',
-          'In een traject kijk ik naar je dagpatroon: wat je eet, wanneer, hoe snel, en wat je merkt na elke maaltijd. Zo kunnen we zien of het vooral gasvorming, vocht of een combinatie is.',
+          'In een traject kijk ik naar je dagpatroon: wat je eet, wanneer, hoe snel en wat je merkt na elke maaltijd. Zo kunnen we zien of het vooral gasvorming, vocht of een combinatie is.',
         ],
       },
       {
@@ -88,7 +88,7 @@ export const darmenContent1: ComplaintContentMap = {
         question: 'Moet ik fodmaps gaan mijden om van mijn opgeblazen buik af te komen?',
         answer: [
           'Fodmaps kunnen bij gevoelige darmen bijdragen aan een opgeblazen buik, maar dat betekent niet dat iedereen gebaat is bij het volledig schrappen van deze voedingsmiddelen. Een streng en langdurig fodmap-arm dieet zonder begeleiding kan je voeding onnodig beperken en je darmflora juist minder divers maken.',
-          'Beter is om eerst te achterhalen welke voedingsmiddelen bij jou specifiek klachten geven, en waarom je darmen daar gevoelig voor zijn.',
+          'Beter is om eerst te achterhalen welke voedingsmiddelen bij jou specifiek klachten geven en waarom je darmen daar gevoelig voor zijn.',
           'In mijn begeleiding kijken we gericht naar jouw voedingspatroon en reacties, zodat je weet welke aanpassingen voor jou echt nodig zijn.',
         ],
       },
@@ -105,7 +105,7 @@ export const darmenContent1: ComplaintContentMap = {
         answer: [
           'Voor veel vrouwen wel. Snel eten en onvoldoende kauwen zorgen voor meer ingeslikte lucht en grotere voedseldeeltjes die je darmen harder moeten bewerken. Dat kan bijdragen aan een opgeblazen gevoel, zelfs bij voeding die je verder goed verdraagt.',
           'Het is meestal niet de enige oplossing, maar wel een makkelijk startpunt dat je zelf direct kunt toepassen.',
-          'In een traject bekijken we of eetsnelheid bij jou een rol speelt, en zo ja, hoe je dit praktisch kunt aanpakken naast andere aandachtspunten.',
+          'In een traject bekijken we of eetsnelheid bij jou een rol speelt en zo ja, hoe je dit praktisch kunt aanpakken naast andere aandachtspunten.',
         ],
       },
       {
@@ -113,7 +113,7 @@ export const darmenContent1: ComplaintContentMap = {
         answer: [
           'Ja. Als ontlasting langer in je darmen blijft, hebben bacteriën meer tijd om te fermenteren, wat extra gasvorming geeft. Een trage stoelgang gaat daarom vaak samen met een opgeblazen buik.',
           'Soms merk je duidelijk verlichting na een goede stoelgang, wat een sterke aanwijzing is dat obstipatie meespeelt.',
-          'In mijn begeleiding kijken we naar de oorzaak van je trage stoelgang, bijvoorbeeld vezelinname, vochtinname, beweging of stress, en werken we van daaruit naar een oplossing toe.',
+          'In mijn begeleiding kijken we naar de oorzaak van je trage stoelgang, bijvoorbeeld vezelinname, vochtinname, beweging of stress en werken we van daaruit naar een oplossing toe.',
         ],
       },
       {
@@ -255,7 +255,7 @@ export const darmenContent1: ComplaintContentMap = {
 
   'pds': {
     intro: [
-      'Je hebt al onderzoek laten doen, misschien wel een gastroscopie of coloscopie, en de uitslag was steeds “niets bijzonders gevonden”. Toch heb je bijna dagelijks buikpijn, krampen en een onvoorspelbare ontlasting die van diarree naar verstopping kan wisselen, soms binnen dezelfde week. De diagnose PDS is gesteld, maar daarmee is de klacht niet weg.',
+      'Je hebt al onderzoek laten doen, misschien wel een gastroscopie of coloscopie en de uitslag was steeds “niets bijzonders gevonden”. Toch heb je bijna dagelijks buikpijn, krampen en een onvoorspelbare ontlasting die van diarree naar verstopping kan wisselen, soms binnen dezelfde week. De diagnose PDS is gesteld, maar daarmee is de klacht niet weg.',
       'Je bent bang geworden voor bepaalde etentjes, een lange dag op kantoor zonder makkelijk toilet in de buurt, of een weekendje weg waarbij je niet weet hoe je darmen zich gaan gedragen. Je wilt niet je hele leven om je darmen heen blijven plannen, maar begrijpen wat jouw PDS precies triggert en wat je daaraan kunt doen.',
       'Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige begeleid ik je niet met een standaard fodmap-lijstje, maar met uitgebreide intakeformulieren en een persoonlijke intake. Met de CIRCLE-methode leg ik jouw gezondheidspuzzel: wat triggert jouw PDS, wat houdt het in stand en waar kun je concreet iets veranderen.',
     ],
@@ -271,7 +271,7 @@ export const darmenContent1: ComplaintContentMap = {
     explanationHeading: 'Wat is PDS precies?',
     explanation: [
       'PDS, het prikkelbare darm syndroom, is een diagnose van uitsluiting. Dat betekent dat andere aandoeningen, zoals coeliakie, IBD of infecties, eerst zijn uitgesloten door de huisarts of maag-darm-leverarts, voordat de diagnose PDS wordt gesteld. Er is dan geen zichtbare afwijking te vinden in je darmen, terwijl de klachten wel degelijk reëel en vaak flink belastend zijn.',
-      'Binnen PDS wordt onderscheid gemaakt tussen verschillende vormen: IBS-C, waarbij verstopping op de voorgrond staat, IBS-D, waarbij diarree overheerst, en IBS-M, een mengvorm van beide. Klachten zoals buikpijn, een opgeblazen gevoel, krampen en een onvoorspelbaar stoelgangpatroon horen bij alle vormen, maar de aanpak kan verschillen afhankelijk van welke vorm bij jou past.',
+      'Binnen PDS wordt onderscheid gemaakt tussen verschillende vormen: IBS-C, waarbij verstopping op de voorgrond staat, IBS-D, waarbij diarree overheerst en IBS-M, een mengvorm van beide. Klachten zoals buikpijn, een opgeblazen gevoel, krampen en een onvoorspelbaar stoelgangpatroon horen bij alle vormen, maar de aanpak kan verschillen afhankelijk van welke vorm bij jou past.',
       'Bij PDS spelen vaak meerdere triggers tegelijk een rol: bepaalde voedingsmiddelen, vooral fodmaps, stress en angst voor klachten zelf, verstoringen in het darmmicrobioom en een verhoogde gevoeligheid van je darmzenuwstelsel. Die laatste factor betekent dat je darmen sneller reageren op prikkels die bij iemand anders geen enkele klacht geven. Dat maakt PDS geen “verzonnen” of “alleen psychisch” probleem, maar een reëel samenspel tussen lichaam en zenuwstelsel.',
     ],
     factorsHeading: 'Wat kan jouw PDS-klachten triggeren of in stand houden?',
@@ -323,7 +323,7 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Wat is het verschil tussen PDS, IBS-C, IBS-D en IBS-M?',
         answer: [
-          'PDS staat voor prikkelbare darm syndroom en is de Nederlandse naam voor wat internationaal IBS heet. Binnen PDS wordt onderscheid gemaakt in subtypen: IBS-C waarbij verstopping op de voorgrond staat, IBS-D waarbij diarree overheerst, en IBS-M, een mengvorm waarbij je klachten wisselen tussen beide.',
+          'PDS staat voor prikkelbare darm syndroom en is de Nederlandse naam voor wat internationaal IBS heet. Binnen PDS wordt onderscheid gemaakt in subtypen: IBS-C waarbij verstopping op de voorgrond staat, IBS-D waarbij diarree overheerst en IBS-M, een mengvorm waarbij je klachten wisselen tussen beide.',
           'Het onderscheid is relevant omdat de aanpak per subtype kan verschillen, bijvoorbeeld in de nadruk op vezels, vochtinname of specifieke voedingsaanpassingen.',
           'Tijdens de intake breng ik in kaart welk patroon bij jou past, zodat de aanpak aansluit bij jouw subtype PDS.',
         ],
@@ -339,7 +339,7 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Moet ik met PDS meteen fodmap-arm gaan eten?',
         answer: [
-          'Een fodmap-arme aanpak kan bij PDS helpen, maar is geen doel op zich en zeker geen langdurig streng dieet. Het doel is om via een gestructureerde aanpak te ontdekken welke voedingsmiddelen bij jou specifiek klachten geven, en die kennis daarna te gebruiken om je voeding weer te verruimen waar mogelijk.',
+          'Een fodmap-arme aanpak kan bij PDS helpen, maar is geen doel op zich en zeker geen langdurig streng dieet. Het doel is om via een gestructureerde aanpak te ontdekken welke voedingsmiddelen bij jou specifiek klachten geven en die kennis daarna te gebruiken om je voeding weer te verruimen waar mogelijk.',
           'Zonder begeleiding schrappen mensen soms onnodig veel voedingsmiddelen, wat je voeding eenzijdig maakt en je darmflora niet ten goede komt.',
           'In mijn begeleiding doorlopen we dit proces stap voor stap, zodat je uiteindelijk weet wat wel en niet bij jou past.',
         ],
@@ -381,7 +381,7 @@ export const darmenContent1: ComplaintContentMap = {
 
   'winderigheid': {
     intro: [
-      'Op je werk hou je in vergaderingen je buik zoveel mogelijk in bedwang, en thuis probeer je niet te veel op te merken te laten vallen als er visite is. Je buik borrelt en rommelt, soms zo hoorbaar dat je bang bent dat anderen het horen. Winderigheid overkomt iedereen weleens, maar bij jou is het inmiddels een dagelijks terugkerend ongemak.',
+      'Op je werk hou je in vergaderingen je buik zoveel mogelijk in bedwang en thuis probeer je niet te veel op te merken te laten vallen als er visite is. Je buik borrelt en rommelt, soms zo hoorbaar dat je bang bent dat anderen het horen. Winderigheid overkomt iedereen weleens, maar bij jou is het inmiddels een dagelijks terugkerend ongemak.',
       'Je wilt niet steeds bezig zijn met de vraag of je wel of niet naar het toilet kunt gaan, of een houding kunnen aannemen zonder dat je buik zich meldt. Gewoon een dag door je heen kunnen zonder dat je darmen constant aandacht vragen, dat is wat je wilt.',
       'Als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige kijk ik met je mee naar wat er precies achter deze winderigheid zit. Via uitgebreide intakeformulieren en een persoonlijke intake leg ik met de CIRCLE-methode jouw gezondheidspuzzel, zodat we niet zomaar wat voedingsmiddelen schrappen, maar de oorzaak boven tafel krijgen.',
     ],
@@ -397,7 +397,7 @@ export const darmenContent1: ComplaintContentMap = {
     explanationHeading: 'Waar komt overmatige winderigheid vandaan?',
     explanation: [
       'Winderigheid ontstaat wanneer bacteriën in je darmen koolhydraten fermenteren die niet volledig zijn verteerd in je dunne darm. Bij die fermentatie komen gassen vrij die je lichaam via winderigheid kwijt moet. Een beetje gasvorming is volstrekt normaal, maar wanneer dit overmatig is of gepaard gaat met een opgeblazen buik en ongemak, is er meer aan de hand.',
-      'Een belangrijke oorzaak is de hoeveelheid en het type koolhydraten dat je eet: vezelrijke voeding, peulvruchten, bepaalde granen en fodmaps fermenteren makkelijker en geven meer gas. Ook lactosemalabsorptie, waarbij je lichaam onvoldoende het enzym lactase aanmaakt om melksuiker af te breken, en fructosemalabsorptie, waarbij fruitsuiker slecht wordt opgenomen, zijn veelvoorkomende oorzaken van overmatige winderigheid.',
+      'Een belangrijke oorzaak is de hoeveelheid en het type koolhydraten dat je eet: vezelrijke voeding, peulvruchten, bepaalde granen en fodmaps fermenteren makkelijker en geven meer gas. Ook lactosemalabsorptie, waarbij je lichaam onvoldoende het enzym lactase aanmaakt om melksuiker af te breken en fructosemalabsorptie, waarbij fruitsuiker slecht wordt opgenomen, zijn veelvoorkomende oorzaken van overmatige winderigheid.',
       'Daarnaast speelt lucht inslikken een rol: snel eten, kauwgom kauwen, koolzuurhoudende drank drinken en veel praten tijdens het eten zorgen voor extra lucht in je spijsverteringskanaal. En bij dysbiose of SIBO, een overgroei van bacteriën in je dunne darm, ontstaat er vaak veel meer gas dan normaal, ook bij voeding die je voorheen goed verdroeg.',
     ],
     factorsHeading: 'Wat kan jouw winderigheid veroorzaken of verergeren?',

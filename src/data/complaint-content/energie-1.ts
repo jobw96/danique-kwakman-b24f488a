@@ -19,12 +19,12 @@ export const energieContent1: ComplaintContentMap = {
     explanationHeading: 'Wat zit er achter aanhoudende vermoeidheid?',
     explanation: [
       'Vermoeidheid is een signaal, geen op zichzelf staande klacht. Je lichaam laat je weten dat er ergens te veel wordt gevraagd of te weinig wordt aangevuld. Dat kan te maken hebben met je bloed, je hormonen, je bloedsuiker, je slaap of een combinatie daarvan. Daarom is “gewoon meer rusten” lang niet altijd de oplossing.',
-      'Bekende oorzaken zijn een laag ijzergehalte of ferritine, een tekort aan vitamine B12 of vitamine D, en een schildklier die trager werkt dan zou moeten. Ook grote bloedsuikerschommelingen kosten je lichaam veel energie: na een koolhydraatrijke lunch een piek, daarna een dip. Slaapkwaliteit en langdurige stress spelen eveneens mee, ook als je op papier genoeg uren slaapt.',
+      'Bekende oorzaken zijn een laag ijzergehalte of ferritine, een tekort aan vitamine B12 of vitamine D en een schildklier die trager werkt dan zou moeten. Ook grote bloedsuikerschommelingen kosten je lichaam veel energie: na een koolhydraatrijke lunch een piek, daarna een dip. Slaapkwaliteit en langdurige stress spelen eveneens mee, ook als je op papier genoeg uren slaapt.',
       'Bij aanhoudende, onverklaarde vermoeidheid is bloedonderzoek via de huisarts een logische eerste stap, bijvoorbeeld om ijzer, ferritine, B12, vitamine D en schildklierwaarden te laten controleren. Vaak vullen we dat aan met gerichter laboratoriumonderzoek, zodat we niet alleen weten dát je moe bent, maar ook waarom.',
     ],
     factorsHeading: 'Wat kan meespelen bij vermoeidheid en energiedips?',
     factorsIntro:
-      'Vermoeidheid heeft zelden één oorzaak. Ik kijk daarom breder dan alleen “slaap je genoeg”, en breng samen met jou in kaart welke factoren bij jou een rol spelen.',
+      'Vermoeidheid heeft zelden één oorzaak. Ik kijk daarom breder dan alleen “slaap je genoeg” en breng samen met jou in kaart welke factoren bij jou een rol spelen.',
     factors: [
       {
         title: 'IJzer, ferritine en B12',
@@ -86,7 +86,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Kan een ijzertekort de oorzaak zijn van mijn vermoeidheid?',
         answer: [
           'Ja, dat kan. Vooral een laag ferritinegehalte, zelfs zonder officiële bloedarmoede, wordt vaak over het hoofd gezien terwijl het al flinke vermoeidheid kan veroorzaken. Bij vrouwen met een hevige menstruatie komt een laag ferritine relatief vaak voor.',
-          'In een traject kijken we of ijzer en ferritine bij jou al zijn onderzocht, en of aanvullend bloedonderzoek zinvol is.',
+          'In een traject kijken we of ijzer en ferritine bij jou al zijn onderzocht en of aanvullend bloedonderzoek zinvol is.',
         ],
       },
       {
@@ -107,7 +107,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Kan stress mij lichamelijk moe maken?',
         answer: [
           'Absoluut. Langdurige stress houdt je lichaam in een verhoogde staat van paraatheid, wat energie kost, ook zonder dat je fysiek veel doet. Veel vrouwen voelen zich daardoor tegelijk moe én opgejaagd.',
-          'In een traject kijken we naar je stressbelasting en herstelmomenten, en hoe je die praktisch kunt vergroten binnen je drukke leven.',
+          'In een traject kijken we naar je stressbelasting en herstelmomenten en hoe je die praktisch kunt vergroten binnen je drukke leven.',
         ],
       },
       {
@@ -121,8 +121,8 @@ export const energieContent1: ComplaintContentMap = {
   },
   'cravings-en-bloedsuiker': {
     intro: [
-      'Je hebt net gegeten, en toch trekt de trommel met koekjes aan je. ’s Avonds op de bank sluipt de hand steeds weer naar de chipszak, terwijl je eigenlijk helemaal geen trek had voordat je ging zitten. En als een maaltijd te lang uitblijft, word je ronduit chagrijnig: hangry, zoals dat tegenwoordig heet.',
-      'Cravings voelen vaak als een gebrek aan wilskracht, maar meestal is het een signaal van je bloedsuiker. Grote schommelingen zorgen voor pieken en dalen die je lichaam wil bijsturen, en dat doet het het liefst met snelle suikers. Snap je hoe dat werkt, dan kun je er ook iets aan doen.',
+      'Je hebt net gegeten en toch trekt de trommel met koekjes aan je. ’s Avonds op de bank sluipt de hand steeds weer naar de chipszak, terwijl je eigenlijk helemaal geen trek had voordat je ging zitten. En als een maaltijd te lang uitblijft, word je ronduit chagrijnig: hangry, zoals dat tegenwoordig heet.',
+      'Cravings voelen vaak als een gebrek aan wilskracht, maar meestal is het een signaal van je bloedsuiker. Grote schommelingen zorgen voor pieken en dalen die je lichaam wil bijsturen en dat doet het het liefst met snelle suikers. Snap je hoe dat werkt, dan kun je er ook iets aan doen.',
       'Ik kijk met je naar wat er in jouw dagelijkse eetpatroon gebeurt: hoe je maaltijden zijn opgebouwd, wat er rond sport en slaap speelt en of je cyclus een rol speelt in jouw cravings. Vanuit mijn ervaring als orthomoleculair hormoon- en darmtherapeut zoek ik naar wat bij jou werkt, in plaats van een standaard dieetadvies.',
     ],
     recognition: [
@@ -136,7 +136,7 @@ export const energieContent1: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat gebeurt er bij cravings en bloedsuikerschommelingen?',
     explanation: [
-      'Elke keer dat je eet, stijgt je bloedsuiker. Bij een maaltijd met vooral snelle koolhydraten, zoals wit brood, pasta of iets zoets, stijgt je bloedsuiker snel en hoog. Je lichaam maakt vervolgens veel insuline aan om dat weer te verlagen, waardoor je bloedsuiker net zo snel weer omlaag schiet. Die dip voelt als trek, vermoeidheid of onrust, en je lichaam grijpt daarbij het liefst naar iets wat snel weer energie geeft: suiker.',
+      'Elke keer dat je eet, stijgt je bloedsuiker. Bij een maaltijd met vooral snelle koolhydraten, zoals wit brood, pasta of iets zoets, stijgt je bloedsuiker snel en hoog. Je lichaam maakt vervolgens veel insuline aan om dat weer te verlagen, waardoor je bloedsuiker net zo snel weer omlaag schiet. Die dip voelt als trek, vermoeidheid of onrust en je lichaam grijpt daarbij het liefst naar iets wat snel weer energie geeft: suiker.',
       'Voldoende eiwit, vezels en gezonde vetten bij een maaltijd vertragen die opname van suikers, waardoor je bloedsuiker stabieler blijft en je langer verzadigd bent. Ontbreken deze bouwstenen, dan is de kans op cravings een paar uur later een stuk groter, ook als je “gezond” dacht te eten.',
       'Ook factoren buiten je bord spelen mee. Slaaptekort verhoogt de hunkering naar suiker- en vetrijk eten, doordat je verzadigingshormonen dan minder goed werken. En in de week voor je menstruatie zorgt de daling van progesteron en oestrogeen er bij veel vrouwen voor dat cravings, vooral naar zoet en chocola, flink toenemen.',
     ],
@@ -150,7 +150,7 @@ export const energieContent1: ComplaintContentMap = {
       },
       {
         title: 'Maaltijdopbouw en timing',
-        text: 'Lange periodes zonder eten, gevolgd door een uitgebreide maaltijd, verstoren je bloedsuikerbalans. Regelmatige, goed opgebouwde maaltijden helpen om pieken en dalen, en daarmee cravings, te beperken.',
+        text: 'Lange periodes zonder eten, gevolgd door een uitgebreide maaltijd, verstoren je bloedsuikerbalans. Regelmatige, goed opgebouwde maaltijden helpen om pieken en dalen en daarmee cravings, te beperken.',
       },
       {
         title: 'Eten rondom sporten',
@@ -162,7 +162,7 @@ export const energieContent1: ComplaintContentMap = {
       },
       {
         title: 'Je cyclus',
-        text: 'In de tweede helft van je cyclus, en vooral vlak voor je menstruatie, dalen oestrogeen en progesteron. Dat hangt samen met een toegenomen trek in zoet en chocola bij veel vrouwen. Weten dat dit cyclusgebonden is, maakt het makkelijker om er iets voor in te plannen.',
+        text: 'In de tweede helft van je cyclus en vooral vlak voor je menstruatie, dalen oestrogeen en progesteron. Dat hangt samen met een toegenomen trek in zoet en chocola bij veel vrouwen. Weten dat dit cyclusgebonden is, maakt het makkelijker om er iets voor in te plannen.',
       },
     ],
     widerHeading: 'Verder kijken dan alleen je cravings',
@@ -189,7 +189,7 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Waarom heb ik na het eten alsnog trek in zoet?',
         answer: [
-          'Dit komt vaak doordat je maaltijd onvoldoende eiwit, vezels of vetten bevatte om je bloedsuiker stabiel te houden. Na een snelle stijging volgt dan een even snelle daling, en die dip voelt als trek in iets zoets.',
+          'Dit komt vaak doordat je maaltijd onvoldoende eiwit, vezels of vetten bevatte om je bloedsuiker stabiel te houden. Na een snelle stijging volgt dan een even snelle daling en die dip voelt als trek in iets zoets.',
           'In een traject kijken we naar de opbouw van jouw maaltijden, zodat je bloedsuiker stabieler blijft en de behoefte aan zoet afneemt.',
         ],
       },
@@ -239,13 +239,13 @@ export const energieContent1: ComplaintContentMap = {
   },
   'slaapproblemen': {
     intro: [
-      'Je ligt in bed, doodmoe, en toch blijven je gedachten malen zodra je licht uitdoet. Of je valt prima in slaap, maar wordt precies om 3 uur ’s nachts klaarwakker en ligt daarna te piekeren over de meest uiteenlopende dingen. Soms word je warm wakker, gooit het dekbed van je af en kun je daarna maar moeilijk weer inslapen.',
+      'Je ligt in bed, doodmoe en toch blijven je gedachten malen zodra je licht uitdoet. Of je valt prima in slaap, maar wordt precies om 3 uur ’s nachts klaarwakker en ligt daarna te piekeren over de meest uiteenlopende dingen. Soms word je warm wakker, gooit het dekbed van je af en kun je daarna maar moeilijk weer inslapen.',
       'Slaapproblemen ondermijnen je hele dag: je energie, je concentratie en je humeur. Het advies om “gewoon eerder naar bed te gaan” helpt dan weinig, want het probleem zit vaak niet in de hoeveelheid tijd die je in bed doorbrengt, maar in wat je lichaam ’s nachts wel of niet met rust laat.',
-      'Als orthomoleculair hormoon- en darmtherapeut kijk ik verder dan slaaphygiëne alleen. Samen zoeken we uit wat jouw nachtrust precies verstoort, of dat nu je hormonen, je bloedsuiker, je cortisol of iets anders is, en wat daarin voor jou haalbaar is om aan te pakken.',
+      'Als orthomoleculair hormoon- en darmtherapeut kijk ik verder dan slaaphygiëne alleen. Samen zoeken we uit wat jouw nachtrust precies verstoort, of dat nu je hormonen, je bloedsuiker, je cortisol of iets anders is en wat daarin voor jou haalbaar is om aan te pakken.',
     ],
     recognition: [
       'Je ligt lang wakker voordat je in slaap valt, ondanks dat je moe bent.',
-      'Je wordt midden in de nacht wakker, vaak rond dezelfde tijd, en ligt dan te piekeren.',
+      'Je wordt midden in de nacht wakker, vaak rond dezelfde tijd en ligt dan te piekeren.',
       'Je wordt warm of zelfs klam wakker, soms met een bonzend hart.',
       'Je slaapt oppervlakkig en voelt je ’s ochtends niet uitgerust, ook na genoeg uren.',
       'Je merkt dat je slaap slechter is in de week voor je menstruatie.',
@@ -276,7 +276,7 @@ export const energieContent1: ComplaintContentMap = {
       },
       {
         title: 'Cafeïne en alcohol',
-        text: 'Cafeïne blijft langer in je lichaam werkzaam dan je denkt, en kan zelfs uren later nog invloed hebben op je inslaaptijd. Alcohol helpt je sneller in slaap vallen, maar verstoort juist de diepere slaapfases later in de nacht.',
+        text: 'Cafeïne blijft langer in je lichaam werkzaam dan je denkt en kan zelfs uren later nog invloed hebben op je inslaaptijd. Alcohol helpt je sneller in slaap vallen, maar verstoort juist de diepere slaapfases later in de nacht.',
       },
       {
         title: 'Progesteron en perimenopauze',
@@ -321,8 +321,8 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Helpt het om cafeïne of alcohol te laten staan voor betere slaap?',
         answer: [
-          'Vaak wel. Cafeïne kan nog uren na inname invloed hebben op je inslaaptijd, en alcohol verstoort de diepere slaapfases later in de nacht, ook al voel je je er in eerste instantie ontspannen door.',
-          'In een traject kijken we naar jouw gebruik en timing, en wat voor jou haalbaar is om aan te passen.',
+          'Vaak wel. Cafeïne kan nog uren na inname invloed hebben op je inslaaptijd en alcohol verstoort de diepere slaapfases later in de nacht, ook al voel je je er in eerste instantie ontspannen door.',
+          'In een traject kijken we naar jouw gebruik en timing en wat voor jou haalbaar is om aan te passen.',
         ],
       },
       {
@@ -358,8 +358,8 @@ export const energieContent1: ComplaintContentMap = {
   'stress-en-herstel': {
     intro: [
       'Je staat aan, de hele dag door. Zelfs op een zondagmiddag lukt het je nauwelijks om echt stil te zitten: er is altijd nog iets te doen, te plannen of te regelen. En als er dan eindelijk een rustige week aankomt, of vakantie, word je juist ziek. Alsof je lichaam pas dan de kans grijpt om in te storten.',
-      'Je herkent misschien dat je na een drukke werkweek dagenlang nodig hebt om weer een beetje bij te komen, terwijl vroeger een avondje op de bank al genoeg was. Dat gevoel van “opgejaagd zijn zonder duidelijke reden” is vermoeiend, en het went niet, hoe lang het ook al duurt.',
-      'Ik kijk met je naar het verschil tussen wat je van jezelf vraagt en wat je lichaam op dit moment aankan. Vanuit mijn achtergrond als voormalig verpleegkundige en orthomoleculair hormoon- en darmtherapeut zoek ik met je uit wat jouw herstel in de weg zit, en wat daarin praktisch haalbaar is.',
+      'Je herkent misschien dat je na een drukke werkweek dagenlang nodig hebt om weer een beetje bij te komen, terwijl vroeger een avondje op de bank al genoeg was. Dat gevoel van “opgejaagd zijn zonder duidelijke reden” is vermoeiend en het went niet, hoe lang het ook al duurt.',
+      'Ik kijk met je naar het verschil tussen wat je van jezelf vraagt en wat je lichaam op dit moment aankan. Vanuit mijn achtergrond als voormalig verpleegkundige en orthomoleculair hormoon- en darmtherapeut zoek ik met je uit wat jouw herstel in de weg zit en wat daarin praktisch haalbaar is.',
     ],
     recognition: [
       'Je voelt je vaak opgejaagd, ook als er op dat moment niets bijzonders speelt.',
@@ -374,7 +374,7 @@ export const energieContent1: ComplaintContentMap = {
     explanation: [
       'Je lichaam is goed uitgerust om met korte periodes van stress om te gaan. Een spannende deadline of een drukke dag kost energie, maar met voldoende rust erna herstel je daar prima van. Het wordt anders wanneer de stressbelasting structureel groter is dan je herstelcapaciteit: als je lichaam nooit écht de kans krijgt om bij te komen, stapelt de belasting zich op.',
       'Cortisol, je belangrijkste stresshormoon, hoort een duidelijk dagritme te hebben: hoog in de ochtend om je op gang te helpen, geleidelijk dalend richting de avond zodat je tot rust kunt komen. Bij langdurige overbelasting kan dit ritme verstoord raken, wat zich uit in moe-maar-opgejaagd voelen, slechter slapen en trager herstellen na een drukke periode. Ziek worden zodra de druk wegvalt, is daarbij een bekend patroon: zolang je “aan” staat, houdt je lichaam vol, maar zodra de spanning wegvalt, grijpt het de rust aan om alsnog te reageren.',
-      'Herstel is niet alleen een kwestie van meer vrije tijd inplannen. Ook je ademhaling, beweging, en wat je eet spelen een rol. Te weinig eten, of onregelmatig eten tijdens drukke periodes, is zelf ook een stressfactor voor je lichaam, ook al lijkt het in eerste instantie een besparing van tijd.',
+      'Herstel is niet alleen een kwestie van meer vrije tijd inplannen. Ook je ademhaling, beweging en wat je eet spelen een rol. Te weinig eten, of onregelmatig eten tijdens drukke periodes, is zelf ook een stressfactor voor je lichaam, ook al lijkt het in eerste instantie een besparing van tijd.',
     ],
     factorsHeading: 'Wat kan meespelen bij stress en moeilijk herstellen?',
     factorsIntro:
@@ -433,7 +433,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Waarom heb ik na een drukke week zo lang nodig om te herstellen?',
         answer: [
           'Als de belasting structureel groter is dan je herstelcapaciteit, stapelt vermoeidheid zich op. Eén rustige avond is dan niet meer genoeg om weer bij te komen.',
-          'We kijken samen naar waar jouw belasting en herstel precies uit elkaar liggen, en wat daarin haalbaar is aan te passen.',
+          'We kijken samen naar waar jouw belasting en herstel precies uit elkaar liggen en wat daarin haalbaar is aan te passen.',
         ],
       },
       {
@@ -467,7 +467,7 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Wat kan ik verwachten van een gratis kennismaking?',
         answer: [
-          'In de kennismaking bespreken we jouw klachten, wat er speelt rond stress en herstel, en wat je al hebt geprobeerd. Zo krijg je een beeld van hoe ik werk en of een traject bij jouw situatie past.',
+          'In de kennismaking bespreken we jouw klachten, wat er speelt rond stress en herstel en wat je al hebt geprobeerd. Zo krijg je een beeld van hoe ik werk en of een traject bij jouw situatie past.',
           'Er is geen verplichting aan verbonden: het is vooral een moment om te kijken of we bij elkaar passen.',
         ],
       },
@@ -475,7 +475,7 @@ export const energieContent1: ComplaintContentMap = {
   },
   'insulineresistentie': {
     intro: [
-      'Je bent voorzichtiger gaan eten, beweegt genoeg, en toch lukt afvallen niet of gaat het buikvet er juist niet af. Na maaltijden voel je je regelmatig loom of moe, alsof je lichaam meer moeite heeft om met je eten om te gaan dan zou moeten. Misschien is er ook de diagnose PCOS/PMOS gesteld of vermoed je dat er iets met je bloedsuiker speelt.',
+      'Je bent voorzichtiger gaan eten, beweegt genoeg en toch lukt afvallen niet of gaat het buikvet er juist niet af. Na maaltijden voel je je regelmatig loom of moe, alsof je lichaam meer moeite heeft om met je eten om te gaan dan zou moeten. Misschien is er ook de diagnose PCOS/PMOS gesteld of vermoed je dat er iets met je bloedsuiker speelt.',
       'Insulineresistentie betekent dat je cellen minder goed reageren op insuline, waardoor je lichaam steeds meer insuline moet aanmaken om je bloedsuiker op peil te houden. Dat proces merk je niet direct, maar wel via de gevolgen: moeilijker afvallen, buikvet dat blijft zitten, energiedips na het eten en bij sommige vrouwen ook PCOS-klachten.',
       'Als orthomoleculair hormoon- en darmtherapeut kijk ik samen met je naar wat er bij jou speelt: je voeding, beweegpatroon, slaap en je hormonen. ',
     ],
@@ -578,7 +578,7 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Is krachttraining beter dan cardio bij insulineresistentie?',
         answer: [
-          'Beide vormen van beweging hebben waarde, maar krachttraining draagt bij aan meer spiermassa, en spieren zijn een belangrijke plek waar je lichaam suiker opslaat en verbrandt. Dit kan de insulinegevoeligheid op de langere termijn verbeteren.',
+          'Beide vormen van beweging hebben waarde, maar krachttraining draagt bij aan meer spiermassa en spieren zijn een belangrijke plek waar je lichaam suiker opslaat en verbrandt. Dit kan de insulinegevoeligheid op de langere termijn verbeteren.',
           'We kijken naar wat haalbaar is binnen jouw huidige beweegpatroon en bouwen dit desgewenst samen op.',
         ],
       },

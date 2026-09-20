@@ -601,7 +601,7 @@ export const complaints: Complaint[] = [
       'PMS met stemmingswisselingen, prikkelbaarheid of somberheid voor je menstruatie? Lees hoe je het herkent en wat er achter kan zitten.',
     teaser: 'De dagen voor je menstruatie voel je jezelf niet meer.',
     intro: [
-      'Bij PMS veranderen je klachten mee met je cyclus. De week voor je menstruatie voel je je somber, prikkelbaar of emotioneel, en zodra je menstruatie begint, valt dat gevoel weg.',
+      'Bij PMS veranderen je klachten mee met je cyclus. De week voor je menstruatie voel je je somber, prikkelbaar of emotioneel en zodra je menstruatie begint, valt dat gevoel weg.',
       'Dat patroon is juist waardevolle informatie. Het vertelt iets over hoe je lichaam omgaat met de hormonale wisselingen in de tweede helft van je cyclus.',
     ],
     signals: [

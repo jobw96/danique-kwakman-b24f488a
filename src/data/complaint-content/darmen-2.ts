@@ -3,7 +3,7 @@ import type { ComplaintContentMap } from './types';
 export const darmenContent2: ComplaintContentMap = {
   'verstopping-of-diarree': {
     intro: [
-      'Vier dagen niks, en dan opeens moet je rennen naar het toilet. Of andersom: je zit al drie dagen vast en voelt je opgeblazen en zwaar, terwijl je collega’s je zien staan met een pijnlijke grimas achter je bureau. Verstopping en diarree lijken tegenpolen, maar ze komen vaak uit dezelfde koker: een darmwerking die niet lekker loopt.',
+      'Vier dagen niks en dan opeens moet je rennen naar het toilet. Of andersom: je zit al drie dagen vast en voelt je opgeblazen en zwaar, terwijl je collega’s je zien staan met een pijnlijke grimas achter je bureau. Verstopping en diarree lijken tegenpolen, maar ze komen vaak uit dezelfde koker: een darmwerking die niet lekker loopt.',
       'Misschien herken je het van je vakanties, waarbij je systeem drie dagen op slot gaat zodra je op een ander toilet zit. Of je hebt juist het patroon dat je ’s ochtends met stress naar je werk fietst en halverwege een openbaar toilet moet zoeken. Beide kanten van dezelfde medaille vertellen je iets over hoe je darmen, je zenuwstelsel en je voeding samenwerken.',
       'Je wilt gewoon weer op een voorspelbaar moment naar de wc kunnen, zonder erover na te hoeven denken. Geen buikpijn vooraf, geen paniek over waar het dichtstbijzijnde toilet is, geen dagen bijhouden of het wel goed komt. Daar is met de juiste uitzoekslag echt aan te werken.',
     ],
@@ -75,14 +75,14 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Wat heeft mijn schildklier te maken met mijn stoelgang?',
         answer: [
-          'Je schildklier stuurt je stofwisseling aan, en daarmee ook de snelheid van je darmbewegingen. Een tragere schildklierwerking gaat vaak samen met verstopping, een snellere juist vaker met diarree of frequente stoelgang.',
+          'Je schildklier stuurt je stofwisseling aan en daarmee ook de snelheid van je darmbewegingen. Een tragere schildklierwerking gaat vaak samen met verstopping, een snellere juist vaker met diarree of frequente stoelgang.',
           'Bij aanhoudende klachten kan Danique met je meedenken over gericht bloedonderzoek naar je schildklierwaarden.',
         ],
       },
       {
         question: 'Kan magnesium helpen bij verstopping?',
         answer: [
-          'Magnesium speelt een rol bij het ontspannen van de darmspier, en een tekort kan bijdragen aan een tragere stoelgang. Of dit bij jou meespeelt, hangt af van je totale voedingspatroon en leefstijl.',
+          'Magnesium speelt een rol bij het ontspannen van de darmspier en een tekort kan bijdragen aan een tragere stoelgang. Of dit bij jou meespeelt, hangt af van je totale voedingspatroon en leefstijl.',
           'Danique brengt in de intake in kaart of magnesium een factor kan zijn en denkt mee over een aanpak die bij jou past.',
         ],
       },
@@ -115,14 +115,14 @@ export const darmenContent2: ComplaintContentMap = {
       'Je zit al na een klein bord vol en voelt je daarna nog lang zwaar.',
       'Misselijkheid overvalt je regelmatig na het eten, zonder duidelijke reden.',
       'Je gebruikt al langere tijd maagzuurremmers en vraagt je af of dit nog nodig is of dat er iets anders speelt.',
-      'Je eet vaak snel, tussendoor of laat op de avond, en merkt dat je klachten daarna toenemen.',
+      'Je eet vaak snel, tussendoor of laat op de avond en merkt dat je klachten daarna toenemen.',
       'Je bent moe of duizelig zonder duidelijke oorzaak, terwijl je al jaren maagzuurremmers gebruikt.',
     ],
     explanationHeading: 'Wat er achter maagzuur- en verteringsklachten kan zitten',
     explanation: [
-      'Maagzuur krijgt vaak de schuld van branderige klachten, maar te weinig maagzuur kan precies dezelfde klachten geven als te veel. Voedsel wordt dan onvoldoende afgebroken, blijft langer liggen en de druk in de maag neemt toe, waardoor zuur makkelijker omhoog komt. Eettempo speelt hierin een grote rol: wie snel eet, kauwt onvoldoende, en kauwen is de eerste stap van vertering die je maag daarna een hoop werk bespaart.',
+      'Maagzuur krijgt vaak de schuld van branderige klachten, maar te weinig maagzuur kan precies dezelfde klachten geven als te veel. Voedsel wordt dan onvoldoende afgebroken, blijft langer liggen en de druk in de maag neemt toe, waardoor zuur makkelijker omhoog komt. Eettempo speelt hierin een grote rol: wie snel eet, kauwt onvoldoende en kauwen is de eerste stap van vertering die je maag daarna een hoop werk bespaart.',
       'Langdurig gebruik van maagzuurremmers kan invloed hebben op de opname van vitamine B12 en ijzer, omdat maagzuur nodig is om deze stoffen goed uit voeding vrij te maken. Ook de vertering van eiwitten verloopt minder soepel bij een lagere maagzuurgraad, wat kan bijdragen aan een vol of zwaar gevoel. Dit betekent niet dat je zomaar met je medicatie moet stoppen – dat overleg je altijd met je (huis)arts – maar het is wel iets om samen met Danique in kaart te brengen als je al lange tijd klachten houdt.',
-      'Andere factoren die meespelen zijn laat op de avond eten, waardoor je lichaam onvoldoende tijd heeft om te verteren voor je gaat liggen, een hiatus hernia waarbij een deel van de maag door het middenrif omhoog verschuift, en een infectie met Helicobacter pylori, een bacterie die de maagwand kan prikkelen. Deze laatste twee worden medisch vastgesteld en vallen buiten het werkterrein van Danique, maar ze helpt je wel te herkennen wanneer doorverwijzing zinvol is.',
+      'Andere factoren die meespelen zijn laat op de avond eten, waardoor je lichaam onvoldoende tijd heeft om te verteren voor je gaat liggen, een hiatus hernia waarbij een deel van de maag door het middenrif omhoog verschuift en een infectie met Helicobacter pylori, een bacterie die de maagwand kan prikkelen. Deze laatste twee worden medisch vastgesteld en vallen buiten het werkterrein van Danique, maar ze helpt je wel te herkennen wanneer doorverwijzing zinvol is.',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw verteringsklachten',
     factorsIntro: 'Bij het uitzoeken van maag- en verteringsklachten brengt Danique onder andere deze factoren in kaart:',
@@ -157,7 +157,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Mag ik zelf stoppen met maagzuurremmers?',
         answer: [
           'Nee, stop nooit zelf met voorgeschreven maagzuurremmers. Afbouwen moet altijd in overleg met je huisarts of specialist, omdat abrupt stoppen juist kan zorgen voor een tijdelijke toename van klachten.',
-          'Danique kan wel met je meedenken over voeding en leefstijl naast je medicatie, en helpt je de juiste vragen voor te bereiden voor je (huis)arts.',
+          'Danique kan wel met je meedenken over voeding en leefstijl naast je medicatie en helpt je de juiste vragen voor te bereiden voor je (huis)arts.',
         ],
       },
       {
@@ -170,7 +170,7 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Heeft langdurig maagzuurremmers gebruiken gevolgen voor mijn voedingsstoffen?',
         answer: [
-          'Maagzuur is nodig om vitamine B12 en ijzer goed uit je voeding vrij te maken, en om eiwitten te verteren. Bij langdurig gebruik van maagzuurremmers kan de opname hiervan achterblijven, wat kan bijdragen aan vermoeidheid.',
+          'Maagzuur is nodig om vitamine B12 en ijzer goed uit je voeding vrij te maken en om eiwitten te verteren. Bij langdurig gebruik van maagzuurremmers kan de opname hiervan achterblijven, wat kan bijdragen aan vermoeidheid.',
           'Danique kan met bloedonderzoek laten checken of dit bij jou speelt en denkt mee over voeding die dit ondersteunt.',
         ],
       },
@@ -178,13 +178,13 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Wat is het verschil tussen een hiatus hernia en gewone reflux?',
         answer: [
           'Bij een hiatus hernia verschuift een deel van de maag door een opening in het middenrif omhoog, wat reflux kan verergeren. Dit wordt medisch vastgesteld, bijvoorbeeld met een endoscopie.',
-          'Herken je dit patroon, dan verwijst Danique je door voor verdere diagnostiek, en kijkt ze samen met jou naar voeding en gewoontes die klachten kunnen verlichten.',
+          'Herken je dit patroon, dan verwijst Danique je door voor verdere diagnostiek en kijkt ze samen met jou naar voeding en gewoontes die klachten kunnen verlichten.',
         ],
       },
       {
         question: 'Kan Helicobacter pylori mijn maagklachten veroorzaken?',
         answer: [
-          'Dit is een bacterie die de maagwand kan prikkelen en bij een deel van de mensen met maagklachten wordt aangetroffen. Vaststellen gebeurt via een test bij de huisarts, en behandeling verloopt met medicatie.',
+          'Dit is een bacterie die de maagwand kan prikkelen en bij een deel van de mensen met maagklachten wordt aangetroffen. Vaststellen gebeurt via een test bij de huisarts en behandeling verloopt met medicatie.',
           'Danique kan je erop wijzen als je klachtenpatroon hierop lijkt en adviseert dan altijd om dit medisch te laten uitsluiten.',
         ],
       },
@@ -208,8 +208,8 @@ export const darmenContent2: ComplaintContentMap = {
   'voedselintoleranties': {
     intro: [
       'Na de lunch voel je je opgeblazen en moe, terwijl je collega dezelfde broodjes at zonder ook maar iets te merken. Je vraagt je af of het aan de tarwe ligt, de melk in je koffie, of gewoon aan een drukke dag. Voedselintoleranties zijn lastig te ontrafelen, juist omdat de klachten vaak pas uren later opduiken en niet altijd bij dezelfde maaltijd horen.',
-      'Misschien heb je al het rijtje afgestreept dat je op internet vond: geen gluten meer, geen zuivel meer, en toch blijven de klachten. Of je merkt dat een glas wijn of een stuk oude kaas je hoofdpijn geeft, en vraagt je af of dat toeval is. Anderen komen bij Danique met een waslijst aan producten die ze inmiddels vermijden, zonder dat het duidelijk beter is geworden.',
-      'Je wilt weten waar je nou daadwerkelijk op reageert, zodat je niet onnodig producten hoeft te schrappen die geen kwaad kunnen. Met gericht uitzoeken via een eetdagboek, eliminatie en herintroductie, en waar nodig laboratoriumonderzoek, kom je daar dichterbij.',
+      'Misschien heb je al het rijtje afgestreept dat je op internet vond: geen gluten meer, geen zuivel meer en toch blijven de klachten. Of je merkt dat een glas wijn of een stuk oude kaas je hoofdpijn geeft en vraagt je af of dat toeval is. Anderen komen bij Danique met een waslijst aan producten die ze inmiddels vermijden, zonder dat het duidelijk beter is geworden.',
+      'Je wilt weten waar je nou daadwerkelijk op reageert, zodat je niet onnodig producten hoeft te schrappen die geen kwaad kunnen. Met gericht uitzoeken via een eetdagboek, eliminatie en herintroductie en waar nodig laboratoriumonderzoek, kom je daar dichterbij.',
     ],
     recognition: [
       'Je krijgt regelmatig een opgeblazen buik, buikpijn of vermoeidheid na het eten, zonder precies te weten waarop.',
@@ -223,7 +223,7 @@ export const darmenContent2: ComplaintContentMap = {
     explanationHeading: 'Allergie, intolerantie of iets anders?',
     explanation: [
       'Een voedselallergie is een reactie van je afweersysteem via IgE-antistoffen, die vaak snel en soms heftig verloopt, met bijvoorbeeld zwelling, benauwdheid of huiduitslag. Dit wordt medisch vastgesteld en moet altijd door een arts worden beoordeeld. Een voedselintolerantie is iets anders: hierbij mist je lichaam bijvoorbeeld het enzym om een bepaalde stof goed af te breken, zoals bij lactose-intolerantie, of reageert je darm gevoelig op bepaalde stoffen zoals fructose of histamine. De klachten zijn vaak vager en treden pas later op, wat het lastiger maakt om de link te leggen.',
-      'Gluten vragen om extra aandacht: coeliakie is een auto-immuunreactie op gluten die alleen via bloedonderzoek en eventueel een darmbiopt door een arts wordt vastgesteld, en dit moet altijd eerst worden uitgesloten voordat je zelf gluten weglaat. Niet-coeliakie glutengevoeligheid bestaat ook, maar wordt pas overwogen nadat coeliakie is uitgesloten. Histamine-intolerantie speelt vaak op bij producten als oude kaas, wijn en gerookte vis, en kan klachten geven als hoofdpijn, blozen of een opgezette huid.',
+      'Gluten vragen om extra aandacht: coeliakie is een auto-immuunreactie op gluten die alleen via bloedonderzoek en eventueel een darmbiopt door een arts wordt vastgesteld en dit moet altijd eerst worden uitgesloten voordat je zelf gluten weglaat. Niet-coeliakie glutengevoeligheid bestaat ook, maar wordt pas overwogen nadat coeliakie is uitgesloten. Histamine-intolerantie speelt vaak op bij producten als oude kaas, wijn en gerookte vis en kan klachten geven als hoofdpijn, blozen of een opgezette huid.',
       'IgG-testen worden soms ingezet als prescreening om richting te geven aan wat mogelijk een rol speelt, maar deze uitslagen zijn een hulpmiddel en geen definitieve diagnose – een verhoogde IgG-waarde kan ook simpelweg betekenen dat je iets vaak eet. Het risico van zomaar veel producten weglaten op basis van zo’n test, of op eigen initiatief, is dat je voeding onnodig beperkt raakt zonder dat je klachten daadwerkelijk verbeteren. Een eetdagboek gecombineerd met eliminatie en gecontroleerde herintroductie geeft vaak een betrouwbaarder beeld van wat bij jou echt een rol speelt.',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw klachten na het eten',
@@ -265,7 +265,7 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Moet ik coeliakie laten uitsluiten voordat ik gluten weglaat?',
         answer: [
-          'Ja, dat is belangrijk. Coeliakie wordt vastgesteld met bloedonderzoek en eventueel een darmbiopt, en dit onderzoek is alleen betrouwbaar als je op dat moment nog gluten eet. Als je vooraf al gluten weglaat, kan de uitslag vertekend worden.',
+          'Ja, dat is belangrijk. Coeliakie wordt vastgesteld met bloedonderzoek en eventueel een darmbiopt en dit onderzoek is alleen betrouwbaar als je op dat moment nog gluten eet. Als je vooraf al gluten weglaat, kan de uitslag vertekend worden.',
           'Danique bespreekt dit altijd eerst met je, zodat je niet onnodig gluten schrapt zonder dat coeliakie is uitgesloten.',
         ],
       },
@@ -280,7 +280,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Waarom krijg ik pas uren na het eten klachten?',
         answer: [
           'Bij een intolerantie, in tegenstelling tot een allergie, kan het langer duren voordat klachten optreden, omdat het gaat om een geleidelijke reactie van je spijsvertering in plaats van een directe afweerreactie.',
-          'Dit maakt het lastiger om zelf de link te leggen, en daarom werkt Danique met een eetdagboek om patronen boven water te krijgen.',
+          'Dit maakt het lastiger om zelf de link te leggen en daarom werkt Danique met een eetdagboek om patronen boven water te krijgen.',
         ],
       },
       {

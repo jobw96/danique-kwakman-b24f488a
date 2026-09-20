@@ -19,7 +19,7 @@ export const hormonenContent1: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat is de oorzaak van menstruatieklachten?',
     explanation: [
-      'Menstruatiepijn ontstaat doordat je baarmoeder samentrekt om het baarmoederslijmvlies af te stoten. Dat gebeurt onder invloed van prostaglandines, stofjes die de spiercontracties aansturen. Bij te veel prostaglandines, of een verhouding die uit de pas loopt, worden die contracties heftiger en langduriger dan nodig. Dat voelt als kramp die uitstraalt naar je onderrug of benen, en kan gepaard gaan met misselijkheid en hoofdpijn.',
+      'Menstruatiepijn ontstaat doordat je baarmoeder samentrekt om het baarmoederslijmvlies af te stoten. Dat gebeurt onder invloed van prostaglandines, stofjes die de spiercontracties aansturen. Bij te veel prostaglandines, of een verhouding die uit de pas loopt, worden die contracties heftiger en langduriger dan nodig. Dat voelt als kramp die uitstraalt naar je onderrug of benen en kan gepaard gaan met misselijkheid en hoofdpijn.',
       'Hevig bloedverlies heeft vaak te maken met de verhouding tussen oestrogeen en progesteron. Oestrogeen bouwt het baarmoederslijmvlies op, progesteron zorgt voor stabiliteit en een gecontroleerde afstoting. Is er relatief te veel oestrogeen of te weinig progesteron, dan bouwt het slijmvlies dikker op dan nodig, met heviger en soms langduriger bloedverlies tot gevolg. Dat vergroot ook de kans op ijzertekort, wat vermoeidheid en duizeligheid verklaart.',
       'Bij aanhoudend extreme pijn, pijn tijdens seks, of bloedverlies dat je dagelijks functioneren blijvend ondermijnt, is het belangrijk dat dit medisch beoordeeld wordt, bijvoorbeeld om endometriose of vleesbomen uit te sluiten. Daarnaast speelt je bredere leefpatroon een rol: voeding, ontstekingsniveau in je lichaam, stress en de gezondheid van je darmen beïnvloeden allemaal hoe je hormonen zich gedragen rond je menstruatie.',
     ],
@@ -28,7 +28,7 @@ export const hormonenContent1: ComplaintContentMap = {
     factors: [
       { title: 'Prostaglandine-overschot', text: 'Een ontstekingsgevoelige leefstijl, met bijvoorbeeld veel bewerkte voeding of te weinig omega-3, kan de productie van prostaglandines verhogen, wat direct samenhangt met heftigere kramp.' },
       { title: 'Verstoorde oestrogeen-progesteronbalans', text: 'Te veel oestrogeen ten opzichte van progesteron zorgt voor een dikker opgebouwd slijmvlies en daardoor heviger bloedverlies bij het afstoten ervan.' },
-      { title: 'IJzertekort', text: 'Bij hevig bloedverlies raakt je ijzervoorraad uitgeput, wat vermoeidheid, duizeligheid en concentratieproblemen kan verergeren, en dat versterkt weer hoe zwaar de menstruatiedagen aanvoelen.' },
+      { title: 'IJzertekort', text: 'Bij hevig bloedverlies raakt je ijzervoorraad uitgeput, wat vermoeidheid, duizeligheid en concentratieproblemen kan verergeren en dat versterkt weer hoe zwaar de menstruatiedagen aanvoelen.' },
       { title: 'Leverbelasting', text: 'Je lever breekt overtollig oestrogeen af. Is die belast, bijvoorbeeld door alcohol, medicatiegebruik of te weinig voedingsstoffen, dan blijft er meer oestrogeen in omloop.' },
       { title: 'Darmgezondheid', text: 'Je darmen spelen een rol bij het afvoeren van afgebroken oestrogeen. Traag functionerende darmen of een verstoorde darmflora kunnen ervoor zorgen dat oestrogeen opnieuw wordt opgenomen in plaats van uitgescheiden.' },
     ],
@@ -63,7 +63,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Kan endometriose de oorzaak zijn van mijn klachten?',
         answer: [
           'Bij aanhoudende extreme pijn, pijn tijdens seks of bij plassen en poepen tijdens je menstruatie, is het belangrijk dit medisch te laten beoordelen, bijvoorbeeld door je huisarts of gynaecoloog.',
-          'Tijdens een traject werk ik altijd samen naast je (huis)arts, en richt ik me op de voedings- en leefstijlfactoren die je klachten mogelijk versterken.',
+          'Tijdens een traject werk ik altijd samen naast je (huis)arts en richt ik me op de voedings- en leefstijlfactoren die je klachten mogelijk versterken.',
         ],
       },
       {
@@ -133,7 +133,7 @@ export const hormonenContent1: ComplaintContentMap = {
     factors: [
       { title: 'Progesterontekort', text: 'Een lage progesteronproductie in de tweede cyclushelft kan het kalmerende effect ervan missen, wat onrust en prikkelbaarheid in de hand werkt.' },
       { title: 'Bloedsuikerschommelingen', text: 'Grote schommelingen in je bloedsuiker door bijvoorbeeld het overslaan van maaltijden of veel snelle koolhydraten versterken prikkelbaarheid en stemmingsdips.' },
-      { title: 'Tekorten aan magnesium en B-vitamines', text: 'Deze voedingsstoffen zijn nodig voor de aanmaak van neurotransmitters die je stemming reguleren, en een tekort kan stemmingswisselingen verergeren.' },
+      { title: 'Tekorten aan magnesium en B-vitamines', text: 'Deze voedingsstoffen zijn nodig voor de aanmaak van neurotransmitters die je stemming reguleren en een tekort kan stemmingswisselingen verergeren.' },
       { title: 'Chronische stress', text: 'Langdurige stress belast de bijnieren en kan de balans tussen cortisol en je geslachtshormonen verstoren, wat je gevoeligheid voor stemmingswisselingen vergroot.' },
       { title: 'Slaaptekort', text: 'Slecht slapen, vaak juist in de dagen voor je menstruatie, maakt je emotioneel kwetsbaarder en versterkt prikkelbaarheid overdag.' },
     ],
@@ -211,7 +211,7 @@ export const hormonenContent1: ComplaintContentMap = {
 
   'oestrogeendominantie': {
     intro: [
-      'Je borsten voelen de week voor je menstruatie zo gevoelig aan dat een knuffel al pijn doet. Je ringen passen net iets strakker, je buik voelt opgeblazen, en op de weegschaal zie je een paar kilo die er de week erna weer af zijn. Je ziet het patroon, maar begrijpt niet goed waar het vandaan komt.',
+      'Je borsten voelen de week voor je menstruatie zo gevoelig aan dat een knuffel al pijn doet. Je ringen passen net iets strakker, je buik voelt opgeblazen en op de weegschaal zie je een paar kilo die er de week erna weer af zijn. Je ziet het patroon, maar begrijpt niet goed waar het vandaan komt.',
       'Daarbij misschien ook hevig bloedverlies, stemmingsklachten en een gevoel van opgeblazen zijn dat niet alleen met je buik te maken heeft. Je vraagt je af of dit “gewoon bij vrouw-zijn” hoort, of dat er iets specifieks speelt met je hormonen.',
       'Minder vocht vasthouden, minder gevoelige borsten, een stabielere cyclus zonder die opeenstapeling van klachten in de tweede helft. Dat is waar we samen naar kijken!',
     ],
@@ -291,7 +291,7 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Kan de anticonceptiepil oestrogeendominantie veroorzaken of verergeren?',
         answer: [
-          'Het gebruik van of stoppen met hormonale anticonceptie kan invloed hebben op je natuurlijke hormoonbalans, en klachten na het stoppen zijn niet ongewoon.',
+          'Het gebruik van of stoppen met hormonale anticonceptie kan invloed hebben op je natuurlijke hormoonbalans en klachten na het stoppen zijn niet ongewoon.',
           'In mijn begeleiding kijk ik naar jouw situatie specifiek, ook als je net gestopt bent met de pil.',
         ],
       },
@@ -315,8 +315,8 @@ export const hormonenContent1: ComplaintContentMap = {
   'progesterontekort': {
     intro: [
       'De laatste week voor je menstruatie voel je je onrustig, je slaapt slechter en wordt vaker wakker rond drie uur ’s nachts. Een paar dagen voordat je menstruatie echt begint, zie je al bruinige spotting in je onderbroek, alsof je lichaam niet goed weet wanneer het moet beginnen of stoppen.',
-      'Misschien speelt er ook een kinderwens, en heb je gelezen dat progesteron daarbij een rol speelt. Je vraagt je af of dat kan verklaren waarom je cyclus onregelmatig aanvoelt, of waarom een zwangerschap tot nu toe uitblijft.',
-      'Je wilt niet die twee weken per cyclus doorbrengen in een staat van onrust en slecht slapen. Stabieler voelen in de tweede helft van je cyclus, een voorspelbaardere menstruatie, en als kinderwens speelt: een lichaam dat daar goed op is voorbereid.',
+      'Misschien speelt er ook een kinderwens en heb je gelezen dat progesteron daarbij een rol speelt. Je vraagt je af of dat kan verklaren waarom je cyclus onregelmatig aanvoelt, of waarom een zwangerschap tot nu toe uitblijft.',
+      'Je wilt niet die twee weken per cyclus doorbrengen in een staat van onrust en slecht slapen. Stabieler voelen in de tweede helft van je cyclus, een voorspelbaardere menstruatie en als kinderwens speelt: een lichaam dat daar goed op is voorbereid.',
     ],
     recognition: [
       'Je hebt een paar dagen bruine spotting voordat je menstruatie echt op gang komt.',
@@ -373,7 +373,7 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Kan stress echt mijn progesteronaanmaak verlagen?',
         answer: [
-          'Ja, bij chronische stress geeft je lichaam voorrang aan cortisolaanmaak, en dat kan ten koste gaan van je progesteronproductie.',
+          'Ja, bij chronische stress geeft je lichaam voorrang aan cortisolaanmaak en dat kan ten koste gaan van je progesteronproductie.',
           'Tijdens een traject nemen we je stressniveau altijd mee als factor in je hormoonbalans.',
         ],
       },
@@ -408,7 +408,7 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Kan mijn schildklier iets te maken hebben met mijn progesterontekort?',
         answer: [
-          'Ja, een minder goed functionerende schildklier kan de ovulatie verstoren, en zonder regelmatige ovulatie is de progesteronaanmaak lager.',
+          'Ja, een minder goed functionerende schildklier kan de ovulatie verstoren en zonder regelmatige ovulatie is de progesteronaanmaak lager.',
           'Tijdens een traject kijk ik altijd of je schildklier meespeelt in het grotere plaatje.',
         ],
       },
@@ -418,7 +418,7 @@ export const hormonenContent1: ComplaintContentMap = {
   'schildklierdisbalans': {
     intro: [
       'Je bent moe, maar niet de doorsnee moeheid van een drukke week. Het is een vermoeidheid die blijft hangen, ook na een nacht goed slapen. Je hebt het sneller koud dan mensen om je heen, trekt een extra vest aan terwijl anderen het al warm genoeg vinden. Je haar valt meer uit dan je gewend bent, je merkt het in de douche en op je kussen.',
-      'Je stoelgang is trager geworden, je hebt moeite met afvallen ondanks dat je niet anders eet dan voorheen, en je huid voelt droger aan. Losse klachten die op zichzelf misschien niet opvallen, maar die samen een patroon vormen waar je met een schuin oog naar kijkt.',
+      'Je stoelgang is trager geworden, je hebt moeite met afvallen ondanks dat je niet anders eet dan voorheen en je huid voelt droger aan. Losse klachten die op zichzelf misschien niet opvallen, maar die samen een patroon vormen waar je met een schuin oog naar kijkt.',
       'Je wilt weer energie hebben om je dag te doorstaan zonder halverwege de middag leeg te lopen. Warmer in je lijf zitten, een stabielere stofwisseling, haar dat niet meer bij bosjes uitvalt. Dat begint met uitzoeken of je schildklier hierin een rol speelt.',
     ],
     recognition: [
@@ -440,10 +440,10 @@ export const hormonenContent1: ComplaintContentMap = {
     factorsHeading: 'Wat kan er meespelen bij een schildklier die minder goed meewerkt?',
     factorsIntro: 'Naast de diagnose en behandeling bij de arts spelen er vaak leefstijlfactoren mee die de schildklierfunctie beïnvloeden.',
     factors: [
-      { title: 'Tekorten aan selenium en zink', text: 'Deze mineralen zijn nodig voor de omzetting van T4 naar het actieve T3, en een tekort kan klachten in stand houden ook bij normale TSH-waarden.' },
+      { title: 'Tekorten aan selenium en zink', text: 'Deze mineralen zijn nodig voor de omzetting van T4 naar het actieve T3 en een tekort kan klachten in stand houden ook bij normale TSH-waarden.' },
       { title: 'Chronische stress', text: 'Langdurige stress beïnvloedt de hypofyse-bijnier-schildklieras en kan de omzetting van T4 naar T3 vertragen.' },
       { title: 'Darmgezondheid', text: 'Een groot deel van de omzetting van schildklierhormoon vindt plaats in de darmen, waardoor een verstoorde darmflora invloed kan hebben op je schildklierfunctie.' },
-      { title: 'Auto-immuunreacties', text: 'Bij Hashimoto speelt het afweersysteem een rol, en ontstekingsbevorderende factoren in voeding en leefstijl kunnen deze reactie versterken.' },
+      { title: 'Auto-immuunreacties', text: 'Bij Hashimoto speelt het afweersysteem een rol en ontstekingsbevorderende factoren in voeding en leefstijl kunnen deze reactie versterken.' },
       { title: 'Jodiumstatus', text: 'Zowel een tekort als een teveel aan jodium kan de schildklierfunctie beïnvloeden, waardoor dit altijd gericht bekeken moet worden.' },
     ],
     widerHeading: 'Verder kijken dan je schildklier',
