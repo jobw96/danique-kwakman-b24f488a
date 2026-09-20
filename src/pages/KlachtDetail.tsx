@@ -145,8 +145,12 @@ const KlachtDetail = () => {
         <h2 className="mb-3 font-serif text-2xl text-foreground">Goed om te weten</h2>
         <p className="text-sm leading-relaxed text-muted-foreground">
           De informatie op deze pagina is bedoeld om klachten te herkennen en vervangt geen diagnose,
-          behandeling of controle door een arts. Neem bij ernstige, acute of aanhoudende klachten
-          altijd contact op met je huisarts of specialist.
+          behandeling of controle door een arts. Bij ernstige, acute of aanhoudende klachten is het
+          belangrijk om contact op te nemen met je huisarts of specialist.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Ik help je daarnaast om met voeding en leefstijl gericht te werken aan de klachten waar je
+          in het dagelijks leven tegenaan loopt
         </p>
       </FadeIn>
     </Section>
