@@ -4,7 +4,7 @@ export const hormonenContent2: ComplaintContentMap = {
   'kinderwens': {
     intro: [
       'Je bent gestopt met anticonceptie, hebt een ovulatietest gekocht of houdt je cyclus al een tijdje bij in een app. Misschien probeer je al maanden zwanger te worden en begin je je af te vragen of er iets is dat je over het hoofd ziet. Of je staat aan het begin en wilt gewoon zo goed mogelijk voorbereid zijn voordat je begint.',
-      'Een kinderwens brengt vaak een heel andere blik op je cyclus met zich mee. Je gaat n nu meer nadenken of je een ovulatie hebt gehad, is mijn cyclus regelmatig genoeg, en wat kan ik zelf doen om mijn lichaam zo goed mogelijk voor te bereiden op een zwangerschap? Die vragen zijn logisch en het is fijn als je daar niet alleen mee zit.',
+      'Een kinderwens brengt vaak een heel andere blik op je cyclus met zich mee. Je gaat n nu meer nadenken of je een ovulatie hebt gehad, is mijn cyclus regelmatig genoeg en wat kan ik zelf doen om mijn lichaam zo goed mogelijk voor te bereiden op een zwangerschap? Die vragen zijn logisch en het is fijn als je daar niet alleen mee zit.',
       'Ik begeleid vrouwen met kinderwens vanuit mijn achtergrond als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige. Zelf heb ik PCOS, dus ik weet ook hoe het voelt als je cyclus niet vanzelfsprekend meewerkt. Met de CIRCLE-methode kijk ik naar jouw hele cyclus en gezondheid.',
     ],
     recognition: [
@@ -18,8 +18,8 @@ export const hormonenContent2: ComplaintContentMap = {
     ],
     explanationHeading: 'Wat gebeurt er in je cyclus als je zwanger wilt worden?',
     explanation: [
-      'Om zwanger te worden is een aantal dingen nodig. Een eicel die rijpt en vrijkomt bij de ovulatie, cervixslijm dat zaadcellen helpt om bij de eicel te komen, een luteale fase die lang genoeg is om een bevruchte eicel de kans te geven zich in te nestelen, en een baarmoederslijmvlies dat daarvoor geschikt is. Elke stap in dat proces wordt aangestuurd door hormonen, en die hormonen worden weer beïnvloed door onder andere je voeding, stress, slaap en je algemene gezondheid.',
-      'Veel vrouwen richten zich vooral op het timen van de ovulatie, en dat is ook waardevol. Cervixslijm dat helderder en rekbaarder wordt, een lichte temperatuurstijging na de ovulatie of een positieve ovulatietest geven je informatie over je vruchtbare dagen. Maar minstens zo belangrijk is wat er ná de ovulatie gebeurt. Een luteale fase die te kort is, kan het voor een bevruchte eicel lastiger maken om zich goed in te nestelen.',
+      'Om zwanger te worden is een aantal dingen nodig. Een eicel die rijpt en vrijkomt bij de ovulatie, cervixslijm dat zaadcellen helpt om bij de eicel te komen, een luteale fase die lang genoeg is om een bevruchte eicel de kans te geven zich in te nestelen en een baarmoederslijmvlies dat daarvoor geschikt is. Elke stap in dat proces wordt aangestuurd door hormonen en die hormonen worden weer beïnvloed door onder andere je voeding, stress, slaap en je algemene gezondheid.',
+      'Veel vrouwen richten zich vooral op het timen van de ovulatie en dat is ook waardevol. Cervixslijm dat helderder en rekbaarder wordt, een lichte temperatuurstijging na de ovulatie of een positieve ovulatietest geven je informatie over je vruchtbare dagen. Maar minstens zo belangrijk is wat er ná de ovulatie gebeurt. Een luteale fase die te kort is, kan het voor een bevruchte eicel lastiger maken om zich goed in te nestelen.',
       'Daarnaast speelt je voorbereiding een rol, ook als je nog niet meteen zwanger wordt. Voldoende foliumzuur of folaat, ijzer, vitamine D en jodium zijn bekende aandachtspunten rond kinderwens, net als een goed functionerende schildklier. Bij PCOS kan een onregelmatige ovulatie het proces onvoorspelbaarder maken. En hoewel de focus vaak op de vrouw ligt, telt mannelijke vruchtbaarheid net zo goed mee: zaadkwaliteit wordt ook beïnvloed door leefstijl, voeding en gezondheid.',
     ],
     factorsHeading: 'Wat kan er meespelen bij kinderwens?',
@@ -111,7 +111,7 @@ export const hormonenContent2: ComplaintContentMap = {
       {
         question: 'Kan stress ervoor zorgen dat ik niet zwanger word?',
         answer: [
-          'Langdurige stress kan de hormonale aansturing van je ovulatie beïnvloeden, en het proberen zwanger te worden brengt vaak zelf ook spanning met zich mee.',
+          'Langdurige stress kan de hormonale aansturing van je ovulatie beïnvloeden en het proberen zwanger te worden brengt vaak zelf ook spanning met zich mee.',
           'Het is niet zo dat stress alleen de oorzaak is als het langer duurt, maar het is wel een factor die het waard is om aandacht aan te geven.',
           'In een traject kijken we naar je stressniveau, slaap en herstel naast je cyclus en voeding, zodat je een concreter beeld krijgt van waar winst te behalen valt.',
         ],
@@ -145,7 +145,7 @@ export const hormonenContent2: ComplaintContentMap = {
     explanationHeading: 'Wat gebeurt er in je lichaam na het stoppen met anticonceptie?',
     explanation: [
       'Hormonale anticonceptie, zoals de pil, prikpil, hormoonspiraal of implantatiestaafje, onderdrukt in meer of mindere mate je eigen hormooncyclus. De bloeding die je op de pil krijgt tijdens de stopweek is een onttrekkingsbloeding. Een reactie op het wegvallen van de hormonen uit de pil, niet het gevolg van een eigen ovulatie. Dat is een belangrijk verschil met een echte menstruatie, die volgt op een cyclus met een eigen hormonale opbouw.',
-      'Na het stoppen moet je lichaam die eigen cyclus weer oppakken. Bij de één gebeurt dat binnen enkele weken, bij de ander duurt het maanden voordat er weer een regelmatige cyclus met ovulatie op gang komt. Dit heet soms “post-pil amenorroe” als de menstruatie langdurig uitblijft. Ook acne en haaruitval na het stoppen zijn bekende klachten. De pil onderdrukte androgene hormonen, en na het stoppen kan er tijdelijk een periode zijn waarin die androgenen relatief meer invloed hebben, wat huid en haar kan beïnvloeden.',
+      'Na het stoppen moet je lichaam die eigen cyclus weer oppakken. Bij de één gebeurt dat binnen enkele weken, bij de ander duurt het maanden voordat er weer een regelmatige cyclus met ovulatie op gang komt. Dit heet soms “post-pil amenorroe” als de menstruatie langdurig uitblijft. Ook acne en haaruitval na het stoppen zijn bekende klachten. De pil onderdrukte androgene hormonen en na het stoppen kan er tijdelijk een periode zijn waarin die androgenen relatief meer invloed hebben, wat huid en haar kan beïnvloeden.',
       'Belangrijk om te beseffen: de pil onderdrukt klachten, maar lost de onderliggende oorzaak niet op. Als je vóór de pil al een onregelmatige cyclus, acne of PCOS had, kunnen deze klachten na het stoppen weer zichtbaar worden. Dat is dan niet per se een nieuw probleem, maar iets dat al eerder speelde en nu weer aan de oppervlakte komt.',
     ],
     factorsHeading: 'Wat kan er meespelen na het stoppen met anticonceptie?',
@@ -199,7 +199,7 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'Nee, de bloeding tijdens de stopweek van de pil is een onttrekkingsbloeding. Dit is een reactie op het wegvallen van de hormonen uit de pil, niet het gevolg van een eigen ovulatie zoals bij een reguliere menstruatie.',
           'Dat betekent dat je tijdens pilgebruik geen eigen cyclus doorloopt, ook al lijkt de bloeding daarop.',
-          'Na het stoppen moet je lichaam de eigen cyclus weer opbouwen, en dat verloopt bij iedereen anders. In een traject kijken we naar hoe dat bij jou gaat.',
+          'Na het stoppen moet je lichaam de eigen cyclus weer opbouwen en dat verloopt bij iedereen anders. In een traject kijken we naar hoe dat bij jou gaat.',
         ],
       },
       {
@@ -400,7 +400,7 @@ export const hormonenContent2: ComplaintContentMap = {
     explanation: [
       'PMS-klachten ontstaan in de luteale fase, de periode tussen je ovulatie en je menstruatie. In deze fase daalt progesteron geleidelijk en bij sommige vrouwen schommelt ook oestrogeen op een manier die klachten kan uitlokken. Het gaat hierbij niet per se om te hoge of te lage hormoonspiegels op zich, maar om hoe gevoelig jouw lichaam en hersenen reageren op die schommelingen.',
       'Progesteron heeft onder andere invloed op stoffen in je hersenen die met rust en stemming te maken hebben. Als progesteron daalt, kan dat effect wegvallen, wat kan bijdragen aan prikkelbaarheid, somberheid of huilerigheid. Ook cravings naar zoet of koolhydraatrijk eten in deze fase zijn deels hormonaal te verklaren. Je lichaam vraagt in de luteale fase vaak iets meer energie en bloedsuikerschommelingen kunnen klachten versterken.',
-      'Bij een klein deel van de vrouwen zijn de stemmingsklachten in de luteale fase zo heftig dat ze het dagelijks functioneren duidelijk verstoren. Dit wordt PMDD genoemd, premenstruele dysfore stoornis, en dat is een aandoening die medisch beoordeeld moet worden door de huisarts, omdat hier soms een andere aanpak nodig is dan bij "gewone" PMS-klachten.',
+      'Bij een klein deel van de vrouwen zijn de stemmingsklachten in de luteale fase zo heftig dat ze het dagelijks functioneren duidelijk verstoren. Dit wordt PMDD genoemd, premenstruele dysfore stoornis en dat is een aandoening die medisch beoordeeld moet worden door de huisarts, omdat hier soms een andere aanpak nodig is dan bij "gewone" PMS-klachten.',
     ],
     factorsHeading: 'Wat kan er meespelen bij PMS?',
     factorsIntro:
@@ -508,8 +508,8 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'pcos-pmos': {
     intro: [
-      'Een cyclus die maandenlang wegblijft, acne op je kaaklijn die maar niet weggaat, haartjes op plekken waar je ze liever niet had, en misschien haaruitval op je hoofd. Dat combinatiepakket herken je misschien wel, en de weg naar een diagnose was voor veel vrouwen een lang verhaal van "het zit tussen je oren" of "neem toch gewoon de pil".',
-      'PCOS, of PMOS zoals het tegenwoordig ook wel wordt genoemd, is een van de meest voorkomende hormonale aandoeningen bij vrouwen, en tegelijkertijd één van de minst goed uitgelegde. Het gaat niet alleen om je cyclus, maar vaak ook om insuline, bloedsuiker, gewicht en op termijn kinderwens. Die puzzel is voor iedere vrouw met PCOS anders.',
+      'Een cyclus die maandenlang wegblijft, acne op je kaaklijn die maar niet weggaat, haartjes op plekken waar je ze liever niet had en misschien haaruitval op je hoofd. Dat combinatiepakket herken je misschien wel en de weg naar een diagnose was voor veel vrouwen een lang verhaal van "het zit tussen je oren" of "neem toch gewoon de pil".',
+      'PCOS, of PMOS zoals het tegenwoordig ook wel wordt genoemd, is een van de meest voorkomende hormonale aandoeningen bij vrouwen en tegelijkertijd één van de minst goed uitgelegde. Het gaat niet alleen om je cyclus, maar vaak ook om insuline, bloedsuiker, gewicht en op termijn kinderwens. Die puzzel is voor iedere vrouw met PCOS anders.',
       'Ik heb zelf PCOS en weet hoe het is om jarenlang te zoeken naar antwoorden. Die ervaring, samen met mijn kennis als orthomoleculair hormoon- en darmtherapeut en mijn achtergrond als voormalig verpleegkundige, gebruik ik om met de CIRCLE-methode naar jouw specifieke vorm van PCOS te kijken.',
     ],
     recognition: [
@@ -517,7 +517,7 @@ export const hormonenContent2: ComplaintContentMap = {
       'Je hebt hardnekkige acne, vooral rond je kaak en kin, die niet reageert op standaard huidverzorging.',
       'Je merkt overbeharing op plekken zoals je kin, bovenlip, buik of borst.',
       'Je verliest juist haar op je hoofd, terwijl je elders meer haargroei hebt.',
-      'Je merkt dat je makkelijker aankomt, vooral rond je buik, en moeilijker afvalt dan vroeger.',
+      'Je merkt dat je makkelijker aankomt, vooral rond je buik en moeilijker afvalt dan vroeger.',
       'Je hebt sterke cravings of energiedips die samenhangen met wat en wanneer je eet.',
       'Je hebt via echo of bloedonderzoek de diagnose PCOS gekregen, of vermoedt dat dit bij jou speelt.',
       'Je denkt aan kinderwens en vraagt je af wat PCOS daarvoor betekent.',
@@ -526,7 +526,7 @@ export const hormonenContent2: ComplaintContentMap = {
     explanation: [
       'PCOS staat voor polycysteus-ovariumsyndroom, ook wel PMOS genoemd om te benadrukken dat het meer is dan alleen "cystes op de eierstokken". Het is een hormonale aandoening waarbij de ovulatie onregelmatig verloopt of uitblijft, waardoor je menstruatiecyclus lang, onregelmatig of afwezig kan zijn. Kenmerkend is ook een verhoogd niveau van androgene hormonen, wat kan leiden tot acne, overbeharing en haaruitval op het hoofd.',
       'Bij een groot deel van de vrouwen met PCOS speelt insulineresistentie een belangrijke rol. Dat betekent dat je cellen minder goed reageren op insuline, waardoor je lichaam meer insuline aanmaakt om je bloedsuiker stabiel te houden. Die verhoogde insuline stimuleert op zijn beurt de aanmaak van androgene hormonen in de eierstokken, wat de cyclus- en huidklachten kan versterken. Dit verklaart waarom bloedsuiker en insuline zo’n grote rol spelen bij de begeleiding van PCOS, ook als je zelf niet "te zwaar" bent, want PCOS komt ook voor bij vrouwen met een gemiddeld of laag gewicht.',
-      'PCOS is geen aandoening met één vaste uitingsvorm. De ene vrouw heeft vooral cyclusklachten, de andere vooral huid- en haarklachten, en weer een ander merkt het vooral bij een kinderwens. Ook de mate waarin insulineresistentie, gewicht en ontsteking meespelen, verschilt van vrouw tot vrouw. Dat is precies waarom een standaard aanpak, zoals "gewoon de pil nemen" of "gewoon afvallen", vaak niet aansluit bij wat jij nodig hebt.',
+      'PCOS is geen aandoening met één vaste uitingsvorm. De ene vrouw heeft vooral cyclusklachten, de andere vooral huid- en haarklachten en weer een ander merkt het vooral bij een kinderwens. Ook de mate waarin insulineresistentie, gewicht en ontsteking meespelen, verschilt van vrouw tot vrouw. Dat is precies waarom een standaard aanpak, zoals "gewoon de pil nemen" of "gewoon afvallen", vaak niet aansluit bij wat jij nodig hebt.',
     ],
     factorsHeading: 'Wat kan er meespelen bij PCOS?',
     factorsIntro:
@@ -538,7 +538,7 @@ export const hormonenContent2: ComplaintContentMap = {
       },
       {
         title: 'Androgenen, huid en haar',
-        text: 'Verhoogde androgene hormonen kunnen leiden tot acne, overbeharing op plekken zoals kin en buik, en haaruitval op het hoofd. Deze klachten samen vormen vaak een herkenbaar patroon bij PCOS.',
+        text: 'Verhoogde androgene hormonen kunnen leiden tot acne, overbeharing op plekken zoals kin en buik en haaruitval op het hoofd. Deze klachten samen vormen vaak een herkenbaar patroon bij PCOS.',
       },
       {
         title: 'Onregelmatige of uitblijvende ovulatie',
@@ -577,7 +577,7 @@ export const hormonenContent2: ComplaintContentMap = {
       {
         question: 'Wat is het verschil tussen PCOS en PMOS?',
         answer: [
-          'PMOS is een nieuwere term voor dezelfde aandoening als PCOS, polycysteus-ovariumsyndroom. De term PMOS wordt gebruikt om te benadrukken dat het gaat om een hormonale aandoening, en niet alleen om "cystes" op de eierstokken, wat vaak verwarring geeft.',
+          'PMOS is een nieuwere term voor dezelfde aandoening als PCOS, polycysteus-ovariumsyndroom. De term PMOS wordt gebruikt om te benadrukken dat het gaat om een hormonale aandoening en niet alleen om "cystes" op de eierstokken, wat vaak verwarring geeft.',
           'Inhoudelijk gaat het om dezelfde combinatie van klachten: onregelmatige ovulatie, verhoogde androgenen en vaak insulineresistentie.',
           'In mijn begeleiding gebruik ik beide termen door elkaar, omdat ze naar hetzelfde verwijzen. Belangrijker dan de naam is welke vorm van PCOS bij jou speelt.',
         ],
@@ -594,7 +594,7 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Kan ik PCOS hebben zonder overgewicht?',
         answer: [
           'Ja, PCOS komt ook voor bij vrouwen met een gemiddeld of laag lichaamsgewicht. Dit wordt soms “lean PCOS” genoemd. Insulineresistentie kan ook bij een normaal gewicht een rol spelen.',
-          'Dit betekent dat gewicht niet de enige of belangrijkste graadmeter is voor PCOS, en dat "gewoon afvallen" als advies vaak niet passend is.',
+          'Dit betekent dat gewicht niet de enige of belangrijkste graadmeter is voor PCOS en dat "gewoon afvallen" als advies vaak niet passend is.',
           'In een traject kijken we naar jouw individuele situatie, inclusief bloedsuiker en insuline, ongeacht je gewicht.',
         ],
       },
@@ -618,7 +618,7 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Moet ik de pil nemen om mijn PCOS-klachten te behandelen?',
         answer: [
           'De pil kan cyclus-, huid- en haarklachten bij PCOS onderdrukken, maar pakt de onderliggende insulineresistentie of hormonale disbalans niet aan. Na het stoppen komen klachten vaak weer terug.',
-          'Voor sommige vrouwen is de pil een bewuste, tijdelijke of langdurige keuze, en dat is prima. Het is dan wel goed om te weten dat het de klachten maskeert.',
+          'Voor sommige vrouwen is de pil een bewuste, tijdelijke of langdurige keuze en dat is prima. Het is dan wel goed om te weten dat het de klachten maskeert.',
           'In mijn begeleiding kijk ik naar wat er via voeding en leefstijl mogelijk is, als aanvulling op of alternatief voor de pil, afhankelijk van wat bij jou past.',
         ],
       },
@@ -635,7 +635,7 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'endometriose': {
     intro: [
-      'Menstruatiepijn die je dubbelvouwt, waarvoor je van school of werk thuisblijft, en die niet reageert op de gewone pijnstillers. Pijn tijdens het vrijen. Pijn bij het naar het toilet gaan tijdens je menstruatie. En bij dat alles hoorde je misschien jarenlang: "Dat hoort erbij, je bent gewoon een pechvogel."',
+      'Menstruatiepijn die je dubbelvouwt, waarvoor je van school of werk thuisblijft en die niet reageert op de gewone pijnstillers. Pijn tijdens het vrijen. Pijn bij het naar het toilet gaan tijdens je menstruatie. En bij dat alles hoorde je misschien jarenlang: "Dat hoort erbij, je bent gewoon een pechvogel."',
       'Endometriose en adenomyose zijn aandoeningen waarbij weefsel dat lijkt op baarmoederslijmvlies zich buiten (endometriose) of in de spierwand van (adenomyose) de baarmoeder bevindt. De gemiddelde diagnosetijd is in Nederland en daarbuiten helaas nog altijd lang, vaak jaren, waarin vrouwen van het kastje naar de muur worden gestuurd. Dat wil je niet nóg langer hoeven volhouden.',
       'Ik begeleid vrouwen met (vermoede) endometriose of adenomyose vanuit mijn achtergrond als orthomoleculair hormoon- en darmtherapeut en voormalig verpleegkundige, altijd als aanvulling op medische diagnose en behandeling. Met uitgebreide intakeformulieren en de CIRCLE-methode kijken we naar wat jouw lichaam nodig heeft om beter met de klachten om te gaan.',
     ],
@@ -665,7 +665,7 @@ export const hormonenContent2: ComplaintContentMap = {
       },
       {
         title: 'Darmgezondheid',
-        text: 'Endometriose bevindt zich soms op of nabij de darmen, en darmklachten zoals een opgeblazen gevoel, diarree of obstipatie komen bij veel vrouwen met endometriose voor. Het is dan zinvol om naar de darmen als geheel te kijken, niet alleen naar de menstruatiepijn.',
+        text: 'Endometriose bevindt zich soms op of nabij de darmen en darmklachten zoals een opgeblazen gevoel, diarree of obstipatie komen bij veel vrouwen met endometriose voor. Het is dan zinvol om naar de darmen als geheel te kijken, niet alleen naar de menstruatiepijn.',
       },
       {
         title: 'Hormoonbalans en oestrogeen',

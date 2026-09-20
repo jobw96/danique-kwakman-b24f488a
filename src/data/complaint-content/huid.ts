@@ -3,7 +3,7 @@ import type { ComplaintContentMap } from './types';
 export const huidContent: ComplaintContentMap = {
   'huid-en-haar': {
     intro: [
-      'Je huid en je haar zijn het eerste wat je ’s ochtends in de spiegel ziet, en vaak ook het eerste waar je iets aan probeert te veranderen. Een nieuwe crème, een ander shampoo’tje, een extra laagje concealer voor die foto. Maar als je huid steeds weer hetzelfde doet en je haar dunner blijft voelen, ligt de oplossing meestal niet in het volgende potje.',
+      'Je huid en je haar zijn het eerste wat je ’s ochtends in de spiegel ziet en vaak ook het eerste waar je iets aan probeert te veranderen. Een nieuwe crème, een ander shampoo’tje, een extra laagje concealer voor die foto. Maar als je huid steeds weer hetzelfde doet en je haar dunner blijft voelen, ligt de oplossing meestal niet in het volgende potje.',
       'Huid en haar staan niet los van de rest van je lijf. Ze zijn afhankelijk van wat je hormonen doen, hoe je darmen werken, hoeveel voedingsstoffen je binnenkrijgt en hoe stabiel je bloedsuiker door de dag heen is. Verandert daar iets, dan zie je dat vaak eerst terug op je huid of in je haar, nog voordat je het ergens anders merkt.',
       'Je wilt gewoon weer met plezier in de spiegel kijken, zonder dat gepieker over die ene plek op je kin of die kale plek bij je scheiding. Dat begint met uitzoeken wat bij jou de aanjager is, in plaats van steeds een nieuw product uit te proberen.',
     ],
@@ -121,7 +121,7 @@ export const huidContent: ComplaintContentMap = {
     explanation: [
       'Androgenen, zoals testosteron, jagen de talgklieren aan. Bij veel vrouwen met acne rond de kaaklijn zijn deze hormonen relatief hoger dan progesteron en oestrogeen, waardoor de talgproductie toeneemt en poriën sneller verstopt raken. Dat verklaart ook waarom de acne vaak samenvalt met de tweede helft van je cyclus, wanneer progesteron daalt.',
       'Insuline speelt hierin een onderschatte rol. Bij pieken in je bloedsuiker, bijvoorbeeld door veel snelle koolhydraten of onregelmatig eten, maakt je lichaam meer insuline aan. Insuline kan op zijn beurt de androgeenproductie stimuleren, met meer talg en meer kans op acne als gevolg. Dit verklaart waarom sommige vrouwen merken dat hun huid rustiger wordt zodra hun bloedsuiker stabieler is.',
-      'Zuivel wordt vaak genoemd als trigger, en bij sommige vrouwen klopt dat: zuivel kan de insulineafgifte en groeifactoren beïnvloeden die talgproductie stimuleren. Daarnaast is een tekort aan zink, dat een rol speelt bij huidherstel en het temperen van ontstekingen, iets wat Danique regelmatig terugziet bij hardnekkige acne. Goede huidverzorging blijft ondersteunend belangrijk, maar lost de onderliggende aanjager niet op.',
+      'Zuivel wordt vaak genoemd als trigger en bij sommige vrouwen klopt dat: zuivel kan de insulineafgifte en groeifactoren beïnvloeden die talgproductie stimuleren. Daarnaast is een tekort aan zink, dat een rol speelt bij huidherstel en het temperen van ontstekingen, iets wat Danique regelmatig terugziet bij hardnekkige acne. Goede huidverzorging blijft ondersteunend belangrijk, maar lost de onderliggende aanjager niet op.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij acne',
     factorsIntro: 'Acne die telkens terugkomt heeft vaak een combinatie van oorzaken. Dit ziet Danique regelmatig:',
@@ -222,7 +222,7 @@ export const huidContent: ComplaintContentMap = {
     explanation: [
       'Je huidbarrière bestaat voor een groot deel uit vetten, waaronder omega 3-vetzuren, die de cellen bij elkaar houden zoals cement tussen bakstenen. Krijg je te weinig omega 3 binnen of verwerk je vetten slecht, dan wordt die laag poreuzer, verdampt vocht sneller en voelt je huid droog en trekkerig aan, hoe vaak je ook smeert.',
       'Vitamine A en D zijn beide nodig voor de aanmaak van nieuwe, gezonde huidcellen en voor het herstel van je barrière. Een tekort hieraan, vaak veroorzaakt door te weinig maagzuur waardoor vetten en vetoplosbare vitamines minder goed worden opgenomen, kan zorgen voor een huid die maar niet soepel wordt, ondanks een goede skincare-routine.',
-      'Ook je schildklier en de overgang spelen een rol. Een tragere schildklier vertraagt de celvernieuwing van je huid, en de dalende oestrogeenspiegel in de overgang vermindert de vochtvasthoudende capaciteit van je huid. Beide kunnen verklaren waarom je huid de laatste tijd anders reageert dan je gewend was.',
+      'Ook je schildklier en de overgang spelen een rol. Een tragere schildklier vertraagt de celvernieuwing van je huid en de dalende oestrogeenspiegel in de overgang vermindert de vochtvasthoudende capaciteit van je huid. Beide kunnen verklaren waarom je huid de laatste tijd anders reageert dan je gewend was.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij een droge, gevoelige huid',
     factorsIntro: 'Een verzwakte huidbarrière heeft vaak meerdere oorzaken tegelijk. Dit komt Danique regelmatig tegen:',
@@ -300,7 +300,7 @@ export const huidContent: ComplaintContentMap = {
   'eczeem': {
     intro: [
       'Midden in de nacht lig je te krabben in je elleboogplooi, terwijl je eigenlijk gewoon wilt slapen. Overdag verstop je je handen liever in je mouwen omdat het eczeem daar weer is opgevlamd. Het is niet alleen vervelend, het is uitputtend.',
-      'Eczeem draait om meer dan een geïrriteerde huid alleen. Je huidbarrière en je darmbarrière hebben veel raakvlakken, en beide staan in nauw contact met je immuunsysteem. Raakt dat systeem overprikkeld, bijvoorbeeld door histamine, stress of bepaalde triggers, dan kan dat rechtstreeks in opvlammende plekken op je huid terug te zien zijn.',
+      'Eczeem draait om meer dan een geïrriteerde huid alleen. Je huidbarrière en je darmbarrière hebben veel raakvlakken en beide staan in nauw contact met je immuunsysteem. Raakt dat systeem overprikkeld, bijvoorbeeld door histamine, stress of bepaalde triggers, dan kan dat rechtstreeks in opvlammende plekken op je huid terug te zien zijn.',
       'Je wilt geen nacht meer verliezen aan jeuk en geen zomerjurk meer overslaan omdat je huid weer rood en ruw aanvoelt. Dat vraagt om uitzoeken wat jouw eczeem precies triggert, in plaats van alleen de jeuk te onderdrukken.',
     ],
     recognition: [
@@ -378,7 +378,7 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Kan vitamine D helpen bij eczeem?',
         answer: [
-          'Vitamine D ondersteunt zowel je huid als je immuunsysteem, en een tekort komt vaak voor bij mensen met eczeem. Dat betekent niet dat suppletie alleen de oplossing is, maar het kan wel een belangrijk onderdeel zijn.',
+          'Vitamine D ondersteunt zowel je huid als je immuunsysteem en een tekort komt vaak voor bij mensen met eczeem. Dat betekent niet dat suppletie alleen de oplossing is, maar het kan wel een belangrijk onderdeel zijn.',
           'Danique bekijkt in de intake of een tekort bij jou een rol speelt en adviseert daar gericht over.',
         ],
       },
@@ -400,8 +400,8 @@ export const huidContent: ComplaintContentMap = {
   },
   'rosacea': {
     intro: [
-      'Je stapt de sportschool uit of neemt een slokje wijn, en meteen kleuren je wangen felrood, alsof iedereen het ziet. Rosacea maakt dat je huid soms een eigen leven lijkt te leiden, met blozen dat niet meer weggaat en zichtbare adertjes die je liever camoufleert.',
-      'Rosacea komt vaak voort uit een combinatie van een gevoelige huidbarrière en signalen van binnenuit. Warmte, alcohol, pittig eten en zon zijn bekende triggers, maar ook wat er in je darmen gebeurt, zoals SIBO, en hoeveel maagzuur je aanmaakt, kunnen meespelen. Ook in en rond de overgang zien veel vrouwen hun rosacea veranderen.',
+      'Je stapt de sportschool uit of neemt een slokje wijn en meteen kleuren je wangen felrood, alsof iedereen het ziet. Rosacea maakt dat je huid soms een eigen leven lijkt te leiden, met blozen dat niet meer weggaat en zichtbare adertjes die je liever camoufleert.',
+      'Rosacea komt vaak voort uit een combinatie van een gevoelige huidbarrière en signalen van binnenuit. Warmte, alcohol, pittig eten en zon zijn bekende triggers, maar ook wat er in je darmen gebeurt, zoals SIBO en hoeveel maagzuur je aanmaakt, kunnen meespelen. Ook in en rond de overgang zien veel vrouwen hun rosacea veranderen.',
       'Je wilt niet steeds nadenken of die ene wijn op een verjaardag je gezicht weer in de fik zet. Dat begint met begrijpen welke triggers en onderliggende factoren bij jou samenkomen.',
     ],
     recognition: [
@@ -417,7 +417,7 @@ export const huidContent: ComplaintContentMap = {
     explanation: [
       'Bij rosacea reageren de bloedvaatjes in je gezicht sneller en heftiger op prikkels dan bij een gemiddelde huid, wat zorgt voor die felle roodheid en zichtbare vaatjes. Bekende triggers als warmte, alcohol, pittig eten en zonlicht verwijden de bloedvaten en verklaren waarom bepaalde momenten je gezicht meteen laten opvlammen.',
       'Steeds meer aandacht gaat naar de rol van je darmen. SIBO, een overgroei van bacteriën in de dunne darm, komt bij een deel van de vrouwen met rosacea vaker voor en kan bijdragen aan de ontstekingsreactie die zich op de huid uit. Ook een tekort aan maagzuur speelt mee: onvoldoende maagzuur verstoort de vertering en kan de kans op darmklachten en huidreacties vergroten.',
-      'Rond de overgang verandert de hormoonbalans, en dat kan de vaatreactiviteit en de gevoeligheid van je huidbarrière beïnvloeden, waardoor rosacea bij sommige vrouwen juist in deze levensfase toeneemt. Een verzwakte huidbarrière maakt de huid bovendien extra gevoelig voor prikkels van buitenaf, wat de klachten in stand kan houden.',
+      'Rond de overgang verandert de hormoonbalans en dat kan de vaatreactiviteit en de gevoeligheid van je huidbarrière beïnvloeden, waardoor rosacea bij sommige vrouwen juist in deze levensfase toeneemt. Een verzwakte huidbarrière maakt de huid bovendien extra gevoelig voor prikkels van buitenaf, wat de klachten in stand kan houden.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij rosacea',
     factorsIntro: 'Rosacea ontstaat meestal door een combinatie van triggers en onderliggende factoren. Dit ziet Danique regelmatig terug:',
@@ -518,7 +518,7 @@ export const huidContent: ComplaintContentMap = {
     explanation: [
       'Je haarzakjes doorlopen een cyclus van groei, rust en uitval. Bij een grote lichamelijke of emotionele belasting, zoals een bevalling, hoge koorts, een operatie of langdurige stress, kunnen veel haarzakjes tegelijk vroegtijdig in de rustfase terechtkomen. Pas twee tot drie maanden later vallen deze haren daadwerkelijk uit, wat bekendstaat als telogeen effluvium. Daardoor lijkt de oorzaak soms ver weg te liggen van het moment dat je de haaruitval opmerkt.',
       'Voedingsstoffen zijn onmisbaar voor haargroei. Ferritine, de opslagvorm van ijzer, moet voldoende hoog zijn voor gezonde haargroei, ook als je bloedwaarden voor ijzer zelf nog binnen de norm vallen. Daarnaast spelen zink, vitamine B12, vitamine D en voldoende eiwit een grote rol: haarzakjes hebben continu bouwstoffen nodig en bij een tekort schroeft je lichaam de haargroei als een van de eersten terug, omdat het dit als niet-essentieel beschouwt.',
-      'Ook je schildklier en androgenen spelen mee. Een te trage of juist te snelle schildklier kan de haargroeicyclus verstoren, en een relatief hoger niveau van androgenen kan bij sommige vrouwen zorgen voor dunner wordend haar bovenop het hoofd. Crashdiëten en snelle gewichtsverandering zijn een bekende trigger voor telogeen effluvium, omdat je lichaam dit interpreteert als een periode van schaarste waarin haargroei geen prioriteit heeft.',
+      'Ook je schildklier en androgenen spelen mee. Een te trage of juist te snelle schildklier kan de haargroeicyclus verstoren en een relatief hoger niveau van androgenen kan bij sommige vrouwen zorgen voor dunner wordend haar bovenop het hoofd. Crashdiëten en snelle gewichtsverandering zijn een bekende trigger voor telogeen effluvium, omdat je lichaam dit interpreteert als een periode van schaarste waarin haargroei geen prioriteit heeft.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij haaruitval',
     factorsIntro: 'Haaruitval is meestal het resultaat van een combinatie van factoren, een paar maanden voordat je het daadwerkelijk merkt. Dit komt Danique vaak tegen:',
@@ -617,7 +617,7 @@ export const huidContent: ComplaintContentMap = {
     ],
     explanationHeading: 'Waarom je huid zo onvoorspelbaar lijkt te reageren',
     explanation: [
-      'Een huid die steeds anders reageert, is vaak niet grillig zonder reden, maar gevoelig voor een optelsom van prikkels. Stress verhoogt cortisol, wat de talgproductie en ontstekingsgevoeligheid van je huid beïnvloedt. Combineer dat met een drukke week, wat minder slaap en een net iets ander eetpatroon, en je huid reageert anders dan in een rustige week, ook al gebruik je dezelfde producten.',
+      'Een huid die steeds anders reageert, is vaak niet grillig zonder reden, maar gevoelig voor een optelsom van prikkels. Stress verhoogt cortisol, wat de talgproductie en ontstekingsgevoeligheid van je huid beïnvloedt. Combineer dat met een drukke week, wat minder slaap en een net iets ander eetpatroon en je huid reageert anders dan in een rustige week, ook al gebruik je dezelfde producten.',
       'Je cyclus voegt daar een extra laag aan toe. In de tweede helft van je cyclus daalt progesteron en kunnen androgenen relatief meer invloed krijgen, wat bij veel vrouwen samengaat met meer talg en eerder opvlammende bultjes. Dat verklaart waarom je huid in de ene cyclusfase soepel meewerkt en in de andere fase ineens onrustig wordt.',
       'Ook voeding speelt een rol, niet als absolute boosdoener, maar als extra prikkel bovenop een toch al gevoelige huid. Suikerpieken, alcohol of bepaalde voedingsmiddelen kunnen de drempel verlagen waarop je huid reageert. Omdat al deze factoren, stress, cyclus en voeding, per week net anders samenkomen, lijkt je huid onvoorspelbaar, terwijl er bij nader inzien vaak wel een patroon zichtbaar is.',
     ],
