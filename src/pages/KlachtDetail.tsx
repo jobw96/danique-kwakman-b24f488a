@@ -21,6 +21,33 @@ const BulletList = ({ items }: { items: string[] }) => (
   </ul>
 );
 
+const TRAJECT_LINKS: { term: string; to: string }[] = [
+  { term: '1:1 Hormoontraject', to: '/hormoontraject' },
+  { term: 'Hormoontraject', to: '/hormoontraject' },
+  { term: '1:1 Darmtraject', to: '/darmtraject' },
+  { term: 'Darmtraject', to: '/darmtraject' },
+  { term: 'Bloedsuikertraject', to: '/bloedsuikertraject' },
+];
+
+const linkifyTrajecten = (text: string) => {
+  const pattern = new RegExp(`(${TRAJECT_LINKS.map((item) => item.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+  const parts = text.split(pattern);
+
+  return parts.map((part, index) => {
+    const match = TRAJECT_LINKS.find((item) => item.term === part);
+    if (!match) return part;
+    return (
+      <Link
+        key={`${part}-${index}`}
+        to={match.to}
+        className="text-primary underline decoration-primary/40 underline-offset-4 transition hover:decoration-primary"
+      >
+        {part}
+      </Link>
+    );
+  });
+};
+
 const FaqList = ({ faqs }: { faqs: ComplaintFaq[] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -49,7 +76,7 @@ const FaqList = ({ faqs }: { faqs: ComplaintFaq[] }) => {
               <div className="space-y-4 pb-6">
                 {item.answer.map((paragraph) => (
                   <p key={paragraph} className="leading-relaxed text-muted-foreground">
-                    {paragraph}
+                    {linkifyTrajecten(paragraph)}
                   </p>
                 ))}
               </div>
