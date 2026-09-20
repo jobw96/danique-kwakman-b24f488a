@@ -508,7 +508,7 @@ export const hormonenContent2: ComplaintContentMap = {
 
   'pcos-pmos': {
     intro: [
-      'Een cyclus die maandenlang wegblijft, acne op je kaaklijn die maar niet weggaat, haartjes op plekken waar je ze liever niet had en misschien haaruitval op je hoofd. Dat combinatiepakket herken je misschien wel en de weg naar een diagnose was voor veel vrouwen een lang verhaal van "het zit tussen je oren" of "neem toch gewoon de pil".',
+      'Een cyclus die maandenlang wegblijft of super onregelmatig is, acne op je kaaklijn die maar niet weggaat, haartjes op plekken waar je ze liever niet had en misschien haaruitval op je hoofd. Dat combinatiepakket herken je misschien wel en de weg naar een diagnose was voor veel vrouwen een lang verhaal van "het zit tussen je oren" of "neem toch gewoon de pil".',
       'PCOS, of PMOS zoals het tegenwoordig ook wel wordt genoemd, is een van de meest voorkomende hormonale aandoeningen bij vrouwen en tegelijkertijd één van de minst goed uitgelegde. Het gaat niet alleen om je cyclus, maar vaak ook om insuline, bloedsuiker, gewicht en op termijn kinderwens. Die puzzel is voor iedere vrouw met PCOS anders.',
       'Ik heb zelf PCOS en weet hoe het is om jarenlang te zoeken naar antwoorden. Die ervaring, samen met mijn kennis als orthomoleculair hormoon- en darmtherapeut en mijn achtergrond als voormalig verpleegkundige, gebruik ik om met de CIRCLE-methode naar jouw specifieke vorm van PCOS te kijken.',
     ],
@@ -526,7 +526,7 @@ export const hormonenContent2: ComplaintContentMap = {
     explanation: [
       'PCOS staat voor polycysteus-ovariumsyndroom, ook wel PMOS genoemd om te benadrukken dat het meer is dan alleen "cystes op de eierstokken". Het is een hormonale aandoening waarbij de ovulatie onregelmatig verloopt of uitblijft, waardoor je menstruatiecyclus lang, onregelmatig of afwezig kan zijn. Kenmerkend is ook een verhoogd niveau van androgene hormonen, wat kan leiden tot acne, overbeharing en haaruitval op het hoofd.',
       'Bij een groot deel van de vrouwen met PCOS speelt insulineresistentie een belangrijke rol. Dat betekent dat je cellen minder goed reageren op insuline, waardoor je lichaam meer insuline aanmaakt om je bloedsuiker stabiel te houden. Die verhoogde insuline stimuleert op zijn beurt de aanmaak van androgene hormonen in de eierstokken, wat de cyclus- en huidklachten kan versterken. Dit verklaart waarom bloedsuiker en insuline zo’n grote rol spelen bij de begeleiding van PCOS, ook als je zelf niet "te zwaar" bent, want PCOS komt ook voor bij vrouwen met een gemiddeld of laag gewicht.',
-      'PCOS is geen aandoening met één vaste uitingsvorm. De ene vrouw heeft vooral cyclusklachten, de andere vooral huid- en haarklachten en weer een ander merkt het vooral bij een kinderwens. Ook de mate waarin insulineresistentie, gewicht en ontsteking meespelen, verschilt van vrouw tot vrouw. Dat is precies waarom een standaard aanpak, zoals "gewoon de pil nemen" of "gewoon afvallen", vaak niet aansluit bij wat jij nodig hebt.',
+      'PCOS is geen aandoening met één vaste uitingsvorm. De ene vrouw heeft vooral cyclusklachten, de andere vooral huid- en haarklachten en weer een ander merkt het vooral bij een kinderwens. Ook de mate waarin insulineresistentie, gewicht en ontsteking meespelen verschilt van vrouw tot vrouw. Dat is precies waarom een standaard aanpak, zoals "gewoon de pil nemen" of "gewoon afvallen", vaak niet aansluit bij wat jij nodig hebt.',
     ],
     factorsHeading: 'Wat kan er meespelen bij PCOS?',
     factorsIntro:
