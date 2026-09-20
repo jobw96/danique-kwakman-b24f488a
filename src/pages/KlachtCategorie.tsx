@@ -40,7 +40,6 @@ const KlachtCategorie = () => {
               {category.name}
             </h1>
             <p className="max-w-3xl leading-relaxed text-muted-foreground">
-              {category.description}{' '}
               {categoryIntros[category.slug] ??
                 'Hieronder vind je de klachten waarmee ik vrouwen begeleid.'}
             </p>
