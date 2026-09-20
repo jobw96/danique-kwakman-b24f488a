@@ -3,24 +3,24 @@ import type { ComplaintContentMap } from './types';
 export const darmenContent2: ComplaintContentMap = {
   'obstipatie': {
     intro: [
-      'Je zit al drie dagen vast en voelt je opgeblazen en zwaar. Of je gaat wel naar de wc, maar moet zo persen dat je er met zere buikspieren vandaan komt en het gevoel hebt dat er nog van alles achterblijft. Misschien herken je het ook van vakanties: zodra je op een ander toilet zit, gaat je systeem dagenlang op slot.',
-      'Obstipatie is meer dan een vervelend toiletprobleem. Het kan invloed hebben op hoe energiek je je voelt, hoe je buik eruitziet aan het einde van de dag en zelfs op je stemming. En hoewel het advies vaak is om gewoon meer vezels en water te nemen, blijkt dat bij veel vrouwen niet genoeg.',
-      'Je wilt gewoon weer op een voorspelbaar moment naar de wc kunnen, zonder erover na te hoeven denken. Geen buikpijn vooraf, geen dagen bijhouden of het wel goed komt, geen broek die aan het einde van de dag te strak zit. Daar is met de juiste uitzoekslag echt aan te werken.',
+      'Je zit al drie dagen vast en voelt je opgeblazen en zwaar. Of je gaat wel naar de wc, maar moet hard persen en hebt het gevoel dat er nog van alles achterblijft. Misschien herken je het ook van vakanties en zodra je op een ander toilet zit lukt het niet meer. ',
+      'Obstipatie kan invloed hebben op hoe energiek je je voelt, hoe je buik eruitziet aan het einde van de dag en zelfs op je stemming. En hoewel het advies vaak is om gewoon meer vezels en water te nemen, blijkt dat bij veel vrouwen niet genoeg.',
+      'Je wilt gewoon  naar de wc kunnen zonder erover na te hoeven denken. Geen buikpijn vooraf, geen dagen bijhouden of het wel goed komt, geen broek die aan het einde van de dag te strak zit. Daar is met de juiste onderzoeken echt aan te werken.',
     ],
     recognition: [
-      'Je gaat minder dan drie keer per week naar het toilet, of de ontlasting is hard en brokkelig, alsof je moet persen om iets kwijt te raken.',
+      'Je gaat minder dan drie keer per week naar het toilet of de ontlasting is hard en brokkelig, alsof je moet persen',
       'Je hebt na het toiletbezoek het gevoel dat je niet helemaal leeg bent.',
       'Je buik zet op naarmate de dag vordert, zeker als je een dag niet naar de wc bent geweest.',
       'Op vakantie of bij een verandering in je dagritme raakt je stoelgang meteen van slag.',
-      'Je hebt weleens de Bristol-stoelgangschaal opgezocht om te checken of jouw ontlasting normaal is.',
+      'Je hebt weleens de Bristol-stool chart opgezocht om te checken of jouw ontlasting normaal is.',
       'Je voelt je futloos, prikkelbaar of vol in je buik op de dagen dat je darmen niet meewerken.',
       'Stressvolle periodes, zoals een deadline of een drukke agenda, vertragen je stoelgang merkbaar.',
     ],
     explanationHeading: 'Waarom je darmen te traag kunnen werken',
     explanation: [
-      'Bij obstipatie beweegt voeding te langzaam door je darmen. Hoe langer ontlasting in de dikke darm blijft, hoe meer vocht eruit wordt opgenomen en hoe harder en moeilijker het wordt om kwijt te raken. De snelheid van die darmwerking – de darmmotiliteit – wordt door veel meer aangestuurd dan alleen vezels. Je zenuwstelsel, je schildklier, je vochtbalans, je beweging en zelfs je slaap spelen mee.',
-      'Magnesium is daarbij een onderschatte factor: dit mineraal is nodig om de darmspier te ontspannen en een tekort kan bijdragen aan een tragere stoelgang. Ook je schildklier heeft rechtstreeks invloed op je stofwisseling en dus op de snelheid van je spijsvertering – een tragere schildklier gaat vaak samen met obstipatie. En via de darm-hersenas kan spanning je spijsvertering op een lager pitje zetten, omdat je lichaam in een overlevingsstand schakelt waarin vertering geen prioriteit heeft.',
-      'Ook je hormonen doen mee. In de tweede helft van je cyclus, als progesteron hoger is, vertraagt de darmwerking bij veel vrouwen merkbaar. Daarom kan obstipatie juist rond je menstruatie opvallen of verergeren.',
+      'Bij obstipatie beweegt voeding te langzaam door je darmen. Hoe langer ontlasting in de dikke darm blijft, hoe meer vocht eruit wordt opgenomen en hoe harder en moeilijker het wordt om kwijt te raken. De snelheid van die darmwerking , de darmmotiliteit, wordt door veel meer aangestuurd dan alleen vezels. Je zenuwstelsel, je schildklier, je vochtbalans, je beweging en zelfs je slaap spelen mee.',
+      'Magnesium is daarbij een grote factor. Dit mineraal is nodig om de darmspier te ontspannen en een tekort kan bijdragen aan een tragere stoelgang. Ook je schildklier heeft rechtstreeks invloed op je stofwisseling en dus op de snelheid van je spijsvertering. Een tragere schildklier gaat vaak samen met obstipatie. En via de darm-hersenas kan spanning je spijsvertering op een lager pitje zetten, omdat je lichaam in een overlevingsstand schakelt waarin vertering geen prioriteit heeft.',
+      'Ook je hormonen spelen mee. In de tweede helft van je cyclus, als progesteron hoger is, vertraagt de darmwerking bij veel vrouwen merkbaar. Daarom kan obstipatie juist rond je menstruatie opvallen of verergeren.',
     ],
     factorsHeading: 'Wat kan meespelen bij obstipatie',
     factorsIntro: 'Bij het uitzoeken van jouw trage stoelgang kijken we naar een combinatie van factoren die vaak over het hoofd worden gezien:',
@@ -44,10 +44,10 @@ export const darmenContent2: ComplaintContentMap = {
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw eet-, leef- en toiletpatroon in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw obstipatie.',
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
-      'Tijdens de persoonlijke intake bespreken we je stoelgangpatroon en wat eraan voorafgaat',
-      'Met de CIRCLE-methode brengen we factoren als vezels, vocht, mineralen, schildklier en cyclus samen in beeld',
-      'Je krijgt een plan op maat, geen standaard vezeladvies dat voor iedereen hetzelfde is',
-      'Waar nodig kan laboratoriumonderzoek extra informatie geven, bijvoorbeeld over je schildklier',
+      'Tijdens de intake bespreken we je stoelgangpatroon en wat eraan voorafgaat',
+      'We brengen de factoren als vezels, vocht, mineralen, schildklier en cyclus samen in beeld',
+      'Je krijgt een plan op maat',
+      'Waar nodig kunnen we laboratoriumonderzoek inzetten. ',
     ],
     faqHeading: 'Veelgestelde vragen over obstipatie',
     faqs: [
