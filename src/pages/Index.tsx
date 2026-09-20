@@ -93,7 +93,7 @@ const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
   complaints: ['Moe wakker worden, ook na genoeg slaap', 'Energiedips gedurende de dag', 'Cravings of veel trek in zoet', 'Brain fog en moeite met focussen', 'Moeite met inslapen of doorslapen', 'Schommelingen in je bloedsuikerspiegel']
 }, {
   title: 'Huid en haar',
-  complaints: ['Acne die steeds terugkomt', 'Een droge of gevoelige huid', 'Eczeem of rode, geïrriteerde plekken', 'Rosacea', 'Haaruitval', 'Een onrustige huid die regelmatig opvlamt']
+  complaints: ['Acne die steeds terugkomt', 'Een droge of gevoelige huid', 'Eczeem of rode, geïrriteerde plekken', 'Haaruitval']
 }];
 
 const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
