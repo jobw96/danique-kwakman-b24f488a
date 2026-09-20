@@ -26,15 +26,19 @@ const TRAJECT_LINKS: { term: string; to: string }[] = [
   { term: 'Hormoontraject', to: '/hormoontraject' },
   { term: '1:1 Darmtraject', to: '/darmtraject' },
   { term: 'Darmtraject', to: '/darmtraject' },
+  { term: '1:1 Bloedsuikertraject', to: '/bloedsuikertraject' },
   { term: 'Bloedsuikertraject', to: '/bloedsuikertraject' },
+  { term: '1:1 bloedsuiker traject', to: '/bloedsuikertraject' },
+  { term: '1:1 bloedsuikertraject', to: '/bloedsuikertraject' },
+  { term: 'bloedsuiker traject', to: '/bloedsuikertraject' },
 ];
 
 const linkifyTrajecten = (text: string) => {
-  const pattern = new RegExp(`(${TRAJECT_LINKS.map((item) => item.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+  const pattern = new RegExp(`(${TRAJECT_LINKS.map((item) => item.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
   const parts = text.split(pattern);
 
   return parts.map((part, index) => {
-    const match = TRAJECT_LINKS.find((item) => item.term === part);
+    const match = TRAJECT_LINKS.find((item) => item.term.toLowerCase() === part.toLowerCase());
     if (!match) return part;
     return (
       <Link
