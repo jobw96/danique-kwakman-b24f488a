@@ -93,16 +93,5 @@ const Klachten = () => {
         </div>
       </Section>
 
-      <Section className="pt-0 pb-16 md:pb-24">
-        <FadeIn className="mx-auto max-w-3xl border-l-2 border-secondary pl-6">
-          <h2 className="mb-3 font-serif text-2xl text-foreground">Goed om te weten</h2>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            De informatie op deze pagina is bedoeld om klachten te herkennen en vervangt geen diagnose, behandeling of controle door een arts. Neem bij ernstige, acute of aanhoudende klachten altijd contact op met je huisarts of specialist.
-          </p>
-        </FadeIn>
-      </Section>
-    </main>
-  );
-};
 
 export default Klachten;
