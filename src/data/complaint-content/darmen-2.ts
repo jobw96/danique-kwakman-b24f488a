@@ -236,7 +236,7 @@ export const darmenContent2: ComplaintContentMap = {
     together: [
       'Je vult vooraf uitgebreide intakeformulieren in over eetgewoontes, medicatie en klachten',
       'In de persoonlijke intake bespreken jullie wanneer je klachten precies opspelen: direct na het eten, bij het gaan liggen of juist na een snelle maaltijd',
-      'Met de CIRCLE-methode brengt Danique je eettempo, maaltijdopbouw, maagzuurgraad en spijsverteringsenzymen samen in beeld',
+      'We kijken naar je eettempo, maaltijdopbouw, maagzuurgraad en spijsverteringsenzymen en brengen dit samen in beeld',
       'We letten op langdurig gebruik van maagzuurremmers en op signalen die kunnen wijzen op een tekort aan B12 of ijzer',
       'Je krijgt praktische aanpassingen die passen bij jouw dagelijks leven.',
     ],
