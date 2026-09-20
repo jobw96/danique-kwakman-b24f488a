@@ -121,7 +121,7 @@ export const energieContent1: ComplaintContentMap = {
   },
   'cravings-en-bloedsuiker': {
     intro: [
-      'Je hebt net gegeten en toch trekt dat pak met koekjes aan je. ’s Avonds op de bank grijp je toch weer naar de chipszak, terwijl je eigenlijk helemaal geen trek had voordat je ging zitten. En als je een maaltijd iets te lang uitstelt, word je hangry.',
+      'Je hebt net gegeten en toch trekt dat pak met koekjes aan je. ’s Avonds op de bank grijp je toch weer naar de chipszak, terwijl je eigenlijk helemaal geen trek had voordat je ging zitten. En als je een maaltijd iets te lang uitstelt, wordt je hangry.',
       'Cravings zijn het een signaal van je bloedsuiker. Grote schommelingen zorgen voor pieken en dalen die je lichaam wil bijsturen en dat doet het het liefst met snelle suikers.',
       'Ik kijk met je naar wat er in jouw dagelijkse eetpatroon gebeurt: hoe je maaltijden zijn opgebouwd, wat er rond sport en slaap speelt en of je cyclus een rol speelt in jouw cravings. Vanuit mijn ervaring als orthomoleculair hormoon- en darmtherapeut zoek ik naar wat bij jouw lichaam werkt. ',
     ],
