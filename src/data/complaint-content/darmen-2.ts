@@ -46,8 +46,11 @@ export const darmenContent2: ComplaintContentMap = {
       'Je vult vooraf uitgebreide intakeformulieren in over je voeding, stoelgang, stress en leefstijl',
       'Tijdens de intake bespreken we je stoelgangpatroon en wat eraan voorafgaat',
       'We brengen de factoren als vezels, vocht, mineralen, schildklier en cyclus samen in beeld',
+      'We kijken naar je vezel- en vochtinname en naar mineralen als magnesium die een rol spelen bij je darmspier',
+      'We bekijken of een tragere schildklierwerking of progesteron in de tweede helft van je cyclus je stoelgang vertraagt',
+      'We bespreken je eetritme, beweging en stress, want die bepalen mee hoe snel je darmen werken',
       'Je krijgt een plan op maat',
-      'Waar nodig kunnen we laboratoriumonderzoek inzetten. ',
+      'Waar nodig kunnen we laboratoriumonderzoek inzetten, bijvoorbeeld naar je schildklierwaarden',
     ],
     faqHeading: 'Veelgestelde vragen over obstipatie',
     faqs: [
