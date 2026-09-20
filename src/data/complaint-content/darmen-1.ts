@@ -259,8 +259,8 @@ export const darmenContent1: ComplaintContentMap = {
     explanationHeading: 'Wat is PDS precies?',
     explanation: [
       'PDS, het prikkelbare darm syndroom, is een diagnose van uitsluiting. Dat betekent dat andere aandoeningen, zoals coeliakie, IBD of infecties, eerst zijn uitgesloten door de huisarts of maag-darm-leverarts, voordat de diagnose PDS wordt gesteld. Er is dan geen zichtbare afwijking te vinden in je darmen, terwijl de klachten wel degelijk reëel en vaak flink belastend zijn.',
-      'Binnen PDS wordt onderscheid gemaakt tussen verschillende vormen: IBS-C, waarbij verstopping op de voorgrond staat, IBS-D, waarbij diarree overheerst en IBS-M, een mengvorm van beide. Klachten zoals buikpijn, een opgeblazen gevoel, krampen en een onvoorspelbaar stoelgangpatroon horen bij alle vormen, maar de aanpak kan verschillen afhankelijk van welke vorm bij jou past.',
-      'Bij PDS spelen vaak meerdere triggers tegelijk een rol: bepaalde voedingsmiddelen, stress en angst voor klachten zelf, verstoringen in het darmmicrobioom en een verhoogde gevoeligheid van je darmzenuwstelsel. Die laatste factor betekent dat je darmen sneller reageren op prikkels die bij iemand anders geen enkele klacht geven. Dat maakt PDS geen “verzonnen” of “alleen psychisch” probleem, maar een reëel samenspel tussen lichaam en zenuwstelsel.',
+      '',
+      'Bij PDS spelen vaak meerdere triggers tegelijk een rol. Bepaalde voedingsmiddelen, stress en angst voor klachten zelf, verstoringen in het darmmicrobioom en een verhoogde gevoeligheid van je darmzenuwstelsel. Die laatste factor betekent dat je darmen sneller reageren op prikkels die bij iemand anders geen enkele klacht geven. Dat maakt PDS geen “verzonnen” of “alleen psychisch” probleem, maar een samenhang tussen lichaam en zenuwstelsel.',
     ],
     factorsHeading: 'Wat kan jouw PDS-klachten triggeren of in stand houden?',
     factorsIntro:
@@ -268,7 +268,7 @@ export const darmenContent1: ComplaintContentMap = {
     factors: [
       {
         title: 'Stress en het zenuwstelsel van je darmen',
-        text: 'Je darmen hebben een eigen zenuwstelsel dat sterk communiceert met je hersenen. Bij PDS is dit systeem vaak overgevoelig, waardoor stress, spanning en zelfs angst voor klachten zelf de klachten kunnen versterken. Dit is een lichamelijk mechanisme, geen teken dat de klachten “tussen de oren” zitten.',
+        text: 'Je darmen hebben een eigen zenuwstelsel dat sterk communiceert met je hersenen. Bij PDS is dit systeem vaak overgevoelig, waardoor stress, spanning en zelfs angst voor klachten zelf de klachten kunnen versterken. Dit is een lichamelijk reactie, geen teken dat de klachten “tussen de oren” zitten.',
       },
       {
         title: 'Darmmicrobioom en dysbiose',
@@ -276,7 +276,7 @@ export const darmenContent1: ComplaintContentMap = {
       },
       {
         title: 'Angst voor eten en sociale impact',
-        text: 'Wanneer je vaker klachten krijgt na het eten, ontstaat soms angst voor eten zelf. Dat kan leiden tot het vermijden van etentjes, sociale situaties of zelfs hele voedingsgroepen. Deze angst kan de klachten via het zenuwstelsel weer versterken, waardoor een vicieuze cirkel ontstaat.',
+        text: 'Wanneer je vaker klachten krijgt na het eten, ontstaat soms angst voor eten zelf. Dat kan leiden tot het vermijden van etentjes, sociale situaties of zelfs hele voedingsgroepen zoals zuivel of gluten. Deze angst kan de klachten via het zenuwstelsel weer versterken, waardoor een vicieuze cirkel ontstaat.',
       },
       {
         title: 'Hormonale schommelingen',
