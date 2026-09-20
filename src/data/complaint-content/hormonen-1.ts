@@ -92,8 +92,8 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Helpt de anticonceptiepil tegen menstruatieklachten?',
         answer: [
-          'De pil kan klachten onderdrukken doordat je eigen cyclus wordt stilgelegd, maar de onderliggende oorzaak van je pijn of bloedverlies wordt daarmee niet per se aangepakt.',
-          'In mijn begeleiding richt ik me op wat er onder de klacht ligt, zodat je ook zonder onderdrukking merkbaar verschil kunt ervaren.',
+          'De pil kan menstruatieklachten zoals pijn en hevig bloedverlies verminderen doordat je eigen cyclus wordt onderdrukt. Daarmee worden de klachten vaak minder, maar de oorzaak van de klachten wordt niet altijd aangepakt.',
+          'In mijn begeleiding kijken we daarom ook naar wat er rondom je klachten speelt en welke ondersteuning passend is. Daarbij hoeft anticonceptie geen belemmering te zijn. Je kunt gewoon bij mij starten terwijl je de pil of andere anticonceptie gebruikt. Stoppen of veranderen is niet nodig om een traject te volgen. Of je anticonceptie wilt blijven gebruiken, stoppen of iets wilt veranderen, is altijd jouw eigen keuze.',
         ],
       },
       {
