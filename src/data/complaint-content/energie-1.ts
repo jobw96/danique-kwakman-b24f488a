@@ -477,7 +477,7 @@ export const energieContent1: ComplaintContentMap = {
     intro: [
       'Je bent voorzichtiger gaan eten, beweegt genoeg, en toch lukt afvallen niet of gaat het buikvet er juist niet af. Na maaltijden voel je je regelmatig loom of moe, alsof je lichaam meer moeite heeft om met je eten om te gaan dan zou moeten. Misschien is er ook de diagnose PCOS/PMOS gesteld of vermoed je dat er iets met je bloedsuiker speelt.',
       'Insulineresistentie betekent dat je cellen minder goed reageren op insuline, waardoor je lichaam steeds meer insuline moet aanmaken om je bloedsuiker op peil te houden. Dat proces merk je niet direct, maar wel via de gevolgen: moeilijker afvallen, buikvet dat blijft zitten, energiedips na het eten en bij sommige vrouwen ook PCOS-klachten.',
-      'Als orthomoleculair hormoon- en darmtherapeut kijk ik samen met je naar wat er bij jou speelt: je voeding, beweegpatroon, slaap en, waar relevant, je hormonen. Geen standaard dieet, maar een aanpak die aansluit bij jouw lichaam en dagelijks leven.',
+      'Als orthomoleculair hormoon- en darmtherapeut kijk ik samen met je naar wat er bij jou speelt: je voeding, beweegpatroon, slaap en je hormonen. ',
     ],
     recognition: [
       'Je hebt moeite met afvallen, ook al eet je bewust en beweeg je regelmatig.',
