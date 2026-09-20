@@ -125,6 +125,7 @@ export const onregelmatigeCyclusContent: ComplaintContentMap = {
           'Een onregelmatige cyclus is niet altijd reden tot zorgen, maar er zijn situaties waarin het belangrijk is om medische beoordeling te laten plaatsvinden. Denk bijvoorbeeld aan een menstruatie die langere tijd uitblijft, zeer hevig bloedverlies, ernstige pijn, bloedverlies na de overgang of een mogelijke zwangerschap.',
           'Ook wanneer je zwanger wilt worden en je menstruatie erg onregelmatig is of regelmatig uitblijft, is het goed om dit te bespreken.',
           'Daarnaast kan een onregelmatige cyclus juist aanleiding zijn om verder te kijken naar wat er rondom je cyclus gebeurt. Tijdens mijn begeleiding kijken we onder andere naar de lengte en het verloop van je cyclus, signalen van een ovulatie en klachten zoals acne, haaruitval, cravings of vermoeidheid. Waar relevant kunnen we dit aanvullen met laboratoriumonderzoek.',
+          'Vervolgens kijken we welke factoren we met voeding en leefstijl kunnen ondersteunen om je lichaam en hormoonhuishouding weer beter te laten functioneren en je cyclus weer op gang te helpen.',
         ],
       },
     ],
