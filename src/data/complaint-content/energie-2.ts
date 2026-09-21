@@ -444,9 +444,9 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Betekent dit dat ik diabetes heb?',
         answer: [
-          'Niet per se. Bloedsuikerschommelingen met klachten zoals trillerigheid, hartkloppingen of zweten kunnen ook voorkomen zonder dat er sprake is van diabetes. Dit wordt soms reactieve hypoglykemie genoemd: een relatief lage bloedsuiker als reactie op een eerdere piek.',
-          'Diabetesonderzoek, waaronder bloedonderzoek naar je nuchtere glucose en HbA1c, hoort bij je huisarts thuis. Dat is belangrijk om eventuele diabetes of prediabetes uit te sluiten of vast te stellen.',
-          'Vanuit mijn begeleiding kijk ik daarnaast naar je voedingspatroon en leefstijl, als aanvulling op, niet als vervanging van, medische diagnostiek.',
+          'Niet per se. Bloedsuikerschommelingen met klachten zoals trillerigheid, hartkloppingen of zweten kunnen ook voorkomen zonder dat er sprake is van diabetes.',
+          'Diabetesonderzoek, waaronder bloedonderzoek naar je nuchtere glucose en HbA1c, voert de huisarts uit. Dat is belangrijk om eventuele diabetes of prediabetes uit te sluiten of vast te stellen.',
+          'Vanuit mijn begeleiding kijk ik daarnaast naar je voedingspatroon en leefstijl, als aanvulling op de medische diagnostiek. Vanuit mijn visie zorgen we ervoor dat je de optimale voedingsstoffen binnenkrijgt om je klachten te verbeteren. Bij bloedsuikerschommelingen kijken we bijvoorbeeld naar hoe je je maaltijden opbouwt en welke invloed deze hebben op je bloedsuikerspiegel.',
         ],
       },
       {
