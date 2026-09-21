@@ -248,7 +248,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Mag ik zelf stoppen met maagzuurremmers?',
         answer: [
           'Nee, stop nooit zelf met voorgeschreven maagzuurremmers. Afbouwen moet altijd in overleg met je huisarts of specialist, omdat abrupt stoppen juist kan zorgen voor een tijdelijke toename van klachten.',
-          'Ik kan wel met je meedenken over voeding en leefstijl naast je medicatie en help je de juiste vragen voor te bereiden voor je (huis)arts.',
+          'Ik kan je begeleiding om de juiste voeding en leefstijl interventies in te zetten om ervoor te zorgen dat je lichaam en spijsvertering \u00a0zo optimaal mogelijk functioneert en jij je lichaam precies geeft wat het nodig heeft.',
         ],
       },
       {
