@@ -243,7 +243,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Kan mijn eczeem echt met mijn darmen te maken hebben?',
         answer: [
           'Ja, huid en darmen delen dezelfde barrièrefunctie en staan via het immuunsysteem met elkaar in verbinding. Een verstoorde darmwand kan bijdragen aan de ontstekingsreactie die je als eczeem op je huid ziet.',
-          'Ik breng dit in de intake in kaart, ook als je dat verband zelf nog niet had gelegd.',
+          'Bij het 1:1 darmtraject onderzoeken we onder andere je darmgezondheid, voeding en leefstijl en brengen we in kaart wat er mogelijk meespeelt bij jouw klachten.',
         ],
       },
       {
