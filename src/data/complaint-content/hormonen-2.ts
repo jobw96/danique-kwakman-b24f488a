@@ -468,7 +468,7 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Kan voeding echt iets doen aan mijn PMS-klachten?',
         answer: [
           'Voeding en bloedsuikerregulatie kunnen bij veel vrouwen bijdragen aan minder heftige PMS-klachten, doordat ze de hormonale schommelingen in de luteale fase mede beïnvloeden.',
-          'Het is geen wondermiddel dat PMS volledig laat verdwijnen, maar wel een factor die vaak wordt onderschat.',
+          'Het is van groot belang om te kijken naar de balans tussen de verschillende hormonen om je PMS onder controle te krijgen. Met bepaalde voedingsmiddelen kun je je progesteron boosten om de aanmaak te verbeteren en zo je PMS klachten te verminderen. ',
           'In een traject kijken we naar jouw voeding gedurende de cyclus en wat daarin voor jou haalbare aanpassingen zijn.',
         ],
       },
