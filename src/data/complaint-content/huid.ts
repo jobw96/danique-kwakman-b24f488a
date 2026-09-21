@@ -127,7 +127,7 @@ export const huidContent: ComplaintContentMap = {
     factorsIntro: 'Een verzwakte huidbarrière heeft vaak meerdere oorzaken tegelijk. Dit komt Danique regelmatig tegen:',
     factors: [
       { title: 'Omega 3-tekort', text: 'Te weinig gezonde vetten in je voeding verzwakt de vetlaag die je huid beschermt tegen vochtverlies.' },
-      { title: 'Vitamine A- en D-tekort', text: 'Deze vitamines zijn essentieel voor huidherstel en celvernieuwing; een tekort houdt je huid droog en dof.' },
+      { title: 'Vitamine A- en D-tekort', text: 'Deze vitamines zijn essentieel voor huidherstel en celvernieuwing. Een tekort houdt je huid droog en dof.' },
       { title: 'Verminderde opname door maagzuur', text: 'Te weinig maagzuur belemmert de opname van vetten en vetoplosbare vitamines, ook als je voeding op zich goed is.' },
       { title: 'Schildklierwerking', text: 'Een trage schildklier vertraagt celvernieuwing en kan zorgen voor een droge, schilferige huid.' },
       { title: 'Hormonale veranderingen in de overgang', text: 'Een dalende oestrogeenspiegel vermindert de vochtvasthoudende capaciteit van je huid.' },
@@ -144,11 +144,11 @@ export const huidContent: ComplaintContentMap = {
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, spijsvertering en hormonen in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw droge en gevoelige huid',
     together: [
-      'Ze brengt je vetinname en opname van voedingsstoffen in kaart',
-      'Ze bekijkt signalen van maagzuur en spijsvertering',
-      'Ze betrekt je schildklierfunctie en hormoonstatus bij het gesprek',
-      'Ze adviseert eventueel gericht laboratoriumonderzoek',
-      'Ze stelt een voedings- en suppletieadvies op maat op',
+      'We brengen de vetinname en opname van voedingsstoffen in kaart',
+      'We bekijken signalen van maagzuur en spijsvertering',
+      'We betrekken je schildklierfunctie en hormoonstatus bij het gesprek',
+      'We bekijken of gericht laboratoriumonderzoek inzetten nuttig is',
+      'We gaan aan e slag met jouw persoonlijke behandelplan.',
     ],
     faqHeading: 'Veelgestelde vragen over een droge of gevoelige huid',
     faqs: [
