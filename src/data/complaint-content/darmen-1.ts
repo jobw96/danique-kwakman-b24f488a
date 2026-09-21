@@ -318,7 +318,7 @@ export const darmenContent1: ComplaintContentMap = {
         answer: [
           'Ja, PDS is een erkende medische diagnose die door de huisarts of maag-darm-leverarts wordt gesteld nadat andere aandoeningen zijn uitgesloten, zoals coeliakie of chronische darmontstekingen. Het is dus een diagnose van uitsluiting, geen verzinsel of “alleen stress”.',
           'Bij nieuwe klachten, alarmsymptomen zoals bloed bij de ontlasting, onbedoeld gewichtsverlies of klachten die ’s nachts wakker houden, hoort altijd eerst medische beoordeling plaats te vinden.',
-          'Wanneer de diagnose PDS eenmaal is gesteld, kan ik met je meekijken naar voeding, stress, darmflora en leefstijl om de klachten te verminderen.',
+          'Wanneer de diagnose PDS eenmaal is gesteld, kan ik met je meekijken naar voeding, stress, darmflora en leefstijl om de klachten te verminderen.\n\n\n',
         ],
       },
       {
