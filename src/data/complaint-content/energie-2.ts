@@ -241,6 +241,7 @@ export const energieContent2: ComplaintContentMap = {
       },
       {
         question: 'Wat kan ik vandaag al proberen?',
+        extraLinks: true,
         answer: [
           'Voeg eiwitten en vezels toe aan je ontbijt en lunch, bijvoorbeeld eieren, yoghurt, peulvruchten of volkorenproducten in plaats van alleen snelle koolhydraten. En probeer een korte wandeling na de lunch. Kan je wel wat inspiratie gebruiken? Check mijn recepten pagina of kijk eens naar Nourish Your Body - mijn e-book met 50+ hormoon proof en darm vriendelijke recepten die je o.a. helpen om je bloedsuiker spiegel stabiel te houden. ',
           'Kijk ook of je voldoende drinkt gedurende de dag, water helpt vaak meer dan je zou denken.',
