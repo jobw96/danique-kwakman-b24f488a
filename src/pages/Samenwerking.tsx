@@ -14,13 +14,19 @@ const Samenwerking = () => {
           {/* Hero */}
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Samenwerking</div>
+              <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Samenwerkingen</div>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-                Samenwerking met Florine Veldstra
+                Samenwerkingen
               </h1>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Voor sommige klachten is het fijn als voeding en leefstijl worden aangevuld met gespecialiseerde fysiotherapie. Daarom werk ik samen met Florine Veldstra, bekkenfysiotherapeut in Hoorn.
+                  Gezondheid houdt niet op bij één vakgebied. Sommige klachten vragen om meer dan alleen voeding en leefstijl. Daarom werk ik graag samen met andere zorgprofessionals die ieder vanuit hun eigen expertise naar een klacht kijken.
+                </p>
+                <p>
+                  Door kennis en expertise te combineren, kunnen we elkaar aanvullen en vrouwen naar de juiste begeleiding doorverwijzen wanneer dat nodig is.
+                </p>
+                <p>
+                  Op deze pagina vind je de professionals met wie ik samenwerk.
                 </p>
               </div>
             </div>
@@ -43,6 +49,9 @@ const Samenwerking = () => {
                   <p className="text-xs font-medium uppercase tracking-widest text-primary mb-4">Bekkenfysiotherapeut in Hoorn</p>
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Florine Veldstra</h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+                    <p>
+                      Voor sommige klachten is het fijn als voeding en leefstijl worden aangevuld met gespecialiseerde fysiotherapie. Daarom werk ik samen met Florine Veldstra, bekkenfysiotherapeut in Hoorn.
+                    </p>
                     <p>
                       Florine is gespecialiseerd in bekkenfysiotherapie en begeleidt vrouwen onder andere bij bekkenpijn, bekkenbodemklachten, obstipatie en andere ontlastingsklachten, pijn bij het vrijen en klachten rondom zwangerschap en bevalling.
                     </p>
@@ -81,19 +90,6 @@ const Samenwerking = () => {
                   </a>
                 </div>
               </div>
-            </div>
-          </FadeIn>
-
-          {/* Slot */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl border border-secondary/30 shadow-xs p-8 md:p-12 text-center">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Benieuwd naar de begeleiding van Florine?</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-                Op de website van Fysio Veldstra lees je alles over haar specialisaties en hoe je een afspraak maakt.
-              </p>
-              <a href="https://www.fysioveldstra.nl" target="_blank" rel="noopener noreferrer">
-                <CustomButton variant="secondary">Naar de website van Fysio Veldstra</CustomButton>
-              </a>
             </div>
           </FadeIn>
         </div>
