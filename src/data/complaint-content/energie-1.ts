@@ -197,7 +197,7 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Waarom snack ik altijd ’s avonds op de bank?',
         answer: [
-          'Avondsnacken heeft vaak te maken met een combinatie van bloedsuikerschommelingen overdag, vermoeidheid en gewoontegedrag. Als je overdag te weinig eiwit of vezels binnenkrijgt, is de kans groter dat je ’s avonds meer trek hebt.',
+          'Avondsnacken heeft vaak te maken met een combinatie van bloedsuikerschommelingen overdag, vermoeidheid en gewoontegedrag. Als je overdag te weinig eiwit of vezels binnenkrijgt of je bloedsuikerspiegel overdag veel schommelt is de kans groter dat je ’s avonds meer trek hebt.',
           'We kijken samen naar je hele dagpatroon, niet alleen naar het avondmoment zelf, zodat je snel begrijpt waar de trek vandaan komt.',
         ],
       },
