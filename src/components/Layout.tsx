@@ -227,6 +227,9 @@ export const Layout: React.FC<LayoutProps> = ({
       icon: BookOpen
     }]
   }, {
+    name: 'Klachten',
+    href: '/klachten'
+  }, {
     name: 'Aanbod',
     subItems: [{
     name: 'Aanbod',
