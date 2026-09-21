@@ -309,7 +309,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Waarom word ik iedere nacht om dezelfde tijd wakker?',
         answer: [
           'Wakker worden rond hetzelfde tijdstip kan te maken hebben met een bloedsuikerdip, een verstoord cortisolritme of hormonale schommelingen. Je lichaam volgt hierin vaak een herkenbaar patroon.',
-          'In een traject kijken we naar je avondmaaltijd, stressniveau en cyclus, zodat we kunnen zien wat bij jou waarschijnlijk meespeelt.',
+          'Het is dus verstandig om niet alleen naar je slaappatroon te kijken en langer in bed te gaan liggen, maar juist naar je voedingspatroon en leefstijl factoren. Denk aan voeding eten die je bloedsuiker stabiliseert en voeding eten die je hormonen ondersteunen. ',
         ],
       },
       {
