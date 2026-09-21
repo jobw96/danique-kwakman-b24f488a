@@ -466,14 +466,6 @@ export const energieContent2: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Helpt het om vaker kleine beetjes te eten?',
-        answer: [
-          'Voor sommigen wel, maar het is geen universele oplossing. Belangrijker dan de frequentie is de opbouw van je maaltijden: voldoende eiwitten, vezels en gezonde vetten zorgen voor een stabielere bloedsuiker, ongeacht hoe vaak je eet.',
-          'Continu kleine beetjes eten zonder die opbouw kan schommelingen soms zelfs in stand houden.',
-          'In de intake kijken we wat qua ritme en opbouw bij jouw lichaam en dagindeling past.',
-        ],
-      },
-      {
         question: 'Kan mijn cyclus invloed hebben op mijn bloedsuiker?',
         answer: [
           'Ja, hormonen zoals oestrogeen en progesteron beïnvloeden hoe gevoelig je lichaam is voor insuline. Veel vrouwen merken dat ze in de dagen voor hun menstruatie sneller last hebben van bloedsuikerschommelingen en cravings.',
