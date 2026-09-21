@@ -62,7 +62,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Moet ik stoppen met zuivel om van mijn acne af te komen?',
         answer: [
           'Dat is niet voor iedereen nodig. Bij sommige vrouwen speelt zuivel duidelijk mee, bij andere nauwelijks. Radicaal alles schrappen zonder te weten of het bij jou de aanjager is, heeft weinig zin.',
-          'Danique test dit liever gestructureerd met je uit, zodat je weet of het voor jou wel of geen verschil maakt.',
+          'Ik test dit liever gestructureerd met je uit, zodat je weet of het voor jou wel of geen verschil maakt.',
         ],
       },
       {
