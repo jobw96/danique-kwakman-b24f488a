@@ -24,6 +24,8 @@ const BulletList = ({ items }: { items: string[] }) => (
 const TRAJECT_LINKS: { term: string; to: string }[] = [
   { term: '1:1 Hormoontraject', to: '/hormoontraject' },
   { term: 'Hormoontraject', to: '/hormoontraject' },
+  { term: '1:1 hormoon traject', to: '/hormoontraject' },
+  { term: 'hormoon traject', to: '/hormoontraject' },
   { term: '1:1 Darmtraject', to: '/darmtraject' },
   { term: 'Darmtraject', to: '/darmtraject' },
   { term: '1:1 Bloedsuikertraject', to: '/bloedsuikertraject' },
