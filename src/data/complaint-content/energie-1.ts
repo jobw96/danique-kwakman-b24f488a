@@ -545,7 +545,12 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Wat is het verschil tussen insulineresistentie en diabetes?',
         answer: [
           'Insulineresistentie betekent dat je cellen minder goed reageren op insuline, waardoor je lichaam meer insuline aanmaakt om je bloedsuiker op peil te houden. Bij diabetes type 2 lukt het lichaam niet meer voldoende om de bloedsuiker binnen normale grenzen te houden.',
-          'De diagnose diabetes of prediabetes stelt de huisarts vast op basis van bloedonderzoek. Ik kijk vooral naar leefstijlfactoren die insulinegevoeligheid kunnen verbeteren, aanvullend op medische diagnostiek.',
+          'De diagnose diabetes of prediabetes stelt de huisarts vast op basis van bloedonderzoek. Ik kijk vooral naar leefstijlfactoren die insulinegevoeligheid kunnen verbeteren, aanvullend op medische diagnostiek.
+
+Bij PCOS zien we bijvoorbeeld vaak insuline resistentie terug. Door middel van het aanpassen je je voeding en het aanpassen van leefstijl factoren zoals stress, slaap en beweging kunnen we je PCOS klachten beter onder controle krijgen. 
+
+Om insuline resistentie om te keren kijken we naar hoe je bloedsuikerspiegel reageert op je voeding, beweging en slaap. Op basis van deze informatie gaan we je maaltijden en leefstijl factoren aanpassen om je cellen weer ' gevoeliger' te maken voor de insuline. 
+',
         ],
       },
       {
