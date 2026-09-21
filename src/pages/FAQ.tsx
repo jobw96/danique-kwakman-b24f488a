@@ -30,6 +30,10 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Staat je gehele aanbod op je website?',
     answer: 'De basis van mijn aanbod vind je hier op de website. Andere programma\'s, gratis videotrainingen, masterclasses en trainingen deel ik niet altijd op mijn website. Wil je niets missen en op de hoogte blijven? Volg me dan op Instagram'
+  },
+  {
+    question: 'Bij de huisarts waren mijn bloedwaarden goed. Waarom zou aanvullend laboratoriumonderzoek dan nog iets kunnen toevoegen?',
+    answer: 'Regulier bloedonderzoek is waardevol en wordt vooral ingezet om ziekten en medische afwijkingen op te sporen of uit te sluiten. Wanneer daar geen duidelijke afwijkingen uit komen, betekent dat niet automatisch dat er geen aanvullende informatie te verkrijgen is.\n\nIn mijn begeleiding kan aanvullend laboratoriumonderzoek van RP Sanitas Humanus worden ingezet om bepaalde puzzelstukjes verder te onderzoeken. Afhankelijk van jouw klachten en hulpvraag kan dit bijvoorbeeld informatie geven over hormonen, voedingsstoffen of andere relevante waarden.\n\nIk werk met laboratoriumonderzoek en niet met energetische of niet-laboratoriumgerichte testmethoden, zoals een EMB-test. De uitslagen zie ik altijd als aanvulling op de uitgebreide intake en mijn begeleiding met voeding en leefstijl.\n\nAanvullend onderzoek is geen standaard onderdeel van ieder traject. Eerst brengen we jouw klachten en situatie uitgebreid in kaart. Daarna kijken we of onderzoek iets kan toevoegen aan jouw begeleiding.'
   }
 ];
 
@@ -106,10 +110,12 @@ const FAQ = () => {
                   transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                   className="overflow-hidden"
                 >
-                  <div className="pb-6">
-                    <p className="text-muted-foreground leading-relaxed">
-                      {item.answer}
-                    </p>
+                  <div className="pb-6 space-y-4">
+                    {item.answer.split('\n\n').map((paragraph, pIdx) => (
+                      <p key={pIdx} className="text-muted-foreground leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
                   </div>
                 </m.div>
               </m.div>
