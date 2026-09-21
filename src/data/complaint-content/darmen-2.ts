@@ -94,8 +94,8 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Is het normaal om niet elke dag naar de wc te gaan?',
         answer: [
-          'Dat verschilt per persoon. Drie keer per week tot drie keer per dag wordt over het algemeen als normaal beschouwd, zolang de ontlasting soepel is en zonder persen komt. Belangrijker dan de frequentie is of het patroon voor jou prettig en voorspelbaar is.',
-          'Twijfel je of jouw patroon normaal is, dan bespreken we dat rustig tijdens de intake.',
+          'Poepen = detoxen. Je lijf is de hele dag bezig om afval stoffen af te breken en die moeten je lichaam kunnen verlaten door o.a. je ontlasting. Kan jij nu niet elke dag naar het toilet? Dan is het slim om te onderzoeken waarom je niet elke dag naar het toilet kunt.\u00a0',
+          'Wil je gaan werken aan een ontlastingspatroon waarbij je elke dag makkelijk naar het toilet kunt? Plan een gratis kennismaking in om de mogelijkheden te bespreken.\u00a0',
         ],
       },
     ],
