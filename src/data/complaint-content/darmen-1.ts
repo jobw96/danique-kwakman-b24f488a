@@ -324,8 +324,8 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Kan angst voor eten mijn PDS-klachten verergeren?',
         answer: [
-          'Ja, wanneer je vaker klachten krijgt na het eten, ontstaat soms angst voor eten zelf. Deze angst kan via het zenuwstelsel van je darmen de klachten juist versterken, waardoor een vicieuze cirkel ontstaat van vermijden, spanning en meer klachten.',
-          'Het doorbreken van dit patroon vraagt om meer dan alleen voedingsaanpassingen; het vraagt ook om het herstellen van vertrouwen in je lichaam en eten.',
+          'Ja, wanneer je vaker klachten krijgt na het eten, ontstaat soms angst voor eten zelf. Deze angst kan via je darmen de klachten juist versterken, waardoor een vicieuze cirkel ontstaat van vermijden, spanning en meer klachten.',
+          'Het doorbreken van dit patroon vraagt om meer dan alleen voedingsaanpassingen. Het vraagt ook om het herstellen van vertrouwen in je lichaam en eten.',
           'In mijn begeleiding houd ik hier rekening mee, zodat we niet alleen naar voeding kijken, maar ook naar hoe je met eten en klachten omgaat.',
         ],
       },
