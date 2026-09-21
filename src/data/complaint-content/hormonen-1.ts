@@ -480,13 +480,6 @@ export const hormonenContent1: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Wat is Hashimoto precies?',
-        answer: [
-          'Hashimoto is een auto-immuunaandoening waarbij het afweersysteem de schildklier aanvalt, wat op termijn kan leiden tot een onderfunctie.',
-          'In mijn begeleiding kijk ik naar voedings- en leefstijlfactoren die ontstekingsreacties kunnen beïnvloeden, naast de medische behandeling.',
-        ],
-      },
-      {
         question: 'Kan voeding mijn schildklierfunctie echt beïnvloeden?',
         answer: [
           'Voedingsstoffen zoals jodium, selenium en zink zijn nodig voor de aanmaak en omzetting van schildklierhormonen, dus een tekort kan meespelen in je klachten.',
