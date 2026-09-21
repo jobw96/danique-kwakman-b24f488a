@@ -477,8 +477,8 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Wat is het verschil met insulineresistentie?',
         answer: [
           'Bloedsuikerschommelingen zijn pieken en dalen in je bloedsuiker gedurende de dag, terwijl insulineresistentie betekent dat je lichaamscellen minder goed reageren op insuline, waardoor je bloedsuiker structureel moeilijker gereguleerd wordt.',
-          'De twee kunnen samenhangen: langdurige schommelingen kunnen bijdragen aan een verminderde insulinegevoeligheid en insulineresistentie kan op zijn beurt weer schommelingen versterken.',
-          'Omdat insulineresistentie elders op deze site een eigen pagina heeft, ga ik daar hier niet dieper op in, maar in de intake kijken we of dit voor jou relevant is.',
+          'De twee kunnen samenhangen. Langdurige schommelingen kunnen bijdragen aan een verminderde insulinegevoeligheid en insulineresistentie kan op zijn beurt weer schommelingen versterken.',
+          'Check ook even deze pagina over insuline resistentie. ',
         ],
       },
       {
