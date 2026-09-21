@@ -17,7 +17,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: 'Kan ik de trajecten ook online volgen?',
-    answer: 'Ja zeker, zowel de intake als de vervolgafspraken kunnen in Hoorn of online via Zoom plaatsvinden.'
+    answer: 'Ja zeker, zowel de intake als de vervolgafspraken kunnen in Hoorn (Muntstraat 18, 1621 GB Hoorn) of online via Zoom plaatsvinden.'
   },
   {
     question: 'Kan ik dit traject combineren met andere behandelingen of begeleiding?',
