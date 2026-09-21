@@ -55,7 +55,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Waarom heb ik nu pas acne, terwijl ik als tiener een goede huid had?',
         answer: [
           'Adult acne heeft vaak een andere oorzaak dan tieneracne. Hormonale verschuivingen, zoals na het stoppen met de pil, rond de dertig of richting de overgang, kunnen de balans tussen androgenen en je andere hormonen veranderen.',
-          'Danique kijkt in de intake specifiek naar wanneer je acne begon en welke verandering daaraan voorafging.',
+          'Tijdens de intake kijken we specifiek naar wanneer je acne begon en welke verandering daaraan voorafging.',
         ],
       },
       {
