@@ -119,7 +119,7 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Kan ik dit met een test laten meten?',
         answer: [
           'Er bestaan speekseltesten die cortisol op meerdere momenten van de dag meten, waarmee een dagcurve zichtbaar wordt. Zo’n test kan aanvullende informatie geven, maar zegt niet alles op zichzelf.',
-          'Ik kijk daarom altijd naar het geheel: je klachten, dagritme, voeding, slaap en herstel, eventueel aangevuld met gerichte diagnostiek waar dat zinvol is.',
+          'Ik kijk daarom altijd naar het geheel. Je klachten, dagritme, voeding, slaap en herstel, eventueel aangevuld met gerichte diagnostiek waar dat zinvol is.',
           'Tijdens de intake bespreken we of en welke aanvullende meting bij jouw situatie past.',
         ],
       },
