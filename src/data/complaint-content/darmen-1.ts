@@ -340,7 +340,7 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Wanneer moet ik met PDS-klachten terug naar de huisarts?',
         answer: [
-          'Ga terug naar de huisarts bij alarmsymptomen zoals bloed bij de ontlasting, onbedoeld gewichtsverlies, aanhoudende koorts, klachten die ’s nachts wakker houden, of wanneer bestaande klachten duidelijk veranderen van patroon.',
+          'Ga terug naar de huisarts bij alarmsymptomen zoals bloed bij de ontlasting, onbedoeld gewichtsverlies, aanhoudende koorts, klachten die ’s nachts wakker houden of wanneer bestaande klachten duidelijk veranderen van patroon.',
           'Ook als je klachten plotseling verergeren of als je nieuwe, onbekende klachten krijgt, is het belangrijk dit eerst medisch te laten beoordelen.',
           'Naast medische zorg kan ik met je meekijken naar voeding, stress, darmflora en cyclus om te achterhalen wat jouw PDS-klachten triggert en in stand houdt.',
         ],
