@@ -227,8 +227,8 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Helpt wandelen na het eten echt tegen een energiedip?',
         answer: [
           'Ja, een korte wandeling van tien tot vijftien minuten na een maaltijd kan de bloedsuikerpiek dempen, omdat je spieren dan glucose gebruiken. Dat kan de dip die normaal volgt merkbaar verkleinen.',
-          'Het hoeft geen intensieve work-out te zijn, een rustig ommetje is al voldoende om effect te merken.',
-          'In de intake bespreken we hoe je dit praktisch inpast in jouw werkdag.',
+          '',
+          '',
         ],
       },
       {
