@@ -62,7 +62,13 @@ export const recipes: Recipe[] = [
       'Voeg de cacao, honing en gesmolten kokosolie toe en meng alles goed door elkaar.',
       'Bak de granola circa 90 minuten op 100°C en schep tussendoor regelmatig om.'
     ],
-    tip: 'Voeg na het afkoelen wat pure chocolade toe voor een extra crunchy chocoladelaagje.'
+    tip: 'Voeg na het afkoelen wat pure chocolade toe voor een extra crunchy chocoladelaagje.',
+    notes: [
+      'Deze granola maak ik zelf regelmatig, zodat ik altijd een voorraadje in huis heb. Lekker over je yoghurt, op je chiapudding of gewoon als crunchy topping bij je ontbijt. De noten en zaden die ik hiervoor gebruik, haal ik vaak bij Pit&Pit. Je vindt mijn favoriete producten hier in mijn boodschappenlijstje bij Pit&Pit. Met code DANIQUE5 krijg je 5% korting.'
+    ],
+    noteLinks: [
+      { text: 'boodschappenlijstje', to: 'https://nl.pit-pit.com/collections/de-keuze-van-danique', external: true }
+    ]
   },
   {
     id: 'gembershots',
