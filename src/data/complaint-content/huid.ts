@@ -249,8 +249,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Moet ik stoppen met mijn cortisonecrème?',
         answer: [
-          'Nee, dat advies geef ik niet. Medicatie en het al dan niet aanpassen ervan is aan jouw huisarts of dermatoloog.',
-          'Ik kijk aanvullend naar voeding, darmen en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling.',
+          '',
+          'Ik kijk naar voeding, darmen, hormonen, je slaap en stress en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling. Het stoppen van cortisoncreme gaat in overleg met de huisarts.',
         ],
       },
       {
