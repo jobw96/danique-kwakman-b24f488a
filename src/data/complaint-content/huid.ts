@@ -198,9 +198,9 @@ export const huidContent: ComplaintContentMap = {
   },
   'eczeem': {
     intro: [
-      'Midden in de nacht lig je te krabben in je elleboogplooi, terwijl je eigenlijk gewoon wilt slapen. Overdag verstop je je handen liever in je mouwen omdat het eczeem daar weer is opgevlamd. Het is niet alleen vervelend, het is uitputtend.',
+      'Midden in de nacht lig je wakker door je huid. Overdag verstop je je handen liever in je mouwen omdat het eczeem daar weer is opgevlamd. ',
       'Eczeem draait om meer dan een geïrriteerde huid alleen. Je huidbarrière en je darmbarrière hebben veel raakvlakken en beide staan in nauw contact met je immuunsysteem. Raakt dat systeem overprikkeld, bijvoorbeeld door histamine, stress of bepaalde triggers, dan kan dat rechtstreeks in opvlammende plekken op je huid terug te zien zijn.',
-      'Je wilt geen nacht meer verliezen aan jeuk en geen zomerjurk meer overslaan omdat je huid weer rood en ruw aanvoelt. Dat vraagt om uitzoeken wat jouw eczeem precies triggert, in plaats van alleen de jeuk te onderdrukken.',
+      'Dat vraagt om uitzoeken wat jouw eczeem precies triggert, in plaats van alleen de jeuk te onderdrukken.',
     ],
     recognition: [
       'Je hebt terugkerende rode, ruwe plekken in je elleboog- of knieplooien.',
@@ -213,9 +213,9 @@ export const huidContent: ComplaintContentMap = {
     ],
     explanationHeading: 'Waarom eczeem vaak meer is dan een huidprobleem',
     explanation: [
-      'Je huid en je darmen hebben allebei een barrièrefunctie: ze houden schadelijke stoffen buiten en laten nuttige stoffen door. Deze twee barrières communiceren via het immuunsysteem, dat voor een groot deel rond je darmen zit. Is je darmbarrière verstoord, dan kan het immuunsysteem overprikkeld raken en dat uit zich bij veel mensen als huidontsteking, oftewel eczeem.',
-      'Histamine speelt hierin regelmatig een rol. Bij een verstoorde darmbalans wordt histamine minder goed afgebroken, waardoor je sneller reageert op bepaalde voeding, met jeuk en roodheid als gevolg. Ook stress verhoogt de gevoeligheid van je immuunsysteem en kan een opvlamming rechtstreeks uitlokken, iets wat veel vrouwen met eczeem zelf al herkennen.',
-      'Vitamine D ondersteunt zowel je huid als je immuunsysteem en een tekort hieraan wordt vaak gezien bij mensen met eczeem. Daarnaast bepalen individuele triggers, van bepaalde voedingsmiddelen tot wasmiddelen of stof, mede hoe vaak en hoe hevig je huid opvlamt. Die triggers zijn voor iedereen anders, wat verklaart waarom een standaardaanpak niet voor iedereen werkt.',
+      'Je huid en je darmen hebben allebei een barrièrefunctie. Ze houden schadelijke stoffen buiten en laten nuttige stoffen door. Deze twee barrières communiceren via het immuunsysteem, dat voor een groot deel rond je darmen zit. Is je darmbarrière verstoord, dan kan het immuunsysteem overprikkeld raken en dat uit zich bij veel mensen als huidontsteking, oftewel eczeem.',
+      'Histamine speelt hierin regelmatig een rol. Bij een verstoorde darmbalans wordt histamine minder goed afgebroken, waardoor je sneller reageert op bepaalde voeding, met jeuk en roodheid als gevolg. Ook stress verhoogt de gevoeligheid van je immuunsysteem en kan een opvlamming rechtstreeks uitlokken, iets wat veel vrouwen met eczeem zelf al herkennen. ',
+      'Vitamine D ondersteunt zowel je huid als je immuunsysteem en een tekort hieraan wordt vaak gezien bij mensen met eczeem. Daarnaast bepalen individuele triggers, van bepaalde voedingsmiddelen tot wasmiddelen of stof, mede hoe vaak en hoe hevig je huid opvlamt. Die triggers zijn voor iedereen anders, wat laat zien waarom een standaardaanpak niet voor iedereen werkt.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij eczeem',
     factorsIntro: 'Eczeem dat blijft terugkomen heeft vaak een samenspel van factoren. Dit ziet Danique geregeld:',
@@ -224,7 +224,7 @@ export const huidContent: ComplaintContentMap = {
       { title: 'Histamine-overgevoeligheid', text: 'Een verminderde afbraak van histamine door de darmen kan jeuk en roodheid na bepaalde voeding versterken.' },
       { title: 'Individuele triggers', text: 'Voeding, stof, wasmiddel of stress kunnen bij jou net andere opvlammingen veroorzaken dan bij een ander.' },
       { title: 'Stress', text: 'Chronische stress maakt je immuunsysteem gevoeliger en kan opvlammingen rechtstreeks uitlokken.' },
-      { title: 'Vitamine D-tekort', text: 'Vitamine D ondersteunt zowel huid als immuunsysteem; een tekort komt vaak voor bij eczeem.' },
+      { title: 'Vitamine D-tekort', text: 'Vitamine D ondersteunt zowel huid als immuunsysteem. Een tekort komt vaak voor bij eczeem.' },
     ],
     widerHeading: 'Wat eczeem kan vertellen over je immuunsysteem en darmen',
     widerIntro: 'Eczeem gaat vaak samen met andere signalen. Herken je ook het volgende, dan is een bredere blik op je darmen en immuunsysteem zinvol:',
