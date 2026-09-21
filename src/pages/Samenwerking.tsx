@@ -14,13 +14,19 @@ const Samenwerking = () => {
           {/* Hero */}
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Samenwerking</div>
+              <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Samenwerkingen</div>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-                Samenwerking met Florine Veldstra
+                Samenwerkingen
               </h1>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Voor sommige klachten is het fijn als voeding en leefstijl worden aangevuld met gespecialiseerde fysiotherapie. Daarom werk ik samen met Florine Veldstra, bekkenfysiotherapeut in Hoorn.
+                  Gezondheid houdt niet op bij één vakgebied. Sommige klachten vragen om meer dan alleen voeding en leefstijl. Daarom werk ik graag samen met andere zorgprofessionals die ieder vanuit hun eigen expertise naar een klacht kijken.
+                </p>
+                <p>
+                  Door kennis en expertise te combineren, kunnen we elkaar aanvullen en vrouwen naar de juiste begeleiding doorverwijzen wanneer dat nodig is.
+                </p>
+                <p>
+                  Op deze pagina vind je de professionals met wie ik samenwerk.
                 </p>
               </div>
             </div>
