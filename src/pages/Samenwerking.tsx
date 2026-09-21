@@ -83,7 +83,7 @@ const Samenwerking = () => {
                 <div>
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Samen in de podcast 🎙️</h2>
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    We hebben samen een podcastaflevering opgenomen waarin we praten over onze verschillende expertises en hoe deze elkaar kunnen aanvullen.
+                    Samen met Florine van Fysio Veldstra heb ik een podcastaflevering opgenomen waarin we praten over onze verschillende expertises en hoe deze elkaar kunnen aanvullen.&nbsp;
 
                     Aflevering #14 - De link tussen je bekkenbodem en darmklachten.
 
