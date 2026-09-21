@@ -226,7 +226,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Kan slaaptekort mijn cravings verergeren?',
         answer: [
           'Ja, dit is goed onderzocht. Bij te weinig slaap raken de hormonen die je hongergevoel en verzadiging aansturen uit balans, waardoor je meer trek krijgt in suiker- en vetrijk eten.',
-          'We bespreken je slaappatroon en kijken hoe je zowel slaap als voeding kunt aanpakken om cravings te verminderen.',
+          'In een traject kijken we niet alleen naar de cravings, maar ook juist naar waar die cravings vandaan komen. Komt het door bloedsuiker schommelingen, slechte nachten of door hormonale klachten. ',
         ],
       },
       {
