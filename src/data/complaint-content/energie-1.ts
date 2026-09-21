@@ -551,13 +551,6 @@ export const energieContent1: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Wat is HOMA-IR en wat zegt het over mij?',
-        answer: [
-          'HOMA-IR is een berekening op basis van je nuchtere glucose en nuchtere insuline, die een indicatie geeft van je insulinegevoeligheid. Een hogere waarde kan wijzen op insulineresistentie.',
-          'We kunnen bespreken of het zinvol is om dit via bloedonderzoek te laten bepalen en wat de uitslag voor jou betekent.',
-        ],
-      },
-      {
         question: 'Heeft PCOS altijd te maken met insulineresistentie?',
         answer: [
           'Niet bij iedereen, maar bij een groot deel van de vrouwen met PCOS speelt insulineresistentie een rol. Verhoogde insuline kan de aanmaak van androgenen stimuleren, wat samenhangt met een onregelmatige cyclus, acne of overbeharing.',
