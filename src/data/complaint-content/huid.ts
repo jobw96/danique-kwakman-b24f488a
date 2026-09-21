@@ -3,9 +3,9 @@ import type { ComplaintContentMap } from './types';
 export const huidContent: ComplaintContentMap = {
   'acne': {
     intro: [
-      'Je bent geen tiener meer, maar toch staat er weer een puist op je kin klaar voor de zoveelste foto. Adult acne voelt extra oneerlijk: je doet alles “goed”, maar rond je kaaklijn blijft het opvlammen, vaak precies in de week voor je menstruatie.',
+      'Je bent geen tiener meer, maar toch blijf je last houden van acne.  Adult acne voelt extra oneerlijk. Je doet alles “goed”, maar de acne blijft constant terug komen, vaak precies in de week voor je menstruatie.',
       'Deze vorm van acne heeft meestal een andere oorsprong dan tieneracne. Androgenen, insuline en de manier waarop je lichaam met bloedsuiker omgaat, spelen vaak een grotere rol dan het merk wasgel dat je gebruikt. Ook na het stoppen met de pil zie je regelmatig een golf van acne opduiken, omdat je lichaam opnieuw zijn eigen hormoonbalans moet vinden.',
-      'Je wilt niet elke ochtend voor de spiegel staan met concealer en een verwijt aan jezelf. Je wilt weten waarom het steeds terugkomt, zodat je eindelijk verder komt dan pleisters plakken op de buitenkant.',
+      'Je wilt niet elke ochtend voor de spiegel staan met concealer en een verwijt aan jezelf. Je wilt weten waarom het steeds terugkomt, zodat je eindelijk verder komt dan pleisters plakken op de buitenkant. ',
     ],
     recognition: [
       'Je acne zit vooral op je kin, kaaklijn en hals, in plaats van verspreid over je hele gezicht.',
@@ -20,7 +20,7 @@ export const huidContent: ComplaintContentMap = {
     explanation: [
       'Androgenen, zoals testosteron, jagen de talgklieren aan. Bij veel vrouwen met acne rond de kaaklijn zijn deze hormonen relatief hoger dan progesteron en oestrogeen, waardoor de talgproductie toeneemt en poriën sneller verstopt raken. Dat verklaart ook waarom de acne vaak samenvalt met de tweede helft van je cyclus, wanneer progesteron daalt.',
       'Insuline speelt hierin een onderschatte rol. Bij pieken in je bloedsuiker, bijvoorbeeld door veel snelle koolhydraten of onregelmatig eten, maakt je lichaam meer insuline aan. Insuline kan op zijn beurt de androgeenproductie stimuleren, met meer talg en meer kans op acne als gevolg. Dit verklaart waarom sommige vrouwen merken dat hun huid rustiger wordt zodra hun bloedsuiker stabieler is.',
-      'Zuivel wordt vaak genoemd als trigger en bij sommige vrouwen klopt dat: zuivel kan de insulineafgifte en groeifactoren beïnvloeden die talgproductie stimuleren. Daarnaast is een tekort aan zink, dat een rol speelt bij huidherstel en het temperen van ontstekingen, iets wat Danique regelmatig terugziet bij hardnekkige acne. Goede huidverzorging blijft ondersteunend belangrijk, maar lost de onderliggende aanjager niet op.',
+      'Zuivel wordt vaak genoemd als trigger en bij sommige vrouwen klopt dat, maar lang niet bij iedereen. Zuivel kan de insulineafgifte en groeifactoren beïnvloeden die talgproductie stimuleren. Daarnaast is een tekort aan zink, dat een rol speelt bij huidherstel en het temperen van ontstekingen. Iets wat ik regelmatig terugziet bij hardnekkige acne, maar ook ken vanuit mijn eigen situatie. Goede huidverzorging blijft ondersteunend belangrijk, maar lost de onderliggende aanjager niet op.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij acne',
     factorsIntro: 'Acne die telkens terugkomt heeft vaak een combinatie van oorzaken. Dit ziet Danique regelmatig:',
@@ -32,22 +32,23 @@ export const huidContent: ComplaintContentMap = {
       { title: 'Zink- en omega 3-tekort', text: 'Deze voedingsstoffen ondersteunen huidherstel en remmen ontstekingen; een tekort kan acne verergeren of laten aanslepen.' },
     ],
     widerHeading: 'Wat acne kan vertellen over je hormonen',
-    widerIntro: 'Acne rond de kaaklijn staat zelden op zichzelf. Herken je ook het volgende, dan is het zinvol om breder naar je hormoonhuishouding te kijken:',
+    widerIntro: 'Acne rond de kaaklijn staat zelden op zichzelf. Herken je ook het volgende, dan is het zinvol om ook breder naar je hormoonhuishouding te kijken:',
     widerSignals: [
       'Je cyclus is onregelmatig of je hebt een sterk PMS-gevoel',
       'Je hebt last van overmatige haargroei op kin of bovenlip',
       'Je bent aangekomen zonder dat je leefstijl is veranderd',
       'Je hebt sterke energiedips of trek in suiker in de middag',
       'Je hebt haaruitval of dunner wordend hoofdhaar',
-      'Je vermoedt PCOS of hebt dit ooit horen noemen',
+      'Je vermoedt PCOS of hebt dit ooit horen noemen
+',
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, voeding en huid in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw acne',
     together: [
-      'Ze brengt je cyclus en het patroon van je acne in kaart',
-      'Ze bekijkt je bloedsuikerregulatie en eetpatroon',
-      'Ze kijkt naar mogelijke tekorten zoals zink en omega 3',
-      'Ze bespreekt met je of aanvullend hormonaal onderzoek zinvol is',
-      'Ze stelt een voedings- en leefstijladvies op dat is afgestemd op jouw cyclus',
+      'We brengen je cyclus en het patroon van je acne in kaart',
+      'We bekijken samen je bloedsuikerregulatie en eetpatroon',
+      'We kijken naar mogelijke tekorten zoals zink en omega 3',
+      'We bespreken of aanvullend hormonaal onderzoek zinvol is',
+      'Ik stel een voedings- en leefstijladvies op dat is afgestemd op jouw cyclus',
     ],
     faqHeading: 'Veelgestelde vragen over acne',
     faqs: [
