@@ -86,8 +86,8 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Waarom heb ik ’s avonds juist energie en overdag niet?',
         answer: [
-          'Dat kan wijzen op een omgekeerd cortisolritme: een lagere piek in de ochtend en een cortisol dat ’s avonds nog te hoog is in plaats van af te bouwen. Daardoor voel je je overdag futloos en juist ’s avonds “aan”.',
-          'Vaak spelen cafeïne laat op de dag, schermgebruik ’s avonds, laat en zwaar sporten of een drukke geest hierin mee.',
+          'Dat kan wijzen op een omgekeerd cortisol ritme. Een lagere piek in de ochtend en een cortisol dat ’s avonds nog te hoog is in plaats van af te bouwen. Daardoor voel je je overdag futloos en juist ’s avonds “aan”.',
+          'Vaak spelen cafeïne laat op de dag, schermgebruik ’s avonds, laat en zwaar sporten, een drukke geest of een hormonale disbalans hierin mee.',
           'In de intake breng ik jouw energieverloop over de hele dag in kaart, zodat we kunnen zien op welke momenten het misgaat en waar we kunnen bijsturen.',
         ],
       },
