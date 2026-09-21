@@ -53,7 +53,7 @@ const Samenwerking = () => {
                       Voor sommige klachten is het fijn als voeding en leefstijl worden aangevuld met gespecialiseerde fysiotherapie. Daarom werk ik samen met Florine Veldstra van Fysio Veldstra, bekkenfysiotherapeut in Hoorn.
                     </p>
                     <p>
-                      Florine is gespecialiseerd in bekkenfysiotherapie en begeleidt vrouwen onder andere bij bekkenpijn, bekkenbodemklachten, obstipatie en andere ontlastingsklachten, pijn bij het vrijen en klachten rondom zwangerschap en bevalling.
+                      Florine is gespecialiseerd in bekkenfysiotherapie en begeleidt vrouwen onder andere bij bekkenpijn, bekkenbodemklachten, obstipatie en andere ontlastingsklachten, plas problematiek, pijn bij het vrijen en klachten rondom zwangerschap en bevalling.
                     </p>
                     <p>
                       Daarnaast biedt ze postpartum hersteltraining voor vrouwen die na hun bevalling weer verantwoord willen opbouwen.
