@@ -384,23 +384,23 @@ export const energieContent2: ComplaintContentMap = {
   },
   'bloedsuikerschommelingen': {
     intro: [
-      'Je merkt het vaak op vervelende momenten: je bent aan het werk, in de auto of onderweg naar huis en ineens voel je je trillerig, licht in je hoofd of duizelig. Je hart klopt sneller, je begint te zweten en je wordt kortaf tegen iedereen om je heen. Zodra je iets eet, zakt het weer, alsof er niets aan de hand was.',
-      'Die schommelingen maken je onzeker: je durft niet meer zonder snack de deur uit, plant je dag rond eetmomenten en vraagt je af of dit “normaal” is of iets is om verder te laten uitzoeken. Je wilt vooral een stabielere basis, zodat je niet steeds afhankelijk bent van het volgende hapje.',
+      'Je merkt het vaak op vervelende momenten: je bent aan het werk, in de auto of onderweg naar huis en ineens voel je je trillerig, licht in je hoofd of duizelig. Je hart klopt sneller, je begint te zweten en je wordt kortaf tegen iedereen om je heen. Zodra je iets eet, zakt het weer alsof er niets aan de hand was.',
+      'Die schommelingen maken je onzeker. Je durft niet meer zonder snack de deur uit, plant je dag rond eetmomenten en kan niet zonder suiker, koffie of koekjes. Je wilt vooral een stabielere basis, zodat je niet steeds afhankelijk bent van het volgende maaltijd of snack.',
       'Bloedsuikerschommelingen hebben vaak te maken met hoe je maaltijden zijn opgebouwd en hoe je dag verloopt. Met de CIRCLE-methode kijk ik naar jouw voedingspatroon, ritme en klachten, zodat we een aanpak vinden die past bij jouw dagelijks leven.',
     ],
     recognition: [
       'Je voelt je trillerig of licht in je hoofd als je een maaltijd overslaat of te laat eet.',
       'Je krijgt hartkloppingen of gaat zweten wanneer je te lang niet gegeten hebt.',
-      'Je wordt prikkelbaar of kortaf zodra je bloedsuiker wegzakt.',
+      'Je wordt prikkelbaar of kortaf zodra je bloedsuiker aan het zakken is.',
       'Je merkt dat klachten snel verdwijnen zodra je iets eet, vooral iets zoets.',
-      'Je plant je dag bewust rond eetmomenten uit angst voor een dip.',
-      'Je hebt weleens gehoord van het begrip reactieve hypoglykemie en herkent daar dingen in.',
+      "Je plant je dag in rond eetmomenten en gaat. niet zonder een pakje Sultana's de deur uit.\u00a0",
+      'Je hebt het gevoel dat je afhankelijk bent van eten.',
     ],
     explanationHeading: 'Wat zijn bloedsuikerschommelingen precies?',
     explanation: [
-      'Je bloedsuiker, ofwel de hoeveelheid glucose in je bloed, schommelt de hele dag een beetje, dat is normaal. Bij bloedsuikerschommelingen gaat het om uitgesproken pieken en dalen: bijvoorbeeld een snelle stijging na een koolhydraatrijke maaltijd, gevolgd door een scherpe daling een uur of twee later. Die daling kan klachten geven zoals trillerigheid, licht gevoel in het hoofd, hartkloppingen, zweten en prikkelbaarheid.',
-      'Wanneer die daling duidelijk merkbaar is en samengaat met dit soort klachten, wordt dit soms reactieve hypoglykemie genoemd: een relatief lage bloedsuiker als reactie op een eerdere piek, niet te verwarren met de bloedsuikerwaarden die bij diabetes worden gemeten. Het is een functioneel patroon, geen diagnose op zich en het kan bij vrijwel iedereen voorkomen, ook zonder dat er sprake is van diabetes of insulineresistentie.',
-      'Steeds meer vrouwen gebruiken een glucosemeter of CGM (continue glucosemeter) om dit soort schommelingen inzichtelijk te maken. Dat kan waardevolle informatie geven over hoe jouw lichaam op bepaalde maaltijden reageert, maar de cijfers zeggen niet alles: context, klachten en patroon over meerdere dagen zijn minstens zo belangrijk als één losse meting.',
+      'Je bloedsuiker, ofwel de hoeveelheid glucose in je bloed, schommelt de hele dag een beetje, dat is normaal. Bij bloedsuikerschommelingen gaat het om uitgesproken pieken en dalen, bijvoorbeeld een snelle stijging na een koolhydraatrijke maaltijd, gevolgd door een scherpe daling een uur of twee later. Die daling kan klachten geven zoals trillerigheid, licht gevoel in het hoofd, hartkloppingen, zweten, prikkelbaarheid of het gevoel dat je NU iets moet eten.',
+      'Wanneer die daling duidelijk merkbaar is en samengaat met dit soort klachten, wordt dit soms reactieve hypoglykemie genoemd. Een relatief lage bloedsuiker als reactie op een eerdere piek, niet te verwarren met de bloedsuikerwaarden die bij diabetes worden gemeten. Het is een functioneel patroon, geen diagnose op zich en het kan bij vrijwel iedereen voorkomen, ook zonder dat er sprake is van diabetes of insulineresistentie.',
+      'Steeds meer vrouwen gebruiken een glucosemeter om te onderzoeken hoe het ervoor staat met hun bloedsuiker spiegel. Dit zet ik ook vaak in bij vrouwen die bij mij een traject volgen. Lees hier meer over het 1:1 bloedsuikertraject of het 1:1 hormoon traject.',
     ],
     factorsHeading: 'Wat kan meespelen bij bloedsuikerschommelingen?',
     factorsIntro:
@@ -411,8 +411,8 @@ export const energieContent2: ComplaintContentMap = {
         text: 'Lange periodes zonder eten, gevolgd door een grote maaltijd, vergroten de kans op een scherpe piek en daaropvolgende dip. Een regelmatiger eetritme geeft je bloedsuiker meer kans om stabiel te blijven.',
       },
       {
-        title: 'Eiwitten en vezels in je maaltijden',
-        text: 'Een maaltijd met voldoende eiwitten en vezels wordt langzamer verteerd, waardoor glucose geleidelijker in je bloed terechtkomt. Een maaltijd die vooral uit snelle koolhydraten bestaat, geeft eerder een piek-en-dalpatroon.',
+        title: 'Eiwitten, vetten en vezels in je maaltijden',
+        text: 'Een maaltijd met voldoende eiwitten, vetten en vezels wordt langzamer verteerd, waardoor glucose geleidelijker in je bloed terechtkomt. Een maaltijd die vooral uit snelle koolhydraten bestaat, geeft eerder een piek-en-dalpatroon.',
       },
       {
         title: 'Combinatie van koolhydraten met andere voedingsstoffen',
@@ -444,7 +444,7 @@ export const energieContent2: ComplaintContentMap = {
       'De momenten waarop je klachten van bloedsuikerschommelingen ervaart',
       'Je gebruik van cafeïne, alcohol en suikerhoudende producten',
       'Je slaap, stressbelasting en energieniveau',
-      'Eventuele eerdere metingen, zoals glucosemeter- of CGM-gegevens'
+      'Eventuele eerdere metingen, zoals een glucosemeter'
     ],
     faqHeading: 'Veelgestelde vragen over bloedsuikerschommelingen',
     faqs: [
