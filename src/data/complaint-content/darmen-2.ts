@@ -214,7 +214,7 @@ export const darmenContent2: ComplaintContentMap = {
       'Andere factoren die meespelen zijn laat op de avond eten, waardoor je lichaam onvoldoende tijd heeft om te verteren voor je gaat liggen en een infectie met Helicobacter pylori, een bacterie die de maagwand kan prikkelen.\u00a0',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw verteringsklachten',
-    factorsIntro: 'Bij het uitzoeken van maag- en verteringsklachten brengt Danique onder andere deze factoren in kaart:',
+    factorsIntro: 'Bij het uitzoeken van maag- en verteringsklachten breng ik onder andere deze factoren in kaart:',
     factors: [
       { title: 'Eettempo en kauwen', text: 'Snel eten en onvoldoende kauwen geven je maag meer werk en verhogen de kans op een zwaar of branderig gevoel.' },
       { title: 'Maagzuurgraad', text: 'Zowel te veel als te weinig maagzuur kan zorgen voor oprispingen, een vol gevoel of misselijkheid na het eten.' },
@@ -246,49 +246,49 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Mag ik zelf stoppen met maagzuurremmers?',
         answer: [
           'Nee, stop nooit zelf met voorgeschreven maagzuurremmers. Afbouwen moet altijd in overleg met je huisarts of specialist, omdat abrupt stoppen juist kan zorgen voor een tijdelijke toename van klachten.',
-          'Danique kan wel met je meedenken over voeding en leefstijl naast je medicatie en helpt je de juiste vragen voor te bereiden voor je (huis)arts.',
+          'Ik kan wel met je meedenken over voeding en leefstijl naast je medicatie en help je de juiste vragen voor te bereiden voor je (huis)arts.',
         ],
       },
       {
         question: 'Kan te weinig maagzuur dezelfde klachten geven als te veel?',
         answer: [
           'Ja, dat is een veelgemaakte denkfout. Te weinig maagzuur zorgt ervoor dat voedsel minder goed wordt afgebroken en langer in de maag blijft liggen, wat druk opbouwt en zuur alsnog omhoog kan laten komen.',
-          'Danique kijkt in de intake naar jouw klachtenpatroon om te achterhalen welke richting waarschijnlijker is bij jou.',
+          'Ik kijk in de intake naar jouw klachtenpatroon om te achterhalen welke richting waarschijnlijker is bij jou.',
         ],
       },
       {
         question: 'Heeft langdurig maagzuurremmers gebruiken gevolgen voor mijn voedingsstoffen?',
         answer: [
           'Maagzuur is nodig om vitamine B12 en ijzer goed uit je voeding vrij te maken en om eiwitten te verteren. Bij langdurig gebruik van maagzuurremmers kan de opname hiervan achterblijven, wat kan bijdragen aan vermoeidheid.',
-          'Danique kan met bloedonderzoek laten checken of dit bij jou speelt en denkt mee over voeding die dit ondersteunt.',
+          'Ik kan met bloedonderzoek laten checken of dit bij jou speelt en denk mee over voeding die dit ondersteunt.',
         ],
       },
       {
         question: 'Wat is het verschil tussen een hiatus hernia en gewone reflux?',
         answer: [
           'Bij een hiatus hernia verschuift een deel van de maag door een opening in het middenrif omhoog, wat reflux kan verergeren. Dit wordt medisch vastgesteld, bijvoorbeeld met een endoscopie.',
-          'Herken je dit patroon, dan verwijst Danique je door voor verdere diagnostiek en kijkt ze samen met jou naar voeding en gewoontes die klachten kunnen verlichten.',
+          'Herken je dit patroon, dan verwijs ik je door voor verdere diagnostiek en kijk ik samen met jou naar voeding en gewoontes die klachten kunnen verlichten.',
         ],
       },
       {
         question: 'Kan Helicobacter pylori mijn maagklachten veroorzaken?',
         answer: [
           'Dit is een bacterie die de maagwand kan prikkelen en bij een deel van de mensen met maagklachten wordt aangetroffen. Vaststellen gebeurt via een test bij de huisarts en behandeling verloopt met medicatie.',
-          'Danique kan je erop wijzen als je klachtenpatroon hierop lijkt en adviseert dan altijd om dit medisch te laten uitsluiten.',
+          'Ik kan je erop wijzen als je klachtenpatroon hierop lijkt en adviseer dan altijd om dit medisch te laten uitsluiten.',
         ],
       },
       {
         question: 'Helpt langzamer eten echt tegen mijn klachten?',
         answer: [
           'Ja, bij veel mensen wel. Beter kauwen geeft je maag een voorsprong, omdat de vertering al in je mond begint. Snel en gehaast eten geeft je spijsverteringssysteem minder tijd om zich voor te bereiden.',
-          'Tijdens de intake bespreekt Danique praktische manieren om dit in je dagelijkse ritme in te passen, ook op drukke werkdagen.',
+          'Tijdens de intake bespreek ik praktische manieren om dit in je dagelijkse ritme in te passen, ook op drukke werkdagen.',
         ],
       },
       {
         question: 'Waarom heb ik ’s avonds meer last dan overdag?',
         answer: [
           'Laat eten geeft je lichaam minder tijd om te verteren voordat je gaat liggen, waardoor zuur makkelijker terugstroomt richting je slokdarm. Ook een zware of vette avondmaaltijd kan dit effect versterken.',
-          'Danique kijkt met je mee naar je avondritme en eetmomenten om te zien wat voor jou werkt.',
+          'Ik kijk met je mee naar je avondritme en eetmomenten om te zien wat voor jou werkt.',
         ],
       },
     ],
@@ -314,7 +314,7 @@ export const darmenContent2: ComplaintContentMap = {
       'Ook histamine kan bij sommige mensen klachten geven. Producten zoals oude kaas, wijn, gefermenteerde producten en gerookte vis bevatten relatief veel histamine. Klachten kunnen onder andere bestaan uit hoofdpijn, blozen, jeuk, darmklachten of een verstopte neus.\n\nJuist omdat klachten bij een intolerantie of gevoeligheid niet altijd direct na het eten ontstaan, kan het lastig zijn om zelf te ontdekken waar je op reageert. In mijn begeleiding kijken we daarom naar je klachten, voeding en het patroon waarin klachten ontstaan. Waar passend kan aanvullend onderzoek helpen om hier meer duidelijkheid over te krijgen.\n\n',
     ],
     factorsHeading: 'Wat kan meespelen bij jouw klachten na het eten',
-    factorsIntro: 'Bij het uitzoeken van mogelijke voedselintoleranties kijkt Danique breder dan alleen het schrappen van producten:',
+    factorsIntro: 'Bij het uitzoeken van mogelijke voedselintoleranties kijk ik breder dan alleen het schrappen van producten:',
     factors: [
       { title: 'Lactose-intolerantie', text: 'Een tekort aan het enzym lactase zorgt ervoor dat melksuiker onvoldoende wordt afgebroken, met een opgeblazen gevoel en winderigheid als gevolg.' },
       { title: 'Stress en darmgevoeligheid', text: 'Stress beïnvloedt je darmen direct, waardoor je sneller op voeding lijkt te reageren dan je in een rustige periode zou doen.' },
@@ -345,56 +345,56 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Wat is het verschil tussen een voedselallergie en een voedselintolerantie?',
         answer: [
           'Een voedselallergie is een reactie van je afweersysteem via IgE-antistoffen en kan snel en heftig verlopen, tot benauwdheid of zwelling aan toe. Dit moet altijd medisch worden beoordeeld. Een voedselintolerantie verloopt anders, bijvoorbeeld doordat een enzym ontbreekt of je darm gevoelig reageert op een bepaalde stof, met vaak vagere en latere klachten.',
-          'Twijfel je of het om een allergie gaat, dan verwijst Danique je eerst door voor medische beoordeling voordat jullie samen verder kijken naar intoleranties.',
+          'Twijfel je of het om een allergie gaat, dan verwijs ik je eerst door voor medische beoordeling voordat we samen verder kijken naar intoleranties.',
         ],
       },
       {
         question: 'Moet ik coeliakie laten uitsluiten voordat ik gluten weglaat?',
         answer: [
           'Ja, dat is belangrijk. Coeliakie wordt vastgesteld met bloedonderzoek en eventueel een darmbiopt en dit onderzoek is alleen betrouwbaar als je op dat moment nog gluten eet. Als je vooraf al gluten weglaat, kan de uitslag vertekend worden.',
-          'Danique bespreekt dit altijd eerst met je, zodat je niet onnodig gluten schrapt zonder dat coeliakie is uitgesloten.',
+          'Ik bespreek dit altijd eerst met je, zodat je niet onnodig gluten schrapt zonder dat coeliakie is uitgesloten.',
         ],
       },
       {
         question: 'Is een IgG-test betrouwbaar om voedselintoleranties op te sporen?',
         answer: [
           'Een IgG-test kan als prescreening richting geven, maar is geen definitieve diagnose. Een verhoogde waarde kan ook simpelweg betekenen dat je een product regelmatig eet, zonder dat dit klachten veroorzaakt.',
-          'Danique gebruikt zo’n test daarom als hulpmiddel naast een eetdagboek en gerichte eliminatie, niet als enige basis om producten te schrappen.',
+          'Ik gebruik zo’n test daarom als hulpmiddel naast een eetdagboek en gerichte eliminatie, niet als enige basis om producten te schrappen.',
         ],
       },
       {
         question: 'Waarom krijg ik pas uren na het eten klachten?',
         answer: [
           'Bij een intolerantie, in tegenstelling tot een allergie, kan het langer duren voordat klachten optreden, omdat het gaat om een geleidelijke reactie van je spijsvertering in plaats van een directe afweerreactie.',
-          'Dit maakt het lastiger om zelf de link te leggen en daarom werkt Danique met een eetdagboek om patronen boven water te krijgen.',
+          'Dit maakt het lastiger om zelf de link te leggen en daarom werk ik met een eetdagboek om patronen boven water te krijgen.',
         ],
       },
       {
         question: 'Kan ik lactose-intolerantie zelf vaststellen?',
         answer: [
           'Een indicatie krijg je door zuivel een tijd weg te laten en daarna gecontroleerd weer te introduceren, maar een waterstofademtest bij een arts of diëtist geeft een betrouwbaarder antwoord.',
-          'Danique kan met je meedenken over hoe je dit het beste aanpakt en wanneer aanvullend onderzoek zinvol is.',
+          'Ik kan met je meedenken over hoe je dit het beste aanpakt en wanneer aanvullend onderzoek zinvol is.',
         ],
       },
       {
         question: 'Is het slim om veel producten tegelijk te schrappen?',
         answer: [
           'Niet per se. Zomaar veel producten weglaten kan je voeding onnodig beperken en maakt het lastiger om te zien welk product daadwerkelijk klachten veroorzaakt.',
-          'Danique werkt liever met een gestructureerde eliminatie en herintroductie van één product tegelijk, zodat je precies weet waar je op reageert.',
+          'Ik werk liever met een gestructureerde eliminatie en herintroductie van één product tegelijk, zodat je precies weet waar je op reageert.',
         ],
       },
       {
         question: 'Wat is histamine-intolerantie precies?',
         answer: [
           'Bij histamine-intolerantie breekt je lichaam histamine, van nature aanwezig in producten als oude kaas, wijn en gerookte vis, minder goed af. Dit kan klachten geven als hoofdpijn, blozen of een opgezette huid.',
-          'Danique kijkt in het eetdagboek of jouw klachten samenvallen met histaminerijke voeding en denkt mee over een aanpak.',
+          'Ik kijk in het eetdagboek of jouw klachten samenvallen met histaminerijke voeding en denk mee over een aanpak.',
         ],
       },
       {
         question: 'Kan ik na een tijdje weer gewoon producten eten die ik heb weggelaten?',
         answer: [
           'Bij een intolerantie is dit soms mogelijk, bijvoorbeeld in kleinere hoeveelheden of na verbetering van je spijsvertering. Bij coeliakie of een echte allergie ligt dit anders en is voorzichtigheid nodig.',
-          'Danique begeleidt je bij de herintroductiefase, zodat je stap voor stap en veilig kunt uitproberen wat weer kan.',
+          'Ik begeleid je bij de herintroductiefase, zodat je stap voor stap en veilig kunt uitproberen wat weer kan.',
         ],
       },
     ],

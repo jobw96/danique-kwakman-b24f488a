@@ -23,7 +23,7 @@ export const huidContent: ComplaintContentMap = {
       'Zuivel wordt vaak genoemd als trigger en bij sommige vrouwen klopt dat, maar lang niet bij iedereen. Zuivel kan de insulineafgifte en groeifactoren beïnvloeden die talgproductie stimuleren. Daarnaast is een tekort aan zink, dat een rol speelt bij huidherstel en het temperen van ontstekingen. Iets wat ik regelmatig terugziet bij hardnekkige acne, maar ook ken vanuit mijn eigen situatie. Goede huidverzorging blijft ondersteunend belangrijk, maar lost de onderliggende aanjager niet op.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij acne',
-    factorsIntro: 'Acne die telkens terugkomt heeft vaak een combinatie van oorzaken. Dit ziet Danique regelmatig:',
+    factorsIntro: 'Acne die telkens terugkomt heeft vaak een combinatie van oorzaken. Dit zie ik regelmatig:',
     factors: [
       { title: 'Androgenen', text: 'Een relatief hoger niveau van androgenen ten opzichte van je andere hormonen jaagt de talgproductie aan, vooral rond de kaaklijn.' },
       { title: 'Insulinegevoeligheid', text: 'Schommelende bloedsuikerwaarden verhogen insuline, wat weer androgenen kan opjagen.' },
@@ -76,28 +76,28 @@ export const huidContent: ComplaintContentMap = {
         question: 'Ik ben net gestopt met de pil, is dit normaal?',
         answer: [
           'Ja, een tijdelijke opleving van acne na het stoppen met de pil komt vaak voor, omdat je lichaam zijn eigen hormoonproductie weer moet opstarten. Bij de meeste vrouwen normaliseert dit binnen enkele maanden.',
-          'Danique kan je ondersteunen om dit proces soepeler te laten verlopen met gerichte voeding en leefstijladvies.',
+          'Ik kan je ondersteunen om dit proces soepeler te laten verlopen met gerichte voeding en leefstijladvies.',
         ],
       },
       {
         question: 'Helpt minder suiker eten echt tegen acne?',
         answer: [
           'Bij vrouwen bij wie insuline een rol speelt, kan een stabielere bloedsuiker wel degelijk bijdragen aan een rustiger huid. Het is geen wondermiddel, maar wel een factor die het proberen waard is.',
-          'Danique bekijkt in de intake hoe jouw bloedsuiker en eetpatroon eruitzien en waar winst te behalen valt.',
+          'Ik bekijk in de intake hoe jouw bloedsuiker en eetpatroon eruitzien en waar winst te behalen valt.',
         ],
       },
       {
-        question: 'Moet ik naar de dermatoloog of naar Danique?',
+        question: 'Moet ik naar de dermatoloog of kan ik bij jou terecht?',
         answer: [
-          'Bij ernstige of ontstekingsacne is een dermatoloog een logische stap. Danique werkt hier goed naast, met de focus op de voeding, hormonen en darmen die aan de acne kunnen bijdragen.',
-          'Ze helpt je juist bij het stuk dat vaak buiten beeld blijft bij een puur medische aanpak.',
+          'Bij ernstige of ontstekingsacne is een dermatoloog een logische stap. Ik werk hier goed naast, met de focus op de voeding, hormonen en darmen die aan de acne kunnen bijdragen.',
+          'Ik help je juist bij het stuk dat vaak buiten beeld blijft bij een puur medische aanpak.',
         ],
       },
       {
         question: 'Kan stress mijn acne verergeren?',
         answer: [
           'Ja, stress verhoogt cortisol, wat op zijn beurt de talgproductie en ontstekingsprocessen in de huid kan aanjagen. Veel vrouwen merken dat hun huid onrustiger wordt in drukke periodes.',
-          'Danique betrekt je stressniveau en slaap altijd in het gesprek, omdat het samen met hormonen en voeding de puzzel compleet maakt.',
+          'Ik betrek je stressniveau en slaap altijd in het gesprek, omdat het samen met hormonen en voeding de puzzel compleet maakt.',
         ],
       },
     ],
@@ -124,7 +124,7 @@ export const huidContent: ComplaintContentMap = {
       'Ook je schildklier en de overgang spelen een rol. Een tragere schildklier vertraagt de celvernieuwing van je huid en de dalende oestrogeenspiegel in de overgang vermindert de vochtvasthoudende capaciteit van je huid. Beide kunnen verklaren waarom je huid de laatste tijd anders reageert dan je gewend was.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij een droge, gevoelige huid',
-    factorsIntro: 'Een verzwakte huidbarrière heeft vaak meerdere oorzaken tegelijk. Dit komt Danique regelmatig tegen:',
+    factorsIntro: 'Een verzwakte huidbarrière heeft vaak meerdere oorzaken tegelijk. Dit kom ik regelmatig tegen:',
     factors: [
       { title: 'Omega 3-tekort', text: 'Te weinig gezonde vetten in je voeding verzwakt de vetlaag die je huid beschermt tegen vochtverlies.' },
       { title: 'Vitamine A- en D-tekort', text: 'Deze vitamines zijn essentieel voor huidherstel en celvernieuwing. Een tekort houdt je huid droog en dof.' },
@@ -156,42 +156,42 @@ export const huidContent: ComplaintContentMap = {
         question: 'Waarom helpt een dikke laag crème niet echt bij mijn droge huid?',
         answer: [
           'Een crème kan vocht tijdelijk vasthouden, maar lost een verzwakte huidbarrière niet op. Als je van binnenuit te weinig omega 3 of vitamine A en D binnenkrijgt of opneemt, blijft je huid gevoelig, hoe goed je crème ook is.',
-          'Danique kijkt daarom verder dan skincare alleen en brengt in kaart wat je huid van binnenuit nodig heeft.',
+          'Ik kijk daarom verder dan skincare alleen en breng in kaart wat je huid van binnenuit nodig heeft.',
         ],
       },
       {
         question: 'Kan mijn maag iets te maken hebben met mijn droge huid?',
         answer: [
           'Ja, dat kan zeker. Te weinig maagzuur bemoeilijkt de opname van vetten en vetoplosbare vitamines zoals A en D, die essentieel zijn voor een gezonde huidbarrière.',
-          'In de intake vraagt Danique daarom ook naar je spijsvertering, ook als je dat zelf niet meteen aan je huid koppelt.',
+          'In de intake vraag ik daarom ook naar je spijsvertering, ook als je dat zelf niet meteen aan je huid koppelt.',
         ],
       },
       {
         question: 'Is mijn droge huid een teken van mijn schildklier?',
         answer: [
-          'Een droge, schilferige huid kan samengaan met een tragere schildklierwerking, zeker in combinatie met vermoeidheid en gewichtstoename. Een diagnose stelt Danique niet, dat doet de huisarts.',
-          'Wel kan ze signalen herkennen en je adviseren om dit te laten onderzoeken als dat relevant lijkt.',
+          'Een droge, schilferige huid kan samengaan met een tragere schildklierwerking, zeker in combinatie met vermoeidheid en gewichtstoename. Een diagnose stel ik niet, dat doet de huisarts.',
+          'Wel kan ik signalen herkennen en je adviseren om dit te laten onderzoeken als dat relevant lijkt.',
         ],
       },
       {
         question: 'Waarom reageert mijn huid nu opeens op producten die vroeger goed werkten?',
         answer: [
           'Als je huidbarrière verzwakt raakt, laat deze meer prikkels van buitenaf door, waardoor producten die eerst geen probleem waren nu wel irritatie geven.',
-          'Danique zoekt met je uit wat de barrière heeft verzwakt, zodat je huid weer minder snel reageert.',
+          'Ik zoek met je uit wat de barrière heeft verzwakt, zodat je huid weer minder snel reageert.',
         ],
       },
       {
         question: 'Heeft de overgang invloed op hoe droog mijn huid is?',
         answer: [
           'Ja, de dalende oestrogeenspiegel in de overgang vermindert het vochtvasthoudend vermogen van je huid, wat vaak samengaat met meer gevoeligheid en fijne lijntjes.',
-          'Danique houdt hier in het advies rekening mee, met aandacht voor voeding die je huid in deze fase ondersteunt.',
+          'Ik houd hier in het advies rekening mee, met aandacht voor voeding die je huid in deze fase ondersteunt.',
         ],
       },
       {
         question: 'Moet ik meer water drinken tegen mijn droge huid?',
         answer: [
           'Voldoende water drinken is altijd goed, maar lost een verzwakte huidbarrière niet vanzelf op. Zonder de juiste vetten en vitamines houdt je huid dat water niet goed vast.',
-          'Danique kijkt breder dan alleen vochtinname en bespreekt met je wat je huid daadwerkelijk nodig heeft.',
+          'Ik kijk breder dan alleen vochtinname en bespreek met je wat je huid daadwerkelijk nodig heeft.',
         ],
       },
     ],
@@ -218,7 +218,7 @@ export const huidContent: ComplaintContentMap = {
       'Vitamine D ondersteunt zowel je huid als je immuunsysteem en een tekort hieraan wordt vaak gezien bij mensen met eczeem. Daarnaast bepalen individuele triggers, van bepaalde voedingsmiddelen tot wasmiddelen of stof, mede hoe vaak en hoe hevig je huid opvlamt. Die triggers zijn voor iedereen anders, wat laat zien waarom een standaardaanpak niet voor iedereen werkt.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij eczeem',
-    factorsIntro: 'Eczeem dat blijft terugkomen heeft vaak een samenspel van factoren. Dit ziet Danique geregeld:',
+    factorsIntro: 'Eczeem dat blijft terugkomen heeft vaak een samenspel van factoren. Dit zie ik geregeld:',
     factors: [
       { title: 'Verstoorde darmbarrière', text: 'Een minder goed werkende darmwand kan het immuunsysteem overprikkelen, wat zich op de huid uit als eczeem.' },
       { title: 'Histamine-overgevoeligheid', text: 'Een verminderde afbraak van histamine door de darmen kan jeuk en roodheid na bepaalde voeding versterken.' },
@@ -250,49 +250,49 @@ export const huidContent: ComplaintContentMap = {
         question: 'Kan mijn eczeem echt met mijn darmen te maken hebben?',
         answer: [
           'Ja, huid en darmen delen dezelfde barrièrefunctie en staan via het immuunsysteem met elkaar in verbinding. Een verstoorde darmwand kan bijdragen aan de ontstekingsreactie die je als eczeem op je huid ziet.',
-          'Danique brengt dit in de intake in kaart, ook als je dat verband zelf nog niet had gelegd.',
+          'Ik breng dit in de intake in kaart, ook als je dat verband zelf nog niet had gelegd.',
         ],
       },
       {
         question: 'Moet ik stoppen met mijn cortisonecrème?',
         answer: [
-          'Nee, dat advies geeft Danique niet. Medicatie en het al dan niet aanpassen ervan is aan jouw huisarts of dermatoloog.',
-          'Danique kijkt aanvullend naar voeding, darmen en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling.',
+          'Nee, dat advies geef ik niet. Medicatie en het al dan niet aanpassen ervan is aan jouw huisarts of dermatoloog.',
+          'Ik kijk aanvullend naar voeding, darmen en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling.',
         ],
       },
       {
         question: 'Welke voeding veroorzaakt eczeem?',
         answer: [
           'Er is geen universele boosdoener; triggers verschillen sterk per persoon. Bij de één speelt zuivel mee, bij de ander histaminerijke voeding of gluten.',
-          'Danique helpt je gestructureerd uitzoeken welke voeding bij jou een rol speelt, in plaats van op goed geluk dingen te schrappen.',
+          'Ik help je gestructureerd uitzoeken welke voeding bij jou een rol speelt, in plaats van op goed geluk dingen te schrappen.',
         ],
       },
       {
         question: 'Waarom vlamt mijn eczeem op in stressvolle periodes?',
         answer: [
           'Stress verhoogt de gevoeligheid van je immuunsysteem en kan direct leiden tot meer huidontsteking. Veel vrouwen merken dit patroon zelf al, maar weten niet goed wat ertegen te doen.',
-          'Danique betrekt stress en slaap altijd in het gesprek, als onderdeel van de complete puzzel rond je eczeem.',
+          'Ik betrek stress en slaap altijd in het gesprek, als onderdeel van de complete puzzel rond je eczeem.',
         ],
       },
       {
         question: 'Kan vitamine D helpen bij eczeem?',
         answer: [
           'Vitamine D ondersteunt zowel je huid als je immuunsysteem en een tekort komt vaak voor bij mensen met eczeem. Dat betekent niet dat suppletie alleen de oplossing is, maar het kan wel een belangrijk onderdeel zijn.',
-          'Danique bekijkt in de intake of een tekort bij jou een rol speelt en adviseert daar gericht over.',
+          'Ik bekijk in de intake of een tekort bij jou een rol speelt en adviseer daar gericht over.',
         ],
       },
       {
         question: 'Is handeczeem anders dan eczeem in je plooien?',
         answer: [
           'De onderliggende mechanismen kunnen overlappen, maar handeczeem wordt vaak extra getriggerd door veelvuldig contact met water, zeep of schoonmaakmiddelen.',
-          'Danique kijkt naar zowel je interne factoren als je dagelijkse blootstelling, zodat het advies bij jouw situatie past.',
+          'Ik kijk naar zowel je interne factoren als je dagelijkse blootstelling, zodat het advies bij jouw situatie past.',
         ],
       },
       {
         question: 'Hoe lang duurt het voordat mijn eczeem rustiger wordt?',
         answer: [
           'Dat verschilt per persoon en hangt af van hoe lang de klacht al speelt en welke factoren meespelen. Sommige vrouwen merken al binnen enkele weken minder opvlammingen, bij anderen duurt het langer.',
-          'Danique geeft je in de intake een realistisch beeld van wat je kunt verwachten in jouw situatie.',
+          'Ik geef je in de intake een realistisch beeld van wat je kunt verwachten in jouw situatie.',
         ],
       },
     ],
@@ -319,7 +319,7 @@ export const huidContent: ComplaintContentMap = {
       'Ook je schildklier en androgenen spelen mee. Een te trage of juist te snelle schildklier kan de haargroeicyclus verstoren en een relatief hoger niveau van androgenen kan bij sommige vrouwen zorgen voor dunner wordend haar bovenop het hoofd. Crashdiëten en snelle gewichtsverandering zijn een bekende trigger, omdat je lichaam dit interpreteert als een periode van schaarste waarin haargroei geen prioriteit heeft.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij haaruitval',
-    factorsIntro: 'Haaruitval is meestal het resultaat van een combinatie van factoren, een paar maanden voordat je het daadwerkelijk merkt. Dit komt Danique vaak tegen:',
+    factorsIntro: 'Haaruitval is meestal het resultaat van een combinatie van factoren, een paar maanden voordat je het daadwerkelijk merkt. Dit kom ik vaak tegen:',
     factors: [
       { title: 'Lage ferritine', text: 'Een lage ijzervoorraad, ook bij normale bloedwaarden, is een veelvoorkomende oorzaak van dunner wordend haar.' },
       { title: 'Tekorten aan zink, B12 en vitamine D', text: 'Deze voedingsstoffen zijn nodig voor gezonde haarzakjes. Een tekort vertraagt of vermindert haargroei.' },
@@ -351,49 +351,49 @@ export const huidContent: ComplaintContentMap = {
         question: 'Waarom valt mijn haar nu pas uit, terwijl de stressvolle periode al maanden achter me ligt?',
         answer: [
           'Dat past bij telogeen effluvium: haarzakjes gaan na een grote belasting eerst in een rustfase en vallen pas twee tot drie maanden later daadwerkelijk uit. De vertraging maakt het lastig om zelf de link te leggen met de oorzaak.',
-          'Danique brengt in de intake de tijdlijn in kaart, zodat duidelijk wordt wat mogelijk de aanleiding is geweest.',
+          'Ik breng in de intake de tijdlijn in kaart, zodat duidelijk wordt wat mogelijk de aanleiding is geweest.',
         ],
       },
       {
         question: 'Kan een tekort aan ijzer haaruitval veroorzaken, ook als mijn bloedwaarden normaal zijn?',
         answer: [
           'Ja, voor gezonde haargroei is vaak een hogere ferritinewaarde nodig dan het minimum dat als normaal geldt in een standaard bloedonderzoek. Een “normale” uitslag sluit een tekort dus niet automatisch uit.',
-          'Danique kan je adviseren over gericht onderzoek en de juiste streefwaarden voor haargroei.',
+          'Ik kan je adviseren over gericht onderzoek en de juiste streefwaarden voor haargroei.',
         ],
       },
       {
         question: 'Ik ben net bevallen, is haaruitval normaal?',
         answer: [
           'Ja, haaruitval enkele maanden na de bevalling is een bekend en veelvoorkomend fenomeen, veroorzaakt door de hormonale verandering na de zwangerschap. Bij de meeste vrouwen herstelt dit vanzelf binnen een jaar.',
-          'Danique kan je ondersteunen met voeding en tekorten aanpakken om het herstel soepeler te laten verlopen.',
+          'Ik kan je ondersteunen met voeding en tekorten aanpakken om het herstel soepeler te laten verlopen.',
         ],
       },
       {
         question: 'Kan een dieet mijn haaruitval hebben veroorzaakt?',
         answer: [
           'Zeker, een crashdieet of periode van te weinig eten is een bekende trigger voor telogeen effluvium. Je lichaam ziet haargroei dan als niet-essentieel en schroeft dit terug.',
-          'Danique kijkt in de intake naar je voedingsgeschiedenis en helpt je weer aan voldoende bouwstoffen te komen.',
+          'Ik kijk in de intake naar je voedingsgeschiedenis en help je weer aan voldoende bouwstoffen te komen.',
         ],
       },
       {
         question: 'Moet ik mijn schildklier laten testen bij haaruitval?',
         answer: [
           'Bij aanhoudende haaruitval, zeker in combinatie met vermoeidheid, gewichtsverandering of een koud gevoel, is het zinvol om je schildklier te laten controleren bij de huisarts.',
-          'Danique kan signalen herkennen in de intake en je hierover adviseren.',
+          'Ik kan signalen herkennen in de intake en je hierover adviseren.',
         ],
       },
       {
         question: 'Hoe lang duurt het voordat mijn haar weer dikker aanvoelt?',
         answer: [
           'De haarcyclus is traag: nieuwe haargroei duurt meestal enkele maanden voordat je zichtbaar verschil merkt. Geduld is hierbij nodig, ook als je de onderliggende oorzaak al hebt aangepakt.',
-          'Danique geeft je in de intake een realistisch beeld van het tempo dat past bij jouw situatie.',
+          'Ik geef je in de intake een realistisch beeld van het tempo dat past bij jouw situatie.',
         ],
       },
       {
         question: 'Kunnen androgenen bij vrouwen ook haaruitval veroorzaken?',
         answer: [
           'Ja, een relatief hoger niveau van androgenen kan bij sommige vrouwen bijdragen aan dunner wordend haar bovenop het hoofd, vergelijkbaar met het patroon dat bij mannen bekend is, al meestal in mildere vorm.',
-          'Danique bekijkt in de intake of hormonale factoren zoals deze bij jou een rol kunnen spelen.',
+          'Ik bekijk in de intake of hormonale factoren zoals deze bij jou een rol kunnen spelen.',
         ],
       },
     ],
