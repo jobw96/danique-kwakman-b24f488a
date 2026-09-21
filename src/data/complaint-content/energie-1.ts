@@ -211,8 +211,8 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Heeft mijn cyclus invloed op mijn cravings?',
         answer: [
-          'Ja. In de week voor je menstruatie dalen oestrogeen en progesteron, wat bij veel vrouwen samengaat met meer trek in zoet en chocola. Dit is een bekend en veelvoorkomend patroon.',
-          'We kijken naar jouw cyclus en cravings samen, zodat je weet wanneer je extra aandacht aan je maaltijden kunt besteden.',
+          'Ja. In de week voor je menstruatie dalen oestrogeen en progesteron. In je luteale fase heeft je lichaam meer behoefte aan energie en is je lijf gevoeliger voor bloedsuikerschommelingen.  Als je elke fase van je cyclus hetzelfde behandelt kan het zijn dat je dus meer last krijgt van cravings in deze periode. ',
+          'We kijken naar jouw cyclus en cravings samen, zodat je weet wat je kan eten in elke fase van je cyclus om zo je lijf volledig te ondersteunen en om geen cravings meer te ervaren. ',
         ],
       },
       {
