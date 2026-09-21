@@ -337,20 +337,6 @@ export const darmenContent2: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Moet ik coeliakie laten uitsluiten voordat ik gluten weglaat?',
-        answer: [
-          'Ja, dat is belangrijk. Coeliakie wordt vastgesteld met bloedonderzoek en eventueel een darmbiopt en dit onderzoek is alleen betrouwbaar als je op dat moment nog gluten eet. Als je vooraf al gluten weglaat, kan de uitslag vertekend worden.',
-          'Ik bespreek dit altijd eerst met je, zodat je niet onnodig gluten schrapt zonder dat coeliakie is uitgesloten.',
-        ],
-      },
-      {
-        question: 'Is een IgG-test betrouwbaar om voedselintoleranties op te sporen?',
-        answer: [
-          'Een IgG-test kan als prescreening richting geven, maar is geen definitieve diagnose. Een verhoogde waarde kan ook simpelweg betekenen dat je een product regelmatig eet, zonder dat dit klachten veroorzaakt.',
-          'Ik gebruik zo’n test daarom als hulpmiddel naast een eetdagboek en gerichte eliminatie, niet als enige basis om producten te schrappen.',
-        ],
-      },
-      {
         question: 'Waarom krijg ik pas uren na het eten klachten?',
         answer: [
           'Bij een intolerantie, in tegenstelling tot een allergie, kan het langer duren voordat klachten optreden, omdat het gaat om een geleidelijke reactie van je spijsvertering in plaats van een directe afweerreactie.',
