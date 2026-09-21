@@ -259,9 +259,9 @@ export const energieContent2: ComplaintContentMap = {
   },
   'brain-fog': {
     intro: [
-      'Je staat in een vergadering en verliest ineens de draad. Je weet wat je wilt zeggen, maar het woord wil niet komen. Thuis loop je een kamer in en ben je vergeten waarvoor. Lezen kost meer moeite dan vroeger, alsof je door een waas naar de tekst kijkt.',
-      'Brain fog, dat mistige, wattige gevoel in je hoofd, is vervelend omdat het je raakt in dingen die je normaal moeiteloos deed: focussen, onthouden, helder communiceren. Je wilt weer scherp kunnen denken, zonder dat je continu het gevoel hebt dat je hersenen op halve kracht draaien.',
-      'Brain fog is geen aparte aandoening, maar een signaal dat iets in je lichaam aandacht vraagt. Met de CIRCLE-methode kijk ik breed naar wat er bij jou meespeelt, van bloedsuiker tot schildklier tot je darmen, zodat we niet alleen het symptoom bestrijden maar de oorzaak in beeld krijgen.',
+      'Je staat in een vergadering, maar het lukt totaal niet om te focussen.  Thuis loop je een kamer in en ben je vergeten waarvoor. Lezen kost meer moeite, alsof je door een waas naar de tekst kijkt.',
+      'Brain fog, dat mistige, wattige gevoel in je hoofd. Focussen, onthouden, helder communiceren lukt niet altijd. Je wilt weer scherp kunnen denken, zonder dat je continu het gevoel hebt dat je hersenen op halve kracht draaien.',
+      'Brain fog is een signaal dat iets in je lichaam aandacht vraagt. Met de CIRCLE-methode kijk ik breed naar wat er bij jou meespeelt, van bloedsuiker tot schildklier tot je darmen, zodat we niet alleen het symptoom bestrijden maar de oorzaak in beeld krijgen.',
     ],
     recognition: [
       'Je hebt moeite om je te concentreren tijdens vergaderingen of gesprekken.',
@@ -269,13 +269,13 @@ export const energieContent2: ComplaintContentMap = {
       'Lezen of een boek uitlezen kost je meer moeite dan vroeger.',
       'Je vergeet vaker dingen, zoals afspraken of waarom je een kamer binnenliep.',
       'Je hoofd voelt mistig of wattig, alsof je er niet helemaal “bij” bent.',
-      'Je merkt dat je klachten wisselen: soms ben je helder, soms voel je je dagen achter elkaar traag denken.',
+      'Je merkt dat je klachten wisselen. Soms ben je helder, soms voel je je dagen achter elkaar traag denken.',
       'Je hebt daarnaast vaak ook vermoeidheid of energiedips, waardoor het lastig is om te bepalen wat oorzaak en gevolg is.',
     ],
     explanationHeading: 'Wat betekent brain fog?',
     explanation: [
-      'Brain fog is geen medische diagnose, maar een verzamelnaam voor klachten zoals concentratieproblemen, vergeetachtigheid, langzamer denken en moeite met helder formuleren. Het kan met vermoeidheid samengaan, maar dat hoeft niet: je kunt uitgerust wakker worden en je hoofd toch mistig voelen.',
-      'Je hersenen hebben veel nodig om goed te functioneren: een stabiele bloedsuiker, voldoende zuurstof, de juiste voedingsstoffen en een schildklier die op de juiste snelheid werkt. Wanneer een van die factoren uit balans raakt, merk je dat het eerst in je concentratie en geheugen. Dat maakt brain fog een signaal dat iets in het lichaam aandacht nodig heeft, in plaats van een op zichzelf staand probleem.',
+      'Brain fog is een verzamelnaam voor klachten zoals concentratieproblemen, vergeetachtigheid, langzamer denken en moeite met helder formuleren. Het kan met vermoeidheid samengaan, maar dat hoeft niet. Je kunt uitgerust wakker worden en je toch mistig in je hoofd voelen.',
+      'Je hersenen hebben veel nodig om goed te functioneren, namelijk een stabiele bloedsuiker, voldoende zuurstof, de juiste voedingsstoffen en een schildklier die op de juiste snelheid werkt. Wanneer een van die factoren uit balans raakt, merk je dat het eerst in je concentratie en geheugen. Dat maakt brain fog een signaal dat iets in het lichaam aandacht nodig heeft, in plaats van een los probleem is. ',
       'Bij vrouwen zie ik brain fog regelmatig samenhangen met de cyclus, met name rond de menstruatie of tijdens de perimenopauze, wanneer hormonen sterker schommelen. Ook langdurige stress, waarbij je lichaam voortdurend alert moet blijven, kan je vermogen om helder te denken aantasten.',
     ],
     factorsHeading: 'Wat kan meespelen bij brain fog?',
