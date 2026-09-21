@@ -497,7 +497,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Ik heb normale bloedwaarden maar toch klachten, hoe kan dat?',
         answer: [
           'Soms liggen waarden binnen de normaalrange maar niet in het optimale bereik voor jou, of speelt de omzetting van T4 naar T3 een rol die niet altijd standaard getest wordt.',
-          'In mijn begeleiding kijk ik breder dan alleen naar of waarden binnen de norm vallen.',
+          'In mijn begeleiding kijk ik breder dan alleen naar of waarden binnen de norm vallen. We kijken naar het volledige plaatje van je gezondheid dus niet alleen naar je bloedwaardes, maar ook naar je klachtenpatronen, je voedingspatroon, eerdere bloedwaardes, je slaap en de invloed van al deze factoren op je schildklier. ',
         ],
       },
       {
