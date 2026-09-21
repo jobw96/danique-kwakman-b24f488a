@@ -568,7 +568,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Helpt bewegen na het eten echt tegen bloedsuikerpieken?',
         answer: [
           'Ja. Een korte wandeling na een maaltijd zorgt ervoor dat je spieren direct suiker uit je bloed opnemen, wat de bloedsuikerstijging na het eten kan dempen.',
-          'In een traject bekijken we hoe je dit praktisch inpast in jouw dagritme.',
+          'In een traject bekijken we hoe jouw lichaam hier op reageert. Bij het 1:1 bloedsuiker traject doen we een 14 daagse meting waarbij we 24/7 kunnen zien hoe jouw lichaam en bloedsuiker spiegel reageert op voeding, beweging, stress en een korte wandeling na het eten. ',
         ],
       },
       {
