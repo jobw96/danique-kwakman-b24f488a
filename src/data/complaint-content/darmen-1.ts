@@ -70,7 +70,7 @@ export const darmenContent1: ComplaintContentMap = {
         answer: [
           'Dit patroon, ’s ochtends plat en ’s avonds bol, wijst vaak op gasvorming die zich gedurende de dag opbouwt. Elke maaltijd levert weer nieuwe voeding voor bacteriën in je darmen en als die te veel gas produceren of als je darmen trager werken, stapelt dit zich op naarmate de dag vordert.',
           'Ook lucht die je inslikt tijdens het praten, eten en drinken telt mee, net als hoe snel je eet en hoeveel beweging je hebt gehad.',
-          'In een traject kijk ik naar je dagpatroon: wat je eet, wanneer, hoe snel en wat je merkt na elke maaltijd. Zo kunnen we zien of het vooral gasvorming, vocht of een combinatie is.',
+          'In een traject kijk ik naar je dagpatroon: wat je eet, wanneer, hoe snel en wat je merkt na elke maaltijd. Ook zetten we waar nodig ontlastingsonderzoek in om te onderzoeken wat de mogelijke oorzaak is van je opgeblazen buik.',
         ],
       },
       {
