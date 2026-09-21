@@ -84,6 +84,9 @@ const Samenwerking = () => {
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Samen in de podcast 🎙️</h2>
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     We hebben samen een podcastaflevering opgenomen waarin we praten over onze verschillende expertises en hoe deze elkaar kunnen aanvullen.
+
+                    Aflevering #14 - De link tussen je bekkenbodem en darmklachten.
+
                   </p>
                   <a href="https://open.spotify.com/episode/3HzKC7F8yJPPpBsvMfXy03" target="_blank" rel="noopener noreferrer">
                     <CustomButton variant="secondary">Luister naar de podcastaflevering</CustomButton>
