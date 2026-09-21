@@ -45,7 +45,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: 'Kan ik in termijnen betalen?',
-    answer: 'Uiteraard is dat mogelijk. Je kunt dit aangeven tijdens de kennismaking.'
+    answer: 'Uiteraard is dat mogelijk. Je kunt dit aangeven tijdens die kennismaking.'
   }
 ];
 
