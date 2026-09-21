@@ -104,7 +104,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Zeker. Onregelmatig eten of maaltijden overslaan zorgt voor schommelingen in je bloedsuiker en je lichaam gebruikt onder andere cortisol om die schommelingen op te vangen.',
           'Een stabielere bloedsuiker door de dag heen, met voldoende eiwitten en vezels, kan bijdragen aan een rustiger dagritme.',
-          'In de intake kijk ik naar je maaltijdopbouw en -timing om te zien of dit bij jou meespeelt.',
+          'Ook te weinig eten ervoor zorgen dat je lichaam schaarste ervaart, waardoor je lijf zich ook wat meer gestrest kan voelen.',
         ],
       },
       {
