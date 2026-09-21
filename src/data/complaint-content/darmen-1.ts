@@ -316,8 +316,8 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Waarom verergeren mijn PDS-klachten bij stress?',
         answer: [
-          'Je darmen hebben een eigen zenuwstelsel dat nauw communiceert met je hersenen. Bij PDS is dit systeem vaak overgevoelig, waardoor stress, spanning of zelfs angst voor klachten de darmbeweging en pijngevoeligheid kunnen versterken.',
-          'Dit is een lichamelijk, meetbaar mechanisme en geen teken dat de klachten tussen de oren zitten.',
+          'Bij PDS is het systeem die de connectie maakt tussen je darmen en hersenen vaak overgevoelig, waardoor stress, spanning of zelfs angst voor klachten de darmbeweging en pijngevoeligheid kunnen versterken.',
+          '',
           'Tijdens de intake kijk ik naar je stressniveau, herstelmomenten en hoe dit samenhangt met je klachten, zodat we dit gericht kunnen meenemen in de aanpak.',
         ],
       },
