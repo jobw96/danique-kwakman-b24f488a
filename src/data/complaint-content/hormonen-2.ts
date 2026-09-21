@@ -460,8 +460,8 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Kunnen mijn borsten echt pijn doen door PMS?',
         answer: [
           'Ja, gevoelige of pijnlijke borsten in de dagen voor je menstruatie zijn een veelvoorkomende PMS-klacht en hangen samen met de hormonale veranderingen in de luteale fase.',
-          'Bij de meeste vrouwen is dit onschuldig, maar aanhoudende, eenzijdige of toenemende pijn buiten je cyclus om verdient medische aandacht.',
-          'In een traject kijken we naar het patroon van jouw klachten, zodat duidelijk wordt of dit cyclisch of iets anders is.',
+          'Bij een disbalans tussen de oestrogeen en progesteron kunnen je borsten pijnlijk aan gaan voelen. ',
+          'In een traject kijken we naar het patroon van jouw klachten en de balans tussen de verschillende hormonen.',
         ],
       },
       {
