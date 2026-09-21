@@ -337,7 +337,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Kan mijn voeding invloed hebben op mijn nachtrust?',
         answer: [
           'Zeker. Een avondmaaltijd die te licht is of te veel snelle koolhydraten bevat, kan een bloedsuikerdip in de nacht veroorzaken, wat je wakker kan maken.',
-          'In een traject bekijken we jouw avondmaaltijd en of aanpassingen daarin je nachtrust kunnen verbeteren.',
+          'Wat je eet kan dus zeker invloed hebben op hoe je in de nacht reageert. ',
         ],
       },
       {
