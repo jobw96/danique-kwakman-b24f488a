@@ -2,6 +2,8 @@ export type ComplaintFaq = {
   question: string;
   /** Losse alinea's van het antwoord. */
   answer: string[];
+  /** Maakt verwijzingen naar recepten, het e-book en de gratis kennismaking klikbaar. */
+  extraLinks?: boolean;
 };
 
 export type ComplaintFactor = {
