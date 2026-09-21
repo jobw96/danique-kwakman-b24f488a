@@ -78,12 +78,9 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Moet ik mijn bloed laten testen bij aanhoudende vermoeidheid?',
         answer: [
-          'Bij aanhoudende of onverklaarde vermoeidheid kan bloedonderzoek een goede eerste stap zijn. Denk bijvoorbeeld aan ijzer, ferritine, vitamine B12, vitamine D en schildklierwaarden. Dit onderzoek wordt regulier vooral ingezet om ziekten en medische afwijkingen op te sporen of uit te sluiten.
-Wanneer daar geen duidelijke afwijkingen uit komen, krijg je soms te horen dat je bloed ‘goed’ is. Dat betekent niet automatisch dat er geen aanvullende informatie te verkrijgen is.
-In mijn begeleiding kan aanvullend laboratoriumonderzoek via RP Sanitas Humanus worden ingezet om verder te onderzoeken wat er mogelijk meespeelt bij jouw klachten. Afhankelijk van je klachten en hulpvraag kan dit bijvoorbeeld informatie geven over hormonen, voedingsstoffen of andere relevante waarden.
-
-',
-          '',
+          'Bij aanhoudende of onverklaarde vermoeidheid kan bloedonderzoek een goede eerste stap zijn. Denk bijvoorbeeld aan ijzer, ferritine, vitamine B12, vitamine D en schildklierwaarden. Dit onderzoek wordt regulier vooral ingezet om ziekten en medische afwijkingen op te sporen of uit te sluiten.',
+          'Wanneer daar geen duidelijke afwijkingen uit komen, krijg je soms te horen dat je bloed ‘goed’ is. Dat betekent niet automatisch dat er geen aanvullende informatie te verkrijgen is.',
+          'In mijn begeleiding kan aanvullend laboratoriumonderzoek via RP Sanitas Humanus worden ingezet om verder te onderzoeken wat er mogelijk meespeelt bij jouw klachten. Afhankelijk van je klachten en hulpvraag kan dit bijvoorbeeld informatie geven over hormonen, voedingsstoffen of andere relevante waarden.',
         ],
       },
       {
