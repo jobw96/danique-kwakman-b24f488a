@@ -95,8 +95,8 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Kan cafeïne mijn klachten verergeren?',
         answer: [
           'Ja, dat kan. Cafeïne stimuleert je systeem en als je dat vroeg op de dag op een lege maag drinkt of laat op de dag blijft gebruiken, kan het je toch al verstoorde ritme verder uit balans houden.',
-          'Dat betekent niet dat je nooit meer koffie mag drinken, maar wel dat timing en hoeveelheid ertoe doen.',
-          'Samen kijken we hoe jouw cafeïnegebruik past bij je dagritme en waar aanpassing zinvol kan zijn.',
+          'Dat betekent niet dat je nooit meer koffie mag drinken, maar wel dat timing en hoeveelheid ertoe doen. Het kan slim zijn om je cafeïne in te nemen tussen 11.00u en 15.00u. Test dit eens uit en ontdek wat het voor je doet. ',
+          '.',
         ],
       },
       {
