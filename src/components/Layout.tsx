@@ -20,6 +20,9 @@ const MotionLink = m.create(Link);
 const footerNav = [{
   title: 'Aanbod',
   links: [{
+    name: 'Klachten',
+    href: '/klachten'
+  }, {
     name: 'Alle trajecten',
     href: '/behandelingen'
   }, {
@@ -65,9 +68,6 @@ const footerNav = [{
 }, {
   title: 'Over',
   links: [{
-    name: 'Klachten',
-    href: '/klachten'
-  }, {
     name: 'Over mij',
     href: '/over-mij'
   }, {
@@ -199,9 +199,6 @@ export const Layout: React.FC<LayoutProps> = ({
     name: 'Home',
     href: '/'
   }, {
-    name: 'Klachten',
-    href: '/klachten'
-  }, {
     name: 'Gratis',
     subItems: [{
       name: 'Blog',
@@ -229,6 +226,9 @@ export const Layout: React.FC<LayoutProps> = ({
       description: '',
       icon: BookOpen
     }]
+  }, {
+    name: 'Klachten',
+    href: '/klachten'
   }, {
     name: 'Aanbod',
     subItems: [{
