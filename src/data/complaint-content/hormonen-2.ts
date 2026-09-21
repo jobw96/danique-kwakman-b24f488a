@@ -445,7 +445,7 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'PMS omvat een breed scala aan lichamelijke en emotionele klachten in de week of twee weken voor je menstruatie, zoals gevoelige borsten, cravings, prikkelbaarheid en huilerigheid. PMDD, premenstruele dysfore stoornis, is een heftigere variant waarbij de stemmingsklachten het dagelijks functioneren duidelijk beperken.',
           'Bij PMDD kan er bijvoorbeeld sprake zijn van intense somberheid, woede of angst die duidelijk afwijkt van hoe je normaal bent.',
-          'Vermoed je dat jouw klachten eerder bij PMDD passen, bespreek dit dan met je huisarts. Voor "gewone" PMS-klachten kan ik je goed begeleiden vanuit voeding en leefstijl.',
+          'Vermoed je dat jouw klachten eerder bij PMDD passen, bespreek dit dan met je huisarts. Naast die begeleiding kan ik je ondersteunen wat betreft voeding en leefstijl op die klachten onder controle te krijgen. Dit geldt voor PMDD en PMS.',
         ],
       },
       {
