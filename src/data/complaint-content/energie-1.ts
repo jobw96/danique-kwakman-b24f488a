@@ -322,8 +322,8 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Helpt het om cafeïne of alcohol te laten staan voor betere slaap?',
         answer: [
-          'Vaak wel. Cafeïne kan nog uren na inname invloed hebben op je inslaaptijd en alcohol verstoort de diepere slaapfases later in de nacht, ook al voel je je er in eerste instantie ontspannen door.',
-          'In een traject kijken we naar jouw gebruik en timing en wat voor jou haalbaar is om aan te passen.',
+          'Vaak wel. Cafeïne kan nog uren na inname invloed hebben op je inslaaptijd en alcohol verstoort de diepere slaapfases later in de nacht, ook al voel je je er in eerste instantie ontspannen door. Probeer alcohol zoveel mogelijk te laten staan en cafeïne tussen 11.00u en 15.00u te drinken om ervoor te zorgen dat je beter kunt slapen. ',
+          '',
         ],
       },
       {
