@@ -174,13 +174,6 @@ export const huidContent: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Waarom reageert mijn huid nu opeens op producten die vroeger goed werkten?',
-        answer: [
-          'Als je huidbarrière verzwakt raakt, laat deze meer prikkels van buitenaf door, waardoor producten die eerst geen probleem waren nu wel irritatie geven.',
-          'Ik zoek met je uit wat de barrière heeft verzwakt, zodat je huid weer minder snel reageert.',
-        ],
-      },
-      {
         question: 'Heeft de overgang invloed op hoe droog mijn huid is?',
         answer: [
           'Ja, de dalende oestrogeenspiegel in de overgang vermindert het vochtvasthoudend vermogen van je huid, wat vaak samengaat met meer gevoeligheid en fijne lijntjes.',
