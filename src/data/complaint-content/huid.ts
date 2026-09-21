@@ -47,7 +47,7 @@ export const huidContent: ComplaintContentMap = {
       'We bekijken samen je bloedsuikerregulatie en eetpatroon',
       'We kijken naar mogelijke tekorten zoals zink en omega 3',
       'We bespreken of aanvullend hormonaal onderzoek zinvol is',
-      'Ik stel een voedings- en leefstijladvies op dat is afgestemd op jouw cyclus',
+      'Ik stel een voedings- en leefstijladvies op dat is afgestemd op jouw cyclus en acne',
     ],
     faqHeading: 'Veelgestelde vragen over acne',
     faqs: [
