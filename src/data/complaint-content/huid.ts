@@ -82,7 +82,7 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Helpt minder suiker eten echt tegen acne?',
         answer: [
-          'Bij vrouwen bij wie insuline een rol speelt, kan een stabielere bloedsuiker wel degelijk bijdragen aan een rustiger huid. Het is geen wondermiddel, maar wel een factor die het proberen waard is.',
+          'Bij vrouwen bij wie insuline een rol speelt, kan een stabielere bloedsuiker wel degelijk bijdragen aan een rustiger huid. ',
           'Ik bekijk in de intake hoe jouw bloedsuiker en eetpatroon eruitzien en waar winst te behalen valt.',
         ],
       },
