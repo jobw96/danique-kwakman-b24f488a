@@ -159,8 +159,8 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Kan stress echt diarree veroorzaken?',
         answer: [
-          'Ja. Je darmen en hersenen zijn nauw verbonden via de darm-hersenas. Bij spanning kan je lichaam de spijsvertering versnellen, wat zich uit als aandrang of dunne ontlasting – soms al binnen een half uur.',
-          'In de intake kijken we specifiek naar wat er speelde vóór je klachten begonnen, zodat stress als factor niet over het hoofd wordt gezien.',
+          'Ja. Je darmen en hersenen zijn nauw verbonden via de darm-hersenas. Bij spanning kan je lichaam de spijsvertering versnellen, wat zich uit als aandrang of dunne ontlasting.',
+          'In de intake kijken we specifiek naar wat er speelde vóór je klachten begonnen, zodat we stress meenemen in het oorzaken lijstje.\u00a0',
         ],
       },
       {
