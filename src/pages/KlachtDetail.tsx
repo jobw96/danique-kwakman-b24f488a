@@ -109,7 +109,7 @@ const FaqList = ({ faqs, onBooking }: { faqs: ComplaintFaq[]; onBooking: () => v
               <div className="space-y-4 pb-6">
                 {item.answer.map((paragraph) => (
                   <p key={paragraph} className="leading-relaxed text-muted-foreground">
-                    {linkifyTrajecten(paragraph, { extra: item.extraLinks, onBooking: openModal })}
+                    {linkifyTrajecten(paragraph, { extra: item.extraLinks, onBooking })}
                   </p>
                 ))}
               </div>
