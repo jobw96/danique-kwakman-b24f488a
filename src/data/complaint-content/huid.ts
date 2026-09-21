@@ -299,7 +299,7 @@ export const huidContent: ComplaintContentMap = {
   },
   'haaruitval': {
     intro: [
-      'Elke keer als je onder de douche vandaan komt, ligt er een prop haar in het putje en je vraagt je af of dit normaal is. Je paardenstaart voelt dunner aan dan een paar jaar geleden en je scheiding lijkt breder te worden, hoe je je haar ook kamt.',
+      'Elke keer als je onder de douche vandaan komt, ligt er een prop haar in het putje en je vraagt je af of dit normaal is. Je haar voelt dunner aan dan een paar jaar geleden en je scheiding lijkt breder te worden, hoe je je haar ook kamt.',
       'Haaruitval heeft vaak een vertraging ingebouwd: wat je nu ziet, is het gevolg van iets dat maanden geleden gebeurde, zoals een bevalling, een periode van veel stress, een crashdieet of een ziekteperiode. Dit heet telogeen effluvium en het verklaart waarom het soms lastig is de link te leggen met wat er destijds speelde.',
       'Je wilt geen dikke laag droogshampoo meer nodig hebben om je haar voller te laten lijken. Dat begint met uitzoeken welke tekorten of hormonale factoren bij jou meespelen, in plaats van maar af te wachten of het vanzelf overgaat.',
     ],
