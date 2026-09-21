@@ -239,7 +239,7 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Is het nodig om te “detoxen” na de pil?',
         answer: [
           'Een speciale detox is niet nodig. Je lichaam breekt de hormonen uit de pil vanzelf af. Wel is het zinvol om je lichaam te ondersteunen bij het opnieuw opbouwen van je eigen cyclus, bijvoorbeeld via voldoende voeding, stabiele bloedsuiker en voldoende rust.',
-          'Veel “detox na de pil” protocollen zijn generiek en houden geen rekening met jouw persoonlijke situatie.',
+          'Veel “detox na de pil” protocollen zijn generiek en houden geen rekening met jouw persoonlijke situatie. Je kunt wel voeding eten die je lever ondersteunen, denk aan kruisbloemige en bittere groente. ',
           'In mijn begeleiding kijk ik naar wat jouw lichaam concreet nodig heeft, in plaats van een standaard programma te volgen.',
         ],
       },
