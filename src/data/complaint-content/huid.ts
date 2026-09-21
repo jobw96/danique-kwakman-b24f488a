@@ -169,8 +169,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Is mijn droge huid een teken van mijn schildklier?',
         answer: [
-          'Een droge, schilferige huid kan samengaan met een tragere schildklierwerking, zeker in combinatie met vermoeidheid en gewichtstoename. Een diagnose stelt Danique niet, dat doet de huisarts.',
-          'Wel kan ze signalen herkennen en je adviseren om dit te laten onderzoeken als dat relevant lijkt.',
+          'Een droge, schilferige huid kan samengaan met een tragere schildklierwerking, zeker in combinatie met vermoeidheid en gewichtstoename. Een diagnose stel ik niet, dat doet de huisarts.',
+          'Wel kan ik signalen herkennen en je adviseren om dit te laten onderzoeken als dat relevant lijkt.',
         ],
       },
       {
@@ -256,8 +256,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Moet ik stoppen met mijn cortisonecrème?',
         answer: [
-          'Nee, dat advies geeft Danique niet. Medicatie en het al dan niet aanpassen ervan is aan jouw huisarts of dermatoloog.',
-          'Danique kijkt aanvullend naar voeding, darmen en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling.',
+          'Nee, dat advies geef ik niet. Medicatie en het al dan niet aanpassen ervan is aan jouw huisarts of dermatoloog.',
+          'Ik kijk aanvullend naar voeding, darmen en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling.',
         ],
       },
       {
@@ -319,7 +319,7 @@ export const huidContent: ComplaintContentMap = {
       'Ook je schildklier en androgenen spelen mee. Een te trage of juist te snelle schildklier kan de haargroeicyclus verstoren en een relatief hoger niveau van androgenen kan bij sommige vrouwen zorgen voor dunner wordend haar bovenop het hoofd. Crashdiëten en snelle gewichtsverandering zijn een bekende trigger, omdat je lichaam dit interpreteert als een periode van schaarste waarin haargroei geen prioriteit heeft.',
     ],
     factorsHeading: 'Wat vaak meespeelt bij haaruitval',
-    factorsIntro: 'Haaruitval is meestal het resultaat van een combinatie van factoren, een paar maanden voordat je het daadwerkelijk merkt. Dit komt Danique vaak tegen:',
+    factorsIntro: 'Haaruitval is meestal het resultaat van een combinatie van factoren, een paar maanden voordat je het daadwerkelijk merkt. Dit kom ik vaak tegen:',
     factors: [
       { title: 'Lage ferritine', text: 'Een lage ijzervoorraad, ook bij normale bloedwaarden, is een veelvoorkomende oorzaak van dunner wordend haar.' },
       { title: 'Tekorten aan zink, B12 en vitamine D', text: 'Deze voedingsstoffen zijn nodig voor gezonde haarzakjes. Een tekort vertraagt of vermindert haargroei.' },
@@ -351,49 +351,49 @@ export const huidContent: ComplaintContentMap = {
         question: 'Waarom valt mijn haar nu pas uit, terwijl de stressvolle periode al maanden achter me ligt?',
         answer: [
           'Dat past bij telogeen effluvium: haarzakjes gaan na een grote belasting eerst in een rustfase en vallen pas twee tot drie maanden later daadwerkelijk uit. De vertraging maakt het lastig om zelf de link te leggen met de oorzaak.',
-          'Danique brengt in de intake de tijdlijn in kaart, zodat duidelijk wordt wat mogelijk de aanleiding is geweest.',
+          'Ik breng in de intake de tijdlijn in kaart, zodat duidelijk wordt wat mogelijk de aanleiding is geweest.',
         ],
       },
       {
         question: 'Kan een tekort aan ijzer haaruitval veroorzaken, ook als mijn bloedwaarden normaal zijn?',
         answer: [
           'Ja, voor gezonde haargroei is vaak een hogere ferritinewaarde nodig dan het minimum dat als normaal geldt in een standaard bloedonderzoek. Een “normale” uitslag sluit een tekort dus niet automatisch uit.',
-          'Danique kan je adviseren over gericht onderzoek en de juiste streefwaarden voor haargroei.',
+          'Ik kan je adviseren over gericht onderzoek en de juiste streefwaarden voor haargroei.',
         ],
       },
       {
         question: 'Ik ben net bevallen, is haaruitval normaal?',
         answer: [
           'Ja, haaruitval enkele maanden na de bevalling is een bekend en veelvoorkomend fenomeen, veroorzaakt door de hormonale verandering na de zwangerschap. Bij de meeste vrouwen herstelt dit vanzelf binnen een jaar.',
-          'Danique kan je ondersteunen met voeding en tekorten aanpakken om het herstel soepeler te laten verlopen.',
+          'Ik kan je ondersteunen met voeding en tekorten aanpakken om het herstel soepeler te laten verlopen.',
         ],
       },
       {
         question: 'Kan een dieet mijn haaruitval hebben veroorzaakt?',
         answer: [
           'Zeker, een crashdieet of periode van te weinig eten is een bekende trigger voor telogeen effluvium. Je lichaam ziet haargroei dan als niet-essentieel en schroeft dit terug.',
-          'Danique kijkt in de intake naar je voedingsgeschiedenis en helpt je weer aan voldoende bouwstoffen te komen.',
+          'Ik kijk in de intake naar je voedingsgeschiedenis en help je weer aan voldoende bouwstoffen te komen.',
         ],
       },
       {
         question: 'Moet ik mijn schildklier laten testen bij haaruitval?',
         answer: [
           'Bij aanhoudende haaruitval, zeker in combinatie met vermoeidheid, gewichtsverandering of een koud gevoel, is het zinvol om je schildklier te laten controleren bij de huisarts.',
-          'Danique kan signalen herkennen in de intake en je hierover adviseren.',
+          'Ik kan signalen herkennen in de intake en je hierover adviseren.',
         ],
       },
       {
         question: 'Hoe lang duurt het voordat mijn haar weer dikker aanvoelt?',
         answer: [
           'De haarcyclus is traag: nieuwe haargroei duurt meestal enkele maanden voordat je zichtbaar verschil merkt. Geduld is hierbij nodig, ook als je de onderliggende oorzaak al hebt aangepakt.',
-          'Danique geeft je in de intake een realistisch beeld van het tempo dat past bij jouw situatie.',
+          'Ik geef je in de intake een realistisch beeld van het tempo dat past bij jouw situatie.',
         ],
       },
       {
         question: 'Kunnen androgenen bij vrouwen ook haaruitval veroorzaken?',
         answer: [
           'Ja, een relatief hoger niveau van androgenen kan bij sommige vrouwen bijdragen aan dunner wordend haar bovenop het hoofd, vergelijkbaar met het patroon dat bij mannen bekend is, al meestal in mildere vorm.',
-          'Danique bekijkt in de intake of hormonale factoren zoals deze bij jou een rol kunnen spelen.',
+          'Ik bekijk in de intake of hormonale factoren zoals deze bij jou een rol kunnen spelen.',
         ],
       },
     ],
