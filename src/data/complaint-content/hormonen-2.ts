@@ -81,10 +81,8 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'Als richtlijn geldt vaak dat het zinvol is om na ongeveer een jaar onbeschermde gemeenschap zonder zwangerschap contact op te nemen met de huisarts, of eerder als je ouder bent dan 35 jaar of al bekende klachten hebt zoals PCOS of endometriose.',
           'Dit is geen vervanging van medisch advies, maar een algemeen uitgangspunt. Twijfel je, bespreek dit dan met je huisarts.',
-          'Ondertussen kun je wel al aan de slag met je voeding, cyclus en leefstijl. Daar kan ik je bij begeleiden, naast eventueel medisch traject.
-
-Hierbij kijken we dan o.a. naar het optimaliseren van je hormoonbalans, je voedingspatroon, je stress niveau's, je bloedwaardes en gaan we aan de slag om je lijf de voedingsstoffen te geven die nu heel hard nodig zijn. Dat is helemaal afhankelijk van jouw situatie. 
-',
+          'Ondertussen kun je wel al aan de slag met je voeding, cyclus en leefstijl. Daar kan ik je bij begeleiden, naast eventueel medisch traject.',
+          "Hierbij kijken we dan o.a. naar het optimaliseren van je hormoonbalans, je voedingspatroon, je stress niveau's, je bloedwaardes en gaan we aan de slag om je lijf de voedingsstoffen te geven die nu heel hard nodig zijn. Dat is helemaal afhankelijk van jouw situatie.\u00a0",
         ],
       },
       {
