@@ -276,7 +276,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Helpt langzamer eten echt tegen mijn klachten?',
         answer: [
           'Ja, bij veel mensen wel. Beter kauwen geeft je maag een voorsprong, omdat de vertering al in je mond begint. Snel en gehaast eten geeft je spijsverteringssysteem minder tijd om zich voor te bereiden.',
-          'Tijdens de intake bespreek ik praktische manieren om dit in je dagelijkse ritme in te passen, ook op drukke werkdagen.',
+          '\n',
         ],
       },
     ],
