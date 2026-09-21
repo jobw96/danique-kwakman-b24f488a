@@ -266,13 +266,6 @@ export const darmenContent2: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Wat is het verschil tussen een hiatus hernia en gewone reflux?',
-        answer: [
-          'Bij een hiatus hernia verschuift een deel van de maag door een opening in het middenrif omhoog, wat reflux kan verergeren. Dit wordt medisch vastgesteld, bijvoorbeeld met een endoscopie.',
-          'Herken je dit patroon, dan verwijs ik je door voor verdere diagnostiek en kijk ik samen met jou naar voeding en gewoontes die klachten kunnen verlichten.',
-        ],
-      },
-      {
         question: 'Kan Helicobacter pylori mijn maagklachten veroorzaken?',
         answer: [
           'Dit is een bacterie die de maagwand kan prikkelen en bij een deel van de mensen met maagklachten wordt aangetroffen. Hier testen we o.a. op bij het ontlastingsonderzoek van het 1:1 darmtraject.',
