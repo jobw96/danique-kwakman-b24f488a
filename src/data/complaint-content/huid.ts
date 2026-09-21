@@ -364,8 +364,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Moet ik mijn schildklier laten testen bij haaruitval?',
         answer: [
-          'Bij aanhoudende haaruitval, zeker in combinatie met vermoeidheid, gewichtsverandering of een koud gevoel, is het zinvol om je schildklier te laten controleren bij de huisarts.',
-          'Ik kan signalen herkennen in de intake en je hierover adviseren.',
+          'Bij aanhoudende haaruitval, zeker in combinatie met vermoeidheid, gewichtsverandering of een koud gevoel, is het zinvol om je schildklier te laten controleren.',
+          'Tijdens de intake bespreken we je klachten en onderzoeken we of het zinvol in om bloedonderzoek te laten doen.',
         ],
       },
       {
