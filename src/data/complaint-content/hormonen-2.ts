@@ -571,8 +571,8 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Wat is het verschil tussen PCOS en PMOS?',
         answer: [
           'PMOS is een nieuwere term voor dezelfde aandoening als PCOS, polycysteus-ovariumsyndroom. De term PMOS wordt gebruikt om te benadrukken dat het gaat om een hormonale aandoening en niet alleen om "cystes" op de eierstokken, wat vaak verwarring geeft.',
-          'Inhoudelijk gaat het om dezelfde combinatie van klachten: onregelmatige ovulatie, verhoogde androgenen en vaak insulineresistentie.',
-          'In mijn begeleiding gebruik ik beide termen door elkaar, omdat ze naar hetzelfde verwijzen. Belangrijker dan de naam is welke vorm van PCOS bij jou speelt.',
+          '',
+          '',
         ],
       },
       {
