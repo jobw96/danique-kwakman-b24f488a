@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { m } from 'framer-motion';
-import { Plus, Instagram } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn, StaggerContainer } from '@/components/Animations';
-import { CustomButton } from '@/components/CustomButton';
+import { Link } from '@/lib/router-compat';
 
 interface FaqItem {
   question: string;
@@ -123,11 +123,31 @@ const FAQ = () => {
                   className="overflow-hidden"
                 >
                   <div className="pb-6 space-y-4">
-                    {item.answer.split('\n\n').map((paragraph, pIdx) => (
-                      <p key={pIdx} className="text-muted-foreground leading-relaxed">
-                        {paragraph}
-                      </p>
-                    ))}
+                    {item.answer.split('\n\n').map((paragraph, pIdx) => {
+                      const marker = 'Volg me dan op Instagram';
+                      const at = paragraph.indexOf(marker);
+                      if (at === -1) {
+                        return (
+                          <p key={pIdx} className="text-muted-foreground leading-relaxed">
+                            {paragraph}
+                          </p>
+                        );
+                      }
+                      return (
+                        <p key={pIdx} className="text-muted-foreground leading-relaxed">
+                          {paragraph.slice(0, at)}
+                          <a
+                            href="https://www.instagram.com/daniquekwakman/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary underline underline-offset-2 hover:opacity-80"
+                          >
+                            {marker}
+                          </a>
+                          {paragraph.slice(at + marker.length)}
+                        </p>
+                      );
+                    })}
                   </div>
                 </m.div>
               </m.div>
