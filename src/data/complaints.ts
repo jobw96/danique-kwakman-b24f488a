@@ -477,7 +477,7 @@ export const complaints: Complaint[] = [
   {
     slug: 'kinderwens',
     category: 'Hormonen en cyclus',
-    title: 'Zwanger worden of voorbereiden op een zwangerschap',
+    title: 'Kinderwens of voorbereiden op een zwangerschap',
     pageTitle: 'Kinderwens en je cyclus voorbereiden',
     seoTitle: 'Kinderwens: je lichaam voorbereiden',
     seoDescription:
