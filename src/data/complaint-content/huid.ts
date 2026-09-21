@@ -169,8 +169,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Is mijn droge huid een teken van mijn schildklier?',
         answer: [
-          'Een droge, schilferige huid kan samengaan met een tragere schildklierwerking, zeker in combinatie met vermoeidheid en gewichtstoename. Een diagnose stel ik niet, dat doet de huisarts.',
-          'Wel kan ik signalen herkennen en je adviseren om dit te laten onderzoeken als dat relevant lijkt.',
+          'Een droge, schilferige huid kan samengaan met een tragere schildklierwerking, zeker in combinatie met vermoeidheid en gewichtstoename. ',
+          'Tijdens een traject is dit dus zeker iets wat wij meenemen.',
         ],
       },
       {
