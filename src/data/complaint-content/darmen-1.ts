@@ -332,7 +332,7 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Hangen mijn PDS-klachten samen met mijn menstruatiecyclus?',
         answer: [
-          'Bij veel vrouwen met PDS verergeren de klachten rond de menstruatie. Hormonale schommelingen beïnvloeden de darmbeweging en de gevoeligheid van je darmzenuwstelsel, waardoor klachten in de ene week van je cyclus heftiger zijn dan in de andere.',
+          'Bij veel vrouwen met PDS verergeren de klachten rond de menstruatie. Hormonale schommelingen beïnvloeden de darmbeweging en de gevoeligheid van je darmen, waardoor klachten in de ene week van je cyclus heftiger zijn dan in de andere.',
           'Als je een duidelijk verband herkent tussen je cyclus en je PDS-klachten, is dat belangrijke informatie voor de intake.',
           'Ik breng dit samen in kaart, zodat we zowel je darmen als je hormonale cyclus meenemen in de aanpak.',
         ],
