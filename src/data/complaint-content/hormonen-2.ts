@@ -453,7 +453,7 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'In de luteale fase heeft je lichaam vaak iets meer energie nodig en kunnen bloedsuikerschommelingen sterker aanvoelen, wat cravings naar zoet of koolhydraatrijk eten kan verklaren.',
           'Dit is een normale hormonale reactie, maar grote bloedsuikerschommelingen kunnen stemmingsklachten en vermoeidheid wel versterken.',
-          'In een traject kijken we naar je voedingspatroon door je cyclus heen, zodat je minder last hebt van pieken en dalen zonder dat het een kwestie van "doorbijten" wordt.',
+          'In een traject kijken we naar je voedingspatroon door je cyclus heen, zodat je minder last hebt van pieken en dalen. Het zijn namelijk signalen van je lichaam waar je heel goed iets aan kunt doen door je voedingspatroon aan te passen.',
         ],
       },
       {
