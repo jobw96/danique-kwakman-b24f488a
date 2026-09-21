@@ -89,8 +89,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Kan ik bij jou terecht als ik naar de dermatoloog ga?',
         answer: [
-          'Ja. Mijn begeleiding kan goed naast een traject bij de dermatoloog worden ingezet. We kijken naar voeding, hormonen, darmen en leefstijl en welke rol deze kunnen spelen bij jouw acne.',
-          'Maar je hoeft niet eerst naar de dermatoloog om bij mij te starten. Ook wanneer je zelf wilt onderzoeken wat er mogelijk meespeelt bij je acne, kun je bij mij terecht.',
+          'Ja. Mijn begeleiding kan goed naast een traject bij de dermatoloog worden ingezet. Samen met mij kijk je naar voeding, hormonen, darmen en leefstijl en welke rol deze kunnen spelen bij jouw acne.',
+          'Je hebt geen doorverwijzing nodig om bij mij te starten.',
         ],
       },
       {
