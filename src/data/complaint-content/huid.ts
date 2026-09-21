@@ -357,8 +357,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Kan een dieet mijn haaruitval hebben veroorzaakt?',
         answer: [
-          'Zeker, een crashdieet of periode van te weinig eten is een bekende trigger voor telogeen effluvium. Je lichaam ziet haargroei dan als niet-essentieel en schroeft dit terug.',
-          'Ik kijk in de intake naar je voedingsgeschiedenis en help je weer aan voldoende bouwstoffen te komen.',
+          'Zeker, een crashdieet of periode van te weinig eten is een bekende trigger. Je lichaam ziet haargroei dan als niet-essentieel en geeft hier geen prioriteit aan. ',
+          'Ik kijk in de intake naar je voedingsgeschiedenis en help je weer aan voldoende bouwstoffen te komen om verdere haaruitval te voorkomen.',
         ],
       },
       {
