@@ -476,7 +476,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Waarom is alleen TSH laten testen niet altijd genoeg?',
         answer: [
           'TSH geeft een indicatie, maar fT4, fT3 en schildklierantistoffen geven een vollediger beeld van hoe je schildklier daadwerkelijk functioneert en of er sprake is van bijvoorbeeld Hashimoto.',
-          'In mijn begeleiding help ik je begrijpen welk laboratoriumonderzoek zinvol is om aan je arts voor te leggen.',
+          'Laat dit dus altijd even checken bij je huisarts.\u00a0',
         ],
       },
       {
