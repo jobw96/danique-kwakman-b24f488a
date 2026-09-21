@@ -76,14 +76,6 @@ export const energieContent2: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Is dit hetzelfde als bijnieruitputting?',
-        answer: [
-          'Nee. “Bijnieruitputting” is geen erkende medische diagnose en suggereert dat je bijnieren letterlijk opraken, terwijl het onderliggende probleem meestal in de aansturing en het ritme van cortisol ligt, niet in de bijnieren zelf.',
-          'Het is dus preciezer om te spreken over een verstoord cortisolritme: je lichaam maakt cortisol op de verkeerde momenten aan of in de verkeerde hoeveelheid, beïnvloed door slaap, voeding, stress en herstel.',
-          'Ik gebruik daarom geen containerbegrip, maar kijk samen met jou naar het patroon dat bij jou speelt en wat daarin bijstelbaar is.',
-        ],
-      },
-      {
         question: 'Waarom heb ik ’s avonds juist energie en overdag niet?',
         answer: [
           'Dat kan wijzen op een omgekeerd cortisol ritme. Een lagere piek in de ochtend en een cortisol dat ’s avonds nog te hoog is in plaats van af te bouwen. Daardoor voel je je overdag futloos en juist ’s avonds “aan”.',
