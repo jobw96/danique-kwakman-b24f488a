@@ -11,6 +11,13 @@ import carrotCakeAsset from '@/assets/recepten/carrotcake-overnight-oats.webp.as
 import ontbijtbordjeAsset from '@/assets/recepten/ontbijtbordje.webp.asset.json';
 import frambozenChiaAsset from '@/assets/recepten/framboze-chiapudding.webp.asset.json';
 
+export interface RecipeNoteLink {
+  /** Letterlijke tekst in de notitie die klikbaar moet zijn. */
+  text: string;
+  to: string;
+  external?: boolean;
+}
+
 export interface Recipe {
   id: string;
   slug: string;
@@ -24,6 +31,8 @@ export interface Recipe {
   afterNote?: string;
   /** Extra alinea's onder de bereiding, exact zoals in het recept. */
   notes?: string[];
+  /** Klikbare verwijzingen binnen de notities. */
+  noteLinks?: RecipeNoteLink[];
   videoUrl?: string;
   videoText?: string;
 }
@@ -375,8 +384,11 @@ export const recipes: Recipe[] = [
       'Top het geheel af met wat granola en je overige favo toppings.'
     ],
     notes: [
-      'Ik maak zelf altijd gelijk een paar porties zodat ik voor de rest van de week al een aantal ontbijtes klaar hebt staan.',
-      'Ideaal voor drukkere ochtenden, een stabiele bloedsuikerspiegel en een rustige buik.'
+      'Ik maak zelf altijd gelijk een paar porties zodat ik voor de rest van de week al een aantal ontbijtjes klaar heb staan. De chiapudding is trouwens extra lekker met mijn favo zelfgemaakte granola. Het chiazaad en de ingrediënten voor mijn granola haal ik vaak bij Pit&Pit. Je vindt mijn favoriete producten hier in mijn boodschappenlijstje bij Pit&Pit. Met code DANIQUE5 krijg je 5% korting.'
+    ],
+    noteLinks: [
+      { text: 'zelfgemaakte granola', to: '/recepten/homemade-chocolade-granola' },
+      { text: 'boodschappenlijstje', to: 'https://nl.pit-pit.com/collections/de-keuze-van-danique', external: true }
     ],
     videoText: 'Bekijk hieronder de video waarin ik stap voor stap laat zien hoe je deze frambozen chiapudding maak:',
     videoUrl: 'https://www.instagram.com/p/DaHiQyxsPHQ/'
