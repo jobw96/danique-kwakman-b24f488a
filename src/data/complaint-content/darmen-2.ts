@@ -354,7 +354,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Is het slim om veel producten tegelijk te schrappen?',
         answer: [
           'Niet per se. Zomaar veel producten weglaten kan je voeding onnodig beperken en maakt het lastiger om te zien welk product daadwerkelijk klachten veroorzaakt.',
-          'Ik werk liever met een gestructureerde eliminatie en herintroductie van één product tegelijk, zodat je precies weet waar je op reageert.',
+          'Ik werk met intolerantie testen om te voorkomen dat je onnodig producten gaat vermijden.',
         ],
       },
       {
