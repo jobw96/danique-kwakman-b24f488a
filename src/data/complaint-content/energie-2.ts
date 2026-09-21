@@ -450,11 +450,11 @@ export const energieContent2: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Is een glucosemeter of CGM zinvol voor mij?',
+        question: 'Is een glucosemeter zinvol?',
         answer: [
-          'Een glucosemeter of continue glucosemeter (CGM) kan waardevol inzicht geven in hoe jouw lichaam op bepaalde maaltijden reageert. Voor sommige vrouwen is dat heel verhelderend en motiverend.',
-          'Tegelijk zijn losse metingen niet altijd representatief en kunnen ze ook onnodige onzekerheid geven als je de cijfers zonder context interpreteert. Het gaat om het patroon over meerdere dagen, niet om één uitschieter.',
-          'In de intake bespreken we of zo’n meting bij jouw situatie meerwaarde heeft en hoe je de resultaten het beste kunt lezen.',
+          'Ja! Een glucosemeter kan waardevol inzicht geven in hoe jouw lichaam op bepaalde maaltijden reageert, op beweging en andere leefstijl factoren. Het kan fijn inzicht geven om op zwart-wit te zien wat er gebeurd in jouw lijf. ',
+          '',
+          'In de intake bespreken we of zo’n meting bij jouw situatie van toepassing kan zijn en wat dit kan betekenen voor jou. ',
         ],
       },
       {
