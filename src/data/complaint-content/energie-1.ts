@@ -78,7 +78,7 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Moet ik mijn bloed laten testen bij aanhoudende vermoeidheid?',
         answer: [
-          'Bij langdurige, onverklaarde vermoeidheid is bloedonderzoek via de huisarts een verstandige eerste stap. Denk aan ijzer, ferritine, vitamine B12, vitamine D en schildklierwaarden. Dit hoort bij de huisarts thuis, zeker als je klachten al langere tijd aanhouden.',
+          'Bij langdurige, onverklaarde vermoeidheid is bloedonderzoek een verstandige eerste stap. Denk aan ijzer, ferritine, vitamine B12, vitamine D en schildklierwaarden. ',
           'Vaak vullen we dit aan met gerichter laboratoriumonderzoek, afhankelijk van jouw klachten en wat er in je eerdere bloedonderzoek al wel of niet is meegenomen.',
         ],
       },
