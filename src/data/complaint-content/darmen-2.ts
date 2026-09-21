@@ -262,7 +262,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Heeft langdurig maagzuurremmers gebruiken gevolgen voor mijn voedingsstoffen?',
         answer: [
           'Maagzuur is nodig om vitamine B12 en ijzer goed uit je voeding vrij te maken en om eiwitten te verteren. Bij langdurig gebruik van maagzuurremmers kan de opname hiervan achterblijven, wat kan bijdragen aan vermoeidheid.',
-          'Ik kan met bloedonderzoek laten checken of dit bij jou speelt en denk mee over voeding die dit ondersteunt.',
+          'Met bloedonderzoek kunnen we laten checken of dit bij jou speelt en begeleid je met een voedingspatroon passend in deze situatie.\u00a0',
         ],
       },
       {
