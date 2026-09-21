@@ -242,9 +242,9 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Wat kan ik vandaag al proberen?',
         answer: [
-          'Voeg eiwitten en vezels toe aan je ontbijt en lunch, bijvoorbeeld eieren, yoghurt, peulvruchten of volkorenproducten in plaats van alleen snelle koolhydraten. En probeer een korte wandeling na de lunch.',
+          'Voeg eiwitten en vezels toe aan je ontbijt en lunch, bijvoorbeeld eieren, yoghurt, peulvruchten of volkorenproducten in plaats van alleen snelle koolhydraten. En probeer een korte wandeling na de lunch. Kan je wel wat inspiratie gebruiken? Check mijn recepten pagina of kijk eens naar Nourish Your Body - mijn e-book met 50+ hormoon proof en darm vriendelijke recepten die je o.a. helpen om je bloedsuiker spiegel stabiel te houden. ',
           'Kijk ook of je voldoende drinkt gedurende de dag, water helpt vaak meer dan je zou denken.',
-          'Wil je precies weten wat bij jouw energiedips speelt en hoe je dit structureel kunt aanpakken? In een gratis kennismaking bekijken we samen jouw situatie.',
+          'Wil je precies weten wat bij jouw energiedips speelt en hoe je dit structureel kunt aanpakken? In een gratis kennismaking bekijken we samen jouw situatie en bespreken we welk traject passend kan zijn voor jou. ',
         ],
       },
     ],
