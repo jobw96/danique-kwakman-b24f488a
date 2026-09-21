@@ -366,7 +366,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Hoe weet ik of ik een progesterontekort heb?',
         answer: [
           'Signalen zijn onder andere spotting voor je menstruatie, een korte tweede cyclushelft, slecht slapen en onrust in die periode. Zekerheid geeft bloedonderzoek op het juiste cyclusmoment.',
-          'In mijn begeleiding kijk ik naar je klachtenpatroon en help ik je op weg met gericht laboratoriumonderzoek indien nodig.',
+          'In mijn begeleiding kijk ik naar je klachtenpatroon en help ik je op weg met gericht laboratoriumonderzoek indien nodig.\n\nDaarnaast kunnen we door het inzetten van je juiste voedingsstoffen je progesteron aanmaak boosten.\n',
         ],
       },
       {
