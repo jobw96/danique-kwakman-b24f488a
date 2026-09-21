@@ -238,11 +238,11 @@ export const huidContent: ComplaintContentMap = {
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw voeding, darmen en huid in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw eczeem',
     together: [
-      'Ze brengt jouw persoonlijke triggerpatroon in kaart',
-      'Ze kijkt naar signalen van je darmgezondheid en histamine-afbraak',
-      'Ze betrekt je stressniveau en slaappatroon in het advies',
-      'Ze adviseert eventueel gericht onderzoek naar tekorten zoals vitamine D',
-      'Ze stelt een voedings- en leefstijlplan op dat is afgestemd op jouw huid en darmen',
+      'We brengen jouw persoonlijke triggerpatroon in kaart',
+      'We kijken naar signalen van je darmgezondheid en histamine-afbraak',
+      'We kijken naar jouw je stressniveau en slaappatroon in het advies',
+      'We kijken naar eventueel gericht onderzoek naar tekorten zoals vitamine D',
+      'We gaan aan de slag met jouw persoonlijke behandelplan',
     ],
     faqHeading: 'Veelgestelde vragen over eczeem',
     faqs: [
