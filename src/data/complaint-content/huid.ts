@@ -336,7 +336,7 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Waarom valt mijn haar nu pas uit, terwijl de stressvolle periode al maanden achter me ligt?',
         answer: [
-          'Dat past bij telogeen effluvium: haarzakjes gaan na een grote belasting eerst in een rustfase en vallen pas twee tot drie maanden later daadwerkelijk uit. De vertraging maakt het lastig om zelf de link te leggen met de oorzaak.',
+          'Haarzakjes gaan na een grote belasting eerst in een rustfase en vallen pas twee tot drie maanden later daadwerkelijk uit. De vertraging maakt het lastig om zelf de link te leggen met de oorzaak.',
           'Ik breng in de intake de tijdlijn in kaart, zodat duidelijk wordt wat mogelijk de aanleiding is geweest.',
         ],
       },
