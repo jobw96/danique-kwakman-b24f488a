@@ -581,8 +581,13 @@ export const energieContent1: ComplaintContentMap = {
       {
         question: 'Moet ik naar de huisarts voor insulineresistentie?',
         answer: [
-          'Voor de diagnose diabetes type 2 of prediabetes is bloedonderzoek via de huisarts nodig. Dit hoort bij de huisarts thuis en is belangrijk om officieel vast te laten stellen.',
-          'Aanvullend kijk ik naar leefstijlfactoren zoals voeding, beweging en slaap, die je insulinegevoeligheid kunnen beïnvloeden.',
+          'Voor de diagnose diabetes type 2 of prediabetes is bloedonderzoek via de huisarts nodig.',
+          'Aanvullend kijk ik naar leefstijlfactoren zoals voeding, beweging en slaap, die je insulinegevoeligheid kunnen beïnvloeden. 
+
+Via het bloedsuikertraject kunnen we samen aan de slag met het dragen van een 14-daagse glucose meting om te ontdekken hoe jouw lichaam reageert op voeding, beweging, slaap en stress. Dit vervangt niet het werk van de huisarts, maar is ter aanvulling van. 
+
+Heb je de diagnose PCOS of heb je vermoedens dat je PCOS hebt? Ook dan kun je het 1:1 bloedsuikertraject volgen. Wil je ook aan de slag met je gehele hormonale gezondheid? Dan kun je ook het 1:1 hormoontraject volgen en daarbij kunnen we aanvullend de sensor inzetten. 
+',
         ],
       },
     ],
