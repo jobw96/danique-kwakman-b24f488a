@@ -434,7 +434,7 @@ export const darmenContent1: ComplaintContentMap = {
       {
         question: 'Waarom krijg ik na gezonde, vezelrijke voeding juist meer gas?',
         answer: [
-          'Vezels zijn belangrijk voor je darmgezondheid, maar ze fermenteren ook makkelijker dan bijvoorbeeld eiwitten of vetten. Wanneer je snel veel meer vezels gaat eten dan je darmflora gewend is, of wanneer je darmflora al uit balans is, kan dit tijdelijk voor meer gasvorming zorgen.',
+          'Vezels zijn belangrijk voor je darmgezondheid, maar ze fermenteren ook makkelijker dan bijvoorbeeld eiwitten of vetten. Wanneer je snel veel meer vezels gaat eten dan je darmflora gewend is of wanneer je darmflora al uit balans is, kan dit tijdelijk voor meer gasvorming zorgen.',
           'Dit betekent niet dat je vezels moet laten staan, maar wel dat de opbouw en het tempo waarin je dit doet belangrijk zijn.',
           'In mijn begeleiding kijken we hoe je vezelinname op een manier kunt opbouwen die bij jouw darmen past.',
         ],
