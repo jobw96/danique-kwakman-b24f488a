@@ -187,7 +187,7 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Wat kan ik zelf al doen bij regelmatig diarree?',
         answer: [
-          'Let op voldoende vocht en mineralen, want bij diarree verlies je meer dan je denkt. Verder helpt het om patronen bij te houden: wanneer treedt het op, wat at je ervoor en hoe was je stressniveau? Die informatie is goud waard in een intake.',
+          'Let op voldoende vocht en mineralen, want bij diarree verlies je meer dan je denkt. Verder helpt het om patronen bij te houden: wanneer treedt het op, wat at je ervoor en hoe was je stressniveau?\u00a0',
           'Met die puzzelstukjes kunnen we gericht kijken naar wat jouw darmen nodig hebben om weer rustiger te functioneren.',
         ],
       },
