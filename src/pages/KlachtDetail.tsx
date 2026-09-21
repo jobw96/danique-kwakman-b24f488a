@@ -35,12 +35,39 @@ const TRAJECT_LINKS: { term: string; to: string }[] = [
   { term: 'bloedsuiker traject', to: '/bloedsuikertraject' },
 ];
 
-const linkifyTrajecten = (text: string) => {
-  const pattern = new RegExp(`(${TRAJECT_LINKS.map((item) => item.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+const EXTRA_LINKS: { term: string; to: string }[] = [
+  { term: 'mijn recepten pagina', to: '/recepten' },
+  { term: 'Nourish Your Body', to: '/webshop' },
+];
+
+const BOOKING_TERM = 'gratis kennismaking';
+
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+type LinkifyOptions = { extra?: boolean; onBooking?: () => void };
+
+const linkifyTrajecten = (text: string, options: LinkifyOptions = {}) => {
+  const terms = [...TRAJECT_LINKS.map((item) => item.term)];
+  if (options.extra) terms.push(...EXTRA_LINKS.map((item) => item.term), BOOKING_TERM);
+  const pattern = new RegExp(`(${terms.map(escapeRegExp).join('|')})(?![a-zA-Z])`, 'gi');
   const parts = text.split(pattern);
 
   return parts.map((part, index) => {
-    const match = TRAJECT_LINKS.find((item) => item.term.toLowerCase() === part.toLowerCase());
+    const match = [...TRAJECT_LINKS, ...EXTRA_LINKS].find(
+      (item) => item.term.toLowerCase() === part.toLowerCase(),
+    );
+    if (options.extra && options.onBooking && part.toLowerCase() === BOOKING_TERM) {
+      return (
+        <button
+          key={`${part}-${index}`}
+          type="button"
+          onClick={options.onBooking}
+          className="inline text-primary underline decoration-primary/40 underline-offset-4 transition hover:decoration-primary"
+        >
+          {part}
+        </button>
+      );
+    }
     if (!match) return part;
     return (
       <Link
@@ -82,7 +109,7 @@ const FaqList = ({ faqs }: { faqs: ComplaintFaq[] }) => {
               <div className="space-y-4 pb-6">
                 {item.answer.map((paragraph) => (
                   <p key={paragraph} className="leading-relaxed text-muted-foreground">
-                    {linkifyTrajecten(paragraph)}
+                    {linkifyTrajecten(paragraph, { extra: item.extraLinks, onBooking: openModal })}
                   </p>
                 ))}
               </div>
