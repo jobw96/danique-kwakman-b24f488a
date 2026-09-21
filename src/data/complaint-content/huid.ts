@@ -344,7 +344,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Kan een tekort aan ijzer haaruitval veroorzaken, ook als mijn bloedwaarden normaal zijn?',
         answer: [
           'Ja, voor gezonde haargroei is vaak een hogere ferritinewaarde nodig dan het minimum dat als normaal geldt in een standaard bloedonderzoek. Een “normale” uitslag sluit een tekort dus niet automatisch uit.',
-          'Ik kan je adviseren over gericht onderzoek en de juiste streefwaarden voor haargroei.',
+          'Tijdens een traject kunnen we gericht onderzoek inzetten of we kijken naar eerdere test uitslagen om te achterhalen of dit een mogelijke oorzaak is van jouw haaruitval.',
         ],
       },
       {
