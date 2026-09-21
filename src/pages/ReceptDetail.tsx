@@ -98,7 +98,9 @@ const ReceptDetail = () => {
             {recipe.notes && recipe.notes.length > 0 && (
               <div className="mt-8 space-y-4">
                 {recipe.notes.map((note, i) => (
-                  <p key={i} className="text-muted-foreground text-sm leading-relaxed">{note}</p>
+                  <p key={i} className="text-muted-foreground text-sm leading-relaxed">
+                    {renderNote(note, recipe.noteLinks)}
+                  </p>
                 ))}
               </div>
             )}
