@@ -39,8 +39,7 @@ export const huidContent: ComplaintContentMap = {
       'Je bent aangekomen zonder dat je leefstijl is veranderd',
       'Je hebt sterke energiedips of trek in suiker in de middag',
       'Je hebt haaruitval of dunner wordend hoofdhaar',
-      'Je vermoedt PCOS of hebt dit ooit horen noemen
-',
+      'Je vermoedt PCOS of hebt dit ooit horen noemen',
     ],
     togetherIntro: 'Via uitgebreide intakeformulieren en een persoonlijke intake breng ik jouw cyclus, voeding en huid in kaart. Met de CIRCLE-methode leggen we samen de puzzel achter jouw acne',
     together: [
