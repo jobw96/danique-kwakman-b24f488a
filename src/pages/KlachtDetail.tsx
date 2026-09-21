@@ -217,7 +217,7 @@ const KlachtDetail = () => {
         <Section className="bg-card py-14 md:py-20">
           <FadeIn className="mx-auto max-w-4xl">
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
-              {content.recognitionHeading ?? 'Misschien herken je dit'}
+              {content.recognitionHeading ?? 'Misschien herken je één of meerdere van deze signalen'}
             </h2>
             <BulletList items={content.recognition} />
           </FadeIn>
