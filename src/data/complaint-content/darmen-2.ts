@@ -275,8 +275,8 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Kan Helicobacter pylori mijn maagklachten veroorzaken?',
         answer: [
-          'Dit is een bacterie die de maagwand kan prikkelen en bij een deel van de mensen met maagklachten wordt aangetroffen. Vaststellen gebeurt via een test bij de huisarts en behandeling verloopt met medicatie.',
-          'Ik kan je erop wijzen als je klachtenpatroon hierop lijkt en adviseer dan altijd om dit medisch te laten uitsluiten.',
+          'Dit is een bacterie die de maagwand kan prikkelen en bij een deel van de mensen met maagklachten wordt aangetroffen. Hier testen we o.a. op bij het ontlastingsonderzoek van het 1:1 darmtraject.',
+          '\n',
         ],
       },
       {
