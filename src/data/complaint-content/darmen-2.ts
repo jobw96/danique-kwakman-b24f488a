@@ -352,49 +352,49 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Moet ik coeliakie laten uitsluiten voordat ik gluten weglaat?',
         answer: [
           'Ja, dat is belangrijk. Coeliakie wordt vastgesteld met bloedonderzoek en eventueel een darmbiopt en dit onderzoek is alleen betrouwbaar als je op dat moment nog gluten eet. Als je vooraf al gluten weglaat, kan de uitslag vertekend worden.',
-          'Danique bespreekt dit altijd eerst met je, zodat je niet onnodig gluten schrapt zonder dat coeliakie is uitgesloten.',
+          'Ik bespreek dit altijd eerst met je, zodat je niet onnodig gluten schrapt zonder dat coeliakie is uitgesloten.',
         ],
       },
       {
         question: 'Is een IgG-test betrouwbaar om voedselintoleranties op te sporen?',
         answer: [
           'Een IgG-test kan als prescreening richting geven, maar is geen definitieve diagnose. Een verhoogde waarde kan ook simpelweg betekenen dat je een product regelmatig eet, zonder dat dit klachten veroorzaakt.',
-          'Danique gebruikt zo’n test daarom als hulpmiddel naast een eetdagboek en gerichte eliminatie, niet als enige basis om producten te schrappen.',
+          'Ik gebruik zo’n test daarom als hulpmiddel naast een eetdagboek en gerichte eliminatie, niet als enige basis om producten te schrappen.',
         ],
       },
       {
         question: 'Waarom krijg ik pas uren na het eten klachten?',
         answer: [
           'Bij een intolerantie, in tegenstelling tot een allergie, kan het langer duren voordat klachten optreden, omdat het gaat om een geleidelijke reactie van je spijsvertering in plaats van een directe afweerreactie.',
-          'Dit maakt het lastiger om zelf de link te leggen en daarom werkt Danique met een eetdagboek om patronen boven water te krijgen.',
+          'Dit maakt het lastiger om zelf de link te leggen en daarom werk ik met een eetdagboek om patronen boven water te krijgen.',
         ],
       },
       {
         question: 'Kan ik lactose-intolerantie zelf vaststellen?',
         answer: [
           'Een indicatie krijg je door zuivel een tijd weg te laten en daarna gecontroleerd weer te introduceren, maar een waterstofademtest bij een arts of diëtist geeft een betrouwbaarder antwoord.',
-          'Danique kan met je meedenken over hoe je dit het beste aanpakt en wanneer aanvullend onderzoek zinvol is.',
+          'Ik kan met je meedenken over hoe je dit het beste aanpakt en wanneer aanvullend onderzoek zinvol is.',
         ],
       },
       {
         question: 'Is het slim om veel producten tegelijk te schrappen?',
         answer: [
           'Niet per se. Zomaar veel producten weglaten kan je voeding onnodig beperken en maakt het lastiger om te zien welk product daadwerkelijk klachten veroorzaakt.',
-          'Danique werkt liever met een gestructureerde eliminatie en herintroductie van één product tegelijk, zodat je precies weet waar je op reageert.',
+          'Ik werk liever met een gestructureerde eliminatie en herintroductie van één product tegelijk, zodat je precies weet waar je op reageert.',
         ],
       },
       {
         question: 'Wat is histamine-intolerantie precies?',
         answer: [
           'Bij histamine-intolerantie breekt je lichaam histamine, van nature aanwezig in producten als oude kaas, wijn en gerookte vis, minder goed af. Dit kan klachten geven als hoofdpijn, blozen of een opgezette huid.',
-          'Danique kijkt in het eetdagboek of jouw klachten samenvallen met histaminerijke voeding en denkt mee over een aanpak.',
+          'Ik kijk in het eetdagboek of jouw klachten samenvallen met histaminerijke voeding en denk mee over een aanpak.',
         ],
       },
       {
         question: 'Kan ik na een tijdje weer gewoon producten eten die ik heb weggelaten?',
         answer: [
           'Bij een intolerantie is dit soms mogelijk, bijvoorbeeld in kleinere hoeveelheden of na verbetering van je spijsvertering. Bij coeliakie of een echte allergie ligt dit anders en is voorzichtigheid nodig.',
-          'Danique begeleidt je bij de herintroductiefase, zodat je stap voor stap en veilig kunt uitproberen wat weer kan.',
+          'Ik begeleid je bij de herintroductiefase, zodat je stap voor stap en veilig kunt uitproberen wat weer kan.',
         ],
       },
     ],
