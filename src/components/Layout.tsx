@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText, HelpCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText, HelpCircle, User, HeartHandshake } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -70,6 +70,9 @@ const footerNav = [{
   links: [{
     name: 'Over mij',
     href: '/over-mij'
+  }, {
+    name: 'Samenwerking',
+    href: '/samenwerking'
   }, {
     name: 'Contact',
     href: '/contact'
@@ -267,7 +270,17 @@ export const Layout: React.FC<LayoutProps> = ({
     href: '/webshop'
   }, {
     name: 'Over mij',
-    href: '/over-mij'
+    subItems: [{
+      name: 'Over mij',
+      href: '/over-mij',
+      description: '',
+      icon: User
+    }, {
+      name: 'Samenwerking',
+      href: '/samenwerking',
+      description: '',
+      icon: HeartHandshake
+    }]
   }, {
     name: 'Contact',
     subItems: [{
