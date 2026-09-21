@@ -77,7 +77,7 @@ export const darmenContent1: ComplaintContentMap = {
         question: 'Kan SIBO de oorzaak zijn van mijn opgeblazen buik?',
         answer: [
           'SIBO staat voor een overgroei van bacteriën in de dunne darm, waar normaal minder bacteriën zitten. Deze bacteriën fermenteren voedsel al vroeg in je spijsvertering, waardoor je snel na het eten een opgeblazen gevoel kunt krijgen, vaak samen met winderigheid en wisselende ontlasting.',
-          'SIBO wordt vastgesteld met een ademtest, wat een medische beoordeling vraagt. Tijdens de intake kijk ik naar signalen die bij SIBO kunnen passen en bespreken we of aanvullend onderzoek zinvol is.',
+          '\n',
           'Wanneer SIBO wordt vermoed of vastgesteld, kijken we samen hoe je voeding en leefstijl hierop afgestemd kunnen worden.',
         ],
       },
