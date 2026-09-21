@@ -248,7 +248,7 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'Het kan zijn dat klachten zoals een uitblijvende cyclus, acne en overbeharing die na het stoppen zichtbaar worden, wijzen op PCOS dat al vóór de pil aanwezig was maar onderdrukt werd.',
           'De pil wordt soms voorgeschreven juist om cyclusklachten of acne te maskeren, zonder dat de onderliggende oorzaak is onderzocht.',
-          'Vermoed je dat er meer speelt, dan kunnen we dit in een traject verder uitzoeken en, waar nodig, adviseren dit ook medisch te laten beoordelen.',
+          'Vermoed je dat er meer speelt, dan kunnen we dit in een traject verder uitzoeken en waar nodig, adviseren dit ook medisch te laten beoordelen.',
         ],
       },
     ],
