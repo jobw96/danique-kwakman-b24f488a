@@ -235,8 +235,8 @@ export const energieContent2: ComplaintContentMap = {
         question: 'Kan te weinig drinken ook een energiedip veroorzaken?',
         answer: [
           'Ja, milde uitdroging kan zich uiten als vermoeidheid, hoofdpijn en concentratieverlies, wat makkelijk aanvoelt als een energiedip terwijl het (mede) om vochtinname gaat.',
-          'Veel vrouwen drinken overdag onbewust te weinig, zeker tijdens drukke werkdagen.',
-          'We kijken in de intake ook naar je hydratatie, zodat we dit als factor niet over het hoofd zien.',
+          'Veel vrouwen drinken overdag onbewust te weinig. Begin de dag met 2 grote glazen water om het vocht verlies van de nacht weer aan te vullen. Lees jezelf ook aan om na elke toilet bezoekje weer een glas water te drinken. Zo kan je het niet vergeten!',
+          '',
         ],
       },
       {
