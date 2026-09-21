@@ -81,7 +81,7 @@ const linkifyTrajecten = (text: string, options: LinkifyOptions = {}) => {
   });
 };
 
-const FaqList = ({ faqs }: { faqs: ComplaintFaq[] }) => {
+const FaqList = ({ faqs, onBooking }: { faqs: ComplaintFaq[]; onBooking: () => void }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -326,7 +326,7 @@ const KlachtDetail = () => {
             <h2 className="mb-8 font-serif text-3xl text-foreground md:text-4xl">
               {content.faqHeading}
             </h2>
-            <FaqList faqs={content.faqs} />
+            <FaqList faqs={content.faqs} onBooking={openModal} />
           </FadeIn>
         </Section>
 
