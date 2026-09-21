@@ -484,6 +484,7 @@ export const energieContent2: ComplaintContentMap = {
       },
       {
         question: 'Wat kan ik zelf als eerste aanpassen?',
+        extraLinks: true,
         answer: [
           'Combineer koolhydraten altijd met eiwitten, vezels of vet, bijvoorbeeld fruit met een handje noten in plaats van fruit alleen. Zorg daarnaast voor een regelmatiger eetritme, zodat je bloedsuiker minder grote uitslagen maakt.',
           'Merk je vaker klachten zoals trillerigheid of hartkloppingen, bespreek dit dan ook bij je huisarts om diabetes of andere oorzaken uit te sluiten.',
