@@ -157,19 +157,12 @@ const FAQ = () => {
 
         <div className="text-center mt-16">
           <FadeIn>
-            <p className="text-muted-foreground mb-6">
-              Wil je niets missen en op de hoogte blijven van mijn programma's en trainingen?
+            <p className="text-muted-foreground">
+              Staat jouw vraag er niet tussen?{' '}
+              <Link to="/contact" className="text-primary underline underline-offset-2 hover:opacity-80">
+                neem dan contact op
+              </Link>
             </p>
-            <a 
-              href="https://www.instagram.com/daniquekwakman/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <CustomButton variant="secondary" icon={true}>
-                <Instagram className="w-4 h-4 mr-2" />
-                Volg me op Instagram
-              </CustomButton>
-            </a>
           </FadeIn>
         </div>
       </Section>
