@@ -462,7 +462,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Wanneer je te lang niets eet, kan je bloedsuiker dalen tot onder een comfortabel niveau. Je lichaam reageert daarop met stresshormonen zoals adrenaline, wat trillerigheid, hartkloppingen en zweten kan geven.',
           'Bij sommige vrouwen gebeurt dit sneller dan bij anderen, mede afhankelijk van wat je eerder die dag hebt gegeten en hoe je vorige maaltijd was opgebouwd.',
-          'We kijken samen naar je maaltijdritme en -opbouw om te zien hoe je dit kunt stabiliseren.',
+          'Zorg ervoor dat je in ieder geval 3 grote maaltijden per dag eet en optioneel nog een snack. De opbouw van de maaltijden is hierbij ook van groot belang. Zorg voor een goede combinatie van vetten, eiwitten, koolhydraten en vezels. ',
         ],
       },
       {
