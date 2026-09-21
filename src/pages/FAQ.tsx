@@ -42,6 +42,10 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Kan ik ook een traject volgen als ik geen specifieke hormoon- of darmklachten heb?',
     answer: 'Ja, zeker. Niet iedere klacht past netjes in één hokje. Misschien heb je bijvoorbeeld last van een hoge bloeddruk, huidklachten, vermoeidheid, cravings of andere klachten waar je niet direct een hormoon- of darmprobleem aan kunt koppelen.\n\nHet 1:1 Hormoontraject kan dan alsnog passend zijn. We kijken namelijk niet alleen naar je hormonen. We brengen ook je voedingspatroon, energie-inname, slaap, beweging, stress, herstel en andere relevante factoren in kaart. Juist deze basis speelt bij veel verschillende gezondheidsklachten een rol.\n\nMijn trajecten duren daarom meerdere maanden. Je klachten zijn meestal niet van de ene op de andere dag ontstaan en ik geloof ook niet in een oplossing waarbij je na één gesprek een lijstje meekrijgt en klaar bent. Je lichaam heeft tijd nodig om te herstellen en nieuwe gewoontes hebben tijd nodig om onderdeel te worden van je dagelijks leven.\n\nWeet je niet zeker welk traject bij jouw situatie past? Plan dan een gratis en vrijblijvende kennismaking.'
+  },
+  {
+    question: 'Kan ik in termijnen betalen?',
+    answer: 'Uiteraard is dat mogelijk. Je kunt dit aangeven tijdens die kennismaking.'
   }
 ];
 
