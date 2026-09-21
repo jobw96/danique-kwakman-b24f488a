@@ -360,9 +360,9 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Is brain fog hetzelfde als vermoeidheid?',
         answer: [
-          'Nee, al gaan ze vaak samen. Vermoeidheid gaat over energie, brain fog specifiek over denken, concentratie en geheugen. Je kunt uitgerust zijn en toch mistig denken, of juist heel moe zijn en nog wel helder kunnen focussen.',
-          'Voor vermoeidheid als apart onderwerp verwijs ik je graag naar de pagina over vermoeidheid, waar dit uitgebreider aan bod komt.',
-          'Bij brain fog kijk ik specifiek naar factoren die je hersenfunctie beïnvloeden, ook als je energieniveau op zich redelijk is.',
+          'Nee, al gaan ze vaak samen. Vermoeidheid gaat over energie, brain fog specifiek over denken, concentratie en geheugen. Je kunt uitgerust zijn en toch mistig denken of juist heel moe zijn en nog wel helder kunnen focussen.',
+          '',
+          'Bij brain fog kijk ik specifiek naar factoren die je hersenfunctie beïnvloeden. Ook als je energieniveau op zich redelijk is.',
         ],
       },
       {
