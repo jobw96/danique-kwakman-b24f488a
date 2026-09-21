@@ -759,8 +759,8 @@ export const complaints: Complaint[] = [
     traject: { href: '/bloedsuikertraject', label: 'Bekijk het 1:1 Bloedsuikertraject' },
   },
   {
-    slug: 'acne', category: 'Huid en haar', title: 'Acne die steeds terugkomt',
-    pageTitle: 'Acne die steeds terugkomt', seoTitle: 'Terugkerende acne en hormonen',
+    slug: 'acne', category: 'Huid en haar', title: 'Acne ',
+    pageTitle: '(Adult) Acne', seoTitle: 'Terugkerende acne en hormonen',
     seoDescription: 'Acne die steeds terugkomt kan samenhangen met hormonen, bloedsuiker en darmen. Lees hoe ik naar de mogelijke oorzaken kijk.',
     teaser: 'Puistjes die blijven terugkomen, vaak rond kin of kaaklijn.',
     intro: ['Terugkerende acne is vaak meer dan alleen een huidprobleem. De plek, timing en combinatie met andere klachten kunnen waardevolle signalen geven.', 'We kijken naar hormonen, bloedsuiker, darmen, voeding en voedingsstoffen.'],
