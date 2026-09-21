@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText, HelpCircle } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -270,7 +270,17 @@ export const Layout: React.FC<LayoutProps> = ({
     href: '/over-mij'
   }, {
     name: 'Contact',
-    href: '/contact'
+    subItems: [{
+      name: 'Contact',
+      href: '/contact',
+      description: '',
+      icon: Mail
+    }, {
+      name: 'Veelgestelde vragen',
+      href: '/faq',
+      description: '',
+      icon: HelpCircle
+    }]
   }];
   // De <Link> regelt de navigatie zelf; dit sluit alleen het geopende menu.
   const closeMenus = () => {
