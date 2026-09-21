@@ -81,7 +81,7 @@ const Samenwerking = () => {
                   <Mic size={26} strokeWidth={1.5} aria-hidden="true" />
                 </div>
                 <div>
-                  <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Podcast aflevering met Florine.</h2>
+                  <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Podcast aflevering met Florine</h2>
                   <p className="text-muted-foreground leading-relaxed mb-6">
                     Samen met Florine van Fysio Veldstra heb ik een podcastaflevering opgenomen waarin we praten over onze verschillende expertises en hoe deze elkaar kunnen aanvullen.&nbsp;
 
