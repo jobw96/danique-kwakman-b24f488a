@@ -59,6 +59,7 @@ export const darmenContent2: ComplaintContentMap = {
         answer: [
           'Ga naar de huisarts bij bloed bij de ontlasting, onbedoeld gewichtsverlies, ernstige buikpijn, of als je stoelgangpatroon plotseling en blijvend verandert zonder duidelijke oorzaak. Dit zijn signalen die eerst medisch beoordeeld moeten worden.',
           'Zijn alarmsymptomen uitgesloten, dan kan ik met je meekijken naar de onderliggende factoren in voeding en leefstijl.',
+          'Dan kijken we o.a. naar je voedingspatroon en triggers voor de obstipatie. Dat betekent niet dat je alleen meer moet drinken en meer vezels moet eten. We gaan gericht zoeken waarom jij obstipatie hebt en wat jouw lichaam nodig heeft voor een soepel ontlastingspatroon.\u00a0',
         ],
       },
       {
