@@ -3,7 +3,46 @@ import { Link, useParams, Navigate } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowLeft, Lightbulb, ChefHat } from 'lucide-react';
-import { getRecipeBySlug, recipes } from '@/data/recipes';
+import { getRecipeBySlug, recipes, type RecipeNoteLink } from '@/data/recipes';
+
+/** Maakt de opgegeven teksten binnen een notitie klikbaar. */
+const renderNote = (note: string, links?: RecipeNoteLink[]) => {
+  if (!links || links.length === 0) return note;
+  let segments: React.ReactNode[] = [note];
+  for (const link of links) {
+    segments = segments.flatMap((segment) => {
+      if (typeof segment !== 'string') return [segment];
+      const parts = segment.split(link.text);
+      if (parts.length === 1) return [segment];
+      return parts.flatMap((part, i) => {
+        if (i === 0) return [part];
+        return [
+          link.external ? (
+            <a
+              key={`${link.text}-${i}`}
+              href={link.to}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-medium underline underline-offset-4"
+            >
+              {link.text}
+            </a>
+          ) : (
+            <Link
+              key={`${link.text}-${i}`}
+              to={link.to}
+              className="text-primary font-medium underline underline-offset-4"
+            >
+              {link.text}
+            </Link>
+          ),
+          part,
+        ];
+      });
+    });
+  }
+  return segments;
+};
 
 const ReceptDetail = () => {
   const { slug } = useParams();
