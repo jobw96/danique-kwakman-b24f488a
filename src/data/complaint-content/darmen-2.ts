@@ -344,13 +344,6 @@ export const darmenContent2: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Kan ik lactose-intolerantie zelf vaststellen?',
-        answer: [
-          'Een indicatie krijg je door zuivel een tijd weg te laten en daarna gecontroleerd weer te introduceren, maar een waterstofademtest bij een arts of diëtist geeft een betrouwbaarder antwoord.',
-          'Ik kan met je meedenken over hoe je dit het beste aanpakt en wanneer aanvullend onderzoek zinvol is.',
-        ],
-      },
-      {
         question: 'Is het slim om veel producten tegelijk te schrappen?',
         answer: [
           'Niet per se. Zomaar veel producten weglaten kan je voeding onnodig beperken en maakt het lastiger om te zien welk product daadwerkelijk klachten veroorzaakt.',
