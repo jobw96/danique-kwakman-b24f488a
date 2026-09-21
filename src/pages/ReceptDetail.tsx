@@ -6,40 +6,45 @@ import { ArrowLeft, Lightbulb, ChefHat } from 'lucide-react';
 import { getRecipeBySlug, recipes, type RecipeNoteLink } from '@/data/recipes';
 
 /** Maakt de opgegeven teksten binnen een notitie klikbaar. */
-const renderNote = (note: string, links?: RecipeNoteLink[]) => {
+const renderNote = (note: string, links?: RecipeNoteLink[]): React.ReactNode => {
   if (!links || links.length === 0) return note;
   let segments: React.ReactNode[] = [note];
   for (const link of links) {
-    segments = segments.flatMap((segment) => {
-      if (typeof segment !== 'string') return [segment];
+    const next: React.ReactNode[] = [];
+    for (const segment of segments) {
+      if (typeof segment !== 'string' || !segment.includes(link.text)) {
+        next.push(segment);
+        continue;
+      }
       const parts = segment.split(link.text);
-      if (parts.length === 1) return [segment];
-      return parts.flatMap((part, i) => {
-        if (i === 0) return [part];
-        return [
-          link.external ? (
-            <a
-              key={`${link.text}-${i}`}
-              href={link.to}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary font-medium underline underline-offset-4"
-            >
-              {link.text}
-            </a>
-          ) : (
-            <Link
-              key={`${link.text}-${i}`}
-              to={link.to}
-              className="text-primary font-medium underline underline-offset-4"
-            >
-              {link.text}
-            </Link>
-          ),
-          part,
-        ];
+      parts.forEach((part, i) => {
+        if (i > 0) {
+          next.push(
+            link.external ? (
+              <a
+                key={`${link.text}-${i}`}
+                href={link.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium underline underline-offset-4"
+              >
+                {link.text}
+              </a>
+            ) : (
+              <Link
+                key={`${link.text}-${i}`}
+                to={link.to}
+                className="text-primary font-medium underline underline-offset-4"
+              >
+                {link.text}
+              </Link>
+            )
+          );
+        }
+        if (part) next.push(part);
       });
-    });
+    }
+    segments = next;
   }
   return segments;
 };
