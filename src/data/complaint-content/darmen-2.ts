@@ -80,7 +80,7 @@ export const darmenContent2: ComplaintContentMap = {
       {
         question: 'Kan magnesium helpen bij obstipatie?',
         answer: [
-          'Magnesium speelt een rol bij het ontspannen van de darmspier en een tekort kan bijdragen aan een tragere stoelgang. Maar een supplement is geen oplossing op zichzelf – je wilt weten waarom je darmen traag zijn.',
+          'Magnesium speelt een rol bij het ontspannen van de darmspier en een tekort kan bijdragen aan een tragere stoelgang. Maar een supplement is geen oplossing op zichzelf. Je wilt weten waarom je darmen traag zijn.',
           'Daarom kijken we naar je totale voedingspatroon en leefstijl, niet naar één supplement als quick fix.',
         ],
       },
