@@ -469,7 +469,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Kan jij een schildklieraandoening diagnosticeren?',
         answer: [
           'Nee, het stellen van een diagnose en het voorschrijven van schildkliermedicatie hoort bij de huisarts of internist. Wat ik doe is met jou meekijken naar klachten en leefstijl.',
-          'In mijn begeleiding werk ik altijd aanvullend op medische zorg, nooit in plaats daarvan.',
+          'In mijn begeleiding werk ik altijd aanvullend op medische zorg, nooit in plaats daarvan.\n\nIk kijk bijvoorbeeld naar welke voedingstoffen er nodig zijn om verschillende hormonen aan te maken en dit zetten we in tot een voedingsplan om je lijf zo optimaal mogelijk te laten werken.\u00a0\n',
         ],
       },
       {
