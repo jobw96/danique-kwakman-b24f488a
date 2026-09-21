@@ -163,7 +163,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Kan mijn maag iets te maken hebben met mijn droge huid?',
         answer: [
           'Ja, dat kan zeker. Te weinig maagzuur bemoeilijkt de opname van vetten en vetoplosbare vitamines zoals A en D, die essentieel zijn voor een gezonde huidbarrière.',
-          'In de intake vraag ik daarom ook naar je spijsvertering, ook als je dat zelf niet meteen aan je huid koppelt.',
+          'In een traject kijken we daarom dus ook zeker naar je spijsvertering.',
         ],
       },
       {
