@@ -210,9 +210,9 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Helpt het om vaker kleine maaltijden te eten?',
         answer: [
-          'Voor sommige vrouwen werkt dat goed, voor anderen juist niet. Het gaat vooral om de opbouw van je maaltijden: voldoende eiwitten, vezels en gezonde vetten zorgen voor een stabielere bloedsuiker, of je nu drie of vijf keer per dag eet.',
+          'Voor sommige vrouwen werkt dat goed, voor anderen juist niet. Het gaat vooral om de opbouw van je maaltijden. Voldoende eiwitten, vezels en gezonde vetten zorgen voor een stabielere bloedsuiker. ',
           'Vaker eten zonder die opbouw aan te passen lost het onderliggende probleem meestal niet op.',
-          'In de intake kijken we naar wat bij jouw ritme en levensstijl past, in plaats van een standaardadvies te geven.',
+          'Zorg er in ieder geval voor dat je 3 grote maaltijden per dag eet en optioneel een snack moment hebt. Het is altijd goed om te ontdekken wat voor jouw lijf werkt. Wil je samen onderzoeken hoe je je lijf kan ondersteunen door de juiste voeding in te zetten dat werkt voor jouw lichaam? Plan een gratis kennismakingsgesprek in. ',
         ],
       },
       {
