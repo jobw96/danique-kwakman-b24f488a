@@ -250,7 +250,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Moet ik stoppen met mijn cortisonecrème?',
         answer: [
           '',
-          'Ik kijk naar voeding, darmen, hormonen, je slaap en stress en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling. Het stoppen van cortisoncreme gaat in overleg met de huisarts.',
+          'Ik kijk naar voeding, darmen, hormonen, je slaap en stress en leefstijl, zodat je klachten mogelijk minder vaak opvlammen naast je huidige behandeling. Het mogelijk stoppen van cortisoncreme gaat in overleg met de huisarts.',
         ],
       },
       {
