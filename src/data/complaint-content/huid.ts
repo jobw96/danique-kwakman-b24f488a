@@ -271,7 +271,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Kan vitamine D helpen bij eczeem?',
         answer: [
           'Vitamine D ondersteunt zowel je huid als je immuunsysteem en een tekort komt vaak voor bij mensen met eczeem. Dat betekent niet dat suppletie alleen de oplossing is, maar het kan wel een belangrijk onderdeel zijn.',
-          'Ik bekijk in de intake of een tekort bij jou een rol speelt en adviseer daar gericht over.',
+          '',
         ],
       },
       {
