@@ -298,8 +298,7 @@ export const hormonenContent1: ComplaintContentMap = {
       {
         question: 'Is oestrogeendominantie met bloedonderzoek vast te stellen?',
         answer: [
-          'Hormoonspiegels schommelen sterk gedurende je cyclus, waardoor een eenmalige meting lang niet altijd het hele verhaal vertelt.',
-          'In mijn begeleiding kijk ik breder dan alleen naar losse waarden: naar je klachtenpatroon, cyclus en leefstijl samen.',
+          'In mijn begeleiding kijk ik breder dan alleen naar losse waarden. We kijken naar je klachtenpatroon, cyclus, leefstijl en kunnen met lab onderzoeken de balans tussen de verschillende hormonen bekijken.',
         ],
       },
       {
