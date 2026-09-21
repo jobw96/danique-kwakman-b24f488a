@@ -322,7 +322,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Nee, brain fog is geen erkende medische diagnose maar een verzamelnaam voor klachten zoals concentratieproblemen, vergeetachtigheid en een mistig hoofd. Het is een signaal, geen ziekte.',
           'Dat betekent dat de oorzaak per persoon kan verschillen: bij de een speelt bloedsuiker een rol, bij de ander de schildklier, de darmen of de cyclus.',
-          'Tijdens de intake breng ik in kaart wat er bij jou precies meespeelt, zodat we niet zomaar iets uitproberen.',
+          'Tijdens de intake breng ik in kaart wat er bij jou precies meespeelt. ',
         ],
       },
       {
