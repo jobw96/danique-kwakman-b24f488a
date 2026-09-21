@@ -490,7 +490,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Waarom val ik moeilijker af ondanks dat ik niet anders eet?',
         answer: [
           'Een trage schildklier vertraagt je stofwisseling, wat het lastiger maakt om af te vallen ook bij een ongewijzigd voedingspatroon.',
-          'In mijn begeleiding kijk ik naar je hele stofwisseling, niet alleen naar caloriebalans.',
+          'In mijn begeleiding kijk ik naar je hele stofwisseling, je voedingspatroon, eventuele bloeduitslagen en het volledige plaatje van je klachtenpatronen. ',
         ],
       },
       {
