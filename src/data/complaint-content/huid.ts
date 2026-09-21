@@ -68,8 +68,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Kan mijn acne te maken hebben met PCOS?',
         answer: [
-          'Acne rond de kaaklijn, in combinatie met een onregelmatige cyclus of overmatige haargroei, kan wijzen op een verhoogd androgeenniveau, zoals bij PCOS. Een diagnose stelt Danique niet, dat is aan de huisarts of gynaecoloog.',
-          'Wel kan ze in de intake signalen herkennen en je adviseren over vervolgstappen en ondersteunende voeding.',
+          'Acne rond de kaaklijn, in combinatie met een onregelmatige cyclus of overmatige haargroei, kan wijzen op een verhoogd androgeenniveau, zoals bij PCOS. ',
+          'Door het inzetten van je juiste voedingsstoffen en het ondersteunen van je leefstijl kunnen we de PCOS onder controle krijgen, waardoor de acne rustiger zal worden.',
         ],
       },
       {
