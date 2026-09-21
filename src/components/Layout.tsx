@@ -199,9 +199,6 @@ export const Layout: React.FC<LayoutProps> = ({
     name: 'Home',
     href: '/'
   }, {
-    name: 'Klachten',
-    href: '/klachten'
-  }, {
     name: 'Gratis',
     subItems: [{
       name: 'Blog',
