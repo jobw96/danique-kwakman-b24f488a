@@ -32,6 +32,7 @@ import { Route as LayoutNieuwsbriefRouteImport } from './routes/_layout/nieuwsbr
 import { Route as LayoutOverMijRouteImport } from './routes/_layout/over-mij'
 import { Route as LayoutPodcastRouteImport } from './routes/_layout/podcast'
 import { Route as LayoutPrivacyRouteImport } from './routes/_layout/privacy'
+import { Route as LayoutSamenwerkingRouteImport } from './routes/_layout/samenwerking'
 import { Route as LayoutTermsRouteImport } from './routes/_layout/terms'
 import { Route as LayoutWebshopRouteImport } from './routes/_layout/webshop'
 import { Route as LayoutBlogIndexRouteImport } from './routes/_layout/blog/index'
@@ -160,6 +161,11 @@ const LayoutPrivacyRoute = LayoutPrivacyRouteImport.update({
   path: '/privacy',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutSamenwerkingRoute = LayoutSamenwerkingRouteImport.update({
+  id: '/samenwerking',
+  path: '/samenwerking',
+  getParentRoute: () => LayoutRoute,
+} as any)
 const LayoutTermsRoute = LayoutTermsRouteImport.update({
   id: '/terms',
   path: '/terms',
@@ -230,6 +236,7 @@ export interface FileRoutesByFullPath {
   '/over-mij': typeof LayoutOverMijRoute
   '/podcast': typeof LayoutPodcastRoute
   '/privacy': typeof LayoutPrivacyRoute
+  '/samenwerking': typeof LayoutSamenwerkingRoute
   '/terms': typeof LayoutTermsRoute
   '/webshop': typeof LayoutWebshopRoute
   '/blog/$slug': typeof LayoutBlogSlugRoute
@@ -262,6 +269,7 @@ export interface FileRoutesByTo {
   '/over-mij': typeof LayoutOverMijRoute
   '/podcast': typeof LayoutPodcastRoute
   '/privacy': typeof LayoutPrivacyRoute
+  '/samenwerking': typeof LayoutSamenwerkingRoute
   '/terms': typeof LayoutTermsRoute
   '/webshop': typeof LayoutWebshopRoute
   '/': typeof LayoutIndexRoute
@@ -297,6 +305,7 @@ export interface FileRoutesById {
   '/_layout/over-mij': typeof LayoutOverMijRoute
   '/_layout/podcast': typeof LayoutPodcastRoute
   '/_layout/privacy': typeof LayoutPrivacyRoute
+  '/_layout/samenwerking': typeof LayoutSamenwerkingRoute
   '/_layout/terms': typeof LayoutTermsRoute
   '/_layout/webshop': typeof LayoutWebshopRoute
   '/_layout/': typeof LayoutIndexRoute
@@ -333,6 +342,7 @@ export interface FileRouteTypes {
     | '/over-mij'
     | '/podcast'
     | '/privacy'
+    | '/samenwerking'
     | '/terms'
     | '/webshop'
     | '/blog/$slug'
@@ -365,6 +375,7 @@ export interface FileRouteTypes {
     | '/over-mij'
     | '/podcast'
     | '/privacy'
+    | '/samenwerking'
     | '/terms'
     | '/webshop'
     | '/'
@@ -399,6 +410,7 @@ export interface FileRouteTypes {
     | '/_layout/over-mij'
     | '/_layout/podcast'
     | '/_layout/privacy'
+    | '/_layout/samenwerking'
     | '/_layout/terms'
     | '/_layout/webshop'
     | '/_layout/'
@@ -580,6 +592,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutPrivacyRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/samenwerking': {
+      id: '/_layout/samenwerking'
+      path: '/samenwerking'
+      fullPath: '/samenwerking'
+      preLoaderRoute: typeof LayoutSamenwerkingRouteImport
+      parentRoute: typeof LayoutRoute
+    }
     '/_layout/terms': {
       id: '/_layout/terms'
       path: '/terms'
@@ -666,6 +685,7 @@ interface LayoutRouteChildren {
   LayoutOverMijRoute: typeof LayoutOverMijRoute
   LayoutPodcastRoute: typeof LayoutPodcastRoute
   LayoutPrivacyRoute: typeof LayoutPrivacyRoute
+  LayoutSamenwerkingRoute: typeof LayoutSamenwerkingRoute
   LayoutTermsRoute: typeof LayoutTermsRoute
   LayoutWebshopRoute: typeof LayoutWebshopRoute
   LayoutIndexRoute: typeof LayoutIndexRoute
@@ -698,6 +718,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutOverMijRoute: LayoutOverMijRoute,
   LayoutPodcastRoute: LayoutPodcastRoute,
   LayoutPrivacyRoute: LayoutPrivacyRoute,
+  LayoutSamenwerkingRoute: LayoutSamenwerkingRoute,
   LayoutTermsRoute: LayoutTermsRoute,
   LayoutWebshopRoute: LayoutWebshopRoute,
   LayoutIndexRoute: LayoutIndexRoute,

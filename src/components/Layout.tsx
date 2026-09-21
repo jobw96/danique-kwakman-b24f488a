@@ -71,6 +71,9 @@ const footerNav = [{
     name: 'Over mij',
     href: '/over-mij'
   }, {
+    name: 'Samenwerking',
+    href: '/samenwerking'
+  }, {
     name: 'Contact',
     href: '/contact'
   }, {
@@ -267,7 +270,17 @@ export const Layout: React.FC<LayoutProps> = ({
     href: '/webshop'
   }, {
     name: 'Over mij',
-    href: '/over-mij'
+    subItems: [{
+      name: 'Over mij',
+      href: '/over-mij',
+      description: '',
+      icon: User
+    }, {
+      name: 'Samenwerking',
+      href: '/samenwerking',
+      description: '',
+      icon: HeartHandshake
+    }]
   }, {
     name: 'Contact',
     subItems: [{
