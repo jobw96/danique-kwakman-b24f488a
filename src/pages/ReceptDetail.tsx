@@ -3,7 +3,51 @@ import { Link, useParams, Navigate } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowLeft, Lightbulb, ChefHat } from 'lucide-react';
-import { getRecipeBySlug, recipes } from '@/data/recipes';
+import { getRecipeBySlug, recipes, type RecipeNoteLink } from '@/data/recipes';
+
+/** Maakt de opgegeven teksten binnen een notitie klikbaar. */
+const renderNote = (note: string, links?: RecipeNoteLink[]): React.ReactNode => {
+  if (!links || links.length === 0) return note;
+  let segments: React.ReactNode[] = [note];
+  for (const link of links) {
+    const next: React.ReactNode[] = [];
+    for (const segment of segments) {
+      if (typeof segment !== 'string' || !segment.includes(link.text)) {
+        next.push(segment);
+        continue;
+      }
+      const parts = segment.split(link.text);
+      parts.forEach((part, i) => {
+        if (i > 0) {
+          next.push(
+            link.external ? (
+              <a
+                key={`${link.text}-${i}`}
+                href={link.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium underline underline-offset-4"
+              >
+                {link.text}
+              </a>
+            ) : (
+              <Link
+                key={`${link.text}-${i}`}
+                to={link.to}
+                className="text-primary font-medium underline underline-offset-4"
+              >
+                {link.text}
+              </Link>
+            )
+          );
+        }
+        if (part) next.push(part);
+      });
+    }
+    segments = next;
+  }
+  return segments;
+};
 
 const ReceptDetail = () => {
   const { slug } = useParams();
@@ -98,7 +142,9 @@ const ReceptDetail = () => {
             {recipe.notes && recipe.notes.length > 0 && (
               <div className="mt-8 space-y-4">
                 {recipe.notes.map((note, i) => (
-                  <p key={i} className="text-muted-foreground text-sm leading-relaxed">{note}</p>
+                  <p key={i} className="text-muted-foreground text-sm leading-relaxed">
+                    {renderNote(note, recipe.noteLinks)}
+                  </p>
                 ))}
               </div>
             )}
