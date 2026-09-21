@@ -427,8 +427,8 @@ export const darmenContent1: ComplaintContentMap = {
         question: 'Kan lactose-intolerantie de oorzaak zijn van mijn winderigheid?',
         answer: [
           'Ja, bij lactose-intolerantie maakt je lichaam onvoldoende lactase aan om melksuiker goed te verteren. Deze onverteerde lactose fermenteert verderop in je darmen, wat winderigheid, een opgeblazen gevoel en soms diarree kan veroorzaken.',
-          'Dit kan getest worden met een ademtest, wat een medische beoordeling vraagt.',
-          'In een traject kijk ik naar het patroon van je klachten in relatie tot zuivelconsumptie, zodat we kunnen inschatten of dit bij jou een rol speelt.',
+          '',
+          'In een traject kijk ik naar het patroon van je klachten in relatie tot zuivelconsumptie, zodat we kunnen onderzoeken of dit bij jou een rol speelt.',
         ],
       },
       {
