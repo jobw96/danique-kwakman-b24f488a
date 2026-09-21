@@ -361,7 +361,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Wat is histamine-intolerantie precies?',
         answer: [
           'Bij histamine-intolerantie breekt je lichaam histamine, van nature aanwezig in producten als oude kaas, wijn en gerookte vis, minder goed af. Dit kan klachten geven als hoofdpijn, blozen of een opgezette huid.',
-          'Ik kijk in het eetdagboek of jouw klachten samenvallen met histaminerijke voeding en denk mee over een aanpak.',
+          'Ik kijk in het eetdagboek of jouw klachten samenvallen met histaminerijke voeding en denk mee over een aanpak. Ook kijken we hier naar met het ontlastingsonderzoek van het 1:1 darmtraject.',
         ],
       },
       {
