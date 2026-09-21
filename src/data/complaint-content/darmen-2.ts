@@ -66,7 +66,8 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Helpen extra vezels altijd bij obstipatie?',
         answer: [
           'Niet altijd. Bij sommige vrouwen verergeren extra vezels juist een opgeblazen gevoel, zeker als de vochtinname of darmflora niet op orde is. Vezels werken het beste in combinatie met voldoende water en een goed werkende darmspier.',
-          'In een traject kijken we eerst naar jouw situatie voordat we iets aanpassen, in plaats van een standaard vezeladvies dat voor iedereen hetzelfde is.',
+          'In een traject kijken we eerst naar jouw situatie voordat we iets aanpassen, in plaats van een standaard vezeladvies dat voor iedereen hetzelfde is.\u00a0',
+          'Ik wil weten waarom jij last hebt van obstipatie en wat jouw lichaam nodig heeft om dit op te lossen. Dit doen we door een uitgebreide intake en het goed in kaart brengen van je voedingspatroon en de patronen van je klachten. Aangevuld met lab onderzoek waar nodig.\u00a0',
         ],
       },
       {
