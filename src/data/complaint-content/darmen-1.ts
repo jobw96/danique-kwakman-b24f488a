@@ -94,7 +94,7 @@ export const darmenContent1: ComplaintContentMap = {
         answer: [
           'Voor veel vrouwen wel. Snel eten en onvoldoende kauwen zorgen voor meer ingeslikte lucht en grotere voedseldeeltjes die je darmen harder moeten bewerken. Dat kan bijdragen aan een opgeblazen gevoel, zelfs bij voeding die je verder goed verdraagt.',
           'Het is meestal niet de enige oplossing, maar wel een makkelijk startpunt dat je zelf direct kunt toepassen.',
-          'In een traject bekijken we of eetsnelheid bij jou een rol speelt en zo ja, hoe je dit praktisch kunt aanpakken naast andere aandachtspunten.',
+          '\n',
         ],
       },
       {
