@@ -443,7 +443,7 @@ export const darmenContent1: ComplaintContentMap = {
         question: 'Kan SIBO winderigheid veroorzaken?',
         answer: [
           'Ja, bij SIBO zitten er te veel bacteriën in je dunne darm, waar dit normaal veel minder is. Deze bacteriën fermenteren voeding al vroeg in je spijsvertering, wat vaak leidt tot flinke winderigheid, een opgeblazen gevoel en wisselende ontlasting.',
-          'SIBO wordt vastgesteld met een ademtest, wat medische beoordeling vraagt.',
+          '',
           'Tijdens de intake kijk ik naar signalen die kunnen passen bij SIBO en bespreken we of aanvullend onderzoek zinvol is.',
         ],
       },
