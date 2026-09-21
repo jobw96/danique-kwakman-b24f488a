@@ -90,7 +90,7 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'Bekende aandachtspunten zijn foliumzuur of folaat, ijzer, vitamine D en jodium. Deze spelen een rol bij de ontwikkeling van de baby en bij een goed functionerende schildklier en cyclus.',
           'Wat voor jou nodig is, hangt af van je voeding, eventuele tekorten en je gezondheidssituatie. Standaard adviezen zijn een startpunt, maar geen vervanging voor een persoonlijk beeld.',
-          'In een traject kijk ik naar jouw voeding en, waar relevant, naar laboratoriumwaarden, zodat we gericht kunnen kijken wat bij jou aandacht verdient.',
+          'In een traject kijk ik naar jouw voeding en waar relevant, naar laboratoriumwaarden, zodat we gericht kunnen kijken wat bij jou aandacht verdient.',
         ],
       },
       {
