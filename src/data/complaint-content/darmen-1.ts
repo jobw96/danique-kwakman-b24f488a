@@ -306,14 +306,6 @@ export const darmenContent1: ComplaintContentMap = {
     faqHeading: 'Veelgestelde vragen over PDS',
     faqs: [
       {
-        question: 'Wat is het verschil tussen PDS, IBS-C, IBS-D en IBS-M?',
-        answer: [
-          'PDS staat voor prikkelbare darm syndroom en is de Nederlandse naam voor wat internationaal IBS heet. Binnen PDS wordt onderscheid gemaakt in subtypen: IBS-C waarbij verstopping op de voorgrond staat, IBS-D waarbij diarree overheerst en IBS-M, een mengvorm waarbij je klachten wisselen tussen beide.',
-          'Het onderscheid is relevant omdat de aanpak per subtype kan verschillen, bijvoorbeeld in de nadruk op vezels, vochtinname of specifieke voedingsaanpassingen.',
-          'Tijdens de intake breng ik in kaart welk patroon bij jou past, zodat de aanpak aansluit bij jouw subtype PDS.',
-        ],
-      },
-      {
         question: 'Is PDS een echte medische diagnose?',
         answer: [
           'Ja, PDS is een erkende medische diagnose die door de huisarts of maag-darm-leverarts wordt gesteld nadat andere aandoeningen zijn uitgesloten, zoals coeliakie of chronische darmontstekingen. Het is dus een diagnose van uitsluiting, geen verzinsel of “alleen stress”.',
