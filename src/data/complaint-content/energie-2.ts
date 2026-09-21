@@ -470,7 +470,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Ja, hormonen zoals oestrogeen en progesteron beïnvloeden hoe gevoelig je lichaam is voor insuline. Veel vrouwen merken dat ze in de dagen voor hun menstruatie sneller last hebben van bloedsuikerschommelingen en cravings.',
           'Dit is een reden waarom ik bloedsuikerklachten niet los zie van je cyclus, maar juist in samenhang bekijk.',
-          'In de intake kijken we of jouw klachten een patroon volgen dat samenhangt met je cyclusfase.',
+          'Je lichaam heeft per fase van je cyclus andere behoeftes en in je luteale fase heeft je lijf meer behoefte aan energie vanuit je voeding. Hoe beter je weet wat jouw lichaam nodig heeft, hoe beter je je lijf dat kan geven en des te minder klachten je kan gaan ervaren.\u00a0\n\nIn mijn trajecten leer ik je te leren luisteren naar wat je lichaam aangeeft en hier goed op in te spelen.\u00a0\n',
         ],
       },
       {
