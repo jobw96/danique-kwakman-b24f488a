@@ -330,7 +330,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Waarom lig ik te piekeren zodra ik in bed lig?',
         answer: [
           'Piekeren in bed kan samenhangen met een verhoogd cortisolniveau in de avond, waardoor je zenuwstelsel niet goed tot rust komt. Overdag opgebouwde stress komt dan ’s avonds pas naar boven.',
-          '',
+          'Braindumpen kan je helpen om deze gedachtes op papier te zetten. Daarnaast kunnen we in een traject onderzoeken waarom je blijft piekeren in de avonduren en hoe je je lichaam het beste kan ondersteunen om te werken aan een ideale nachtrust, zonder pieker gedachtes. ',
         ],
       },
       {
