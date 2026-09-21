@@ -561,7 +561,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Heeft PCOS altijd te maken met insulineresistentie?',
         answer: [
           'Niet bij iedereen, maar bij een groot deel van de vrouwen met PCOS speelt insulineresistentie een rol. Verhoogde insuline kan de aanmaak van androgenen stimuleren, wat samenhangt met een onregelmatige cyclus, acne of overbeharing.',
-          'In een traject kijken we of dit bij jou meespeelt en hoe je hierop kunt inspelen via voeding en beweging.',
+          'In een traject kijken we of dit bij jou meespeelt en wat jouw lichaam nodig heeft om dit op te lossen.',
         ],
       },
       {
