@@ -285,7 +285,7 @@ export const huidContent: ComplaintContentMap = {
         question: 'Hoe lang duurt het voordat mijn eczeem rustiger wordt?',
         answer: [
           'Dat verschilt per persoon en hangt af van hoe lang de klacht al speelt en welke factoren meespelen. Sommige vrouwen merken al binnen enkele weken minder opvlammingen, bij anderen duurt het langer.',
-          'Ik geef je in de intake een realistisch beeld van wat je kunt verwachten in jouw situatie.',
+          '',
         ],
       },
     ],
