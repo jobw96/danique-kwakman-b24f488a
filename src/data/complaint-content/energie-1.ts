@@ -575,7 +575,7 @@ export const energieContent1: ComplaintContentMap = {
         question: 'Is krachttraining beter dan cardio bij insulineresistentie?',
         answer: [
           'Beide vormen van beweging hebben waarde, maar krachttraining draagt bij aan meer spiermassa en spieren zijn een belangrijke plek waar je lichaam suiker opslaat en verbrandt. Dit kan de insulinegevoeligheid op de langere termijn verbeteren.',
-          'We kijken naar wat haalbaar is binnen jouw huidige beweegpatroon en bouwen dit desgewenst samen op.',
+          '',
         ],
       },
       {
