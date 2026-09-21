@@ -87,10 +87,10 @@ export const huidContent: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Moet ik naar de dermatoloog of kan ik bij jou terecht?',
+        question: 'Kan ik bij jou terecht als ik naar de dermatoloog ga?',
         answer: [
-          'Bij ernstige of ontstekingsacne is een dermatoloog een logische stap. Ik werk hier goed naast, met de focus op de voeding, hormonen en darmen die aan de acne kunnen bijdragen.',
-          'Ik help je juist bij het stuk dat vaak buiten beeld blijft bij een puur medische aanpak.',
+          'Ja. Mijn begeleiding kan goed naast een traject bij de dermatoloog worden ingezet. We kijken naar voeding, hormonen, darmen en leefstijl en welke rol deze kunnen spelen bij jouw acne.',
+          'Maar je hoeft niet eerst naar de dermatoloog om bij mij te starten. Ook wanneer je zelf wilt onderzoeken wat er mogelijk meespeelt bij je acne, kun je bij mij terecht.',
         ],
       },
       {
