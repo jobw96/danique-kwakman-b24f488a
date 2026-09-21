@@ -483,7 +483,7 @@ export const hormonenContent1: ComplaintContentMap = {
         question: 'Kan voeding mijn schildklierfunctie echt beïnvloeden?',
         answer: [
           'Voedingsstoffen zoals jodium, selenium en zink zijn nodig voor de aanmaak en omzetting van schildklierhormonen, dus een tekort kan meespelen in je klachten.',
-          'Tijdens een traject bekijk ik jouw voedingspatroon specifiek op deze punten.',
+          'Tijdens een traject bekijk ik jouw voedingspatroon specifiek op o.a. deze punten.',
         ],
       },
       {
