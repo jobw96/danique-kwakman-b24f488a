@@ -351,7 +351,7 @@ export const hormonenContent2: ComplaintContentMap = {
         answer: [
           'Nee. Bloedverlies nadat je een jaar niet meer ongesteld bent geweest, is nooit iets om af te wachten en moet altijd door een arts worden beoordeeld.',
           'Dit geldt ook als het maar heel weinig bloedverlies is of maar één keer voorkomt.',
-          'Neem bij bloedverlies na de menopauze contact op met je huisarts. Ik kan je daarnaast begeleiden bij andere overgangsklachten, maar dit signaal hoort eerst medisch beoordeeld te worden.',
+          'Neem bij bloedverlies na de menopauze contact op met je huisarts. Ik kan je daarnaast begeleiden bij andere overgangsklachten, maar dit signaal hoort medisch beoordeeld te worden.',
         ],
       },
       {
