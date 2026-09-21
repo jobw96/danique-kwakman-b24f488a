@@ -196,14 +196,6 @@ export const hormonenContent2: ComplaintContentMap = {
     faqHeading: 'Veelgestelde vragen over herstel na anticonceptie',
     faqs: [
       {
-        question: 'Was de bloeding die ik op de pil kreeg een echte menstruatie?',
-        answer: [
-          'Nee, de bloeding tijdens de stopweek van de pil is een onttrekkingsbloeding. Dit is een reactie op het wegvallen van de hormonen uit de pil, niet het gevolg van een eigen ovulatie zoals bij een reguliere menstruatie.',
-          'Dat betekent dat je tijdens pilgebruik geen eigen cyclus doorloopt, ook al lijkt de bloeding daarop.',
-          'Na het stoppen moet je lichaam de eigen cyclus weer opbouwen en dat verloopt bij iedereen anders. In een traject kijken we naar hoe dat bij jou gaat.',
-        ],
-      },
-      {
         question: 'Hoe lang duurt het voordat mijn cyclus terug is na de pil?',
         answer: [
           'Dit verschilt sterk. Bij sommige vrouwen komt de cyclus binnen enkele weken terug, bij anderen duurt het meerdere maanden. Blijft je menstruatie langer dan drie maanden uit, dan is het goed om dit met je huisarts te bespreken.',
