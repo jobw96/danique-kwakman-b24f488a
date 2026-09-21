@@ -371,8 +371,8 @@ export const huidContent: ComplaintContentMap = {
       {
         question: 'Hoe lang duurt het voordat mijn haar weer dikker aanvoelt?',
         answer: [
-          'De haarcyclus is traag: nieuwe haargroei duurt meestal enkele maanden voordat je zichtbaar verschil merkt. Geduld is hierbij nodig, ook als je de onderliggende oorzaak al hebt aangepakt.',
-          'Ik geef je in de intake een realistisch beeld van het tempo dat past bij jouw situatie.',
+          'De haarcyclus is traag. Nieuwe haargroei duurt meestal enkele maanden voordat je zichtbaar verschil merkt. Geduld is hierbij nodig ook als je de onderliggende oorzaak al hebt aangepakt.',
+          '',
         ],
       },
       {
