@@ -167,7 +167,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Waarom moet ik na koffie of vet eten meteen naar de wc?',
         answer: [
           'Koffie en vet eten stimuleren de darmbeweging. Als jouw darmen al gevoelig of versneld werken, is die prikkel genoeg voor directe aandrang. Ook galzouten spelen hierbij een rol: die zijn nodig voor vetvertering en kunnen bij een verstoorde terugname vocht in je dikke darm aantrekken.',
-          'We kijken daarom niet alleen naar welke voeding je mijdt, maar naar waarom je darmen zo snel reageren.',
+          'We kijken daarom niet alleen naar welke voeding invloed heeft op jouw klachten, maar ook waarom je darmen wellicht versneld werken.',
         ],
       },
       {
