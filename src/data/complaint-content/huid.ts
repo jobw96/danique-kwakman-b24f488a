@@ -275,13 +275,6 @@ export const huidContent: ComplaintContentMap = {
         ],
       },
       {
-        question: 'Is handeczeem anders dan eczeem in je plooien?',
-        answer: [
-          'De onderliggende mechanismen kunnen overlappen, maar handeczeem wordt vaak extra getriggerd door veelvuldig contact met water, zeep of schoonmaakmiddelen.',
-          'Ik kijk naar zowel je interne factoren als je dagelijkse blootstelling, zodat het advies bij jouw situatie past.',
-        ],
-      },
-      {
         question: 'Hoe lang duurt het voordat mijn eczeem rustiger wordt?',
         answer: [
           'Dat verschilt per persoon en hangt af van hoe lang de klacht al speelt en welke factoren meespelen. Sommige vrouwen merken al binnen enkele weken minder opvlammingen, bij anderen duurt het langer.',
