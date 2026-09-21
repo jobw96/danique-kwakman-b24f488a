@@ -92,19 +92,6 @@ const Samenwerking = () => {
               </div>
             </div>
           </FadeIn>
-
-          {/* Slot */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl border border-secondary/30 shadow-xs p-8 md:p-12 text-center">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Benieuwd naar de begeleiding van Florine?</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-                Op de website van Fysio Veldstra lees je alles over haar specialisaties en hoe je een afspraak maakt.
-              </p>
-              <a href="https://www.fysioveldstra.nl" target="_blank" rel="noopener noreferrer">
-                <CustomButton variant="secondary">Naar de website van Fysio Veldstra</CustomButton>
-              </a>
-            </div>
-          </FadeIn>
         </div>
       </Section>
     </div>

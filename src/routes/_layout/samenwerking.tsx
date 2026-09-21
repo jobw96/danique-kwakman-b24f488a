@@ -4,7 +4,7 @@ import { PageTransition } from "@/components/Animations";
 import Samenwerking from "@/pages/Samenwerking";
 
 export const Route = createFileRoute("/_layout/samenwerking")({
-  head: () => seoHead({ path: "/samenwerking", title: "Samenwerking met Florine Veldstra", description: "Danique Kwakman werkt samen met bekkenfysiotherapeut Florine Veldstra in Hoorn voor begeleiding bij bekkenbodemklachten, obstipatie en postpartum herstel." }),
+  head: () => seoHead({ path: "/samenwerking", title: "Samenwerkingen", description: "Danique Kwakman werkt samen met zorgprofessionals, zoals bekkenfysiotherapeut Florine Veldstra in Hoorn, voor begeleiding die voeding en leefstijl aanvult." }),
   component: () => (
     <PageTransition>
       <Samenwerking />
