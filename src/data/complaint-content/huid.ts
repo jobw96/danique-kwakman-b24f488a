@@ -106,7 +106,7 @@ export const huidContent: ComplaintContentMap = {
     intro: [
       'Je smeert en smeert, maar je huid blijft trekkerig aanvoelen zodra je uit de douche stapt. Make-up trekt weg in droge plekjes en producten die vriendinnen aanraden, veroorzaken bij jou juist roodheid of irritatie.',
       'Een droge of gevoelige huid is niet alleen een kwestie van de juiste crème. Je huidbarrière, de buitenste laag die vocht vasthoudt en prikkels buitenhoudt, kan verzwakt zijn door een tekort aan bepaalde vetzuren en vitamines, door te weinig maagzuur waardoor voedingsstoffen minder goed worden opgenomen, of door hormonale veranderingen zoals in de overgang.',
-      'Je wilt gewoon een huid die niet steeds om aandacht vraagt, die niet reageert op elk nieuw product en waarmee je zonder gedoe de deur uit kunt. Dat begint bij begrijpen waarom je barrière niet goed dichtblijft.',
+      'Je wilt gewoon een huid die niet reageert op elk nieuw product en waarmee je zonder gedoe de deur uit kunt. Dat begint bij begrijpen waarom je barrière niet goed dichtblijft.',
     ],
     recognition: [
       'Je huid voelt kort na het wassen alweer strak en trekkerig aan.',
