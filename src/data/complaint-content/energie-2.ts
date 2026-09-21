@@ -204,7 +204,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Een suikerdip is een vorm van een energiedip, veroorzaakt door een snelle stijging en daaropvolgende daling van je bloedsuiker. Niet elke energiedip komt door bloedsuiker, maar het is wel een van de meest voorkomende oorzaken.',
           'Andere factoren zoals te weinig slaap, uitdroging of langdurig stilzitten kunnen ook meespelen of het effect versterken.',
-          'Tijdens de intake breng ik in kaart of jouw dip past bij een bloedsuikerpatroon of dat er andere factoren meespelen.',
+          '',
         ],
       },
       {
