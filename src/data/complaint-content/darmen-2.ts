@@ -286,13 +286,6 @@ export const darmenContent2: ComplaintContentMap = {
           'Tijdens de intake bespreek ik praktische manieren om dit in je dagelijkse ritme in te passen, ook op drukke werkdagen.',
         ],
       },
-      {
-        question: 'Waarom heb ik ’s avonds meer last dan overdag?',
-        answer: [
-          'Laat eten geeft je lichaam minder tijd om te verteren voordat je gaat liggen, waardoor zuur makkelijker terugstroomt richting je slokdarm. Ook een zware of vette avondmaaltijd kan dit effect versterken.',
-          'Ik kijk met je mee naar je avondritme en eetmomenten om te zien wat voor jou werkt.',
-        ],
-      },
     ],
   },
 
