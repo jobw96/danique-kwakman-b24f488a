@@ -194,9 +194,9 @@ export const energieContent2: ComplaintContentMap = {
       {
         question: 'Waarom krijg ik altijd rond dezelfde tijd een dip?',
         answer: [
-          'Dat komt meestal doordat je maaltijden en dagritme zich herhalen: eet je bijvoorbeeld iedere dag rond hetzelfde tijdstip een vergelijkbaar ontbijt of lunch, dan herhaalt ook de bloedsuikerreactie zich op ongeveer hetzelfde moment.',
-          'Vaak valt de dip rond 11 uur samen met een koolhydraatrijk ontbijt en de dip na de lunch met een maaltijd die weinig eiwitten of vezels bevat.',
-          'In de intake kijken we naar wat je precies eet en op welke tijden, zodat we het patroon achter jouw dip kunnen achterhalen.',
+          'Dat komt meestal doordat je maaltijden en dagritme zich herhalen. Eet je bijvoorbeeld iedere dag rond hetzelfde tijdstip een vergelijkbaar ontbijt of lunch, dan herhaalt ook de bloedsuikerreactie zich op ongeveer hetzelfde moment.',
+          'Vaak valt de dip rond 11 uur samen met een koolhydraatrijk ontbijt en de welbekende 4-uurs dip met een maaltijd die weinig eiwitten of vezels bevat.',
+          'Tijdens mijn 1:1 trajecten brengen we je klachten in kaart en ontdekken we wat de oorzaak is van jouw energie dips. We nemen hierin o.a. je voedingspatroon in mee. ',
         ],
       },
       {
