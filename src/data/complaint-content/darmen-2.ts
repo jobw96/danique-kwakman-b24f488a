@@ -354,7 +354,7 @@ export const darmenContent2: ComplaintContentMap = {
         question: 'Waarom krijg ik pas uren na het eten klachten?',
         answer: [
           'Bij een intolerantie, in tegenstelling tot een allergie, kan het langer duren voordat klachten optreden, omdat het gaat om een geleidelijke reactie van je spijsvertering in plaats van een directe afweerreactie.',
-          'Dit maakt het lastiger om zelf de link te leggen en daarom werk ik met een eetdagboek om patronen boven water te krijgen.',
+          'Dit maakt het lastiger om zelf de link te leggen en daarom werk ik met een eetdagboek om patronen boven water te krijgen en waar nodig een intolerantie onderzoek.',
         ],
       },
       {
