@@ -619,7 +619,7 @@ export const hormonenContent2: ComplaintContentMap = {
         question: 'Kan voeding echt helpen bij PCOS?',
         answer: [
           'Ja, voeding die bloedsuikerpieken beperkt en de insulinegevoeligheid ondersteunt, kan bij veel vrouwen met PCOS bijdragen aan een regelmatigere cyclus, minder huidklachten en meer stabiele energie.',
-          'Dit betekent niet dat een streng dieet nodig is; het gaat vaak om de opbouw van je maaltijden en het patroon door de dag heen.',
+          'Dit betekent niet dat een streng dieet nodig is. Het gaat vaak om de opbouw van je maaltijden en het patroon door de dag heen. Daarnaast worden je hormonen deels aangemaakt vanuit vetten en eiwitten dus ook dit is belangrijk om op de juiste manier in te zetten.',
           'In een traject kijken we naar jouw huidige voedingspatroon en waar concreet winst te behalen is, passend bij jouw dagelijks leven.',
         ],
       },
