@@ -220,7 +220,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Na de lunch is de kans op een duidelijke dip vaak groter, mede doordat je lichaam op dat moment van de dag al actief is geweest en de opbouw van je lunch veel invloed heeft op de rest van je middag.',
           'Een lunch die vooral uit koolhydraten bestaat, zoals een broodje met weinig beleg of een salade zonder voldoende eiwitten, vergroot die kans.',
-          'We kijken samen naar jouw lunchgewoontes en hoe je die kunt aanpassen zodat je middag minder zwaar aanvoelt.',
+          'We kijken samen naar jouw lunchgewoontes en hoe je die kunt aanpassen zodat je in de middag geen dips meer ervaart. Die dips horen en namelijk niet zomaar bij, maar zijn hele duidelijke signalen van je lichaam. ',
         ],
       },
       {
