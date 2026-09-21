@@ -346,7 +346,7 @@ export const energieContent2: ComplaintContentMap = {
         answer: [
           'Een schildklier die te traag werkt, kan zich uiten in vergeetachtigheid, langzamer denken, vermoeidheid en een koud gevoel. Dit wordt regelmatig over het hoofd gezien omdat de klachten zo algemeen lijken.',
           'Als je naast brain fog ook andere signalen herkent, zoals haaruitval, gewichtstoename of obstipatie, is het schildklier de moeite waard om mee te nemen.',
-          'In de intake bespreken we jouw signalen en of aanvullend onderzoek passend is.',
+          '',
         ],
       },
       {
