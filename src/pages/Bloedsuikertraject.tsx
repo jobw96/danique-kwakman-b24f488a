@@ -133,6 +133,7 @@ const CheckList = ({ items }: { items: string[] }) => (
 const Bloedsuikertraject = () => {
   const { openModal } = useBookingModal();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [openIncluded, setOpenIncluded] = useState<number | null>(0);
 
   return (
     <div className="min-h-screen bg-background text-muted-foreground">
