@@ -160,11 +160,11 @@ const Bloedsuikertraject = () => {
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  Je eet gezond, beweegt voldoende en probeert goed voor jezelf te zorgen. En toch word je na acht uur slaap niet uitgerust wakker, zakt je energie rond 15.00 uur compleet weg en zit je ’s avonds ineens dat pak koek open te trekken.
-                  Misschien heb je rondom je menstruatie nog meer trek, meer last van PMS of merk je dat je energie de hele dag alle kanten op gaat.
+                  ’s Avonds trek je na het eten toch nog een pak koek open, omdat je alweer trek hebt terwijl je net gegeten hebt. En na 8 uur slapen word je nog steeds niet fit wakker. Rondom je menstruatie neemt die trek vaak nog verder toe, heb je meer last van PMS of merk je dat je energie de hele dag alle kanten op gaat.
+                  Je weet inmiddels echt wel wat gezond eten is en je snapt dat eiwitten belangrijk zijn. Maar ondanks alles wat je doet, kak je bijna iedere middag in, heb je regelmatig cravings, kan je je moeilijk concentreren, ervaart je brainfog en lijken je hormonen maar niet in balans te komen.
                 </p>
                 <p>
-                  Geen enkel lichaam reageert hetzelfde op voeding. Daarom kijken we tijdens dit traject niet alleen naar algemene adviezen, maar naar jouw eigen gegevens en dagelijks leven.
+                  Je kunt de gezondste maaltijd eten die je kunt bedenken, maar als je bloedsuikerspiegel daarna flink stijgt en weer daalt, kan dat grote invloed hebben op hoe je je voelt en op hoe snel je daarna weer trek krijgt.
                 </p>
               </div>
               <CustomButton onClick={openModal} className="mt-8">
