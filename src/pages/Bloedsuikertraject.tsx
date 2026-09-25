@@ -114,7 +114,7 @@ const included = [
   {
     title: 'Praktische tools',
     description:
-      'Je krijgt praktische tools die je helpen om de inzichten uit je meting ook daadwerkelijk toe te passen. Denk aan een boodschappenlijst en een weekmenu met maaltijden die passen binnen een voedingspatroon dat bijdraagt aan een stabielere bloedsuikerspiegel.',
+      'Zoals de boodschappenlijst en een weekmenu met maaltijden die passen binnen een voedingspatroon dat bijdraagt aan een stabielere bloedsuikerspiegel.',
   },
 ];
 
@@ -393,7 +393,7 @@ const Bloedsuikertraject = () => {
                     className="aspect-[4/5] w-full object-cover"
                   />
                   <figcaption className="border-t border-secondary/40 px-5 py-4 text-sm">
-                    De sensor voor jouw 14-daagse meting is inbegrepen.
+                    {"\n"}
                   </figcaption>
                 </figure>
               </div>
