@@ -22,13 +22,13 @@ import glucoseRangeAsset from '@/assets/bloedsuiker/glucosewaarde-in-bereik.webp
 import lowGlucoseAsset from '@/assets/bloedsuiker/lage-glucosewaarde.webp.asset.json';
 
 const symptoms = [
-  'Energiedips, vooral na een maaltijd',
-  'Cravings en snaaimomenten',
-  'Brain fog of moeite met concentreren',
-  'Moeite met afvallen',
-  'Een opgeblazen gevoel of darmklachten',
-  'Acne, PCOS/PMOS of insulineresistentie',
-  'Moeite met inslapen of doorslapen',
+  'Je hebt na je lunch nog uren te gaan, maar je concentratie is compleet verdwenen en je leest drie keer dezelfde zin.',
+  'Je eet ’s avonds gewoon een normale maaltijd en hebt een uur later alweer trek alsof je nauwelijks gegeten hebt.',
+  'Je hebt na een maaltijd ineens behoefte aan iets zoets en kunt die reep chocola maar moeilijk uit je hoofd zetten.',
+  'Je hebt na het eten een enorme dip en vraagt je af hoe je die middag überhaupt nog moet doorkomen.',
+  'Je wordt wakker met een hoofd dat nog steeds moe voelt, ook na een nacht van acht uur slaap.',
+  'Je merkt dat je rond je menstruatie veel meer trek hebt en ineens de hele dag aan eten kunt denken.',
+  'Je hebt het gevoel dat je honger en verzadiging alle kanten op gaan en weet daardoor niet goed meer wanneer je nu écht honger hebt.',
 ];
 
 const results = [
