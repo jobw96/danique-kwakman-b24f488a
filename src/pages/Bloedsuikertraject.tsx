@@ -211,7 +211,7 @@ const Bloedsuikertraject = () => {
             <FadeIn>
               <SectionLabel>Misschien herken je dit</SectionLabel>
               <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
-                Gezond eten en toch blijven schommelen
+                In 2 weken tijd zijn je energie dips en cravings verleden tijd
               </h2>
               <p className="mt-6 max-w-md leading-relaxed">
                 Je hoeft niet te blijven gokken welke maaltijd, gewoonte of timing voor jou werkt. De sensor maakt zichtbaar wat je normaal alleen achteraf voelt.
