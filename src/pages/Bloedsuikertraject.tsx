@@ -156,7 +156,7 @@ const Bloedsuikertraject = () => {
                 Je eet gezond, slaapt genoeg en toch schommelt je energie alle kanten op en denk je de hele dag aan eten.
               </h1>
               <p className="mt-6 max-w-xl text-xl leading-relaxed text-primary-dark">
-                Van energiedips en cravings naar inzicht in hoe jouw lichaam reageert op voeding, beweging, stress en slaap.
+                Je eet gezond, slaapt genoeg en toch schommelt je energie alle kanten op en denk je de hele dag aan eten.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
