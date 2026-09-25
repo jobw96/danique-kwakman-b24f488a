@@ -237,8 +237,6 @@ const Bloedsuikertraject = () => {
                 <br /><br />
                 Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga na je maaltijd wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft het vooral gokken.
                 <br /><br />
-                Daarom werken we in dit traject met een glucosesensor. 14 dagen lang krijg je inzicht in wat er bij jou gebeurt en leggen we die gegevens naast je voeding, slaap, beweging, stress en cyclus.
-                <br /><br />
                 Daarom werken we in dit traject met een glucosesensor. 14 dagen lang krijg je 24/7 inzicht in wat er bij jou gebeurt. We zien live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
               </p>
             </FadeIn>
