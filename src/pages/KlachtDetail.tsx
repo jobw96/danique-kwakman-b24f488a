@@ -1,14 +1,35 @@
 import { useState } from 'react';
 import { m } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Plus } from 'lucide-react';
-import { FadeIn } from '@/components/Animations';
+import { ArrowLeft, ArrowRight, Check, Plus } from 'lucide-react';
+import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { useBookingModal } from '@/components/BookingModal';
 import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
 import { complaintCategories, complaints, findComplaint } from '@/data/complaints';
+import type { ComplaintCategory } from '@/data/complaints';
 import { complaintContent } from '@/data/complaint-content';
 import type { ComplaintFaq } from '@/data/complaint-content/types';
 import { Link, Navigate, useParams } from '@/lib/router-compat';
+import daniqueGlowup from '@/assets/danique-glowup.webp';
+import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBloedsuiker from '@/assets/danique-bloedsuiker.webp';
+import daniqueWalking from '@/assets/danique-walking.webp';
+
+/** Zelfde pill als op de traject- en contactpagina's. */
+const SectionTag = ({ text }: { text: string }) => (
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
+    {text}
+  </div>
+);
+
+/** Beeld per categorie, zodat elke klachtpagina net als de rest van de site
+ *  met een foto opent in plaats van met een tekstblok. */
+const CATEGORY_IMAGE: Record<ComplaintCategory, string> = {
+  'Hormonen en cyclus': daniqueGlowup,
+  'Darmen en spijsvertering': daniqueDarm,
+  'Energie en bloedsuiker': daniqueBloedsuiker,
+  'Huid en haar': daniqueWalking,
+};
 
 const BulletList = ({ items }: { items: string[] }) => (
   <ul className="space-y-3">
@@ -16,6 +37,23 @@ const BulletList = ({ items }: { items: string[] }) => (
       <li key={item} className="flex items-start gap-3 leading-relaxed text-muted-foreground">
         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" aria-hidden="true" />
         <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+);
+
+/** Signalenlijst met het vinkje-in-cirkel dat de trajectpagina's ook gebruiken. */
+const CheckList = ({ items }: { items: string[] }) => (
+  <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
+    {items.map((item) => (
+      <li key={item} className="flex items-start gap-3">
+        <span
+          className="mt-0.5 flex h-6 w-6 min-w-6 shrink-0 items-center justify-center rounded-full bg-[#FDF8F3] text-primary"
+          aria-hidden="true"
+        >
+          <Check className="h-3.5 w-3.5" />
+        </span>
+        <span className="leading-relaxed text-muted-foreground">{item}</span>
       </li>
     ))}
   </ul>
@@ -137,7 +175,7 @@ const KlachtDetail = () => {
     <Section className="py-14 md:py-20">
       <div className="mx-auto max-w-3xl">
         <FadeIn>
-          <div className="rounded-md border border-secondary/30 bg-card p-8 text-center md:p-12">
+          <div className="rounded-3xl border border-secondary/30 bg-card p-8 text-center shadow-xs md:p-12">
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Wil je weten wat er bij jou speelt?
             </h2>
@@ -185,7 +223,7 @@ const KlachtDetail = () => {
               <Link
                 key={item.slug}
                 to={`/klachten/${item.slug}`}
-                className="group flex items-center justify-between gap-3 rounded-md border border-secondary/40 bg-card px-5 py-4 transition-colors hover:border-primary/40"
+                className="group flex items-center justify-between gap-3 rounded-2xl border border-secondary/30 bg-card px-5 py-4 shadow-xs transition-colors hover:border-primary/40 hover:bg-secondary/10"
               >
                 <span className="font-serif text-lg text-foreground">{item.title}</span>
                 <ArrowRight
@@ -202,7 +240,9 @@ const KlachtDetail = () => {
 
   const disclaimerBlock = (
     <Section className="pt-0 pb-16 md:pb-24">
-      <FadeIn className="mx-auto max-w-3xl border-l-2 border-secondary pl-6">
+      {/* Was een gekleurde zijstreep; nu een rustige kaart, zodat het blok
+          hetzelfde vocabulaire volgt als de rest van de pagina. */}
+      <FadeIn className="mx-auto max-w-3xl rounded-2xl border border-secondary/30 bg-muted/30 p-6 md:p-8">
         <h2 className="mb-3 font-serif text-2xl text-foreground">Goed om te weten</h2>
         <p className="text-sm leading-relaxed text-muted-foreground">
           De informatie op deze pagina is bedoeld om klachten te herkennen en vervangt geen diagnose,
@@ -221,33 +261,53 @@ const KlachtDetail = () => {
     return (
       <>
         <Section className="pt-4 pb-14 md:pb-20">
-          <div className="mx-auto max-w-3xl">
-            <FadeIn>
-              <Link
-                to={category ? `/klachten/onderdeel/${category.slug}` : '/klachten'}
-                className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-              >
-                <ArrowLeft className="h-4 w-4" aria-hidden="true" />{' '}
-                {category ? `Terug naar ${category.name.toLowerCase()}` : 'Terug naar klachten'}
-              </Link>
-              <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-                {complaint.pageTitle}
-              </h1>
-              <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
-                {content.intro.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
+          <div className="mx-auto max-w-6xl">
+            <Link
+              to={category ? `/klachten/onderdeel/${category.slug}` : '/klachten'}
+              className="mb-8 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />{' '}
+              {category ? `Terug naar ${category.name.toLowerCase()}` : 'Terug naar klachten'}
+            </Link>
+            <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+              <div className="lg:w-1/2">
+                <FadeIn>
+                  {category && <SectionTag text={category.name} />}
+                  <h1 className="mb-6 font-serif text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl">
+                    {complaint.pageTitle}
+                  </h1>
+                  <div className="space-y-4 leading-relaxed text-muted-foreground">
+                    {content.intro.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </FadeIn>
               </div>
-            </FadeIn>
+              <div className="w-full lg:w-1/2">
+                <FadeIn
+                  delay={0.2}
+                  className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl"
+                >
+                  <ParallaxImage
+                    src={CATEGORY_IMAGE[complaint.category]}
+                    alt={`${complaint.title} - begeleiding door Danique Kwakman, orthomoleculair hormoon- en darmtherapeut`}
+                    className="h-full w-full object-cover"
+                  />
+                </FadeIn>
+              </div>
+            </div>
           </div>
         </Section>
 
         <Section className="bg-card py-14 md:py-20">
-          <FadeIn className="mx-auto max-w-4xl">
-            <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
-              {content.recognitionHeading ?? 'Misschien herken je één of meerdere van deze signalen'}
-            </h2>
-            <BulletList items={content.recognition} />
+          <FadeIn className="mx-auto max-w-5xl">
+            <div className="rounded-3xl border border-secondary/30 bg-background p-8 shadow-xs md:p-12">
+              <h2 className="mb-8 font-serif text-3xl text-foreground md:text-4xl">
+                {content.recognitionHeading ??
+                  'Misschien herken je één of meerdere van deze signalen'}
+              </h2>
+              <CheckList items={content.recognition} />
+            </div>
           </FadeIn>
         </Section>
 
@@ -274,11 +334,13 @@ const KlachtDetail = () => {
               </h2>
               <p className="leading-relaxed text-muted-foreground">{content.factorsIntro}</p>
             </FadeIn>
-            <div className="grid grid-cols-1 gap-x-10 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               {content.factors.map((factor) => (
-                <FadeIn key={factor.title}>
-                  <article className="border-t border-secondary/50 py-7">
-                    <h3 className="mb-3 font-serif text-2xl text-foreground">{factor.title}</h3>
+                <FadeIn key={factor.title} className="h-full">
+                  <article className="h-full rounded-2xl border border-secondary/30 bg-background p-6 shadow-xs md:p-7">
+                    <h3 className="mb-3 font-serif text-xl text-foreground md:text-2xl">
+                      {factor.title}
+                    </h3>
                     <p className="leading-relaxed text-muted-foreground">{factor.text}</p>
                   </article>
                 </FadeIn>
@@ -288,14 +350,19 @@ const KlachtDetail = () => {
         </Section>
 
         <Section className="py-14 md:py-20">
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
-            <FadeIn>
-              <h2 className="mb-5 font-serif text-3xl text-foreground">{content.widerHeading}</h2>
-              <p className="mb-5 leading-relaxed text-muted-foreground">{content.widerIntro}</p>
-              <BulletList items={content.widerSignals} />
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
+            <FadeIn className="h-full">
+              <div className="h-full rounded-3xl border border-secondary/30 bg-card p-8 shadow-xs md:p-10">
+                <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
+                  {content.widerHeading}
+                </h2>
+                <p className="mb-5 leading-relaxed text-muted-foreground">{content.widerIntro}</p>
+                <BulletList items={content.widerSignals} />
+              </div>
             </FadeIn>
-            <FadeIn delay={0.05}>
-              <h2 className="mb-5 font-serif text-3xl text-foreground">Waar we samen naar kijken</h2>
+            <FadeIn delay={0.05} className="h-full">
+              <div className="h-full rounded-3xl border border-secondary/30 bg-card p-8 shadow-xs md:p-10">
+              <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">Waar we samen naar kijken</h2>
               <p className="mb-5 leading-relaxed text-muted-foreground">{content.togetherIntro}</p>
               <BulletList items={content.together} />
               <p className="mt-5 leading-relaxed text-muted-foreground">
@@ -316,6 +383,7 @@ const KlachtDetail = () => {
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Laboratoriumonderzoek vervangt onderzoek door een arts niet.
               </p>
+              </div>
             </FadeIn>
           </div>
         </Section>
@@ -340,42 +408,61 @@ const KlachtDetail = () => {
   return (
     <>
       <Section className="pt-4 pb-14 md:pb-20">
-        <div className="mx-auto max-w-3xl">
-          <FadeIn>
-            <Link
-              to="/klachten"
-              className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Terug naar klachten
-            </Link>
-
-            <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-              {complaint.pageTitle}
-            </h1>
-
-            <div className="space-y-4 leading-relaxed text-muted-foreground">
-              {complaint.intro.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+        <div className="mx-auto max-w-6xl">
+          <Link
+            to="/klachten"
+            className="mb-8 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+          >
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Terug naar klachten
+          </Link>
+          <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+            <div className="lg:w-1/2">
+              <FadeIn>
+                {category && <SectionTag text={category.name} />}
+                <h1 className="mb-6 font-serif text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl">
+                  {complaint.pageTitle}
+                </h1>
+                <div className="space-y-4 leading-relaxed text-muted-foreground">
+                  {complaint.intro.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+              </FadeIn>
             </div>
-          </FadeIn>
+            <div className="w-full lg:w-1/2">
+              <FadeIn
+                delay={0.2}
+                className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl"
+              >
+                <ParallaxImage
+                  src={CATEGORY_IMAGE[complaint.category]}
+                  alt={`${complaint.title} - begeleiding door Danique Kwakman, orthomoleculair hormoon- en darmtherapeut`}
+                  className="h-full w-full object-cover"
+                />
+              </FadeIn>
+            </div>
+          </div>
         </div>
       </Section>
 
       <Section className="bg-card py-14 md:py-20">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
-          <FadeIn>
-            <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
-              Hoe je het kunt herkennen
-            </h2>
-            <BulletList items={complaint.signals} />
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
+          <FadeIn className="h-full">
+            <div className="h-full rounded-3xl border border-secondary/30 bg-background p-8 shadow-xs md:p-10">
+              <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
+                Hoe je het kunt herkennen
+              </h2>
+              <BulletList items={complaint.signals} />
+            </div>
           </FadeIn>
 
-          <FadeIn delay={0.05}>
-            <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
-              Waar we samen naar kijken
-            </h2>
-            <BulletList items={complaint.causes} />
+          <FadeIn delay={0.05} className="h-full">
+            <div className="h-full rounded-3xl border border-secondary/30 bg-background p-8 shadow-xs md:p-10">
+              <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
+                Waar we samen naar kijken
+              </h2>
+              <BulletList items={complaint.causes} />
+            </div>
           </FadeIn>
         </div>
       </Section>
