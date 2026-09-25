@@ -163,7 +163,7 @@ const KlachtCategorie = () => {
                 {/* Alleen links afgerond: rechts loopt de foto tegen de
                     schermrand aan. Onder lg staat hij binnen de marges en is
                     hij rondom afgerond. */}
-                <div className="aspect-[3/4] overflow-hidden rounded-[1.6rem] lg:aspect-auto lg:h-full lg:rounded-l-[2.4rem] lg:rounded-r-none">
+                <div className="aspect-[3/4] overflow-hidden rounded-2xl lg:aspect-auto lg:h-full lg:rounded-l-3xl lg:rounded-r-none">
                   <img
                     src={beeld.src}
                     alt={beeld.alt}
@@ -194,7 +194,7 @@ const KlachtCategorie = () => {
                     className={KOLOM_TRAP[groepIndex % KOLOM_TRAP.length]}
                   >
                     {beeld ? (
-                      <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-[1.6rem]">
+                      <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-2xl">
                         <img
                           src={beeld.src}
                           alt=""
