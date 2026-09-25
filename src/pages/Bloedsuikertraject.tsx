@@ -228,16 +228,18 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="max-w-3xl">
-              <SectionLabel>Je kunt 100 verschillende adviezen vinden over bloedsuiker.{"\u00a0"}</SectionLabel>
+              <SectionLabel>JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.</SectionLabel>
               <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
-                Je wilt niet nog meer uittesten om erachter te komen wat werkt. Je wilt zwart-op-wit zien wat er bij jóu gebeurt.
+                Maar je wilt niet meer gokken en hopen dat het werkt.
               </h2>
               <p className="mt-6 leading-relaxed">
-                Je kunt 100 verschillende adviezen vinden over bloedsuiker.{"\u00a0"}
+                Je wilt zwart-op-wit zien hoe jouw lichaam reageert. We daarom niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.
                 <br /><br />
                 Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga na je maaltijd wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft het vooral gokken.
                 <br /><br />
                 Daarom werken we in dit traject met een glucosesensor. 14 dagen lang krijg je inzicht in wat er bij jou gebeurt en leggen we die gegevens naast je voeding, slaap, beweging, stress en cyclus.
+                <br /><br />
+                Daarom werken we in dit traject met een glucosesensor. 14 dagen lang krijg je 24/7 inzicht in wat er bij jou gebeurt. We zien live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
               </p>
             </FadeIn>
 
