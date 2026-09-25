@@ -116,28 +116,40 @@ const included = [
 const faqs = [
   {
     question: 'Doet het plaatsen van de glucosesensor pijn?',
-    answer:
-      'De sensor wordt op de achterkant van je bovenarm geplaatst. Dit gaat snel en wordt doorgaans nauwelijks gevoeld. Daarna blijft de sensor veertien dagen zitten.',
+    answer: [
+      'De plaatsing wordt meestal nauwelijks gevoeld. De sensor wordt op de achterkant van je bovenarm geplaatst. Daarna blijft de sensor veertien dagen zitten.',
+    ],
   },
   {
     question: 'Moet ik tijdens de meting anders gaan eten?',
-    answer:
-      'De eerste week verander je bewust niets. Zo krijgen we een eerlijk beeld van hoe jouw lichaam nu reageert. Na de check-in ga je met persoonlijke aanpassingen aan de slag en kunnen we zien wat er verandert.',
+    answer: [
+      'Nee, in de eerste week verander je bewust niets aan je voeding of leefstijl. Zo krijgen we een zo eerlijk mogelijk beeld van hoe jouw glucose gedurende de dag reageert op wat je nu doet. Tijdens de check-in bekijken we de eerste inzichten en daarna ga je met persoonlijke aanpassingen aan de slag.',
+    ],
   },
   {
     question: 'Wat laat een glucosemeting zien?',
-    answer:
-      'De meting laat zien hoe jouw glucosewaarden gedurende de dag bewegen en hoe die beweging samenvalt met onder andere maaltijden, beweging, slaap en stress. De sensor is een hulpmiddel voor inzicht en stelt geen medische diagnose.',
+    answer: [
+      'De sensor laat zien hoe je glucose gedurende de dag verandert. We leggen deze gegevens naast o.a. je maaltijden, beweging, slaap en stress. Zo krijg je inzicht in hoe jouw lichaam reageert op verschillende situaties.',
+    ],
   },
   {
-    question: 'Is dit traject ook geschikt bij PCOS of insulineresistentie?',
-    answer:
-      'Het traject kan waardevol inzicht geven wanneer je PCOS/PMOS of insulineresistentie hebt. Tijdens de kennismaking bespreken we jouw situatie en bekijken we welk traject het beste aansluit.',
+    question: 'Bij welke klachten kan ik dit traject volgen?',
+    answer: [
+      'Het bloedsuikertraject kan interessant zijn wanneer je merkt dat je energie gedurende de dag wisselt, je regelmatig cravings of snaaidrang hebt of snel weer honger hebt na een maaltijd. Maar ook wanneer je klachten ervaart die kunnen samenhangen met je bloedsuikerregulatie, zoals PMS, PCOS, insulineresistentie, hormonale klachten, vermoeidheid, energiedips, prediabetes of zwangerschapsdiabetes.',
+      'Je hoeft dus niet per se een specifieke diagnose te hebben. Misschien wil je vooral begrijpen wat er in jouw lichaam gebeurt en ontdekken welke invloed voeding, beweging, slaap en stress hebben op je glucosewaarden. De meting helpt ons om daar veel gerichter naar te kijken.',
+    ],
   },
   {
-    question: 'Kan het traject online?',
-    answer:
-      'De gesprekken kunnen online plaatsvinden. Voor het plaatsen van de sensor stemmen we vooraf praktisch af wat in jouw situatie mogelijk is.',
+    question: 'Wat is het verschil tussen een glucosesensor en een nuchtere glucosemeting in je bloed?',
+    answer: [
+      'Bij een nuchtere bloedmeting wordt je glucose op één specifiek moment gemeten. Een glucosesensor meet daarentegen gedurende veertien dagen en laat zien hoe je glucose gedurende de dag reageert. Daardoor kunnen we veel beter kijken naar wat er rondom maaltijden, beweging, slaap en stress gebeurt.',
+    ],
+  },
+  {
+    question: 'Kan ik het traject ook online volgen?',
+    answer: [
+      'Ja zeker! Je kunt het traject volgen in mijn praktijk in Hoorn of volledig online via Zoom. Ook online begeleid ik je bij het plaatsen van de sensor.',
+    ],
   },
 ];
 
@@ -483,7 +495,13 @@ const Bloedsuikertraject = () => {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <p className="pb-6 leading-relaxed">{faq.answer}</p>
+                        <div className="space-y-4 pb-6">
+                          {faq.answer.map((paragraph, pIdx) => (
+                            <p key={pIdx} className="leading-relaxed">
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
                       </m.div>
                     </div>
                   </FadeIn>
