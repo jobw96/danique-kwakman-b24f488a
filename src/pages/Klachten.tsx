@@ -6,7 +6,7 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory } from '@/data/complaints';
 import { Link } from '@/lib/router-compat';
 import kustWaterOverZand from '@/assets/sfeer/kust-water-over-zand-16x9.webp';
-import kruidentheeRaam from '@/assets/sfeer/kruidenthee-raam-3x4.webp';
+import kustHandoekWind from '@/assets/sfeer/kust-handdoek-wind-3x4.webp';
 
 const categoryDescriptions: Record<string, string> = {
   'hormonen-en-cyclus':
@@ -93,11 +93,14 @@ const Klachten = () => {
         </div>
       </Section>
 
-      <Section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[1fr_minmax(0,22rem)] lg:gap-16">
-          {/* Foto naast de afsluitende tekst in plaats van eronder: geeft de
-              pagina een tweede beeldmoment zonder dat er tekst op komt. */}
-          <div className="max-w-3xl lg:order-1">
+      {/* De foto loopt hier bewust uit de kolom: hij staat vast aan de
+          rechter schermrand, is alleen links afgerond en is verticaal
+          gecentreerd ten opzichte van de sectie in plaats van uitgelijnd op
+          de eerste kop. Dat breekt het strakke tweekoloms ritme van de rest
+          van de pagina. */}
+      <Section className="relative py-16 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-3xl lg:max-w-[55%]">
           <FadeIn>
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Herken je jezelf in meerdere klachten?
@@ -130,19 +133,21 @@ const Klachten = () => {
           </FadeIn>
           </div>
 
-          <FadeIn delay={0.12} className="lg:order-2 lg:sticky lg:top-28">
-            <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl">
-              <img
-                src={kruidentheeRaam}
-                alt="Verse kruiden en een kop thee op tafel in het middaglicht"
-                width={1195}
-                height={1600}
-                loading="lazy"
-                decoding="async"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </FadeIn>
+          <div className="mt-14 lg:absolute lg:right-0 lg:top-1/2 lg:mt-0 lg:w-[38vw] lg:max-w-[560px] lg:-translate-y-1/2">
+            <FadeIn delay={0.12}>
+              <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl lg:rounded-r-none lg:rounded-l-[3rem]">
+                <img
+                  src={kustHandoekWind}
+                  alt="Gestreepte strandhanddoek die opwaait tegen een bleke lucht"
+                  width={1195}
+                  height={1600}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </Section>
     </>
