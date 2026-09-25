@@ -24,7 +24,7 @@ const KlachtCategorie = () => {
 
   return (
     <main className="min-h-screen bg-background">
-      <Section className="pt-4 pb-14 md:pb-20">
+      <Section className="pt-4 pb-10 md:pb-14">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
             <Link
@@ -47,23 +47,32 @@ const KlachtCategorie = () => {
         </div>
       </Section>
 
-      <Section className="bg-card py-14 md:py-20">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 border-l border-t border-secondary/40 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Losse tegels met tussenruimte in plaats van een doorlopend raster met
+          celranden. Het aantal klachten verschilt per categorie (4 tot 12), dus
+          de laatste rij is zelden vol; bij losse tegels valt dat niet op, bij
+          een tabelraster liet het een gat in de omlijning achter. */}
+      <Section className="bg-card py-12 md:py-16">
+        <ul className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categoryWithItems.items.map((complaint, index) => (
-            <FadeIn key={complaint.slug} delay={index * 0.04} className="h-full">
-              <Link
-                to={`/klachten/${complaint.slug}`}
-                className="group flex h-full flex-col border-b border-r border-secondary/40 bg-background p-6 transition-colors hover:bg-secondary/15"
-              >
-                <h2 className="mb-3 font-serif text-xl text-foreground">{complaint.title}</h2>
-                <p className="text-sm leading-relaxed text-muted-foreground">{complaint.teaser}</p>
-                <span className="mt-auto flex items-center justify-end pt-6 text-primary" aria-hidden="true">
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              </Link>
-            </FadeIn>
+            <li key={complaint.slug} className="h-full">
+              <FadeIn delay={index * 0.03} className="h-full">
+                <Link
+                  to={`/klachten/${complaint.slug}`}
+                  className="group flex h-full flex-col rounded-md border border-secondary/40 bg-background p-5 transition-colors hover:border-primary/40 hover:bg-secondary/10"
+                >
+                  <h2 className="mb-2 flex items-start gap-2 font-serif text-lg leading-snug text-foreground transition-colors group-hover:text-primary-dark">
+                    <span className="min-w-0 flex-1">{complaint.title}</span>
+                    <ArrowRight
+                      className="mt-1 h-4 w-4 shrink-0 text-primary/50 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
+                      aria-hidden="true"
+                    />
+                  </h2>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{complaint.teaser}</p>
+                </Link>
+              </FadeIn>
+            </li>
           ))}
-        </div>
+        </ul>
       </Section>
     </main>
   );
