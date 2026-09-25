@@ -97,6 +97,13 @@ interface NavItem {
   href?: string;
   subItems?: NavSubItem[];
 }
+/**
+ * Pagina's zonder de afsluitende verwijzing naar het aanbod: de aanbodpagina
+ * zelf (dat zou een link naar de eigen pagina zijn) en pagina's die onderaan
+ * al een eigen CTA hebben staan. Twee CTA's onder elkaar zwakken elkaar af.
+ */
+const GEEN_AANBOD_CTA = ['/behandelingen', '/klachten'];
+
 export const Layout: React.FC<LayoutProps> = ({
   children
 }) => {
@@ -621,12 +628,12 @@ export const Layout: React.FC<LayoutProps> = ({
       </main>
 
 
-      {/* Afsluitende verwijzing naar het aanbod, op elke pagina behalve de
-          aanbodpagina zelf: daar zou het een link naar de eigen pagina zijn.
+      {/* Afsluitende verwijzing naar het aanbod; zie GEEN_AANBOD_CTA voor de
+          pagina's die hem overslaan.
           De waas van 55% is gemeten op deze foto: de helderste pixel in het
           hele beeld haalt daarmee 4,87:1 tegen de cremekleurige tekst. Met 45%
           bleef de alinea op 3,8:1 steken, onder de 4,5 van WCAG AA. */}
-      {location.pathname !== '/behandelingen' && (
+      {!GEEN_AANBOD_CTA.includes(location.pathname) && (
         <section className="relative isolate overflow-hidden">
           <img
             src={zachteSchaduw}
