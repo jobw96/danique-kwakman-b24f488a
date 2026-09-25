@@ -121,6 +121,13 @@ const faqs = [
     ],
   },
   {
+    question: 'Hoe werkt het met de glucosesensor?',
+    answer: [
+      'De app die je nodig hebt om je glucosewaarden te bekijken is gratis. In veel gevallen kun je de sensor zelf ook gratis bestellen. Heb je al eerder een sensor gebruikt of kom je niet in aanmerking voor een gratis sensor? Dan kun je de sensor voor €66 bestellen.',
+      'Je hoeft dit niet allemaal zelf uit te zoeken. Ik begeleid je bij het volledige proces: van het bestellen en plaatsen van de sensor tot het uitlezen en bespreken van jouw persoonlijke glucosegegevens.',
+    ],
+  },
+  {
     question: 'Moet ik tijdens de meting anders gaan eten?',
     answer: [
       'Nee, in de eerste week verander je bewust niets aan je voeding of leefstijl. Zo krijgen we een zo eerlijk mogelijk beeld van hoe jouw glucose gedurende de dag reageert op wat je nu doet. Tijdens de check-in bekijken we de eerste inzichten en daarna ga je met persoonlijke aanpassingen aan de slag.',
