@@ -272,9 +272,9 @@ const Bloedsuikertraject = () => {
               <p className="text-xl leading-relaxed text-foreground md:text-2xl">
                 Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
               </p>
-              <CustomButton onClick={openModal} className="mt-6">
-                Dit wil ik
-              </CustomButton>
+            </FadeIn>
+            <FadeIn className="mt-6 md:ml-auto md:max-w-3xl">
+              <CustomButton onClick={openModal}>Dit wil ik</CustomButton>
             </FadeIn>
           </div>
         </div>
