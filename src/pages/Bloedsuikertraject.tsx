@@ -306,9 +306,9 @@ const Bloedsuikertraject = () => {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/75">Na veertien dagen</p>
-              <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">Van losse signalen naar een persoonlijk plan</h2>
+              <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">Je begrijpt beter wat jouw lichaam je vertelt</h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
-                Hoe beter je jouw reactie op voeding en leefstijl begrijpt, hoe makkelijker het wordt om keuzes te maken die passen bij jouw energie, verzadiging en dagelijks ritme.
+                Je krijgt inzicht in welke voedingsmiddelen bij jou pieken veroorzaken, wanneer je energiedips ontstaan en welke gewoontes bijdragen aan stabielere energie gedurende de dag.
               </p>
               <div className="mt-8 text-primary-foreground/90">
                 <CheckList items={results} />
