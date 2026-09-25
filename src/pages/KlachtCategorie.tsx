@@ -89,8 +89,8 @@ const WAAS =
  * verandert bij hover alleen van kleur: een lijn die pas bij hover verschijnt
  * of dikker wordt, zou de regelhoogte veranderen en de lijst laten verspringen.
  *
- * De kop is een h3 zodra er groepslabels boven staan, en anders een h2: dan is
- * de regel zelf het eerste niveau onder de h1.
+ * De kop is een h4 onder een groepslabel, en anders een h3: dan staat er geen
+ * groepskop tussen de blokkop en de regel.
  */
 const KlachtRegel = ({
   complaint,
@@ -99,7 +99,7 @@ const KlachtRegel = ({
   complaint: { slug: string; title: string };
   gegroepeerd: boolean;
 }) => {
-  const Kop = gegroepeerd ? 'h3' : 'h2';
+  const Kop = gegroepeerd ? 'h4' : 'h3';
   return (
     <li>
       <Kop className="font-normal">
@@ -183,6 +183,18 @@ const KlachtCategorie = () => {
           van de pagina loopt door. */}
       <section className="pb-16 pt-12 md:pb-24 md:pt-20">
         <div className="container mx-auto px-6">
+          {/* Kop van dit blok. Zegt bewust iets anders dan de intro bovenaan
+              de pagina: die vertelt wat er te vinden is, deze vertelt wat er
+              achter een klacht zit als je erop klikt. */}
+          <FadeIn className="mx-auto mb-12 max-w-6xl md:mb-16">
+            <h2 className="mb-4 font-serif text-3xl text-foreground md:text-4xl">
+              Waar herken je jezelf in?
+            </h2>
+            <p className="max-w-2xl leading-relaxed text-muted-foreground">
+              Per klacht lees je hoe je hem herkent, wat eronder kan liggen en hoe ik je daarin begeleid.
+            </p>
+          </FadeIn>
+
           {groepen ? (
             <div className="mx-auto grid max-w-6xl items-start gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 xl:gap-x-16">
               {groepen.map((groep, groepIndex) => {
@@ -211,18 +223,18 @@ const KlachtCategorie = () => {
                           style={{ backgroundImage: WAAS }}
                         />
                         {groep.name && (
-                          <h2 className="absolute inset-x-0 bottom-0 px-6 pb-5 font-serif text-2xl uppercase leading-snug tracking-[0.12em] text-background">
+                          <h3 className="absolute inset-x-0 bottom-0 px-6 pb-5 font-serif text-2xl uppercase leading-snug tracking-[0.12em] text-background">
                             {groep.name}
-                          </h2>
+                          </h3>
                         )}
                       </div>
                     ) : (
                       // Zonder beeld valt het label terug op de plek erboven,
                       // in de donkere beigetint die op de cremekleur leesbaar is.
                       groep.name && (
-                        <h2 className="mb-6 font-sans text-xs font-medium uppercase tracking-[0.18em] text-secondary-dark">
+                        <h3 className="mb-6 font-sans text-xs font-medium uppercase tracking-[0.18em] text-secondary-dark">
                           {groep.name}
-                        </h2>
+                        </h3>
                       )
                     )}
                     <ul>
