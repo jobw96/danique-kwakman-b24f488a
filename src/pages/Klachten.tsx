@@ -6,7 +6,7 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory } from '@/data/complaints';
 import { Link } from '@/lib/router-compat';
 import kustParasols from '@/assets/sfeer/kust-parasols-onderaanzicht-2x3.webp';
-import kustHandoekWind from '@/assets/sfeer/kust-handdoek-wind-3x4.webp';
+import citroenBruiswater from '@/assets/sfeer/macro-citroenschijf-bruiswater-2x3.webp';
 
 const categoryDescriptions: Record<string, string> = {
   'hormonen-en-cyclus':
@@ -146,9 +146,9 @@ const Klachten = () => {
             <FadeIn delay={0.12}>
               <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl lg:rounded-r-none lg:rounded-l-[3rem]">
                 <img
-                  src={kustHandoekWind}
-                  alt="Gestreepte strandhanddoek die opwaait tegen een bleke lucht"
-                  width={1195}
+                  src={citroenBruiswater}
+                  alt="Close-up van een schijf citroen in bruiswater met opstijgende belletjes"
+                  width={1062}
                   height={1600}
                   loading="lazy"
                   decoding="async"
