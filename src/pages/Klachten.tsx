@@ -81,7 +81,7 @@ const Klachten = () => {
         {/* Radius alleen aan de onderkant: links en boven loopt de foto tegen
             de schermrand en de header aan. Op xl valt linksonder weg, want
             daar raakt de foto de linkerrand. */}
-        <div className="h-[55vh] w-full overflow-hidden rounded-b-[2.5rem] sm:h-[65vh] xl:h-[120vh] xl:rounded-bl-none xl:rounded-br-[3rem]">
+        <div className="h-[41vh] w-full overflow-hidden rounded-b-[2.5rem] sm:h-[65vh] xl:h-[120vh] xl:rounded-bl-none xl:rounded-br-[3rem]">
           <img
             src={kustParasols}
             alt="Twee crèmekleurige parasols van onderaf tegen een lichtblauwe lucht"
