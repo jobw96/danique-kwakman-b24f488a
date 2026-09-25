@@ -113,6 +113,12 @@ const faqs = [
       'Ja zeker! Je kunt het traject volgen in mijn praktijk in Hoorn of volledig online via Zoom. Ook online begeleid ik je bij het plaatsen van de sensor.',
     ],
   },
+  {
+    question: 'Hoe weet ik of dit traject bij mij past?',
+    answer: [
+      'Twijfel je of een glucosemeting iets voor jou kan betekenen? Tijdens de gratis kennismaking bespreken we jouw klachten, hulpvraag en wat je graag wilt bereiken. Daarna kijken we samen of het bloedsuikertraject bij je past. De kennismaking is helemaal vrijblijvend.',
+    ],
+  },
 ];
 
 const SectionLabel = ({ children }: { children: React.ReactNode }) => (
