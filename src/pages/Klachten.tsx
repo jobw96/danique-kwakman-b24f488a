@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { m } from 'framer-motion';
 import { FadeIn } from '@/components/Animations';
 import { useBookingModal } from '@/components/BookingModal';
 import { CustomButton } from '@/components/CustomButton';
@@ -23,23 +24,48 @@ const categoryDescriptions: Record<string, string> = {
  * die op de strandfoto van het hormoontraject staat. Puur sier: hij staat op
  * aria-hidden en vangt geen muis. De tegels komen later in de DOM en hebben
  * een dekkende achtergrond, dus die lopen er vanzelf overheen.
+ *
+ * De lijnen worden getekend in plaats van ingefadet, en pas nadat de tegels
+ * er staan: die beginnen op 0 tot 0,24s en duren 0,9s. De bovenste lijn start
+ * op 0,7s, de onderste loopt er met 0,25s achteraan. Voor een lijn die zich
+ * tekent werkt een ease-out beter dan de in-out van FadeIn: hij zet meteen
+ * door en komt aan het eind tot rust in plaats van traag op gang te komen.
  */
+const TEKEN_EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
+const tekenVariant = (vertraging: number) => ({
+  verborgen: { pathLength: 0 },
+  zichtbaar: {
+    pathLength: 1,
+    transition: { duration: 1.2, ease: TEKEN_EASE, delay: vertraging },
+  },
+});
+
 const Golf = () => (
-  <svg viewBox="0 0 340 200" fill="none" className="h-auto w-full">
-    <path
+  <m.svg
+    viewBox="0 0 340 200"
+    fill="none"
+    className="h-auto w-full"
+    initial="verborgen"
+    whileInView="zichtbaar"
+    viewport={{ once: true, margin: '-10%' }}
+  >
+    <m.path
       d="M14 78C52 24 104 18 150 56c46 38 96 32 134-22"
       className="stroke-primary"
       strokeWidth={10}
       strokeLinecap="round"
+      variants={tekenVariant(0.7)}
     />
-    <path
+    <m.path
       d="M52 168C90 114 142 108 188 146c30 25 62 29 92 12"
       className="stroke-primary"
       strokeWidth={10}
       strokeLinecap="round"
       opacity={0.5}
+      variants={tekenVariant(0.95)}
     />
-  </svg>
+  </m.svg>
 );
 
 const Klachten = () => {
@@ -167,6 +193,19 @@ const Klachten = () => {
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
         <div className="absolute inset-0 -z-10 bg-background/70" aria-hidden="true" />
+        {/* Golvende overgang: een vorm in de kleur van de sectie erboven die
+            over de bovenkant van de foto heen valt. Zo hoeft de foto zelf niet
+            gemaskerd te worden en blijft de rechte onderrand intact.
+            preserveAspectRatio="none" laat de golf meerekken met de breedte,
+            waardoor hij op elk scherm even hoog blijft. */}
+        <svg
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 h-[34px] w-full fill-card md:h-[56px]"
+        >
+          <path d="M0 0h1440v24c-180 36-360 42-540 22S540 6 360 20C240 30 120 44 0 38V0Z" />
+        </svg>
         <div className="mx-auto max-w-2xl px-6 py-24 text-center md:py-32">
           <FadeIn>
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
