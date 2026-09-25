@@ -4,9 +4,14 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory, complaintsInGroups, findComplaintCategory } from '@/data/complaints';
 import { Link, Navigate, useParams } from '@/lib/router-compat';
 import granaatappelTerracotta from '@/assets/sfeer/granaatappel-terracotta-3x4.webp';
-import zadenSchaaltjes from '@/assets/sfeer/zaden-schaaltjes-1x1.webp';
-import gemberKurkumaLinnen from '@/assets/sfeer/gember-kurkuma-linnen-4x3.webp';
-import gipsmuurStrijklicht from '@/assets/sfeer/abstract-gipsmuur-strijklicht-21x9.webp';
+import vijgenKeramiek from '@/assets/sfeer/vijgen-keramiek-3x4.webp';
+import kruidenOlijfolie from '@/assets/sfeer/kruiden-olijfolie-plank-4x3.webp';
+import kustLigbedden from '@/assets/sfeer/kust-ligbedden-rotsterras-4x3.webp';
+import gefermenteerdeGroenten from '@/assets/sfeer/gefermenteerde-groenten-pot-4x3.webp';
+import groenteschaalBovenaf from '@/assets/sfeer/groenteschaal-bovenaf-9x16.webp';
+import havermoutKom from '@/assets/sfeer/havermout-kom-bovenaf-4x3.webp';
+import walnotenAmandelen from '@/assets/sfeer/walnoten-amandelen-linnen-4x3.webp';
+import linnenLakens from '@/assets/sfeer/linnen-lakens-waslijn-9x16.webp';
 
 /**
  * Sfeerbeeld naast de introtekst, per categorie. Alleen ingevuld voor de
@@ -32,19 +37,42 @@ const categoryIntros: Record<string, string> = {
 };
 
 /**
- * Beeld boven een groepskolom, op naam van de groep. De bronbestanden hebben
- * verschillende verhoudingen (1:1, 4:3 en 21:9); ze staan alle drie in een
- * kader van 4:3 met object-cover, zodat de drie kolommen gelijk ogen.
+ * Beeld per groep, met het groepslabel er middenin. De bronbestanden hebben
+ * verschillende verhoudingen; ze staan alle acht in een kader van 4:3 met
+ * object-cover, zodat de kolommen gelijk ogen.
  *
  * width en height zijn de echte afmetingen van het bestand. De browser kent
  * daarmee de verhouding voordat het beeld binnen is en reserveert de ruimte,
- * dus er schuift niets meer als het laadt.
+ * dus er schuift niets als het laadt.
+ *
+ * De foto's zijn gekozen op helderheid: met de waas hieronder haalt de
+ * donkerste keuze nog 5,17:1 voor het label. Bij een lichtere foto zou dat
+ * onder de 4,5 van WCAG AA zakken.
  */
 const GROEP_BEELD: Record<string, { src: string; width: number; height: number }> = {
-  'Je cyclus': { src: zadenSchaaltjes, width: 1600, height: 1600 },
-  'Hormonen uit balans': { src: gemberKurkumaLinnen, width: 1600, height: 1195 },
-  Levensfase: { src: gipsmuurStrijklicht, width: 1600, height: 686 },
+  // Hormonen en cyclus
+  'Je cyclus': { src: vijgenKeramiek, width: 1195, height: 1600 },
+  'Hormonen uit balans': { src: kruidenOlijfolie, width: 1600, height: 1195 },
+  Levensfase: { src: kustLigbedden, width: 1600, height: 1195 },
+  // Darmen en spijsvertering
+  'Buik en vertering': { src: gefermenteerdeGroenten, width: 1600, height: 1194 },
+  'Ontlasting en darmwerking': { src: groenteschaalBovenaf, width: 905, height: 1600 },
+  // Energie en bloedsuiker
+  'Energie door de dag': { src: havermoutKom, width: 1600, height: 1194 },
+  Bloedsuiker: { src: walnotenAmandelen, width: 1600, height: 1194 },
+  'Stress en slaap': { src: linnenLakens, width: 904, height: 1600 },
 };
+
+/**
+ * Waas over de foto, het donkerst in de band waar het label staat en lichter
+ * naar boven en onder. Een gelijkmatige waas die overal donker genoeg is zou
+ * de foto's plat maken; zo blijft alleen de tekstband zwaar.
+ *
+ * De 55% in het midden is gemeten: bij de lichtste van de acht foto's is de
+ * helderste pixel in die band goed voor 5,17:1 tegen de cremekleurige letter.
+ */
+const WAAS =
+  'linear-gradient(to bottom, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.55) 35%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.16) 100%)';
 
 /**
  * Een klacht als klikbare regel in een kolom. De onderlijn staat er altijd en
@@ -142,8 +170,8 @@ const KlachtCategorie = () => {
                 const beeld = GROEP_BEELD[groep.name];
                 return (
                   <FadeIn key={groep.name || 'overig'} delay={groepIndex * 0.08}>
-                    {beeld && (
-                      <div className="mb-4 aspect-[4/3] overflow-hidden rounded-[2rem]">
+                    {beeld ? (
+                      <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-[2rem]">
                         <img
                           src={beeld.src}
                           alt=""
@@ -152,19 +180,27 @@ const KlachtCategorie = () => {
                           height={beeld.height}
                           loading="lazy"
                           decoding="async"
-                          className="h-full w-full object-cover"
+                          className="absolute inset-0 h-full w-full object-cover"
                         />
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0"
+                          style={{ backgroundImage: WAAS }}
+                        />
+                        {groep.name && (
+                          <h2 className="absolute inset-0 flex items-center justify-center px-5 text-center font-sans text-xs font-medium uppercase leading-relaxed tracking-[0.18em] text-background">
+                            {groep.name}
+                          </h2>
+                        )}
                       </div>
-                    )}
-                    {groep.name && (
-                      // Klein en in beige: het label is een wegwijzer, de
-                      // klachten eronder zijn waar het om gaat. Het verschil
-                      // komt van de kop, de klachten houden hun grootte.
-                      // De ruimte hieronder is groter dan die boven het label,
-                      // zodat het label bij de kolom hoort en niet los zweeft.
-                      <h2 className="mb-6 font-sans text-xs font-medium uppercase tracking-[0.18em] text-secondary-dark">
-                        {groep.name}
-                      </h2>
+                    ) : (
+                      // Zonder beeld valt het label terug op de plek erboven,
+                      // in de donkere beigetint die op de cremekleur leesbaar is.
+                      groep.name && (
+                        <h2 className="mb-6 font-sans text-xs font-medium uppercase tracking-[0.18em] text-secondary-dark">
+                          {groep.name}
+                        </h2>
+                      )
                     )}
                     <ul>
                       {groep.items.map((complaint) => (
