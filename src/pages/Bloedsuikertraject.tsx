@@ -160,8 +160,6 @@ const Bloedsuikertraject = () => {
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  ’s Avonds trek je na het eten toch nog een pak koek open, omdat je alweer trek hebt terwijl je net gegeten hebt. En na 8 uur slapen word je nog steeds niet fit wakker.
-                  <br /><br />
                   Je weet inmiddels echt wel wat gezond eten is en je snapt dat eiwitten belangrijk zijn. En toch kak je bijna iedere middag in, heb je regelmatig cravings en lijken je hormonen maar niet in balans te komen.
                 </p>
                 <p>
