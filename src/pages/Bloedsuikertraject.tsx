@@ -226,12 +226,12 @@ const Bloedsuikertraject = () => {
             <FadeIn className="max-w-3xl">
               <SectionLabel>JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.</SectionLabel>
               <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
-                Maar je wilt niet meer gokken en hopen dat het werkt.
+                Je wilt niet meer gokken en hopen dat het werkt.
               </h2>
               <p className="mt-6 leading-relaxed">
-                Je wilt zwart-op-wit zien hoe jouw lichaam reageert. We kijken daarom niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.
+                Zwart-op-wit zien hoe jouw lichaam reageert?{"\u00a0"}
                 <br /><br />
-                Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga na je maaltijd wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft je dus gokken.
+                Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga 10 minuten wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft je dus gokken.
                 <br /><br />
                 Daarom werken we in dit traject met de 14- daagse glucosesensor. 24/7 zien we live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
               </p>
@@ -253,7 +253,7 @@ const Bloedsuikertraject = () => {
                   <figcaption className="flex flex-col justify-end p-6">
                     <span className="text-xs uppercase tracking-[0.12em] text-primary-dark">Inzicht 01</span>
                     <h3 className="mt-3 text-2xl text-foreground">Wat gebeurt er na een maaltijd?</h3>
-                    <p className="mt-3 text-sm leading-relaxed">We bekijken niet alleen de piek, maar ook de timing, de samenstelling van je maaltijd en wat je daarna deed.</p>
+                    <p className="mt-3 text-sm leading-relaxed">We kijken niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.{"\n"}</p>
                   </figcaption>
                 </figure>
               </FadeIn>
@@ -271,8 +271,8 @@ const Bloedsuikertraject = () => {
                   />
                   <figcaption className="flex flex-col justify-end p-6">
                     <span className="text-xs uppercase tracking-[0.12em] text-primary-dark">Inzicht 02</span>
-                    <h3 className="mt-3 text-2xl text-foreground">Waar komt die plotselinge trek vandaan?</h3>
-                    <p className="mt-3 text-sm leading-relaxed">Een daling kan samenvallen met trek, onrust of minder focus. Jouw logboek helpt ons het patroon eromheen te begrijpen.</p>
+                    <h3 className="mt-3 text-2xl text-foreground">Waar komen die cravings vandaan?</h3>
+                    <p className="mt-3 text-sm leading-relaxed">Een dip kan zorgen voor zoete trek, onrust of minder focus. Met de meting testen we gericht wat voor jou werkt en zie je direct hoe jouw lichaam reageert.</p>
                   </figcaption>
                 </figure>
               </FadeIn>
@@ -280,7 +280,7 @@ const Bloedsuikertraject = () => {
 
             <FadeIn className="mt-10 border-l-2 border-primary pl-6 md:ml-auto md:max-w-3xl">
               <p className="text-xl leading-relaxed text-foreground md:text-2xl">
-                Het doel is niet om iedere lijn perfect vlak te krijgen. Het doel is dat jij begrijpt welke keuzes jouw energie ondersteunen.
+                Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
               </p>
             </FadeIn>
           </div>
