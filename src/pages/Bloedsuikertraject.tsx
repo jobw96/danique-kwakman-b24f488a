@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 import { m } from 'framer-motion';
-import {
-  Activity,
-  Check,
-  ChevronDown,
-  ClipboardList,
-  Heart,
-  MessageCircle,
-  ScanLine,
-  Users,
-  X,
-} from 'lucide-react';
+import { Check, ChevronDown, Heart, X } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
@@ -20,6 +10,7 @@ import sensorShowAsset from '@/assets/bloedsuiker/danique-toont-glucosesensor.we
 import sensorBoxAsset from '@/assets/bloedsuiker/freestyle-libre-sensor.webp.asset.json';
 import glucoseRangeAsset from '@/assets/bloedsuiker/glucosewaarde-in-bereik.webp.asset.json';
 import lowGlucoseAsset from '@/assets/bloedsuiker/lage-glucosewaarde.webp.asset.json';
+import daniqueAbout from '@/assets/danique-about.webp';
 
 const symptoms = [
   'Je kunt die reep chocola na het eten maar moeilijk uit je hoofd zetten.',
@@ -35,44 +26,6 @@ const results = [
   'Je ontdekt welke gewoontes bijdragen aan stabielere energie gedurende de dag',
   'Je weet welke keuzes jou helpen om langer verzadigd te blijven en kunnen bijdragen aan een gezond gewicht',
   'Je krijgt meer inzicht in de invloed van je bloedsuikerspiegel op je hormonale gezondheid en hebt praktische handvatten waar je zelf mee verder kunt',
-];
-
-const processSteps = [
-  {
-    number: '01',
-    title: 'Kennismaking',
-    icon: Users,
-    description:
-      'Tijdens dit vrijblijvende gesprek bespreken we jouw situatie en hulpvraag. Je kunt al je vragen stellen en samen bekijken we of dit traject passend is.',
-  },
-  {
-    number: '02',
-    title: 'Intake en plaatsing glucosesensor',
-    icon: ClipboardList,
-    description:
-      'We brengen jouw voeding, leefstijl, energie, slaap, stress, beweging en klachten in kaart. Daarna plaatsen we de sensor op de achterkant van je bovenarm. Dit doen we op locatie in Hoorn of ik begeleid je online via Zoom. De eerste week verander je bewust niets, zodat we een eerlijk beeld krijgen van jouw huidige patroon.',
-  },
-  {
-    number: '03',
-    title: 'Meten in jouw dagelijks leven',
-    icon: ScanLine,
-    description:
-      'Veertien dagen lang zie je hoe je glucosewaarden gedurende de dag schommelen. Je houdt bij wat je eet en wat er rondom beweging, slaap en stress gebeurt.',
-  },
-  {
-    number: '04',
-    title: 'Check-in na 1 week',
-    icon: Activity,
-    description:
-      'Na zeven dagen analyseren we de eerste patronen. Je ontvangt een persoonlijk plan op basis van deze data en gaat daar tijdens de tweede week gericht mee aan de slag.',
-  },
-  {
-    number: '05',
-    title: 'Eindconsult na 2 weken',
-    icon: MessageCircle,
-    description:
-      'Na veertien dagen vergelijken we de resultaten en zetten we de puntjes op de i, zodat je weet welke aanpassingen je wilt blijven toepassen en hoe je daar ook op de lange termijn mee verder kunt. ',
-  },
 ];
 
 const included = [
@@ -180,6 +133,7 @@ const CheckList = ({ items }: { items: string[] }) => (
 const Bloedsuikertraject = () => {
   const { openModal } = useBookingModal();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [openIncluded, setOpenIncluded] = useState<number | null>(0);
 
   return (
     <div className="min-h-screen bg-background text-muted-foreground">
@@ -367,23 +321,36 @@ const Bloedsuikertraject = () => {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-6xl">
-            <FadeIn className="max-w-2xl">
-              <SectionLabel>WAT KUN JE VERWACHTEN?</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">1:1 bloedsuikertraject</h2>
+          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <FadeIn>
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-t-full rounded-b-md bg-secondary/10 lg:max-w-none">
+                <img
+                  src={daniqueAbout}
+                  alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn"
+                  title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
+                  width="1280"
+                  height="1920"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
             </FadeIn>
-            <div className="mt-12 divide-y divide-secondary/50 border-y border-secondary/50">
-              {processSteps.map((step, index) => (
-                <FadeIn key={step.number} delay={index * 0.04}>
-                  <div className="grid gap-5 py-8 md:grid-cols-[4rem_3rem_0.75fr_1.25fr] md:items-start md:gap-8">
-                    <span className="text-sm text-primary-dark">{step.number}</span>
-                    <step.icon className="h-6 w-6 text-primary" aria-hidden="true" />
-                    <h3 className="text-2xl text-foreground">{step.title}</h3>
-                    <p className="leading-relaxed">{step.description}</p>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
+            <FadeIn delay={0.1}>
+              <SectionLabel>Hi, ik ben Danique</SectionLabel>
+              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
+                Van jarenlang zoeken naar begrijpen wat mijn lichaam nodig heeft
+              </h2>
+              <p className="mt-6 leading-relaxed">
+                Na 10+ jaar hormonale klachten kreeg ik de diagnose PCOS. Ik had last van onregelmatige cyclussen, vermoeidheid, acne en moodswings. De reguliere zorg hielp me aan de diagnose, maar ik miste de praktische handvatten om mijn klachten in het dagelijks leven te ondersteunen.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Die ervaring vormt nog steeds de basis van hoe ik werk. Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige combineer ik mijn ervaring uit de reguliere zorg met mijn kennis over voeding, leefstijl en het lichaam.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Ik weet hoe frustrerend het is als je voelt dat er meer speelt, maar niet weet waar je moet beginnen. Daar help ik je graag bij.
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -413,14 +380,36 @@ const Bloedsuikertraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <ul className="divide-y divide-secondary/40">
-                {included.map((item) => (
-                  <li key={item.title} className="py-6 first:pt-0 last:pb-0">
-                    <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
-                    <p className="mt-2 leading-relaxed">{item.description}</p>
-                  </li>
-                ))}
-              </ul>
+              <div className="border-t border-secondary/40">
+                {included.map((item, index) => {
+                  const isOpen = openIncluded === index;
+                  return (
+                    <div key={item.title} className="border-b border-secondary/40">
+                      <m.button
+                        type="button"
+                        onClick={() => setOpenIncluded(isOpen ? null : index)}
+                        className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                        aria-expanded={isOpen}
+                        whileHover={{ x: 3 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
+                        <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-primary-dark">
+                          <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                        </m.span>
+                      </m.button>
+                      <m.div
+                        initial={false}
+                        animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="pb-6 leading-relaxed">{item.description}</p>
+                      </m.div>
+                    </div>
+                  );
+                })}
+              </div>
             </FadeIn>
           </div>
         </div>
