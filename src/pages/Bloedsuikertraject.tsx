@@ -435,8 +435,8 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <FadeIn className="text-center">
-              <SectionLabel>Veelgestelde vragen</SectionLabel>
-              <h2 className="text-3xl text-foreground md:text-5xl">Goed om vooraf te weten</h2>
+              <SectionLabel>{"\n"}</SectionLabel>
+              <h2 className="text-3xl text-foreground md:text-5xl">Veelgestelde vragen</h2>
             </FadeIn>
             <div className="mt-10 border-t border-secondary/60">
               {faqs.map((faq, index) => {
