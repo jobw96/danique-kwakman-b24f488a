@@ -190,6 +190,7 @@ const Bloedsuikertraject = () => {
                 <ParallaxImage
                   src={sensorPortraitAsset.url}
                   alt="Danique Kwakman draagt een glucosesensor op haar bovenarm tijdens het 1:1 bloedsuikertraject"
+                  title="Danique Kwakman met glucosesensor tijdens het 1:1 bloedsuikertraject"
                   className="h-full w-full"
                   eager
                 />

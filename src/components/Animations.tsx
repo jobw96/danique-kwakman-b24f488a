@@ -92,10 +92,11 @@ export const StaggerContainer: React.FC<{ children: React.ReactNode; className?:
 export const ParallaxImage: React.FC<{ 
   src: string; 
   alt: string; 
+  title?: string;
   className?: string; 
   speed?: number;
   eager?: boolean;
-}> = ({ src, alt, className = '', speed = 0.15, eager = false }) => {
+}> = ({ src, alt, title, className = '', speed = 0.15, eager = false }) => {
   const ref = useRef(null);
   // Scroll-linked transforms are expensive; skip them on touch/small screens
   // and when the visitor prefers reduced motion.
@@ -126,6 +127,7 @@ export const ParallaxImage: React.FC<{
       <m.img
         src={src}
         alt={alt}
+        title={title}
         loading={eager ? 'eager' : 'lazy'}
         decoding="async"
         style={enabled ? { y, scale, willChange: 'transform' } : undefined}
