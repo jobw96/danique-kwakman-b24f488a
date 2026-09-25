@@ -76,16 +76,46 @@ const processSteps = [
 ];
 
 const included = [
-  'Online kennismakingsgesprek om jouw hulpvraag helder te krijgen',
-  'Uitgebreide intake',
-  'Glucosesensor voor een meting van veertien dagen',
-  'Analyse van jouw persoonlijke glucosegegevens',
-  'Check-in na één week',
-  'Eindconsult na twee weken',
-  'Persoonlijk plan op basis van voeding, leefstijl en jouw resultaten',
-  'Begeleiding via WhatsApp wanneer je daar behoefte aan hebt',
-  'Praktische tools en boodschappenlijst',
-  'Weekmenu voor maaltijden die bijdragen aan een stabiele bloedsuikerspiegel',
+  {
+    title: 'Online kennismakingsgesprek',
+    description:
+      'We starten met een online kennismakingsgesprek om jouw hulpvraag helder te krijgen. We bespreken waar je nu tegenaan loopt, wat je graag wilt veranderen en of het bloedsuikertraject daarbij past.',
+  },
+  {
+    title: 'Uitgebreide intake',
+    description:
+      'Voor we gaan meten, brengen we eerst jouw situatie in kaart. We kijken naar je voeding, leefstijl, slaap, stress, beweging, cyclus en de klachten die je ervaart. Zo weten we niet alleen wat je wilt onderzoeken, maar ook waar we tijdens de meting op letten.',
+  },
+  {
+    title: 'Persoonlijke analyse',
+    description:
+      'Je krijgt geen algemeen advies over wat je wel en niet zou moeten eten. We kijken naar jouw eigen glucosegegevens en leggen verbanden met wat je eet, hoe je beweegt, slaapt en leeft. Zo krijg je inzicht in de patronen die bij jou spelen.',
+  },
+  {
+    title: 'Check-in na één week',
+    description:
+      'Na de eerste week nemen we samen de metingen door. We bespreken wat opvalt, welke puzzelstukjes we zien en waar we in de tweede week mee aan de slag gaan.',
+  },
+  {
+    title: 'Eindconsult na twee weken',
+    description:
+      'Na de tweede week vergelijken we de resultaten en zetten we de puntjes op de i. We kijken wat de aanpassingen hebben gedaan en welke keuzes je wilt blijven toepassen in je dagelijks leven.',
+  },
+  {
+    title: 'Een persoonlijk plan',
+    description:
+      'Je krijgt praktische handvatten die aansluiten bij jouw resultaten. Geen nieuw voedingsschema vol regels, maar een plan waarmee je weet wat voor jou werkt en waar je ook na het traject zelf mee verder kunt.',
+  },
+  {
+    title: 'Persoonlijke WhatsApp-begeleiding',
+    description:
+      'Heb je tijdens het traject een vraag, wil je iets bespreken of loop je ergens tegenaan? Dan kun je me via WhatsApp bereiken wanneer je daar behoefte aan hebt. Zo hoef je niet te wachten tot ons volgende afspraak.',
+  },
+  {
+    title: 'Praktische tools',
+    description:
+      'Je krijgt praktische tools die je helpen om de inzichten uit je meting ook daadwerkelijk toe te passen. Denk aan een boodschappenlijst en een weekmenu met maaltijden die passen binnen een voedingspatroon dat bijdraagt aan een stabielere bloedsuikerspiegel.',
+  },
 ];
 
 const faqs = [
@@ -346,28 +376,37 @@ const Bloedsuikertraject = () => {
 
       <section className="border-y border-secondary/40 bg-card py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
-              <figure className="overflow-hidden rounded-md bg-background">
-                <img
-                  src={sensorBoxAsset.url}
-                  alt="Verpakking van de FreeStyle Libre 2 glucosesensor die tijdens het 1:1 bloedsuikertraject wordt gebruikt"
-                  title="Glucosesensor voor de 14-daagse meting"
-                  width="1080"
-                  height="1440"
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[4/5] h-full w-full object-cover"
-                />
-                <figcaption className="border-t border-secondary/40 px-5 py-4 text-sm">De sensor voor jouw 14-daagse meting is inbegrepen.</figcaption>
-              </figure>
+              <div className="lg:sticky lg:top-28">
+                <SectionLabel>Alles wat je nodig hebt</SectionLabel>
+                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Dit zit bij het traject</h2>
+                <figure className="mt-8 overflow-hidden rounded-md bg-background">
+                  <img
+                    src={sensorBoxAsset.url}
+                    alt="Verpakking van de FreeStyle Libre 2 glucosesensor die tijdens het 1:1 bloedsuikertraject wordt gebruikt"
+                    title="Glucosesensor voor de 14-daagse meting"
+                    width="1080"
+                    height="1440"
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[4/5] w-full object-cover"
+                  />
+                  <figcaption className="border-t border-secondary/40 px-5 py-4 text-sm">
+                    De sensor voor jouw 14-daagse meting is inbegrepen.
+                  </figcaption>
+                </figure>
+              </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <SectionLabel>Alles wat je nodig hebt</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Dit zit bij het traject</h2>
-              <div className="mt-8">
-                <CheckList items={included} />
-              </div>
+              <ul className="divide-y divide-secondary/40">
+                {included.map((item) => (
+                  <li key={item.title} className="py-6 first:pt-0 last:pb-0">
+                    <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
+                    <p className="mt-2 leading-relaxed">{item.description}</p>
+                  </li>
+                ))}
+              </ul>
             </FadeIn>
           </div>
         </div>
