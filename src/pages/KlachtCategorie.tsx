@@ -66,7 +66,7 @@ const KlachtCategorie = () => {
             {beeld && (
               <div className="w-full lg:w-2/5">
                 <FadeIn delay={0.15}>
-                  <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl">
+                  <div className="aspect-[3/4] overflow-hidden rounded-[2rem]">
                     <img
                       src={beeld.src}
                       alt={beeld.alt}

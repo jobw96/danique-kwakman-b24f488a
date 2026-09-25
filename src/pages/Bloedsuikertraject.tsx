@@ -44,7 +44,7 @@ const Bloedsuikertraject = () => {
               </FadeIn>
             </div>
             <div className="lg:w-1/2">
-              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
+              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden aspect-[4/5]">
                 <ParallaxImage
                   src={daniqueBloedsuiker}
                   alt="1:1 Bloedsuikertraject met glucosesensor door Danique Kwakman"

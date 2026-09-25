@@ -154,7 +154,7 @@ const Webshop = () => {
                   <img
                     src={nourishCoverJpeg.url}
                     alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
-                    className="w-full max-w-md mx-auto h-auto object-contain rounded-xl drop-shadow-[0_18px_32px_rgba(148,120,88,0.25)]"
+                    className="w-full max-w-md mx-auto h-auto object-contain rounded-xl"
                     width={1080}
                     height={1101}
                     loading="eager"

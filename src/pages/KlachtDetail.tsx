@@ -286,7 +286,7 @@ const KlachtDetail = () => {
               <div className="w-full lg:w-1/2">
                 <FadeIn
                   delay={0.2}
-                  className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl"
+                  className="relative aspect-[4/5] overflow-hidden rounded-[2rem]"
                 >
                   <ParallaxImage
                     src={CATEGORY_IMAGE[complaint.category]}
@@ -432,7 +432,7 @@ const KlachtDetail = () => {
             <div className="w-full lg:w-1/2">
               <FadeIn
                 delay={0.2}
-                className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl"
+                className="relative aspect-[4/5] overflow-hidden rounded-[2rem]"
               >
                 <ParallaxImage
                   src={CATEGORY_IMAGE[complaint.category]}

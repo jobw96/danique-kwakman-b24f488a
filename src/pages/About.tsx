@@ -76,7 +76,7 @@ const About = () => {
               </FadeIn>
             </div>
             <div className="lg:w-1/2">
-              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
+              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden aspect-[4/5]">
                 <ParallaxImage src={daniqueAbout} alt="Danique Kwakman - orthomoleculair hormoon- en darmtherapeut gespecialiseerd in vrouwengezondheid" className="w-full h-full object-cover" />
               </FadeIn>
             </div>
@@ -130,7 +130,7 @@ const About = () => {
           {/* Van verpleegkundige naar orthomoleculair hormoon- en darmtherapeut */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
             <div className="lg:w-5/12">
-              <FadeIn delay={0.1} className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5]">
+              <FadeIn delay={0.1} className="relative rounded-[2rem] overflow-hidden aspect-[4/5]">
                 <ParallaxImage src={daniqueRelaxed} alt="Danique Kwakman - verpleegkundige achtergrond en orthomoleculaire expertise" className="w-full h-full object-cover" />
               </FadeIn>
             </div>

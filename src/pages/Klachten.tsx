@@ -102,7 +102,7 @@ const Klachten = () => {
           gecentreerd ten opzichte van de sectie in plaats van uitgelijnd op
           de eerste kop. Dat breekt het strakke tweekoloms ritme van de rest
           van de pagina. */}
-      <Section className="relative py-16 md:py-24">
+      <Section className="relative bg-card py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           {/* max-w-2xl houdt de regel op ~75 tekens. Met max-w-3xl liep hij
               onder de lg-breakpoint, waar de foto eronder valt, op tot 86. */}
@@ -144,7 +144,7 @@ const Klachten = () => {
               het een bewuste tegenhanger blijft in plaats van een los blok. */}
           <div className="mt-14 ml-auto max-w-sm sm:max-w-md lg:absolute lg:right-0 lg:top-1/2 lg:ml-0 lg:mt-0 lg:w-[38vw] lg:max-w-[560px] lg:-translate-y-1/2">
             <FadeIn delay={0.12}>
-              <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl lg:rounded-r-none lg:rounded-l-[3rem]">
+              <div className="aspect-[3/4] overflow-hidden rounded-[2rem] lg:rounded-r-none lg:rounded-l-[3rem]">
                 <img
                   src={citroenBruiswater}
                   alt="Close-up van een schijf citroen in bruiswater met opstijgende belletjes"

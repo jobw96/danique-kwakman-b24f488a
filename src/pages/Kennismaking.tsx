@@ -37,7 +37,7 @@ const Kennismaking = () => {
             </FadeIn>
           </div>
           <div className="md:w-1/2 relative">
-            <FadeIn delay={0.2} className="rounded-full overflow-hidden border-8 border-primary/20 shadow-xl">
+            <FadeIn delay={0.2} className="rounded-full overflow-hidden border-8 border-primary/20">
               <img width={839} height={1120} src={daniqueMatchCall} alt="Gratis kennismakingsgesprek met Danique Kwakman - ontdek welk traject bij jou past" className="w-full object-cover aspect-square" loading="lazy" decoding="async" />
             </FadeIn>
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary rounded-full -z-10 opacity-30"></div>

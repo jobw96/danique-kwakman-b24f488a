@@ -597,7 +597,7 @@ const BlogPost: React.FC = () => {
           </m.div>
 
           {/* Featured Image Card */}
-          <m.div className="rounded-2xl overflow-hidden shadow-md mb-12 border border-border/30" initial={{
+          <m.div className="rounded-2xl overflow-hidden mb-12 border border-border/30" initial={{
           opacity: 0,
           y: 20
         }} animate={{
