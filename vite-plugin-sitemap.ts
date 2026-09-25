@@ -41,6 +41,20 @@ const slugsFrom = (file: string): string[] => {
   return [...src.matchAll(/^\s*slug:\s*'([^']+)'/gm)].map((m) => m[1]);
 };
 
+/**
+ * Slugs uit één array in src/data/complaints.ts. Dat bestand bevat twee
+ * arrays met een `slug`-veld (categorieën en klachten), dus we knippen eerst
+ * de juiste array eruit voordat we de slugs oppakken.
+ */
+const complaintSlugs = (arrayDeclaration: string): string[] => {
+  const src = readIfExists(resolve(root, 'src/data/complaints.ts'));
+  const start = src.indexOf(arrayDeclaration);
+  if (start === -1) return [];
+  const end = src.indexOf('\n];', start);
+  const block = end === -1 ? src.slice(start) : src.slice(start, end);
+  return [...block.matchAll(/^\s*slug:\s*'([^']+)'/gm)].map((m) => m[1]);
+};
+
 /** Publicatiedata van blogposts (POST_DATES in src/pages/BlogPost.tsx). */
 const blogDates = (): Record<string, string> => {
   const src = readIfExists(resolve(root, 'src/pages/BlogPost.tsx'));
@@ -98,7 +112,9 @@ export const collectEntries = (): Entry[] => {
     const file = routeFile(path);
     const source = file ? readFileSync(file, 'utf-8') : '';
 
-    if (path.includes('$slug')) {
+    // Elke route met een parameter ($slug, $category, ...) moet hier worden
+    // uitgeklapt. Zonder tak blijven de pagina's buiten de sitemap.
+    if (path.includes('$')) {
       // Dynamische routes uitklappen uit hun contentbron.
       if (path.startsWith('/blog')) {
         // Blogposts: echte publicatiedatum uit POST_DATES.
@@ -106,6 +122,11 @@ export const collectEntries = (): Entry[] => {
       } else if (path.startsWith('/recepten')) {
         // Recepten hebben geen per-recept wijzigingsdatum → geen lastmod.
         for (const slug of slugsFrom('src/data/recipes.ts')) push(`/recepten/${slug}`, null);
+      } else if (path === '/klachten/onderdeel/$category') {
+        for (const slug of complaintSlugs('export const complaintCategories'))
+          push(`/klachten/onderdeel/${slug}`, null);
+      } else if (path === '/klachten/$slug') {
+        for (const slug of complaintSlugs('export const complaints:')) push(`/klachten/${slug}`, null);
       }
       continue;
     }

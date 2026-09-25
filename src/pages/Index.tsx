@@ -265,7 +265,7 @@ const Index = () => {
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         <FadeIn direction="left">
           <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
-            <img loading="lazy" decoding="async" src={daniqueAbout} alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn" className="w-full h-full object-cover object-top" />
+            <img loading="lazy" decoding="async" src={daniqueAbout} alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn" width={1280} height={1920} className="w-full h-full object-cover object-top" />
           </div>
         </FadeIn>
         <FadeIn direction="right" delay={0.15}>
@@ -418,7 +418,7 @@ const Index = () => {
         </FadeIn>
         <FadeIn direction="right">
           <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
-            <img loading="lazy" decoding="async" src={daniqueMatchCall} alt="Danique Kwakman tijdens een online kennismakingsgesprek" className="w-full h-full object-cover object-top" />
+            <img loading="lazy" decoding="async" src={daniqueMatchCall} alt="Danique Kwakman tijdens een online kennismakingsgesprek" width={839} height={1120} className="w-full h-full object-cover object-top" />
           </div>
         </FadeIn>
       </div>
