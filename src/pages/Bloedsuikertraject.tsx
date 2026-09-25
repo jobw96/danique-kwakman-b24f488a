@@ -209,9 +209,9 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
-              <SectionLabel>Misschien herken je dit</SectionLabel>
+              <SectionLabel>Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.</SectionLabel>
               <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
-                In 2 weken tijd zijn je energie dips en cravings verleden tijd
+                Een stabiele bloedsuiker spiegel is DE basis van hormonale balans
               </h2>
               <p className="mt-6 max-w-md leading-relaxed">
                 Je hoeft niet te blijven gokken welke maaltijd, gewoonte of timing voor jou werkt. De sensor maakt zichtbaar wat je normaal alleen achteraf voelt.
