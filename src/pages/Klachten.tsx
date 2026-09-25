@@ -5,7 +5,7 @@ import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
 import { complaintsByCategory } from '@/data/complaints';
 import { Link } from '@/lib/router-compat';
-import kustWaterOverZand from '@/assets/sfeer/kust-water-over-zand-16x9.webp';
+import kustParasols from '@/assets/sfeer/kust-parasols-onderaanzicht-2x3.webp';
 import kustHandoekWind from '@/assets/sfeer/kust-handdoek-wind-3x4.webp';
 
 const categoryDescriptions: Record<string, string> = {
@@ -23,29 +23,30 @@ const Klachten = () => {
 
   return (
     <>
-      {/* Volledige breedte foto achter de hero. De titel staat direct op het
-          beeld (gemeten ruim 10:1), de lopende tekst op een dekkend paneel:
-          bodytekst rechtstreeks op een foto zakt altijd onder het niveau dat
-          de site elders haalt, hoe zwaar de sluier ook is. */}
-      <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24">
-        <img
-          src={kustWaterOverZand}
-          alt=""
-          aria-hidden="true"
-          width={1600}
-          height={905}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/40" aria-hidden="true" />
-        <div className="container relative mx-auto px-6">
-          <div className="mx-auto max-w-4xl">
+      {/* Hero: foto links over 60vw en 120vh, tekst rechts en verticaal
+          gecentreerd. De splitsing gaat pas op xl in; daaronder wordt de
+          tekstkolom zo smal dat een regel onder de 45 tekens zakt, dus daar
+          staat de foto boven de tekst. */}
+      <section className="xl:grid xl:grid-cols-[60vw_1fr]">
+        <div className="h-[55vh] w-full sm:h-[65vh] xl:h-[120vh]">
+          <img
+            src={kustParasols}
+            alt="Twee crèmekleurige parasols van onderaf tegen een lichtblauwe lucht"
+            width={1062}
+            height={1600}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="flex items-center px-6 py-14 md:py-20 xl:px-10 2xl:px-14">
+          <div className="mx-auto w-full max-w-2xl xl:mx-0">
             <FadeIn>
-              <h1 className="mb-8 text-center font-serif text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
+              <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
                 Klachten waarmee ik je kan helpen
               </h1>
-              {/* Alinea's links uitgelijnd en op leesbreedte: gecentreerd op
-                  896px liep een regel richting de 110 tekens. */}
-              <div className="mx-auto max-w-2xl space-y-4 rounded-3xl bg-background p-7 leading-relaxed text-muted-foreground shadow-xs md:p-9">
+              <div className="space-y-4 leading-relaxed text-muted-foreground">
               <p>
                 Je weet dat er iets niet lekker gaat, maar je krijgt niet goed boven tafel waar het vandaan komt.
               </p>
