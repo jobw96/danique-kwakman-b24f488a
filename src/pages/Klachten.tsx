@@ -50,15 +50,15 @@ const Klachten = () => {
                 Klachten waarmee ik je kan helpen
               </h1>
               <div className="space-y-4 leading-relaxed text-muted-foreground">
-              <p>
-                Je weet dat er iets niet lekker gaat, maar je krijgt niet goed boven tafel waar het vandaan komt.
-              </p>
-              <p>
-                Je hebt bijvoorbeeld last van een opgeblazen buik, bent de hele dag moe, hebt steeds cravings, veel PMS-klachten of een cyclus waar geen regelmaat in zit. En misschien heb je al van alles geprobeerd, maar blijven de klachten terugkomen.
-              </p>
-              <p>
-                Ik kijk niet alleen naar de klacht waarmee je bij mij komt. Ik wil weten wat er nog meer speelt. Hoe ziet je voeding eruit? Hoeveel energie krijg je binnen? Hoe is je slaap, stress en herstel? Wat gebeurt er rondom je cyclus, darmen, bloedsuiker, huid of energie?
-              </p>
+                <p>
+                  Je weet dat er iets niet lekker gaat, maar je krijgt niet goed boven tafel waar het vandaan komt.
+                </p>
+                <p>
+                  Je hebt bijvoorbeeld last van een opgeblazen buik, bent de hele dag moe, hebt steeds cravings, veel PMS-klachten of een cyclus waar geen regelmaat in zit. En misschien heb je al van alles geprobeerd, maar blijven de klachten terugkomen.
+                </p>
+                <p>
+                  Ik kijk niet alleen naar de klacht waarmee je bij mij komt. Ik wil weten wat er nog meer speelt. Hoe ziet je voeding eruit? Hoeveel energie krijg je binnen? Hoe is je slaap, stress en herstel? Wat gebeurt er rondom je cyclus, darmen, bloedsuiker, huid of energie?
+                </p>
                 <p>Juist die combinatie geeft belangrijke informatie over wat er speelt.</p>
               </div>
             </FadeIn>
@@ -68,41 +68,10 @@ const Klachten = () => {
 
       <Section className="bg-card py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
-            {complaintsByCategory.map((category, index) => (
-              <FadeIn key={category.name} delay={index * 0.08} className="h-full">
-                <Link
-                  to={`/klachten/onderdeel/${category.slug}`}
-                  className="group flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
-                >
-                  <span className="mb-5 font-serif text-2xl leading-none text-secondary/70 tabular-nums">
-                    {category.number}
-                  </span>
-                  {/* Pijl naast de titel in plaats van onderaan: bij een korte
-                      omschrijving bleef daar anders een groot gat over. */}
-                  <h2 className="mb-4 flex items-start gap-3 font-serif text-2xl text-foreground transition-colors group-hover:text-primary-dark md:text-3xl">
-                    <span className="min-w-0 flex-1">{category.name}</span>
-                    <ArrowRight
-                      className="mt-1.5 h-5 w-5 shrink-0 text-primary/60 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
-                      aria-hidden="true"
-                    />
-                  </h2>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {categoryDescriptions[category.slug] ?? category.description}
-                  </p>
-                </Link>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      <Section className="bg-card py-16 md:py-24">
-        {/* Gecentreerde tekstkolom. max-w-2xl houdt de regel op ~75 tekens;
-            gecentreerde tekst wordt boven die lengte lastig te volgen omdat
-            het beginpunt van elke regel verschuift. */}
-        <div className="mx-auto max-w-2xl text-center">
-          <FadeIn>
+          {/* Intro links uitgelijnd op dezelfde rand als de eerste tegel.
+              max-w-2xl houdt de regel op ~75 tekens; het raster eronder mag
+              wel de volle max-w-5xl gebruiken. */}
+          <FadeIn className="mb-12 max-w-2xl md:mb-16">
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Herken je jezelf in meerdere klachten?
             </h2>
@@ -115,6 +84,33 @@ const Klachten = () => {
               </p>
             </div>
           </FadeIn>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+            {complaintsByCategory.map((category, index) => (
+              <FadeIn key={category.name} delay={index * 0.08} className="h-full">
+                <Link
+                  to={`/klachten/onderdeel/${category.slug}`}
+                  className="group flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
+                >
+                  <span className="mb-5 font-serif text-2xl leading-none text-secondary/70 tabular-nums">
+                    {category.number}
+                  </span>
+                  {/* Pijl naast de titel in plaats van onderaan: bij een korte
+                      omschrijving bleef daar anders een groot gat over. */}
+                  <h3 className="mb-4 flex items-start gap-3 font-serif text-2xl text-foreground transition-colors group-hover:text-primary-dark md:text-3xl">
+                    <span className="min-w-0 flex-1">{category.name}</span>
+                    <ArrowRight
+                      className="mt-1.5 h-5 w-5 shrink-0 text-primary/60 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
+                      aria-hidden="true"
+                    />
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {categoryDescriptions[category.slug] ?? category.description}
+                  </p>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </Section>
 
