@@ -132,7 +132,9 @@ const KlachtCategorie = () => {
           de onderkant van de sectie; de min-hoogte op lg bepaalt daarmee hoe
           groot hij wordt, zonder dat een vaste beeldverhouding hem over de
           kolommen eronder heen laat hangen. */}
-      <Section className={`relative pt-12 md:pt-20 pb-6 md:pb-8${beeld ? ' lg:min-h-[40rem]' : ''}`}>
+      <Section
+        className={`relative py-12 md:py-20${beeld ? ' lg:flex lg:min-h-[40rem] lg:flex-col lg:justify-center' : ''}`}
+      >
         <div className={beeld ? 'mx-auto max-w-6xl' : 'mx-auto max-w-4xl'}>
           <Link
             to="/klachten"
@@ -181,7 +183,7 @@ const KlachtCategorie = () => {
       {/* Overzicht in kolommen: per groep een beeld, een klein label en de
           klachten als regels eronder. Geen kaarten of vlakken; de cremekleur
           van de pagina loopt door. */}
-      <section className="pb-16 pt-12 md:pb-24 md:pt-20">
+      <section className="pb-16 pt-14 md:pb-24 md:pt-24">
         <div className="container mx-auto px-6">
           {/* Kop van dit blok. Zegt bewust iets anders dan de intro bovenaan
               de pagina: die vertelt wat er te vinden is, deze vertelt wat er
