@@ -35,7 +35,7 @@ const Ebook = () => {
         description="Download het gratis e-book van Danique Kwakman met 5 hormoonvriendelijke ontbijtrecepten voor een energieke start van je dag."
         canonicalUrl="/e-book"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section - Glow Up Style */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">

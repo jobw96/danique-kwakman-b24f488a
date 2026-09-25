@@ -33,7 +33,7 @@ const EbookMealprepSnacks = () => {
         description="Download gratis het e-book met 6 mealprep snacks perfect voor onderweg. Stabiele energie, ondersteuning voor je hormonen en darmen, makkelijk vooraf te maken."
         canonicalUrl="/e-book-mealprep-snacks"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="mb-20">

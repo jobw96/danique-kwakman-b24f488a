@@ -24,7 +24,7 @@ const KlachtCategorie = () => {
 
   return (
     <>
-      <Section className="pt-4 pb-10 md:pb-14">
+      <Section className="pt-12 md:pt-20 pb-10 md:pb-14">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
             <Link

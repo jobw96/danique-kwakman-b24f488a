@@ -33,7 +33,7 @@ const Nieuwsbrief = () => {
         description="Schrijf je in voor de wekelijkse nieuwsbrief van Danique Kwakman en ontvang exclusieve inspiratie, tips en inzichten voor hormoonbalans, darmgezondheid en energie."
       />
       <div className="min-h-screen">
-        <Section className="pt-4 bg-background">
+        <Section className="pt-12 md:pt-20 bg-background">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
               {/* Left: Form */}

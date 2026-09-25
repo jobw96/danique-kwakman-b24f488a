@@ -20,7 +20,7 @@ const Bloedsuikertraject = () => {
         description="In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam. 1:1 Bloedsuikertraject met glucosesensor door Danique Kwakman."
         canonicalUrl="/bloedsuikertraject"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">

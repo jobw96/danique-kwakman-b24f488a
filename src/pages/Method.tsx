@@ -69,7 +69,7 @@ const Method = () => {
         canonicalUrl="/method"
       />
       {/* Hero Section */}
-      <Section className="bg-[#FCF9F2] pt-4">
+      <Section className="bg-[#FCF9F2] pt-12 md:pt-20">
         <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-20">
             <SectionTag text="Mijn Methode" />

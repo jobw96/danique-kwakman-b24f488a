@@ -35,7 +35,7 @@ const EbookWeekmenu = () => {
         description="Download gratis het hormoonproof en darmvriendelijk weekmenu. Een overzichtelijke, voedende basis waarmee je jouw hormonen en darmen stap voor stap ondersteunt."
         canonicalUrl="/e-book-weekmenu"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="mb-20">

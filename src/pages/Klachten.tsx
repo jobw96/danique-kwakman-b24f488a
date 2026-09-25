@@ -21,13 +21,15 @@ const Klachten = () => {
 
   return (
     <>
-      <Section className="pt-4 pb-16 md:pb-24">
-        <div className="mx-auto max-w-4xl text-center">
+      <Section className="pt-12 pb-16 md:pt-20 md:pb-24">
+        <div className="mx-auto max-w-4xl">
           <FadeIn>
-            <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="mb-8 text-center font-serif text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
               Klachten waarmee ik je kan helpen
             </h1>
-            <div className="mx-auto max-w-3xl space-y-4 leading-relaxed text-muted-foreground">
+            {/* Alinea's links uitgelijnd en op leesbreedte: gecentreerd op
+                896px liep een regel richting de 110 tekens. */}
+            <div className="mx-auto max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
               <p>
                 Je weet dat er iets niet lekker gaat, maar je krijgt niet goed boven tafel waar het vandaan komt.
               </p>
@@ -50,20 +52,23 @@ const Klachten = () => {
               <FadeIn key={category.name} delay={index * 0.08} className="h-full">
                 <Link
                   to={`/klachten/onderdeel/${category.slug}`}
-                  className="group flex h-full flex-col rounded-md border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 md:p-8"
+                  className="group flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 shadow-xs transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
                 >
                   <span className="mb-5 font-serif text-2xl leading-none text-secondary/70 tabular-nums">
                     {category.number}
                   </span>
-                  <h2 className="mb-4 font-serif text-2xl text-foreground md:text-3xl">
-                    {category.name}
+                  {/* Pijl naast de titel in plaats van onderaan: bij een korte
+                      omschrijving bleef daar anders een groot gat over. */}
+                  <h2 className="mb-4 flex items-start gap-3 font-serif text-2xl text-foreground transition-colors group-hover:text-primary-dark md:text-3xl">
+                    <span className="min-w-0 flex-1">{category.name}</span>
+                    <ArrowRight
+                      className="mt-1.5 h-5 w-5 shrink-0 text-primary/60 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
+                      aria-hidden="true"
+                    />
                   </h2>
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     {categoryDescriptions[category.slug] ?? category.description}
                   </p>
-                  <span className="mt-auto flex items-center justify-end pt-8 text-primary" aria-hidden="true">
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </span>
                 </Link>
               </FadeIn>
             ))}

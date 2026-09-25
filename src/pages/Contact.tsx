@@ -31,7 +31,7 @@ const Contact = () => {
           src/routes/_layout/contact.tsx, zodat ze in de server-response
           staan in plaats van pas na hydratie. */}
       {/* Main Content Section */}
-      <Section className="pt-4">
+      <Section className="pt-12 md:pt-20">
         <div className="max-w-6xl mx-auto">
           <FadeIn>
             <SectionTag text="Contact" />

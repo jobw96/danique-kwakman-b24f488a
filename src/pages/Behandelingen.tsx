@@ -89,7 +89,7 @@ const Behandelingen = () => {
         description="Bekijk de 1:1 trajecten van Danique Kwakman: Bloedsuiker-, Hormoon- en Darmtraject voor stabiele energie, hormoonbalans en darmherstel."
         canonicalUrl="/behandelingen"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="text-center mb-16">
           <FadeIn>
           <SectionTag text="Trajecten" />

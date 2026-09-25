@@ -63,7 +63,7 @@ const ReceptDetail = () => {
           src/routes/_layout/recepten/$slug.tsx, zodat ze in de
           server-response staan in plaats van pas na hydratie. */}
 
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-3xl mx-auto">
           <FadeIn>
             <Link

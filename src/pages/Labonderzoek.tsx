@@ -120,7 +120,7 @@ const Labonderzoek = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Section className="pt-4">
+      <Section className="pt-12 md:pt-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-20 flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
             <FadeIn className="lg:w-1/2">

@@ -129,7 +129,7 @@ export const faqs = [
 const Webshop = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* 1. Header */}
           <div className="text-center mb-14 md:mb-20">

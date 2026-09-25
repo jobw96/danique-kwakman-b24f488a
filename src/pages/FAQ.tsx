@@ -62,7 +62,7 @@ const FAQ = () => {
     <div className="min-h-screen pb-20">
       {/* Het FAQPage-schema staat in src/routes/_layout/faq.tsx, zodat het in
           de server-response staat in plaats van pas na hydratie. */}
-      <Section className="pt-4">
+      <Section className="pt-12 md:pt-20">
         <div className="text-center mb-16">
           <FadeIn>
             <SectionTag text="Veelgestelde vragen" />

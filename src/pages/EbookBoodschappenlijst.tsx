@@ -34,7 +34,7 @@ const EbookBoodschappenlijst = () => {
         description="Download gratis de boodschappenlijst vol hormoonproof en darmvriendelijke basics. Vul je keuken met producten die je hormonen en darmen ondersteunen."
         canonicalUrl="/e-book-boodschappenlijst"
       />
-      <Section className="pt-4 bg-background">
+      <Section className="pt-12 md:pt-20 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">

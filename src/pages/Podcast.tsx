@@ -19,7 +19,7 @@ const Podcast = () => {
         description="Luister naar de podcast van Danique Kwakman over hormoonbalans, darmgezondheid, voeding en leefstijl voor vrouwen."
         canonicalUrl="/podcast"
       />
-      <Section className="bg-background pt-4">
+      <Section className="bg-background pt-12 md:pt-20">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn>
             <SectionTag text="Nu te beluisteren" />

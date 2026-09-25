@@ -37,7 +37,7 @@ const RecipeCard = ({ recipe }: { recipe: Recipe }) => (
 
 const Recepten = () => (
   <div className="min-h-screen">
-    <Section className="pt-4 bg-background">
+    <Section className="pt-12 md:pt-20 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <FadeIn>
