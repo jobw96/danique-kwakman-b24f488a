@@ -5,6 +5,8 @@ import { CustomButton } from '@/components/CustomButton';
 import { Section } from '@/components/Section';
 import { complaintsByCategory } from '@/data/complaints';
 import { Link } from '@/lib/router-compat';
+import kustWaterOverZand from '@/assets/sfeer/kust-water-over-zand-16x9.webp';
+import kruidentheeRaam from '@/assets/sfeer/kruidenthee-raam-3x4.webp';
 
 const categoryDescriptions: Record<string, string> = {
   'hormonen-en-cyclus':
@@ -21,15 +23,29 @@ const Klachten = () => {
 
   return (
     <>
-      <Section className="pt-12 pb-16 md:pt-20 md:pb-24">
-        <div className="mx-auto max-w-4xl">
-          <FadeIn>
-            <h1 className="mb-8 text-center font-serif text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
-              Klachten waarmee ik je kan helpen
-            </h1>
-            {/* Alinea's links uitgelijnd en op leesbreedte: gecentreerd op
-                896px liep een regel richting de 110 tekens. */}
-            <div className="mx-auto max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
+      {/* Volledige breedte foto achter de hero. De titel staat direct op het
+          beeld (gemeten ruim 10:1), de lopende tekst op een dekkend paneel:
+          bodytekst rechtstreeks op een foto zakt altijd onder het niveau dat
+          de site elders haalt, hoe zwaar de sluier ook is. */}
+      <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24">
+        <img
+          src={kustWaterOverZand}
+          alt=""
+          aria-hidden="true"
+          width={1600}
+          height={905}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/40" aria-hidden="true" />
+        <div className="container relative mx-auto px-6">
+          <div className="mx-auto max-w-4xl">
+            <FadeIn>
+              <h1 className="mb-8 text-center font-serif text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
+                Klachten waarmee ik je kan helpen
+              </h1>
+              {/* Alinea's links uitgelijnd en op leesbreedte: gecentreerd op
+                  896px liep een regel richting de 110 tekens. */}
+              <div className="mx-auto max-w-2xl space-y-4 rounded-3xl bg-background p-7 leading-relaxed text-muted-foreground shadow-xs md:p-9">
               <p>
                 Je weet dat er iets niet lekker gaat, maar je krijgt niet goed boven tafel waar het vandaan komt.
               </p>
@@ -39,11 +55,12 @@ const Klachten = () => {
               <p>
                 Ik kijk niet alleen naar de klacht waarmee je bij mij komt. Ik wil weten wat er nog meer speelt. Hoe ziet je voeding eruit? Hoeveel energie krijg je binnen? Hoe is je slaap, stress en herstel? Wat gebeurt er rondom je cyclus, darmen, bloedsuiker, huid of energie?
               </p>
-              <p>Juist die combinatie geeft belangrijke informatie over wat er speelt.</p>
-            </div>
-          </FadeIn>
+                <p>Juist die combinatie geeft belangrijke informatie over wat er speelt.</p>
+              </div>
+            </FadeIn>
+          </div>
         </div>
-      </Section>
+      </section>
 
       <Section className="bg-card py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
@@ -77,7 +94,10 @@ const Klachten = () => {
       </Section>
 
       <Section className="py-16 md:py-24">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[1fr_minmax(0,22rem)] lg:gap-16">
+          {/* Foto naast de afsluitende tekst in plaats van eronder: geeft de
+              pagina een tweede beeldmoment zonder dat er tekst op komt. */}
+          <div className="max-w-3xl lg:order-1">
           <FadeIn>
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Herken je jezelf in meerdere klachten?
@@ -106,6 +126,21 @@ const Klachten = () => {
             </div>
             <div className="mt-8">
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
+            </div>
+          </FadeIn>
+          </div>
+
+          <FadeIn delay={0.12} className="lg:order-2 lg:sticky lg:top-28">
+            <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl">
+              <img
+                src={kruidentheeRaam}
+                alt="Verse kruiden en een kop thee op tafel in het middaglicht"
+                width={1195}
+                height={1600}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
             </div>
           </FadeIn>
         </div>
