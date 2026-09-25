@@ -81,7 +81,7 @@ export const InstagramFeed: React.FC = () => (
   <Section className="py-20 md:py-28">
     <div className="text-center mb-12">
       <FadeIn>
-        <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Instagram</div>
+        <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">Instagram</div>
         <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Volg me op Instagram</h2>
       </FadeIn>
     </div>

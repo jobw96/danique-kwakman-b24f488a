@@ -59,7 +59,7 @@ const HORMOON_TESTIMONIALS = [
 
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
 );
 
 interface HormoontrajectProps {
@@ -121,7 +121,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
 
           {/* Wat kun je verwachten */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wat kun je verwachten?</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed mb-8">
                 <p>
@@ -200,7 +200,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
 
           {/* Wanneer dit traject niet passend is */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wanneer dit traject niet passend is</h2>
               <p className="text-muted-foreground mb-6">Dit traject is niet voor jou wanneer:</p>
               <ul className="space-y-3">
@@ -254,7 +254,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
                   desc: "Voor extra begeleiding tussen de consulten door. Precies wanneer je het nodig hebt."
                 }
               ].map((item, i) => (
-                <FadeIn key={i} delay={i * 0.1} className="bg-white p-8 rounded-2xl shadow-xs border border-secondary/30">
+                <FadeIn key={i} delay={i * 0.1} className="bg-white p-8 rounded-2xl border border-secondary/30">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 min-w-12 min-h-12 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center">
                       <item.icon size={20} className="text-[#6B7B8A]" />
@@ -268,7 +268,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
                 </FadeIn>
               ))}
             </div>
-            <FadeIn delay={0.4} className="mt-6 bg-white p-6 rounded-2xl shadow-xs border border-secondary/30">
+            <FadeIn delay={0.4} className="mt-6 bg-white p-6 rounded-2xl border border-secondary/30">
               <h4 className="font-medium text-foreground mb-3">Exclusief</h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
                 <li>– eventuele aanvullende onderzoeken</li>
@@ -279,7 +279,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
 
           {/* Wat zit erbij? */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Wat zit erbij?</h2>
               <div className="space-y-5">
                 {[
@@ -343,7 +343,7 @@ const Hormoontraject = ({ seoTitle, seoDescription }: HormoontrajectProps = {}) 
 
           {/* Investering */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20 text-center">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20 text-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
               <p className="text-5xl md:text-6xl font-serif text-primary mb-8">€249<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>

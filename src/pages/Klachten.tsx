@@ -73,7 +73,7 @@ const Klachten = () => {
               <FadeIn key={category.name} delay={index * 0.08} className="h-full">
                 <Link
                   to={`/klachten/onderdeel/${category.slug}`}
-                  className="group flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 shadow-xs transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
+                  className="group flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
                 >
                   <span className="mb-5 font-serif text-2xl leading-none text-secondary/70 tabular-nums">
                     {category.number}

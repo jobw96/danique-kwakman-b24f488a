@@ -29,7 +29,7 @@ const PRICE = PRICE_DISPLAY;
 const PANEL = 'rounded-2xl bg-card shadow-[0_12px_32px_-16px_rgba(148,120,88,0.25)]';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
     {text}
   </div>
 );
@@ -280,10 +280,9 @@ const Webshop = () => {
                   <FadeIn key={t.href} delay={index * 0.2} className="h-full">
                     <Link to={t.href} className="h-full block">
                       <m.div
-                        className="bg-card rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer"
+                        className="bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col cursor-pointer"
                         whileHover={{
                           y: -8,
-                          boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                           borderColor: "hsl(var(--primary) / 0.3)",
                         }}
                         transition={{ type: 'spring', stiffness: 300, damping: 25 }}

@@ -214,7 +214,7 @@ const Labonderzoek = () => {
 
       <Section className="py-16 md:py-20">
         <FadeIn>
-          <div className="mx-auto max-w-3xl bg-card rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 text-center">
+          <div className="mx-auto max-w-3xl bg-card rounded-3xl p-8 md:p-12 border border-secondary/30 text-center">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
               Wil je meer duidelijkheid over jouw klachten?
             </h2>

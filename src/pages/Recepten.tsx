@@ -6,14 +6,14 @@ import { ChefHat } from 'lucide-react';
 import { recipes, type Recipe } from '@/data/recipes';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
 );
 
 const RecipeCard = ({ recipe }: { recipe: Recipe }) => (
   <FadeIn className="h-full">
     <Link
       to={`/recepten/${recipe.slug}`}
-      className="bg-white rounded-2xl overflow-hidden shadow-xs border border-secondary/30 h-full flex flex-col cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:border-primary/30"
+      className="bg-white rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:border-primary/30"
     >
       <div className="h-56 overflow-hidden">
         <img

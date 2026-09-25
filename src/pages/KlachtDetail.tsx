@@ -17,7 +17,7 @@ import daniqueWalking from '@/assets/danique-walking.webp';
 
 /** Zelfde pill als op de traject- en contactpagina's. */
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
     {text}
   </div>
 );
@@ -175,7 +175,7 @@ const KlachtDetail = () => {
     <Section className="py-14 md:py-20">
       <div className="mx-auto max-w-3xl">
         <FadeIn>
-          <div className="rounded-3xl border border-secondary/30 bg-card p-8 text-center shadow-xs md:p-12">
+          <div className="rounded-3xl border border-secondary/30 bg-card p-8 text-center md:p-12">
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Wil je weten wat er bij jou speelt?
             </h2>
@@ -223,7 +223,7 @@ const KlachtDetail = () => {
               <Link
                 key={item.slug}
                 to={`/klachten/${item.slug}`}
-                className="group flex items-center justify-between gap-3 rounded-2xl border border-secondary/30 bg-card px-5 py-4 shadow-xs transition-colors hover:border-primary/40 hover:bg-secondary/10"
+                className="group flex items-center justify-between gap-3 rounded-2xl border border-secondary/30 bg-card px-5 py-4 transition-colors hover:border-primary/40 hover:bg-secondary/10"
               >
                 <span className="font-serif text-lg text-foreground">{item.title}</span>
                 <ArrowRight
@@ -301,7 +301,7 @@ const KlachtDetail = () => {
 
         <Section className="bg-card py-14 md:py-20">
           <FadeIn className="mx-auto max-w-5xl">
-            <div className="rounded-3xl border border-secondary/30 bg-background p-8 shadow-xs md:p-12">
+            <div className="rounded-3xl border border-secondary/30 bg-background p-8 md:p-12">
               <h2 className="mb-8 font-serif text-3xl text-foreground md:text-4xl">
                 {content.recognitionHeading ??
                   'Misschien herken je één of meerdere van deze signalen'}
@@ -337,7 +337,7 @@ const KlachtDetail = () => {
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               {content.factors.map((factor) => (
                 <FadeIn key={factor.title} className="h-full">
-                  <article className="h-full rounded-2xl border border-secondary/30 bg-background p-6 shadow-xs md:p-7">
+                  <article className="h-full rounded-2xl border border-secondary/30 bg-background p-6 md:p-7">
                     <h3 className="mb-3 font-serif text-xl text-foreground md:text-2xl">
                       {factor.title}
                     </h3>
@@ -352,7 +352,7 @@ const KlachtDetail = () => {
         <Section className="py-14 md:py-20">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
             <FadeIn className="h-full">
-              <div className="h-full rounded-3xl border border-secondary/30 bg-card p-8 shadow-xs md:p-10">
+              <div className="h-full rounded-3xl border border-secondary/30 bg-card p-8 md:p-10">
                 <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
                   {content.widerHeading}
                 </h2>
@@ -361,7 +361,7 @@ const KlachtDetail = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.05} className="h-full">
-              <div className="h-full rounded-3xl border border-secondary/30 bg-card p-8 shadow-xs md:p-10">
+              <div className="h-full rounded-3xl border border-secondary/30 bg-card p-8 md:p-10">
               <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">Waar we samen naar kijken</h2>
               <p className="mb-5 leading-relaxed text-muted-foreground">{content.togetherIntro}</p>
               <BulletList items={content.together} />
@@ -448,7 +448,7 @@ const KlachtDetail = () => {
       <Section className="bg-card py-14 md:py-20">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
           <FadeIn className="h-full">
-            <div className="h-full rounded-3xl border border-secondary/30 bg-background p-8 shadow-xs md:p-10">
+            <div className="h-full rounded-3xl border border-secondary/30 bg-background p-8 md:p-10">
               <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
                 Hoe je het kunt herkennen
               </h2>
@@ -457,7 +457,7 @@ const KlachtDetail = () => {
           </FadeIn>
 
           <FadeIn delay={0.05} className="h-full">
-            <div className="h-full rounded-3xl border border-secondary/30 bg-background p-8 shadow-xs md:p-10">
+            <div className="h-full rounded-3xl border border-secondary/30 bg-background p-8 md:p-10">
               <h2 className="mb-5 font-serif text-2xl text-foreground md:text-3xl">
                 Waar we samen naar kijken
               </h2>

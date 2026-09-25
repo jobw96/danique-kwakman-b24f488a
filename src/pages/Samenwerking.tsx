@@ -14,7 +14,7 @@ const Samenwerking = () => {
           {/* Hero */}
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">Samenwerkingen</div>
+              <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">Samenwerkingen</div>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
                 Samenwerkingen
               </h1>
@@ -34,7 +34,7 @@ const Samenwerking = () => {
 
           {/* Partner card */}
           <FadeIn>
-            <div className="bg-white rounded-3xl border border-secondary/30 shadow-xs overflow-hidden mb-12">
+            <div className="bg-white rounded-3xl border border-secondary/30 overflow-hidden mb-12">
               <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-2/5 bg-secondary/30 border-b lg:border-b-0 lg:border-r border-secondary/40 flex flex-col items-center justify-center p-10 md:p-14 min-h-[260px]">
                   <div className="w-20 h-20 rounded-full bg-white border border-secondary/50 flex items-center justify-center text-primary mb-5">
@@ -75,7 +75,7 @@ const Samenwerking = () => {
 
           {/* Podcast */}
           <FadeIn>
-            <div className="bg-white rounded-3xl border border-secondary/30 shadow-xs p-8 md:p-12 mb-12">
+            <div className="bg-white rounded-3xl border border-secondary/30 p-8 md:p-12 mb-12">
               <div className="flex flex-col lg:flex-row gap-10 items-center">
                 <div className="w-16 h-16 min-w-16 rounded-full bg-secondary/30 border border-secondary/50 flex items-center justify-center text-primary shrink-0">
                   <Mic size={26} strokeWidth={1.5} aria-hidden="true" />

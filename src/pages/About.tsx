@@ -11,7 +11,7 @@ import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueWalking from '@/assets/danique-walking.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
 );
 
 const SAMENHANG_ITEMS = [
@@ -84,7 +84,7 @@ const About = () => {
 
           {/* Leer er maar mee leven */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
                   <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">“Leer er maar mee leven.”</h2>
@@ -163,7 +163,7 @@ const About = () => {
 
           {/* Niet zomaar iets proberen */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Niet zomaar iets proberen, maar begrijpen wat er speelt</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                 <p>
@@ -200,7 +200,7 @@ const About = () => {
 
           {/* Jouw klachten staan niet op zichzelf */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Jouw klachten staan niet op zichzelf</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -224,7 +224,7 @@ const About = () => {
 
           {/* CIRCLE-methode */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-2/3">
                     <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Mijn CIRCLE-methode</h2>
@@ -257,7 +257,7 @@ const About = () => {
 
           {/* Waar ik in geloof */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Waar ik in geloof</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -281,7 +281,7 @@ const About = () => {
 
           {/* Van mijn eigen zoektocht naar mijn eigen praktijk in Hoorn */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Van mijn eigen zoektocht naar mijn eigen praktijk in Hoorn</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -305,7 +305,7 @@ const About = () => {
 
           {/* Wat ik jou gun */}
           <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xs border border-secondary/30 mb-20">
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Wat ik jou gun</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Het is mijn wens dat jij je weer goed voelt in je eigen lichaam.
@@ -337,7 +337,7 @@ const About = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {OPLEIDINGEN.map((item, i) => (
-                <FadeIn key={i} delay={i * 0.05} className="bg-white p-6 rounded-xl border border-secondary/30 shadow-xs hover:border-primary/50 transition-colors group">
+                <FadeIn key={i} delay={i * 0.05} className="bg-white p-6 rounded-xl border border-secondary/30 hover:border-primary/50 transition-colors group">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 min-w-12 min-h-12 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <GraduationCap size={20} className="text-[#6B7B8A]" />

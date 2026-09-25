@@ -8,7 +8,7 @@ const SPOTIFY_SHOW_URL = 'https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?s
 const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed-podcast/show/21JMWSXjs1SziLcNNNFHZf?utm_source=generator';
 
 const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium shadow-xs tracking-wide">{text}</div>
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
 );
 
 const Podcast = () => {
