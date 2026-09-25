@@ -271,7 +271,7 @@ const Bloedsuikertraject = () => {
                   />
                   <figcaption className="flex flex-col justify-end p-6">
                     <span className="text-xs uppercase tracking-[0.12em] text-primary-dark">Inzicht 02</span>
-                    <h3 className="mt-3 text-2xl text-foreground">Waar komen die cravings vandaan?</h3>
+                    <h3 className="mt-3 text-2xl text-foreground">Waar komen mijn klachten vandaan?</h3>
                     <p className="mt-3 text-sm leading-relaxed">Een dip kan zorgen voor zoete trek, onrust of minder focus. Met de meting testen we gericht wat voor jou werkt en zie je direct hoe jouw lichaam reageert.</p>
                   </figcaption>
                 </figure>
