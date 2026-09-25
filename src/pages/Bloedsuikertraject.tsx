@@ -153,7 +153,7 @@ const Bloedsuikertraject = () => {
             <FadeIn immediate>
               <SectionLabel>1:1 traject · 14 dagen</SectionLabel>
               <h1 className="max-w-3xl text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
-                Je eet gezond, slaapt genoeg en toch schommelt je energie alle kanten op en denk je de hele dag aan eten.
+                1:1 bloedsuikertraject
               </h1>
               <p className="mt-6 max-w-xl text-xl leading-relaxed text-primary-dark">
                 Je eet gezond, slaapt genoeg en toch schommelt je energie alle kanten op en denk je de hele dag aan eten.
