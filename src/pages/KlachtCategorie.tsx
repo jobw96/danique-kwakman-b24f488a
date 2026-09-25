@@ -23,7 +23,7 @@ const KlachtCategorie = () => {
   if (!category || !categoryWithItems) return <Navigate to="/klachten" replace />;
 
   return (
-    <main className="min-h-screen bg-background">
+    <>
       <Section className="pt-4 pb-10 md:pb-14">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
@@ -74,7 +74,7 @@ const KlachtCategorie = () => {
           ))}
         </ul>
       </Section>
-    </main>
+    </>
   );
 };
 

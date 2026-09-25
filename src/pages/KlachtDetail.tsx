@@ -219,7 +219,7 @@ const KlachtDetail = () => {
 
   if (content) {
     return (
-      <main className="min-h-screen bg-background">
+      <>
         <Section className="pt-4 pb-14 md:pb-20">
           <div className="mx-auto max-w-3xl">
             <FadeIn>
@@ -333,12 +333,12 @@ const KlachtDetail = () => {
 
         {othersBlock}
         {disclaimerBlock}
-      </main>
+      </>
     );
   }
 
   return (
-    <main className="min-h-screen bg-background">
+    <>
       <Section className="pt-4 pb-14 md:pb-20">
         <div className="mx-auto max-w-3xl">
           <FadeIn>
@@ -383,7 +383,7 @@ const KlachtDetail = () => {
       {ctaBlock}
       {othersBlock}
       {disclaimerBlock}
-    </main>
+    </>
   );
 };
 

@@ -20,7 +20,7 @@ const Klachten = () => {
   const { openModal } = useBookingModal();
 
   return (
-    <main className="min-h-screen bg-background">
+    <>
       <Section className="pt-4 pb-16 md:pb-24">
         <div className="mx-auto max-w-4xl text-center">
           <FadeIn>
@@ -105,7 +105,7 @@ const Klachten = () => {
           </FadeIn>
         </div>
       </Section>
-    </main>
+    </>
   );
 };
 
