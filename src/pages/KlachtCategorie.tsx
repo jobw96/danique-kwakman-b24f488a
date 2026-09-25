@@ -186,11 +186,13 @@ const KlachtCategorie = () => {
           {/* Kop van dit blok. Zegt bewust iets anders dan de intro bovenaan
               de pagina: die vertelt wat er te vinden is, deze vertelt wat er
               achter een klacht zit als je erop klikt. */}
-          <FadeIn className="mx-auto mb-12 max-w-6xl md:mb-16">
+          <FadeIn className="mx-auto mb-12 max-w-6xl text-center md:mb-16">
             <h2 className="mb-4 font-serif text-3xl text-foreground md:text-4xl">
               Waar herken je jezelf in?
             </h2>
-            <p className="max-w-2xl leading-relaxed text-muted-foreground">
+            {/* mx-auto naast max-w-2xl: zonder dat blijft de alinea links
+                staan terwijl de regels zelf gecentreerd zijn. */}
+            <p className="mx-auto max-w-2xl leading-relaxed text-muted-foreground">
               Per klacht lees je hoe je hem herkent, wat eronder kan liggen en hoe ik je daarin begeleid.
             </p>
           </FadeIn>
