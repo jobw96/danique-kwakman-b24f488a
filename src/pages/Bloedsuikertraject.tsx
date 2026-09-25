@@ -89,7 +89,7 @@ const included = [
   {
     title: 'Persoonlijke analyse en persoonlijk plan',
     description:
-      'Je krijgt geen algemeen advies over wat je wel en niet zou moeten eten. We kijken naar jouw eigen glucosegegevens en leggen verbanden met wat je eet, hoe je beweegt, slaapt en leeft. Zo krijg je inzicht in de patronen die bij jou spelen. Daarna vertalen we dat naar praktische handvatten die aansluiten bij jouw resultaten. Geen nieuw voedingsschema vol regels, maar een plan waarmee je weet wat voor jou werkt en waar je ook na het traject zelf mee verder kunt.',
+      'We kijken naar jouw glucosegegevens en leggen verbanden met wat je eet, hoe je beweegt, slaapt en leeft. Zo krijg je inzicht in de patronen die bij jou spelen. Daarna vertalen we dat naar praktische handvatten die aansluiten bij jouw resultaten. Geen nieuw voedingsschema vol regels, maar een plan waarmee je weet wat voor jou werkt.',
   },
   {
     title: 'Check-in na één week',
@@ -375,7 +375,7 @@ const Bloedsuikertraject = () => {
             <FadeIn>
               <div className="lg:sticky lg:top-28">
                 <SectionLabel>Alles wat je nodig hebt</SectionLabel>
-                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Dit zit bij het traject</h2>
+                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Wat is inbegrepen?</h2>
                 <figure className="mt-8 overflow-hidden rounded-md bg-background">
                   <img
                     src={sensorBoxAsset.url}
