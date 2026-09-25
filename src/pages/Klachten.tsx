@@ -68,6 +68,13 @@ const Golf = () => (
   </m.svg>
 );
 
+/** Zelfde pill als op de traject-, contact- en klachtdetailpagina's. */
+const SectionTag = ({ text }: { text: string }) => (
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
+    {text}
+  </div>
+);
+
 const Klachten = () => {
   const { openModal } = useBookingModal();
 
@@ -79,7 +86,7 @@ const Klachten = () => {
           valt de foto onder de tekst, zodat de kop meteen in beeld staat.
           flex-col-reverse draait de volgorde om zonder de DOM-volgorde aan te
           raken; op xl wordt het een grid en telt die richting niet meer mee. */}
-      <section className="flex flex-col-reverse bg-card xl:grid xl:grid-cols-[60vw_1fr]">
+      <section className="flex flex-col-reverse bg-background xl:grid xl:grid-cols-[60vw_1fr]">
         {/* Onder xl staat de foto onderaan de sectie en loopt hij tegen de
             linker-, rechter- en onderrand aan, dus is alleen de bovenkant
             afgerond. Op xl vult hij de linkerkolom van boven tot onder en
@@ -99,6 +106,7 @@ const Klachten = () => {
         <div className="flex items-center px-6 py-14 md:py-20 xl:px-10 2xl:px-14">
           <div className="mx-auto w-full max-w-2xl xl:mx-0">
             <FadeIn>
+              <SectionTag text="Klachten" />
               <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
                 Klachten waarmee ik je kan helpen
               </h1>
@@ -119,7 +127,7 @@ const Klachten = () => {
         </div>
       </section>
 
-      <Section className="bg-card py-16 md:py-24">
+      <Section className="bg-background py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
           {/* Intro links uitgelijnd op dezelfde rand als de eerste tegel.
               max-w-2xl houdt de regel op ~75 tekens; het raster eronder mag
@@ -155,7 +163,7 @@ const Klachten = () => {
               <FadeIn key={category.name} delay={index * 0.08} className="h-full">
                 <Link
                   to={`/klachten/onderdeel/${category.slug}`}
-                  className="group relative flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
+                  className="group relative flex h-full flex-col rounded-3xl border border-secondary/30 bg-card p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
                 >
                   <span className="mb-5 font-serif text-2xl leading-none text-secondary/70 tabular-nums">
                     {category.number}
@@ -205,7 +213,7 @@ const Klachten = () => {
           viewBox="0 0 1440 60"
           preserveAspectRatio="none"
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-[34px] w-full fill-card md:h-[56px]"
+          className="absolute inset-x-0 top-0 h-[34px] w-full fill-background md:h-[56px]"
         >
           <path d="M0 0h1440v24c-180 36-360 42-540 22S540 6 360 20C240 30 120 44 0 38V0Z" />
         </svg>
