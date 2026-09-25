@@ -162,10 +162,10 @@ const Bloedsuikertraject = () => {
                 <p>
                   ’s Avonds trek je na het eten toch nog een pak koek open, omdat je alweer trek hebt terwijl je net gegeten hebt. En na 8 uur slapen word je nog steeds niet fit wakker.
                   <br /><br />
-                  Je weet inmiddels echt wel wat gezond eten is en je snapt dat eiwitten belangrijk zijn. Maar ondanks alles wat je doet, kak je bijna iedere middag in, heb je regelmatig cravings en lijken je hormonen maar niet in balans te komen.
+                  Je weet inmiddels echt wel wat gezond eten is en je snapt dat eiwitten belangrijk zijn. En toch kak je bijna iedere middag in, heb je regelmatig cravings en lijken je hormonen maar niet in balans te komen.
                 </p>
                 <p>
-                  Je kunt de gezondste maaltijd eten die je kunt bedenken, maar als je bloedsuikerspiegel daarna flink stijgt en weer daalt, kan dat grote invloed hebben op hoe je je voelt en op hoe snel je daarna weer trek krijgt.
+                  Je kunt de gezondste maaltijd eten, maar als je bloedsuikerspiegel daarna flink stijgt en weer daalt, heeft dat grote invloed op hoe je je voelt en op hoe snel je daarna weer trek krijgt.
                 </p>
               </div>
               <CustomButton onClick={openModal} className="mt-8">
