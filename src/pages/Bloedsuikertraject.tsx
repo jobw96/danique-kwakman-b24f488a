@@ -30,11 +30,11 @@ const symptoms = [
 ];
 
 const results = [
-  'Begrijp je hoe jouw lichaam reageert op voeding, beweging, stress en slaap',
-  'Weet je welke gewoontes samenhangen met energiepieken en energiedips',
-  'Heb je praktische aanpassingen die passen bij jouw dagelijks leven',
-  'Voel je je langer verzadigd na maaltijden',
-  'Heb je meer vertrouwen in de signalen en patronen die je lichaam laat zien',
+  'Je weet welke voedingsmiddelen bij jou voor een piek in je bloedsuikerspiegel zorgen',
+  'Je herkent wanneer je energiedips ontstaan en wat daar aan bijdraagt',
+  'Je ontdekt welke gewoontes bijdragen aan stabielere energie gedurende de dag',
+  'Je weet welke keuzes jou helpen om langer verzadigd te blijven en kunnen bijdragen aan een gezond gewicht',
+  'Je krijgt meer inzicht in de invloed van je bloedsuikerspiegel op je hormonale gezondheid en hebt praktische handvatten waar je zelf mee verder kunt',
 ];
 
 const processSteps = [
