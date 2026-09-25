@@ -496,7 +496,7 @@ const Bloedsuikertraject = () => {
               />
               <div className="p-8 md:p-12">
                 <SectionLabel>Investering</SectionLabel>
-                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\n\n"}Plan je gratis kennismaking in!{"\n"}</h2>
+                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
                 <p className="mt-5 text-sm leading-relaxed">Plan je gratis kennismakingsgesprek in</p>
                 <p className="mt-8 text-5xl text-primary-dark md:text-6xl">€325</p>
                 <p className="mt-2 text-sm">{"\n"}</p>
