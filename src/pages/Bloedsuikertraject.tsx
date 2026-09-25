@@ -174,7 +174,7 @@ const Bloedsuikertraject = () => {
                 </div>
                 <div className="border-x border-secondary/50 px-4">
                   <dt className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Contact</dt>
-                  <dd className="mt-1 text-foreground">3 momenten</dd>
+                  <dd className="mt-1 text-foreground">{"\n"}</dd>
                 </div>
                 <div className="pl-4">
                   <dt className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Investering</dt>
@@ -229,11 +229,11 @@ const Bloedsuikertraject = () => {
                 Maar je wilt niet meer gokken en hopen dat het werkt.
               </h2>
               <p className="mt-6 leading-relaxed">
-                Je wilt zwart-op-wit zien hoe jouw lichaam reageert. We daarom niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.
+                Je wilt zwart-op-wit zien hoe jouw lichaam reageert. We kijken daarom niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.
                 <br /><br />
-                Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga na je maaltijd wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft het vooral gokken.
+                Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga na je maaltijd wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft je dus gokken.
                 <br /><br />
-                Daarom werken we in dit traject met een glucosesensor. 14 dagen lang krijg je 24/7 inzicht in wat er bij jou gebeurt. We zien live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
+                Daarom werken we in dit traject met de 14- daagse glucosesensor. 24/7 zien we live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
               </p>
             </FadeIn>
 
