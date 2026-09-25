@@ -321,23 +321,36 @@ const Bloedsuikertraject = () => {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-6xl">
-            <FadeIn className="max-w-2xl">
-              <SectionLabel>WAT KUN JE VERWACHTEN?</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">1:1 bloedsuikertraject</h2>
+          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <FadeIn>
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-t-full rounded-b-md bg-secondary/10 lg:max-w-none">
+                <img
+                  src={daniqueAbout}
+                  alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn"
+                  title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
+                  width="1280"
+                  height="1920"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
             </FadeIn>
-            <div className="mt-12 divide-y divide-secondary/50 border-y border-secondary/50">
-              {processSteps.map((step, index) => (
-                <FadeIn key={step.number} delay={index * 0.04}>
-                  <div className="grid gap-5 py-8 md:grid-cols-[4rem_3rem_0.75fr_1.25fr] md:items-start md:gap-8">
-                    <span className="text-sm text-primary-dark">{step.number}</span>
-                    <step.icon className="h-6 w-6 text-primary" aria-hidden="true" />
-                    <h3 className="text-2xl text-foreground">{step.title}</h3>
-                    <p className="leading-relaxed">{step.description}</p>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
+            <FadeIn delay={0.1}>
+              <SectionLabel>Hi, ik ben Danique</SectionLabel>
+              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
+                Van jarenlang zoeken naar begrijpen wat mijn lichaam nodig heeft
+              </h2>
+              <p className="mt-6 leading-relaxed">
+                Na 10+ jaar hormonale klachten kreeg ik de diagnose PCOS. Ik had last van onregelmatige cyclussen, vermoeidheid, acne en moodswings. De reguliere zorg hielp me aan de diagnose, maar ik miste de praktische handvatten om mijn klachten in het dagelijks leven te ondersteunen.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Die ervaring vormt nog steeds de basis van hoe ik werk. Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige combineer ik mijn ervaring uit de reguliere zorg met mijn kennis over voeding, leefstijl en het lichaam.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Ik weet hoe frustrerend het is als je voelt dat er meer speelt, maar niet weet waar je moet beginnen. Daar help ik je graag bij.
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
