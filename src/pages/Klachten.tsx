@@ -100,7 +100,9 @@ const Klachten = () => {
           van de pagina. */}
       <Section className="relative py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <div className="max-w-3xl lg:max-w-[55%]">
+          {/* max-w-2xl houdt de regel op ~75 tekens. Met max-w-3xl liep hij
+              onder de lg-breakpoint, waar de foto eronder valt, op tot 86. */}
+          <div className="max-w-2xl lg:max-w-[55%]">
           <FadeIn>
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Herken je jezelf in meerdere klachten?
@@ -133,7 +135,10 @@ const Klachten = () => {
           </FadeIn>
           </div>
 
-          <div className="mt-14 lg:absolute lg:right-0 lg:top-1/2 lg:mt-0 lg:w-[38vw] lg:max-w-[560px] lg:-translate-y-1/2">
+          {/* Onder lg past de foto niet naast een leesbare kolom. Hij valt dan
+              onder de tekst, maar rechts uitgelijnd en op halve breedte, zodat
+              het een bewuste tegenhanger blijft in plaats van een los blok. */}
+          <div className="mt-14 ml-auto max-w-sm sm:max-w-md lg:absolute lg:right-0 lg:top-1/2 lg:ml-0 lg:mt-0 lg:w-[38vw] lg:max-w-[560px] lg:-translate-y-1/2">
             <FadeIn delay={0.12}>
               <div className="aspect-[3/4] overflow-hidden rounded-[2rem] shadow-xl lg:rounded-r-none lg:rounded-l-[3rem]">
                 <img
