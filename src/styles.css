@@ -19,6 +19,7 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-secondary-dark: hsl(var(--secondary-dark));
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-accent: hsl(var(--accent));
@@ -107,6 +108,9 @@ body {
     --primary-foreground: 0 0% 100%; /* White text on primary */
     
     --secondary: 44 38% 76%; /* #D8CCAB - Secondary accent (subtle highlights) */
+    /* Zelfde tint, donker genoeg voor tekst: #D8CCAB haalt op de cremekleurige
+       achtergrond maar 1,5:1 en is als letter praktisch onleesbaar. */
+    --secondary-dark: 44 38% 36%; /* #7F6C39 - 4,86:1 op #FCF9F2 */
     --secondary-foreground: 0 0% 100%; /* White text on secondary */
     
     --muted: 42 56% 97%;
@@ -149,6 +153,7 @@ body {
     --primary-foreground: 0 0% 100%;
 
     --secondary: 44 38% 76%;
+    --secondary-dark: 44 38% 70%; /* op de donkere achtergrond moet hij juist lichter */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 20%;
