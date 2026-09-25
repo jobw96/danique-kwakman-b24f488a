@@ -30,11 +30,11 @@ const symptoms = [
 ];
 
 const results = [
-  'Begrijp je hoe jouw lichaam reageert op voeding, beweging, stress en slaap',
-  'Weet je welke gewoontes samenhangen met energiepieken en energiedips',
-  'Heb je praktische aanpassingen die passen bij jouw dagelijks leven',
-  'Voel je je langer verzadigd na maaltijden',
-  'Heb je meer vertrouwen in de signalen en patronen die je lichaam laat zien',
+  'Je weet welke voedingsmiddelen bij jou voor een piek in je bloedsuikerspiegel zorgen',
+  'Je herkent wanneer je energiedips ontstaan en wat daar aan bijdraagt',
+  'Je ontdekt welke gewoontes bijdragen aan stabielere energie gedurende de dag',
+  'Je weet welke keuzes jou helpen om langer verzadigd te blijven en kunnen bijdragen aan een gezond gewicht',
+  'Je krijgt meer inzicht in de invloed van je bloedsuikerspiegel op je hormonale gezondheid en hebt praktische handvatten waar je zelf mee verder kunt',
 ];
 
 const processSteps = [
@@ -306,9 +306,9 @@ const Bloedsuikertraject = () => {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/75">Na veertien dagen</p>
-              <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">Van losse signalen naar een persoonlijk plan</h2>
+              <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">Je begrijpt beter wat jouw lichaam je vertelt</h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
-                Hoe beter je jouw reactie op voeding en leefstijl begrijpt, hoe makkelijker het wordt om keuzes te maken die passen bij jouw energie, verzadiging en dagelijks ritme.
+                Je krijgt inzicht in welke voedingsmiddelen bij jou pieken veroorzaken, wanneer je energiedips ontstaan en welke gewoontes bijdragen aan stabielere energie gedurende de dag.
               </p>
               <div className="mt-8 text-primary-foreground/90">
                 <CheckList items={results} />
