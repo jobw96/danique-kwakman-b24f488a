@@ -188,7 +188,7 @@ const KlachtCategorie = () => {
           {/* Kop van dit blok. Zegt bewust iets anders dan de intro bovenaan
               de pagina: die vertelt wat er te vinden is, deze vertelt wat er
               achter een klacht zit als je erop klikt. */}
-          <FadeIn className="mx-auto mb-12 max-w-6xl text-center md:mb-16">
+          <FadeIn immediate className="mx-auto mb-12 max-w-6xl text-center md:mb-16">
             <h2 className="mb-4 font-serif text-3xl text-foreground md:text-4xl">
               Waar herken je jezelf in?
             </h2>
@@ -207,6 +207,7 @@ const KlachtCategorie = () => {
                   <FadeIn
                     key={groep.name || 'overig'}
                     delay={groepIndex * 0.08}
+                    immediate
                     className={KOLOM_TRAP[groepIndex % KOLOM_TRAP.length]}
                   >
                     {beeld ? (
@@ -256,7 +257,7 @@ const KlachtCategorie = () => {
             // kolommen in plaats van drie: zo'n categorie heeft maar een
             // handvol klachten en die zouden in drie kolommen als losse woorden
             // op een lege breedte staan.
-            <FadeIn>
+            <FadeIn immediate>
               <ul className="mx-auto grid max-w-3xl items-start gap-x-12 sm:grid-cols-2 lg:gap-x-16">
                 {categoryWithItems.items.map((complaint) => (
                   <KlachtRegel key={complaint.slug} complaint={complaint} gegroepeerd={false} />

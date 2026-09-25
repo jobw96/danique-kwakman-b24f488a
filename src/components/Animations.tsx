@@ -32,7 +32,14 @@ export const FadeIn: React.FC<{
   direction?: 'up' | 'down' | 'left' | 'right' | 'none';
   className?: string;
   fullWidth?: boolean;
-}> = ({ children, delay = 0, direction = 'up', className = '', fullWidth = false }) => {
+  /**
+   * Speelt de animatie meteen af in plaats van te wachten tot het element in
+   * beeld scrollt. Bedoeld voor blokken die bij het laden al zichtbaar zijn en
+   * samen met de hero moeten binnenkomen; whileInView wacht daar anders op een
+   * scrollbeweging die nooit komt.
+   */
+  immediate?: boolean;
+}> = ({ children, delay = 0, direction = 'up', className = '', fullWidth = false, immediate = false }) => {
   
   const variants = {
     hidden: { 
@@ -55,8 +62,9 @@ export const FadeIn: React.FC<{
   return (
     <m.div
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-10%" }}
+      {...(immediate
+        ? { animate: 'visible' }
+        : { whileInView: 'visible', viewport: { once: true, margin: '-10%' } })}
       variants={variants}
       className={`${className} ${fullWidth ? 'w-full' : ''}`}
     >
