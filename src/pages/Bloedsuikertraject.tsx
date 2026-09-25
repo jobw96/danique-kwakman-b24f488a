@@ -10,6 +10,7 @@ import sensorShowAsset from '@/assets/bloedsuiker/danique-toont-glucosesensor.we
 import sensorBoxAsset from '@/assets/bloedsuiker/freestyle-libre-sensor.webp.asset.json';
 import glucoseRangeAsset from '@/assets/bloedsuiker/glucosewaarde-in-bereik.webp.asset.json';
 import lowGlucoseAsset from '@/assets/bloedsuiker/lage-glucosewaarde.webp.asset.json';
+import daniqueAbout from '@/assets/danique-about.webp';
 
 const symptoms = [
   'Je kunt die reep chocola na het eten maar moeilijk uit je hoofd zetten.',
