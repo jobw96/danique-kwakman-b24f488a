@@ -496,12 +496,10 @@ const Bloedsuikertraject = () => {
               />
               <div className="p-8 md:p-12">
                 <SectionLabel>Investering</SectionLabel>
-                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Klaar om jouw patronen te begrijpen?</h2>
-                <p className="mt-5 leading-relaxed">
-                  Plan eerst een gratis kennismaking. Dan bespreken we waar je tegenaan loopt en of deze korte, intensieve meting past bij jouw hulpvraag.
-                </p>
+                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\n\n"}Plan je gratis kennismaking in!{"\n"}</h2>
+                <p className="mt-5 leading-relaxed">{"\n"}</p>
                 <p className="mt-8 text-5xl text-primary-dark md:text-6xl">€325</p>
-                <p className="mt-2 text-sm">Eenmalige investering voor het volledige traject</p>
+                <p className="mt-2 text-sm">{"\n"}</p>
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
                 </CustomButton>
