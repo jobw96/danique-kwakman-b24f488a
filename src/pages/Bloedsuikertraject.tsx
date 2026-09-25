@@ -87,9 +87,9 @@ const included = [
       'Voor we gaan meten, brengen we eerst jouw situatie in kaart. We kijken naar je voeding, leefstijl, slaap, stress, beweging, cyclus en de klachten die je ervaart. Zo weten we niet alleen wat je wilt onderzoeken, maar ook waar we tijdens de meting op letten.',
   },
   {
-    title: 'Persoonlijke analyse',
+    title: 'Persoonlijke analyse en persoonlijk plan',
     description:
-      'Je krijgt geen algemeen advies over wat je wel en niet zou moeten eten. We kijken naar jouw eigen glucosegegevens en leggen verbanden met wat je eet, hoe je beweegt, slaapt en leeft. Zo krijg je inzicht in de patronen die bij jou spelen.',
+      'Je krijgt geen algemeen advies over wat je wel en niet zou moeten eten. We kijken naar jouw eigen glucosegegevens en leggen verbanden met wat je eet, hoe je beweegt, slaapt en leeft. Zo krijg je inzicht in de patronen die bij jou spelen. Daarna vertalen we dat naar praktische handvatten die aansluiten bij jouw resultaten. Geen nieuw voedingsschema vol regels, maar een plan waarmee je weet wat voor jou werkt en waar je ook na het traject zelf mee verder kunt.',
   },
   {
     title: 'Check-in na één week',
@@ -100,11 +100,6 @@ const included = [
     title: 'Eindconsult na twee weken',
     description:
       'Na de tweede week vergelijken we de resultaten en zetten we de puntjes op de i. We kijken wat de aanpassingen hebben gedaan en welke keuzes je wilt blijven toepassen in je dagelijks leven.',
-  },
-  {
-    title: 'Een persoonlijk plan',
-    description:
-      'Je krijgt praktische handvatten die aansluiten bij jouw resultaten. Geen nieuw voedingsschema vol regels, maar een plan waarmee je weet wat voor jou werkt en waar je ook na het traject zelf mee verder kunt.',
   },
   {
     title: 'Persoonlijke WhatsApp-begeleiding',
