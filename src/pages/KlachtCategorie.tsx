@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { FadeIn } from '@/components/Animations';
 import { Section } from '@/components/Section';
 import { complaintsByCategory, complaintsInGroups, findComplaintCategory } from '@/data/complaints';
@@ -29,88 +29,42 @@ const categoryIntros: Record<string, string> = {
 };
 
 /**
- * Kleine merktekens naast een groepskop, in de primaire kleur. Elke groep
- * krijgt een ander teken, zodat de koppen onderling verschillen zonder dat er
- * een tweede kleur of vorm bij komt: het zijn alle drie ronde, open vormen,
- * in dezelfde familie als het ovaaltje in het logo.
+ * Een klacht als regel in een kolom. Geen kaart, geen rand: alleen de titel.
+ * De beschrijvende zin staat op de detailpagina.
  *
- * De viewBox heeft dezelfde verhouding als de weergave (36:20), dus er wordt
- * niets uitgerekt en de lijndikte blijft overal gelijk.
+ * De onderlijn is een apart laagje dat van breedte 0 naar 100% groeit, dus
+ * hij schuift vanaf links uit zonder dat er iets verspringt; een echte
+ * text-decoration of een border zou de regelhoogte veranderen. Het laagje zit
+ * om de tekst heen en niet om de link, want de link loopt over de volle
+ * kolombreedte terwijl de lijn alleen onder de woorden hoort.
+ *
+ * De kop is een h3 zodra er groepslabels boven staan, en anders een h2: dan is
+ * de regel zelf het eerste niveau onder de h1.
  */
-const merkKlassen = 'h-5 w-9 shrink-0';
-
-const Ovaal = () => (
-  <svg viewBox="0 0 36 20" fill="none" aria-hidden="true" className={merkKlassen}>
-    <ellipse
-      cx="18"
-      cy="10"
-      rx="14"
-      ry="5.8"
-      transform="rotate(-10 18 10)"
-      className="stroke-primary"
-      strokeWidth={1.6}
-    />
-  </svg>
-);
-
-const Stippen = () => (
-  <svg viewBox="0 0 36 20" aria-hidden="true" className={merkKlassen}>
-    <circle cx="6" cy="14" r="2.3" className="fill-primary" opacity={0.6} />
-    <circle cx="18" cy="10" r="2.3" className="fill-primary" opacity={0.8} />
-    <circle cx="30" cy="6" r="2.3" className="fill-primary" />
-  </svg>
-);
-
-const Boog = () => (
-  <svg viewBox="0 0 36 20" fill="none" aria-hidden="true" className={merkKlassen}>
-    <path
-      d="M3 14C8 4.5 28 4.5 33 14"
-      className="stroke-primary"
-      strokeWidth={1.6}
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const MERKEN = [Ovaal, Stippen, Boog];
-
-/** Kiest het teken op volgorde, zodat geen twee groepen op een pagina hetzelfde krijgen. */
-const GroepMerk = ({ index }: { index: number }) => {
-  const Merk = MERKEN[index % MERKEN.length];
-  return <Merk />;
-};
-
-/**
- * Een tegel. De kop is een h3 zodra er groepskoppen boven staan, en anders
- * een h2: dan is de tegel zelf het eerste niveau onder de h1.
- */
-const KlachtTegel = ({
+const KlachtRegel = ({
   complaint,
-  delay,
   gegroepeerd,
 }: {
-  complaint: { slug: string; title: string; teaser: string };
-  delay: number;
+  complaint: { slug: string; title: string };
   gegroepeerd: boolean;
 }) => {
   const Kop = gegroepeerd ? 'h3' : 'h2';
   return (
-    <li className="h-full">
-      <FadeIn delay={delay} className="h-full">
+    <li>
+      <Kop className="font-normal">
         <Link
           to={`/klachten/${complaint.slug}`}
-          className="group flex h-full flex-col rounded-md border border-secondary/40 bg-card p-5 transition-colors hover:border-primary/40 hover:bg-secondary/10"
+          className="group block rounded-sm py-1 font-serif text-lg leading-snug text-foreground/75 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-background motion-reduce:transition-none"
         >
-          <Kop className="mb-2 flex items-start gap-2 font-serif text-lg leading-snug text-foreground transition-colors group-hover:text-primary-dark">
-            <span className="min-w-0 flex-1">{complaint.title}</span>
-            <ArrowRight
-              className="mt-1 h-4 w-4 shrink-0 text-primary/50 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
+          <span className="relative inline">
+            {complaint.title}
+            <span
               aria-hidden="true"
+              className="absolute -bottom-0.5 left-0 h-px w-0 bg-current transition-[width] duration-300 ease-out group-hover:w-full group-focus-visible:w-full motion-reduce:transition-none"
             />
-          </Kop>
-          <p className="text-sm leading-relaxed text-muted-foreground">{complaint.teaser}</p>
+          </span>
         </Link>
-      </FadeIn>
+      </Kop>
     </li>
   );
 };
@@ -170,53 +124,44 @@ const KlachtCategorie = () => {
         </div>
       </Section>
 
-      {/* Losse tegels met tussenruimte in plaats van een doorlopend raster met
-          celranden. Het aantal klachten verschilt per categorie (4 tot 12), dus
-          de laatste rij is zelden vol; bij losse tegels valt dat niet op, bij
-          een tabelraster liet het een gat in de omlijning achter. */}
-      <section className="py-12 md:py-16">
+      {/* Overzicht in kolommen: per groep een kolom met de klachten als regels
+          eronder. De kolommen lezen als losse blokken door de horizontale
+          ruimte ertussen, zonder scheidingslijnen of vlakken. De achtergrond
+          blijft de cremekleur van de pagina. */}
+      <section className="pb-16 pt-4 md:pb-24 md:pt-8">
         <div className="container mx-auto px-6">
-        {groepen ? (
-          <div className="mx-auto max-w-5xl space-y-12 md:space-y-16">
-            {groepen.map((groep, groepIndex) => (
-              <section key={groep.name || 'overig'}>
-                {groep.name && (
-                  <FadeIn>
-                    <div className="mb-6 flex items-center gap-4">
-                      <h2 className="font-serif text-2xl text-foreground md:text-3xl">
-                        {groep.name}
-                      </h2>
-                      <GroepMerk index={groepIndex} />
-                    </div>
-                  </FadeIn>
-                )}
-                <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {groep.items.map((complaint, index) => (
-                    <KlachtTegel
-                      key={complaint.slug}
-                      complaint={complaint}
-                      // De vertraging loopt per groep opnieuw, anders staat de
-                      // laatste tegel van een lange pagina seconden te wachten.
-                      delay={index * 0.03 + groepIndex * 0.05}
-                      gegroepeerd
-                    />
-                  ))}
-                </ul>
-              </section>
-            ))}
-          </div>
-        ) : (
-          <ul className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {categoryWithItems.items.map((complaint, index) => (
-              <KlachtTegel
-                key={complaint.slug}
-                complaint={complaint}
-                delay={index * 0.03}
-                gegroepeerd={false}
-              />
-            ))}
-          </ul>
-        )}
+          {groepen ? (
+            <div className="mx-auto grid max-w-5xl items-start gap-x-12 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 xl:gap-x-20">
+              {groepen.map((groep, groepIndex) => (
+                <FadeIn key={groep.name || 'overig'} delay={groepIndex * 0.08}>
+                  {groep.name && (
+                    // Ruimer dan de afstand tussen de regels onderling, zodat
+                    // het label duidelijk bij de kolom hoort en niet bij de
+                    // eerste klacht.
+                    <h2 className="mb-7 font-serif text-2xl text-foreground">{groep.name}</h2>
+                  )}
+                  <ul className="space-y-5">
+                    {groep.items.map((complaint) => (
+                      <KlachtRegel key={complaint.slug} complaint={complaint} gegroepeerd />
+                    ))}
+                  </ul>
+                </FadeIn>
+              ))}
+            </div>
+          ) : (
+            // Een categorie zonder groepsindeling heeft geen labels, dus daar
+            // lopen de regels als een enkele lijst over de kolommen door. Twee
+            // kolommen in plaats van drie: zo'n categorie heeft maar een handvol
+            // klachten en die zouden in drie kolommen als losse woorden op een
+            // lege breedte staan.
+            <FadeIn>
+              <ul className="mx-auto grid max-w-3xl items-start gap-x-12 gap-y-5 sm:grid-cols-2 lg:gap-x-16">
+                {categoryWithItems.items.map((complaint) => (
+                  <KlachtRegel key={complaint.slug} complaint={complaint} gegroepeerd={false} />
+                ))}
+              </ul>
+            </FadeIn>
+          )}
         </div>
       </section>
     </>
