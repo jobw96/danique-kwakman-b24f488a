@@ -22,8 +22,6 @@ import glucoseRangeAsset from '@/assets/bloedsuiker/glucosewaarde-in-bereik.webp
 import lowGlucoseAsset from '@/assets/bloedsuiker/lage-glucosewaarde.webp.asset.json';
 
 const symptoms = [
-  'Je heb een enorme dip en je concentratie is compleet verdwenen na de lunch. Je ervaart de welbekende 16.00 uurs dip bijna dagelijks.\u00a0',
-  'Je eet ’s avonds een normale maaltijd en hebt een uur later alweer trek alsof je nauwelijks gegeten hebt.',
   'Je kunt die reep chocola na het eten maar moeilijk uit je hoofd zetten.',
   'Je merkt dat je humeur behoorlijk kan omslaan zodra je te lang niets hebt gegeten.\n',
   'Je wordt totaal niet fit wakker, ook na een nacht van acht uur slaap.',
