@@ -50,28 +50,28 @@ const processSteps = [
     title: 'Intake en plaatsing glucosesensor',
     icon: ClipboardList,
     description:
-      'We brengen jouw voeding, leefstijl, energie, slaap, stress, beweging en klachten in kaart. Daarna plaatsen we de sensor op de achterkant van je bovenarm. De eerste week verander je bewust niets, zodat we een eerlijk beeld krijgen van jouw huidige patroon.',
+      'We brengen jouw voeding, leefstijl, energie, slaap, stress, beweging en klachten in kaart. Daarna plaatsen we de sensor op de achterkant van je bovenarm. Dit doen we op locatie in Hoorn of ik begeleid je online via Zoom. De eerste week verander je bewust niets, zodat we een eerlijk beeld krijgen van jouw huidige patroon.',
   },
   {
     number: '03',
     title: 'Meten in jouw dagelijks leven',
     icon: ScanLine,
     description:
-      'Veertien dagen lang zie je hoe je glucosewaarden gedurende de dag bewegen. Je houdt bij wat je eet en wat er rondom beweging, slaap en stress gebeurt.',
+      'Veertien dagen lang zie je hoe je glucosewaarden gedurende de dag schommelen. Je houdt bij wat je eet en wat er rondom beweging, slaap en stress gebeurt.',
   },
   {
     number: '04',
-    title: 'Check-in na één week',
+    title: 'Check-in na 1 week',
     icon: Activity,
     description:
-      'Na zeven dagen analyseren we de eerste patronen. Je ontvangt persoonlijke adviezen en gaat daar tijdens de tweede week gericht mee aan de slag.',
+      'Na zeven dagen analyseren we de eerste patronen. Je ontvangt een persoonlijk plan op basis van deze data en gaat daar tijdens de tweede week gericht mee aan de slag.',
   },
   {
     number: '05',
-    title: 'Eindconsult en persoonlijk plan',
+    title: 'Eindconsult na 2 weken',
     icon: MessageCircle,
     description:
-      'Na veertien dagen vergelijken we de resultaten en bespreken we jouw ervaringen. Je krijgt een persoonlijk plan waarmee je zelfstandig verder kunt.',
+      'Na veertien dagen vergelijken we de resultaten en zetten we de puntjes op de i, zodat je weet welke aanpassingen je wilt blijven toepassen en hoe je daar ook op de lange termijn mee verder kunt. ',
   },
 ];
 
@@ -325,8 +325,8 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="max-w-2xl">
-              <SectionLabel>Zo verloopt het traject</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Twee weken, stap voor stap begeleid</h2>
+              <SectionLabel>WAT KUN JE VERWACHTEN?</SectionLabel>
+              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">1:1 bloedsuikertraject</h2>
             </FadeIn>
             <div className="mt-12 divide-y divide-secondary/50 border-y border-secondary/50">
               {processSteps.map((step, index) => (
