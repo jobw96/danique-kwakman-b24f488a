@@ -18,6 +18,30 @@ const categoryDescriptions: Record<string, string> = {
   'huid-en-haar': 'Van acne tot eczeem en haaruitval.',
 };
 
+/**
+ * Decoratieve golf in de primaire kleur, hetzelfde motief als de witte lijn
+ * die op de strandfoto van het hormoontraject staat. Puur sier: hij staat op
+ * aria-hidden en vangt geen muis. De tegels komen later in de DOM en hebben
+ * een dekkende achtergrond, dus die lopen er vanzelf overheen.
+ */
+const Golf = () => (
+  <svg viewBox="0 0 340 200" fill="none" className="h-auto w-full">
+    <path
+      d="M14 78C52 24 104 18 150 56c46 38 96 32 134-22"
+      className="stroke-primary"
+      strokeWidth={10}
+      strokeLinecap="round"
+    />
+    <path
+      d="M52 168C90 114 142 108 188 146c30 25 62 29 92 12"
+      className="stroke-primary"
+      strokeWidth={10}
+      strokeLinecap="round"
+      opacity={0.5}
+    />
+  </svg>
+);
+
 const Klachten = () => {
   const { openModal } = useBookingModal();
 
@@ -71,7 +95,8 @@ const Klachten = () => {
           {/* Intro links uitgelijnd op dezelfde rand als de eerste tegel.
               max-w-2xl houdt de regel op ~75 tekens; het raster eronder mag
               wel de volle max-w-5xl gebruiken. */}
-          <FadeIn className="mb-12 max-w-2xl md:mb-16">
+          <div className="relative mb-12 md:mb-16">
+            <FadeIn className="max-w-2xl">
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Herken je jezelf in meerdere klachten?
             </h2>
@@ -83,14 +108,25 @@ const Klachten = () => {
                 Tijdens een traject brengen we daarom eerst rustig in kaart wat er speelt. Aan de hand daarvan kijken we welke puzzelstukjes met elkaar samenhangen, waar we het beste kunnen beginnen en hoe we dit stap voor stap gaan aanpakken.
               </p>
             </div>
-          </FadeIn>
+            </FadeIn>
+
+            {/* Onder lg is er naast de tekstkolom geen ruimte over, daar blijft
+                de golf weg. De negatieve bodem laat hem 96px voorbij de marge
+                zakken, zodat tegel 02 over de onderste golf heen valt. */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -bottom-24 right-0 hidden w-[250px] lg:block xl:w-[340px]"
+            >
+              <Golf />
+            </div>
+          </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             {complaintsByCategory.map((category, index) => (
               <FadeIn key={category.name} delay={index * 0.08} className="h-full">
                 <Link
                   to={`/klachten/onderdeel/${category.slug}`}
-                  className="group flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
+                  className="group relative flex h-full flex-col rounded-3xl border border-secondary/30 bg-background p-7 transition-colors hover:border-primary/40 hover:bg-secondary/10 md:p-8"
                 >
                   <span className="mb-5 font-serif text-2xl leading-none text-secondary/70 tabular-nums">
                     {category.number}
