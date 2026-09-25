@@ -71,6 +71,15 @@ const GROEP_BEELD: Record<string, { src: string; width: number; height: number }
  * De 55% in het midden is gemeten: bij de lichtste van de acht foto's is de
  * helderste pixel in die band goed voor 5,17:1 tegen de cremekleurige letter.
  */
+/**
+ * De kolommen zakken van links naar rechts steeds iets verder, zodat het
+ * blok niet als een strak raster leest. Alleen op lg: daaronder staan de
+ * kolommen onder elkaar of in tweeen en zou een verspringing een gat maken.
+ * De klassenamen staan voluit, want Tailwind leest de broncode als tekst en
+ * vindt een samengestelde naam niet.
+ */
+const KOLOM_TRAP = ['', 'lg:mt-10', 'lg:mt-20'];
+
 const WAAS =
   'linear-gradient(to bottom, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.55) 35%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.16) 100%)';
 
@@ -171,14 +180,18 @@ const KlachtCategorie = () => {
       {/* Overzicht in kolommen: per groep een beeld, een klein label en de
           klachten als regels eronder. Geen kaarten of vlakken; de cremekleur
           van de pagina loopt door. */}
-      <section className="pb-16 pt-6 md:pb-24 md:pt-10">
+      <section className="pb-16 pt-12 md:pb-24 md:pt-20">
         <div className="container mx-auto px-6">
           {groepen ? (
             <div className="mx-auto grid max-w-5xl items-start gap-x-12 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 xl:gap-x-20">
               {groepen.map((groep, groepIndex) => {
                 const beeld = GROEP_BEELD[groep.name];
                 return (
-                  <FadeIn key={groep.name || 'overig'} delay={groepIndex * 0.08}>
+                  <FadeIn
+                    key={groep.name || 'overig'}
+                    delay={groepIndex * 0.08}
+                    className={KOLOM_TRAP[groepIndex % KOLOM_TRAP.length]}
+                  >
                     {beeld ? (
                       <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-[2rem]">
                         <img
@@ -197,7 +210,7 @@ const KlachtCategorie = () => {
                           style={{ backgroundImage: WAAS }}
                         />
                         {groep.name && (
-                          <h2 className="absolute inset-0 flex items-center justify-center px-5 text-center font-sans text-xs font-medium uppercase leading-relaxed tracking-[0.18em] text-background">
+                          <h2 className="absolute inset-0 flex items-center justify-center px-5 text-center font-serif text-sm uppercase leading-relaxed tracking-[0.16em] text-background">
                             {groep.name}
                           </h2>
                         )}
