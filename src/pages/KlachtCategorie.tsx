@@ -4,14 +4,14 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory, complaintsInGroups, findComplaintCategory } from '@/data/complaints';
 import { Link, Navigate, useParams } from '@/lib/router-compat';
 import granaatappelTerracotta from '@/assets/sfeer/granaatappel-terracotta-3x4.webp';
-import vijgenKeramiek from '@/assets/sfeer/vijgen-keramiek-3x4.webp';
-import kruidenOlijfolie from '@/assets/sfeer/kruiden-olijfolie-plank-4x3.webp';
-import kustLigbedden from '@/assets/sfeer/kust-ligbedden-rotsterras-4x3.webp';
+import citrusBruiswater from '@/assets/sfeer/macro-citrus-bruiswater-3x4.webp';
+import avocadoSalie from '@/assets/sfeer/macro-avocado-sage-4x3.webp';
 import gefermenteerdeGroenten from '@/assets/sfeer/gefermenteerde-groenten-pot-4x3.webp';
 import groenteschaalBovenaf from '@/assets/sfeer/groenteschaal-bovenaf-9x16.webp';
 import havermoutKom from '@/assets/sfeer/havermout-kom-bovenaf-4x3.webp';
 import walnotenAmandelen from '@/assets/sfeer/walnoten-amandelen-linnen-4x3.webp';
 import linnenLakens from '@/assets/sfeer/linnen-lakens-waslijn-9x16.webp';
+import zachteSchaduw from '@/assets/sfeer/zachte-schaduw-boog-4x3.webp';
 
 /**
  * Sfeerbeeld naast de introtekst, per categorie. Alleen ingevuld voor de
@@ -46,21 +46,21 @@ const categoryIntros: Record<string, string> = {
  * dus er schuift niets als het laadt.
  *
  * De foto's zijn gekozen op helderheid: met de waas hieronder haalt de
- * donkerste keuze nog 5,17:1 voor het label. Bij een lichtere foto zou dat
+ * lichtste keuze nog 5,17:1 voor het label. Bij een lichtere foto zou dat
  * onder de 4,5 van WCAG AA zakken.
  */
 const GROEP_BEELD: Record<string, { src: string; width: number; height: number }> = {
   // Hormonen en cyclus
-  'Je cyclus': { src: vijgenKeramiek, width: 1195, height: 1600 },
-  'Hormonen uit balans': { src: kruidenOlijfolie, width: 1600, height: 1195 },
-  Levensfase: { src: kustLigbedden, width: 1600, height: 1195 },
+  'Je cyclus': { src: citrusBruiswater, width: 1195, height: 1600 },
+  'Hormonen uit balans': { src: avocadoSalie, width: 1600, height: 1195 },
+  Levensfase: { src: linnenLakens, width: 904, height: 1600 },
   // Darmen en spijsvertering
   'Buik en vertering': { src: gefermenteerdeGroenten, width: 1600, height: 1194 },
   'Ontlasting en darmwerking': { src: groenteschaalBovenaf, width: 905, height: 1600 },
   // Energie en bloedsuiker
   'Energie door de dag': { src: havermoutKom, width: 1600, height: 1194 },
   Bloedsuiker: { src: walnotenAmandelen, width: 1600, height: 1194 },
-  'Stress en slaap': { src: linnenLakens, width: 904, height: 1600 },
+  'Stress en slaap': { src: zachteSchaduw, width: 1600, height: 1194 },
 };
 
 /**
