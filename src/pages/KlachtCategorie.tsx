@@ -117,7 +117,12 @@ const KlachtCategorie = () => {
 
   return (
     <>
-      <Section className="pt-12 md:pt-20 pb-4 md:pb-6">
+      {/* De foto loopt rechts uit de kolom en tegen de schermrand aan, net als
+          de hero van /klachten. Hij staat absoluut en spant van de boven- tot
+          de onderkant van de sectie; de min-hoogte op lg bepaalt daarmee hoe
+          groot hij wordt, zonder dat een vaste beeldverhouding hem over de
+          kolommen eronder heen laat hangen. */}
+      <Section className={`relative pt-12 md:pt-20 pb-6 md:pb-8${beeld ? ' lg:min-h-[40rem]' : ''}`}>
         <div className={beeld ? 'mx-auto max-w-6xl' : 'mx-auto max-w-4xl'}>
           <Link
             to="/klachten"
@@ -125,44 +130,48 @@ const KlachtCategorie = () => {
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Terug naar klachten
           </Link>
-          <div className={beeld ? 'flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16' : ''}>
-            <div className={beeld ? 'lg:w-3/5' : ''}>
-              <FadeIn>
-                <span className="mb-5 block font-serif text-2xl leading-none text-secondary/70 tabular-nums">
-                  {category.number}
-                </span>
-                <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-                  {category.name}
-                </h1>
-                <p className="max-w-3xl leading-relaxed text-muted-foreground">
-                  {categoryIntros[category.slug] ??
-                    'Hieronder vind je de klachten waarmee ik vrouwen begeleid.'}
-                </p>
+          {/* Onder lg staat de foto gewoon onder de tekst; de tekstkolom mag
+              daar de volle breedte houden. Op lg krijgt hij 52%, zodat er
+              ruimte overblijft naast het beeld. */}
+          <div className={beeld ? 'lg:max-w-[52%]' : ''}>
+            <FadeIn>
+              <span className="mb-5 block font-serif text-2xl leading-none text-secondary/70 tabular-nums">
+                {category.number}
+              </span>
+              <h1 className="mb-6 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
+                {category.name}
+              </h1>
+              <p className="max-w-3xl leading-relaxed text-muted-foreground">
+                {categoryIntros[category.slug] ??
+                  'Hieronder vind je de klachten waarmee ik vrouwen begeleid.'}
+              </p>
+            </FadeIn>
+          </div>
+          {beeld && (
+            <div className="mt-10 lg:absolute lg:bottom-0 lg:right-0 lg:top-0 lg:mt-0 lg:w-[42vw] lg:max-w-[620px]">
+              <FadeIn delay={0.15} className="h-full">
+                {/* Alleen links afgerond: rechts loopt de foto tegen de
+                    schermrand aan. Onder lg staat hij binnen de marges en is
+                    hij rondom afgerond. */}
+                <div className="aspect-[3/4] overflow-hidden rounded-[2rem] lg:aspect-auto lg:h-full lg:rounded-l-[3rem] lg:rounded-r-none">
+                  <img
+                    src={beeld.src}
+                    alt={beeld.alt}
+                    width={1195}
+                    height={1600}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
               </FadeIn>
             </div>
-            {beeld && (
-              <div className="w-full lg:w-2/5">
-                <FadeIn delay={0.15}>
-                  <div className="aspect-[3/4] overflow-hidden rounded-[2rem]">
-                    <img
-                      src={beeld.src}
-                      alt={beeld.alt}
-                      width={1195}
-                      height={1600}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </FadeIn>
-              </div>
-            )}
-          </div>
+          )}
         </div>
       </Section>
 
       {/* Overzicht in kolommen: per groep een beeld, een klein label en de
           klachten als regels eronder. Geen kaarten of vlakken; de cremekleur
           van de pagina loopt door. */}
-      <section className="pb-16 pt-2 md:pb-24 md:pt-4">
+      <section className="pb-16 pt-6 md:pb-24 md:pt-10">
         <div className="container mx-auto px-6">
           {groepen ? (
             <div className="mx-auto grid max-w-5xl items-start gap-x-12 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 xl:gap-x-20">
