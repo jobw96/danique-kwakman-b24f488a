@@ -156,11 +156,12 @@ const Bloedsuikertraject = () => {
                 1:1 bloedsuikertraject
               </h1>
               <p className="mt-6 max-w-xl text-xl leading-relaxed text-primary-dark">
-                Je eet gezond en slaapt genoeg, maar om 15.00 uur val je bijna in slaap achter je laptop en ga je op jacht naar suiker en koffie.
+                Je eet gezond en slaapt genoeg, maar om 15.00 uur val je bijna in slaap achter je laptop en ga je opzoek naar suiker en koffie om de middag door te komen.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  Je doet je best om gezond te eten, kiest bewust voor voedzame maaltijden en probeert goed te letten op wat je nodig hebt. Toch kun je na de lunch bijna in slaap vallen, ineens veel trek krijgen of niet begrijpen waarom je energie zo schommelt.
+                  Je eet gezond, beweegt voldoende en probeert goed voor jezelf te zorgen. En toch word je na acht uur slaap niet uitgerust wakker, zakt je energie rond 15.00 uur compleet weg en zit je ’s avonds ineens dat pak koek open te trekken.
+                  Misschien heb je rondom je menstruatie nog meer trek, meer last van PMS of merk je dat je energie de hele dag alle kanten op gaat.
                 </p>
                 <p>
                   Geen enkel lichaam reageert hetzelfde op voeding. Daarom kijken we tijdens dit traject niet alleen naar algemene adviezen, maar naar jouw eigen gegevens en dagelijks leven.
