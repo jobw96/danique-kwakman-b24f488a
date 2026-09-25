@@ -6,7 +6,7 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory } from '@/data/complaints';
 import { Link } from '@/lib/router-compat';
 import kustParasols from '@/assets/sfeer/kust-parasols-onderaanzicht-2x3.webp';
-import citroenBruiswater from '@/assets/sfeer/macro-citroenschijf-bruiswater-2x3.webp';
+import gipsmuurStrijklicht from '@/assets/sfeer/abstract-gipsmuur-strijklicht-21x9.webp';
 
 const categoryDescriptions: Record<string, string> = {
   'hormonen-en-cyclus':
@@ -97,16 +97,11 @@ const Klachten = () => {
         </div>
       </Section>
 
-      {/* De foto loopt hier bewust uit de kolom: hij staat vast aan de
-          rechter schermrand, is alleen links afgerond en is verticaal
-          gecentreerd ten opzichte van de sectie in plaats van uitgelijnd op
-          de eerste kop. Dat breekt het strakke tweekoloms ritme van de rest
-          van de pagina. */}
-      <Section className="relative bg-card py-16 md:py-24">
-        <div className="mx-auto max-w-6xl">
-          {/* max-w-2xl houdt de regel op ~75 tekens. Met max-w-3xl liep hij
-              onder de lg-breakpoint, waar de foto eronder valt, op tot 86. */}
-          <div className="max-w-2xl lg:max-w-[55%]">
+      <Section className="bg-card py-16 md:py-24">
+        {/* Gecentreerde tekstkolom. max-w-2xl houdt de regel op ~75 tekens;
+            gecentreerde tekst wordt boven die lengte lastig te volgen omdat
+            het beginpunt van elke regel verschuift. */}
+        <div className="mx-auto max-w-2xl text-center">
           <FadeIn>
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Herken je jezelf in meerdere klachten?
@@ -120,12 +115,32 @@ const Klachten = () => {
               </p>
             </div>
           </FadeIn>
+        </div>
+      </Section>
 
-          <FadeIn delay={0.08} className="mt-14">
+      {/* Afsluitende CTA over de volle breedte. De gipsmuur ligt onder een
+          cremekleurige waas van 70%: daarmee komt de donkerste pixel onder de
+          tekst uit op rgb(202,194,182) en haalt de bodytekst in foreground/75
+          een contrast van 5,3:1. Met muted-foreground bleef dat zelfs bij een
+          waas van 90% onder de 4,5 steken, vandaar de donkerdere tekstkleur. */}
+      <section className="relative isolate overflow-hidden">
+        <img
+          src={gipsmuurStrijklicht}
+          alt=""
+          aria-hidden="true"
+          width={1600}
+          height={686}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 -z-10 bg-background/70" aria-hidden="true" />
+        <div className="mx-auto max-w-2xl px-6 py-24 text-center md:py-32">
+          <FadeIn>
             <h2 className="mb-6 font-serif text-3xl text-foreground md:text-4xl">
               Heb je al van alles geprobeerd?
             </h2>
-            <div className="space-y-4 leading-relaxed text-muted-foreground">
+            <div className="space-y-4 leading-relaxed text-foreground/75">
               <p>
                 Misschien weet je inmiddels precies welke klachten je hebt, maar niet waarom ze blijven terugkomen. Tijdens een gratis en vrijblijvende kennismaking bespreken we waar je tegenaan loopt en wat je graag anders zou willen. Vanuit daar kijken we wat er nodig is en welk traject daarbij past.
               </p>
@@ -133,32 +148,12 @@ const Klachten = () => {
                 Volg je een traject bij mij, dan start je met uitgebreide intakeformulieren en een persoonlijke intake. Waar nodig kunnen we aanvullend <Link to="/labonderzoek" className="underline underline-offset-4 transition-colors hover:text-primary-dark">laboratoriumonderzoek</Link> inzetten om bepaalde puzzelstukjes verder te onderzoeken. Vanuit daar gaan we verder met het traject en werken we gericht aan wat er bij jou speelt.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="mt-10">
               <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
             </div>
           </FadeIn>
-          </div>
-
-          {/* Onder lg past de foto niet naast een leesbare kolom. Hij valt dan
-              onder de tekst, maar rechts uitgelijnd en op halve breedte, zodat
-              het een bewuste tegenhanger blijft in plaats van een los blok. */}
-          <div className="mt-14 ml-auto max-w-sm sm:max-w-md lg:absolute lg:right-0 lg:top-1/2 lg:ml-0 lg:mt-0 lg:w-[38vw] lg:max-w-[560px] lg:-translate-y-1/2">
-            <FadeIn delay={0.12}>
-              <div className="aspect-[3/4] overflow-hidden rounded-[2rem] lg:rounded-r-none lg:rounded-l-[3rem]">
-                <img
-                  src={citroenBruiswater}
-                  alt="Close-up van een schijf citroen in bruiswater met opstijgende belletjes"
-                  width={1062}
-                  height={1600}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </FadeIn>
-          </div>
         </div>
-      </Section>
+      </section>
     </>
   );
 };
