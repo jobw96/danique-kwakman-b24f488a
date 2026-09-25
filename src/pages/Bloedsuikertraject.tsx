@@ -214,7 +214,7 @@ const Bloedsuikertraject = () => {
                 Een stabiele bloedsuiker spiegel is DE basis van hormonale balans
               </h2>
               <p className="mt-6 max-w-md leading-relaxed">
-                Je hoeft niet te blijven gokken welke maaltijd, gewoonte of timing voor jou werkt. De sensor maakt zichtbaar wat je normaal alleen achteraf voelt.
+                Herken je jezelf hierin?
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
