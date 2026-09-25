@@ -22,13 +22,13 @@ import glucoseRangeAsset from '@/assets/bloedsuiker/glucosewaarde-in-bereik.webp
 import lowGlucoseAsset from '@/assets/bloedsuiker/lage-glucosewaarde.webp.asset.json';
 
 const symptoms = [
-  'Je hebt na je lunch nog uren te gaan, maar je concentratie is compleet verdwenen en je leest drie keer dezelfde zin.',
-  'Je eet ’s avonds gewoon een normale maaltijd en hebt een uur later alweer trek alsof je nauwelijks gegeten hebt.',
-  'Je hebt na een maaltijd ineens behoefte aan iets zoets en kunt die reep chocola maar moeilijk uit je hoofd zetten.',
-  'Je hebt na het eten een enorme dip en vraagt je af hoe je die middag überhaupt nog moet doorkomen.',
-  'Je wordt wakker met een hoofd dat nog steeds moe voelt, ook na een nacht van acht uur slaap.',
+  'Je heb een enorme dip en je concentratie is compleet verdwenen na de lunch. Je ervaart de welbekende 16.00 uurs dip bijna dagelijks.\u00a0',
+  'Je eet ’s avonds een normale maaltijd en hebt een uur later alweer trek alsof je nauwelijks gegeten hebt.',
+  'Je kunt die reep chocola na het eten maar moeilijk uit je hoofd zetten.',
+  'Je merkt dat je humeur behoorlijk kan omslaan zodra je te lang niets hebt gegeten.\n',
+  'Je wordt totaal niet fit wakker, ook na een nacht van acht uur slaap.',
   'Je merkt dat je rond je menstruatie veel meer trek hebt en ineens de hele dag aan eten kunt denken.',
-  'Je hebt het gevoel dat je honger en verzadiging alle kanten op gaan en weet daardoor niet goed meer wanneer je nu écht honger hebt.',
+  'Je hebt standaard een Sultana, banaan of mueslireep in je tas, want je weet inmiddels maar al te goed dat je ergens op de dag ineens NU iets moet eten.\n',
 ];
 
 const results = [
