@@ -6,4 +6,4 @@
 - [x] Nieuwe pagina Klachten toevoegen als los menu-item, inclusief blokken, links en SEO
 - [x] Klachtenpagina herstructureren naar vier onderdelen met eigen categorie-overzichten en ontbrekende klachten
 - [x] Pagina ‘Een onregelmatige cyclus’ uitbreiden met unieke uitleg, werkwijze, verlangen, FAQ en SEO
-- [ ] Pagina ‘1:1 Bloedsuikertraject’ vernieuwen met aangeleverde foto’s, nieuwe opbouw en aangescherpte metadata
+- [x] Pagina ‘1:1 Bloedsuikertraject’ vernieuwen met aangeleverde foto’s, nieuwe opbouw en aangescherpte metadata
