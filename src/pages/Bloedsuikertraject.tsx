@@ -167,23 +167,9 @@ const Bloedsuikertraject = () => {
               <CustomButton onClick={openModal} className="mt-8">
                 Plan een gratis kennismaking
               </CustomButton>
-              <dl className="mt-10 grid max-w-xl grid-cols-3 border-y border-secondary/50 py-5 text-sm">
-                <div>
-                  <dt className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Duur</dt>
-                  <dd className="mt-1 text-foreground">14 dagen</dd>
-                </div>
-                <div className="border-x border-secondary/50 px-4">
-                  <dt className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Contact</dt>
-                  <dd className="mt-1 text-foreground">{"\n"}</dd>
-                </div>
-                <div className="pl-4">
-                  <dt className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Investering</dt>
-                  <dd className="mt-1 text-foreground">€325</dd>
-                </div>
-              </dl>
             </FadeIn>
 
-            <FadeIn immediate delay={0.15} className="relative">
+            <FadeIn immediate delay={0.15}>
               <div className="aspect-[4/5] overflow-hidden rounded-md">
                 <ParallaxImage
                   src={sensorPortraitAsset.url}
@@ -192,9 +178,6 @@ const Bloedsuikertraject = () => {
                   className="h-full w-full"
                   eager
                 />
-              </div>
-              <div className="absolute bottom-4 left-4 max-w-[15rem] rounded-md bg-background/95 px-4 py-3 text-sm leading-snug text-foreground backdrop-blur-sm md:bottom-6 md:left-6">
-                Jouw meting. Jouw patronen. Praktische keuzes die bij jou passen.
               </div>
             </FadeIn>
           </div>
