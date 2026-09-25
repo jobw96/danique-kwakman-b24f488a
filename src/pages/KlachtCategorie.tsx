@@ -11,7 +11,7 @@ import groenteschaalBovenaf from '@/assets/sfeer/groenteschaal-bovenaf-9x16.webp
 import havermoutKom from '@/assets/sfeer/havermout-kom-bovenaf-4x3.webp';
 import walnotenAmandelen from '@/assets/sfeer/walnoten-amandelen-linnen-4x3.webp';
 import linnenLakens from '@/assets/sfeer/linnen-lakens-waslijn-9x16.webp';
-import zachteSchaduw from '@/assets/sfeer/zachte-schaduw-boog-4x3.webp';
+import palmschaduwMuur from '@/assets/sfeer/textuur-palmschaduw-muur-21x9.webp';
 
 /**
  * Sfeerbeeld naast de introtekst, per categorie. Alleen ingevuld voor de
@@ -60,17 +60,9 @@ const GROEP_BEELD: Record<string, { src: string; width: number; height: number }
   // Energie en bloedsuiker
   'Energie door de dag': { src: havermoutKom, width: 1600, height: 1194 },
   Bloedsuiker: { src: walnotenAmandelen, width: 1600, height: 1194 },
-  'Stress en slaap': { src: zachteSchaduw, width: 1600, height: 1194 },
+  'Stress en slaap': { src: palmschaduwMuur, width: 1600, height: 686 },
 };
 
-/**
- * Waas over de foto, het donkerst in de band waar het label staat en lichter
- * naar boven en onder. Een gelijkmatige waas die overal donker genoeg is zou
- * de foto's plat maken; zo blijft alleen de tekstband zwaar.
- *
- * De 55% in het midden is gemeten: bij de lichtste van de acht foto's is de
- * helderste pixel in die band goed voor 5,17:1 tegen de cremekleurige letter.
- */
 /**
  * De kolommen zakken van links naar rechts steeds iets verder, zodat het
  * blok niet als een strak raster leest. Alleen op lg: daaronder staan de
@@ -80,8 +72,17 @@ const GROEP_BEELD: Record<string, { src: string; width: number; height: number }
  */
 const KOLOM_TRAP = ['', 'lg:mt-10', 'lg:mt-20'];
 
+/**
+ * Verloop van onderaf: donker achter het label linksonder en volledig
+ * doorzichtig op iets over de helft van de hoogte. Zo blijft de bovenkant van
+ * de foto onaangetast en ligt het gewicht alleen waar de letters staan.
+ *
+ * De waarden zijn gemeten: onder de letters haalt de lichtste van de acht
+ * foto's er 4,4:1 mee tegen de cremekleurige letter. Het label staat op 24px
+ * en telt daarmee als grote tekst, waarvoor WCAG AA 3:1 vraagt.
+ */
 const WAAS =
-  'linear-gradient(to bottom, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.55) 35%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.16) 100%)';
+  'linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.22) 45%, rgba(0,0,0,0) 70%)';
 
 /**
  * Een klacht als klikbare regel in een kolom. De onderlijn staat er altijd en
@@ -162,7 +163,7 @@ const KlachtCategorie = () => {
                 {/* Alleen links afgerond: rechts loopt de foto tegen de
                     schermrand aan. Onder lg staat hij binnen de marges en is
                     hij rondom afgerond. */}
-                <div className="aspect-[3/4] overflow-hidden rounded-[2rem] lg:aspect-auto lg:h-full lg:rounded-l-[3rem] lg:rounded-r-none">
+                <div className="aspect-[3/4] overflow-hidden rounded-[1.6rem] lg:aspect-auto lg:h-full lg:rounded-l-[2.4rem] lg:rounded-r-none">
                   <img
                     src={beeld.src}
                     alt={beeld.alt}
@@ -183,7 +184,7 @@ const KlachtCategorie = () => {
       <section className="pb-16 pt-12 md:pb-24 md:pt-20">
         <div className="container mx-auto px-6">
           {groepen ? (
-            <div className="mx-auto grid max-w-5xl items-start gap-x-12 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 xl:gap-x-20">
+            <div className="mx-auto grid max-w-6xl items-start gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 xl:gap-x-16">
               {groepen.map((groep, groepIndex) => {
                 const beeld = GROEP_BEELD[groep.name];
                 return (
@@ -193,7 +194,7 @@ const KlachtCategorie = () => {
                     className={KOLOM_TRAP[groepIndex % KOLOM_TRAP.length]}
                   >
                     {beeld ? (
-                      <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-[2rem]">
+                      <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-[1.6rem]">
                         <img
                           src={beeld.src}
                           alt=""
@@ -210,7 +211,7 @@ const KlachtCategorie = () => {
                           style={{ backgroundImage: WAAS }}
                         />
                         {groep.name && (
-                          <h2 className="absolute inset-0 flex items-center justify-center px-5 text-center font-serif text-sm uppercase leading-relaxed tracking-[0.16em] text-background">
+                          <h2 className="absolute inset-x-0 bottom-0 px-6 pb-5 font-serif text-2xl uppercase leading-snug tracking-[0.12em] text-background">
                             {groep.name}
                           </h2>
                         )}

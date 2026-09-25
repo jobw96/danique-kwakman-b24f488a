@@ -5,6 +5,7 @@ import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
+import zachteSchaduw from '@/assets/sfeer/zachte-schaduw-boog-4x3.webp';
 
 import { useBookingModal } from '@/components/BookingModal';
 import { SpotifyIcon } from '@/components/BrandIcons';
@@ -619,6 +620,41 @@ export const Layout: React.FC<LayoutProps> = ({
         {children}
       </main>
 
+
+      {/* Afsluitende verwijzing naar het aanbod, op elke pagina behalve de
+          aanbodpagina zelf: daar zou het een link naar de eigen pagina zijn.
+          De waas van 55% is gemeten op deze foto: de helderste pixel in het
+          hele beeld haalt daarmee 4,87:1 tegen de cremekleurige tekst. Met 45%
+          bleef de alinea op 3,8:1 steken, onder de 4,5 van WCAG AA. */}
+      {location.pathname !== '/behandelingen' && (
+        <section className="relative isolate overflow-hidden">
+          <img
+            src={zachteSchaduw}
+            alt=""
+            aria-hidden="true"
+            width={1600}
+            height={1194}
+            loading="lazy"
+            decoding="async"
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 -z-10 bg-foreground/55" aria-hidden="true" />
+          <div className="mx-auto max-w-2xl px-6 py-20 text-center md:py-28">
+            <h2 className="mb-5 font-serif text-3xl leading-tight text-background md:text-4xl">
+              Benieuwd welk traject bij jou past?
+            </h2>
+            <p className="mb-8 leading-relaxed text-background">
+              Drie 1:1 trajecten, elk met een eigen startpunt: je bloedsuiker, je hormonen of je darmen.
+            </p>
+            <Link
+              to="/behandelingen"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 font-medium text-primary-foreground transition-colors hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-transparent motion-reduce:transition-none"
+            >
+              Bekijk alle trajecten
+            </Link>
+          </div>
+        </section>
+      )}
 
       <footer ref={footerRef} className="relative min-h-[480px] md:min-h-[500px] w-full overflow-hidden z-0" style={{
       backgroundColor: 'hsl(var(--background))',
