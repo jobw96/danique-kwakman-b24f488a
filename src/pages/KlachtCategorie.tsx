@@ -4,7 +4,6 @@ import { Section } from '@/components/Section';
 import { complaintsByCategory, complaintsInGroups, findComplaintCategory } from '@/data/complaints';
 import { Link, Navigate, useParams } from '@/lib/router-compat';
 import granaatappelTerracotta from '@/assets/sfeer/granaatappel-terracotta-3x4.webp';
-import gipsmuurStrijklicht from '@/assets/sfeer/abstract-gipsmuur-strijklicht-21x9.webp';
 
 /**
  * Sfeerbeeld naast de introtekst, per categorie. Alleen ingevuld voor de
@@ -30,6 +29,30 @@ const categoryIntros: Record<string, string> = {
 };
 
 /**
+ * Golfje naast een groepskop, hetzelfde motief als op /klachten. Staat in de
+ * plaats van de streep die er eerder onder de kop liep: dat gaf de kop het
+ * gewicht van een scheiding terwijl hij bij de tegels eronder hoort.
+ *
+ * De viewBox heeft dezelfde verhouding als de weergave, dus de lijndikte
+ * blijft overal gelijk en er wordt niets uitgerekt.
+ */
+const GroepGolf = () => (
+  <svg
+    viewBox="0 0 96 18"
+    fill="none"
+    aria-hidden="true"
+    className="h-[18px] w-24 shrink-0"
+  >
+    <path
+      d="M2 9q6.5-5.5 13 0t13 0 13 0 13 0 13 0 13 0 13 0"
+      className="stroke-primary"
+      strokeWidth={2}
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+/**
  * Een tegel. De kop is een h3 zodra er groepskoppen boven staan, en anders
  * een h2: dan is de tegel zelf het eerste niveau onder de h1.
  */
@@ -48,7 +71,7 @@ const KlachtTegel = ({
       <FadeIn delay={delay} className="h-full">
         <Link
           to={`/klachten/${complaint.slug}`}
-          className="group flex h-full flex-col rounded-md border border-secondary/40 bg-background p-5 transition-colors hover:border-primary/40 hover:bg-secondary/10"
+          className="group flex h-full flex-col rounded-md border border-secondary/40 bg-card p-5 transition-colors hover:border-primary/40 hover:bg-secondary/10"
         >
           <Kop className="mb-2 flex items-start gap-2 font-serif text-lg leading-snug text-foreground transition-colors group-hover:text-primary-dark">
             <span className="min-w-0 flex-1">{complaint.title}</span>
@@ -123,33 +146,20 @@ const KlachtCategorie = () => {
           celranden. Het aantal klachten verschilt per categorie (4 tot 12), dus
           de laatste rij is zelden vol; bij losse tegels valt dat niet op, bij
           een tabelraster liet het een gat in de omlijning achter. */}
-      {/* Foto over de volle breedte achter de tegels. Er staat geen tekst
-          rechtstreeks op het beeld: de tegels zijn dekkende kaarten, dus hun
-          tekst houdt exact het contrast dat de site elders ook haalt. */}
-      <section className="relative overflow-hidden py-12 md:py-16">
-        <img
-          src={gipsmuurStrijklicht}
-          alt=""
-          aria-hidden="true"
-          width={1600}
-          height={686}
-          loading="lazy"
-          decoding="async"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-card/75" aria-hidden="true" />
-        <div className="container relative mx-auto px-6">
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-6">
         {groepen ? (
           <div className="mx-auto max-w-5xl space-y-12 md:space-y-16">
             {groepen.map((groep, groepIndex) => (
               <section key={groep.name || 'overig'}>
                 {groep.name && (
                   <FadeIn>
-                    {/* Hoort bij de tegels eronder, dus een kleine kop met een
-                        lijn eronder in plaats van een tweede paginakop. */}
-                    <h2 className="mb-5 border-b border-secondary/40 pb-3 font-serif text-xl text-foreground md:text-2xl">
-                      {groep.name}
-                    </h2>
+                    <div className="mb-6 flex items-center gap-4">
+                      <h2 className="font-serif text-2xl text-foreground md:text-3xl">
+                        {groep.name}
+                      </h2>
+                      <GroepGolf />
+                    </div>
                   </FadeIn>
                 )}
                 <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
