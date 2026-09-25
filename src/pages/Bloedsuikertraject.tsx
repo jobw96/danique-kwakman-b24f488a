@@ -6,6 +6,7 @@ import { CustomButton } from '@/components/CustomButton';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
+import { Link } from '@/lib/router-compat';
 import { BLOEDSUIKER_TESTIMONIALS } from '@/data/testimonials';
 import sensorPortraitAsset from '@/assets/bloedsuiker/danique-glucosesensor-portret.webp.asset.json';
 import sensorShowAsset from '@/assets/bloedsuiker/danique-toont-glucosesensor.webp.asset.json';
@@ -271,6 +272,9 @@ const Bloedsuikertraject = () => {
               <p className="text-xl leading-relaxed text-foreground md:text-2xl">
                 Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
               </p>
+              <CustomButton onClick={openModal} className="mt-6">
+                Dit wil ik
+              </CustomButton>
             </FadeIn>
           </div>
         </div>
@@ -341,6 +345,9 @@ const Bloedsuikertraject = () => {
               <p className="mt-4 leading-relaxed">
                 Ik weet hoe frustrerend het is als je voelt dat er meer speelt, maar niet weet waar je moet beginnen. Daar help ik je graag bij.
               </p>
+              <Link to="/over-mij" className="mt-8 inline-block">
+                <CustomButton>Lees meer over mij</CustomButton>
+              </Link>
             </FadeIn>
           </div>
         </div>
