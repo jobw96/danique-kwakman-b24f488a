@@ -522,7 +522,6 @@ div[class*="_form_"]:not(.newsletter-form-wrapper *):not(._form_27):not(.contact
 .contact-form-29 button[type="submit"]:hover,
 .contact-form-29 input[type="submit"]:hover {
   background-color: hsl(220 27% 60%) !important; /* darker primary */
-  box-shadow: 0 4px 12px hsl(220 27% 69% / 0.3) !important;
 }
 
 /* Button focus state */

@@ -60,7 +60,7 @@ const Podcast = () => {
               href={SPOTIFY_SHOW_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 py-3.5 rounded-md font-medium shadow-xs transition-colors hover:bg-primary/90"
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 py-3.5 rounded-md font-medium transition-colors hover:bg-primary/90"
             >
               <Headphones className="w-5 h-5" />
               <span>Volg de podcast op Spotify</span>

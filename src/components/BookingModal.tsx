@@ -101,7 +101,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
             {/* Close Button */}
             <m.button
               onClick={onClose}
-              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-accent flex items-center justify-center shadow-lg"
+              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-accent flex items-center justify-center"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.85, rotate: 90 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}

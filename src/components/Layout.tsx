@@ -441,7 +441,7 @@ export const Layout: React.FC<LayoutProps> = ({
           })}
 
             <div className="ml-4">
-              <m.button onClick={handleExternalLink} className="text-xs font-medium px-5 py-2.5 rounded-md shadow-md bg-primary text-primary-foreground" whileHover={{
+              <m.button onClick={handleExternalLink} className="text-xs font-medium px-5 py-2.5 rounded-md bg-primary text-primary-foreground" whileHover={{
               y: -2,
               opacity: 0.9
             }} whileTap={{
@@ -796,7 +796,7 @@ export const Layout: React.FC<LayoutProps> = ({
             damping: 25
           }} 
           onClick={scrollToTop} 
-          className="fixed bottom-8 right-8 z-40 bg-primary text-primary-foreground p-3.5 rounded-full shadow-xl"
+          className="fixed bottom-8 right-8 z-40 bg-primary text-primary-foreground p-3.5 rounded-full"
           aria-label="Terug naar boven"
         >
           <ArrowUp size={20} aria-hidden="true" />
