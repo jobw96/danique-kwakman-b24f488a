@@ -76,12 +76,15 @@ const Klachten = () => {
       {/* Hero: foto links over 60vw en 120vh, tekst rechts en verticaal
           gecentreerd. De splitsing gaat pas op xl in; daaronder wordt de
           tekstkolom zo smal dat een regel onder de 45 tekens zakt, dus daar
-          staat de foto boven de tekst. */}
-      <section className="bg-card xl:grid xl:grid-cols-[60vw_1fr]">
-        {/* Radius alleen aan de onderkant: links en boven loopt de foto tegen
-            de schermrand en de header aan. Op xl valt linksonder weg, want
-            daar raakt de foto de linkerrand. */}
-        <div className="h-[41vh] w-full overflow-hidden rounded-b-[2.5rem] sm:h-[65vh] xl:h-[120vh] xl:rounded-bl-none xl:rounded-br-[3rem]">
+          valt de foto onder de tekst, zodat de kop meteen in beeld staat.
+          flex-col-reverse draait de volgorde om zonder de DOM-volgorde aan te
+          raken; op xl wordt het een grid en telt die richting niet meer mee. */}
+      <section className="flex flex-col-reverse bg-card xl:grid xl:grid-cols-[60vw_1fr]">
+        {/* Onder xl staat de foto onderaan de sectie en loopt hij tegen de
+            linker-, rechter- en onderrand aan, dus is alleen de bovenkant
+            afgerond. Op xl vult hij de linkerkolom van boven tot onder en
+            blijft alleen de rechteronderhoek over. */}
+        <div className="h-[41vh] w-full overflow-hidden rounded-t-[2.5rem] sm:h-[65vh] xl:h-[120vh] xl:rounded-t-none xl:rounded-br-[3rem]">
           <img
             src={kustParasols}
             alt="Twee crèmekleurige parasols van onderaf tegen een lichtblauwe lucht"
