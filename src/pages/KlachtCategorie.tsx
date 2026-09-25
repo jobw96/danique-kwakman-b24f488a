@@ -29,28 +29,56 @@ const categoryIntros: Record<string, string> = {
 };
 
 /**
- * Golfje naast een groepskop, hetzelfde motief als op /klachten. Staat in de
- * plaats van de streep die er eerder onder de kop liep: dat gaf de kop het
- * gewicht van een scheiding terwijl hij bij de tegels eronder hoort.
+ * Kleine merktekens naast een groepskop, in de primaire kleur. Elke groep
+ * krijgt een ander teken, zodat de koppen onderling verschillen zonder dat er
+ * een tweede kleur of vorm bij komt: het zijn alle drie ronde, open vormen,
+ * in dezelfde familie als het ovaaltje in het logo.
  *
- * De viewBox heeft dezelfde verhouding als de weergave, dus de lijndikte
- * blijft overal gelijk en er wordt niets uitgerekt.
+ * De viewBox heeft dezelfde verhouding als de weergave (36:20), dus er wordt
+ * niets uitgerekt en de lijndikte blijft overal gelijk.
  */
-const GroepGolf = () => (
-  <svg
-    viewBox="0 0 96 18"
-    fill="none"
-    aria-hidden="true"
-    className="h-[18px] w-24 shrink-0"
-  >
-    <path
-      d="M2 9q6.5-5.5 13 0t13 0 13 0 13 0 13 0 13 0 13 0"
+const merkKlassen = 'h-5 w-9 shrink-0';
+
+const Ovaal = () => (
+  <svg viewBox="0 0 36 20" fill="none" aria-hidden="true" className={merkKlassen}>
+    <ellipse
+      cx="18"
+      cy="10"
+      rx="14"
+      ry="5.8"
+      transform="rotate(-10 18 10)"
       className="stroke-primary"
-      strokeWidth={2}
+      strokeWidth={1.6}
+    />
+  </svg>
+);
+
+const Stippen = () => (
+  <svg viewBox="0 0 36 20" aria-hidden="true" className={merkKlassen}>
+    <circle cx="6" cy="14" r="2.3" className="fill-primary" opacity={0.6} />
+    <circle cx="18" cy="10" r="2.3" className="fill-primary" opacity={0.8} />
+    <circle cx="30" cy="6" r="2.3" className="fill-primary" />
+  </svg>
+);
+
+const Boog = () => (
+  <svg viewBox="0 0 36 20" fill="none" aria-hidden="true" className={merkKlassen}>
+    <path
+      d="M3 14C8 4.5 28 4.5 33 14"
+      className="stroke-primary"
+      strokeWidth={1.6}
       strokeLinecap="round"
     />
   </svg>
 );
+
+const MERKEN = [Ovaal, Stippen, Boog];
+
+/** Kiest het teken op volgorde, zodat geen twee groepen op een pagina hetzelfde krijgen. */
+const GroepMerk = ({ index }: { index: number }) => {
+  const Merk = MERKEN[index % MERKEN.length];
+  return <Merk />;
+};
 
 /**
  * Een tegel. De kop is een h3 zodra er groepskoppen boven staan, en anders
@@ -158,7 +186,7 @@ const KlachtCategorie = () => {
                       <h2 className="font-serif text-2xl text-foreground md:text-3xl">
                         {groep.name}
                       </h2>
-                      <GroepGolf />
+                      <GroepMerk index={groepIndex} />
                     </div>
                   </FadeIn>
                 )}
