@@ -28,44 +28,6 @@ const results = [
   'Je krijgt meer inzicht in de invloed van je bloedsuikerspiegel op je hormonale gezondheid en hebt praktische handvatten waar je zelf mee verder kunt',
 ];
 
-const processSteps = [
-  {
-    number: '01',
-    title: 'Kennismaking',
-    icon: Users,
-    description:
-      'Tijdens dit vrijblijvende gesprek bespreken we jouw situatie en hulpvraag. Je kunt al je vragen stellen en samen bekijken we of dit traject passend is.',
-  },
-  {
-    number: '02',
-    title: 'Intake en plaatsing glucosesensor',
-    icon: ClipboardList,
-    description:
-      'We brengen jouw voeding, leefstijl, energie, slaap, stress, beweging en klachten in kaart. Daarna plaatsen we de sensor op de achterkant van je bovenarm. Dit doen we op locatie in Hoorn of ik begeleid je online via Zoom. De eerste week verander je bewust niets, zodat we een eerlijk beeld krijgen van jouw huidige patroon.',
-  },
-  {
-    number: '03',
-    title: 'Meten in jouw dagelijks leven',
-    icon: ScanLine,
-    description:
-      'Veertien dagen lang zie je hoe je glucosewaarden gedurende de dag schommelen. Je houdt bij wat je eet en wat er rondom beweging, slaap en stress gebeurt.',
-  },
-  {
-    number: '04',
-    title: 'Check-in na 1 week',
-    icon: Activity,
-    description:
-      'Na zeven dagen analyseren we de eerste patronen. Je ontvangt een persoonlijk plan op basis van deze data en gaat daar tijdens de tweede week gericht mee aan de slag.',
-  },
-  {
-    number: '05',
-    title: 'Eindconsult na 2 weken',
-    icon: MessageCircle,
-    description:
-      'Na veertien dagen vergelijken we de resultaten en zetten we de puntjes op de i, zodat je weet welke aanpassingen je wilt blijven toepassen en hoe je daar ook op de lange termijn mee verder kunt. ',
-  },
-];
-
 const included = [
   {
     title: 'Online kennismakingsgesprek',
