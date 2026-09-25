@@ -27,8 +27,11 @@ const Klachten = () => {
           gecentreerd. De splitsing gaat pas op xl in; daaronder wordt de
           tekstkolom zo smal dat een regel onder de 45 tekens zakt, dus daar
           staat de foto boven de tekst. */}
-      <section className="xl:grid xl:grid-cols-[60vw_1fr]">
-        <div className="h-[55vh] w-full sm:h-[65vh] xl:h-[120vh]">
+      <section className="bg-card xl:grid xl:grid-cols-[60vw_1fr]">
+        {/* Radius alleen aan de onderkant: links en boven loopt de foto tegen
+            de schermrand en de header aan. Op xl valt linksonder weg, want
+            daar raakt de foto de linkerrand. */}
+        <div className="h-[55vh] w-full overflow-hidden rounded-b-[2.5rem] sm:h-[65vh] xl:h-[120vh] xl:rounded-bl-none xl:rounded-br-[3rem]">
           <img
             src={kustParasols}
             alt="Twee crèmekleurige parasols van onderaf tegen een lichtblauwe lucht"
