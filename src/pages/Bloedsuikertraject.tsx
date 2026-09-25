@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 import { m } from 'framer-motion';
-import {
-  Activity,
-  Check,
-  ChevronDown,
-  ClipboardList,
-  Heart,
-  MessageCircle,
-  ScanLine,
-  Users,
-  X,
-} from 'lucide-react';
+import { Check, ChevronDown, Heart, X } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { useBookingModal } from '@/components/BookingModal';
