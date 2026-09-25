@@ -812,3 +812,91 @@ export const complaintsByCategory = complaintCategories.map((category) => ({
     (item) => item.category === category.name || item.alsoIn?.includes(category.name)
   ),
 }));
+
+/**
+ * Subgroepen binnen een categorie, voor de indeling op
+ * /klachten/onderdeel/{slug}. Alleen bedoeld om lange lijsten leesbaar te
+ * houden: met dertien tegels achter elkaar is er geen houvast meer.
+ *
+ * Een categorie zonder entry blijft een platte lijst; bij vier tegels voegt
+ * groeperen niets toe. Klachten die hier niet in een groep staan verdwijnen
+ * niet: complaintsInGroups zet ze achteraan in een blok zonder kop.
+ */
+export const complaintGroups: Record<string, { name: string; slugs: string[] }[]> = {
+  'hormonen-en-cyclus': [
+    {
+      name: 'Je cyclus',
+      slugs: ['menstruatieklachten', 'onregelmatige-cyclus', 'pms', 'stemmingswisselingen'],
+    },
+    {
+      name: 'Hormonen uit balans',
+      slugs: [
+        'oestrogeendominantie',
+        'progesterontekort',
+        'schildklierdisbalans',
+        'pcos-pmos',
+        'endometriose',
+        'insulineresistentie',
+      ],
+    },
+    {
+      name: 'Levensfase',
+      slugs: ['kinderwens', 'herstel-na-anticonceptie', 'overgang'],
+    },
+  ],
+  'darmen-en-spijsvertering': [
+    {
+      name: 'Buik en vertering',
+      slugs: [
+        'opgeblazen-buik',
+        'winderigheid',
+        'maagzuur-en-verteringsklachten',
+        'voedselintoleranties',
+      ],
+    },
+    {
+      name: 'Ontlasting en darmwerking',
+      slugs: ['darmklachten', 'pds', 'obstipatie', 'diarree'],
+    },
+  ],
+  'energie-en-bloedsuiker': [
+    {
+      name: 'Energie door de dag',
+      slugs: ['vermoeidheid', 'energiedips', 'brain-fog'],
+    },
+    {
+      name: 'Bloedsuiker',
+      slugs: ['cravings-en-bloedsuiker', 'bloedsuikerschommelingen', 'insulineresistentie'],
+    },
+    {
+      name: 'Stress en slaap',
+      slugs: ['slaapproblemen', 'stress-en-herstel', 'cortisol-uit-balans'],
+    },
+  ],
+};
+
+/**
+ * De klachten van een categorie in groepen, in de volgorde van
+ * complaintGroups. Geeft null terug als de categorie niet gegroepeerd is.
+ */
+export const complaintsInGroups = (categorySlug: string) => {
+  const groepen = complaintGroups[categorySlug];
+  const categorie = complaintsByCategory.find((item) => item.slug === categorySlug);
+  if (!groepen || !categorie) return null;
+
+  const gebruikt = new Set<string>();
+  const uit = groepen.map((groep) => {
+    const items = groep.slugs
+      .map((slug) => categorie.items.find((item) => item.slug === slug))
+      .filter((item): item is Complaint => Boolean(item));
+    items.forEach((item) => gebruikt.add(item.slug));
+    return { name: groep.name, items };
+  });
+
+  // Vangnet: een klacht die aan de categorie is toegevoegd maar nog in geen
+  // enkele groep staat, komt achteraan in een blok zonder kop terecht.
+  const rest = categorie.items.filter((item) => !gebruikt.has(item.slug));
+  if (rest.length) uit.push({ name: '', items: rest });
+
+  return uit.filter((groep) => groep.items.length > 0);
+};

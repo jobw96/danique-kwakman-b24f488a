@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { FadeIn } from '@/components/Animations';
 import { Section } from '@/components/Section';
-import { complaintsByCategory, findComplaintCategory } from '@/data/complaints';
+import { complaintsByCategory, complaintsInGroups, findComplaintCategory } from '@/data/complaints';
 import { Link, Navigate, useParams } from '@/lib/router-compat';
 import granaatappelTerracotta from '@/assets/sfeer/granaatappel-terracotta-3x4.webp';
 import gipsmuurStrijklicht from '@/assets/sfeer/abstract-gipsmuur-strijklicht-21x9.webp';
@@ -29,6 +29,41 @@ const categoryIntros: Record<string, string> = {
     'Hieronder vind je de klachten waarmee ik vrouwen begeleid. Van acne tot eczeem, een gevoelige huid en haaruitval.',
 };
 
+/**
+ * Een tegel. De kop is een h3 zodra er groepskoppen boven staan, en anders
+ * een h2: dan is de tegel zelf het eerste niveau onder de h1.
+ */
+const KlachtTegel = ({
+  complaint,
+  delay,
+  gegroepeerd,
+}: {
+  complaint: { slug: string; title: string; teaser: string };
+  delay: number;
+  gegroepeerd: boolean;
+}) => {
+  const Kop = gegroepeerd ? 'h3' : 'h2';
+  return (
+    <li className="h-full">
+      <FadeIn delay={delay} className="h-full">
+        <Link
+          to={`/klachten/${complaint.slug}`}
+          className="group flex h-full flex-col rounded-md border border-secondary/40 bg-background p-5 transition-colors hover:border-primary/40 hover:bg-secondary/10"
+        >
+          <Kop className="mb-2 flex items-start gap-2 font-serif text-lg leading-snug text-foreground transition-colors group-hover:text-primary-dark">
+            <span className="min-w-0 flex-1">{complaint.title}</span>
+            <ArrowRight
+              className="mt-1 h-4 w-4 shrink-0 text-primary/50 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
+              aria-hidden="true"
+            />
+          </Kop>
+          <p className="text-sm leading-relaxed text-muted-foreground">{complaint.teaser}</p>
+        </Link>
+      </FadeIn>
+    </li>
+  );
+};
+
 const KlachtCategorie = () => {
   const { category: categorySlug } = useParams();
   const category = categorySlug ? findComplaintCategory(categorySlug) : undefined;
@@ -37,6 +72,8 @@ const KlachtCategorie = () => {
   if (!category || !categoryWithItems) return <Navigate to="/klachten" replace />;
 
   const beeld = CATEGORY_IMAGE[category.slug];
+  // Null bij een categorie zonder groepsindeling; dan blijft het een platte lijst.
+  const groepen = categorySlug ? complaintsInGroups(categorySlug) : null;
 
   return (
     <>
@@ -102,27 +139,46 @@ const KlachtCategorie = () => {
         />
         <div className="absolute inset-0 bg-card/75" aria-hidden="true" />
         <div className="container relative mx-auto px-6">
-        <ul className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categoryWithItems.items.map((complaint, index) => (
-            <li key={complaint.slug} className="h-full">
-              <FadeIn delay={index * 0.03} className="h-full">
-                <Link
-                  to={`/klachten/${complaint.slug}`}
-                  className="group flex h-full flex-col rounded-md border border-secondary/40 bg-background p-5 transition-colors hover:border-primary/40 hover:bg-secondary/10"
-                >
-                  <h2 className="mb-2 flex items-start gap-2 font-serif text-lg leading-snug text-foreground transition-colors group-hover:text-primary-dark">
-                    <span className="min-w-0 flex-1">{complaint.title}</span>
-                    <ArrowRight
-                      className="mt-1 h-4 w-4 shrink-0 text-primary/50 transition-all group-hover:translate-x-0.5 group-hover:text-primary"
-                      aria-hidden="true"
+        {groepen ? (
+          <div className="mx-auto max-w-5xl space-y-12 md:space-y-16">
+            {groepen.map((groep, groepIndex) => (
+              <section key={groep.name || 'overig'}>
+                {groep.name && (
+                  <FadeIn>
+                    {/* Hoort bij de tegels eronder, dus een kleine kop met een
+                        lijn eronder in plaats van een tweede paginakop. */}
+                    <h2 className="mb-5 border-b border-secondary/40 pb-3 font-serif text-xl text-foreground md:text-2xl">
+                      {groep.name}
+                    </h2>
+                  </FadeIn>
+                )}
+                <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {groep.items.map((complaint, index) => (
+                    <KlachtTegel
+                      key={complaint.slug}
+                      complaint={complaint}
+                      // De vertraging loopt per groep opnieuw, anders staat de
+                      // laatste tegel van een lange pagina seconden te wachten.
+                      delay={index * 0.03 + groepIndex * 0.05}
+                      gegroepeerd
                     />
-                  </h2>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{complaint.teaser}</p>
-                </Link>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
+        ) : (
+          <ul className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {categoryWithItems.items.map((complaint, index) => (
+              <KlachtTegel
+                key={complaint.slug}
+                complaint={complaint}
+                delay={index * 0.03}
+                gegroepeerd={false}
+              />
+            ))}
+          </ul>
+        )}
         </div>
       </section>
     </>
