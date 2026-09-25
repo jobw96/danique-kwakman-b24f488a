@@ -380,14 +380,36 @@ const Bloedsuikertraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <ul className="divide-y divide-secondary/40">
-                {included.map((item) => (
-                  <li key={item.title} className="py-6 first:pt-0 last:pb-0">
-                    <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
-                    <p className="mt-2 leading-relaxed">{item.description}</p>
-                  </li>
-                ))}
-              </ul>
+              <div className="border-t border-secondary/40">
+                {included.map((item, index) => {
+                  const isOpen = openIncluded === index;
+                  return (
+                    <div key={item.title} className="border-b border-secondary/40">
+                      <m.button
+                        type="button"
+                        onClick={() => setOpenIncluded(isOpen ? null : index)}
+                        className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                        aria-expanded={isOpen}
+                        whileHover={{ x: 3 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
+                        <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-primary-dark">
+                          <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                        </m.span>
+                      </m.button>
+                      <m.div
+                        initial={false}
+                        animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="pb-6 leading-relaxed">{item.description}</p>
+                      </m.div>
+                    </div>
+                  );
+                })}
+              </div>
             </FadeIn>
           </div>
         </div>
