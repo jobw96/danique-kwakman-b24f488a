@@ -46,9 +46,16 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
                   <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-card-foreground leading-relaxed text-sm flex-grow">
-                {testimonial.text}
-              </p>
+              <div className="flex flex-grow flex-col gap-3">
+                {testimonial.text.split("\n").map((paragraph, index) => (
+                  <p
+                    key={index}
+                    className="text-card-foreground leading-relaxed text-sm"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
           </CarouselItem>
         ))}

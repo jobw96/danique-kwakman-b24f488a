@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { m } from 'framer-motion';
-import { Check, ChevronDown, Heart, X } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
+import { BLOEDSUIKER_TESTIMONIALS } from '@/data/testimonials';
 import sensorPortraitAsset from '@/assets/bloedsuiker/danique-glucosesensor-portret.webp.asset.json';
 import sensorShowAsset from '@/assets/bloedsuiker/danique-toont-glucosesensor.webp.asset.json';
 import sensorBoxAsset from '@/assets/bloedsuiker/freestyle-libre-sensor.webp.asset.json';
@@ -419,42 +421,12 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="text-center">
-              <SectionLabel>Wel of niet passend</SectionLabel>
-              <h2 className="text-3xl text-foreground md:text-5xl">Is dit traject voor jou?</h2>
+              <SectionLabel>Ervaringen</SectionLabel>
+              <h2 className="text-3xl text-foreground md:text-5xl">En zij gingen je voor</h2>
             </FadeIn>
-            <div className="mt-12 grid gap-px overflow-hidden rounded-md border border-secondary/40 bg-secondary/40 md:grid-cols-2">
-              <FadeIn className="h-full bg-card p-8 md:p-10">
-                <Heart className="h-7 w-7 text-primary" aria-hidden="true" />
-                <h3 className="mt-5 text-2xl text-foreground">Dit past bij jou als je</h3>
-                <div className="mt-6">
-                  <CheckList
-                    items={[
-                      'Wilt stoppen met gokken wat gezond is voor jou',
-                      'Meer inzicht wilt in jouw energie en eetpatroon',
-                      'Openstaat voor praktische aanpassingen in voeding en leefstijl',
-                      'Persoonlijke begeleiding wilt bij het interpreteren van de meting',
-                    ]}
-                  />
-                </div>
-              </FadeIn>
-              <FadeIn delay={0.1} className="h-full bg-background p-8 md:p-10">
-                <X className="h-7 w-7 text-primary-dark" aria-hidden="true" />
-                <h3 className="mt-5 text-2xl text-foreground">Dit is niet passend als je</h3>
-                <ul className="mt-6 space-y-3">
-                  {[
-                    'Alleen een glucosesensor wilt dragen zonder begeleiding',
-                    'Op zoek bent naar een snel dieet of tijdelijke oplossing',
-                    'Geen ruimte wilt maken voor verandering in voeding en leefstijl',
-                    'Niet bereid bent om twee weken actief inzicht te krijgen in jouw patroon',
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-dark" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </FadeIn>
-            </div>
+            <FadeIn delay={0.1} className="mt-12">
+              <Testimonials testimonials={BLOEDSUIKER_TESTIMONIALS} />
+            </FadeIn>
           </div>
         </div>
       </section>
