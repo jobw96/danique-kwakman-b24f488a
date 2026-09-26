@@ -7,7 +7,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import { Link } from '@/lib/router-compat';
 import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
-import daniqueDarm from '@/assets/danique-darm.webp';
+import buikDuinen from '@/assets/sfeer/buik-duinen-darmtraject.webp.asset.json';
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWalking from '@/assets/danique-walking.webp';
 import daniqueTowel from '@/assets/danique-towel.webp';
@@ -303,9 +303,9 @@ const Darmtraject = () => {
             <FadeIn immediate delay={0.15}>
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <ParallaxImage
-                  src={daniqueDarm}
-                  alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn, tijdens het 1:1 darmtraject"
-                  title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
+                  src={buikDuinen.url}
+                  alt="Vrouw in wit topje en witte broek staat in de duinen, met de zon op haar buik"
+                  title="Rust in je buik met het 1:1 darmtraject"
                   className="h-full w-full"
                   eager
                 />
