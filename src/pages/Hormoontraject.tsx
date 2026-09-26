@@ -264,24 +264,44 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="border-y border-secondary/40 bg-card py-16 md:py-24">
+      {/* De granaatappel staat hier met dezelfde instellingen als op de
+          klachtenpagina: rechts uit de kolom en tegen de schermrand aan,
+          absoluut van de boven- tot de onderkant van de sectie, 42vw breed met
+          een plafond van 620px en alleen links afgerond. Onder lg valt hij terug
+          op de normale stroom: onder de tekst, in 3:4 en rondom afgerond. */}
+      <section className="relative border-y border-secondary/40 bg-card py-16 md:py-24 lg:flex lg:min-h-[40rem] lg:flex-col lg:justify-center">
         <div className="container mx-auto px-6">
-          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-            <FadeIn>
-              <SectionLabel text="Je bent niet elke week dezelfde versie van jezelf" />
-              <h2 className="text-3xl text-foreground md:text-4xl">
-                Je wilt begrijpen wat er in jouw lichaam gebeurt en waar je hormonale disbalans vandaan komt.
-              </h2>
-              <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-                Herken je dit?
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <CheckList items={signalen} />
-              <p className="mt-8 max-w-md leading-relaxed text-foreground">
-                {"\n"}
-              </p>
-            </FadeIn>
+          <div className="mx-auto max-w-6xl">
+            <div className="lg:max-w-[52%]">
+              <FadeIn>
+                <SectionLabel text="Je bent niet elke week dezelfde versie van jezelf" />
+                <h2 className="text-3xl text-foreground md:text-4xl">
+                  Je wilt begrijpen wat er in jouw lichaam gebeurt en waar je hormonale disbalans vandaan komt.
+                </h2>
+                <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
+                  Herken je dit?
+                </p>
+              </FadeIn>
+              <FadeIn delay={0.1}>
+                <CheckList items={signalen} />
+              </FadeIn>
+            </div>
+            <div className="mt-10 lg:absolute lg:bottom-0 lg:right-0 lg:top-0 lg:mt-0 lg:w-[42vw] lg:max-w-[620px]">
+              <FadeIn delay={0.15} className="h-full">
+                {/* Alleen links afgerond: rechts loopt de foto tegen de
+                    schermrand aan. Onder lg staat hij binnen de marges en is
+                    hij rondom afgerond. */}
+                <div className="aspect-[3/4] overflow-hidden rounded-2xl lg:aspect-auto lg:h-full lg:rounded-l-3xl lg:rounded-r-none">
+                  <img
+                    src={granaatappelTerracotta}
+                    alt="Opengebroken granaatappel op een terracotta ondergrond in de zon"
+                    width={1195}
+                    height={1600}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </FadeIn>
+            </div>
           </div>
         </div>
       </section>
