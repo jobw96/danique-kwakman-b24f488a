@@ -28,27 +28,27 @@ const aandachtsvelden = [
   {
     title: 'Hormonen & cyclus',
     description:
-      'We brengen je cyclus en de klachten rondom je menstruatie in kaart. Wanneer ontstaan je klachten? Wat verandert er gedurende de maand? En welke patronen vallen op?',
+      'We kijken naar je hormonale klachten en als je een cyclus hebt, naar het verloop daarvan. We brengen in kaart wanneer klachten ontstaan, wat er verandert en welke patronen opvallen.',
   },
   {
     title: 'Darmen',
     description:
-      'Een opgeblazen buik, buikpijn of een veranderde stoelgang nemen we mee in het grotere geheel. We kijken wat jouw darmen nodig hebben en welke rol voeding en leefstijl hierin spelen.',
+      'Je wilt niet alleen voldoende vetten, eiwitten, vitaminen en mineralen binnenkrijgen, maar ze ook goed kunnen verteren en opnemen. Deze voedingsstoffen zijn nodig voor allerlei processen in je lichaam, waaronder je hormoonhuishouding. Daarom kijken we ook naar je spijsvertering en darmgezondheid.',
   },
   {
     title: 'Bloedsuiker & energie',
     description:
-      'Cravings, energiedips en schommelingen in energie kunnen je dagelijks behoorlijk beïnvloeden. We kijken naar je eetpatroon en gewoontes en wat daarin voor jou verschil kan maken.',
+      'Een stabiele bloedsuikerspiegel vormt een belangrijke basis voor je energie en hormonale gezondheid. We kijken niet alleen naar wat je eet, maar ook hoe je lichaam daarop reageert en hoe je maaltijden zijn opgebouwd, zeker bij klachten zoals PMS of PCOS.',
   },
   {
     title: 'Voeding & leefstijl',
     description:
-      'Niet wat je volgens een standaard lijstje zou moeten doen, maar wat past bij jouw lichaam, jouw klachten en jouw leven.',
+      'Je voeding levert de bouwstoffen die je lichaam nodig heeft om hormonen aan te maken. Daarom kijken we naar wat je eet of je voldoende binnenkrijgt en waar we jouw voeding kunnen aanpassen om hormonale disbalans aan te pakken.',
   },
   {
     title: 'Slaap & stress',
     description:
-      'Ook herstel krijgt een plek. Want je lichaam heeft niet alleen goede voeding nodig, maar ook voldoende ruimte voor herstel.',
+      'Ook slaap en stress nemen we mee. Voldoende slaap en herstel zijn belangrijk voor je hormoonhuishouding. Langdurige stress kan daarnaast invloed hebben op je hormonen, cyclus en energieniveau. Daarom kijken we naar hoe jij slaapt, herstelt en omgaat met de belasting in je dagelijks leven.',
   },
 ];
 
