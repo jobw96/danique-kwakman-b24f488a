@@ -12,7 +12,7 @@ import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
-import groenteschaal from '@/assets/sfeer/groenteschaal-bovenaf-9x16.webp';
+import kookboekAsset from '@/assets/sfeer/kookboek-strandlaken.webp.asset.json';
 
 /** De signalen uit de sectie "Je bent niet elke week dezelfde versie van jezelf". */
 const signalen = [
@@ -490,11 +490,11 @@ const Hormoontraject = () => {
                 <h2 className="text-3xl text-foreground md:text-4xl">Wat is inbegrepen?</h2>
                 <figure className="mt-8 overflow-hidden rounded-2xl bg-background">
                   <img
-                    src={groenteschaal}
-                    alt="Vier kleine schalen met roastgroenten, verse kruiden en salie op een linnen tafelkleed"
-                    title="Praktische tools en recepten tijdens het 1:1 hormoontraject"
-                    width={905}
-                    height={1600}
+                    src={kookboekAsset.url}
+                    alt="Opengeslagen kookboek met een foto van geroosterde groenten, liggend op een geel-wit gestreepte handdoek in de zon"
+                    title="Recepten en praktische tools tijdens het 1:1 hormoontraject"
+                    width={886}
+                    height={1570}
                     loading="lazy"
                     decoding="async"
                     className="aspect-[4/5] w-full object-cover"
