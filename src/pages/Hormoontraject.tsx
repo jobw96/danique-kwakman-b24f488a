@@ -100,7 +100,7 @@ const included = [
   {
     title: '3 maanden persoonlijke begeleiding',
     description:
-      'Drie maanden lang sta ik naast je. We nemen de tijd om veranderingen uit te proberen, te evalueren en bij te sturen. Zo hoef je niet alles in één keer te veranderen.',
+      'Drie maanden lang sta ik naast je. Mijn begeleiding stopt niet zodra onze 1:1 sessie voorbij is. Ook tussen de sessies door kun je bij mij terecht met vragen, ervaringen en dingen waar je tegenaan loopt. We kijken samen wat er speelt, sturen bij waar nodig en bepalen steeds wat voor jou de volgende stap is.',
   },
   {
     title: 'WhatsApp-begeleiding',
