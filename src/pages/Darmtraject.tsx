@@ -51,7 +51,7 @@ const onderzoekOnderwerpen = [
   {
     title: 'Voedselintolerantietest',
     description:
-      'Reageert je lichaam op bepaalde voedingsmiddelen? Met de voedselintolerantietest zien we waar jouw lichaam op reageert. Zo hoef je niet langer te gokken en haal je niet onnodig hele productgroepen uit je voeding.',
+      'Met een bloedonderzoek kijken we naar\u00a0IgG- en IgG4-reacties op 31 voedingsmiddelen..\u00a0\nDe uitslag geeft inzicht in welke voedingsmiddelen een reactie laten zien. We bekijken deze resultaten altijd samen met jouw klachten, voedingspatroon en het darmonderzoek.\n',
   },
   {
     title: 'Van uitslag naar plan',
