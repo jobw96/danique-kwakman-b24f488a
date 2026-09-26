@@ -292,10 +292,13 @@ const Darmtraject = () => {
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  Misschien heb je al van alles geschrapt, apps bijgehouden of te horen gekregen dat het "gewoon PDS" is. En toch weet je nog steeds niet waarom je buik doet wat hij doet.
-                </p>
-                <p>
-                  In het 1:1 darmtraject gaan we ongeveer 6 maanden samen aan de slag. Met gericht laboratoriumonderzoek brengen we in kaart wat er in jouw darmen speelt. Zo weten we waar je klachten vandaan komen en wat jouw lichaam nodig heeft om te herstellen.
+                  Jouw avondritueel? Met buikpijn op de bank omdat je darmen weer van streek zijn. Let's change that!
+
+                  Je hebt je voeding aangepast, bepaalde producten weggelaten, supplementen geprobeerd en misschien zelfs verschillende diëten gevolgd.
+
+                  Toch blijf je last houden van een opgeblazen buik, buikpijn, een wisselende stoelgang, vermoeidheid of huidklachten die steeds terugkomen.
+
+                  Met mijn 1:1 darmtraject kijken we niet alleen naar jouw klachten, maar gaan we op zoek naar de oorzaak.
                 </p>
               </div>
               <CustomButton onClick={openModal} className="mt-8">
