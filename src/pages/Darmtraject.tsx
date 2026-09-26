@@ -20,14 +20,14 @@ const DARM_TESTIMONIALS = [
     name: 'Cliënt',
     rating: 5,
     image: '',
-    text: 'Het eten gaat mij steeds makkelijker af en heb echt mijn routine gevonden. Je recepten zijn ook erg fijn!',
+    text: 'De afgelopen dagen kan ik elke dag naar de wc zonder movicolon zakjes. Het gaat ook een stuk makkelijker!',
   },
   {
     id: 'd2',
     name: 'Cliënt',
     rating: 5,
     image: '',
-    text: 'De afgelopen dagen kan ik elke dag naar de wc zonder die movicolon zakjes. En het gaat makkelijker 🙃',
+    text: 'Het eten gaat mij steeds makkelijker af en heb echt mijn routine gevonden. Je recepten zijn ook erg fijn!',
   },
   ...GENERAL_TESTIMONIALS,
 ];
