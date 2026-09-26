@@ -8,7 +8,8 @@ import { useBookingModal } from '@/components/BookingModal';
 import { Link } from '@/lib/router-compat';
 import { HORMOON_TESTIMONIALS } from '@/data/testimonials';
 import daniqueMatchCall from '@/assets/danique-match-call.webp';
-import daniqueRelaxed from '@/assets/danique-relaxed.webp';
+import granaatappelTraject from '@/assets/sfeer/granaatappel-traject-3x4.webp.asset.json';
+const granaatappelTrajectUrl = granaatappelTraject.url;
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
@@ -305,11 +306,11 @@ const Hormoontraject = () => {
       <section className="lg:grid lg:grid-cols-2">
         <div className="h-[45vh] w-full overflow-hidden sm:h-[55vh] lg:h-auto">
           <img
-            src={daniqueRelaxed}
-            alt="Danique Kwakman leest een boek terwijl ze op een handdoek op het strand zit"
+            src={granaatappelTrajectUrl}
+            alt="Opengebroken granaatappel op een terracotta ondergrond in de zon"
             title="Wat jouw lichaam nodig heeft, verschilt per levensfase"
-            width={1920}
-            height={1279}
+            width={1000}
+            height={1334}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover"
