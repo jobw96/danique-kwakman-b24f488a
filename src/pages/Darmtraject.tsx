@@ -186,7 +186,7 @@ const faqs = [
   },
   {
     question: 'Kan ik het traject online volgen?',
-    answer: ['Ja. Het volledige traject kan online worden gevolgd. De intake kan ook in Hoorn.'],
+    answer: ['Ja. Het volledige traject kan online worden gevolgd of in mijn praktijk in Hoorn.'],
   },
   {
     question: 'Hoe weet ik of dit traject bij mij past?',
