@@ -7,4 +7,4 @@
 - [x] Klachtenpagina herstructureren naar vier onderdelen met eigen categorie-overzichten en ontbrekende klachten
 - [x] Pagina ‘Een onregelmatige cyclus’ uitbreiden met unieke uitleg, werkwijze, verlangen, FAQ en SEO
 - [x] Pagina ‘1:1 Bloedsuikertraject’ vernieuwen met aangeleverde foto’s, nieuwe opbouw en aangescherpte metadata
-- [ ] Wijziging hormoontraject (granaatappel bij 'Je bent niet elke week dezelfde versie van jezelf' + hero-foto weg) terugdraaien via ingebouwde herstelknop / History-tab
+- [x] Wijziging hormoontraject (granaatappel bij 'Je bent niet elke week dezelfde versie van jezelf' + hero-foto weg) teruggezet naar de originele opbouw
