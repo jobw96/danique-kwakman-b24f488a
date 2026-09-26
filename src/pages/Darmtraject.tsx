@@ -107,7 +107,7 @@ const included = [
   {
     title: 'Uitgebreide intake',
     description:
-      'Tijdens de intake brengen we jouw situatie uitgebreid in kaart. We kijken onder andere naar je darmklachten, stoelgang, voeding, energie, slaap, stress, je cyclus en je gezondheidsgeschiedenis. Zo krijgen we zicht op de belangrijke puzzelstukjes binnen jouw situatie.',
+      'Tijdens de intake brengen we jouw situatie uitgebreid in kaart. We kijken onder andere naar je darmklachten, stoelgang, voeding, energie, slaap, stress, je cyclus en je gezondheidsgeschiedenis. Zo krijgen we zicht op de belangrijke puzzelstukjes binnen jouw situatie.\u00a0\n\nOok krijg je na de intake het onderzoeks pakketje thuisgestuurd. Hierin vind je het ontlastingsonderzoek en de intolerantie test.\u00a0\n',
   },
   {
     title: 'Ontlastingsonderzoek en voedselintolerantietest',
