@@ -288,7 +288,7 @@ const Darmtraject = () => {
                 1:1 darmtraject
               </h1>
               <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
-                Je wilt gewoon kunnen eten zonder na te denken over wat het met je buik doet. Uit eten gaan, een broek dragen die ook na de lunch nog lekker zit en niet steeds rekening houden met waar de wc is.
+                Je wilt gewoon kunnen eten zonder na te denken over hoe je buik reageert. Uit eten gaan, een broek dragen die ook na de lunch nog lekker zit en niet steeds rekening houden met waar de wc is.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
