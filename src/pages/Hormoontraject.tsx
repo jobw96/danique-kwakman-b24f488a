@@ -296,14 +296,14 @@ const Hormoontraject = () => {
             <FadeIn className="max-w-3xl">
               <SectionLabel text="Hormonen staan niet op zichzelf" />
               <h2 className="text-3xl text-foreground md:text-4xl">
-                Daarom kijken we naar het hele plaatje
+                {"Een hormonale disbalans ontstaat meestal niet door één ding.\n"}
               </h2>
               <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
                 <p>
-                  Je cyclus, energie, buik, huid, cravings en slaap kunnen allemaal onderdeel zijn van hetzelfde verhaal.
+                  {"Voeding, bloedsuiker, stress, slaap, darmen, beweging en veranderingen in je levensfase kunnen allemaal meespelen.Daarom kijken we tijdens het traject niet alleen naar je hormonen, maar naar het hele plaatje en vooral naar\u00a0wat er bij jou meespeelt.."}
                 </p>
                 <p>
-                  Tijdens het traject kijken we daarom naar verschillende onderdelen van je gezondheid en vooral naar hoe ze bij jou met elkaar samenhangen.
+                  {"\n"}
                 </p>
               </div>
             </FadeIn>
