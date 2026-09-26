@@ -139,7 +139,7 @@ const faqs = [
   {
     question: 'Voor welke klachten kan ik het hormoontraject volgen?',
     answer: [
-      'Het traject kan passend zijn wanneer je langere tijd klachten ervaart rondom je cyclus en hormonale gezondheid. Denk bijvoorbeeld aan PMS, een onregelmatige of pijnlijke menstruatie, vermoeidheid, acne, cravings, stemmingswisselingen, schommelingen in energie of een opgeblazen buik.',
+      'Het traject kan passend zijn wanneer je langere tijd klachten ervaart rondom je cyclus en hormonale gezondheid. Denk bijvoorbeeld aan PMS, een onregelmatige of pijnlijke menstruatie, vermoeidheid, acne, cravings, stemmingswisselingen, schommelingen in energie of PCOS/PMOS.\n\nMaar ook bij klachten die passen bij verschillende levensfases, denk aan: stoppen met anticonceptie, de overgang en alles rondom vruchtbaarheid en zwangerschap\n\n',
       'Tijdens de gratis kennismaking bespreken we jouw persoonlijke situatie.',
     ],
   },
