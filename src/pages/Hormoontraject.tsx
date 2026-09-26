@@ -444,7 +444,7 @@ const Hormoontraject = () => {
                 <CheckList items={resultaten} opDonker />
               </div>
               <p className="mt-8 font-serif text-2xl text-primary-foreground md:text-3xl">
-                Niet perfect. Wel passend bij jou.
+                {"\n"}
               </p>
               <CustomButton onClick={openModal} variant="white" className="mt-9">
                 Plan een gratis kennismaking
