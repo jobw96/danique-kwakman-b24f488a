@@ -146,7 +146,7 @@ const faqs = [
   {
     question: 'Is dit traject ook geschikt als mijn bloedwaarden normaal zijn?',
     answer: [
-      'Ja. Je kunt je niet goed voelen terwijl standaard bloedonderzoek geen duidelijke afwijkingen laat zien. We kijken daarom niet alleen naar losse waarden, maar naar je klachten, patronen, leefstijl en het geheel.',
+      'Regulier bloedonderzoek is waardevol en wordt vooral ingezet om ziekten en medische afwijkingen op te sporen of uit te sluiten. Wanneer daar geen duidelijke afwijkingen uit komen, betekent dat niet automatisch dat er geen aanvullende informatie te verkrijgen is.\n\nIn mijn begeleiding kan aanvullend laboratoriumonderzoek van RP Sanitas Humanus worden ingezet om bepaalde puzzelstukjes verder te onderzoeken. Afhankelijk van jouw klachten en hulpvraag kan dit bijvoorbeeld informatie geven over hormonen, voedingsstoffen of andere relevante waarden.\n\nIk werk met laboratoriumonderzoek en niet met energetische of niet-laboratoriumgerichte testmethoden, zoals een EMB-test. De uitslagen zie ik altijd als aanvulling op de uitgebreide intake en mijn begeleiding met voeding en leefstijl.\n\nAanvullend onderzoek is geen standaard onderdeel van ieder traject. Eerst brengen we jouw klachten en situatie uitgebreid in kaart. Daarna kijken we of onderzoek iets kan toevoegen aan jouw begeleiding.\n',
     ],
   },
   {
