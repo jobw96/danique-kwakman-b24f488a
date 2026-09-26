@@ -158,7 +158,7 @@ const faqs = [
   {
     question: 'Moet ik mijn voeding volledig omgooien?',
     answer: [
-      'Nee. Het doel is niet om je een streng voedingsschema te geven. We kijken naar je huidige eetpatroon en bepalen samen welke aanpassingen voor jou relevant en haalbaar zijn.',
+      'Nee, je krijgt geen streng voedingsschema mee. We kijken naar je huidige eetpatroon en bepalen samen welke aanpassingen voor jou relevant en haalbaar zijn. Het gaat er wel om dat je voeding tot je neemt die helpend zijn om je hormonale diabalans te helpen.',
     ],
   },
   {
