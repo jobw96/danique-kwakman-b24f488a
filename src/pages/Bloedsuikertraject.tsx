@@ -4,6 +4,7 @@ import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { GlucoseGrafiek } from '@/components/GlucoseGrafiek';
+import havermoutKom from '@/assets/sfeer/havermout-kom-bovenaf-4x3.webp';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
@@ -267,31 +268,44 @@ const Bloedsuikertraject = () => {
               </FadeIn>
             </div>
 
-            <FadeIn className="mt-10 md:ml-auto md:max-w-3xl">
-              {/* Aanhalingstekens in de primaire kleur in plaats van een streep
-                  aan de zijkant. Het openingsteken staat absoluut in de marge, zodat
-                  alle tekstregels op dezelfde linkerrand blijven; inline zou alleen
-                  de eerste regel inspringen. Beide tekens staan op aria-hidden,
-                  want blockquote kondigt het citaat zelf al aan. */}
-              <blockquote className="relative pl-10 md:pl-14">
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute left-0 top-0 -translate-y-4 select-none font-serif text-6xl leading-none text-primary md:-translate-y-5 md:text-7xl"
-                >
-                  &ldquo;
-                </span>
-                <p className="font-serif text-xl leading-tight text-foreground md:text-2xl">
-                  Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
-                  <span aria-hidden="true" className="ml-1 inline-block h-0 translate-y-7 select-none align-baseline font-serif text-6xl leading-[0] text-primary md:translate-y-9 md:text-7xl">
-                    &rdquo;
-                  </span>
-                </p>
-              </blockquote>
-            </FadeIn>
-            <FadeIn className="mt-6 md:ml-auto md:max-w-3xl">
-              <CustomButton onClick={openModal}>Dit wil ik</CustomButton>
-            </FadeIn>
           </div>
+        </div>
+      </section>
+      {/* Het citaat staat in een eigen sectie: foto links, tekst rechts, over de
+          volle hoogte van het scherm. Onder lg passen twee kolommen niet, daar
+          staat de foto boven de tekst met een vaste hoogte. */}
+      <section className="lg:grid lg:min-h-screen lg:grid-cols-2">
+        <div className="h-[45vh] w-full overflow-hidden sm:h-[55vh] lg:h-auto">
+          <img
+            src={havermoutKom}
+            alt="Een kom havermout met frambozen, bosbessen en amandelen, van bovenaf gefotografeerd"
+            width={1600}
+            height={1194}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="flex items-center px-6 py-16 md:py-20 lg:px-12 xl:px-16">
+          <FadeIn className="w-full">
+            <blockquote className="relative max-w-xl pl-10 md:pl-14">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute left-0 top-0 -translate-y-4 select-none font-serif text-6xl leading-none text-primary md:-translate-y-5 md:text-7xl"
+              >
+                &ldquo;
+              </span>
+              <p className="font-serif text-xl leading-tight text-foreground md:text-2xl">
+                Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
+                <span aria-hidden="true" className="ml-1 inline-block h-0 translate-y-7 select-none align-baseline font-serif text-6xl leading-[0] text-primary md:translate-y-9 md:text-7xl">
+                  &rdquo;
+                </span>
+              </p>
+              <div className="mt-8">
+                <CustomButton onClick={openModal}>Dit wil ik</CustomButton>
+              </div>
+            </blockquote>
+          </FadeIn>
         </div>
       </section>
 
