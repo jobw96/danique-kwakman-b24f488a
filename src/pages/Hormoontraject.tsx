@@ -439,7 +439,7 @@ const Hormoontraject = () => {
               <p className="mt-4 leading-relaxed text-primary-foreground/85">
                 {"\n"}
               </p>
-              <p className="mt-8 leading-relaxed text-primary-foreground/85">Je weet nu:</p>
+              <p className="mt-8 leading-relaxed text-primary-foreground/85">Na 3 maanden:</p>
               <div className="mt-6 text-primary-foreground/90">
                 <CheckList items={resultaten} opDonker />
               </div>
