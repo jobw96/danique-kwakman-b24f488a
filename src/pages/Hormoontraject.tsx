@@ -52,6 +52,25 @@ const aandachtsvelden = [
   },
 ];
 
+/** De drie onderwerpen in het uitklapmenu bij "Wat jouw lichaam nodig heeft, verschilt per levensfase." */
+const levensfaseOnderwerpen = [
+  {
+    title: 'Hormonale disbalans',
+    description:
+      'Hormonale klachten kunnen zich op verschillende manieren uiten. Denk aan PMS, pijnlijke of onregelmatige menstruaties, acne, cravings, stemmingswisselingen, vermoeidheid of klachten passend bij PCOS of een progesteron tekort. We kijken naar jouw klachten, waar de disbalans is ontstaan en hoe we deze aanpakken.',
+  },
+  {
+    title: 'Jouw levensfase',
+    description:
+      'Je hormonen veranderen mee met de fase van je leven. Misschien ben je net gestopt met anticonceptie, heb je een kinderwens en lukt zwanger worden niet zoals je had gehoopt, ben je net bevallen of merk je veranderingen richting de overgang. Wat er in je lichaam gebeurt en wat je nodig hebt, kan in iedere fase anders zijn. Ik stem mijn begeleiding af op waar jij nu staat en wat je op dit moment nodig hebt.',
+  },
+  {
+    title: 'Je cyclus',
+    description:
+      'Je cyclus kan veel vertellen over je hormonale gezondheid. Misschien heb je een lange of onregelmatige cyclus, veel PMS, pijn tijdens je menstruatie, spotting of merk je dat je klachten steeds op een bepaald moment in je cyclus toenemen. We kijken naar deze patronen en wat ze vertellen over je hormonale disbalans. Van daaruit kijken we wat jouw lichaam nodig heeft.',
+  },
+];
+
 /** Wat je na drie maanden weet. */
 const resultaten = [
   'Welke patronen er in je cyclus en klachten zitten',
@@ -225,6 +244,7 @@ const Hormoontraject = () => {
   const { openModal } = useBookingModal();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [openIncluded, setOpenIncluded] = useState<number | null>(0);
+  const [openLevensfase, setOpenLevensfase] = useState<number | null>(0);
 
   return (
     <div className="min-h-screen bg-background text-muted-foreground">
