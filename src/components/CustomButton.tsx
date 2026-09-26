@@ -3,7 +3,7 @@ import { m, HTMLMotionProps } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
 interface CustomButtonProps extends Omit<HTMLMotionProps<"button">, 'children'> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'white';
+  variant?: 'primary' | 'secondary' | 'green' | 'outline' | 'white';
   icon?: boolean;
   children: React.ReactNode;
 }
