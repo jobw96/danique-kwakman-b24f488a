@@ -1,4 +1,4 @@
-import React, { useEffect, useId, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 /**
  * Geanimeerde glucosegrafiek, overgezet uit het aangeleverde ontwerp.
@@ -9,9 +9,8 @@ import React, { useEffect, useId, useRef } from 'react';
  * streepafstand onafhankelijk is van de echte padlengte en beide grafieken
  * even snel lopen ondanks hun verschillende lengte.
  *
- * Het deel van de lijn dat onder de ondergrens zakt is een tweede pad in de
- * donkere beigetint, afgesneden op die hoogte. Zo kleurt alleen dat stuk om,
- * zonder het pad te hoeven splitsen.
+ * De lijn heeft dezelfde kleur als de balk boven de kaart, zodat elke kaart
+ * als een geheel leest.
  *
  * De kleuren komen uit de tokens in styles.css, niet als vaste hex uit het
  * ontwerp: past de huisstijl zich aan, dan volgt de grafiek vanzelf.
@@ -87,7 +86,6 @@ export const GlucoseKaart = ({
   children: React.ReactNode;
 }) => {
   const g = GRAFIEK[variant];
-  const uniek = useId().replace(/:/g, '');
   const wortel = useRef<HTMLDivElement>(null);
   const band = useRef<SVGRectElement>(null);
   const lijnen = useRef<SVGPathElement[]>([]);
@@ -178,12 +176,6 @@ export const GlucoseKaart = ({
         aria-label={g.omschrijving}
         className="block h-auto w-full"
       >
-        <defs>
-          <clipPath id={`onder-${uniek}`}>
-            <rect x="-22" y="241.6" width="302" height="80.4" />
-          </clipPath>
-        </defs>
-
         <g fontSize="11" fill="hsl(var(--muted-foreground))" textAnchor="end">
           <text x="-20" y="12" textAnchor="start">mmol/l</text>
           <text x="4" y="266">3</text>
@@ -229,20 +221,7 @@ export const GlucoseKaart = ({
           strokeDasharray="1"
           strokeDashoffset="1"
           fill="none"
-          stroke="hsl(var(--foreground))"
-          strokeWidth="2.25"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          ref={(el) => el && (lijnen.current[1] = el)}
-          d={g.pad}
-          clipPath={`url(#onder-${uniek})`}
-          pathLength={1}
-          strokeDasharray="1"
-          strokeDashoffset="1"
-          fill="none"
-          stroke="hsl(var(--secondary-dark))"
+          stroke={g.kopKleur}
           strokeWidth="2.25"
           strokeLinecap="round"
           strokeLinejoin="round"
