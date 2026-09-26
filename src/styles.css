@@ -21,6 +21,11 @@
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
   --color-secondary-dark: hsl(var(--secondary-dark));
+  --color-sage: hsl(var(--sage));
+  --color-sage-strong: hsl(var(--sage-strong));
+  --color-sage-deep: hsl(var(--sage-deep));
+  --color-sage-dark: hsl(var(--sage-dark));
+  --color-sage-soft: hsl(var(--sage-soft));
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-accent: hsl(var(--accent));
@@ -116,6 +121,16 @@ body {
        achtergrond maar 1,5:1 en is als letter praktisch onleesbaar. */
     --secondary-dark: 44 38% 36%; /* #7F6C39 - 4,86:1 op #FCF9F2 */
     --secondary-foreground: 0 0% 100%; /* White text on secondary */
+
+    /* Het groen uit het logo (#4CB58A). Op de cremekleurige achtergrond haalt die
+       tint zelf maar 2,4:1, dus voor tekst en knoppen bestaan er donkere
+       varianten van; --sage-dark is de achtergrond van de donkere banden. */
+    --sage: 155 42% 50%; /* #4CB58A - accent, iconen en randen */
+    --sage-strong: 154 49% 36%; /* #2F8862 - knoppen, 4,4:1 met wit */
+    --sage-deep: 155 50% 29%; /* #256F50 - kleine tekst, 5,8:1 op creme */
+    --sage-dark: 155 47% 17%; /* #17402F - achtergrond donkere sectie */
+    --sage-soft: 147 27% 94%; /* #EAF3EE - zachte groene vlakken */
+
     
     --muted: 42 56% 97%;
     --muted-foreground: 0 0% 46%; /* #757575 - Body text */
@@ -160,6 +175,14 @@ body {
     --secondary: 44 38% 76%;
     --secondary-dark: 44 38% 70%; /* op de donkere achtergrond moet hij juist lichter */
     --secondary-foreground: 0 0% 100%;
+
+    /* Op de donkere achtergrond moeten de groentinten juist lichter */
+    --sage: 155 42% 55%;
+    --sage-strong: 154 42% 45%;
+    --sage-deep: 152 35% 65%;
+    --sage-dark: 155 30% 12%;
+    --sage-soft: 155 12% 20%;
+
 
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 65%;

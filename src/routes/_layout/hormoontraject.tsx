@@ -7,13 +7,13 @@ export const Route = createFileRoute("/_layout/hormoontraject")({
   head: () => seoHead({
     path: "/hormoontraject",
     title: "1:1 Hormoontraject voor vrouwen",
-    description: "Het 1:1 Hormoontraject voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans. In 3 maanden naar hormonale balans, rust en vertrouwen in je lijf.",
+    description: "Drie maanden persoonlijke begeleiding bij PMS, een onregelmatige cyclus, vermoeidheid, acne of een opgeblazen buik. Gratis kennismaking, in Hoorn of online.",
     schemas: [
       serviceSchema({
         name: "1:1 Hormoontraject",
-        description: "Persoonlijk traject van drie maanden voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
+        description: "Persoonlijk traject van drie maanden voor vrouwen met PMS, een onregelmatige cyclus, vermoeidheid of hormonale klachten.",
         path: "/hormoontraject",
-        monthlyPrice: 249,
+        price: 888,
         duration: "P3M",
       }),
       breadcrumbs([
