@@ -209,15 +209,15 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
-              <p className="mb-5 max-w-md leading-relaxed text-muted-foreground">
-                Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.
-              </p>
               <h2 className="text-3xl text-foreground md:text-4xl">
                 Een stabiele bloedsuiker spiegel is DE basis van hormonale balans
               </h2>
-              <p className="mt-6 max-w-md leading-relaxed">
-                Herken je jezelf hierin?
-              </p>
+              <div className="mt-6 max-w-md space-y-4 leading-relaxed text-muted-foreground">
+                <p>
+                  Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.
+                </p>
+                <p>Herken je jezelf hierin?</p>
+              </div>
             </FadeIn>
             <FadeIn delay={0.1}>
               <CheckList items={symptoms} />
@@ -230,19 +230,19 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="max-w-3xl">
-              <p className="mb-5 leading-relaxed text-muted-foreground">
-                JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.
-              </p>
               <h2 className="text-3xl text-foreground md:text-4xl">
                 Je wilt niet meer gokken en hopen dat het werkt.
               </h2>
-              <p className="mt-6 leading-relaxed">
-                Zwart-op-wit zien hoe jouw lichaam reageert?{"\u00a0"}
-                <br /><br />
-                Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga 10 minuten wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft je dus gokken.
-                <br /><br />
-                Daarom werken we in dit traject met de 14- daagse glucosesensor. 24/7 zien we live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
-              </p>
+              <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
+                <p>JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.</p>
+                <p>Zwart-op-wit zien hoe jouw lichaam reageert?{"\u00a0"}</p>
+                <p>
+                  Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga 10 minuten wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft je dus gokken.
+                </p>
+                <p>
+                  Daarom werken we in dit traject met de 14- daagse glucosesensor. 24/7 zien we live hoe jij reageert op voeding, beweging, slaap, stress en je gewoontes.{"\u00a0"}
+                </p>
+              </div>
             </FadeIn>
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
