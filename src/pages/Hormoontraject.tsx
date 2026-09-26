@@ -434,12 +434,12 @@ const Hormoontraject = () => {
                 In 3 maanden tijd naar hormonale balans, rust en vertrouwen in je lijf
               </h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
-                {`Met het 1:1 hormoontraject gaan we 3 maanden gericht aan de slag met jouw hormonale klachten. Waarom heb je zoveel last van moodswings, acne, PCOS-klachten of voel je je tijdens je luteale fase compleet anders?\n\nWe brengen in kaart welke factoren jouw hormonale klachten beïnvloeden. Met voeding, leefstijl en waar nodig aanvullend onderzoek kijken we wat jouw lichaam nodig heeft en passen we dit gedurende het traject stap voor stap aan.\n`}
+                {`Met het 1:1 hormoontraject gaan we 3 maanden gericht aan de slag met jouw hormonale klachten. Waarom heb je zoveel last van moodswings, acne, PCOS-klachten of voel je je tijdens je luteale fase compleet anders? \n\n We brengen in kaart welke factoren jouw hormonale klachten beïnvloeden. Met voeding, leefstijl en waar nodig aanvullend onderzoek kijken we wat jouw lichaam nodig heeft en passen we dit gedurende het traject stap voor stap aan.\n`}
               </p>
               <p className="mt-4 leading-relaxed text-primary-foreground/85">
                 {"\n"}
               </p>
-              <p className="mt-8 leading-relaxed text-primary-foreground/85">Je weet:</p>
+              <p className="mt-8 leading-relaxed text-primary-foreground/85">Je weet nu:</p>
               <div className="mt-6 text-primary-foreground/90">
                 <CheckList items={resultaten} opDonker />
               </div>
