@@ -185,12 +185,12 @@ const faqs = [
  *
  * Het merkgroen (#C9C07D) is de enige groentint op de site en zit in de vlakken
  * en randen. Op deze grootte haalt het op de cremekleur maar 1,8:1, dus blijft
- * dit opschrift de tekstkleur van de site; op de groene band de donkere inkkleur.
+ * dit opschrift de tekstkleur van de site; op de groene band staat het in het wit.
  */
 const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boolean }) => (
   <p
     className={`mb-5 text-xs font-medium uppercase tracking-[0.16em] ${
-      opDonker ? 'text-foreground' : 'text-muted-foreground'
+      opDonker ? 'text-white' : 'text-muted-foreground'
     }`}
   >
     {text}
@@ -200,7 +200,7 @@ const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boo
 /**
  * Zelfde vinkje als op de bloedsuikertrajectpagina: een rondje in het merkgroen
  * met een donkere vink erin. Op de groene band is dat groen zelf de achtergrond,
- * dus krijgt het rondje daar een donkere doorschijnende vulling.
+ * dus krijgt het rondje daar een lichte doorschijnende vulling met een witte vink.
  */
 const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: boolean }) => (
   <ul className="space-y-3">
@@ -208,7 +208,7 @@ const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: bo
       <li key={item} className="flex items-start gap-3">
         <span
           className={`mt-0.5 flex h-6 w-6 min-w-6 shrink-0 items-center justify-center rounded-full ${
-            opDonker ? 'bg-foreground/10 text-foreground' : 'bg-olive text-foreground'
+            opDonker ? 'bg-white/20 text-white' : 'bg-olive text-foreground'
           }`}
           aria-hidden="true"
         >
@@ -382,7 +382,7 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="bg-olive py-16 text-foreground md:py-24">
+      <section className="bg-olive py-16 text-white md:py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <FadeIn>
@@ -401,20 +401,20 @@ const Hormoontraject = () => {
             </FadeIn>
             <FadeIn delay={0.1}>
               <SectionLabel text="Resultaat na drie maanden" opDonker />
-              <h2 className="text-3xl text-foreground md:text-4xl">
+              <h2 className="text-3xl text-white md:text-4xl">
                 Van steeds zoeken naar begrijpen wat jouw lichaam nodig heeft
               </h2>
-              <p className="mt-6 leading-relaxed text-foreground/80">
+              <p className="mt-6 leading-relaxed text-white">
                 Het doel is niet dat je na drie maanden alles over hormonen weet.
               </p>
-              <p className="mt-4 leading-relaxed text-foreground/80">
+              <p className="mt-4 leading-relaxed text-white">
                 Het doel is dat je je lichaam beter begrijpt en weet wat jij kunt doen wanneer je klachten opspelen.
               </p>
-              <p className="mt-8 leading-relaxed text-foreground/80">Je weet:</p>
-              <div className="mt-6 text-foreground">
+              <p className="mt-8 leading-relaxed text-white">Je weet:</p>
+              <div className="mt-6 text-white">
                 <CheckList items={resultaten} opDonker />
               </div>
-              <p className="mt-8 font-serif text-2xl text-foreground md:text-3xl">
+              <p className="mt-8 font-serif text-2xl text-white md:text-3xl">
                 Niet perfect. Wel passend bij jou.
               </p>
               <CustomButton onClick={openModal} variant="white" className="mt-9">
