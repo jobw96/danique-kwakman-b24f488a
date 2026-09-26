@@ -164,7 +164,7 @@ const faqs = [
   {
     question: 'Krijg ik een supplementenadvies?',
     answer: [
-      'Wanneer supplementen relevant zijn voor jouw situatie, kunnen we dit bespreken. Supplementen zijn niet standaard onderdeel van het traject.',
+      'Er is geen standaard supplementen advies dat voor iedereen werkt dus ik kijk individueel wat jouw lijf nodig heeft. Dit is altijd ter aanvulling en vervangt niet je voeding. Ik verkoop geen supplementen en ben dus ook niet gebonden aan bepaalde merken. Ik bekijk wat jouw lichaam nodig heeft en wat voor jouw klachten de beste aanvulling zou kunnen zijn.',
     ],
   },
   {
