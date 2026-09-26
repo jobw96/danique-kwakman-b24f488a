@@ -175,7 +175,7 @@ const faqs = [
   {
     question: 'Krijg ik een supplementenadvies?',
     answer: [
-      'Er is geen standaard supplementen advies dat voor iedereen werkt dus ik kijk individueel wat jouw lijf nodig heeft. Dit is altijd ter aanvulling en vervangt niet je voeding. Ik verkoop geen supplementen en ben dus ook niet gebonden aan bepaalde merken. Supplementen zijn niet inbegrepen in de trajectprijs.',
+      'Er is geen standaard supplementen advies dat voor iedereen werkt dus ik kijk individueel wat jouw lijf nodig heeft. Op basis van de uitslag van de test gaan we wel supplementen inzetten. O.a. om je lever te supporter, om je darmen te ondersteunen of eventueel \' beestjes\' eruit te werken.\u00a0\n\n, Dit is altijd ter aanvulling en vervangt niet je voeding. Ik verkoop geen supplementen en ben dus ook niet gebonden aan bepaalde merken. Supplementen zijn niet inbegrepen in de trajectprijs.\n',
     ],
   },
   {
