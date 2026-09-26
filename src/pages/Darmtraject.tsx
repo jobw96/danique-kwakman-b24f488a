@@ -10,7 +10,7 @@ import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
 import daniqueStrand from '@/assets/sfeer/danique-strand-darmtraject.webp.asset.json';
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWitDuinen from '@/assets/sfeer/danique-wit-duinen.webp.asset.json';
-import daniqueTowel from '@/assets/danique-towel.webp';
+import daniqueDuinenArmen from '@/assets/sfeer/danique-duinen-armen.webp.asset.json';
 import ontlastingAsset from '@/assets/sfeer/ontlastingsonderzoek-buisje.webp.asset.json';
 import bloedbuisjesAsset from '@/assets/sfeer/bloedbuisjes-labonderzoek.webp.asset.json';
 
@@ -544,12 +544,12 @@ const Darmtraject = () => {
           <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-secondary/50 bg-card">
             <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
               <img
-                src={daniqueTowel}
-                alt="Danique Kwakman ontspannen op het strand met een handdoek"
-                title="Zes maanden persoonlijke begeleiding tijdens het 1:1 darmtraject"
+                src={daniqueDuinenArmen.url}
+                alt="Vrouw in witte crop top en witte broek staat met opgeheven armen in de duinen, met de zon op haar buik"
+                title="Rust in je buik, meer energie en vertrouwen in je lijf met het 1:1 darmtraject"
                 loading="lazy"
                 decoding="async"
-                className="h-72 w-full object-cover object-[center_35%] lg:h-full"
+                className="h-72 w-full object-cover object-center lg:h-full"
               />
               <div className="p-8 md:p-12">
                 <SectionLabel text="Investering" />
