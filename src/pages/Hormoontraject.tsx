@@ -93,7 +93,7 @@ const included = [
       'Tijdens de uitgebreide intake brengen we jouw situatie uitgebreid in kaart. We kijken onder andere naar je klachten, cyclus, voeding, darmen, bloedsuiker, slaap, stress, beweging en leefstijl. Zo krijgen we zicht op de belangrijkste puzzelstukjes binnen jouw situatie en krijgen we inzicht in de oorzaak van jouw probleem.',
   },
   {
-    title: '2 persoonlijke vervolgconsulten van 60 minuten',
+    title: 'Vervolgconsulten',
     description:
       'Na de intake hebben we nog twee persoonlijke vervolgconsulten. We bespreken wat je hebt ervaren, wat er verandert en waar je tegenaan loopt. Op basis daarvan sturen we je persoonlijke plan steeds bij.',
   },
@@ -103,7 +103,7 @@ const included = [
       'Drie maanden lang sta ik naast je. We nemen de tijd om veranderingen uit te proberen, te evalueren en bij te sturen. Zo hoef je niet alles in één keer te veranderen.',
   },
   {
-    title: 'Persoonlijke WhatsApp-begeleiding',
+    title: 'WhatsApp-begeleiding',
     description:
       'Heb je tussen de afspraken door een vraag, loop je ergens tegenaan of wil je iets overleggen? Dan kun je me via WhatsApp bereiken. Zo hoef je niet te wachten tot onze volgende afspraak.',
   },
