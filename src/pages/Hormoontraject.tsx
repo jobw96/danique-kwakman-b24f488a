@@ -243,13 +243,13 @@ const Hormoontraject = () => {
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  Je menstruatie is pijnlijk of onvoorspelbaar. Je hebt last van PMS, acne, cravings of een buik die regelmatig opspeelt. En ondertussen doe je eigenlijk al ontzettend veel goed.
-                </p>
-                <p>
-                  Misschien heb je al bloed laten prikken. Misschien heb je zelf je voeding aangepast, supplementen geprobeerd of eindeloos gezocht naar informatie.
-                </p>
-                <p>
-                  In het 1:1 hormoontraject nemen we drie maanden de tijd om jouw klachten en lichaam beter te leren begrijpen. We kijken naar je cyclus, hormonen, darmen, bloedsuiker, voeding, slaap, stress en leefstijl en brengen samen de puzzelstukjes in kaart.
+                  Je menstruatie is pijnlijk of onvoorspelbaar en je hebt last van PMS, acne, cravings of een buik die regelmatig onrustig voelt.
+                  <br /><br />
+                  Misschien heb je al eens bloed laten prikken, je voeding aangepast, supplementen geprobeerd of eindeloos gezocht naar informatie. En toch vraag je je af waarom je je ondanks alles wat je doet nog steeds niet goed voelt.
+                  <br /><br />
+                  In het 1:1 hormoontraject nemen we drie maanden de tijd om jouw klachten en lichaam beter te leren begrijpen.&nbsp;
+                  <br /><br />
+                  We kijken naar je cyclus, hormonen, darmen, bloedsuiker, voeding, slaap, stress en leefstijl. We brengen samen de puzzelstukjes in kaart en kijken wat er allemaal meespeelt bij jouw klachten en wat jouw lichaam nodig heeft om de hormonale disbalans aan te pakken.
                 </p>
               </div>
               <CustomButton onClick={openModal} variant="green" className="mt-8">
@@ -278,7 +278,7 @@ const Hormoontraject = () => {
             <FadeIn>
               <SectionLabel text="Je bent niet elke week dezelfde versie van jezelf" />
               <h2 className="text-3xl text-foreground md:text-4xl">
-                En misschien heeft je cyclus daar meer mee te maken dan je denkt.
+                Je wilt begrijpen wat er in jouw lichaam gebeurt en waar je hormonale disbalans vandaan komt.
               </h2>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
                 Herken je dit?
