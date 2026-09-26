@@ -16,6 +16,7 @@
   --color-popover-foreground: hsl(var(--popover-foreground));
   --color-primary: hsl(var(--primary));
   --color-primary-dark: hsl(var(--primary-dark));
+  --color-primary-deep: hsl(var(--primary-deep));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
@@ -105,6 +106,9 @@ body {
     
     --primary: 220 27% 69%; /* #9CAAC6 - Primary accent (buttons, CTA) */
     --primary-dark: 220 27% 56%; /* Deeper blue for backgrounds */
+    /* Zelfde blauw, donker genoeg voor kleine tekst: --primary haalt op wit
+       maar 2,4:1 en --primary-dark 3,7:1, allebei onder de 4,5 van WCAG AA. */
+    --primary-deep: 220 27% 48%; /* #596F9B - 5,03:1 op wit, 4,79:1 op creme */
     --primary-foreground: 0 0% 100%; /* White text on primary */
     
     --secondary: 44 38% 76%; /* #D8CCAB - Secondary accent (subtle highlights) */
@@ -150,6 +154,7 @@ body {
 
     --primary: 220 27% 69%;
     --primary-dark: 220 27% 56%;
+    --primary-deep: 220 27% 70%; /* op de donkere achtergrond juist lichter */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 44 38% 76%;

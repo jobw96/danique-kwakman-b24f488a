@@ -122,11 +122,21 @@ const faqs = [
   },
 ];
 
-/** Zelfde pill als op de klachten-, traject- en contactpagina's. */
-const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
+/**
+ * Opschrift boven een kop: blauwe kleine kapitalen zonder achtergrond.
+ *
+ * De kleur is --primary-deep en niet --primary: dat laatste haalt op wit maar
+ * 2,4:1 en is op deze grootte niet te lezen. Op de blauwe band werkt blauw op
+ * blauw niet, daar staat het opschrift in de cremekleur van de site.
+ */
+const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boolean }) => (
+  <p
+    className={`mb-5 text-xs font-medium uppercase tracking-[0.16em] ${
+      opDonker ? 'text-primary-foreground' : 'text-primary-deep'
+    }`}
+  >
     {text}
-  </div>
+  </p>
 );
 
 /**
@@ -170,7 +180,7 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
             <FadeIn immediate>
-              <SectionTag text="1:1 traject · 14 dagen" />
+              <SectionLabel text="1:1 traject · 14 dagen" />
               <h1 className="max-w-3xl text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
                 1:1 bloedsuikertraject
               </h1>
@@ -209,15 +219,13 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
+              <SectionLabel text="Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt." />
               <h2 className="text-3xl text-foreground md:text-4xl">
                 Een stabiele bloedsuiker spiegel is DE basis van hormonale balans
               </h2>
-              <div className="mt-6 max-w-md space-y-4 leading-relaxed text-muted-foreground">
-                <p>
-                  Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.
-                </p>
-                <p>Herken je jezelf hierin?</p>
-              </div>
+              <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
+                Herken je jezelf hierin?
+              </p>
             </FadeIn>
             <FadeIn delay={0.1}>
               <CheckList items={symptoms} />
@@ -230,11 +238,11 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="max-w-3xl">
+              <SectionLabel text="JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL." />
               <h2 className="text-3xl text-foreground md:text-4xl">
                 Je wilt niet meer gokken en hopen dat het werkt.
               </h2>
               <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
-                <p>JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.</p>
                 <p>Zwart-op-wit zien hoe jouw lichaam reageert?{"\u00a0"}</p>
                 <p>
                   Eet dit bij je ontbijt, laat koolhydraten staan, combineer havermout met eiwitten en ga 10 minuten wandelen. Maar zonder te weten hoe JOUW bloedsuikerspiegel daadwerkelijk reageert, blijft je dus gokken.
@@ -327,7 +335,7 @@ const Bloedsuikertraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground">RESULTAAT NA VEERTIEN DAGEN</p>
+              <SectionLabel text="RESULTAAT NA VEERTIEN DAGEN" opDonker />
               <h2 className="text-3xl text-primary-foreground md:text-4xl">In 2 weken van cravings en energiedips naar meer energie, verzadiging en rust in je eetpatroon</h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
                 Je hebt niet alleen een hele hoop data verzameld, maar eindelijk gezien hoe jouw lichaam reageert op voeding, beweging, slaap, stress en je dagelijkse gewoontes. We hebben op basis daarvan getest welke aanpassingen bij jou verschil maken en daar een concreet plan van gemaakt. Nu weet je:
@@ -361,7 +369,7 @@ const Bloedsuikertraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <SectionTag text="Hi, ik ben Danique" />
+              <SectionLabel text="Hi, ik ben Danique" />
               <h2 className="text-3xl text-foreground md:text-4xl">
                 Van jarenlang zoeken naar begrijpen wat mijn lichaam nodig heeft
               </h2>
@@ -387,7 +395,7 @@ const Bloedsuikertraject = () => {
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
               <div className="lg:sticky lg:top-28">
-                <SectionTag text="Alles wat je nodig hebt" />
+                <SectionLabel text="Alles wat je nodig hebt" />
                 <h2 className="text-3xl text-foreground md:text-4xl">Wat is inbegrepen?</h2>
                 <figure className="mt-8 overflow-hidden rounded-2xl bg-background">
                   <img
@@ -446,7 +454,7 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="text-center">
-              <SectionTag text="Ervaringen" />
+              <SectionLabel text="Ervaringen" />
               <h2 className="text-3xl text-foreground md:text-4xl">En zij gingen je voor</h2>
             </FadeIn>
             <FadeIn delay={0.1} className="mt-12">
@@ -519,7 +527,7 @@ const Bloedsuikertraject = () => {
                 className="h-72 w-full object-cover object-[center_35%] lg:h-full"
               />
               <div className="p-8 md:p-12">
-                <SectionTag text="Investering" />
+                <SectionLabel text="Investering" />
                 <h2 className="text-3xl text-foreground md:text-4xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
                 <p className="mt-5 text-sm leading-relaxed">Plan je gratis kennismakingsgesprek in</p>
                 <p className="mt-8 font-serif text-5xl text-primary-dark md:text-6xl">€325</p>
