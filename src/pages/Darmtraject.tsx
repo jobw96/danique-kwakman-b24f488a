@@ -115,9 +115,9 @@ const included = [
       'Met gericht laboratoriumonderzoek zien we wat er in jouw darmen speelt en waar je lichaam op reageert. De labkosten zijn niet inbegrepen in de trajectprijs.\n\nJe neemt de ontlastingstest gemakkelijk thuis af en voor de intolerantie test ga je naar een prikpunt bij jou in de buurt.\n',
   },
   {
-    title: '5 persoonlijke 1:1 sessies van 60 minuten',
+    title: '5 persoonlijke 1:1 sessies',
     description:
-      'We bespreken je uitslagen, wat je hebt ervaren, wat er verandert en waar je tegenaan loopt. Op basis daarvan sturen we je plan steeds bij.',
+      'We bespreken je uitslagen, wat je hebt ervaren, wat er verandert en waar je tegenaan loopt en doorlopen de 4 fases van de darmtherapie. Op basis daarvan sturen we je plan steeds bij.',
   },
   {
     title: '6 maanden persoonlijke begeleiding',
