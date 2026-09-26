@@ -186,8 +186,8 @@ const faqs = [
 /**
  * Opschrift boven een kop: groene kleine kapitalen zonder achtergrond.
  *
- * Het groen uit het logo (#4CB58A) haalt op de cremekleurige achtergrond maar
- * 2,4:1 en is op deze grootte niet te lezen, dus staat het hier in --olive-deep.
+ * Het groen uit de branding (#C9C07D) haalt op de cremekleurige achtergrond maar
+ * 1,8:1 en is op deze grootte niet te lezen, dus staat het hier in --olive-deep.
  * Op de donkergroene band werkt dat niet, daar staat het in de lichte tint.
  */
 const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boolean }) => (
