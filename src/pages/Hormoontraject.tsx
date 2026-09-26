@@ -115,7 +115,7 @@ const included = [
   {
     title: 'Jouw persoonlijke online health dashboard',
     description:
-      'Alles wat je tijdens je traject nodig hebt, vind je overzichtelijk op één plek. Denk aan je persoonlijke informatie en plan, 100+ recepten, een maaltijdplanner, cyclus-trackers en praktische tools rondom voeding, slaap, stress, beweging en ontspanning.',
+      'Een online omgeving die je helpt je lichaam beter te begrijpen en praktische stappen te zetten die passen bij jou. Alles wat je tijdens je traject nodig hebt, vind je overzichtelijk op één plek: van 100+ recepten en een maaltijdplanner tot cyclus-trackers, inzichten over je hormonen en darmen en praktische tools voor slaap, stress en ontspanning.',
   },
   {
     title: 'Praktische tools en opdrachten',
