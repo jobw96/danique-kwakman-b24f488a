@@ -110,7 +110,7 @@ const included = [
   {
     title: 'Persoonlijk plan',
     description:
-      'Je krijgt geen standaard protocol. We maken een persoonlijk plan op basis van jouw hulpvraag, klachten, leefstijl en wat we gedurende het traject ontdekken. Dit plan beweegt met je mee wanneer je situatie verandert.',
+      'We kijken naar het geheel: van je hormonen en darmgezondheid tot voeding, slaap, stress, leefstijl, mindset en je cyclus. Tijdens het traject evalueren we wat er verandert, wat wel en niet werkt en wat er in jouw dagelijks leven speelt. Op basis daarvan pas ik je persoonlijke behandelplan steeds aan, zodat het blijft aansluiten bij jouw klachten, behoeften en voortgang.',
   },
   {
     title: 'Jouw persoonlijke online health dashboard',
