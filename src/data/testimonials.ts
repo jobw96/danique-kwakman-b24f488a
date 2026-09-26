@@ -91,3 +91,51 @@ export const BLOEDSUIKER_TESTIMONIALS: Testimonial[] = [
     image: '',
   },
 ];
+
+/** Ervaringen zoals aangeleverd voor het 1:1 hormoontraject. */
+export const HORMOON_TESTIMONIALS: Testimonial[] = [
+  {
+    id: 'h1',
+    name: 'Anoniem',
+    text: 'Ik moet bijna ongesteld worden, maar heb echt bijna geen last meer van PMS klachten deze maand. Stuk minder stemmingswisselingen en ook meer rust thuis daardoor. Het eten gaat ook goed.',
+    rating: 5,
+    image: '',
+  },
+  {
+    id: 'h2',
+    name: 'Anoniem',
+    text: 'Meer rust in mijn hoofd, minder buikpijn en minder last van PMS.',
+    rating: 5,
+    image: '',
+  },
+  {
+    id: 'h3',
+    name: 'Anoniem',
+    text: 'Mijn laatste menstruatie was echt een stuk minder pijnlijk, dus dat geeft heel veel rust en positiviteit.',
+    rating: 5,
+    image: '',
+  },
+  {
+    id: 'h4',
+    name: 'Anoniem',
+    text: 'Ik kwam bij Danique met ernstige menstruatieklachten en een zeer onregelmatige cyclus. We hebben samen naar de opties gekeken; nu ben ik veel regelmatiger en ik heb veel minder klachten. Ik zou Danique echt aanraden als je naar een fijn traject met veel persoonlijke aandacht en een vriendelijke aanpak op zoek bent!',
+    rating: 5,
+    image: '',
+  },
+  {
+    id: 'h5',
+    name: 'Anoniem',
+    text: 'Danique is kundig. Denkt mee en geeft goeie tips. Ik kwam bij Danique met forse vermoeidheidsklachten waarvoor ik al jaren bij allerlei specialisten ben geweest maar nooit een goeie oplossing kreeg aangeboden. Door met mij mee te denken over mijn dagelijks leven en mee te denken over voeding heeft zij mij om drie maanden tijd vooruit geholpen. Minder vermoeid en ook andere problemen aangepakt.',
+    rating: 5,
+    image: '',
+  },
+  {
+    id: 'h6',
+    name: 'Anoniem',
+    text: 'Hi Danique, wilde je via deze weg even laten weten dat ik afgelopen zaterdag ongesteld ben geworden 🙌🏻🙌🏻. Geeft nu weer goede energie om door te pakken!!',
+    rating: 5,
+    image: '',
+  },
+  // g3 is dezelfde review als h4 hierboven, die valt dus weg.
+  ...GENERAL_TESTIMONIALS.filter((testimonial) => testimonial.id !== 'g3'),
+];
