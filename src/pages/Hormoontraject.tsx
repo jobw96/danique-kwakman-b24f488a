@@ -625,7 +625,12 @@ const Hormoontraject = () => {
                 <p className="mt-4 leading-relaxed">
                   {"\n"}
                 </p>
-                <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">€888</p>
+                <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">
+                  €249
+                  <span className="font-sans text-xl font-light text-muted-foreground md:text-2xl">
+                    /maand
+                  </span>
+                </p>
                 <p className="mt-2 text-sm">{"\n"}</p>
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
