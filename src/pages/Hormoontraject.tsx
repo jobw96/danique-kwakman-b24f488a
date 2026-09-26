@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { m } from 'framer-motion';
 import { Check, ChevronDown } from 'lucide-react';
-import { FadeIn, ParallaxImage } from '@/components/Animations';
+import { FadeIn } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import { Link } from '@/lib/router-compat';
 import { HORMOON_TESTIMONIALS } from '@/data/testimonials';
-import daniqueMatchCall from '@/assets/danique-match-call.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
+import granaatappelTerracotta from '@/assets/sfeer/granaatappel-terracotta-3x4.webp';
 import groenteschaal from '@/assets/sfeer/groenteschaal-bovenaf-9x16.webp';
 
 /** De signalen uit de sectie "Je bent niet elke week dezelfde versie van jezelf". */
@@ -237,7 +237,7 @@ const Hormoontraject = () => {
     <div className="min-h-screen bg-background text-muted-foreground">
       <section className="pb-16 pt-10 md:pb-24 md:pt-16">
         <div className="container mx-auto px-6">
-          <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
+          <div className="mx-auto max-w-3xl">
             <FadeIn immediate>
               <SectionLabel text="1:1 traject · 3 maanden" />
               <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
@@ -259,18 +259,6 @@ const Hormoontraject = () => {
               <CustomButton onClick={openModal} className="mt-8">
                 Plan een gratis kennismaking
               </CustomButton>
-            </FadeIn>
-
-            <FadeIn immediate delay={0.15}>
-              <div className="aspect-[4/5] overflow-hidden rounded-2xl">
-                <ParallaxImage
-                  src={daniqueMatchCall}
-                  alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut, staat op een duin tijdens het 1:1 hormoontraject"
-                  title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
-                  className="h-full w-full"
-                  eager
-                />
-              </div>
             </FadeIn>
           </div>
         </div>
