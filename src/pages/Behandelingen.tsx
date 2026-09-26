@@ -93,9 +93,9 @@ const Behandelingen = () => {
         <div className="text-center mb-16">
           <FadeIn>
           <SectionTag text="Trajecten" />
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Behandelingen voor Hormoonbalans, Darmgezondheid en Bloedsuiker</h1>
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Je wilt je gewoon weer goed voelen in je lichaam.</h1>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Drie 1:1 trajecten, elk met een eigen startpunt: je bloedsuiker, je hormonen of je darmen. Welk traject bij je past hangt af van je klachten en van hoe diep je wilt gaan. Weet je het niet zeker? Plan dan een gratis kennismaking, dan kijken we er samen naar.
+              Je probeert gezond te eten, voldoende te slapen en hebt misschien al van alles geprobeerd. En toch blijf je last houden van een opgeblazen buik, cravings, vermoeidheid, PMS, een onregelmatige cyclus, een onrustige buik of andere klachten waar je maar niet vanaf komt ...
             </p>
           </FadeIn>
         </div>
