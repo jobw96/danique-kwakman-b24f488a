@@ -46,7 +46,7 @@ const onderzoekOnderwerpen = [
   {
     title: 'Ontlastingsonderzoek',
     description:
-      'Met een uitgebreid ontlastingsonderzoek kijken we hoe je darmen er op dit moment voor staan. We onderzoeken onder andere je\u00a0darmflora en microbioom, de vertering en opname van voedingsstoffen en de conditie van je darmslijmvlies. We kijken bijvoorbeeld naar\u00a0pancreas-elastase, calprotectine, secretorisch IgA en alfa-1-antitrypsine. Daarnaast onderzoeken we of er\u00a0ongewenste bacteriën, gisten, schimmels of parasieten\u00a0aanwezig zijn.\n',
+      'Met een uitgebreid ontlastingsonderzoek kijken we hoe je darmen er op dit moment voor staan. We onderzoeken onder andere je\u00a0darmflora en microbioom, de vertering en opname van voedingsstoffen en de conditie van je darmslijmvlies.\u00a0\n\nWe kijken bijvoorbeeld naar\u00a0pancreas-elastase, calprotectine, secretorisch IgA en alfa-1-antitrypsine. Daarnaast onderzoeken we of er\u00a0ongewenste bacteriën, gisten, schimmels of parasieten\u00a0aanwezig zijn. \n',
   },
   {
     title: 'Voedselintolerantietest',
@@ -291,14 +291,8 @@ const Darmtraject = () => {
                 Je wilt gewoon kunnen eten zonder na te denken over hoe je buik reageert. Uit eten gaan, een broek dragen die ook na de lunch nog lekker zit en niet steeds rekening houden met waar de wc is.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
-                <p>
-                  Jouw avondritueel? Met buikpijn op de bank omdat je darmen weer van streek zijn. Let's change that!
-
-                  Je hebt je voeding aangepast, bepaalde producten weggelaten, supplementen geprobeerd en misschien zelfs verschillende diëten gevolgd.
-
-                  Toch blijf je last houden van een opgeblazen buik, buikpijn, een wisselende stoelgang, vermoeidheid of huidklachten die steeds terugkomen.
-
-                  Met mijn 1:1 darmtraject kijken we niet alleen naar jouw klachten, maar gaan we op zoek naar de oorzaak.
+                <p className="whitespace-pre-line">
+                  {'Jouw avondritueel? Met buikpijn op de bank omdat je darmen weer van streek zijn. Let\'s change that!\n\nJe hebt je voeding aangepast, bepaalde producten weggelaten, supplementen geprobeerd en misschien zelfs verschillende diëten gevolgd. Toch blijf je last houden van een opgeblazen buik, buikpijn, een wisselende stoelgang, vermoeidheid of huidklachten die steeds terugkomen.\u00a0\n\nMet mijn 1:1 darmtraject kijken we niet alleen naar jouw klachten, maar gaan we op zoek naar de oorzaak.\n'}
                 </p>
               </div>
               <CustomButton onClick={openModal} className="mt-8">
