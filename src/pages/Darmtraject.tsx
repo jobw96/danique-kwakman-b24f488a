@@ -112,7 +112,7 @@ const included = [
   {
     title: 'Ontlastingsonderzoek en voedselintolerantietest',
     description:
-      'Met gericht laboratoriumonderzoek zien we wat er in jouw darmen speelt en waar je lichaam op reageert. De labkosten zijn niet inbegrepen in de trajectprijs.',
+      'Met gericht laboratoriumonderzoek zien we wat er in jouw darmen speelt en waar je lichaam op reageert. De labkosten zijn niet inbegrepen in de trajectprijs.\n\nJe neemt de ontlastingstest gemakkelijk thuis af en voor de intolerantie test ga je naar een prikpunt bij jou in de buurt.\n',
   },
   {
     title: '5 persoonlijke 1:1 sessies van 60 minuten',
