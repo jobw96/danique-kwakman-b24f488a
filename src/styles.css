@@ -22,10 +22,6 @@
   --color-secondary-foreground: hsl(var(--secondary-foreground));
   --color-secondary-dark: hsl(var(--secondary-dark));
   --color-olive: hsl(var(--olive));
-  --color-olive-strong: hsl(var(--olive-strong));
-  --color-olive-deep: hsl(var(--olive-deep));
-  --color-olive-dark: hsl(var(--olive-dark));
-  --color-olive-soft: hsl(var(--olive-soft));
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-accent: hsl(var(--accent));
@@ -122,14 +118,11 @@ body {
     --secondary-dark: 44 38% 36%; /* #7F6C39 - 4,86:1 op #FCF9F2 */
     --secondary-foreground: 0 0% 100%; /* White text on secondary */
 
-    /* Het groen uit de branding (#C9C07D). Op de cremekleurige achtergrond haalt
-       die tint zelf maar 1,8:1, dus voor tekst en knoppen bestaan er donkere
-       varianten van; --olive-dark is de achtergrond van de donkere banden. */
-    --olive: 53 41% 64%; /* #C9C07D - de merkkleur zelf, voor randen en kleine vlakken */
-    --olive-strong: 53 41% 35%; /* #7E7535 - knoppen, 4,7:1 met wit */
-    --olive-deep: 53 41% 30%; /* #6B642B - kleine tekst, 5,4:1 op creme */
-    --olive-dark: 53 30% 16%; /* #35321D - achtergrond donkere sectie */
-    --olive-soft: 53 41% 92%; /* #F3F1E2 - zachte groene vlakken */
+    /* Het groen uit de branding: alleen #C9C07D, geen afgeleide tinten. Lichte
+       groene vlakken zijn deze kleur met een laag dekking (bg-olive/15), de
+       banden zijn deze kleur zelf. Tekst blijft de inkkleur van de site, want
+       #C9C07D op de cremekleur haalt maar 1,8:1 en is damit niet leesbaar. */
+    --olive: 53 41% 64%; /* #C9C07D */
 
     
     --muted: 42 56% 97%;
@@ -176,12 +169,8 @@ body {
     --secondary-dark: 44 38% 70%; /* op de donkere achtergrond moet hij juist lichter */
     --secondary-foreground: 0 0% 100%;
 
-    /* Op de donkere achtergrond moeten de groentinten juist lichter */
-    --olive: 53 41% 60%;
-    --olive-strong: 53 41% 35%;
-    --olive-deep: 53 35% 72%;
-    --olive-dark: 53 25% 12%;
-    --olive-soft: 53 18% 20%;
+    /* Het merkgroen blijft overal hetzelfde, ook in het donker */
+    --olive: 53 41% 64%; /* #C9C07D */
 
 
     --muted: 0 0% 20%;
