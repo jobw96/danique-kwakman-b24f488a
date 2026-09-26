@@ -73,12 +73,11 @@ const levensfaseOnderwerpen = [
 
 /** Wat je na drie maanden weet. */
 const resultaten = [
-  'Welke patronen er in je cyclus en klachten zitten',
-  'Welke voeding en leefstijlkeuzes bij jou passen',
-  'Welke signalen je lichaam geeft en hoe je daarop kunt reageren',
-  'Wat jou helpt rondom PMS, cravings, energiedips of darmklachten',
-  'Welke gewoontes jou ondersteunen gedurende je cyclus',
-  'Hoe je zelf verder kunt met het plan dat we samen hebben opgebouwd',
+  'Weet je wat er in elke fase van je cyclus verandert en hoe je je lichaam optimaal ondersteunt voor een cyclus zonder klachten',
+  'Weet je welke maaltijden en voedingsstoffen je kunt inzetten om je lichaam te voorzien van de bouwstoffen voor hormoonaanmaak',
+  'Heb je concrete aanpassingen gedaan in je voeding, slaap, stress en beweging die passen bij jouw dagelijks leven en die je klachten hebben laten verdwijnen',
+  'Heb je een persoonlijk plan waarmee je ook na het traject precies weet wat jouw lijf nodig heeft',
+  'Beïnvloeden je hormonale klachten niet langer je dagelijks leven',
 ];
 
 /** De onderdelen van "Wat is inbegrepen?". */
