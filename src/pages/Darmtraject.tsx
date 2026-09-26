@@ -9,7 +9,7 @@ import { Link } from '@/lib/router-compat';
 import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
 import buikDuinen from '@/assets/sfeer/buik-duinen-darmtraject.webp.asset.json';
 import daniqueAbout from '@/assets/danique-about.webp';
-import daniqueWalking from '@/assets/danique-walking.webp';
+import daniqueWitDuinen from '@/assets/sfeer/danique-wit-duinen.webp.asset.json';
 import daniqueTowel from '@/assets/danique-towel.webp';
 import ontlastingAsset from '@/assets/sfeer/ontlastingsonderzoek-buisje.webp.asset.json';
 import bloedbuisjesAsset from '@/assets/sfeer/bloedbuisjes-labonderzoek.webp.asset.json';
@@ -396,9 +396,9 @@ const Darmtraject = () => {
             <FadeIn>
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <img
-                  src={daniqueWalking}
-                  alt="Danique Kwakman wandelt ontspannen buiten"
-                  title="Weer met plezier eten na het 1:1 darmtraject"
+                  src={daniqueWitDuinen.url}
+                  alt="Vrouw in wit topje en witte broek staat met opgeheven armen in de duinen, met de zon op haar buik"
+                  title="Meer energie en vertrouwen in je lichaam na het 1:1 darmtraject"
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-cover"
