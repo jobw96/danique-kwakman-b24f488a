@@ -98,11 +98,19 @@ interface NavItem {
   subItems?: NavSubItem[];
 }
 /**
- * Pagina's zonder de afsluitende verwijzing naar het aanbod: de aanbodpagina
- * zelf (dat zou een link naar de eigen pagina zijn) en pagina's die onderaan
- * al een eigen CTA hebben staan. Twee CTA's onder elkaar zwakken elkaar af.
+ * Pagina's zonder de afsluitende verwijzing naar het aanbod:
+ * - de aanbodpagina zelf en de drie trajectpagina's, want daar zou het een
+ *   verwijzing naar het aanbod zijn vanaf een pagina die het aanbod al is;
+ * - pagina's die onderaan al een eigen CTA hebben staan, want twee CTA's
+ *   onder elkaar zwakken elkaar af.
  */
-const GEEN_AANBOD_CTA = ['/behandelingen', '/klachten'];
+const GEEN_AANBOD_CTA = [
+  '/behandelingen',
+  '/bloedsuikertraject',
+  '/hormoontraject',
+  '/darmtraject',
+  '/klachten',
+];
 
 export const Layout: React.FC<LayoutProps> = ({
   children
