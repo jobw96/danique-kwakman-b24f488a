@@ -75,7 +75,7 @@ const included = [
   {
     title: 'Uitgebreide intake',
     description:
-      'Tijdens de uitgebreide intake brengen we jouw situatie uitgebreid in kaart. We kijken onder andere naar je klachten, cyclus, voeding, darmen, bloedsuiker, slaap, stress, beweging en leefstijl. Zo krijgen we zicht op de belangrijkste puzzelstukjes binnen jouw situatie.',
+      'Tijdens de uitgebreide intake brengen we jouw situatie uitgebreid in kaart. We kijken onder andere naar je klachten, cyclus, voeding, darmen, bloedsuiker, slaap, stress, beweging en leefstijl. Zo krijgen we zicht op de belangrijkste puzzelstukjes binnen jouw situatie en krijgen we inzicht in de oorzaak van jouw probleem.',
   },
   {
     title: '2 persoonlijke vervolgconsulten van 60 minuten',
