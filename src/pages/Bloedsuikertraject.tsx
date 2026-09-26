@@ -184,7 +184,7 @@ const Bloedsuikertraject = () => {
               <h1 className="max-w-3xl text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
                 1:1 bloedsuikertraject
               </h1>
-              <p className="mt-6 max-w-xl text-xl text-muted-foreground">
+              <p className="mt-6 max-w-xl text-xl text-primary-deep">
                 Je eet gezond en slaapt genoeg, maar om 15.00 uur val je bijna in slaap achter je laptop en ga je opzoek naar suiker en koffie om de middag door te komen.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
