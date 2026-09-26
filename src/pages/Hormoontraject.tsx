@@ -183,14 +183,15 @@ const faqs = [
 /**
  * Opschrift boven een kop: kleine kapitalen met wat meer letterafstand.
  *
- * Het merkgroen (#C9C07D) is de enige groentint op de site en zit in de vlakken
- * en randen. Op deze grootte haalt het op de cremekleur maar 1,8:1, dus blijft
- * dit opschrift de tekstkleur van de site; op de groene band staat het in het wit.
+ * Het blauw van de site is de accentkleur van deze pagina, net als op de
+ * bloedsuikertrajectpagina. Het lichtste blauw haalt op de cremekleur maar
+ * 2,4:1, dus is voor de kleine labeltjes het diepe blauw gekozen (4,79:1).
+ * Op de donkerblauwe band staat het label in het wit.
  */
 const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boolean }) => (
   <p
     className={`mb-5 text-xs font-medium uppercase tracking-[0.16em] ${
-      opDonker ? 'text-white' : 'text-muted-foreground'
+      opDonker ? 'text-primary-foreground' : 'text-primary-deep'
     }`}
   >
     {text}
@@ -198,8 +199,8 @@ const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boo
 );
 
 /**
- * Zelfde vinkje als op de bloedsuikertrajectpagina: een rondje in het merkgroen
- * met een donkere vink erin. Op de groene band is dat groen zelf de achtergrond,
+ * Zelfde vinkje als op de bloedsuikertrajectpagina: een licht rondje met een
+ * blauwe vink erin. Op de donkerblauwe band is dat blauw zelf de achtergrond,
  * dus krijgt het rondje daar een lichte doorschijnende vulling met een witte vink.
  */
 const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: boolean }) => (
@@ -208,7 +209,7 @@ const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: bo
       <li key={item} className="flex items-start gap-3">
         <span
           className={`mt-0.5 flex h-6 w-6 min-w-6 shrink-0 items-center justify-center rounded-full ${
-            opDonker ? 'bg-white/20 text-white' : 'bg-olive text-foreground'
+            opDonker ? 'bg-primary-foreground/20 text-primary-foreground' : 'bg-background text-primary'
           }`}
           aria-hidden="true"
         >
@@ -235,7 +236,7 @@ const Hormoontraject = () => {
               <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
                 1:1 hormoontraject
               </h1>
-              <p className="mt-6 max-w-xl text-lg text-foreground md:text-xl">
+              <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
                 De ene week voel je je energiek en zit je lekker in je vel. Een paar dagen later ben je prikkelbaar, moe, opgeblazen en heb je alleen nog maar zin in chocola.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
@@ -248,7 +249,7 @@ const Hormoontraject = () => {
                   <br /><br />
                 </p>
               </div>
-              <CustomButton onClick={openModal} variant="green" className="mt-8">
+              <CustomButton onClick={openModal} className="mt-8">
                 Plan een gratis kennismaking
               </CustomButton>
             </FadeIn>
@@ -317,7 +318,7 @@ const Hormoontraject = () => {
                     index === aandachtsvelden.length - 1 ? 'md:col-span-2' : ''
                   }`}
                 >
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">
                     {String(index + 1).padStart(2, '0')}
                   </p>
                   <h3 className="mt-3 text-2xl text-foreground">{veld.title}</h3>
@@ -365,7 +366,7 @@ const Hormoontraject = () => {
               </p>
             </div>
             <p className="mt-8 leading-relaxed">We kijken steeds:</p>
-            <blockquote className="mt-4 border-l-2 border-olive pl-6">
+            <blockquote className="mt-4 border-l-2 border-primary pl-6">
               <p className="font-serif text-2xl leading-tight text-foreground md:text-3xl">
                 Wat is nu de volgende stap?
               </p>
@@ -382,7 +383,7 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="bg-olive py-16 text-white md:py-24">
+      <section className="bg-primary-dark py-16 text-primary-foreground md:py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <FadeIn>
@@ -401,20 +402,20 @@ const Hormoontraject = () => {
             </FadeIn>
             <FadeIn delay={0.1}>
               <SectionLabel text="Resultaat na drie maanden" opDonker />
-              <h2 className="text-3xl text-white md:text-4xl">
+              <h2 className="text-3xl text-primary-foreground md:text-4xl">
                 Van steeds zoeken naar begrijpen wat jouw lichaam nodig heeft
               </h2>
-              <p className="mt-6 leading-relaxed text-white">
+              <p className="mt-6 leading-relaxed text-primary-foreground/85">
                 Het doel is niet dat je na drie maanden alles over hormonen weet.
               </p>
-              <p className="mt-4 leading-relaxed text-white">
+              <p className="mt-4 leading-relaxed text-primary-foreground/85">
                 Het doel is dat je je lichaam beter begrijpt en weet wat jij kunt doen wanneer je klachten opspelen.
               </p>
-              <p className="mt-8 leading-relaxed text-white">Je weet:</p>
-              <div className="mt-6 text-white">
+              <p className="mt-8 leading-relaxed text-primary-foreground/85">Je weet:</p>
+              <div className="mt-6 text-primary-foreground/90">
                 <CheckList items={resultaten} opDonker />
               </div>
-              <p className="mt-8 font-serif text-2xl text-white md:text-3xl">
+              <p className="mt-8 font-serif text-2xl text-primary-foreground md:text-3xl">
                 Niet perfect. Wel passend bij jou.
               </p>
               <CustomButton onClick={openModal} variant="white" className="mt-9">
@@ -457,7 +458,7 @@ const Hormoontraject = () => {
                 Ik weet hoe frustrerend het is als je voelt dat er meer speelt, maar niet weet waar je moet beginnen. Daar help ik je graag bij.
               </p>
               <Link to="/over-mij" className="mt-8 inline-block">
-                <CustomButton variant="green">Lees meer over mij</CustomButton>
+                <CustomButton>Lees meer over mij</CustomButton>
               </Link>
             </FadeIn>
           </div>
@@ -535,7 +536,7 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="bg-olive/15 py-16 md:py-24">
+      <section className="bg-secondary/20 py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <FadeIn className="text-center">
@@ -610,7 +611,7 @@ const Hormoontraject = () => {
                 </p>
                 <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">€888</p>
                 <p className="mt-2 text-sm">3 maanden persoonlijke begeleiding</p>
-                <CustomButton onClick={openModal} variant="green" className="mt-8">
+                <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
                 </CustomButton>
               </div>

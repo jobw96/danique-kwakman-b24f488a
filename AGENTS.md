@@ -1,4 +1,4 @@
 # Project Architecture
 
 - Store uploaded page photography as optimized WebP files behind Lovable Assets pointers, because this keeps binary media out of the repository while preserving stable imports.
-- Groene accenten gebruiken uitsluitend `--olive` in `src/styles.css` (alleen `#C9C07D`, hue 53), omdat de gebruiker geen afgeleide tinten wil; lichte groene vlakken zijn dezelfde kleur met een laag dekking (`bg-olive/15`). Op de volle groene banden staat de tekst in het wit (gebruikerskeuze), omdat daar de groene vlakt zelf de achtergrond is; als tekst op de cremekleur blijft de inkkleur, want #C9C07D op creme haalt maar 1,8:1.
+- Dienstpagina's (1:1 hormoon- en bloedsuikertraject) gebruiken het blauw van de site als accent — `--primary-deep` voor kleine labeltjes en de lead, `bg-primary-dark` met witte tekst voor de volle band, `bg-secondary/20` voor de zachte FAQ-band en standaard blauwe knoppen met een witte knop op de band — omdat de gebruiker de bloedsuikerpagina als referentie noemde; groen komt alleen voor als `--olive` zelf (`#C9C07D`, hue 53), zonder afgeleide tinten.
