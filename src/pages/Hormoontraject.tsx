@@ -429,9 +429,9 @@ const Hormoontraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <SectionLabel text="Resultaat na drie maanden" opDonker />
+              <SectionLabel text="RESULTAAT NA 3 MAANDEN" opDonker />
               <h2 className="text-3xl text-primary-foreground md:text-4xl">
-                Van steeds zoeken naar begrijpen wat jouw lichaam nodig heeft
+                In 3 maanden tijd naar hormonale balans, rust en vertrouwen in je lijf
               </h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
                 Het doel is niet dat je na drie maanden alles over hormonen weet.
