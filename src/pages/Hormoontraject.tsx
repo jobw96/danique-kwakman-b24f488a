@@ -310,46 +310,6 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-6xl">
-            <FadeIn className="max-w-3xl">
-              <SectionLabel text="Hormonen staan niet op zichzelf" />
-              <h2 className="text-3xl text-foreground md:text-4xl">
-                {"Een hormonale disbalans ontstaat meestal niet door één ding.\n"}
-              </h2>
-              <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
-                <p>
-                  {"Voeding, bloedsuiker, stress, slaap, darmen, beweging en veranderingen in je levensfase kunnen allemaal meespelen.Daarom kijken we tijdens het traject niet alleen naar je hormonen, maar naar het hele plaatje en vooral naar\u00a0wat er bij jou meespeelt.."}
-                </p>
-                <p>
-                  {"\n"}
-                </p>
-              </div>
-            </FadeIn>
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              {aandachtsvelden.map((veld, index) => (
-                <FadeIn
-                  key={veld.title}
-                  delay={index * 0.06}
-                  className={`border border-secondary/40 bg-card p-8 ${
-                    index === aandachtsvelden.length - 1 ? 'md:col-span-2' : ''
-                  }`}
-                >
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">
-                    {String(index + 1).padStart(2, '0')}
-                  </p>
-                  <h3 className="mt-3 text-2xl text-foreground">{veld.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    {veld.description}
-                  </p>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Levensfase, cyclus en hormonale disbalans in een uitklapmenu: foto links,
           de onderwerpen rechts. Onder lg passen twee kolommen niet, daar staat de
@@ -407,6 +367,47 @@ const Hormoontraject = () => {
               })}
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-6xl">
+            <FadeIn className="max-w-3xl">
+              <SectionLabel text="Hormonen staan niet op zichzelf" />
+              <h2 className="text-3xl text-foreground md:text-4xl">
+                {"Een hormonale disbalans ontstaat meestal niet door één ding.\n"}
+              </h2>
+              <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
+                <p>
+                  {"Voeding, bloedsuiker, stress, slaap, darmen, beweging en veranderingen in je levensfase kunnen allemaal meespelen.Daarom kijken we tijdens het traject niet alleen naar je hormonen, maar naar het hele plaatje en vooral naar\u00a0wat er bij jou meespeelt.."}
+                </p>
+                <p>
+                  {"\n"}
+                </p>
+              </div>
+            </FadeIn>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
+              {aandachtsvelden.map((veld, index) => (
+                <FadeIn
+                  key={veld.title}
+                  delay={index * 0.06}
+                  className={`border border-secondary/40 bg-card p-8 ${
+                    index === aandachtsvelden.length - 1 ? 'md:col-span-2' : ''
+                  }`}
+                >
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">
+                    {String(index + 1).padStart(2, '0')}
+                  </p>
+                  <h3 className="mt-3 text-2xl text-foreground">{veld.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {veld.description}
+                  </p>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
