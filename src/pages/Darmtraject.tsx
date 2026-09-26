@@ -1,14 +1,18 @@
-import React from 'react';
-import { Section } from '@/components/Section';
+import React, { useState } from 'react';
+import { m } from 'framer-motion';
+import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { Check, X, Users, ClipboardList, Activity, MessageCircle, Layers, Heart, Zap } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { Testimonials } from '@/components/Testimonials';
-
 import { useBookingModal } from '@/components/BookingModal';
-import SEO from '@/components/SEO';
-import daniqueDarm from '@/assets/danique-darm.webp';
+import { Link } from '@/lib/router-compat';
 import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
+import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueAbout from '@/assets/danique-about.webp';
+import daniqueWalking from '@/assets/danique-walking.webp';
+import daniqueTowel from '@/assets/danique-towel.webp';
+import ontlastingAsset from '@/assets/sfeer/ontlastingsonderzoek-buisje.webp.asset.json';
+import bloedbuisjesAsset from '@/assets/sfeer/bloedbuisjes-labonderzoek.webp.asset.json';
 
 const DARM_TESTIMONIALS = [
   {
@@ -28,298 +32,547 @@ const DARM_TESTIMONIALS = [
   ...GENERAL_TESTIMONIALS,
 ];
 
+/** Herkenningspunten. */
+const signalen = [
+  'Je buik is in de ochtend nog plat, maar aan het eind van de dag zie je eruit alsof je zes maanden zwanger bent',
+  'Je stoelgang wisselt: de ene week zit je vast, de andere week moet je juist snel naar de wc',
+  'Je twijfelt bij elke maaltijd of je er straks last van krijgt',
+  'Je bent moe, ook als je genoeg slaapt',
+  'Je hebt al van alles geprobeerd, maar weet nog steeds niet waar je klachten vandaan komen',
+];
 
+/** Uitklapmenu: wat het labonderzoek je laat zien. */
+const onderzoekOnderwerpen = [
+  {
+    title: 'Ontlastingsonderzoek',
+    description:
+      'Met een uitgebreid ontlastingsonderzoek kijken we hoe je darmen er op dit moment voor staan. Denk aan je darmflora, de vertering van vetten, eiwitten en koolhydraten, de conditie van je darmslijmvlies en of er ongewenste bacteriën, schimmels of parasieten aanwezig zijn.',
+  },
+  {
+    title: 'Voedselintolerantietest',
+    description:
+      'Reageert je lichaam op bepaalde voedingsmiddelen? Met de voedselintolerantietest zien we waar jouw lichaam op reageert. Zo hoef je niet langer te gokken en haal je niet onnodig hele productgroepen uit je voeding.',
+  },
+  {
+    title: 'Van uitslag naar plan',
+    description:
+      'Een uitslag alleen zegt nog niet zoveel. Ik leg de uitkomsten naast jouw klachten, voeding, leefstijl en gezondheidsgeschiedenis. Samen bespreken we wat de uitslag voor jou betekent en welke stappen we gaan zetten.',
+  },
+];
 
-const SectionTag = ({ text }: { text: string }) => (
-  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
+/** De vier fases. */
+const fases = [
+  {
+    title: 'Voorbereiden',
+    duration: '4-8 weken',
+    description:
+      'We ondersteunen je lever, nieren en lymfesysteem. Zo is je lichaam klaar voor de volgende fase.',
+  },
+  {
+    title: 'Opruimen',
+    duration: '8 weken',
+    description:
+      'We pakken de ongewenste bacteriën, schimmels, parasieten of virussen aan die uit je onderzoek naar voren komen.',
+  },
+  {
+    title: 'Versterken',
+    duration: '12 weken',
+    description:
+      'We werken aan het herstel van je darmslijmvlies en bouwen een sterke darmflora op.',
+  },
+  {
+    title: 'Stabiliseren',
+    duration: '12-24 weken',
+    description:
+      'We zorgen dat je darmflora stevig blijft staan. Je weet wat je nodig hebt om ook na het traject zelf verder te kunnen.',
+  },
+];
+
+/** Resultaten na het traject. */
+const resultaten = [
+  'Weet je wat er in jouw darmen speelt en waar je klachten vandaan komen',
+  'Weet je welke voeding jouw darmen ondersteunt en waar je beter even op kunt letten',
+  'Eet je weer met plezier, zonder bij elke maaltijd te twijfelen',
+  'Heb je concrete aanpassingen gedaan in je voeding, slaap, stress en beweging die passen bij jouw dagelijks leven',
+  'Heb je een persoonlijk plan waarmee je ook na het traject precies weet wat jouw lijf nodig heeft',
+];
+
+/** Wat is inbegrepen. */
+const included = [
+  {
+    title: 'Online kennismakingsgesprek',
+    description:
+      'We starten met een vrijblijvend online gesprek om jouw hulpvraag helder te krijgen. We bespreken waar je nu tegenaan loopt, wat je graag wilt veranderen en of het 1:1 darmtraject bij je past.',
+  },
+  {
+    title: 'Uitgebreide intake',
+    description:
+      'Tijdens de intake brengen we jouw situatie uitgebreid in kaart. We kijken onder andere naar je darmklachten, stoelgang, voeding, energie, slaap, stress, je cyclus en je gezondheidsgeschiedenis. Zo krijgen we zicht op de belangrijke puzzelstukjes binnen jouw situatie.',
+  },
+  {
+    title: 'Ontlastingsonderzoek en voedselintolerantietest',
+    description:
+      'Met gericht laboratoriumonderzoek zien we wat er in jouw darmen speelt en waar je lichaam op reageert. De labkosten zijn niet inbegrepen in de trajectprijs.',
+  },
+  {
+    title: '5 persoonlijke 1:1 sessies van 60 minuten',
+    description:
+      'We bespreken je uitslagen, wat je hebt ervaren, wat er verandert en waar je tegenaan loopt. Op basis daarvan sturen we je plan steeds bij.',
+  },
+  {
+    title: '6 maanden persoonlijke begeleiding',
+    description:
+      '6 maanden lang sta ik naast je. Mijn begeleiding stopt niet zodra onze 1:1 sessie voorbij is. Ook tussen de sessies door kun je bij mij terecht met vragen, ervaringen en dingen waar je tegenaan loopt. We kijken samen wat er speelt, sturen bij waar nodig en bepalen steeds wat voor jou de volgende stap is.',
+  },
+  {
+    title: 'WhatsApp-begeleiding',
+    description:
+      'Heb je tussen de sessies door een vraag, loop je ergens tegenaan of wil je even overleggen? Dan kun je me via WhatsApp bereiken. Zo hoef je niet te wachten tot onze volgende sessie.',
+  },
+  {
+    title: 'Een behandelplan dat met je meebeweegt',
+    description:
+      'We kijken naar het geheel: van je darmgezondheid en hormonen tot voeding, slaap, stress, leefstijl, mindset en je cyclus. Tijdens het traject evalueren we wat er verandert, wat wel en niet werkt en wat er in jouw dagelijks leven speelt. Op basis daarvan pas ik je persoonlijke behandelplan steeds aan.',
+  },
+  {
+    title: 'Jouw persoonlijke online health dashboard',
+    description:
+      'Een online omgeving die je helpt je lichaam beter te begrijpen en praktische stappen te zetten die passen bij jou. Alles wat je tijdens je traject nodig hebt, vind je overzichtelijk op één plek: van 100+ recepten en een maaltijdplanner tot cyclus-trackers, inzichten over je hormonen en darmen en praktische tools voor slaap, stress en ontspanning.',
+  },
+  {
+    title: 'Praktische tools en opdrachten',
+    description:
+      'Om niet alleen te begrijpen wat er speelt, maar ook stap voor stap te ervaren wat voor jou werkt. Geen enorme lijst met dingen die je moet afvinken, maar stappen die passen bij waar jij op dat moment staat.',
+  },
+  {
+    title: 'Nourish Your Body e-book',
+    description:
+      'Je ontvangt mijn Nourish Your Body e-book met 50+ hormoonproof en darmvriendelijke recepten en praktische inspiratie voor maaltijden die je hormonen en darmen ondersteunen.\nT.w.v. €39,99',
+  },
+];
+
+/** Veelgestelde vragen. */
+const faqs = [
+  {
+    question: 'Voor welke klachten kan ik het darmtraject volgen?',
+    answer: [
+      'Het traject kan passend zijn wanneer je langere tijd last hebt van je buik of spijsvertering. Denk aan een opgeblazen gevoel, buikpijn, winderigheid, obstipatie, diarree of een wisselende stoelgang. Ook vermoeidheid of huidklachten kunnen samenhangen met je darmgezondheid.',
+      'Tijdens de gratis kennismaking bespreken we jouw persoonlijke situatie.',
+    ],
+  },
+  {
+    question: 'Is het labonderzoek verplicht?',
+    answer: [
+      'Ja. Het ontlastingsonderzoek en de voedselintolerantietest vormen de basis van dit traject. Op basis van de uitslagen stemmen we de vier fases af op jouw lichaam. De labkosten bedragen €600 en worden rechtstreeks door het lab aan jou gefactureerd.',
+    ],
+  },
+  {
+    question: 'Moet ik mijn voeding volledig omgooien?',
+    answer: [
+      'Nee, je krijgt geen streng voedingsschema mee. We kijken naar je huidige eetpatroon en bepalen samen welke aanpassingen voor jou relevant en haalbaar zijn. We gaan niet onnodig dingen schrappen, juist omdat we weten waar jouw lichaam op reageert.',
+    ],
+  },
+  {
+    question: 'Krijg ik een supplementenadvies?',
+    answer: [
+      'Er is geen standaard supplementen advies dat voor iedereen werkt dus ik kijk individueel wat jouw lijf nodig heeft. Dit is altijd ter aanvulling en vervangt niet je voeding. Ik verkoop geen supplementen en ben dus ook niet gebonden aan bepaalde merken. Supplementen zijn niet inbegrepen in de trajectprijs.',
+    ],
+  },
+  {
+    question: 'Hoe lang duurt het traject?',
+    answer: [
+      'Het darmtraject duurt ongeveer 6 maanden. Afhankelijk van jouw situatie kan dit iets langer of korter zijn.',
+    ],
+  },
+  {
+    question: 'Kan ik het traject online volgen?',
+    answer: ['Ja. Het volledige traject kan online worden gevolgd. De intake kan ook in Hoorn.'],
+  },
+  {
+    question: 'Hoe weet ik of dit traject bij mij past?',
+    answer: [
+      'Tijdens de gratis kennismaking bespreken we jouw klachten, hulpvraag en wat je graag wilt veranderen. Het gesprek is volledig vrijblijvend. Zo kun je rustig ontdekken of mijn manier van werken en het traject bij je passen.',
+    ],
+  },
+];
+
+const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boolean }) => (
+  <p
+    className={`mb-5 text-xs font-medium uppercase tracking-[0.16em] ${
+      opDonker ? 'text-primary-foreground' : 'text-primary-deep'
+    }`}
+  >
+    {text}
+  </p>
 );
+
+const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: boolean }) => (
+  <ul className="space-y-3">
+    {items.map((item) => (
+      <li key={item} className="flex items-start gap-3">
+        <span
+          className={`mt-0.5 flex h-6 w-6 min-w-6 shrink-0 items-center justify-center rounded-full ${
+            opDonker ? 'bg-primary-foreground/20 text-primary-foreground' : 'bg-background text-primary'
+          }`}
+          aria-hidden="true"
+        >
+          <Check className="h-3.5 w-3.5" />
+        </span>
+        <span className={`leading-relaxed ${opDonker ? '' : 'text-muted-foreground'}`}>{item}</span>
+      </li>
+    ))}
+  </ul>
+);
+
+type AccordionItem = { title: string; body: React.ReactNode };
+
+const Accordion = ({
+  items,
+  open,
+  setOpen,
+  border = 'border-secondary/40',
+}: {
+  items: AccordionItem[];
+  open: number | null;
+  setOpen: (i: number | null) => void;
+  border?: string;
+}) => (
+  <div className={`border-t ${border}`}>
+    {items.map((item, index) => {
+      const isOpen = open === index;
+      return (
+        <div key={item.title} className={`border-b ${border}`}>
+          <m.button
+            type="button"
+            onClick={() => setOpen(isOpen ? null : index)}
+            className="flex w-full items-center justify-between gap-6 py-6 text-left"
+            aria-expanded={isOpen}
+            whileHover={{ x: 3 }}
+            transition={{ duration: 0.2 }}
+          >
+            <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
+            <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-foreground">
+              <ChevronDown className="h-5 w-5" aria-hidden="true" />
+            </m.span>
+          </m.button>
+          <m.div
+            initial={false}
+            animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <div className="space-y-4 pb-6 leading-relaxed">{item.body}</div>
+          </m.div>
+        </div>
+      );
+    })}
+  </div>
+);
+
+const toText = (text: string) => <p className="whitespace-pre-line">{text}</p>;
 
 const Darmtraject = () => {
   const { openModal } = useBookingModal();
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [openIncluded, setOpenIncluded] = useState<number | null>(0);
+  const [openOnderzoek, setOpenOnderzoek] = useState<number | null>(0);
+
   return (
-    <div className="min-h-screen">
-      <SEO
-        title="1:1 Darmtraject Therapie | Lab onderzoek"
-        description="Diepgaand 1:1 darmtraject met gericht laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman."
-        canonicalUrl="/darmtraject"
-      />
-      <Section className="pt-12 md:pt-20 bg-background">
-        <div className="max-w-6xl mx-auto">
-          {/* Hero Section */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
-            <div className="lg:w-1/2">
-              <FadeIn>
-                <SectionTag text="1:1 Traject" />
-                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">1:1 Darmtherapie</h1>
-                <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
-                  <p>
-                    Heb je vaak last van een opgeblazen gevoel, wisselende stoelgang, buikpijn of vermoeidheid? Word je beperkt door je darmklachten, voel je je onzeker over wat je wel of niet kunt eten en beïnvloedt dit je dagelijks leven?
-                  </p>
-                  <p>
-                    In dit traject zoeken we naar de oorzaak van je klachten. Niet door standaarddiëten of snelle oplossingen, maar met gericht onderzoek, een onderbouwde aanpak die rekening houdt met jouw lichaam, leefstijl en energie. Zo krijg je inzicht, grip en rust in je spijsvertering en algehele gezondheid.
-                  </p>
-                </div>
-                <CustomButton onClick={openModal}>Gratis kennismaking</CustomButton>
-              </FadeIn>
-            </div>
-            <div className="lg:w-1/2">
-              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden aspect-[4/5]">
-                <ParallaxImage 
-                  src={daniqueDarm} 
-                  alt="1:1 Darmtraject - darmtherapie en spijsverteringsklachten behandelen met Danique Kwakman" 
-                  className="w-full h-full object-cover" 
-                />
-              </FadeIn>
-            </div>
-          </div>
-
-          {/* Wat dit traject voor je betekent */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wat dit traject voor je betekent</h2>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "duidelijkheid over je darmgezondheid en inzicht in wat jouw klachten veroorzaakt",
-                  "gedag zeggen tegen buikpijn, constipatie, diarree, winderigheid of een opgeblazen gevoel",
-                  "betere opname van voedingsstoffen, waardoor je meer energie en veerkracht ervaart",
-                  "inzicht in welke voeding, leefstijl en routines jouw lichaam ondersteunen",
-                  "een uitgebreid darmonderzoek en voedselintolerantietest om precies te achterhalen waar je gevoelig voor bent, wat je lichaam nodig heeft en waar de oorzaak ligt van je klachten (de labkosten hiervoor zijn niet inbegrepen in de trajectprijs)",
-                  "praktische stappen en persoonlijke begeleiding om klachten stap voor stap te verhelpen",
-                  "begeleiding die afgestemd is op jouw energie, tempo en situatie, zodat verandering haalbaar en duurzaam is",
-                  "meer rust en vertrouwen in je lichaam, zodat je weet hoe je je spijsvertering en gezondheid kunt ondersteunen"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
-                      <Check size={14} className="text-[#6B7B8A]" />
-                    </div>
-                    <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <h3 className="font-serif text-xl text-foreground mb-4">Dit traject past bij jou als je:</h3>
-              <ul className="space-y-3">
-                {[
-                  "al langere tijd darmklachten ervaart die je dagelijks leven beïnvloeden",
-                  "merkt dat voeding, stress of je cyclus invloed heeft op hoe je buik reageert en hoe je je voelt",
-                  "wilt begrijpen wat jouw lichaam echt nodig heeft en hoe je klachten kunt verminderen",
-                  "bereid bent stap voor stap veranderingen door te voeren met begeleiding en praktische tools",
-                  "klaar bent om te investeren in jezelf en je gezondheid, zodat je lichaam weer optimaal kan functioneren en het leven nog 100x leuker wordt"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-0.5">
-                      <Heart size={14} className="text-[#6B7B8A]" />
-                    </div>
-                    <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </FadeIn>
-
-          {/* Wanneer dit traject niet passend is */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Wanneer dit traject niet passend is</h2>
-              <ul className="space-y-3">
-                {[
-                  "je verwacht snelle oplossingen zonder commitment",
-                  "je wilt geen inzicht of begeleiding bij voeding, leefstijl of herstel",
-                  "je bent niet bereid om naar je lichaam te kijken en stappen te gaan zetten om je fantastisch te voelen"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-red-50 flex items-center justify-center mt-0.5">
-                      <X size={14} className="text-red-400" />
-                    </div>
-                    <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </FadeIn>
-
-          {/* Hoe het traject eruitziet */}
-          <FadeIn className="mb-20">
-            <div className="text-center mb-12">
-              
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Hoe het traject eruitziet</h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                { 
-                  step: "1", 
-                  title: "Kennismaking — online", 
-                  icon: Users,
-                  desc: "We starten met een vrijblijvend gesprek waarin we jouw situatie bespreken. Je kunt al je vragen stellen, we bekijken samen wat jij nodig hebt en voelen aan of er een klik is. Het geeft zowel jou als mij helderheid over de mogelijkheden en of dit traject bij jou past." 
-                },
-                { 
-                  step: "2", 
-                  title: "Intake — online of in Hoorn", 
-                  icon: ClipboardList,
-                  desc: "Tijdens de intake duiken we echt de diepte in. We bespreken je darmgezondheid, voeding, leefstijl, belastbaarheid en hormonale balans. Met uitgebreide vragenlijsten en jouw persoonlijke gezondheidsgeschiedenis brengen we volledig in kaart waar je klachten vandaan komen en bepalen we samen welke richting het traject op gaat. Zo ontstaat een duidelijk, persoonlijk plan dat afgestemd is op jouw lichaam en situatie." 
-                },
-                { 
-                  step: "3", 
-                  title: "Darmtherapie in fases", 
-                  icon: Layers,
-                  desc: "Het traject doorloopt vier fases, die we stap voor stap afstemmen op jouw situatie: Voorbereiden, Opruimen, Versterken en Stabiliseren. Elke fase wordt ondersteund met een persoonlijk behandelplan, inclusief voeding, leefstijladvies, praktische opdrachten en hulpmiddelen zoals werkboeken, trackers en recepten om de verandering tastbaar te maken." 
-                },
-                { 
-                  step: "4", 
-                  title: "Vervolgconsulten", 
-                  icon: Activity,
-                  desc: "Tijdens de persoonlijke 1:1 sessies evalueren we je voortgang, passen we het plan aan waar nodig en bespreken we praktische handvatten die je direct kunt toepassen. Alles volledig afgestemd op jouw tempo en doelen, zodat je stap voor stap écht verschil merkt." 
-                },
-                { 
-                  step: "5", 
-                  title: "WhatsApp-support", 
-                  icon: MessageCircle,
-                  desc: "Voor extra begeleiding tussen de consulten door. Precies wanneer je het nodig hebt." 
-                }
-              ].map((item, i) => (
-                <FadeIn key={i} delay={i * 0.1} className="bg-white p-8 rounded-2xl border border-secondary/30">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 min-w-12 min-h-12 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center">
-                      <item.icon size={20} className="text-[#6B7B8A]" />
-                    </div>
-                    <div>
-                      <span className="text-primary font-medium text-sm">{item.step}.</span>
-                      <h3 className="font-serif text-xl text-foreground mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </FadeIn>
-
-          {/* 4 Fases van de darmtherapie */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">4 fases van de darmtherapie</h2>
-              <p className="text-muted-foreground mb-8">
-                Het 1:1 Darmtherapie traject duurt ± 6 maanden. Afhankelijk van jouw situatie kan dit langer of korter zijn. Op basis van jouw labonderzoek doorlopen we de 4 fases van de darmtherapie.
+    <div className="min-h-screen bg-background text-muted-foreground">
+      <section className="pb-16 pt-10 md:pb-24 md:pt-16">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
+            <FadeIn immediate>
+              <SectionLabel text="1:1 traject · 6 maanden" />
+              <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+                1:1 darmtraject
+              </h1>
+              <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
+                Je wilt gewoon kunnen eten zonder na te denken over wat het met je buik doet. Uit eten gaan, een broek dragen die ook na de lunch nog lekker zit en niet steeds rekening houden met waar de wc is.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {[
-                  { 
-                    title: "Fase 1: Voorbereiding", 
-                    duration: "4-8 weken",
-                    desc: "We optimaliseren: lever, nieren en lymfesysteem, zodat je klaar bent voor de volgende fase."
-                  },
-                  { 
-                    title: "Fase 2: Opruimen", 
-                    duration: "8 weken",
-                    desc: "We elimineren ziekmakende micro-organismen en virussen."
-                  },
-                  { 
-                    title: "Fase 3: Versterken", 
-                    duration: "12 weken",
-                    desc: "Herstellen van het darmslijmvlies en opbouwen van een sterk microbioom."
-                  },
-                  { 
-                    title: "Fase 4: Stabiliseren", 
-                    duration: "12-24 weken",
-                    desc: "Ondersteuning van de darmflora en advies om blijvend resultaat te behouden."
-                  }
-                ].map((item, i) => (
-                  <div key={i} className="p-6 rounded-xl border border-secondary/30 bg-background/50">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-8 h-8 min-w-8 min-h-8 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center">
-                        <Zap size={14} className="text-[#6B7B8A]" />
-                      </div>
-                      <span className="text-primary text-sm font-medium">{item.duration}</span>
-                    </div>
-                    <h3 className="font-serif text-lg text-foreground mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm">{item.desc}</p>
-                  </div>
-                ))}
+              <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
+                <p>
+                  Misschien heb je al van alles geschrapt, apps bijgehouden of te horen gekregen dat het "gewoon PDS" is. En toch weet je nog steeds niet waarom je buik doet wat hij doet.
+                </p>
+                <p>
+                  In het 1:1 darmtraject gaan we ongeveer 6 maanden samen aan de slag. Met gericht laboratoriumonderzoek brengen we in kaart wat er in jouw darmen speelt. Zo weten we waar je klachten vandaan komen en wat jouw lichaam nodig heeft om te herstellen.
+                </p>
               </div>
-            </div>
-          </FadeIn>
+              <CustomButton onClick={openModal} className="mt-8">
+                Plan een gratis kennismaking
+              </CustomButton>
+            </FadeIn>
 
-          {/* Wat zit erbij? */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">Wat zit erbij?</h2>
-              <div className="space-y-6 mb-8">
-                {[
-                  {
-                    title: "Online kennismakingsgesprek",
-                    desc: "Om elkaar te leren kennen, je vragen te bespreken en jouw hulpvraag helder te krijgen."
-                  },
-                  {
-                    title: "5 persoonlijke 1:1 sessies van 60 minuten",
-                    desc: ""
-                  },
-                  {
-                    title: "6 maanden persoonlijke begeleiding",
-                    desc: "6 maanden lang sta ik naast je. Mijn begeleiding stopt niet zodra onze 1:1 sessie voorbij is. Ook tussen de sessies door kun je bij mij terecht met vragen, ervaringen en dingen waar je tegenaan loopt. We kijken samen wat er speelt, sturen bij waar nodig en bepalen steeds wat voor jou de volgende stap is."
-                  },
-                  {
-                    title: "Een behandelplan dat met je meebeweegt",
-                    desc: "We kijken naar het geheel: van je hormonen en darmgezondheid tot voeding, slaap, stress, leefstijl, mindset en je cyclus. Tijdens het traject evalueren we wat er verandert, wat wel en niet werkt en wat er in jouw dagelijks leven speelt. Op basis daarvan pas ik je persoonlijke behandelplan steeds aan, zodat het blijft aansluiten bij jouw klachten, behoeften en voortgang."
-                  },
-                  {
-                    title: "Persoonlijke WhatsApp-begeleiding",
-                    desc: "Heb je tussen de sessies door een vraag, loop je ergens tegenaan of wil je even overleggen? Dan kun je me via WhatsApp bereiken wanneer je daar behoefte aan hebt. Zo hoef je niet te wachten tot onze volgende sessie."
-                  },
-                  {
-                    title: "Praktische tools en opdrachten",
-                    desc: "Om niet alleen te begrijpen wat er speelt, maar ook stap voor stap te ervaren wat voor jou werkt."
-                  },
-                  {
-                    title: "Jouw persoonlijke health dashboard",
-                    desc: "Een online omgeving die je helpt je lichaam beter te begrijpen en praktische stappen te zetten die passen bij jou. Alles wat je tijdens je traject nodig hebt, vind je overzichtelijk op één plek: van 100+ recepten en een maaltijdplanner tot cyclus-trackers, inzichten over je hormonen en darmen en praktische tools voor slaap, stress en ontspanning."
-                  },
-                  {
-                    title: "Nourish Your Body e-book",
-                    desc: "Met 50+ hormoonproof en darmvriendelijke recepten, cyclusgerichte voeding en praktische inspiratie voor maaltijden die je hormonen en darmen ondersteunen."
-                  }
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 min-w-6 min-h-6 flex-shrink-0 rounded-full bg-[#FDF8F3] flex items-center justify-center mt-1">
-                      <Check size={14} className="text-[#6B7B8A]" />
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-foreground">{item.title}</h3>
-                      {item.desc && <p className="text-muted-foreground mt-1">{item.desc}</p>}
-                    </div>
-                  </div>
-                ))}
+            <FadeIn immediate delay={0.15}>
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl">
+                <ParallaxImage
+                  src={daniqueDarm}
+                  alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn, tijdens het 1:1 darmtraject"
+                  title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
+                  className="h-full w-full"
+                  eager
+                />
               </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
 
-              <div className="p-6 rounded-xl border border-secondary/30 bg-background/50">
-                <h4 className="font-medium text-foreground mb-3">Exclusief</h4>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>– Labkosten: het ontlastingsonderzoek en de voedselintolerantietest zijn niet inbegrepen in de trajectprijs. De kosten hiervoor bedragen €600 en worden rechtstreeks door het lab aan jou gefactureerd.</li>
-                  <li>– Eventuele aanvullende onderzoeken of her-testen</li>
-                  <li>– Supplementen</li>
-                </ul>
-              </div>
-            </div>
-          </FadeIn>
+      <section className="border-y border-secondary/40 bg-card py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+            <FadeIn>
+              <SectionLabel text="Je buik bepaalt je dag" />
+              <h2 className="text-3xl text-foreground md:text-4xl">
+                Je wilt weten wat er in je darmen gebeurt en waar je klachten vandaan komen.
+              </h2>
+              <p className="mt-6 max-w-md leading-relaxed">Herken je dit?</p>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <CheckList items={signalen} />
+            </FadeIn>
+          </div>
+        </div>
+      </section>
 
-          {/* Ervaringen */}
-          <FadeIn className="mb-20">
-            <div className="text-center mb-12">
-              <SectionTag text="Ervaringen" />
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Wat anderen zeggen</h2>
-            </div>
-            <Testimonials testimonials={DARM_TESTIMONIALS} />
-          </FadeIn>
-
-          {/* Investering */}
-          <FadeIn>
-            <div className="bg-white rounded-3xl p-8 md:p-12 border border-secondary/30 mb-20 text-center">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Investering</h2>
-              <p className="text-5xl md:text-6xl font-serif text-primary mb-4">€299<span className="text-xl md:text-2xl text-muted-foreground font-sans font-light">/maand</span></p>
-              <p className="text-muted-foreground text-sm mb-8">Exclusief labkosten: €600, rechtstreeks gefactureerd door het lab.</p>
-              <CustomButton onClick={openModal}>Plan een gratis kennismaking</CustomButton>
+      <section className="lg:grid lg:grid-cols-2">
+        <div className="h-[45vh] w-full overflow-hidden sm:h-[55vh] lg:h-auto">
+          <img
+            src={ontlastingAsset.url}
+            alt="Hand houdt een buisje voor ontlastingsonderzoek vast tegen een lichte muur"
+            title="Ontlastingsonderzoek tijdens het 1:1 darmtraject"
+            width={1000}
+            height={1333}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="flex items-center px-6 py-16 md:py-20 lg:px-12 xl:px-16">
+          <FadeIn className="w-full">
+            <SectionLabel text="Niet langer gokken" />
+            <h2 className="text-3xl text-foreground md:text-4xl">
+              Onderzoek laat zien wat je darmen je proberen te vertellen.
+            </h2>
+            <div className="mt-8">
+              <Accordion
+                items={onderzoekOnderwerpen.map((o) => ({ title: o.title, body: toText(o.description) }))}
+                open={openOnderzoek}
+                setOpen={setOpenOnderzoek}
+              />
             </div>
           </FadeIn>
         </div>
-      </Section>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-6xl">
+            <FadeIn className="max-w-3xl">
+              <SectionLabel text="Stap voor stap herstellen" />
+              <h2 className="text-3xl text-foreground md:text-4xl">
+                We werken in vier fases, afgestemd op jouw uitslag.
+              </h2>
+              <p className="mt-6 leading-relaxed">
+                Je darmen herstel je niet in een week. Daarom nemen we de tijd. Elke fase bouwt voort op de vorige en krijgt een eigen plan met voeding, leefstijladvies en praktische opdrachten.
+              </p>
+            </FadeIn>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
+              {fases.map((fase, index) => (
+                <FadeIn key={fase.title} delay={index * 0.06} className="border border-secondary/40 bg-card p-8">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">
+                    {String(index + 1).padStart(2, '0')} · {fase.duration}
+                  </p>
+                  <h3 className="mt-3 text-2xl text-foreground">{fase.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed">{fase.description}</p>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-primary-dark py-16 text-primary-foreground md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <FadeIn>
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl">
+                <img
+                  src={daniqueWalking}
+                  alt="Danique Kwakman wandelt ontspannen buiten"
+                  title="Weer met plezier eten na het 1:1 darmtraject"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <SectionLabel text="Resultaat na het traject" opDonker />
+              <h2 className="text-3xl text-primary-foreground md:text-4xl">
+                Weer rust in je buik en vertrouwen in je lijf
+              </h2>
+              <p className="mt-6 leading-relaxed text-primary-foreground/85">
+                Stel je voor dat je 's ochtends wakker wordt en niet meteen voelt hoe je buik erbij ligt. Dat je een etentje met vriendinnen niet meer afzegt. Daar werken we samen naartoe.
+              </p>
+              <p className="mt-8 leading-relaxed text-primary-foreground/85">Na het traject:</p>
+              <div className="mt-6 text-primary-foreground/90">
+                <CheckList items={resultaten} opDonker />
+              </div>
+              <CustomButton onClick={openModal} variant="white" className="mt-9">
+                Plan een gratis kennismaking
+              </CustomButton>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <FadeIn>
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-t-full rounded-b-md bg-secondary/10 lg:max-w-none">
+                <img
+                  src={daniqueAbout}
+                  alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut in Hoorn"
+                  title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
+                  width="1280"
+                  height="1920"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <SectionLabel text="Hi, ik ben Danique" />
+              <h2 className="text-3xl text-foreground md:text-4xl">
+                Ik weet hoe het is als je lichaam niet doet wat je wilt
+              </h2>
+              <p className="mt-6 leading-relaxed">
+                Na 10+ jaar hormonale klachten kreeg ik de diagnose PCOS. Onderweg ontdekte ik hoe sterk mijn darmen, hormonen en energie met elkaar samenhangen. Pas toen ik daar echt naar ging kijken, kwam er beweging in mijn klachten.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige combineer ik mijn ervaring uit de reguliere zorg met mijn kennis over voeding, leefstijl en het lichaam.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Ik weet hoe frustrerend het is als je voelt dat er meer speelt, maar niet weet waar je moet beginnen. Daar help ik je graag bij.
+              </p>
+              <Link to="/over-mij" className="mt-8 inline-block">
+                <CustomButton>Lees meer over mij</CustomButton>
+              </Link>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-secondary/40 bg-card py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+            <FadeIn>
+              <div className="lg:sticky lg:top-28">
+                <SectionLabel text="Alles wat je nodig hebt" />
+                <h2 className="text-3xl text-foreground md:text-4xl">Wat is inbegrepen?</h2>
+                <figure className="mt-8 overflow-hidden rounded-2xl bg-background">
+                  <img
+                    src={bloedbuisjesAsset.url}
+                    alt="Hand houdt drie buisjes met gele doppen voor laboratoriumonderzoek vast tegen een lichte muur"
+                    title="Laboratoriumonderzoek tijdens het 1:1 darmtraject"
+                    width={1000}
+                    height={1333}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[4/5] w-full object-cover"
+                  />
+                </figure>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <Accordion
+                items={included.map((i) => ({ title: i.title, body: toText(i.description) }))}
+                open={openIncluded}
+                setOpen={setOpenIncluded}
+              />
+              <div className="mt-8 border border-secondary/40 bg-background p-6">
+                <h3 className="text-lg text-foreground">Exclusief</h3>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                  <li>Labkosten van €600 voor het ontlastingsonderzoek en de voedselintolerantietest, rechtstreeks gefactureerd door het lab</li>
+                  <li>Eventuele aanvullende onderzoeken of her-testen</li>
+                  <li>Supplementen</li>
+                </ul>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-6xl">
+            <FadeIn className="text-center">
+              <SectionLabel text="Ervaringen" />
+              <h2 className="text-3xl text-foreground md:text-4xl">En zij gingen je voor</h2>
+            </FadeIn>
+            <FadeIn delay={0.1} className="mt-12">
+              <Testimonials testimonials={DARM_TESTIMONIALS} />
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-secondary/20 py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-3xl">
+            <FadeIn className="text-center">
+              <h2 className="text-3xl text-foreground md:text-4xl">Veelgestelde vragen</h2>
+            </FadeIn>
+            <div className="mt-10">
+              <Accordion
+                items={faqs.map((f) => ({
+                  title: f.question,
+                  body: f.answer.map((p, i) => <p key={i}>{p}</p>),
+                }))}
+                open={openFaq}
+                setOpen={setOpenFaq}
+                border="border-secondary/60"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-secondary/50 bg-card">
+            <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
+              <img
+                src={daniqueTowel}
+                alt="Danique Kwakman ontspannen op het strand met een handdoek"
+                title="Zes maanden persoonlijke begeleiding tijdens het 1:1 darmtraject"
+                loading="lazy"
+                decoding="async"
+                className="h-72 w-full object-cover object-[center_35%] lg:h-full"
+              />
+              <div className="p-8 md:p-12">
+                <SectionLabel text="Investering" />
+                <h2 className="text-3xl text-foreground md:text-4xl">
+                  Klaar om weer zonder zorgen te eten?
+                </h2>
+                <p className="mt-6 leading-relaxed">Plan je gratis kennismakingsgesprek in.</p>
+                <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">
+                  €299
+                  <span className="font-sans text-xl font-light text-muted-foreground md:text-2xl">/maand</span>
+                </p>
+                <p className="mt-2 text-sm">Exclusief labkosten: €600, rechtstreeks gefactureerd door het lab.</p>
+                <CustomButton onClick={openModal} className="mt-8">
+                  Plan een gratis kennismaking
+                </CustomButton>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
     </div>
   );
 };
