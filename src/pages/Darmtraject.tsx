@@ -371,7 +371,7 @@ const Darmtraject = () => {
                 We werken in vier fases, afgestemd op jouw uitslag.
               </h2>
               <p className="mt-6 leading-relaxed">
-                Je darmen herstel je niet in een week. Daarom nemen we de tijd. Elke fase bouwt voort op de vorige en krijgt een eigen plan met voeding, leefstijladvies en praktische opdrachten.
+                Je darmen herstel je niet in een week. Daarom nemen we de tijd en doorlopen we 4 fases van de darmtherapie. Elke fase bouwt voort op de vorige en krijgt een eigen plan met voeding en leefstijl advies.
               </p>
             </FadeIn>
 
