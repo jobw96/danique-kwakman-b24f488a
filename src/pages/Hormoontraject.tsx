@@ -352,15 +352,15 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      {/* De CIRCLE-methode in een eigen sectie: foto links, tekst rechts over de
-          volle hoogte. Onder lg passen twee kolommen niet, daar staat de foto
-          boven de tekst met een vaste hoogte. */}
+      {/* Levensfase, cyclus en hormonale disbalans in een uitklapmenu: foto links,
+          de onderwerpen rechts. Onder lg passen twee kolommen niet, daar staat de
+          foto boven de lijst met een vaste hoogte. */}
       <section className="lg:grid lg:grid-cols-2">
         <div className="h-[45vh] w-full overflow-hidden sm:h-[55vh] lg:h-auto">
           <img
             src={daniqueRelaxed}
             alt="Danique Kwakman leest een boek terwijl ze op een handdoek op het strand zit"
-            title="Drie maanden de tijd nemen voor je lichaam"
+            title="Wat jouw lichaam nodig heeft, verschilt per levensfase"
             width={1920}
             height={1279}
             loading="lazy"
@@ -372,32 +372,40 @@ const Hormoontraject = () => {
           <FadeIn className="w-full">
             <SectionLabel text="Van inzicht naar een plan dat bij jou past" />
             <h2 className="text-3xl text-foreground md:text-4xl">
-              Dat is waar mijn CIRCLE-methode voor staat.
+              Wat jouw lichaam nodig heeft, verschilt per levensfase.
             </h2>
-            <div className="mt-6 space-y-4 leading-relaxed">
-              <p>
-                Tijdens het traject gebruiken we mijn eigen CIRCLE-methode als structuur.
-              </p>
-              <p>
-                We beginnen bij de kern van jouw hulpvraag en brengen vervolgens stap voor stap in kaart wat er speelt, wat je lichaam nodig heeft en waar we verandering kunnen maken.
-              </p>
-              <p>
-                Je krijgt niet na één gesprek een lijst met twintig dingen die je allemaal moet aanpassen.
-              </p>
-            </div>
-            <p className="mt-8 leading-relaxed">We kijken steeds:</p>
-            <blockquote className="mt-4 border-l-2 border-primary pl-6">
-              <p className="font-serif text-2xl leading-tight text-foreground md:text-3xl">
-                Wat is nu de volgende stap?
-              </p>
-            </blockquote>
-            <div className="mt-6 space-y-4 leading-relaxed">
-              <p>
-                Je probeert die stap uit, we evalueren wat het doet en passen je plan aan waar nodig.
-              </p>
-              <p>
-                Zo ontstaat er gedurende drie maanden steeds meer duidelijkheid over wat voor jou werkt.
-              </p>
+            <div className="mt-8 border-t border-secondary/40">
+              {levensfaseOnderwerpen.map((onderwerp, index) => {
+                const isOpen = openLevensfase === index;
+                return (
+                  <div key={onderwerp.title} className="border-b border-secondary/40">
+                    <m.button
+                      type="button"
+                      onClick={() => setOpenLevensfase(isOpen ? null : index)}
+                      className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                      aria-expanded={isOpen}
+                      whileHover={{ x: 3 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <h3 className="text-lg text-foreground md:text-xl">{onderwerp.title}</h3>
+                      <m.span
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        className="shrink-0 text-foreground"
+                      >
+                        <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                      </m.span>
+                    </m.button>
+                    <m.div
+                      initial={false}
+                      animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <p className="pb-6 leading-relaxed">{onderwerp.description}</p>
+                    </m.div>
+                  </div>
+                );
+              })}
             </div>
           </FadeIn>
         </div>
