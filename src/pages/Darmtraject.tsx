@@ -29,6 +29,27 @@ const DARM_TESTIMONIALS = [
     image: '',
     text: 'Het eten gaat mij steeds makkelijker af en heb echt mijn routine gevonden. Je recepten zijn ook erg fijn!',
   },
+  {
+    id: 'd3',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Ja m\'n energie is top! Ik heb ook geen cravings meer',
+  },
+  {
+    id: 'd4',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'Mijn ontlasting gaat goed, ik heb geen gekke kleur meer',
+  },
+  {
+    id: 'd5',
+    name: 'Cliënt',
+    rating: 5,
+    image: '',
+    text: 'De afgelopen weken gaan echt heel goed! Helemaal geen last meer van m\'n buik gehad. Ik ben super blij!',
+  },
   ...GENERAL_TESTIMONIALS,
 ];
 
