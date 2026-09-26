@@ -46,7 +46,7 @@ const onderzoekOnderwerpen = [
   {
     title: 'Ontlastingsonderzoek',
     description:
-      'Met een uitgebreid ontlastingsonderzoek kijken we hoe je darmen er op dit moment voor staan. Denk aan je darmflora, de vertering van vetten, eiwitten en koolhydraten, de conditie van je darmslijmvlies en of er ongewenste bacteriën, schimmels of parasieten aanwezig zijn.',
+      'Met een uitgebreid ontlastingsonderzoek kijken we hoe je darmen er op dit moment voor staan. We onderzoeken onder andere je\u00a0darmflora en microbioom, de vertering en opname van voedingsstoffen en de conditie van je darmslijmvlies. We kijken bijvoorbeeld naar\u00a0pancreas-elastase, calprotectine, secretorisch IgA en alfa-1-antitrypsine. Daarnaast onderzoeken we of er\u00a0ongewenste bacteriën, gisten, schimmels of parasieten\u00a0aanwezig zijn.\n',
   },
   {
     title: 'Voedselintolerantietest',
@@ -353,7 +353,7 @@ const Darmtraject = () => {
         </div>
         <div className="flex items-center px-6 py-16 md:py-20 lg:px-12 xl:px-16">
           <FadeIn className="w-full">
-            <SectionLabel text="Niet langer gokken" />
+            <SectionLabel text="METEN = WETEN" />
             <h2 className="text-3xl text-foreground md:text-4xl">
               Onderzoek laat zien wat je darmen je proberen te vertellen.
             </h2>
