@@ -125,7 +125,7 @@ const included = [
   {
     title: 'Nourish Your Body e-book',
     description:
-      'Je ontvangt mijn Nourish Your Body e-book met 50+ hormoonproof recepten, cyclusgerichte voeding en praktische inspiratie voor maaltijden die passen binnen een hormoon- en darmvriendelijke leefstijl.',
+      'Je ontvangt mijn Nourish Your Body e-book met 50+ hormoonproof recepten, cyclusgerichte voeding en praktische inspiratie voor maaltijden die passen binnen een hormoon- en darmvriendelijke leefstijl.\u00a0\nT.w.v. €39,99\n',
   },
   {
     title: 'Aanvullend onderzoek indien passend',
