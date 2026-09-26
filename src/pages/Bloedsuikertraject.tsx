@@ -3,7 +3,7 @@ import { m } from 'framer-motion';
 import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
-import { GlucoseGrafiek } from '@/components/GlucoseGrafiek';
+import { GlucoseKaart } from '@/components/GlucoseKaart';
 import havermoutKom from '@/assets/sfeer/havermout-kom-bovenaf-4x3.webp';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
@@ -255,24 +255,22 @@ const Bloedsuikertraject = () => {
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               <FadeIn>
-                <figure className="grid min-h-full grid-cols-1 overflow-hidden rounded-2xl border border-secondary/40 bg-card sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-                  <GlucoseGrafiek variant="boven" />
-                  <figcaption className="flex flex-col justify-end p-6">
-                    <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Inzicht 01</span>
+                <GlucoseKaart variant="boven">
+                  <figcaption className="flex flex-col justify-center p-6">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">Inzicht 01</p>
                     <h3 className="mt-3 text-2xl text-foreground">Wat gebeurt er na een maaltijd?</h3>
-                    <p className="mt-3 text-sm leading-relaxed">We kijken niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.{"\n"}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">We kijken niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.{"\n"}</p>
                   </figcaption>
-                </figure>
+                </GlucoseKaart>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <figure className="grid min-h-full grid-cols-1 overflow-hidden rounded-2xl border border-secondary/40 bg-card sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-                  <GlucoseGrafiek variant="onder" vertraging={250} />
-                  <figcaption className="flex flex-col justify-end p-6">
-                    <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Inzicht 02</span>
+                <GlucoseKaart variant="onder" vertraging={250}>
+                  <figcaption className="flex flex-col justify-center p-6">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">Inzicht 02</p>
                     <h3 className="mt-3 text-2xl text-foreground">Waar komen mijn klachten vandaan?</h3>
-                    <p className="mt-3 text-sm leading-relaxed">Een dip kan zorgen voor zoete trek, onrust of minder focus. Met de meting testen we gericht wat voor jou werkt en zie je direct hoe jouw lichaam reageert.</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Een dip kan zorgen voor zoete trek, onrust of minder focus. Met de meting testen we gericht wat voor jou werkt en zie je direct hoe jouw lichaam reageert.</p>
                   </figcaption>
-                </figure>
+                </GlucoseKaart>
               </FadeIn>
             </div>
 

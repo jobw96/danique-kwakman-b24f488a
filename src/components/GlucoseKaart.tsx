@@ -29,9 +29,7 @@ const GRAFIEK: Record<
   Variant,
   {
     waarde: string;
-    tijd: string;
     richting: 'stijgend' | 'dalend';
-    waarschuwing: boolean;
     kopKleur: string;
     stipKleur: string;
     stipY: number;
@@ -42,9 +40,7 @@ const GRAFIEK: Record<
 > = {
   boven: {
     waarde: '7,7',
-    tijd: '19:26',
     richting: 'stijgend',
-    waarschuwing: false,
     kopKleur: 'hsl(var(--primary-dark))',
     stipKleur: 'hsl(var(--primary-dark))',
     stipY: 155.5,
@@ -55,9 +51,7 @@ const GRAFIEK: Record<
   },
   onder: {
     waarde: '3,7',
-    tijd: '13:52',
     richting: 'dalend',
-    waarschuwing: true,
     kopKleur: 'hsl(var(--secondary-dark))',
     stipKleur: 'hsl(var(--secondary-dark))',
     stipY: 246.1,
@@ -81,13 +75,16 @@ const doorschot = (t: number) => {
   return u * u * ((s + 1) * u + s) + 1;
 };
 
-export const GlucoseGrafiek = ({
+export const GlucoseKaart = ({
   variant,
   vertraging = 0,
+  children,
 }: {
   variant: Variant;
   /** Milliseconden wachten na het in beeld komen, om twee grafieken te spreiden. */
   vertraging?: number;
+  /** Het bijschrift naast de grafiek. */
+  children: React.ReactNode;
 }) => {
   const g = GRAFIEK[variant];
   const uniek = useId().replace(/:/g, '');
@@ -149,7 +146,9 @@ export const GlucoseGrafiek = ({
   }, [vertraging]);
 
   return (
-    <div ref={wortel} className="flex h-full flex-col bg-card">
+    <figure className="overflow-hidden rounded-2xl border border-secondary/40 bg-card">
+      {/* De gekleurde balk loopt over de volle kaartbreedte, dus staat hij
+          boven het raster en niet in de grafiekkolom. */}
       <div
         className="flex items-center gap-3 px-5 py-4 text-primary-foreground"
         style={{ backgroundColor: g.kopKleur }}
@@ -169,24 +168,15 @@ export const GlucoseGrafiek = ({
             <path d="M17 8v9H8" />
           </svg>
         )}
-        <span className="ml-auto flex items-center gap-1.5">
-          {g.waarschuwing && (
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
-              <path d="M12 9v4" />
-              <path d="M12 17h.01" />
-            </svg>
-          )}
-          <span className="text-sm font-medium leading-[22px]">{g.tijd}</span>
-        </span>
       </div>
 
+      <div className="grid sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+        <div ref={wortel} className="px-2 pb-2 pt-3">
       <svg
         viewBox="-22 0 302 322"
         role="img"
         aria-label={g.omschrijving}
-        className="block h-auto w-full px-2 pb-2 pt-3"
-        style={{ boxSizing: 'border-box' }}
+        className="block h-auto w-full"
       >
         <defs>
           <clipPath id={`onder-${uniek}`}>
@@ -269,6 +259,9 @@ export const GlucoseGrafiek = ({
           style={{ opacity: 0, transformBox: 'fill-box', transformOrigin: 'center' }}
         />
       </svg>
-    </div>
+        </div>
+        {children}
+      </div>
+    </figure>
   );
 };
