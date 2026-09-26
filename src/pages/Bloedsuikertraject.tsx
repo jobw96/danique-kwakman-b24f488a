@@ -122,18 +122,32 @@ const faqs = [
   },
 ];
 
-const SectionLabel = ({ children }: { children: React.ReactNode }) => (
-  <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary">{children}</p>
+/** Zelfde pill als op de klachten-, traject- en contactpagina's. */
+const SectionTag = ({ text }: { text: string }) => (
+  <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
+    {text}
+  </div>
 );
 
-const CheckList = ({ items }: { items: string[] }) => (
+/**
+ * Zelfde vinkje als op de klachtdetailpagina's. Op de blauwe band werkt die
+ * kleurstelling niet: daar zou de grijze tekst op 1,24:1 uitkomen, dus daar
+ * erft de regel de kleur van de sectie en krijgt het rondje een lichte
+ * doorschijnende vulling.
+ */
+const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: boolean }) => (
   <ul className="space-y-3">
     {items.map((item) => (
       <li key={item} className="flex items-start gap-3">
-        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/25 text-primary-dark">
-          <Check className="h-3.5 w-3.5" aria-hidden="true" />
+        <span
+          className={`mt-0.5 flex h-6 w-6 min-w-6 shrink-0 items-center justify-center rounded-full ${
+            opDonker ? 'bg-primary-foreground/20 text-primary-foreground' : 'bg-[#FDF8F3] text-primary'
+          }`}
+          aria-hidden="true"
+        >
+          <Check className="h-3.5 w-3.5" />
         </span>
-        <span>{item}</span>
+        <span className={`leading-relaxed ${opDonker ? '' : 'text-muted-foreground'}`}>{item}</span>
       </li>
     ))}
   </ul>
@@ -156,11 +170,11 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
             <FadeIn immediate>
-              <SectionLabel>1:1 traject · 14 dagen</SectionLabel>
+              <SectionTag text="1:1 traject · 14 dagen" />
               <h1 className="max-w-3xl text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
                 1:1 bloedsuikertraject
               </h1>
-              <p className="mt-6 max-w-xl text-xl leading-relaxed text-primary-dark">
+              <p className="mt-6 max-w-xl text-xl leading-relaxed text-muted-foreground">
                 Je eet gezond en slaapt genoeg, maar om 15.00 uur val je bijna in slaap achter je laptop en ga je opzoek naar suiker en koffie om de middag door te komen.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
@@ -177,7 +191,7 @@ const Bloedsuikertraject = () => {
             </FadeIn>
 
             <FadeIn immediate delay={0.15}>
-              <div className="aspect-[4/5] overflow-hidden rounded-md">
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <ParallaxImage
                   src={sensorPortraitAsset.url}
                   alt="Danique Kwakman draagt een glucosesensor op haar bovenarm tijdens het 1:1 bloedsuikertraject"
@@ -195,8 +209,10 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
-              <SectionLabel>Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
+              <p className="mb-5 max-w-md leading-relaxed text-muted-foreground">
+                Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.
+              </p>
+              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
                 Een stabiele bloedsuiker spiegel is DE basis van hormonale balans
               </h2>
               <p className="mt-6 max-w-md leading-relaxed">
@@ -214,8 +230,10 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="max-w-3xl">
-              <SectionLabel>JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
+              <p className="mb-5 leading-relaxed text-muted-foreground">
+                JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.
+              </p>
+              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
                 Je wilt niet meer gokken en hopen dat het werkt.
               </h2>
               <p className="mt-6 leading-relaxed">
@@ -229,7 +247,7 @@ const Bloedsuikertraject = () => {
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               <FadeIn>
-                <figure className="grid min-h-full grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-md border border-secondary/40 bg-card">
+                <figure className="grid min-h-full grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
                   <img
                     src={glucoseRangeAsset.url}
                     alt="Voorbeeld van een glucosegrafiek met een waarde van 7,7 millimol per liter binnen het ingestelde bereik"
@@ -248,7 +266,7 @@ const Bloedsuikertraject = () => {
                 </figure>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <figure className="grid min-h-full grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-md border border-secondary/40 bg-card">
+                <figure className="grid min-h-full grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
                   <img
                     src={lowGlucoseAsset.url}
                     alt="Voorbeeld van een glucosegrafiek met een lage glucosewaarde van 3,7 millimol per liter"
@@ -284,7 +302,7 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <FadeIn>
-              <div className="aspect-[4/5] overflow-hidden rounded-md">
+              <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <img
                   src={sensorShowAsset.url}
                   alt="Danique Kwakman laat zien waar de glucosesensor op de bovenarm wordt gedragen"
@@ -299,12 +317,12 @@ const Bloedsuikertraject = () => {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/75">RESULTAAT NA VEERTIEN DAGEN</p>
-              <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">In 2 weken van cravings en energiedips naar meer energie, verzadiging en rust in je eetpatroon</h2>
+              <h2 className="text-3xl leading-tight text-primary-foreground md:text-4xl">In 2 weken van cravings en energiedips naar meer energie, verzadiging en rust in je eetpatroon</h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
                 Je hebt niet alleen een hele hoop data verzameld, maar eindelijk gezien hoe jouw lichaam reageert op voeding, beweging, slaap, stress en je dagelijkse gewoontes. We hebben op basis daarvan getest welke aanpassingen bij jou verschil maken en daar een concreet plan van gemaakt. Nu weet je:
               </p>
               <div className="mt-8 text-primary-foreground/90">
-                <CheckList items={results} />
+                <CheckList items={results} opDonker />
               </div>
               <CustomButton onClick={openModal} variant="white" className="mt-9">
                 Bespreek jouw situatie
@@ -332,8 +350,8 @@ const Bloedsuikertraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <SectionLabel>Hi, ik ben Danique</SectionLabel>
-              <h2 className="text-3xl leading-tight text-foreground md:text-5xl">
+              <SectionTag text="Hi, ik ben Danique" />
+              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
                 Van jarenlang zoeken naar begrijpen wat mijn lichaam nodig heeft
               </h2>
               <p className="mt-6 leading-relaxed">
@@ -358,9 +376,9 @@ const Bloedsuikertraject = () => {
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
               <div className="lg:sticky lg:top-28">
-                <SectionLabel>Alles wat je nodig hebt</SectionLabel>
-                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Wat is inbegrepen?</h2>
-                <figure className="mt-8 overflow-hidden rounded-md bg-background">
+                <SectionTag text="Alles wat je nodig hebt" />
+                <h2 className="text-3xl leading-tight text-foreground md:text-4xl">Wat is inbegrepen?</h2>
+                <figure className="mt-8 overflow-hidden rounded-2xl bg-background">
                   <img
                     src={sensorBoxAsset.url}
                     alt="Verpakking van de FreeStyle Libre 2 glucosesensor die tijdens het 1:1 bloedsuikertraject wordt gebruikt"
@@ -417,8 +435,8 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn className="text-center">
-              <SectionLabel>Ervaringen</SectionLabel>
-              <h2 className="text-3xl text-foreground md:text-5xl">En zij gingen je voor</h2>
+              <SectionTag text="Ervaringen" />
+              <h2 className="text-3xl text-foreground md:text-4xl">En zij gingen je voor</h2>
             </FadeIn>
             <FadeIn delay={0.1} className="mt-12">
               <Testimonials testimonials={BLOEDSUIKER_TESTIMONIALS} />
@@ -431,8 +449,7 @@ const Bloedsuikertraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <FadeIn className="text-center">
-              <SectionLabel>{"\n"}</SectionLabel>
-              <h2 className="text-3xl text-foreground md:text-5xl">Veelgestelde vragen</h2>
+              <h2 className="text-3xl text-foreground md:text-4xl">Veelgestelde vragen</h2>
             </FadeIn>
             <div className="mt-10 border-t border-secondary/60">
               {faqs.map((faq, index) => {
@@ -478,7 +495,7 @@ const Bloedsuikertraject = () => {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-md border border-secondary/50 bg-card">
+          <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-secondary/50 bg-card">
             <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
               <img
                 src={sensorPortraitAsset.url}
@@ -491,8 +508,8 @@ const Bloedsuikertraject = () => {
                 className="h-72 w-full object-cover object-[center_35%] lg:h-full"
               />
               <div className="p-8 md:p-12">
-                <SectionLabel>Investering</SectionLabel>
-                <h2 className="text-3xl leading-tight text-foreground md:text-5xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
+                <SectionTag text="Investering" />
+                <h2 className="text-3xl leading-tight text-foreground md:text-4xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
                 <p className="mt-5 text-sm leading-relaxed">Plan je gratis kennismakingsgesprek in</p>
                 <p className="mt-8 text-5xl text-primary-dark md:text-6xl">€325</p>
                 <p className="mt-2 text-sm">{"\n"}</p>
