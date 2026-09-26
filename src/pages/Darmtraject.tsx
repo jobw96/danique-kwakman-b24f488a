@@ -34,11 +34,11 @@ const DARM_TESTIMONIALS = [
 
 /** Herkenningspunten. */
 const signalen = [
-  'Je buik is in de ochtend nog plat, maar aan het eind van de dag zie je eruit alsof je zes maanden zwanger bent',
+  'Je buik is in de ochtend nog plat, maar aan het eind van de dag zie je eruit alsof je 6 maanden zwanger bent',
   'Je stoelgang wisselt: de ene week zit je vast, de andere week moet je juist snel naar de wc',
-  'Je twijfelt bij elke maaltijd of je er straks last van krijgt',
-  'Je bent moe, ook als je genoeg slaapt',
-  'Je hebt al van alles geprobeerd, maar weet nog steeds niet waar je klachten vandaan komen',
+  'Je hebt buikpijn, krampen of veel last van winderigheid',
+  'Je voel je onzeker over wat je wel en niet kunt eten',
+  'Je hebt al van alles geprobeerd, maar je klachten blijven terugkomen',
 ];
 
 /** Uitklapmenu: wat het labonderzoek je laat zien. */
@@ -325,7 +325,7 @@ const Darmtraject = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
-              <SectionLabel text="Je buik bepaalt je dag" />
+              <SectionLabel text="JE WEET HOE FRUSTEREND HET IS ALS JE LIJF NIET MEEWERKT." />
               <h2 className="text-3xl text-foreground md:text-4xl">
                 Je wilt weten wat er in je darmen gebeurt en waar je klachten vandaan komen.
               </h2>
