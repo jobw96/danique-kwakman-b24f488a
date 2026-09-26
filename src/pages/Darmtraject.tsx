@@ -169,7 +169,7 @@ const faqs = [
   {
     question: 'Moet ik mijn voeding volledig omgooien?',
     answer: [
-      'Nee, je krijgt geen streng voedingsschema mee. We kijken naar je huidige eetpatroon en bepalen samen welke aanpassingen voor jou relevant en haalbaar zijn. We gaan niet onnodig dingen schrappen, juist omdat we weten waar jouw lichaam op reageert.',
+      'Nee, je krijgt geen streng voedingsschema mee. We kijken naar je huidige eetpatroon en naar de uitslag van de test. . We gaan niet onnodig dingen schrappen, dat geeft vaak juist alleen maar stress. We kijken wat jij nodig hebt om van je klachten af te komen. Dit betekent niet dat je nooit meer iets lekkers mag.\u00a0',
     ],
   },
   {
