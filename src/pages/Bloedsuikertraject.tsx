@@ -247,7 +247,7 @@ const Bloedsuikertraject = () => {
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               <FadeIn>
-                <figure className="grid min-h-full grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
+                <figure className="grid min-h-full grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
                   <img
                     src={glucoseRangeAsset.url}
                     alt="Voorbeeld van een glucosegrafiek met een waarde van 7,7 millimol per liter binnen het ingestelde bereik"
@@ -266,7 +266,7 @@ const Bloedsuikertraject = () => {
                 </figure>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <figure className="grid min-h-full grid-cols-[0.82fr_1.18fr] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
+                <figure className="grid min-h-full grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
                   <img
                     src={lowGlucoseAsset.url}
                     alt="Voorbeeld van een glucosegrafiek met een lage glucosewaarde van 3,7 millimol per liter"
@@ -286,10 +286,26 @@ const Bloedsuikertraject = () => {
               </FadeIn>
             </div>
 
-            <FadeIn className="mt-10 border-l-2 border-primary pl-6 md:ml-auto md:max-w-3xl">
-              <p className="text-xl leading-relaxed text-foreground md:text-2xl">
-                Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
-              </p>
+            <FadeIn className="mt-10 md:ml-auto md:max-w-3xl">
+              {/* Aanhalingstekens in de primaire kleur in plaats van een streep
+                  aan de zijkant. Het openingsteken staat absoluut in de marge, zodat
+                  alle tekstregels op dezelfde linkerrand blijven; inline zou alleen
+                  de eerste regel inspringen. Beide tekens staan op aria-hidden,
+                  want blockquote kondigt het citaat zelf al aan. */}
+              <blockquote className="relative pl-10 md:pl-14">
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-0 top-0 -translate-y-4 select-none font-serif text-6xl leading-none text-primary md:-translate-y-5 md:text-7xl"
+                >
+                  &ldquo;
+                </span>
+                <p className="text-xl leading-relaxed text-foreground md:text-2xl">
+                  Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
+                  <span aria-hidden="true" className="ml-1 align-text-bottom font-serif text-4xl leading-none text-primary md:text-5xl">
+                    &rdquo;
+                  </span>
+                </p>
+              </blockquote>
             </FadeIn>
             <FadeIn className="mt-6 md:ml-auto md:max-w-3xl">
               <CustomButton onClick={openModal}>Dit wil ik</CustomButton>
