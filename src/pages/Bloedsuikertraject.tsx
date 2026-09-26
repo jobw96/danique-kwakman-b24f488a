@@ -181,10 +181,10 @@ const Bloedsuikertraject = () => {
           <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
             <FadeIn immediate>
               <SectionLabel text="1:1 traject · 14 dagen" />
-              <h1 className="max-w-3xl text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
                 1:1 bloedsuikertraject
               </h1>
-              <p className="mt-6 max-w-xl text-xl text-primary-deep">
+              <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
                 Je eet gezond en slaapt genoeg, maar om 15.00 uur val je bijna in slaap achter je laptop en ga je opzoek naar suiker en koffie om de middag door te komen.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
