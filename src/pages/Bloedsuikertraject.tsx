@@ -174,7 +174,7 @@ const Bloedsuikertraject = () => {
               <h1 className="max-w-3xl text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl">
                 1:1 bloedsuikertraject
               </h1>
-              <p className="mt-6 max-w-xl text-xl leading-relaxed text-muted-foreground">
+              <p className="mt-6 max-w-xl text-xl text-muted-foreground">
                 Je eet gezond en slaapt genoeg, maar om 15.00 uur val je bijna in slaap achter je laptop en ga je opzoek naar suiker en koffie om de middag door te komen.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
@@ -212,7 +212,7 @@ const Bloedsuikertraject = () => {
               <p className="mb-5 max-w-md leading-relaxed text-muted-foreground">
                 Een schommelende bloedsuiker is NIET iets waar je je alleen druk over hoeft te maken als je diabetes hebt.
               </p>
-              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
+              <h2 className="text-3xl text-foreground md:text-4xl">
                 Een stabiele bloedsuiker spiegel is DE basis van hormonale balans
               </h2>
               <p className="mt-6 max-w-md leading-relaxed">
@@ -233,7 +233,7 @@ const Bloedsuikertraject = () => {
               <p className="mb-5 leading-relaxed text-muted-foreground">
                 JE KUNT 100 VERSCHILLENDE ADVIEZEN VINDEN OVER JE BLOEDSUIKER SPIEGEL.
               </p>
-              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
+              <h2 className="text-3xl text-foreground md:text-4xl">
                 Je wilt niet meer gokken en hopen dat het werkt.
               </h2>
               <p className="mt-6 leading-relaxed">
@@ -259,7 +259,7 @@ const Bloedsuikertraject = () => {
                     className="h-full min-h-72 w-full object-cover object-top"
                   />
                   <figcaption className="flex flex-col justify-end p-6">
-                    <span className="text-xs uppercase tracking-[0.12em] text-primary-dark">Inzicht 01</span>
+                    <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Inzicht 01</span>
                     <h3 className="mt-3 text-2xl text-foreground">Wat gebeurt er na een maaltijd?</h3>
                     <p className="mt-3 text-sm leading-relaxed">We kijken niet alleen{"\u00a0"}WAT je eet, maar vooral hoe jouw lichaam daarop reageert.{"\n"}</p>
                   </figcaption>
@@ -278,7 +278,7 @@ const Bloedsuikertraject = () => {
                     className="h-full min-h-72 w-full object-cover object-top"
                   />
                   <figcaption className="flex flex-col justify-end p-6">
-                    <span className="text-xs uppercase tracking-[0.12em] text-primary-dark">Inzicht 02</span>
+                    <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Inzicht 02</span>
                     <h3 className="mt-3 text-2xl text-foreground">Waar komen mijn klachten vandaan?</h3>
                     <p className="mt-3 text-sm leading-relaxed">Een dip kan zorgen voor zoete trek, onrust of minder focus. Met de meting testen we gericht wat voor jou werkt en zie je direct hoe jouw lichaam reageert.</p>
                   </figcaption>
@@ -299,7 +299,7 @@ const Bloedsuikertraject = () => {
                 >
                   &ldquo;
                 </span>
-                <p className="text-xl leading-relaxed text-foreground md:text-2xl">
+                <p className="font-serif text-xl leading-snug text-foreground md:text-2xl">
                   Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
                   <span aria-hidden="true" className="ml-1 align-text-bottom font-serif text-4xl leading-none text-primary md:text-5xl">
                     &rdquo;
@@ -332,8 +332,8 @@ const Bloedsuikertraject = () => {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/75">RESULTAAT NA VEERTIEN DAGEN</p>
-              <h2 className="text-3xl leading-tight text-primary-foreground md:text-4xl">In 2 weken van cravings en energiedips naar meer energie, verzadiging en rust in je eetpatroon</h2>
+              <p className="mb-5 text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground">RESULTAAT NA VEERTIEN DAGEN</p>
+              <h2 className="text-3xl text-primary-foreground md:text-4xl">In 2 weken van cravings en energiedips naar meer energie, verzadiging en rust in je eetpatroon</h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
                 Je hebt niet alleen een hele hoop data verzameld, maar eindelijk gezien hoe jouw lichaam reageert op voeding, beweging, slaap, stress en je dagelijkse gewoontes. We hebben op basis daarvan getest welke aanpassingen bij jou verschil maken en daar een concreet plan van gemaakt. Nu weet je:
               </p>
@@ -367,7 +367,7 @@ const Bloedsuikertraject = () => {
             </FadeIn>
             <FadeIn delay={0.1}>
               <SectionTag text="Hi, ik ben Danique" />
-              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
+              <h2 className="text-3xl text-foreground md:text-4xl">
                 Van jarenlang zoeken naar begrijpen wat mijn lichaam nodig heeft
               </h2>
               <p className="mt-6 leading-relaxed">
@@ -393,7 +393,7 @@ const Bloedsuikertraject = () => {
             <FadeIn>
               <div className="lg:sticky lg:top-28">
                 <SectionTag text="Alles wat je nodig hebt" />
-                <h2 className="text-3xl leading-tight text-foreground md:text-4xl">Wat is inbegrepen?</h2>
+                <h2 className="text-3xl text-foreground md:text-4xl">Wat is inbegrepen?</h2>
                 <figure className="mt-8 overflow-hidden rounded-2xl bg-background">
                   <img
                     src={sensorBoxAsset.url}
@@ -525,9 +525,9 @@ const Bloedsuikertraject = () => {
               />
               <div className="p-8 md:p-12">
                 <SectionTag text="Investering" />
-                <h2 className="text-3xl leading-tight text-foreground md:text-4xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
+                <h2 className="text-3xl text-foreground md:text-4xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
                 <p className="mt-5 text-sm leading-relaxed">Plan je gratis kennismakingsgesprek in</p>
-                <p className="mt-8 text-5xl text-primary-dark md:text-6xl">€325</p>
+                <p className="mt-8 font-serif text-5xl text-primary-dark md:text-6xl">€325</p>
                 <p className="mt-2 text-sm">{"\n"}</p>
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
