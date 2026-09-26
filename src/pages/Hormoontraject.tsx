@@ -172,22 +172,10 @@ const faqs = [
     answer: ['Ja. Het volledige traject kan online worden gevolgd.'],
   },
   {
-    question: 'Hoeveel afspraken hebben we?',
+    question:
+      'Kan ik dit traject volgen als ik de pil slik of andere anticonceptie gebruik?',
     answer: [
-      'Je hebt in totaal drie persoonlijke afspraken: een uitgebreide intake en twee vervolgconsulten van 60 minuten.',
-      'Daarnaast word je gedurende drie maanden persoonlijk begeleid via WhatsApp.',
-    ],
-  },
-  {
-    question: 'Hoe lang duurt het traject?',
-    answer: [
-      'De begeleiding duurt drie maanden. In die periode hebben we drie persoonlijke afspraken en kun je tussen de afspraken door gebruikmaken van WhatsApp-begeleiding en je online health dashboard.',
-    ],
-  },
-  {
-    question: 'Wat als ik geen regelmatige cyclus heb?',
-    answer: [
-      'Ook dan kunnen we kijken naar de signalen die je lichaam geeft en naar de andere onderdelen van je gezondheid. Je cyclus hoeft dus niet regelmatig te zijn om met je hormonale gezondheid aan de slag te gaan.',
+      'Absoluut! Naast de pil of andere anticonceptie is het extra belangrijk om je lichaam te ondersteunen om alle stofjes te verwerken.',
     ],
   },
   {
