@@ -283,7 +283,7 @@ const Hormoontraject = () => {
             <FadeIn delay={0.1}>
               <CheckList items={signalen} />
               <p className="mt-8 max-w-md leading-relaxed text-foreground">
-                En het frustrerende is: je weet niet goed waar je moet beginnen.
+                {"\n"}
               </p>
             </FadeIn>
           </div>
