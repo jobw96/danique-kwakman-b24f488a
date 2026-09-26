@@ -118,11 +118,10 @@ body {
     --secondary-dark: 44 38% 36%; /* #7F6C39 - 4,86:1 op #FCF9F2 */
     --secondary-foreground: 0 0% 100%; /* White text on secondary */
 
-    /* Het groen uit de branding: alleen #C9C07D, geen afgeleide tinten. Lichte
-       groene vlakken zijn deze kleur met een laag dekking (bg-olive/15), de
-       banden zijn deze kleur zelf. Op de volle band staat de tekst in het wit
-       (gebruikerskeuze); wit haalt hier 1,9:1 en de inkkleur 8,8:1, dus elders
-       op de cremekleur blijft tekst de tekstkleur van de site. */
+    /* Het groen uit de branding: alleen #C9C07D, geen afgeleide tinten, en alleen
+       als klein vlakje of rand. De dienstpagina's (hormoon- en bloedsuikertraject)
+       gebruiken het blauw van de site als accent: --primary-deep voor kleine tekst
+       (4,79:1 op creme) en --primary-dark voor de volle band met witte tekst. */
     --olive: 53 41% 64%; /* #C9C07D */
 
     
