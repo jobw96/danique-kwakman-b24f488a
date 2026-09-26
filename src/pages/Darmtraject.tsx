@@ -90,10 +90,10 @@ const fases = [
 
 /** Resultaten na het traject. */
 const resultaten = [
-  'Weet je wat er in jouw darmen speelt en waar je klachten vandaan komen',
+  'Beïnvloeden je darmklachten niet langer je dagelijks leven\n',
   'Voel je je weer vrijer rondom eten en hoef je niet bij iedere maaltijd na te denken over wat er mis kan gaan\n',
   'Kun je weer uit eten, afspreken en spontaan iets doen zonder dat je buik je plannen bepaalt\n',
-  'Weet je wat jouw darmen nodig hebben, welke keuzes voor jou werken en heb je concrete stappen gezet\u00a0\n',
+  'Weet je wat jouw darmen nodig hebben, welke keuzes voor jou werken en heb je concrete aanpassingen gedaan in je voeding, slaap, stress en beweging die passen bij jouw dagelijks leven en je darmklachten hebben verminderd',
   'Heb je een persoonlijk plan waarmee je ook na het traject precies weet wat jouw lijf nodig heeft',
 ];
 
