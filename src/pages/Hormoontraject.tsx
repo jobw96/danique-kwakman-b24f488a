@@ -16,14 +16,11 @@ import groenteschaal from '@/assets/sfeer/groenteschaal-bovenaf-9x16.webp';
 
 /** De signalen uit de sectie "Je bent niet elke week dezelfde versie van jezelf". */
 const signalen = [
-  'Je hebt een paar dagen per maand waarop je je totaal anders voelt.',
-  'Je hebt regelmatig PMS, cravings of stemmingswisselingen.',
-  'Je menstruatie is pijnlijk, zwaar of onregelmatig.',
-  'Je energie kan enorm verschillen gedurende je cyclus.',
-  'Je buik is regelmatig opgeblazen of onrustig.',
-  'Je hebt last van acne of andere hormonale huidklachten.',
-  'Je wordt moe wakker terwijl je eigenlijk genoeg hebt geslapen.',
-  'Je voelt je soms alsof je jezelf even kwijt bent.',
+  'Je merkt dat je energie, stemming en klachten gedurende je cyclus sterk kunnen veranderen',
+  'Je hebt regelmatig PMS klachten, cravings, stemmingswisselingen of hebt PCOS/PMOS',
+  'Je menstruatie is pijnlijk, zwaar of onregelmatig',
+  'Je zit in een nieuwe levensfase, zoals na het stoppen met anticonceptie, rondom een kinderwens, zwangerschap of de overgang',
+  'Je hebt het gevoel dat je hormonen uit balans zijn, maar weet niet meer waar je moet beginnen',
 ];
 
 /** De vijf onderdelen die tijdens het traject naast elkaar worden gelegd. */
