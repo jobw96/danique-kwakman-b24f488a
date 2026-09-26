@@ -617,16 +617,16 @@ const Hormoontraject = () => {
               <div className="p-8 md:p-12">
                 <SectionLabel text="Investering" />
                 <h2 className="text-3xl text-foreground md:text-4xl">
-                  Klaar om beter te begrijpen wat er in je lichaam gebeurt?
+                  Klaar om je hormonen in balans te brengen?
                 </h2>
                 <p className="mt-6 leading-relaxed">
-                  Je hoeft niet vooraf te weten wat er precies aan de hand is.
+                  Plan je gratis kennismakingsgesprek in.{"\u00a0"}
                 </p>
                 <p className="mt-4 leading-relaxed">
-                  Tijdens een gratis kennismaking kijken we samen naar jouw situatie, je hulpvraag en of het 1:1 hormoontraject aansluit.
+                  {"\n"}
                 </p>
                 <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">€888</p>
-                <p className="mt-2 text-sm">3 maanden persoonlijke begeleiding</p>
+                <p className="mt-2 text-sm">{"\n"}</p>
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
                 </CustomButton>
