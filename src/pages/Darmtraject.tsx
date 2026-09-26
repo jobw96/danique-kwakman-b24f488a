@@ -163,7 +163,7 @@ const faqs = [
   {
     question: 'Is het labonderzoek verplicht?',
     answer: [
-      'Ja. Het ontlastingsonderzoek en de voedselintolerantietest vormen de basis van dit traject. Op basis van de uitslagen stemmen we de vier fases af op jouw lichaam. De labkosten bedragen €600 en worden rechtstreeks door het lab aan jou gefactureerd.',
+      'Ja en nee. \u00a0Het ontlastingsonderzoek en de voedselintolerantietest vormen de basis van dit traject. Op basis van de uitslagen stemmen we de vier fases af op jouw lichaam. De labkosten bedragen €600 en worden rechtstreeks door het lab aan jou gefactureerd.\n\nEchter, als jij al eerder een intolerantie test hebt gedaan of niet de behoefte voelt om deze in te zetten dan is dit niet verplicht. Daarnaast nemen we altijd ook eerder uitslagen van testen mee die je bij andere specialisten of huisasten hebt laten uitvoeren in het geheel.\u00a0\n',
     ],
   },
   {
