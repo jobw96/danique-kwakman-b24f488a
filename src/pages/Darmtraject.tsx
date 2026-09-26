@@ -408,7 +408,7 @@ const Darmtraject = () => {
             <FadeIn delay={0.1}>
               <SectionLabel text="Resultaat na het traject" opDonker />
               <h2 className="text-3xl text-primary-foreground md:text-4xl">
-                Weer rust in je buik en vertrouwen in je lijf
+                In 6 maanden naar rust in je buik, meer energie en vertrouwen in je lichaam.
               </h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
                 Stel je voor dat je 's ochtends wakker wordt en niet meteen voelt hoe je buik erbij ligt. Dat je een etentje met vriendinnen niet meer afzegt. Daar werken we samen naartoe.
