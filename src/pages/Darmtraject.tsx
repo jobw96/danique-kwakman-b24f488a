@@ -304,8 +304,8 @@ const Darmtraject = () => {
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <ParallaxImage
                   src={daniqueStrand.url}
-                  alt="Vrouw in wit topje en witte broek staat in de duinen, met de zon op haar buik"
-                  title="Rust in je buik met het 1:1 darmtraject"
+                  alt="Danique Kwakman lacht op het strand in een gele blouse en witte broek, met de zee op de achtergrond"
+                  title="Danique Kwakman, orthomoleculair darmtherapeut, over het 1:1 darmtraject"
                   className="h-full w-full"
                   eager
                 />
