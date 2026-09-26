@@ -90,7 +90,7 @@ export const GlucoseKaart = ({
   const band = useRef<SVGRectElement>(null);
   const lijnen = useRef<SVGPathElement[]>([]);
   const stip = useRef<SVGCircleElement>(null);
-  const frame = useRef<number>();
+  const frame = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const zet = (b: number, l: number, d: number) => {
@@ -215,7 +215,9 @@ export const GlucoseKaart = ({
         <line x1="12" x2="268" y1="296" y2="296" stroke="hsl(var(--secondary))" />
 
         <path
-          ref={(el) => el && (lijnen.current[0] = el)}
+          ref={(el) => {
+            if (el) lijnen.current[0] = el;
+          }}
           d={g.pad}
           pathLength={1}
           strokeDasharray="1"
