@@ -186,14 +186,14 @@ const faqs = [
 /**
  * Opschrift boven een kop: groene kleine kapitalen zonder achtergrond.
  *
- * Het groen uit het logo (#4CB58A) haalt op de cremekleurige achtergrond maar
- * 2,4:1 en is op deze grootte niet te lezen, dus staat het hier in --sage-deep.
+ * Het groen uit de branding (#C9C07D) haalt op de cremekleurige achtergrond maar
+ * 1,8:1 en is op deze grootte niet te lezen, dus staat het hier in --olive-deep.
  * Op de donkergroene band werkt dat niet, daar staat het in de lichte tint.
  */
 const SectionLabel = ({ text, opDonker = false }: { text: string; opDonker?: boolean }) => (
   <p
     className={`mb-5 text-xs font-medium uppercase tracking-[0.16em] ${
-      opDonker ? 'text-sage-soft' : 'text-sage-deep'
+      opDonker ? 'text-olive-soft' : 'text-olive-deep'
     }`}
   >
     {text}
@@ -211,7 +211,7 @@ const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: bo
       <li key={item} className="flex items-start gap-3">
         <span
           className={`mt-0.5 flex h-6 w-6 min-w-6 shrink-0 items-center justify-center rounded-full ${
-            opDonker ? 'bg-sage/25 text-sage-soft' : 'bg-sage-soft text-sage-deep'
+            opDonker ? 'bg-olive/25 text-olive-soft' : 'bg-olive-soft text-olive-deep'
           }`}
           aria-hidden="true"
         >
@@ -238,7 +238,7 @@ const Hormoontraject = () => {
               <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
                 1:1 hormoontraject
               </h1>
-              <p className="mt-6 max-w-xl text-lg text-sage-deep md:text-xl">
+              <p className="mt-6 max-w-xl text-lg text-olive-deep md:text-xl">
                 De ene week voel je je energiek en zit je lekker in je vel. Een paar dagen later ben je prikkelbaar, moe, opgeblazen en heb je alleen nog maar zin in chocola.
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
@@ -321,7 +321,7 @@ const Hormoontraject = () => {
                     index === aandachtsvelden.length - 1 ? 'md:col-span-2' : ''
                   }`}
                 >
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-sage-deep">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-olive-deep">
                     {String(index + 1).padStart(2, '0')}
                   </p>
                   <h3 className="mt-3 text-2xl text-foreground">{veld.title}</h3>
@@ -369,7 +369,7 @@ const Hormoontraject = () => {
               </p>
             </div>
             <p className="mt-8 leading-relaxed">We kijken steeds:</p>
-            <blockquote className="mt-4 border-l-2 border-sage pl-6">
+            <blockquote className="mt-4 border-l-2 border-olive pl-6">
               <p className="font-serif text-2xl leading-tight text-foreground md:text-3xl">
                 Wat is nu de volgende stap?
               </p>
@@ -386,7 +386,7 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="bg-sage-dark py-16 text-primary-foreground md:py-24">
+      <section className="bg-olive-dark py-16 text-primary-foreground md:py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <FadeIn>
@@ -504,7 +504,7 @@ const Hormoontraject = () => {
                         transition={{ duration: 0.2 }}
                       >
                         <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
-                        <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-sage-deep">
+                        <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-olive-deep">
                           <ChevronDown className="h-5 w-5" aria-hidden="true" />
                         </m.span>
                       </m.button>
@@ -539,7 +539,7 @@ const Hormoontraject = () => {
         </div>
       </section>
 
-      <section className="bg-sage-soft py-16 md:py-24">
+      <section className="bg-olive-soft py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <FadeIn className="text-center">
@@ -560,7 +560,7 @@ const Hormoontraject = () => {
                         transition={{ duration: 0.2 }}
                       >
                         <h3 className="text-lg text-foreground md:text-xl">{faq.question}</h3>
-                        <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-sage-deep">
+                        <m.span animate={{ rotate: isOpen ? 180 : 0 }} className="shrink-0 text-olive-deep">
                           <ChevronDown className="h-5 w-5" aria-hidden="true" />
                         </m.span>
                       </m.button>
@@ -612,7 +612,7 @@ const Hormoontraject = () => {
                 <p className="mt-4 leading-relaxed">
                   Tijdens een gratis kennismaking kijken we samen naar jouw situatie, je hulpvraag en of het 1:1 hormoontraject aansluit.
                 </p>
-                <p className="mt-8 font-serif text-5xl text-sage-deep md:text-6xl">€888</p>
+                <p className="mt-8 font-serif text-5xl text-olive-deep md:text-6xl">€888</p>
                 <p className="mt-2 text-sm">3 maanden persoonlijke begeleiding</p>
                 <CustomButton onClick={openModal} variant="green" className="mt-8">
                   Plan een gratis kennismaking
