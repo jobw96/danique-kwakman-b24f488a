@@ -243,9 +243,8 @@ const Hormoontraject = () => {
                   <br /><br />
                   Misschien heb je al eens bloed laten prikken, je voeding aangepast, supplementen geprobeerd of eindeloos gezocht naar informatie. En toch vraag je je af waarom je je ondanks alles wat je doet nog steeds niet goed voelt.
                   <br /><br />
-                  In het 1:1 hormoontraject nemen we drie maanden de tijd om jouw klachten en lichaam beter te leren begrijpen.&nbsp;
+                  In het 1:1 hormoontraject nemen we 3 maanden de tijd om jouw klachten en alle puzzelstukjes in kaart te brengen. Je weet. hierna precies wat jouw lichaam nodig heeft om de hormonale disbalans aan te pakken.
                   <br /><br />
-                  We kijken naar je cyclus, hormonen, darmen, bloedsuiker, voeding, slaap, stress en leefstijl. We brengen samen de puzzelstukjes in kaart en kijken wat er allemaal meespeelt bij jouw klachten en wat jouw lichaam nodig heeft om de hormonale disbalans aan te pakken.
                 </p>
               </div>
               <CustomButton onClick={openModal} variant="green" className="mt-8">
