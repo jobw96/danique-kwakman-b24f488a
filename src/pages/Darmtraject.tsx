@@ -554,14 +554,14 @@ const Darmtraject = () => {
               <div className="p-8 md:p-12">
                 <SectionLabel text="Investering" />
                 <h2 className="text-3xl text-foreground md:text-4xl">
-                  Klaar om weer zonder zorgen te eten?
+                  Klaar voor rust in je buik, meer energie en vertrouwen in je lijf?
                 </h2>
                 <p className="mt-6 leading-relaxed">Plan je gratis kennismakingsgesprek in.</p>
                 <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">
                   €299
                   <span className="font-sans text-xl font-light text-muted-foreground md:text-2xl">/maand</span>
                 </p>
-                <p className="mt-2 text-sm">Exclusief labkosten: €600, rechtstreeks gefactureerd door het lab.</p>
+                <p className="mt-2 text-sm">Exclusief labkosten.</p>
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
                 </CustomButton>
