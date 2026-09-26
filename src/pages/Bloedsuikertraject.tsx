@@ -299,9 +299,9 @@ const Bloedsuikertraject = () => {
                 >
                   &ldquo;
                 </span>
-                <p className="font-serif text-xl leading-snug text-foreground md:text-2xl">
+                <p className="font-serif text-xl leading-tight text-foreground md:text-2xl">
                   Het gaat niet om een perfecte grafiek, maar om leren begrijpen wat jouw lichaam je vertelt en wat het nodig heeft.{"\n"}
-                  <span aria-hidden="true" className="ml-1 align-text-bottom font-serif text-4xl leading-none text-primary md:text-5xl">
+                  <span aria-hidden="true" className="ml-1 inline-block h-0 translate-y-7 select-none align-baseline font-serif text-6xl leading-[0] text-primary md:translate-y-9 md:text-7xl">
                     &rdquo;
                   </span>
                 </p>
