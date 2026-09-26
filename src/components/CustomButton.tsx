@@ -20,6 +20,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
   const variants = {
     primary: "bg-primary text-white py-3",
     secondary: "bg-secondary text-white py-3",
+    green: "bg-sage-strong text-white py-3",
     outline: "bg-transparent text-white border-2 border-white backdrop-blur-sm py-2.5",
     white: "bg-white text-foreground py-3"
   };
@@ -32,6 +33,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
         scale: 1.02,
         backgroundColor: variant === 'primary' ? 'hsl(var(--primary) / 0.9)' : 
                         variant === 'secondary' ? 'hsl(var(--secondary) / 0.9)' :
+                        variant === 'green' ? 'hsl(var(--sage-strong) / 0.85)' :
                         variant === 'outline' ? 'hsl(0 0% 100% / 0.1)' :
                         'hsl(0 0% 100% / 0.9)'
       }}
