@@ -91,9 +91,9 @@ const fases = [
 /** Resultaten na het traject. */
 const resultaten = [
   'Weet je wat er in jouw darmen speelt en waar je klachten vandaan komen',
-  'Weet je welke voeding jouw darmen ondersteunt en waar je beter even op kunt letten',
-  'Eet je weer met plezier, zonder bij elke maaltijd te twijfelen',
-  'Heb je concrete aanpassingen gedaan in je voeding, slaap, stress en beweging die passen bij jouw dagelijks leven',
+  'Voel je je weer vrijer rondom eten en hoef je niet bij iedere maaltijd na te denken over wat er mis kan gaan\n',
+  'Kun je weer uit eten, afspreken en spontaan iets doen zonder dat je buik je plannen bepaalt\n',
+  'Weet je wat jouw darmen nodig hebben, welke keuzes voor jou werken en heb je concrete stappen gezet\u00a0\n',
   'Heb je een persoonlijk plan waarmee je ook na het traject precies weet wat jouw lijf nodig heeft',
 ];
 
@@ -411,9 +411,9 @@ const Darmtraject = () => {
                 In 6 maanden naar rust in je buik, meer energie en vertrouwen in je lichaam.
               </h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
-                Stel je voor dat je 's ochtends wakker wordt en niet meteen voelt hoe je buik erbij ligt. Dat je een etentje met vriendinnen niet meer afzegt. Daar werken we samen naartoe.
+                {'Stel je voor dat je over 2 maanden begint te merken dat je \u00a0\'s avonds niet meer met buikpijn op de bank ligt? Dat je een etentje met vriendinnen niet meer afzegt? En dat je huid begint te stralen?\nDaar werken we samen naar toe!\n'}
               </p>
-              <p className="mt-8 leading-relaxed text-primary-foreground/85">Na het traject:</p>
+              <p className="mt-8 leading-relaxed text-primary-foreground/85">Na dit traject:</p>
               <div className="mt-6 text-primary-foreground/90">
                 <CheckList items={resultaten} opDonker />
               </div>
