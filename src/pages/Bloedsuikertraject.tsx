@@ -3,6 +3,7 @@ import { m } from 'framer-motion';
 import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import { GlucoseGrafiek } from '@/components/GlucoseGrafiek';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
@@ -11,8 +12,6 @@ import { BLOEDSUIKER_TESTIMONIALS } from '@/data/testimonials';
 import sensorPortraitAsset from '@/assets/bloedsuiker/danique-glucosesensor-portret.webp.asset.json';
 import sensorShowAsset from '@/assets/bloedsuiker/danique-toont-glucosesensor.webp.asset.json';
 import sensorBoxAsset from '@/assets/bloedsuiker/freestyle-libre-sensor.webp.asset.json';
-import glucoseRangeAsset from '@/assets/bloedsuiker/glucosewaarde-in-bereik.webp.asset.json';
-import lowGlucoseAsset from '@/assets/bloedsuiker/lage-glucosewaarde.webp.asset.json';
 import daniqueAbout from '@/assets/danique-about.webp';
 
 const symptoms = [
@@ -247,17 +246,8 @@ const Bloedsuikertraject = () => {
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               <FadeIn>
-                <figure className="grid min-h-full grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
-                  <img
-                    src={glucoseRangeAsset.url}
-                    alt="Voorbeeld van een glucosegrafiek met een waarde van 7,7 millimol per liter binnen het ingestelde bereik"
-                    title="Voorbeeld van een glucosewaarde binnen bereik"
-                    width="700"
-                    height="1517"
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full min-h-72 w-full object-cover object-top"
-                  />
+                <figure className="grid min-h-full grid-cols-1 overflow-hidden rounded-2xl border border-secondary/40 bg-card sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+                  <GlucoseGrafiek variant="boven" />
                   <figcaption className="flex flex-col justify-end p-6">
                     <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Inzicht 01</span>
                     <h3 className="mt-3 text-2xl text-foreground">Wat gebeurt er na een maaltijd?</h3>
@@ -266,17 +256,8 @@ const Bloedsuikertraject = () => {
                 </figure>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <figure className="grid min-h-full grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] overflow-hidden rounded-2xl border border-secondary/40 bg-card">
-                  <img
-                    src={lowGlucoseAsset.url}
-                    alt="Voorbeeld van een glucosegrafiek met een lage glucosewaarde van 3,7 millimol per liter"
-                    title="Voorbeeld van een lage glucosewaarde"
-                    width="700"
-                    height="1517"
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full min-h-72 w-full object-cover object-top"
-                  />
+                <figure className="grid min-h-full grid-cols-1 overflow-hidden rounded-2xl border border-secondary/40 bg-card sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+                  <GlucoseGrafiek variant="onder" vertraging={250} />
                   <figcaption className="flex flex-col justify-end p-6">
                     <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">Inzicht 02</span>
                     <h3 className="mt-3 text-2xl text-foreground">Waar komen mijn klachten vandaan?</h3>
