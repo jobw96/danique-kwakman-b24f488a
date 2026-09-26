@@ -243,7 +243,6 @@ const Hormoontraject = () => {
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  Je menstruatie is pijnlijk of onvoorspelbaar en je hebt last van PMS, acne, cravings of een buik die regelmatig onrustig voelt.
                   <br /><br />
                   Misschien heb je al eens bloed laten prikken, je voeding aangepast, supplementen geprobeerd of eindeloos gezocht naar informatie. En toch vraag je je af waarom je je ondanks alles wat je doet nog steeds niet goed voelt.
                   <br /><br />
