@@ -9,7 +9,7 @@ export const Route = createFileRoute("/_layout/challenge")({
       path: "/challenge",
       title: "Gratis 5-daagse challenge",
       description:
-        "Doe gratis mee met de 5-daagse challenge van Danique Kwakman en ontdek welke puzzelstukjes samenhangen met jouw PMS en opgeblazen buik.",
+        "Gratis 5-daagse challenge van Danique Kwakman, start op 12 oktober. Ontdek welke puzzelstukjes samenhangen met jouw PMS en opgeblazen buik.",
       schemas: [
         breadcrumbs([{ name: "Gratis challenge", path: "/challenge" }]),
       ],
