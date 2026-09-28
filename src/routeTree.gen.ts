@@ -15,6 +15,7 @@ import { Route as LinktreeRouteImport } from './routes/linktree'
 import { Route as LayoutIndexRouteImport } from './routes/_layout/index'
 import { Route as LayoutBehandelingenRouteImport } from './routes/_layout/behandelingen'
 import { Route as LayoutBloedsuikertrajectRouteImport } from './routes/_layout/bloedsuikertraject'
+import { Route as LayoutChallengeRouteImport } from './routes/_layout/challenge'
 import { Route as LayoutContactRouteImport } from './routes/_layout/contact'
 import { Route as LayoutCookiePolicyRouteImport } from './routes/_layout/cookie-policy'
 import { Route as LayoutDarmtrajectRouteImport } from './routes/_layout/darmtraject'
@@ -73,6 +74,11 @@ const LayoutBloedsuikertrajectRoute =
     path: '/bloedsuikertraject',
     getParentRoute: () => LayoutRoute,
   } as any)
+const LayoutChallengeRoute = LayoutChallengeRouteImport.update({
+  id: '/challenge',
+  path: '/challenge',
+  getParentRoute: () => LayoutRoute,
+} as any)
 const LayoutContactRoute = LayoutContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -219,6 +225,7 @@ export interface FileRoutesByFullPath {
   '/linktree': typeof LinktreeRoute
   '/behandelingen': typeof LayoutBehandelingenRoute
   '/bloedsuikertraject': typeof LayoutBloedsuikertrajectRoute
+  '/challenge': typeof LayoutChallengeRoute
   '/contact': typeof LayoutContactRoute
   '/cookie-policy': typeof LayoutCookiePolicyRoute
   '/darmtraject': typeof LayoutDarmtrajectRoute
@@ -252,6 +259,7 @@ export interface FileRoutesByTo {
   '/linktree': typeof LinktreeRoute
   '/behandelingen': typeof LayoutBehandelingenRoute
   '/bloedsuikertraject': typeof LayoutBloedsuikertrajectRoute
+  '/challenge': typeof LayoutChallengeRoute
   '/contact': typeof LayoutContactRoute
   '/cookie-policy': typeof LayoutCookiePolicyRoute
   '/darmtraject': typeof LayoutDarmtrajectRoute
@@ -288,6 +296,7 @@ export interface FileRoutesById {
   '/linktree': typeof LinktreeRoute
   '/_layout/behandelingen': typeof LayoutBehandelingenRoute
   '/_layout/bloedsuikertraject': typeof LayoutBloedsuikertrajectRoute
+  '/_layout/challenge': typeof LayoutChallengeRoute
   '/_layout/contact': typeof LayoutContactRoute
   '/_layout/cookie-policy': typeof LayoutCookiePolicyRoute
   '/_layout/darmtraject': typeof LayoutDarmtrajectRoute
@@ -325,6 +334,7 @@ export interface FileRouteTypes {
     | '/linktree'
     | '/behandelingen'
     | '/bloedsuikertraject'
+    | '/challenge'
     | '/contact'
     | '/cookie-policy'
     | '/darmtraject'
@@ -358,6 +368,7 @@ export interface FileRouteTypes {
     | '/linktree'
     | '/behandelingen'
     | '/bloedsuikertraject'
+    | '/challenge'
     | '/contact'
     | '/cookie-policy'
     | '/darmtraject'
@@ -393,6 +404,7 @@ export interface FileRouteTypes {
     | '/linktree'
     | '/_layout/behandelingen'
     | '/_layout/bloedsuikertraject'
+    | '/_layout/challenge'
     | '/_layout/contact'
     | '/_layout/cookie-policy'
     | '/_layout/darmtraject'
@@ -471,6 +483,13 @@ declare module '@tanstack/react-router' {
       path: '/bloedsuikertraject'
       fullPath: '/bloedsuikertraject'
       preLoaderRoute: typeof LayoutBloedsuikertrajectRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/challenge': {
+      id: '/_layout/challenge'
+      path: '/challenge'
+      fullPath: '/challenge'
+      preLoaderRoute: typeof LayoutChallengeRouteImport
       parentRoute: typeof LayoutRoute
     }
     '/_layout/contact': {
@@ -668,6 +687,7 @@ declare module '@tanstack/react-router' {
 interface LayoutRouteChildren {
   LayoutBehandelingenRoute: typeof LayoutBehandelingenRoute
   LayoutBloedsuikertrajectRoute: typeof LayoutBloedsuikertrajectRoute
+  LayoutChallengeRoute: typeof LayoutChallengeRoute
   LayoutContactRoute: typeof LayoutContactRoute
   LayoutCookiePolicyRoute: typeof LayoutCookiePolicyRoute
   LayoutDarmtrajectRoute: typeof LayoutDarmtrajectRoute
@@ -701,6 +721,7 @@ interface LayoutRouteChildren {
 const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutBehandelingenRoute: LayoutBehandelingenRoute,
   LayoutBloedsuikertrajectRoute: LayoutBloedsuikertrajectRoute,
+  LayoutChallengeRoute: LayoutChallengeRoute,
   LayoutContactRoute: LayoutContactRoute,
   LayoutCookiePolicyRoute: LayoutCookiePolicyRoute,
   LayoutDarmtrajectRoute: LayoutDarmtrajectRoute,
