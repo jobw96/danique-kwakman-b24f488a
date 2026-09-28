@@ -48,6 +48,9 @@ const footerNav = [{
 }, {
   title: 'Gratis',
   links: [{
+    name: 'Gratis challenge',
+    href: '/challenge'
+  }, {
     name: 'Blog',
     href: '/blog'
   }, {
@@ -109,6 +112,7 @@ const GEEN_AANBOD_CTA = [
   '/bloedsuikertraject',
   '/hormoontraject',
   '/darmtraject',
+  '/challenge',
   '/klachten',
 ];
 
@@ -220,6 +224,11 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Gratis',
     subItems: [{
+      name: 'Gratis challenge',
+      href: '/challenge',
+      description: '',
+      icon: Zap
+    }, {
       name: 'Blog',
       href: '/blog',
       description: '',
