@@ -42,7 +42,7 @@ const puzzelstukjes = [
 const watJeKrijgt = [
   {
     title: 'Kick-off',
-    description: 'We starten met een kick-off op de maandag.',
+    description: 'We starten met een kick-off op maandag 12 oktober.',
   },
   {
     title: '5 dagen begeleiding',
@@ -94,6 +94,10 @@ const faqs = [
   {
     question: 'Is de challenge echt gratis?',
     answer: ['Ja. Je kunt helemaal gratis deelnemen aan de challenge.'],
+  },
+  {
+    question: 'Wanneer start de challenge?',
+    answer: ['De challenge start op maandag 12 oktober.'],
   },
   {
     question: 'Hoe werkt de challenge?',
@@ -217,7 +221,9 @@ const Challenge = () => {
               <CustomButton onClick={naarAanmelding} className="mt-8">
                 Ik doe mee met de gratis challenge
               </CustomButton>
-              <p className="mt-4 text-sm text-muted-foreground">5 dagen • online • helemaal gratis</p>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Start maandag 12 oktober • 5 dagen • online • helemaal gratis
+              </p>
             </FadeIn>
 
             <FadeIn immediate delay={0.15}>
@@ -362,8 +368,8 @@ const Challenge = () => {
                   jou mogelijk meespeelt.
                 </p>
                 <p>
-                  We starten maandag met een kick-off en daarna ontvang je iedere dag een korte
-                  uitleg en opdracht in de WhatsApp-groep.
+                  We starten op maandag 12 oktober met een kick-off en daarna ontvang je iedere dag
+                  een korte uitleg en opdracht in de WhatsApp-groep.
                 </p>
                 <p>Je krijgt praktische opdrachten, checklists en recepten waarmee je direct aan de slag kunt.</p>
               </div>
@@ -622,7 +628,9 @@ const Challenge = () => {
               <CustomButton onClick={naarAanmelding} className="mt-8">
                 Ik doe mee met de gratis challenge
               </CustomButton>
-              <p className="mt-4 text-sm text-muted-foreground">5 dagen • WhatsApp • gratis</p>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Start maandag 12 oktober • 5 dagen • WhatsApp • gratis
+              </p>
 
               {/* AANMELDFORMULIER: zodra het ActiveCampaign-form-ID bekend is,
                   hier de embed laden (zelfde patroon als src/pages/Ebook.tsx).
@@ -635,7 +643,8 @@ const Challenge = () => {
                   Aanmeldformulier
                 </p>
                 <p className="mt-2 text-sm">
-                  Hier komt de plek waar je je aanmeldt voor de challenge.
+                  Hier komt de plek waar je je aanmeldt voor de challenge. De challenge start op
+                  maandag 12 oktober.
                 </p>
               </div>
             </div>
