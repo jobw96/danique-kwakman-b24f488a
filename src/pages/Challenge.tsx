@@ -186,9 +186,14 @@ const Challenge = () => {
                 <p>{"\n"}</p>
                 <p>{"\n"}</p>
               </div>
-              <CustomButton onClick={naarAanmelding} className="mt-8">
-                Ik doe mee met de gratis challenge
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block"
+              >
+                <CustomButton>Ik doe mee met de gratis challenge</CustomButton>
+              </a>
               <p className="mt-4 text-sm text-muted-foreground">
                 Start maandag 12 oktober • 5 dagen • online • helemaal gratis
               </p>
@@ -294,9 +299,14 @@ const Challenge = () => {
                 </p>
                 <p>Je krijgt praktische opdrachten, checklists en recepten waarmee je direct aan de slag kunt.</p>
               </div>
-              <CustomButton onClick={naarAanmelding} className="mt-8">
-                I&apos;m in!
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block"
+              >
+                <CustomButton>I&apos;m in!</CustomButton>
+              </a>
             </FadeIn>
           </div>
         </div>
@@ -387,9 +397,16 @@ const Challenge = () => {
               <div className="mt-8 max-w-2xl text-primary-foreground/90">
                 <CheckList items={resultaat} opDonker />
               </div>
-              <CustomButton onClick={naarAanmelding} variant="white" className="mt-9">
-                Meld je voor de gut & hormone reset challenge
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-9 inline-block"
+              >
+                <CustomButton variant="white">
+                  Meld je voor de gut & hormone reset challenge
+                </CustomButton>
+              </a>
             </FadeIn>
           </div>
         </div>
