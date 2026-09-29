@@ -10,5 +10,6 @@
 - [x] Wijziging hormoontraject (granaatappel bij 'Je bent niet elke week dezelfde versie van jezelf' + hero-foto weg) teruggezet naar de originele opbouw
 - [x] Nieuwe pagina 'Gratis challenge' toevoegen onder Gratis, inclusief menu, footer, foto's en SEO
 - [x] Uitklapmenu 'Van inzicht naar een plan dat bij jou past' op hormoontrajectpagina (CIRCLE-tekst verwijderd)
-- [ ] Aanmeldknoppen op de challengepagina koppelen aan een echt aanmeldformulier (ActiveCampaign) of WhatsApp-link
+- [x] Aanmeldknoppen op de challengepagina koppelen aan de Plug&Pay-checkout
 - [x] Blok 'In 5 dagen' (quote) van de challengepagina verwijderen
+- [x] Linktree: challenge bovenaan met 'Gut & hormone reset challenge' en ondertitel 'start 12 okt - meld je gratis aan' (e-bookknop verwijderd)
