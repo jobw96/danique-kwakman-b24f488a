@@ -398,7 +398,7 @@ const Challenge = () => {
                 <CheckList items={resultaat} opDonker />
               </div>
               <CustomButton onClick={naarAanmelding} variant="white" className="mt-9">
-                Ik doe mee met de gratis challenge
+                Meld je voor de gut & hormone reset challenge
               </CustomButton>
             </FadeIn>
           </div>
@@ -558,7 +558,7 @@ const Challenge = () => {
                 </p>
               </div>
               <CustomButton onClick={naarAanmelding} className="mt-8">
-                Ik doe mee met de gratis challenge
+                Meld je aan voor de challenge
               </CustomButton>
               <p className="mt-4 text-sm text-muted-foreground">
                 Start maandag 12 oktober • 5 dagen 
