@@ -452,37 +452,26 @@ const Challenge = () => {
             <FadeIn delay={0.1}>
               <SectionLabel text="Hi, ik ben Danique" />
               <h2 className="text-3xl text-foreground md:text-4xl">
-                Van jarenlang zoeken naar begrijpen wat mijn lichaam nodig heeft
+                Van 10+ jaar hormonale klachten naar een klachtenvrij lijf
               </h2>
-              <p className="mt-6 leading-relaxed">
-                Orthomoleculair hormoon- & darmtherapeut en voormalig verpleegkundige
+              <p className="mt-6 leading-relaxed whitespace-pre-line">
+                {`Jarenlang ging ik van huisarts naar huisarts om na de zoveelste 'leer er mee leven' de diagnose PCOS te krijgen.
+De reguliere zorg hielp me aan de diagnose, maar ik miste handvatten om mijn lichaam en klachten in het dagelijks leven te ondersteunen. Daar begon mijn zoektocht naar het waarom.
+
+Die zoektocht vormt nu de basis van hoe ik jou begeleid.
+
+Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verder dan alleen je klachten. Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek.  We brengen niet alleen je klachten in kaart, maar kijken ook naar de samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
+
+
+`}
               </p>
               <div className="mt-6 space-y-4 leading-relaxed">
-                <p>
-                  Na jarenlang zelf rondgelopen te hebben met hormonale klachten kreeg ik
-                  uiteindelijk de diagnose PCOS.
-                </p>
-                <p>
-                  Ik had onder andere last van onregelmatige cyclussen, vermoeidheid, acne en
-                  moodswings.
-                </p>
-                <p>
-                  De reguliere zorg hielp mij om een diagnose te krijgen, maar ik miste praktische
-                  handvatten voor het dagelijks leven.
-                </p>
-                <p>
-                  Inmiddels combineer ik mijn achtergrond als verpleegkundige met mijn kennis als
-                  orthomoleculair therapeut.
-                </p>
-                <p>
-                  Ik kijk naar het geheel en naar de verschillende puzzelstukjes die samen kunnen
-                  hangen met jouw klachten.
-                </p>
-                <p>
-                  Met deze challenge wil ik je op een laagdrempelige manier laten ervaren hoe het
-                  is om niet alleen naar één klacht te kijken, maar te ontdekken wat er bij jou
-                  mogelijk meespeelt.
-                </p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
               </div>
               <Link to="/over-mij" className="mt-8 inline-block">
                 <CustomButton>Lees meer over mij</CustomButton>
