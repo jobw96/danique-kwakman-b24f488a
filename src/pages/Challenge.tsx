@@ -416,9 +416,8 @@ const Challenge = () => {
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <div className="mt-10 grid gap-x-14 gap-y-10 md:grid-cols-2">
-                <CheckList items={voorWie.slice(0, 5)} />
-                <CheckList items={voorWie.slice(5)} />
+              <div className="mt-10 max-w-3xl">
+                <CheckList items={voorWie} />
               </div>
             </FadeIn>
           </div>
