@@ -42,7 +42,7 @@ const watJeKrijgt = [
     description: 'Alle informatie, opdrachten en updates op één plek.',
   },
   {
-    title: 'Praktische checklists',
+    title: 'Praktische checklists en opdrachten',
     description:
       'Om jouw PMS, opgeblazen buik, cyclus en darmklachten goed in kaart te brengen.',
   },
