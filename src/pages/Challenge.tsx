@@ -30,7 +30,7 @@ const herkenning = [
 const watJeKrijgt = [
   {
     title: 'Kick-off',
-    description: 'We starten met een kick-off op maandag 12 oktober.',
+    description: 'We starten, via zoom, \u00a0met een kick-off op maandag 12 oktober.\u00a0',
   },
   {
     title: '5 dagen begeleiding',
