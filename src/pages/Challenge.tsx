@@ -26,18 +26,6 @@ const herkenning = [
   'Je hebt al van alles geprobeerd, maar je klachten blijven steeds terugkomen',
 ];
 
-const puzzelstukjes = [
-  'Hormonen en cyclus',
-  'Voeding',
-  'Bloedsuikerspiegel',
-  'Darmen',
-  'Stress',
-  'Slaap',
-  'Beweging',
-  'Voldoende eten',
-  'Herstel',
-  'Leefstijl',
-];
 
 const watJeKrijgt = [
   {
