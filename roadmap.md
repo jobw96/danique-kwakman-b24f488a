@@ -8,3 +8,7 @@
 - [x] Pagina ‘Een onregelmatige cyclus’ uitbreiden met unieke uitleg, werkwijze, verlangen, FAQ en SEO
 - [x] Pagina ‘1:1 Bloedsuikertraject’ vernieuwen met aangeleverde foto’s, nieuwe opbouw en aangescherpte metadata
 - [x] Wijziging hormoontraject (granaatappel bij 'Je bent niet elke week dezelfde versie van jezelf' + hero-foto weg) teruggezet naar de originele opbouw
+- [x] Nieuwe pagina 'Gratis challenge' toevoegen onder Gratis, inclusief menu, footer, foto's en SEO
+- [x] Uitklapmenu 'Van inzicht naar een plan dat bij jou past' op hormoontrajectpagina (CIRCLE-tekst verwijderd)
+- [ ] Aanmeldknoppen op de challengepagina koppelen aan een echt aanmeldformulier (ActiveCampaign) of WhatsApp-link
+- [x] Blok 'In 5 dagen' (quote) van de challengepagina verwijderen
