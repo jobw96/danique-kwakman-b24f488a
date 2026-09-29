@@ -10,13 +10,8 @@ import havermoutKomAsset from '@/assets/sfeer/havermout-zaden-kom.webp.asset.jso
 import pannenkoekenAsset from '@/assets/sfeer/pannenkoeken-frambozen.webp.asset.json';
 import daniqueBlouseAsset from '@/assets/sfeer/danique-gele-blouse.webp.asset.json';
 
-/**
- * Aanmelding voor de challenge. Zodra bekend is waar mensen zich aanmelden
- * (bijvoorbeeld een ActiveCampaign-formulier of een WhatsApp-link), hier de
- * URL invullen. Tot die tijd scrollen de knoppen naar het aanmeldblok
- * onderaan de pagina.
- */
-const AANMELD_URL: string | null = null;
+/** Aanmelding voor de challenge loopt via de Plug&Pay-checkout. */
+const AANMELD_URL = 'https://daniquekwakman.plugandpay.com/checkout/challenge';
 
 const herkenning = [
   'Je buik voelt de ene week prima en de andere week opgeblazen en onrustig',
@@ -156,14 +151,6 @@ const Challenge = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [openKrijg, setOpenKrijg] = useState<number | null>(0);
 
-  const naarAanmelding = () => {
-    if (AANMELD_URL) {
-      window.open(AANMELD_URL, '_blank', 'noopener,noreferrer');
-      return;
-    }
-    document.getElementById('aanmelding')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen bg-background text-muted-foreground">
       {/* Hero */}
@@ -185,11 +172,11 @@ const Challenge = () => {
                   Misschien heb je al van alles geprobeerd. ..{"\u00a0\u00a0"}
                   {"\n\n"}
                   {"\u00a0"}
-                  <div>- Gezonder eten</div>
-                  <div>- Supplementen gebruikt</div>
-                  <div>- Minder suiker gegeten{"\u00a0"}</div>
-                  <div>- Meer bewogen</div>
-                  <div>- Meer eiwitten en vezels toegevoegd</div>
+                  <span className="block">- Gezonder eten</span>
+                  <span className="block">- Supplementen gebruikt</span>
+                  <span className="block">- Minder suiker gegeten{"\u00a0"}</span>
+                  <span className="block">- Meer bewogen</span>
+                  <span className="block">- Meer eiwitten en vezels toegevoegd</span>
                   {"\u00a0"}
                   <br />
                   En toch blijf je last houden van: Je buik die na het eten ineens helemaal opblaast, je hormonen, PMS, cravings of weinig energie en voel je je niet jezelf.{"\u00a0\u00a0"}
@@ -199,9 +186,14 @@ const Challenge = () => {
                 <p>{"\n"}</p>
                 <p>{"\n"}</p>
               </div>
-              <CustomButton onClick={naarAanmelding} className="mt-8">
-                Ik doe mee met de gratis challenge
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block"
+              >
+                <CustomButton>Ik doe mee met de gratis challenge</CustomButton>
+              </a>
               <p className="mt-4 text-sm text-muted-foreground">
                 Start maandag 12 oktober • 5 dagen • online • helemaal gratis
               </p>
@@ -307,9 +299,14 @@ const Challenge = () => {
                 </p>
                 <p>Je krijgt praktische opdrachten, checklists en recepten waarmee je direct aan de slag kunt.</p>
               </div>
-              <CustomButton onClick={naarAanmelding} className="mt-8">
-                I&apos;m in!
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block"
+              >
+                <CustomButton>I&apos;m in!</CustomButton>
+              </a>
             </FadeIn>
           </div>
         </div>
@@ -400,9 +397,16 @@ const Challenge = () => {
               <div className="mt-8 max-w-2xl text-primary-foreground/90">
                 <CheckList items={resultaat} opDonker />
               </div>
-              <CustomButton onClick={naarAanmelding} variant="white" className="mt-9">
-                Meld je voor de gut & hormone reset challenge
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-9 inline-block"
+              >
+                <CustomButton variant="white">
+                  Meld je voor de gut & hormone reset challenge
+                </CustomButton>
+              </a>
             </FadeIn>
           </div>
         </div>
@@ -540,8 +544,8 @@ const Challenge = () => {
         </div>
       </section>
 
-      {/* Afsluitende CTA + aanmeldblok */}
-      <section id="aanmelding" className="py-16 md:py-24">
+      {/* Afsluitende CTA */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-secondary/50 bg-card">
             <div className="p-8 text-center md:p-12">
@@ -560,28 +564,17 @@ const Challenge = () => {
                   begrijpt waar je kunt beginnen.
                 </p>
               </div>
-              <CustomButton onClick={naarAanmelding} className="mt-8">
-                Meld je aan voor de challenge
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block"
+              >
+                <CustomButton>Meld je aan voor de challenge</CustomButton>
+              </a>
               <p className="mt-4 text-sm text-muted-foreground">
                 Start maandag 12 oktober • 5 dagen 
               </p>
-
-              {/* AANMELDFORMULIER: zodra het ActiveCampaign-form-ID bekend is,
-                  hier de embed laden (zelfde patroon als src/pages/Ebook.tsx).
-                  Tot die tijd staat er een plekhouder. */}
-              <div
-                aria-hidden={AANMELD_URL ? true : undefined}
-                className="mt-10 rounded-2xl border border-dashed border-primary/50 p-8"
-              >
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">
-                  Aanmeldformulier
-                </p>
-                <p className="mt-2 text-sm">
-                  Hier komt de plek waar je je aanmeldt voor de challenge. De challenge start op
-                  maandag 12 oktober.
-                </p>
-              </div>
             </div>
           </FadeIn>
         </div>
