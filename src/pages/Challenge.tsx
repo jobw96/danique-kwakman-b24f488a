@@ -193,7 +193,15 @@ const Challenge = () => {
                 <p>
                   Misschien heb je al van alles geprobeerd. ..{"\u00a0\u00a0"}
                   {"\n\n"}
-                  {"\u00a0"}Gezonder eten, supplementen, minder suiker, meer bewegen en toch blijf je last houden van: Je buik die na het eten ineens helemaal opblaast, je hormonen, PMS, cravings of weinig energie en voel je je niet jezelf.{"\u00a0\u00a0"}
+                  {"\u00a0"}
+                  <div>- Gezonder eten</div>
+                  <div>- Supplementen gebruikt</div>
+                  <div>- Minder suiker gegeten{"\u00a0"}</div>
+                  <div>- Meer bewogen</div>
+                  <div>- Meer eiwitten en vezels toegevoegd</div>
+                  {"\u00a0"}
+                  <br />
+                  En toch blijf je last houden van: Je buik die na het eten ineens helemaal opblaast, je hormonen, PMS, cravings of weinig energie en voel je je niet jezelf.{"\u00a0\u00a0"}
                   {"\n\n"}
                 </p>
                 <p>{"\n"}</p>
