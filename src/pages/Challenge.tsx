@@ -261,25 +261,24 @@ const Challenge = () => {
           <FadeIn className="mx-auto max-w-3xl">
             <SectionLabel text="Het probleem" />
             <h2 className="text-3xl text-foreground md:text-4xl">
-              Je weet misschien al heel veel. Maar weet je ook wat voor jouw lichaam werkt?
+              Je weet misschien al best veel over hormonen, PMS en een opgeblazen buik. Maar weet je ook wat jouw lichaam nodig heeft?
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed">
               <p>
-                Je kunt tegenwoordig ontzettend veel informatie vinden over hormonen, PMS en een
-                opgeblazen buik.
+                Online vind je eindeloos veel adviezen: eet minder suiker, neem magnesium, eet meer vezels, laat zuivel staan en drink geen koffie op een lege maag.{"\u00a0"}
+                {"\n\n"}
+                Je hebt inmiddels een hele lijst met dingen die je allemaal zou moeten aanpassen en 100 recepten opgeslagen die zouden moeten helpen om je klachten te verminderen.{"\u00a0"}
+                {"\n\n"}
+                Misschien zijn je bloedwaarden volgens de huisarts normaal, eet je eigenlijk al heel gezond en heb je al van alles geprobeerd om je klachten te verminderen. Toch komen die PMS-klachten, cravings of opgeblazen buik iedere maand weer terug.
+                {"\n\n"}
+                Want weten wat 'gezond' is, betekent niet dat dit ook is waar jouw lichaam om vraagt.
               </p>
-              <p>
-                Eet minder suiker, neem magnesium, eet meer vezels, laat zuivel staan, drink geen
-                koffie op nuchtere maag.
-              </p>
-              <p>
-                En voor je het weet heb je een hele lijst met dingen die je allemaal zou moeten
-                doen.
-              </p>
-              <p>Misschien zijn je bloedwaarden volgens de huisarts gewoon normaal.</p>
-              <p>Misschien eet je eigenlijk al heel gezond.</p>
-              <p>Misschien weet je zelfs behoorlijk veel over hormonen.</p>
-              <p>Toch blijven je klachten terugkomen.</p>
+              <p>{"\n"}</p>
+              <p>{"\n"}</p>
+              <p>{"\n"}</p>
+              <p>{"\n"}</p>
+              <p>{"\n"}</p>
+              <p>{"\n"}</p>
             </div>
           </FadeIn>
         </div>
