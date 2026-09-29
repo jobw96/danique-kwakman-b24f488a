@@ -292,8 +292,10 @@ const Challenge = () => {
               </span>
               <blockquote className="mt-1 font-serif text-2xl leading-snug text-foreground md:text-3xl lg:text-4xl">
                 In 5 dagen gaan we kijken naar de verschillende puzzelstukken die invloed kunnen
-                hebben op jouw PMS en je opgeblazen buik. Van voeding en bloedsuiker tot je darmen,
-                cyclus, stress en leefstijl.
+                hebben op jouw PMS en je opgeblazen buik.{"\u00a0"}
+                <br />
+                <br />
+                Van voeding en bloedsuiker tot je darmen, cyclus, stress en leefstijl.
               </blockquote>
             </figure>
           </FadeIn>
