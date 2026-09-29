@@ -10,13 +10,8 @@ import havermoutKomAsset from '@/assets/sfeer/havermout-zaden-kom.webp.asset.jso
 import pannenkoekenAsset from '@/assets/sfeer/pannenkoeken-frambozen.webp.asset.json';
 import daniqueBlouseAsset from '@/assets/sfeer/danique-gele-blouse.webp.asset.json';
 
-/**
- * Aanmelding voor de challenge. Zodra bekend is waar mensen zich aanmelden
- * (bijvoorbeeld een ActiveCampaign-formulier of een WhatsApp-link), hier de
- * URL invullen. Tot die tijd scrollen de knoppen naar het aanmeldblok
- * onderaan de pagina.
- */
-const AANMELD_URL: string | null = null;
+/** Aanmelding voor de challenge loopt via de Plug&Pay-checkout. */
+const AANMELD_URL = 'https://daniquekwakman.plugandpay.com/checkout/challenge';
 
 const herkenning = [
   'Je buik voelt de ene week prima en de andere week opgeblazen en onrustig',
@@ -155,14 +150,6 @@ const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: bo
 const Challenge = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [openKrijg, setOpenKrijg] = useState<number | null>(0);
-
-  const naarAanmelding = () => {
-    if (AANMELD_URL) {
-      window.open(AANMELD_URL, '_blank', 'noopener,noreferrer');
-      return;
-    }
-    document.getElementById('aanmelding')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="min-h-screen bg-background text-muted-foreground">
