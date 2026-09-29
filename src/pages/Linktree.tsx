@@ -12,8 +12,8 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "Gut & hormone reset",
-    subtitle: "start 12 okt - meld je aan",
+    title: "Gut & hormone reset challenge",
+    subtitle: "start 12 okt - meld je gratis aan",
     href: "/challenge",
     icon: Sparkles,
     internal: true
