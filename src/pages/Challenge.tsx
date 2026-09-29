@@ -550,8 +550,7 @@ const Challenge = () => {
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 leading-relaxed">
                 <p>
-                  Vijf dagen lang gaan we kijken naar de puzzelstukjes achter jouw PMS en
-                  opgeblazen buik.
+                  In 5 dagen gaan we kijken naar de verschillende puzzelstukken die invloed kunnen hebben op jouw PMS en je opgeblazen buik. Van voeding en bloedsuiker tot je darmen, cyclus, stress en leefstijl.
                 </p>
                 <p>
                   Zodat je niet alweer een jaar verder bent met dezelfde klachten, maar beter
@@ -562,7 +561,7 @@ const Challenge = () => {
                 Ik doe mee met de gratis challenge
               </CustomButton>
               <p className="mt-4 text-sm text-muted-foreground">
-                Start maandag 12 oktober • 5 dagen • WhatsApp • gratis
+                Start maandag 12 oktober • 5 dagen 
               </p>
 
               {/* AANMELDFORMULIER: zodra het ActiveCampaign-form-ID bekend is,
