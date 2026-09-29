@@ -331,7 +331,7 @@ const Challenge = () => {
                   <img
                     src={pannenkoekenAsset.url}
                     alt="Bord pannenkoeken met frambozen, bosbessen en rode bessen"
-                    title="Recepten tijdens de gratis 5-daagse challenge"
+                    title="Pannenkoeken met frambozen, bosbessen en rode bessen"
                     width="1200"
                     height="1600"
                     loading="lazy"
