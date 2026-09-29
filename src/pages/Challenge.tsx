@@ -291,43 +291,24 @@ const Challenge = () => {
         </div>
       </section>
 
-      {/* Niet één losse klacht */}
+      {/* Quote */}
       <section className="bg-secondary/20 py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-4xl">
-            <FadeIn>
-              <SectionLabel text="Niet één losse klacht" />
-              <h2 className="text-3xl text-foreground md:text-4xl">
-                Je PMS en opgeblazen buik staan niet altijd op zichzelf
-              </h2>
-              <div className="mt-6 space-y-4 leading-relaxed">
-                <p>
-                  Je kunt je opgeblazen buik proberen op te lossen door alleen naar voeding te
-                  kijken of je PMS proberen aan te pakken met alleen supplementen.
-                </p>
-                <p>Maar je lichaam werkt natuurlijk niet in losse onderdelen.</p>
-                <p>
-                  Je cyclus, voeding, bloedsuikerspiegel, darmen, slaap, stress, beweging en
-                  hoeveel je eet kunnen allemaal onderdeel zijn van het verhaal.
-                </p>
-                <p>Daarom kijken we tijdens deze challenge niet naar losse klachten.</p>
-                <p>We brengen de verschillende puzzelstukjes bij elkaar.</p>
-                <p>Maar om te ontdekken wat er bij jou speelt.</p>
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <ul className="mt-10 flex flex-wrap gap-3">
-                {puzzelstukjes.map((stukje) => (
-                  <li
-                    key={stukje}
-                    className="rounded-full border border-secondary/40 bg-card px-5 py-2.5 text-sm text-foreground"
-                  >
-                    {stukje}
-                  </li>
-                ))}
-              </ul>
-            </FadeIn>
-          </div>
+          <FadeIn>
+            <figure className="mx-auto max-w-3xl text-center">
+              <span
+                aria-hidden="true"
+                className="block font-serif text-6xl leading-none text-primary-deep md:text-7xl"
+              >
+                &ldquo;
+              </span>
+              <blockquote className="mt-1 font-serif text-2xl leading-snug text-foreground md:text-3xl lg:text-4xl">
+                In 5 dagen gaan we kijken naar de verschillende puzzelstukken die invloed kunnen
+                hebben op jouw PMS en je opgeblazen buik. Van voeding en bloedsuiker tot je darmen,
+                cyclus, stress en leefstijl.
+              </blockquote>
+            </figure>
+          </FadeIn>
         </div>
       </section>
 
