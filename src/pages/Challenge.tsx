@@ -47,10 +47,6 @@ const watJeKrijgt = [
       'Om jouw PMS, opgeblazen buik, cyclus en darmklachten goed in kaart te brengen.',
   },
   {
-    title: 'Recepten',
-    description: 'Praktische recepten waarmee je direct aan de slag kunt.',
-  },
-  {
     title: 'Concrete handvatten',
     description:
       'Geen lange lijst met dingen die je allemaal moet veranderen, maar praktische handvatten waar je direct mee aan de slag kunt.',
