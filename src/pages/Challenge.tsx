@@ -62,16 +62,16 @@ const resultaat = [
 ];
 
 const voorWie = [
-  'Je iedere maand weer PMS-klachten ervaart',
-  'Je regelmatig een opgeblazen buik hebt',
-  'Je meer cravings of trek hebt rondom je menstruatie',
-  'Je energie gedurende de dag wisselt',
-  'Je al bewust bezig bent met voeding en leefstijl, maar toch klachten houdt',
+  'Je iedere maand weer PMS-klachten ervaart en regelmatig een opgeblazen buik hebt',
+  '',
+  'Je meer cravings, eneregiedips of schommelingen in je hormonen',
+  '',
+  '',
   'Je misschien al veel informatie over hormonen hebt verzameld, maar door de bomen het bos niet meer ziet',
   '',
   'Je geen streng dieet of lange lijst met verboden voedingsmiddelen wilt',
-  'Je wilt begrijpen wat er bij jou speelt',
-  'Je wilt weten waar je gericht kunt beginnen',
+  'Je wilt begrijpen wat er bij jou speelt en waar je kunt beginnen',
+  '',
 ];
 
 const faqs = [
