@@ -278,29 +278,6 @@ const Challenge = () => {
         </div>
       </section>
 
-      {/* Quote */}
-      <section className="bg-secondary/20 py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <FadeIn>
-            <figure className="mx-auto max-w-3xl text-center">
-              <span
-                aria-hidden="true"
-                className="block font-serif text-6xl leading-none text-primary-deep md:text-7xl"
-              >
-                &ldquo;
-              </span>
-              <blockquote className="mt-1 font-serif text-2xl leading-snug text-foreground md:text-3xl lg:text-4xl">
-                In 5 dagen gaan we kijken naar de verschillende puzzelstukken die invloed kunnen
-                hebben op jouw PMS en je opgeblazen buik.{"\u00a0"}
-                <br />
-                <br />
-                Van voeding en bloedsuiker tot je darmen, cyclus, stress en leefstijl.
-              </blockquote>
-            </figure>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* Wat gaan we doen? */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
