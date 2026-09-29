@@ -575,22 +575,6 @@ const Challenge = () => {
               <p className="mt-4 text-sm text-muted-foreground">
                 Start maandag 12 oktober • 5 dagen 
               </p>
-
-              {/* AANMELDFORMULIER: zodra het ActiveCampaign-form-ID bekend is,
-                  hier de embed laden (zelfde patroon als src/pages/Ebook.tsx).
-                  Tot die tijd staat er een plekhouder. */}
-              <div
-                aria-hidden={AANMELD_URL ? true : undefined}
-                className="mt-10 rounded-2xl border border-dashed border-primary/50 p-8"
-              >
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary-deep">
-                  Aanmeldformulier
-                </p>
-                <p className="mt-2 text-sm">
-                  Hier komt de plek waar je je aanmeldt voor de challenge. De challenge start op
-                  maandag 12 oktober.
-                </p>
-              </div>
             </div>
           </FadeIn>
         </div>
