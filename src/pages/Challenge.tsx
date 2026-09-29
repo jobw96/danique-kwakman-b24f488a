@@ -47,10 +47,6 @@ const watJeKrijgt = [
       'Om jouw PMS, opgeblazen buik, cyclus en darmklachten goed in kaart te brengen.',
   },
   {
-    title: 'Recepten',
-    description: 'Praktische recepten waarmee je direct aan de slag kunt.',
-  },
-  {
     title: 'Concrete handvatten',
     description:
       'Geen lange lijst met dingen die je allemaal moet veranderen, maar praktische handvatten waar je direct mee aan de slag kunt.',
@@ -335,7 +331,7 @@ const Challenge = () => {
                   <img
                     src={pannenkoekenAsset.url}
                     alt="Bord pannenkoeken met frambozen, bosbessen en rode bessen"
-                    title="Recepten tijdens de gratis 5-daagse challenge"
+                    title="Pannenkoeken met frambozen, bosbessen en rode bessen"
                     width="1200"
                     height="1600"
                     loading="lazy"
