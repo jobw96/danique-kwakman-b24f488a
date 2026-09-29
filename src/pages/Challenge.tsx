@@ -307,6 +307,9 @@ const Challenge = () => {
                 </p>
                 <p>Je krijgt praktische opdrachten, checklists en recepten waarmee je direct aan de slag kunt.</p>
               </div>
+              <CustomButton onClick={naarAanmelding} className="mt-8">
+                I&apos;m in!
+              </CustomButton>
             </FadeIn>
           </div>
         </div>
