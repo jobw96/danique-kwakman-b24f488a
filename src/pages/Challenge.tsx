@@ -544,8 +544,8 @@ const Challenge = () => {
         </div>
       </section>
 
-      {/* Afsluitende CTA + aanmeldblok */}
-      <section id="aanmelding" className="py-16 md:py-24">
+      {/* Afsluitende CTA */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-secondary/50 bg-card">
             <div className="p-8 text-center md:p-12">
@@ -564,9 +564,14 @@ const Challenge = () => {
                   begrijpt waar je kunt beginnen.
                 </p>
               </div>
-              <CustomButton onClick={naarAanmelding} className="mt-8">
-                Meld je aan voor de challenge
-              </CustomButton>
+              <a
+                href={AANMELD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block"
+              >
+                <CustomButton>Meld je aan voor de challenge</CustomButton>
+              </a>
               <p className="mt-4 text-sm text-muted-foreground">
                 Start maandag 12 oktober • 5 dagen 
               </p>
