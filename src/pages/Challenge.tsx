@@ -265,13 +265,14 @@ const Challenge = () => {
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed">
               <p>
-                Online vind je eindeloos veel adviezen: eet minder suiker, neem magnesium, eet meer vezels, laat zuivel staan en drink geen koffie op een lege maag.{"\u00a0"}
+                Online vind je eindeloos veel adviezen: eet minder suiker, neem magnesium, eet meer vezels, laat zuivel staan en drink geen koffie op een lege maag.{"\u00a0\u00a0"}
                 {"\n\n"}
-                Je hebt inmiddels een hele lijst met dingen die je allemaal zou moeten aanpassen en 100 recepten opgeslagen die zouden moeten helpen om je klachten te verminderen.{"\u00a0"}
+                {"\u00a0"}Je hebt inmiddels een hele lijst met dingen die je allemaal zou moeten aanpassen en 100 recepten opgeslagen die zouden moeten helpen om je klachten te verminderen.{"\u00a0\u00a0"}
                 {"\n\n"}
-                Misschien zijn je bloedwaarden volgens de huisarts normaal, eet je eigenlijk al heel gezond en heb je al van alles geprobeerd om je klachten te verminderen. Toch komen die PMS-klachten, cravings of opgeblazen buik iedere maand weer terug.
+                {"\u00a0"} Misschien zijn je bloedwaarden volgens de huisarts normaal, eet je eigenlijk al heel gezond en heb je al van alles geprobeerd om je klachten te verminderen. Toch komen die PMS-klachten, cravings of opgeblazen buik iedere maand weer terug.{"\u00a0"}
                 {"\n\n"}
-                Want weten wat 'gezond' is, betekent niet dat dit ook is waar jouw lichaam om vraagt.
+                Weten wat 'gezond' is, betekent niet dat dit ook is waar jouw lichaam om vraagt.
+                {"\n\n"}
               </p>
               <p>{"\n"}</p>
               <p>{"\n"}</p>
