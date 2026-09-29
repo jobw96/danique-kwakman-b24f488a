@@ -546,7 +546,7 @@ const Challenge = () => {
                 Gratis 5-daagse challenge
               </p>
               <h2 className="mx-auto max-w-3xl text-3xl text-foreground md:text-4xl">
-                Klaar om niet iedere maand opnieuw te denken: daar gaan we weer?
+                Gut & hormone reset challenge
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 leading-relaxed">
                 <p>
