@@ -58,7 +58,7 @@ const resultaat = [
   'Herken je beter welke momenten, voedingsmiddelen en gewoontes samen kunnen hangen met jouw opgeblazen buik',
   'Weet je hoe je met je maaltijden en bloedsuiker kunt omgaan om cravings en energiedips te verminderen',
   'Heb je concrete aanpassingen die je direct kunt toepassen rondom voeding, darmen en je cyclus',
-  'Weet je welke puzzelstukjes voor jou het meest interessant zijn om verder mee aan de slag te gaan',
+  'Weet je welke puzzelstukjes bij jou aandacht verdienen',
 ];
 
 const voorWie = [
@@ -385,9 +385,9 @@ const Challenge = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl">
             <FadeIn>
-              <SectionLabel text="Na 5 dagen" opDonker />
+              <SectionLabel text="" opDonker />
               <h2 className="max-w-3xl text-3xl text-primary-foreground md:text-4xl">
-                Na 5 dagen weet je beter waar je moet kijken
+                Na de gut & hormone reset:
               </h2>
               <p className="mt-6 max-w-2xl leading-relaxed text-primary-foreground/85">
                 In 5 dagen ontdek je welke puzzelstukjes samenhangen met jouw PMS en opgeblazen
@@ -395,7 +395,7 @@ const Challenge = () => {
                 klachten.
               </p>
               <p className="mt-6 max-w-2xl font-serif text-xl leading-tight text-primary-foreground md:text-2xl">
-                Je weet beter waar je kunt beginnen.
+                Na 5 dagen:
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
