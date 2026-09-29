@@ -63,15 +63,10 @@ const resultaat = [
 
 const voorWie = [
   'Je iedere maand weer PMS-klachten ervaart en regelmatig een opgeblazen buik hebt',
-  '',
   'Je meer cravings, eneregiedips of schommelingen in je hormonen',
-  '',
-  '',
   'Je misschien al veel informatie over hormonen hebt verzameld, maar door de bomen het bos niet meer ziet',
-  '',
   'Je geen streng dieet of lange lijst met verboden voedingsmiddelen wilt',
   'Je wilt begrijpen wat er bij jou speelt en waar je kunt beginnen',
-  '',
 ];
 
 const faqs = [
@@ -421,9 +416,8 @@ const Challenge = () => {
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <div className="mt-10 grid gap-x-14 gap-y-10 md:grid-cols-2">
-                <CheckList items={voorWie.slice(0, 5)} />
-                <CheckList items={voorWie.slice(5)} />
+              <div className="mt-10 max-w-3xl">
+                <CheckList items={voorWie} />
               </div>
             </FadeIn>
           </div>
