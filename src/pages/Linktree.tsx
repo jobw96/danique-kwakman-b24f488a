@@ -12,11 +12,11 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "E-Book: Nourish Your Body",
-    subtitle: "50+ hormoonproof en darmproof recepten",
-    href: NOURISH_URL,
+    title: "Gut & hormone reset",
+    subtitle: "start 12 okt - meld je aan",
+    href: "/challenge",
     icon: Sparkles,
-    internal: false
+    internal: true
   },
   {
     title: "Gratis kennismaking",

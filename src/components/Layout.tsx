@@ -48,7 +48,7 @@ const footerNav = [{
 }, {
   title: 'Gratis',
   links: [{
-    name: 'Gratis challenge',
+    name: 'Gut & hormone reset challenge',
     href: '/challenge'
   }, {
     name: 'Blog',
@@ -224,7 +224,7 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Gratis',
     subItems: [{
-      name: 'Gratis challenge',
+      name: 'Gut & hormone reset challenge',
       href: '/challenge',
       description: '',
       icon: Zap
