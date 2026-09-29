@@ -54,11 +54,11 @@ const watJeKrijgt = [
 ];
 
 const resultaat = [
-  'Je begrijpt je PMS en cyclus beter',
-  'Je herkent patronen in je buikklachten',
-  'Je weet beter wat voeding en bloedsuiker met je energie en cravings kunnen doen en hoe je dit aanpakt',
-  'Je hebt praktische handvatten om zelf toe te passen',
-  'Je hebt inzicht met welke puzzelstukjes jij aan de slag mag',
+  'Begrijp je beter wat er tijdens je cyclus gebeurt en waarom PMS-klachten in de dagen voor je menstruatie kunnen toenemen',
+  'Herken je beter welke momenten, voedingsmiddelen en gewoontes samen kunnen hangen met jouw opgeblazen buik',
+  'Weet je hoe je met je maaltijden en bloedsuiker kunt omgaan om cravings en energiedips te verminderen',
+  'Heb je concrete aanpassingen die je direct kunt toepassen rondom voeding, darmen en je cyclus',
+  'Weet je welke puzzelstukjes voor jou het meest interessant zijn om verder mee aan de slag te gaan',
 ];
 
 const voorWie = [
