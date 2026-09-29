@@ -191,11 +191,9 @@ const Challenge = () => {
                 <p>{"\n"}</p>
                 <p>{"\n"}</p>
                 <p>
-                  Misschien heb je al van alles geprobeerd. ..{"\u00a0"}
+                  Misschien heb je al van alles geprobeerd. ..{"\u00a0\u00a0"}
                   {"\n\n"}
-                  Gezonder eten, supplementen, minder suiker, meer bewegen en toch blijf je last houden van: Je buik die na het eten ineens helemaal opblaast, je hormonen, PMS, cravings of weinig energie en voel je je niet jezelf.{"\u00a0"}
-                  {"\n\n"}
-                  {"\u00a0"}In 5 dagen gaan we kijken naar de verschillende puzzelstukken die invloed kunnen hebben op jouw PMS en je opgeblazen buik. Van voeding en bloedsuiker tot je darmen, cyclus, stress en leefstijl.
+                  {"\u00a0"}Gezonder eten, supplementen, minder suiker, meer bewegen en toch blijf je last houden van: Je buik die na het eten ineens helemaal opblaast, je hormonen, PMS, cravings of weinig energie en voel je je niet jezelf.{"\u00a0\u00a0"}
                   {"\n\n"}
                 </p>
                 <p>{"\n"}</p>
