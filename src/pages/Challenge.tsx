@@ -19,11 +19,11 @@ import daniqueBlouseAsset from '@/assets/sfeer/danique-gele-blouse.webp.asset.js
 const AANMELD_URL: string | null = null;
 
 const herkenning = [
-  'Je buik voelt ineens veel meer opgeblazen',
-  'Je hebt rondom je menstruatie veel meer trek of cravings',
-  'Je bent sneller geïrriteerd, emotioneel of prikkelbaar',
-  'Je energie lijkt alle kanten op te gaan',
-  'Je hebt al van alles geprobeerd, maar je PMS en opgeblazen buiken komen steeds terug',
+  'Je buik voelt de ene week prima en de andere week opgeblazen en onrustig',
+  'Je energie, stemming en eetlust kunnen gedurende je cyclus flink veranderen',
+  'Je hebt regelmatig last van cravings, een middagdip of weinig energie',
+  'Je hebt het gevoel dat je hormonen uit balans zijn, maar weet niet meer waar je moet beginnen',
+  'Je hebt al van alles geprobeerd, maar je klachten blijven steeds terugkomen',
 ];
 
 const puzzelstukjes = [
@@ -246,12 +246,12 @@ const Challenge = () => {
         <div className="container mx-auto px-6">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             <FadeIn>
-              <SectionLabel text="Iedere maand opnieuw" />
+              <SectionLabel text="HERKEN JE JEZELF HIERIN?" />
               <h2 className="text-3xl text-foreground md:text-4xl">
-                Iedere maand denk je weer: daar gaan we...
+                De ene week voel je je top. De andere week vraag je je af wat er ineens met je lichaam aan de hand is.
               </h2>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-                Herken je jezelf hierin?
+                {"\n"}
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
