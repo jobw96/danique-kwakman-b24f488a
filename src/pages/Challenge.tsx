@@ -194,29 +194,23 @@ const Challenge = () => {
             <FadeIn immediate>
               <SectionLabel text="Gratis 5-daagse challenge" />
               <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-                Heb jij stiekem iedere maand last van PMS of een opgeblazen buik?
+                Gut & hormone reset
               </h1>
               <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
-                En denk je inmiddels dat het er gewoon bij hoort?
+                We zijn inmiddels aangekomen bij de laatste maanden van het jaar en in hoeveel van de afgelopen 9 maanden heb je last gehad van PMS of een opgeblazen buik?
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
-                <p>We zijn inmiddels aangekomen bij de laatste maanden van het jaar.</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
                 <p>
-                  Misschien heb je stiekem iedere maand weer last gehad van PMS, een opgeblazen
-                  buik, cravings of weinig energie.
+                  Misschien heb je al van alles geprobeerd. .. Gezonder eten, supplementen, minder suiker, meer bewegen en toch blijf je last houden van: Je buik die na het eten ineens helemaal opblaast, je hormonen, PMS, cravings of weinig energie en voel je je niet jezelf.
+                  {"\n\n"}
+                  In 5 dagen gaan we kijken naar de verschillende puzzelstukken die invloed kunnen hebben op jouw PMS en je opgeblazen buik. Van voeding en bloedsuiker tot je darmen, cyclus, stress en leefstijl.
+                  {"\n"}
                 </p>
-                <p>
-                  Je buik die na het eten ineens helemaal opblaast, je bent sneller geïrriteerd in
-                  de week voor je menstruatie,je hebt meer trek of voelt je gewoon niet helemaal
-                  jezelf.
-                </p>
-                <p>
-                  Misschien heb je al van alles geprobeerd
-                  <br />
-                  Gezonder eten, supplementen, minder suiker, meer bewegen of juist meer rust.
-                </p>
-                <p>Maar je weet nog steeds niet goed wat er bij jóu speelt.</p>
-                <p>Daar gaan we tijdens deze gratis challenge samen naar kijken.</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
+                <p>{"\n"}</p>
               </div>
               <CustomButton onClick={naarAanmelding} className="mt-8">
                 Ik doe mee met de gratis challenge
