@@ -7,7 +7,6 @@ import { Link } from '@/lib/router-compat';
 
 import buikDuinenAsset from '@/assets/sfeer/challenge-buik-duinen.webp.asset.json';
 import havermoutKomAsset from '@/assets/sfeer/havermout-zaden-kom.webp.asset.json';
-import pannenkoekenAsset from '@/assets/sfeer/pannenkoeken-frambozen.webp.asset.json';
 import daniqueBlouseAsset from '@/assets/sfeer/danique-gele-blouse.webp.asset.json';
 
 /** Aanmelding voor de challenge loopt via de Plug&Pay-checkout. */
@@ -22,31 +21,6 @@ const herkenning = [
 ];
 
 
-const watJeKrijgt = [
-  {
-    title: 'Kick-off',
-    description: 'We starten, via zoom, \u00a0met een kick-off op maandag 12 oktober.\u00a0',
-  },
-  {
-    title: '5 dagen begeleiding',
-    description:
-      'Vijf dagen lang praktische informatie en opdrachten waarmee je naar je eigen klachten kijkt.',
-  },
-  {
-    title: 'Besloten WhatsApp-groep',
-    description: 'Alle informatie, opdrachten en updates op één plek.',
-  },
-  {
-    title: 'Praktische checklists en opdrachten',
-    description:
-      'Om jouw PMS, opgeblazen buik, cyclus en darmklachten goed in kaart te brengen.',
-  },
-  {
-    title: 'Concrete handvatten',
-    description:
-      'Geen lange lijst met dingen die je allemaal moet veranderen, maar praktische handvatten waar je direct mee aan de slag kunt.',
-  },
-];
 
 const resultaat = [
   'Begrijp je beter wat er tijdens je cyclus gebeurt en waarom PMS-klachten in de dagen voor je menstruatie kunnen toenemen',
@@ -149,7 +123,6 @@ const CheckList = ({ items, opDonker = false }: { items: string[]; opDonker?: bo
 
 const Challenge = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [openKrijg, setOpenKrijg] = useState<number | null>(0);
 
   return (
     <div className="min-h-screen bg-background text-muted-foreground">
@@ -312,68 +285,6 @@ const Challenge = () => {
         </div>
       </section>
 
-      {/* Wat krijg je? */}
-      <section className="border-y border-secondary/40 bg-card py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-            <FadeIn>
-              <div className="lg:sticky lg:top-28">
-                <SectionLabel text="Alles wat je krijgt" />
-                <h2 className="text-3xl text-foreground md:text-4xl">
-                  Dit krijg je tijdens de gratis challenge
-                </h2>
-                <figure className="mt-8 overflow-hidden rounded-2xl bg-background">
-                  <img
-                    src={pannenkoekenAsset.url}
-                    alt="Bord pannenkoeken met frambozen, bosbessen en rode bessen"
-                    title="Pannenkoeken met frambozen, bosbessen en rode bessen"
-                    width="1200"
-                    height="1600"
-                    loading="lazy"
-                    decoding="async"
-                    className="aspect-[4/5] w-full object-cover"
-                  />
-                </figure>
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <div className="border-t border-secondary/40">
-                {watJeKrijgt.map((item, index) => {
-                  const isOpen = openKrijg === index;
-                  return (
-                    <div key={item.title} className="border-b border-secondary/40">
-                      <m.button
-                        type="button"
-                        onClick={() => setOpenKrijg(isOpen ? null : index)}
-                        className="flex w-full items-center justify-between gap-6 py-6 text-left"
-                        aria-expanded={isOpen}
-                        whileHover={{ x: 3 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
-                        <m.span
-                          animate={{ rotate: isOpen ? 180 : 0 }}
-                          className="shrink-0 text-primary-dark"
-                        >
-                          <ChevronDown className="h-5 w-5" aria-hidden="true" />
-                        </m.span>
-                      </m.button>
-                      <m.div
-                        initial={false}
-                        animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
-                      >
-                        <p className="pb-6 leading-relaxed">{item.description}</p>
-                      </m.div>
-                    </div>
-                  );
-                })}
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
 
       {/* Resultaat */}
       <section className="bg-primary-dark py-16 text-primary-foreground md:py-24">
