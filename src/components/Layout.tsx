@@ -224,7 +224,7 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Gratis',
     subItems: [{
-      name: 'Gut & hormone reset challenge',
+      name: 'Gut & hormone harmony reset challenge\n',
       href: '/challenge',
       description: '',
       icon: Zap
