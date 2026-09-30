@@ -160,7 +160,7 @@ const Challenge = () => {
             <FadeIn immediate>
               <SectionLabel text="Gratis 5-daagse challenge" />
               <h1 className="max-w-3xl text-3xl leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-                Gut & hormone reset
+                Gut & hormone reset harmony
               </h1>
               <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
                 We zijn inmiddels aangekomen bij de laatste maanden van het jaar en in hoeveel van de afgelopen 9 maanden heb je last gehad van PMS of een opgeblazen buik?
@@ -382,7 +382,7 @@ const Challenge = () => {
             <FadeIn>
               <SectionLabel text="" opDonker />
               <h2 className="max-w-3xl text-3xl text-primary-foreground md:text-4xl">
-                Na de gut & hormone reset:
+                Na de gut & hormone harmony reset:
               </h2>
               <p className="mt-6 max-w-2xl leading-relaxed text-primary-foreground/85">
                 In 5 dagen ontdek je welke puzzelstukjes samenhangen met jouw PMS en opgeblazen
@@ -404,7 +404,7 @@ const Challenge = () => {
                 className="mt-9 inline-block"
               >
                 <CustomButton variant="white">
-                  Meld je voor de gut & hormone reset challenge
+                  Meld je voor de gut & hormone harmony{"\n"}{"\u00a0"}reset challenge
                 </CustomButton>
               </a>
             </FadeIn>
@@ -542,7 +542,7 @@ Als orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige kijk ik verd
                 Gratis 5-daagse challenge
               </p>
               <h2 className="mx-auto max-w-3xl text-3xl text-foreground md:text-4xl">
-                Gut & hormone reset challenge
+                Gut & hormone harmony reset challenge
               </h2>
               <div className="mx-auto mt-6 max-w-2xl space-y-4 leading-relaxed">
                 <p>
