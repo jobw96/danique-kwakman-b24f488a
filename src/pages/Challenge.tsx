@@ -299,10 +299,10 @@ const Challenge = () => {
                 In 5 dagen ontdek je welke puzzelstukjes samenhangen met jouw PMS en opgeblazen
                 buik, zodat je weet waar je kunt beginnen en niet 2027 in gaat met dezelfde
                 klachten.
-                {"\n\n"}
-                ✓ 5 dagen praktische begeleiding van mij als orthomoleculair hormoon- en darmtherapeut{" "}
+                {"\u00a0\u00a0\n"}
+                ✓ 5 dagen praktische begeleiding van mij als orthomoleculair hormoon- en darmtherapeut{"\u00a0"}
                 {"\n"}
-                ✓ Iedere dag krijg je een simpele, maar doeltreffende checklist of opdracht rondom PMS, je darmen en je bloedsuiker, zodat je ontdekt wat er achter jouw klachten speelt én direct praktische stappen kunt zetten voor meer verlichting.
+                ✓ Iedere dag krijg je een simpele, maar doeltreffende checklist of opdracht rondom PMS, je darmen en je bloedsuiker, zodat je ontdekt wat er achter jouw klachten speelt én direct praktische stappen kunt zetten voor meer verlichting.{"\u00a0"}
                 {"\n"}
                 ✓ Recepten waar jouw lichaam heel erg blij van gaat worden en die ik normaal alleen met mijn klanten deel.
                 {"\n"}
