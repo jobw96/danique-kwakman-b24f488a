@@ -289,12 +289,12 @@ const Challenge = () => {
                   darmen, cyclus, stress en leefstijl.
                 </p>
                 <p>
-                  Geen streng dieet en geen lijst met twintig dingen die je vanaf morgen moet
+                  Je krijgt van mij geen streng dieet en geen lijst met twintig dingen die je vanaf morgen moet
                   veranderen. Wel praktische inzichten en opdrachten waarmee je ontdekt wat er bij
                   jou mogelijk meespeelt.
                 </p>
                 <p>
-                  We starten op maandag 12 oktober met een kick-off en daarna ontvang je iedere dag
+                  We starten op maandag 12 oktober met een online kick-off en daarna ontvang je iedere dag
                   een korte uitleg en opdracht in de WhatsApp-groep.
                 </p>
                 <p>Je krijgt praktische opdrachten, checklists en recepten waarmee je direct aan de slag kunt.</p>
