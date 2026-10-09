@@ -74,9 +74,7 @@ const footerNav: {
     name: 'Over mij',
     href: '/over-mij'
   }, {
-    name: 'Plan een gratis kennismaking in',
-    modal: true
-  }, {
+
     name: 'Contact',
     href: '/contact'
   }, {
