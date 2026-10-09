@@ -110,6 +110,8 @@ interface NavItem {
  *   onder elkaar zwakken elkaar af.
  */
 const GEEN_AANBOD_CTA = [
+  // De homepage sluit zelf af met een eigen bloedsuiker- en trajectverwijzing.
+  '/',
   '/behandelingen',
   '/bloedsuikertraject',
   '/hormoontraject',
