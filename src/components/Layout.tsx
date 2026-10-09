@@ -32,17 +32,8 @@ const footerNav: {
     name: 'Klachten',
     href: '/klachten'
   }, {
-    name: 'Alle trajecten',
+    name: '1:1 begeleiding',
     href: '/behandelingen'
-  }, {
-    name: '1:1 Bloedsuikertraject',
-    href: '/bloedsuikertraject'
-  }, {
-    name: '1:1 Hormoontraject',
-    href: '/hormoontraject'
-  }, {
-    name: '1:1 Darmtraject',
-    href: '/darmtraject'
   }, {
     name: 'Labonderzoek',
     href: '/labonderzoek'
