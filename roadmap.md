@@ -17,3 +17,4 @@
 - [x] Footer: Over-kolom opvolgen met Over mij, kennismaking, contact, samenwerkingen, veelgestelde vragen en daaronder het adres
 - [x] Footer: Aanbod-kolom inkorten tot Klachten, 1:1 begeleiding, Labonderzoek, De CIRCLE-methode, Webshop
 - [x] Blok 'Benieuwd welk traject bij jou past?' van de homepage halen
+- [x] Op de homepage de Instagram-sectie en het blok 'Laten we kennismaken' van volgorde omdraaien
