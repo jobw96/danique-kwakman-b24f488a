@@ -694,23 +694,32 @@ export const Layout: React.FC<LayoutProps> = ({
         background: 'linear-gradient(135deg, rgba(157,170,198,0.12) 0%, rgba(216,204,171,0.08) 100%)'
       }} />
 
-        <div className="relative z-10 container mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
-          <div className="mb-6 flex items-center gap-3">
-            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto" loading="lazy" decoding="async" />
+        <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
+          {/* Bovenste rij: logo, slagzin en de kennismakingsknop */}
+          <div className="mb-14 flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:gap-12 md:text-left">
+            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto shrink-0" loading="lazy" decoding="async" />
+            <p className="max-w-xs font-serif text-2xl leading-snug text-foreground md:text-center md:text-3xl">
+              Orthomoleculair hormoon- en darmtherapeut voor vrouwen
+            </p>
+            <m.button
+              type="button"
+              onClick={openModal}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-10 py-4 text-base font-medium text-white transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 motion-reduce:transition-none"
+            >
+              Plan een gratis kennismaking in
+            </m.button>
           </div>
-
-          <p className="text-muted-foreground max-w-xl text-sm md:text-base leading-relaxed mb-6">
-            Orthomoleculair hormoon- en darmtherapeut voor vrouwen in Hoorn en online. Ik help bij hormonale disbalans, PCOS, PMS, PDS, darmklachten en bloedsuikerschommelingen. Zodat je begrijpt wat er in je lichaam speelt en weer grip krijgt op je gezondheid.
-          </p>
 
           {/* Elke pagina is vanaf elke pagina bereikbaar: de dropdowns in de
               header renderen pas bij hover, dus dit is het crawlpad. */}
-          <nav className="w-full max-w-3xl mb-10 grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-8 text-left" aria-label="Footernavigatie">
+          <nav className="mb-14 grid grid-cols-2 gap-x-8 gap-y-10 text-left sm:grid-cols-4" aria-label="Footernavigatie">
             {footerNav.map(group => <div key={group.title}>
-                <h2 className="text-xs font-medium uppercase tracking-wider text-foreground/70 mb-3">
+                <h2 className="mb-4 text-base font-medium text-foreground underline decoration-foreground/40 underline-offset-4">
                   {group.title}
                 </h2>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-3">
                   {group.links.map(item => item.modal ? <li key={item.name}>
                       <m.button type="button" onClick={openModal} className="text-sm font-light text-muted-foreground hover:text-foreground transition-colors text-left" whileHover={{
                       color: "hsl(var(--foreground))"
@@ -726,56 +735,38 @@ export const Layout: React.FC<LayoutProps> = ({
                     </li> : null)}
                 </ul>
               </div>)}
+
+            <div>
+              <h2 className="mb-4 text-base font-medium text-foreground underline decoration-foreground/40 underline-offset-4">
+                Contact
+              </h2>
+              <ul className="flex flex-col gap-3 text-sm font-light text-muted-foreground">
+                <li>Danique Kwakman</li>
+                <li>Muntstraat 18<br />1621 GB Hoorn</li>
+                <li>
+                  <a href="mailto:info@daniquekwakman.nl" className="hover:text-foreground transition-colors">
+                    info@daniquekwakman.nl
+                  </a>
+                </li>
+              </ul>
+              <div className="mt-5 flex items-center gap-5">
+                <m.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op Instagram" whileHover={{ color: "hsl(var(--foreground))" }} transition={{ duration: 0.3 }}>
+                  <Instagram size={20} strokeWidth={1.5} />
+                </m.a>
+                <m.a href="https://www.tiktok.com/@danique.kwakman?_r=1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{ color: "hsl(var(--foreground))" }} transition={{ duration: 0.3 }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                  </svg>
+                </m.a>
+                <m.a href="mailto:info@daniquekwakman.nl" className="text-muted-foreground" aria-label="Mail Danique Kwakman" whileHover={{ color: "hsl(var(--foreground))" }} transition={{ duration: 0.3 }}>
+                  <Mail size={20} strokeWidth={1.5} />
+                </m.a>
+                <m.a href="https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Luister naar de podcast Health & Hormone Secrets op Spotify" whileHover={{ color: "hsl(var(--foreground))" }} transition={{ duration: 0.3 }}>
+                  <SpotifyIcon width={20} height={20} />
+                </m.a>
+              </div>
+            </div>
           </nav>
-
-          <p className="-mt-6 mb-10 text-sm font-light text-muted-foreground">
-            Muntstraat 18, 1621 GB Hoorn
-          </p>
-
-          <div className="flex items-center gap-8 mb-8">
-            <m.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op Instagram" whileHover={{
-            color: "hsl(var(--foreground))",
-            y: -4
-          }} transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 25
-          }}>
-              <Instagram size={26} strokeWidth={1.5} />
-            </m.a>
-            <m.a href="https://www.tiktok.com/@danique.kwakman?_r=1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op TikTok" whileHover={{
-            color: "hsl(var(--foreground))",
-            y: -4
-          }} transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 25
-          }}>
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-              </svg>
-            </m.a>
-            <m.a href="mailto:info@daniquekwakman.nl" className="text-muted-foreground" aria-label="Mail Danique Kwakman" whileHover={{
-            color: "hsl(var(--foreground))",
-            y: -4
-          }} transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 25
-          }}>
-            <Mail size={26} strokeWidth={1.5} />
-            </m.a>
-            <m.a href="https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=8dcc75c1583f40e0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Luister naar de podcast Health & Hormone Secrets op Spotify" whileHover={{
-            color: "hsl(var(--foreground))",
-            y: -4
-          }} transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 25
-          }}>
-              <SpotifyIcon width={26} height={26} />
-            </m.a>
-          </div>
 
           {/* CAT & GAT info */}
           <div className="max-w-lg mb-6">
