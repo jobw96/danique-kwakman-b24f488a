@@ -718,14 +718,26 @@ export const Layout: React.FC<LayoutProps> = ({
                   {group.title}
                 </h2>
                 <ul className="flex flex-col gap-2">
-                  {group.links.map(item => <li key={item.href}>
+                  {group.links.map(item => item.modal ? <li key={item.name}>
+                      <m.button type="button" onClick={openModal} className="text-sm font-light text-muted-foreground hover:text-foreground transition-colors text-left" whileHover={{
+                      color: "hsl(var(--foreground))"
+                    }} transition={{
+                      duration: 0.3
+                    }}>
+                        {item.name}
+                      </m.button>
+                    </li> : item.href ? <li key={item.href}>
                       <Link to={item.href} className="text-sm font-light text-muted-foreground hover:text-foreground transition-colors">
                         {item.name}
                       </Link>
-                    </li>)}
+                    </li> : null)}
                 </ul>
               </div>)}
           </nav>
+
+          <p className="-mt-6 mb-10 text-sm font-light text-muted-foreground">
+            Muntstraat 18, 1621 GB Hoorn
+          </p>
 
           <div className="flex items-center gap-8 mb-8">
             <m.a href="https://www.instagram.com/daniquekwakman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground" aria-label="Volg Danique Kwakman op Instagram" whileHover={{
