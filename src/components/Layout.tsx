@@ -695,9 +695,13 @@ export const Layout: React.FC<LayoutProps> = ({
         <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
           {/* Bovenste rij: slagzin en de kennismakingsknop */}
           <div className="mb-14 flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:gap-12 md:text-left">
-            <p className="max-w-lg font-sans text-sm leading-relaxed font-light text-foreground md:text-center">
-              Orthomoleculair hormoon- en darmtherapeut voor vrouwen in Hoorn en online. Ik help bij hormonale disbalans, PCOS, PMS, PDS, darmklachten en bloedsuikerschommelingen. Zodat je begrijpt wat er in je lichaam speelt en weer grip krijgt op je gezondheid.
-            </p>
+            <div className="flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-8">
+              <img loading="lazy" decoding="async" src={logoFull} alt="Danique Kwakman" className="h-10 w-auto shrink-0" />
+              <p className="max-w-lg font-sans text-sm leading-relaxed font-light text-foreground md:text-center">
+                Orthomoleculair hormoon- en darmtherapeut voor vrouwen in Hoorn en online. Ik help bij hormonale disbalans, PCOS, PMS, PDS, darmklachten en bloedsuikerschommelingen. Zodat je begrijpt wat er in je lichaam speelt en weer grip krijgt op je gezondheid.
+              </p>
+            </div>
+
 
             <m.button
               type="button"
