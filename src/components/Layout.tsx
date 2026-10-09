@@ -699,7 +699,7 @@ export const Layout: React.FC<LayoutProps> = ({
           <div className="mb-14 flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:gap-12 md:text-left">
             <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto shrink-0" loading="lazy" decoding="async" />
             <p className="max-w-xs font-serif text-2xl leading-snug text-foreground md:text-center md:text-3xl">
-              Orthomoleculair hormoon- en darmtherapeut voor vrouwen
+              Orthomoleculair hormoon- en darmtherapeut 
             </p>
             <m.button
               type="button"
