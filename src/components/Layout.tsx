@@ -18,7 +18,15 @@ const MotionLink = m.create(Link);
 
 // Footernavigatie — dekt ook de pagina's die in de header achter een dropdown
 // zitten, zodat elke pagina vanaf elke pagina één klik verwijderd is.
-const footerNav = [{
+type FooterLink = {
+  name: string;
+  href?: string;
+  modal?: boolean;
+};
+const footerNav: {
+  title: string;
+  links: FooterLink[];
+}[] = [{
   title: 'Aanbod',
   links: [{
     name: 'Klachten',
@@ -75,11 +83,14 @@ const footerNav = [{
     name: 'Over mij',
     href: '/over-mij'
   }, {
-    name: 'Samenwerkingen',
-    href: '/samenwerking'
+    name: 'Plan een gratis kennismaking in',
+    modal: true
   }, {
     name: 'Contact',
     href: '/contact'
+  }, {
+    name: 'Samenwerkingen',
+    href: '/samenwerking'
   }, {
     name: 'Veelgestelde vragen',
     href: '/faq'
