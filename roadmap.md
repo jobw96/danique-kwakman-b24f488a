@@ -16,3 +16,4 @@
 - [x] Blok 'Alles wat je krijgt' (uitklapmenu 'Dit krijg je tijdens de gratis challenge') van de challengepagina verwijderen
 - [x] Footer: Over-kolom opvolgen met Over mij, kennismaking, contact, samenwerkingen, veelgestelde vragen en daaronder het adres
 - [x] Footer: Aanbod-kolom inkorten tot Klachten, 1:1 begeleiding, Labonderzoek, De CIRCLE-methode, Webshop
+- [x] Blok 'Benieuwd welk traject bij jou past?' van de homepage halen
