@@ -777,13 +777,7 @@ export const Layout: React.FC<LayoutProps> = ({
               <img alt="GAT - Geschilleninstantie Alternatieve Therapeuten" className="h-12 w-auto" src="/gat-logo.png" loading="lazy" decoding="async" />
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed mb-2">
-              Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).
-            </p>
-            <p className="text-xs text-muted-foreground">
-              Voor meer informatie over mijn klachtenregeling zie{' '}
-              <a href="https://gatgeschillen.nl" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">
-                gatgeschillen.nl
-              </a>
+              Danique Kwakman is aangesloten bij CAT (Collectief Alternatieve Therapeuten) en GAT (Geschilleninstantie Alternatieve Therapeuten).&nbsp;Voor meer informatie over mijn klachtenregeling zie&nbsp;gatgeschillen.nl
             </p>
           </div>
 
