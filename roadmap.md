@@ -18,3 +18,5 @@
 - [x] Footer: Aanbod-kolom inkorten tot Klachten, 1:1 begeleiding, Labonderzoek, De CIRCLE-methode, Webshop
 - [x] Blok 'Benieuwd welk traject bij jou past?' van de homepage halen
 - [x] Op de homepage de Instagram-sectie en het blok 'Laten we kennismaken' van volgorde omdraaien
+- [x] Footer in nieuwe stijl: logo weg, volledige slagzin terug, knop 'Plan een gratis kennismaking in' prominent, geen telefoonnummer; dubbele kennismaking-link uit de Over-kolom gehaald
+
