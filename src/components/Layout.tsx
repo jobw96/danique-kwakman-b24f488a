@@ -695,12 +695,12 @@ export const Layout: React.FC<LayoutProps> = ({
       }} />
 
         <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
-          {/* Bovenste rij: logo, slagzin en de kennismakingsknop */}
+          {/* Bovenste rij: slagzin en de kennismakingsknop */}
           <div className="mb-14 flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:gap-12 md:text-left">
-            <img src={logoFull} alt="Danique Kwakman - orthomoleculair therapeut voor vrouwen" className="h-12 w-auto shrink-0" loading="lazy" decoding="async" />
-            <p className="max-w-xs font-serif text-2xl leading-snug text-foreground md:text-center md:text-3xl">
-              Orthomoleculair hormoon- en darmtherapeut 
+            <p className="max-w-lg font-serif text-xl leading-relaxed text-foreground md:text-center md:text-2xl">
+              Orthomoleculair hormoon- en darmtherapeut voor vrouwen in Hoorn en online. Ik help bij hormonale disbalans, PCOS, PMS, PDS, darmklachten en bloedsuikerschommelingen. Zodat je begrijpt wat er in je lichaam speelt en weer grip krijgt op je gezondheid.
             </p>
+
             <m.button
               type="button"
               onClick={openModal}
