@@ -14,3 +14,4 @@
 - [x] Blok 'In 5 dagen' (quote) van de challengepagina verwijderen
 - [x] Linktree: challenge bovenaan met 'Gut & hormone reset challenge' en ondertitel 'start 12 okt - meld je gratis aan' (e-bookknop verwijderd)
 - [x] Blok 'Alles wat je krijgt' (uitklapmenu 'Dit krijg je tijdens de gratis challenge') van de challengepagina verwijderen
+- [x] Footer: Over-kolom opvolgen met Over mij, kennismaking, contact, samenwerkingen, veelgestelde vragen en daaronder het adres
