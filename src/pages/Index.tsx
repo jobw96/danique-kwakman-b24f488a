@@ -387,7 +387,6 @@ const Index = () => {
             om zelf voedzame maaltijden samen te stellen. Zodat gezond eten voor je&nbsp;
             hormonen, darmen en energie&nbsp;makkelijker wordt, zonder ingewikkelde ingrediënten of uren in de keuken.
           </p>
-          <p className="font-serif text-3xl md:text-4xl text-foreground mb-8">Nu voor {EBOOK_PRICE}</p>
           <div className="flex flex-wrap items-center gap-4">
             <a href={EBOOK_CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
               <CustomButton>Bestel direct</CustomButton>
