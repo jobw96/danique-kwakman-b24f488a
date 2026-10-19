@@ -23,4 +23,5 @@
 - [x] Linktree: 'rondom je menstruatie' in de e-bookknop en podcastknop 'Beluister mijn podcast' met de naam eronder in kleine letters
 - [x] Footer: adres heel klein onder de social-iconen als 'Muntstraat 18 in Hoorn en online' (losse adresregel uit de Contact-kolom gehaald)
 - [x] Linktree: 'Muntstraat 18 in Hoorn en online' onder de social-iconen (13px) en in de footer iets groter gezet dan daarvoor
+- [x] Prijzen onder 'Bekijk traject' op de aanbiedkaarten (homepage en aanbodpagina): €325 eenmalig, €249 p/m, €299 p/m
 
