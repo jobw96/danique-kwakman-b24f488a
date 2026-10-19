@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { m, AnimatePresence } from 'framer-motion';
-import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass, Heart, ShoppingBag } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Mic, Calendar, Globe, Compass, Heart, ShoppingBag, BookOpen } from 'lucide-react';
 import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
@@ -12,27 +12,26 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "Gut & hormone reset challenge",
-    subtitle: "start 12 okt - meld je gratis aan",
-    href: "/challenge",
-    icon: Sparkles,
+    title: "Download je 5 gratis recepten om je zoete cravings te stillen rondom je menstruatie",
+    href: "/e-book-recepten-snacks",
+    icon: BookOpen,
     internal: true
   },
   {
-    title: "Gratis kennismaking",
+    title: "Plan je gratis kennismaking in",
     href: "",
     icon: Calendar,
     internal: false,
     isBooking: true
   },
   {
-    title: "Aanbod & trajecten",
+    title: "Klik hier voor mijn aanbod en trajecten",
     href: "/behandelingen",
     icon: Compass,
     internal: true
   },
   {
-    title: "Website",
+    title: "Bekijk hier mijn website",
     href: "/",
     icon: Globe,
     internal: true
@@ -41,7 +40,8 @@ const LINKS = [
 
 const CONNECT_LINKS = [
   {
-    title: "Podcast: Health and Hormone Secrets",
+    title: "Beluister mijn podcast",
+    subtitle: "Health and Hormone Secrets",
     href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA",
     icon: Mic,
     internal: false
