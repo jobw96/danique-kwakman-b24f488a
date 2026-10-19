@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { m, AnimatePresence } from 'framer-motion';
-import { Instagram, Linkedin, Mail, Sparkles, Mic, Calendar, Globe, Compass, Heart, ShoppingBag, BookOpen } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Mic, Calendar, Globe, Compass, Heart, ShoppingBag, BookOpen } from 'lucide-react';
 import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
