@@ -744,7 +744,6 @@ export const Layout: React.FC<LayoutProps> = ({
               </h2>
               <ul className="flex flex-col gap-3 text-sm font-light text-muted-foreground">
                 <li>Danique Kwakman</li>
-                <li>Muntstraat 18<br />1621 GB Hoorn</li>
                 <li>
                   <a href="mailto:info@daniquekwakman.nl" className="hover:text-foreground transition-colors">
                     info@daniquekwakman.nl
@@ -767,6 +766,9 @@ export const Layout: React.FC<LayoutProps> = ({
                   <SpotifyIcon width={20} height={20} />
                 </m.a>
               </div>
+              <p className="mt-4 text-[10px] font-light leading-snug text-muted-foreground/70">
+                Muntstraat 18 in Hoorn en online
+              </p>
             </div>
           </nav>
 
