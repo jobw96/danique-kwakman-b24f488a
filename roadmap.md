@@ -25,4 +25,5 @@
 - [x] Linktree: 'Muntstraat 18 in Hoorn en online' onder de social-iconen (13px) en in de footer iets groter gezet dan daarvoor
 - [x] Prijzen onder 'Bekijk traject' op de aanbiedkaarten (homepage en aanbodpagina): €325 eenmalig, €249 p/m, €299 p/m
 - [x] Kennismaking-knop uit de navigatiebalk bovenaan halen (in het openbare menu blijft 'Gratis kennismaking' staan)
+- [x] Challenge volledig van de site gehaald: pagina en route verwijderd, uit het Gratis-uitklapmenu, de footerkolom, de sitemap en de alleen daarvoor gebruikte foto's; /challenge toont nu de niet-found pagina
 
