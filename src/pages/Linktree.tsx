@@ -328,6 +328,10 @@ const Linktree: React.FC = () => {
               </m.a>
             ))}
           </div>
+
+          <p className="mt-5 text-center text-[13px] font-light text-primary-foreground/70">
+            Muntstraat 18 in Hoorn en online
+          </p>
         </m.div>
 
         {/* Footer */}

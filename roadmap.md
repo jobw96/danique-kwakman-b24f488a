@@ -22,4 +22,5 @@
 - [x] Linktree: challenge bovenaan vervangen door het gratis e-book '5 recepten om je zoete cravings te stillen' en de knoppen 'Plan je gratis kennismaking in', 'Klik hier voor mijn aanbod en trajecten' en 'Bekijk hier mijn website'
 - [x] Linktree: 'rondom je menstruatie' in de e-bookknop en podcastknop 'Beluister mijn podcast' met de naam eronder in kleine letters
 - [x] Footer: adres heel klein onder de social-iconen als 'Muntstraat 18 in Hoorn en online' (losse adresregel uit de Contact-kolom gehaald)
+- [x] Linktree: 'Muntstraat 18 in Hoorn en online' onder de social-iconen (13px) en in de footer iets groter gezet dan daarvoor
 

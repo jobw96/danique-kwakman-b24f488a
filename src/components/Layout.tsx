@@ -766,7 +766,7 @@ export const Layout: React.FC<LayoutProps> = ({
                   <SpotifyIcon width={20} height={20} />
                 </m.a>
               </div>
-              <p className="mt-4 text-[10px] font-light leading-snug text-muted-foreground/70">
+              <p className="mt-4 text-[13px] font-light leading-snug text-muted-foreground">
                 Muntstraat 18 in Hoorn en online
               </p>
             </div>
