@@ -467,20 +467,6 @@ export const Layout: React.FC<LayoutProps> = ({
               </div>;
           })}
 
-            <div className="ml-4">
-              <m.button onClick={handleExternalLink} className="text-xs font-medium px-5 py-2.5 rounded-md bg-primary text-primary-foreground" whileHover={{
-              y: -2,
-              opacity: 0.9
-            }} whileTap={{
-              scale: 0.98
-            }} transition={{
-              type: "spring",
-              stiffness: 400,
-              damping: 25
-            }}>
-                Kennismaking
-              </m.button>
-            </div>
           </nav>
 
           <m.button 
