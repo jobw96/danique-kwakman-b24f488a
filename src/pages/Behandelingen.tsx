@@ -21,21 +21,24 @@ const treatments = [
     image: daniqueBloedsuiker,
     title: "1:1 Bloedsuikertraject",
     description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.",
-    href: "/bloedsuikertraject"
+    href: "/bloedsuikertraject",
+    price: '€325 eenmalig'
   },
   {
     id: 'hormoontraject',
     image: daniqueGlowup,
     title: "1:1 Hormoontraject",
     description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
-    href: "/hormoontraject"
+    href: "/hormoontraject",
+    price: '€249 p/m'
   },
   {
     id: 'darmtraject',
     image: daniqueDarm,
     title: "1:1 Darmtraject Therapie",
     description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
-    href: "/darmtraject"
+    href: "/darmtraject",
+    price: '€299 p/m'
   }
 ];
 
@@ -156,6 +159,7 @@ const Behandelingen = () => {
                     >
                       Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
                     </m.div>
+                    <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>
                   </div>
                 </m.div>
               </Link>
