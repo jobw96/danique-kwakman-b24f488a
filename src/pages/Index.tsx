@@ -251,6 +251,7 @@ const Index = () => {
                     }}>
                       Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
                     </m.div>
+                    <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>
                   </div>
                 </m.div>
               </Link>
