@@ -12,7 +12,7 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "Download je 5 gratis recepten om je zoete cravings te stillen voor je menstruatie",
+    title: "Download je 5 gratis recepten om je zoete cravings te stillen rondom je menstruatie",
     href: "/e-book-recepten-snacks",
     icon: BookOpen,
     internal: true
@@ -40,7 +40,8 @@ const LINKS = [
 
 const CONNECT_LINKS = [
   {
-    title: "Podcast: Health and Hormone Secrets",
+    title: "Beluister mijn podcast",
+    subtitle: "Health and Hormone Secrets",
     href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA",
     icon: Mic,
     internal: false
