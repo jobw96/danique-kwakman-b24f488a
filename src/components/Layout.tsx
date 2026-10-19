@@ -744,7 +744,6 @@ export const Layout: React.FC<LayoutProps> = ({
               </h2>
               <ul className="flex flex-col gap-3 text-sm font-light text-muted-foreground">
                 <li>Danique Kwakman</li>
-                <li>Muntstraat 18<br />1621 GB Hoorn</li>
                 <li>
                   <a href="mailto:info@daniquekwakman.nl" className="hover:text-foreground transition-colors">
                     info@daniquekwakman.nl
