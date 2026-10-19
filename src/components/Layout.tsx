@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, ArrowUpRight, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, Zap, UtensilsCrossed, Compass, FlaskConical, FileText, User, HeartHandshake, HelpCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowUpRight, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, UtensilsCrossed, Compass, FlaskConical, FileText, User, HeartHandshake, HelpCircle } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -47,9 +47,6 @@ const footerNav: {
 }, {
   title: 'Gratis',
   links: [{
-    name: 'Gut & hormone reset challenge',
-    href: '/challenge'
-  }, {
     name: 'Blog',
     href: '/blog'
   }, {
@@ -114,7 +111,6 @@ const GEEN_AANBOD_CTA = [
   '/bloedsuikertraject',
   '/hormoontraject',
   '/darmtraject',
-  '/challenge',
   '/klachten',
 ];
 
@@ -226,11 +222,6 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Gratis',
     subItems: [{
-      name: 'Gut & hormone harmony reset challenge\n',
-      href: '/challenge',
-      description: '',
-      icon: Zap
-    }, {
       name: 'Blog',
       href: '/blog',
       description: '',
