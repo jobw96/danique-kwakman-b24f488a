@@ -12,10 +12,11 @@ const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your
 
 const LINKS = [
   {
-    title: "Download je 5 gratis recepten om je zoete cravings te stillen rondom je menstruatie",
-    href: "/e-book-recepten-snacks",
+    title: "Nourish your body",
+    subtitle: "50+ hormoonproof en darmvriendelijke recepten",
+    href: NOURISH_URL,
     icon: BookOpen,
-    internal: true
+    internal: false
   },
   {
     title: "Plan je gratis kennismaking in",
