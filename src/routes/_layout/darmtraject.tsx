@@ -6,7 +6,7 @@ import Darmtraject from "@/pages/Darmtraject";
 export const Route = createFileRoute("/_layout/darmtraject")({
   head: () => seoHead({
     path: "/darmtraject",
-    title: "1:1 Darmtraject Therapie | Lab onderzoek",
+    title: "1:1 Darmtraject | Lab onderzoek",
     description: "Diepgaand 1:1 darmtraject met gericht laboratoriumonderzoek om tot de kern van jouw klacht te komen. Persoonlijke begeleiding door Danique Kwakman.",
     schemas: [
       serviceSchema({

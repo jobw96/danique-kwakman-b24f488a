@@ -98,7 +98,7 @@ const trajectories = [
   {
     href: '/darmtraject',
     image: daniqueDarm,
-    title: '1:1 Darmtraject Therapie',
+    title: '1:1 Darmtraject',
     description: 'Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.',
   },
 ];
