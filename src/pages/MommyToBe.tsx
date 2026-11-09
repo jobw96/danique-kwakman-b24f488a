@@ -7,6 +7,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import { Link } from '@/lib/router-compat';
 import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
+import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueTowel from '@/assets/danique-towel.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
