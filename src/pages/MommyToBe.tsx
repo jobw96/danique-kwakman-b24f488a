@@ -7,10 +7,9 @@ import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import { Link } from '@/lib/router-compat';
 import { GENERAL_TESTIMONIALS } from '@/data/testimonials';
-import daniqueBeach from '@/assets/danique-beach.webp';
-import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueWalkingBeach from '@/assets/danique-walking-beach.webp';
 import daniqueTowel from '@/assets/danique-towel.webp';
+import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import buikDuinenAsset from '@/assets/sfeer/buik-duinen-darmtraject.webp.asset.json';
 import kookboekAsset from '@/assets/sfeer/kookboek-strandlaken.webp.asset.json';
 
@@ -244,8 +243,8 @@ const MommyToBe = () => {
             <FadeIn immediate delay={0.15}>
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <ParallaxImage
-                  src={daniqueBeach}
-                  alt="Danique Kwakman glimlacht in een lichtblauwen kanten top in de duinen tijdens het 1:1 Mommy (to be) traject"
+                  src={daniqueWalkingBeach}
+                  alt="Danique Kwakman rent in een lange crèmekleurige jurk langs de waterkant op het strand tijdens het 1:1 Mommy (to be) traject"
                   title="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut"
                   className="h-full w-full"
                   eager
@@ -573,14 +572,14 @@ const MommyToBe = () => {
           <FadeIn className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-secondary/50 bg-card">
             <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
               <img
-                src={daniqueWalkingBeach}
-                alt="Danique Kwakman rent in een lange crèmekleurige jurk langs de waterkant op het strand"
+                src={daniqueRelaxed}
+                alt="Danique Kwakman zit in de duinen op een geel-wit gestreepte doek en leest een kookboek"
                 title="Vijf maanden persoonlijke begeleiding tijdens het 1:1 Mommy (to be) traject"
-                width={682}
-                height={1024}
+                width={1920}
+                height={1279}
                 loading="lazy"
                 decoding="async"
-                className="h-72 w-full object-cover object-[center_35%] lg:h-full"
+                className="h-72 w-full object-cover object-[70%_center] lg:h-full"
               />
               <div className="p-8 md:p-12">
                 <SectionLabel text="Investering" />
