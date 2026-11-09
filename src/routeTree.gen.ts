@@ -28,6 +28,7 @@ import { Route as LayoutGlowupRouteImport } from './routes/_layout/glowup'
 import { Route as LayoutHormoontrajectRouteImport } from './routes/_layout/hormoontraject'
 import { Route as LayoutLabonderzoekRouteImport } from './routes/_layout/labonderzoek'
 import { Route as LayoutMethodRouteImport } from './routes/_layout/method'
+import { Route as LayoutMommyToBeRouteImport } from './routes/_layout/mommy-to-be'
 import { Route as LayoutNieuwsbriefRouteImport } from './routes/_layout/nieuwsbrief'
 import { Route as LayoutOverMijRouteImport } from './routes/_layout/over-mij'
 import { Route as LayoutPodcastRouteImport } from './routes/_layout/podcast'
@@ -141,6 +142,11 @@ const LayoutMethodRoute = LayoutMethodRouteImport.update({
   path: '/method',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutMommyToBeRoute = LayoutMommyToBeRouteImport.update({
+  id: '/mommy-to-be',
+  path: '/mommy-to-be',
+  getParentRoute: () => LayoutRoute,
+} as any)
 const LayoutNieuwsbriefRoute = LayoutNieuwsbriefRouteImport.update({
   id: '/nieuwsbrief',
   path: '/nieuwsbrief',
@@ -232,6 +238,7 @@ export interface FileRoutesByFullPath {
   '/hormoontraject': typeof LayoutHormoontrajectRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
   '/method': typeof LayoutMethodRoute
+  '/mommy-to-be': typeof LayoutMommyToBeRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
   '/over-mij': typeof LayoutOverMijRoute
   '/podcast': typeof LayoutPodcastRoute
@@ -265,6 +272,7 @@ export interface FileRoutesByTo {
   '/hormoontraject': typeof LayoutHormoontrajectRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
   '/method': typeof LayoutMethodRoute
+  '/mommy-to-be': typeof LayoutMommyToBeRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
   '/over-mij': typeof LayoutOverMijRoute
   '/podcast': typeof LayoutPodcastRoute
@@ -301,6 +309,7 @@ export interface FileRoutesById {
   '/_layout/hormoontraject': typeof LayoutHormoontrajectRoute
   '/_layout/labonderzoek': typeof LayoutLabonderzoekRoute
   '/_layout/method': typeof LayoutMethodRoute
+  '/_layout/mommy-to-be': typeof LayoutMommyToBeRoute
   '/_layout/nieuwsbrief': typeof LayoutNieuwsbriefRoute
   '/_layout/over-mij': typeof LayoutOverMijRoute
   '/_layout/podcast': typeof LayoutPodcastRoute
@@ -338,6 +347,7 @@ export interface FileRouteTypes {
     | '/hormoontraject'
     | '/labonderzoek'
     | '/method'
+    | '/mommy-to-be'
     | '/nieuwsbrief'
     | '/over-mij'
     | '/podcast'
@@ -371,6 +381,7 @@ export interface FileRouteTypes {
     | '/hormoontraject'
     | '/labonderzoek'
     | '/method'
+    | '/mommy-to-be'
     | '/nieuwsbrief'
     | '/over-mij'
     | '/podcast'
@@ -406,6 +417,7 @@ export interface FileRouteTypes {
     | '/_layout/hormoontraject'
     | '/_layout/labonderzoek'
     | '/_layout/method'
+    | '/_layout/mommy-to-be'
     | '/_layout/nieuwsbrief'
     | '/_layout/over-mij'
     | '/_layout/podcast'
@@ -564,6 +576,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutMethodRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/mommy-to-be': {
+      id: '/_layout/mommy-to-be'
+      path: '/mommy-to-be'
+      fullPath: '/mommy-to-be'
+      preLoaderRoute: typeof LayoutMommyToBeRouteImport
+      parentRoute: typeof LayoutRoute
+    }
     '/_layout/nieuwsbrief': {
       id: '/_layout/nieuwsbrief'
       path: '/nieuwsbrief'
@@ -681,6 +700,7 @@ interface LayoutRouteChildren {
   LayoutHormoontrajectRoute: typeof LayoutHormoontrajectRoute
   LayoutLabonderzoekRoute: typeof LayoutLabonderzoekRoute
   LayoutMethodRoute: typeof LayoutMethodRoute
+  LayoutMommyToBeRoute: typeof LayoutMommyToBeRoute
   LayoutNieuwsbriefRoute: typeof LayoutNieuwsbriefRoute
   LayoutOverMijRoute: typeof LayoutOverMijRoute
   LayoutPodcastRoute: typeof LayoutPodcastRoute
@@ -714,6 +734,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutHormoontrajectRoute: LayoutHormoontrajectRoute,
   LayoutLabonderzoekRoute: LayoutLabonderzoekRoute,
   LayoutMethodRoute: LayoutMethodRoute,
+  LayoutMommyToBeRoute: LayoutMommyToBeRoute,
   LayoutNieuwsbriefRoute: LayoutNieuwsbriefRoute,
   LayoutOverMijRoute: LayoutOverMijRoute,
   LayoutPodcastRoute: LayoutPodcastRoute,

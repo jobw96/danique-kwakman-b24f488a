@@ -47,10 +47,9 @@ const treatments: Treatment[] = [
     id: 'mommy-to-be',
     image: daniqueBeach,
     title: "1:1 Mommy (to be) traject",
-    description: "Coming soon",
-    href: '',
-    price: '',
-    comingSoon: true
+    description: "Met het 1:1 Mommy (to be) traject help ik je stap voor stap de juiste puzzelstukjes samenbrengen. Met aandacht voor je hormonen, darmen, voeding en leefstijl, van kinderwens tot zwangerschap en postpartum.",
+    href: "/mommy-to-be",
+    price: '€149 p/m'
   },
   {
     id: 'darmtraject',
@@ -102,10 +101,13 @@ const explanations: Explanation[] = [
   {
     id: 'mommy-to-be',
     title: '1:1 Mommy (to be) traject',
-    href: '',
-    meta: 'Coming soon',
-    linkLabel: '',
-    body: ['Meer informatie over dit traject volgt.'],
+    href: '/mommy-to-be',
+    meta: '5 maanden · online of in Hoorn',
+    linkLabel: 'Alles over het Mommy (to be) traject',
+    body: [
+      'Je wilt je lichaam zo goed mogelijk ondersteunen, van kinderwens en zwangerschap tot herstel na de bevalling. Of je nu graag zwanger wilt worden, al een tijdje probeert, zwanger bent of wilt werken aan je postpartum herstel? In iedere fase kijken we naar wat jouw lichaam nodig heeft.',
+      'Het traject loopt vijf maanden en bestaat uit vijf afspraken: een uitgebreide intake en vier vervolgconsulten. We brengen je hormonen, darmen, voeding en leefstijl in kaart en stemmen je plan af op de fase waarin je zit. Tussen de afspraken door ben ik bereikbaar via WhatsApp.',
+    ],
   },
   {
     id: 'darmtraject',
