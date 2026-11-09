@@ -31,7 +31,7 @@ const treatments: Treatment[] = [
     id: 'bloedsuikertraject',
     image: daniqueBloedsuiker,
     title: "1:1 Bloedsuikertraject",
-    description: "Met het 1:1 bloedsuikertraject krijg je in 2 weken inzicht in hoe jouw lichaam reageert op voeding, stress, beweging en slaap. Je ontdekt wat zorgt voor pieken en dalen in je bloedsuikerspiegel en leert met praktische veranderingen bouwen aan meer energie, minder cravings en een stabiele basis voor je hormonen",
+    description: "Met het 1:1 bloedsuikertraject krijg je in 2 weken inzicht in hoe jouw lichaam reageert op voeding, stress, beweging en slaap. Je ontdekt wat zorgt voor pieken en dalen in je bloedsuikerspiegel en leert met praktische veranderingen bouwen aan meer energie, minder cravings en een stabiele basis voor je hormonen.",
     href: "/bloedsuikertraject",
     price: '€325 eenmalig'
   },
