@@ -15,6 +15,7 @@ import heroImage from '@/assets/hero-foto.webp';
 import heroImageMobile from '@/assets/hero-foto-mobile.webp';
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
 import daniqueMatchCall from '@/assets/danique-match-call.webp';
@@ -25,7 +26,16 @@ import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 const EBOOK_CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
 const EBOOK_PRICE = '€39,99';
 
-const TREATMENTS = [{
+type Treatment = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  price?: string;
+  comingSoon?: boolean;
+};
+
+const TREATMENTS: Treatment[] = [{
   id: 'bloedsuikertraject',
   title: "1:1 Bloedsuikertraject",
   description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met behulp van een 14-daagse glucosesensor.",
@@ -37,6 +47,12 @@ const TREATMENTS = [{
   description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
   image: hetProces,
   price: '€249 p/m'
+}, {
+  id: 'mommy-to-be',
+  title: "1:1 Mommy (to be) traject",
+  description: "Coming soon",
+  image: daniqueBeach,
+  comingSoon: true
 }, {
   id: 'darmtraject',
   title: "1:1 Darmtraject",
@@ -217,44 +233,43 @@ const Index = () => {
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h2>
         </FadeIn>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {TREATMENTS.map((treatment, index) => {
           const linkPath = `/${treatment.id}`;
+          const card = <m.div className={`bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col${treatment.comingSoon ? '' : ' cursor-pointer'}`} whileHover={treatment.comingSoon ? undefined : {
+            y: -8,
+            borderColor: "hsl(var(--primary) / 0.3)"
+          }} transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 25
+          }}>
+            <div className="h-64 overflow-hidden relative">
+              <ParallaxImage src={treatment.image} alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
+              {!treatment.comingSoon && <m.div className="absolute inset-0 bg-foreground/0" whileHover={{
+                backgroundColor: "hsl(var(--foreground) / 0.1)"
+              }} transition={{
+                duration: 0.5
+              }} />}
+            </div>
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h3>
+              <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
+              {!treatment.comingSoon && <m.div className="flex items-center text-primary font-medium mt-auto text-sm" whileHover={{
+                x: 8
+              }} transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 25
+              }}>
+                Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
+              </m.div>}
+              {treatment.price && <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>}
+            </div>
+          </m.div>;
           return (
             <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
-              <Link to={linkPath} className="h-full block">
-                <m.div className="bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col cursor-pointer" whileHover={{
-                  y: -8,
-                  borderColor: "hsl(var(--primary) / 0.3)"
-                }} transition={{
-                  type: "spring",
-                  stiffness: 300,
-                  damping: 25
-                }}>
-                  <div className="h-64 overflow-hidden relative">
-                    <ParallaxImage src={treatment.image} alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
-                    <m.div className="absolute inset-0 bg-foreground/0" whileHover={{
-                      backgroundColor: "hsl(var(--foreground) / 0.1)"
-                    }} transition={{
-                      duration: 0.5
-                    }} />
-                  </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
-                    <m.div className="flex items-center text-primary font-medium mt-auto text-sm" whileHover={{
-                      x: 8
-                    }} transition={{
-                      type: "spring",
-                      stiffness: 300,
-                      damping: 25
-                    }}>
-                      Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
-                    </m.div>
-                    <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>
-                  </div>
-                </m.div>
-              </Link>
+              {treatment.comingSoon ? card : <Link to={linkPath} className="h-full block">{card}</Link>}
             </FadeIn>
           );
         })}

@@ -9,13 +9,24 @@ import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
 );
 
-const treatments = [
+type Treatment = {
+  id: string;
+  image: string;
+  title: string;
+  description: string;
+  href: string;
+  price: string;
+  comingSoon?: boolean;
+};
+
+const treatments: Treatment[] = [
   {
     id: 'bloedsuikertraject',
     image: daniqueBloedsuiker,
@@ -33,6 +44,15 @@ const treatments = [
     price: '€249 p/m'
   },
   {
+    id: 'mommy-to-be',
+    image: daniqueBeach,
+    title: "1:1 Mommy (to be) traject",
+    description: "Coming soon",
+    href: '',
+    price: '',
+    comingSoon: true
+  },
+  {
     id: 'darmtraject',
     image: daniqueDarm,
     title: "1:1 Darmtraject Therapie",
@@ -47,7 +67,16 @@ const treatments = [
  * zelf (voor wie, wat erbij zit, looptijd), zodat deze pagina en de
  * detailpagina's hetzelfde verhaal vertellen.
  */
-const explanations = [
+type Explanation = {
+  id: string;
+  title: string;
+  href: string;
+  meta: string;
+  linkLabel: string;
+  body: string[];
+};
+
+const explanations: Explanation[] = [
   {
     id: 'bloedsuikertraject',
     title: '1:1 Bloedsuikertraject',
@@ -69,6 +98,14 @@ const explanations = [
       'Herken je PMS, PCOS, aanhoudende vermoeidheid of het gevoel dat je hormonen je dag bepalen? In drie maanden werken we toe naar meer rust in je lijf én je hoofd. Niet met een standaardprotocol, maar met een aanpak die volgt wat jouw cyclus en jouw klachten laten zien.',
       'Je krijgt drie persoonlijke sessies van een uur, een behandelplan dat voeding, leefstijl, mindset, je cyclus en je darmgezondheid samenneemt, en praktische hulpmiddelen zoals cyclus-trackers, receptenboeken en werkboeken. Tussen de sessies door heb je intensieve begeleiding via WhatsApp, zodat je niet twee weken met een vraag blijft zitten.',
     ],
+  },
+  {
+    id: 'mommy-to-be',
+    title: '1:1 Mommy (to be) traject',
+    href: '',
+    meta: 'Coming soon',
+    linkLabel: '',
+    body: ['Meer informatie over dit traject volgt.'],
   },
   {
     id: 'darmtraject',
@@ -111,60 +148,61 @@ const Behandelingen = () => {
           </FadeIn>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {treatments.map((treatment, index) => (
-            <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
-              <Link to={treatment.href} className="h-full block">
-                <m.div 
-                  className="bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col cursor-pointer" 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {treatments.map((treatment, index) => {
+            const card = <m.div
+              className={`bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col${treatment.comingSoon ? '' : ' cursor-pointer'}`}
+              whileHover={treatment.comingSoon ? undefined : {
+                y: -8,
+                borderColor: "hsl(var(--primary) / 0.3)"
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 25
+              }}
+            >
+              <div className="h-64 overflow-hidden relative">
+                <ParallaxImage
+                  src={treatment.image}
+                  alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`}
+                  className="w-full h-full"
+                />
+                {!treatment.comingSoon && <m.div
+                  className="absolute inset-0 bg-foreground/0"
                   whileHover={{
-                    y: -8,
-                    borderColor: "hsl(var(--primary) / 0.3)"
-                  }} 
+                    backgroundColor: "hsl(var(--foreground) / 0.1)"
+                  }}
+                  transition={{
+                    duration: 0.5
+                  }}
+                />}
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h2 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h2>
+                <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
+                {!treatment.comingSoon && <m.div
+                  className="flex items-center text-primary font-medium mt-auto text-sm"
+                  whileHover={{
+                    x: 8
+                  }}
                   transition={{
                     type: "spring",
                     stiffness: 300,
                     damping: 25
                   }}
                 >
-                  <div className="h-64 overflow-hidden relative">
-                    <ParallaxImage 
-                      src={treatment.image} 
-                      alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} 
-                      className="w-full h-full" 
-                    />
-                    <m.div 
-                      className="absolute inset-0 bg-foreground/0" 
-                      whileHover={{
-                        backgroundColor: "hsl(var(--foreground) / 0.1)"
-                      }} 
-                      transition={{
-                        duration: 0.5
-                      }} 
-                    />
-                  </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h2 className="font-serif text-xl text-card-foreground mb-3">{treatment.title}</h2>
-                    <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">{treatment.description}</p>
-                    <m.div 
-                      className="flex items-center text-primary font-medium mt-auto text-sm" 
-                      whileHover={{
-                        x: 8
-                      }} 
-                      transition={{
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 25
-                      }}
-                    >
-                      Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
-                    </m.div>
-                    <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>
-                  </div>
-                </m.div>
-              </Link>
-            </FadeIn>
-          ))}
+                  Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
+                </m.div>}
+                {treatment.price && <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>}
+              </div>
+            </m.div>;
+            return (
+              <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
+                {treatment.comingSoon ? card : <Link to={treatment.href} className="h-full block">{card}</Link>}
+              </FadeIn>
+            );
+          })}
         </div>
         
         {/* Toelichting per traject, zodat deze pagina op zichzelf uitlegt
@@ -190,13 +228,13 @@ const Behandelingen = () => {
                       <p key={i} className="text-muted-foreground leading-relaxed">{paragraph}</p>
                     ))}
                   </div>
-                  <Link
+                  {item.href && <Link
                     to={item.href}
                     className="inline-flex items-center text-primary font-medium mt-5 text-sm hover:underline underline-offset-4"
                   >
                     {item.linkLabel}
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>
+                  </Link>}
                 </article>
               </FadeIn>
             ))}
