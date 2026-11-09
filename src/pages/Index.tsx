@@ -15,6 +15,7 @@ import heroImage from '@/assets/hero-foto.webp';
 import heroImageMobile from '@/assets/hero-foto-mobile.webp';
 import daniqueAbout from '@/assets/danique-about.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueRelaxed from '@/assets/danique-relaxed.webp';
 import hetProces from '@/assets/het-proces.webp';
 import daniqueMatchCall from '@/assets/danique-match-call.webp';
@@ -25,7 +26,16 @@ import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 const EBOOK_CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
 const EBOOK_PRICE = '€39,99';
 
-const TREATMENTS = [{
+type Treatment = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  price?: string;
+  comingSoon?: boolean;
+};
+
+const TREATMENTS: Treatment[] = [{
   id: 'bloedsuikertraject',
   title: "1:1 Bloedsuikertraject",
   description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met behulp van een 14-daagse glucosesensor.",
@@ -37,6 +47,12 @@ const TREATMENTS = [{
   description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
   image: hetProces,
   price: '€249 p/m'
+}, {
+  id: 'mommy-to-be',
+  title: "1:1 Mommy (to be) traject",
+  description: "Coming soon",
+  image: daniqueBeach,
+  comingSoon: true
 }, {
   id: 'darmtraject',
   title: "1:1 Darmtraject",
