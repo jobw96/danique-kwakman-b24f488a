@@ -28,3 +28,4 @@
 - [x] Challenge volledig van de site gehaald: pagina en route verwijderd, uit het Gratis-uitklapmenu, de footerkolom, de sitemap en de alleen daarvoor gebruikte foto's; /challenge toont nu de niet-found pagina
 - [x] '1:1 Mommy (to be) traject'-kaart toegevoegd op homepage en aanbodpagina, tussen hormoon- en darmtraject, met 'Coming soon' als tekst en zonder prijs of klikbare link
 - [x] Naam overal teruggebracht naar '1:1 Darmtraject' (was 'Darmtraject Therapie') op aanbodpagina, webshopkaart en paginatitel
+- [x] Nieuwe pagina '1:1 Mommy (to be) traject' (/mommy-to-be) in dezelfde opbouw als het hormoontraject, met prijs €149/maand (normaal €199), 5 maanden en 5 afspraken; kaart op homepage en aanbodpagina klikbaar gemaakt en opgenomen in het Aanbod-menu en de sitemap
