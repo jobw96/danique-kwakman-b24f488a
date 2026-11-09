@@ -55,7 +55,7 @@ const treatments: Treatment[] = [
   {
     id: 'darmtraject',
     image: daniqueDarm,
-    title: "1:1 Darmtraject Therapie",
+    title: "1:1 Darmtraject",
     description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
     href: "/darmtraject",
     price: '€299 p/m'
@@ -109,7 +109,7 @@ const explanations: Explanation[] = [
   },
   {
     id: 'darmtraject',
-    title: '1:1 Darmtraject Therapie',
+    title: '1:1 Darmtraject',
     href: '/darmtraject',
     meta: '± 6 maanden · online of in Hoorn',
     linkLabel: 'Alles over het Darmtraject',
