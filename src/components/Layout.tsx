@@ -110,6 +110,7 @@ const GEEN_AANBOD_CTA = [
   '/behandelingen',
   '/bloedsuikertraject',
   '/hormoontraject',
+  '/mommy-to-be',
   '/darmtraject',
   '/klachten',
 ];
@@ -272,6 +273,11 @@ export const Layout: React.FC<LayoutProps> = ({
       href: '/hormoontraject',
       description: '',
       icon: Sparkles
+    }, {
+      name: '1:1 Mommy (to be) traject',
+      href: '/mommy-to-be',
+      description: '',
+      icon: HeartHandshake
     }, {
       name: '1:1 Darmtraject',
       href: '/darmtraject',

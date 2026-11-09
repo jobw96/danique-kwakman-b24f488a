@@ -50,9 +50,9 @@ const TREATMENTS: Treatment[] = [{
 }, {
   id: 'mommy-to-be',
   title: "1:1 Mommy (to be) traject",
-  description: "Coming soon",
+  description: "Met het 1:1 Mommy (to be) traject help ik je stap voor stap de juiste puzzelstukjes samenbrengen. Met aandacht voor je hormonen, darmen, voeding en leefstijl, van kinderwens tot zwangerschap en postpartum.",
   image: daniqueBeach,
-  comingSoon: true
+  price: '€149 p/m'
 }, {
   id: 'darmtraject',
   title: "1:1 Darmtraject",
