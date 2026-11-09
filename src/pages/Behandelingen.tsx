@@ -31,7 +31,7 @@ const treatments: Treatment[] = [
     id: 'bloedsuikertraject',
     image: daniqueBloedsuiker,
     title: "1:1 Bloedsuikertraject",
-    description: "In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.",
+    description: "Met het 1:1 bloedsuikertraject krijg je in 2 weken inzicht in hoe jouw lichaam reageert op voeding, stress, beweging en slaap. Je ontdekt wat zorgt voor pieken en dalen in je bloedsuikerspiegel en leert met praktische veranderingen bouwen aan meer energie, minder cravings en een stabiele basis voor je hormonen",
     href: "/bloedsuikertraject",
     price: '€325 eenmalig'
   },
@@ -39,7 +39,7 @@ const treatments: Treatment[] = [
     id: 'hormoontraject',
     image: daniqueGlowup,
     title: "1:1 Hormoontraject",
-    description: "In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.",
+    description: "Met het 1:1 hormoontraject duiken we 3 maanden in jouw hormonale klachten. Waarom heb je zoveel last van mood swings, acne, PCOS-klachten of een luteale fase waarin je je compleet anders voelt? We brengen in kaart welke factoren jouw hormonale disbalans beïnvloeden en pakken deze gericht aan, zodat je cyclus stabieler wordt en je hormonale klachten niet langer je dagelijks leven bepalen.",
     href: "/hormoontraject",
     price: '€249 p/m'
   },
@@ -56,7 +56,7 @@ const treatments: Treatment[] = [
     id: 'darmtraject',
     image: daniqueDarm,
     title: "1:1 Darmtraject",
-    description: "Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.",
+    description: "Met het 1:1 darmtraject begeleid ik je 6 maanden door het proces van darmherstel, inclusief labonderzoek. Zodat je eindelijk weet waarom je last hebt van een opgeblazen buik, buikpijn of een onrustige stoelgang en we je klachten stap voor stap kunnen gaan verminderen.",
     href: "/darmtraject",
     price: '€299 p/m'
   }
