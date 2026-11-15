@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from '@/lib/router-compat';
 import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { TrajectPrice } from '@/components/TrajectPrice';
 import { trajectPrices, type TrajectPrice as PriceDetails } from '@/data/traject-prices';
@@ -126,6 +126,7 @@ const explanations: Explanation[] = [
 
 const Behandelingen = () => {
   const { openModal } = useBookingModal();
+  const [openTraject, setOpenTraject] = useState<number | null>(null);
   return (
     <div className="min-h-screen">
       <SEO
@@ -209,40 +210,67 @@ const Behandelingen = () => {
           })}
         </div>
         
-        {/* Toelichting per traject, zodat deze pagina op zichzelf uitlegt
-            waar de trajecten in verschillen. */}
+        {/* Toelichting per traject in een uitklapmenu, zodat deze pagina op zichzelf
+            uitlegt waar de trajecten in verschillen. */}
         <div className="max-w-3xl mx-auto mt-24">
           <FadeIn>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-3 text-center">
               Welk traject past bij jou?
             </h2>
             <p className="text-muted-foreground text-center mb-14 leading-relaxed">
-              Hieronder lees je per traject voor wie het bedoeld is en wat je krijgt.
+              Klik op een traject om te lezen voor wie het bedoeld is en wat je krijgt.
             </p>
           </FadeIn>
 
-          <div className="space-y-14">
-            {explanations.map((item, index) => (
-              <FadeIn key={item.id} delay={index * 0.1}>
-                <article className="border-t border-secondary/40 pt-8">
-                  <h3 className="font-serif text-2xl text-foreground mb-1">{item.title}</h3>
-                  <p className="text-xs uppercase tracking-wider text-primary mb-5">{item.meta}</p>
-                  <div className="space-y-4">
-                    {item.body.map((paragraph, i) => (
-                      <p key={i} className="text-muted-foreground leading-relaxed">{paragraph}</p>
-                    ))}
+          <FadeIn>
+            <div className="border-t border-secondary/40">
+              {explanations.map((item, index) => {
+                const isOpen = openTraject === index;
+                return (
+                  <div key={item.id} className="border-b border-secondary/40">
+                    <m.button
+                      type="button"
+                      onClick={() => setOpenTraject(isOpen ? null : index)}
+                      className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                      aria-expanded={isOpen}
+                      whileHover={{ x: 3 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <h3 className="text-lg text-foreground md:text-xl">{item.title}</h3>
+                      <m.span
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        className="shrink-0 text-foreground"
+                      >
+                        <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                      </m.span>
+                    </m.button>
+                    <m.div
+                      initial={false}
+                      animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="space-y-4 pb-6 leading-relaxed">
+                        <p className="text-xs uppercase tracking-wider text-primary">{item.meta}</p>
+                        {item.body.map((paragraph, i) => (
+                          <p key={i}>{paragraph}</p>
+                        ))}
+                        {item.href && (
+                          <Link
+                            to={item.href}
+                            className="inline-flex items-center text-primary font-medium text-sm hover:underline underline-offset-4"
+                          >
+                            {item.linkLabel}
+                            <ArrowRight className="w-4 h-4 ml-2" />
+                          </Link>
+                        )}
+                      </div>
+                    </m.div>
                   </div>
-                  {item.href && <Link
-                    to={item.href}
-                    className="inline-flex items-center text-primary font-medium mt-5 text-sm hover:underline underline-offset-4"
-                  >
-                    {item.linkLabel}
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>}
-                </article>
-              </FadeIn>
-            ))}
-          </div>
+                );
+              })}
+            </div>
+          </FadeIn>
         </div>
 
         <div className="text-center mt-20">
