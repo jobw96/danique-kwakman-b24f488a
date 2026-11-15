@@ -15,8 +15,8 @@ describe('Traject totaalprijzen', () => {
     expect(trajectPrices.darmtraject.price).toBe(1049);
     expect(trajectPrices.darmtraject.originalPrice).toBe(1794);
   });
-  it('gebruikt voor Mommy een speciale pilotprijs van 750 totaal', () => {
-    expect(trajectPrices['mommy-to-be']).toEqual({ price: 750, pilot: true });
+  it('gebruikt voor Mommy een introductieprijs van 650 in plaats van de oorspronkelijke pilotprijs van 750', () => {
+    expect(trajectPrices['mommy-to-be']).toEqual({ price: 650, originalPrice: 750, introductory: true });
   });
   it('laat alle drie actieprijzen gelden tot en met 31 december 2026', () => {
     for (const id of ['bloedsuikertraject', 'hormoontraject', 'darmtraject'] as const) {
