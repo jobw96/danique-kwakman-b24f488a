@@ -185,9 +185,7 @@ const Index = () => {
             Van een opgeblazen buik, vermoeidheid en een onregelmatige cyclus tot cravings, PMS of het gevoel dat je lichaam niet meer meewerkt.
           </h1>
           <p className="text-white/90 text-base md:text-lg mb-8 leading-relaxed max-w-2xl">
-             Orthomoleculair hormoon en darmtherapeut in Hoorn en online.
-             <br />
-             Met mijn CIRCLE-methode kijken we naar het geheel en werken we stap voor stap aan de oorzaken achter jouw klachten.
+            Als orthomoleculair hormoon- en darmtherapeut in Hoorn en online onderzoeken we de oorzaken achter jouw klachten en werken we stap voor stap aan verbetering van je hormonale en darmgezondheid.{"\u00a0"}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
             <CustomButton variant="secondary" onClick={openModal} className="w-56 max-w-full">Gratis kennismaking</CustomButton>
