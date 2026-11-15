@@ -113,6 +113,8 @@ const GEEN_AANBOD_CTA = [
   '/mommy-to-be',
   '/darmtraject',
   '/klachten',
+  // De receptenpagina sluit af met de recepten zelf; geen aanbodverwijzing.
+  '/recepten',
 ];
 
 export const Layout: React.FC<LayoutProps> = ({

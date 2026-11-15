@@ -10,6 +10,7 @@ import eiwitrijkePannenkoekenAsset from '@/assets/recepten/eiwitrijke-pannenkoek
 import carrotCakeAsset from '@/assets/recepten/carrotcake-overnight-oats.webp.asset.json';
 import ontbijtbordjeAsset from '@/assets/recepten/ontbijtbordje.webp.asset.json';
 import frambozenChiaAsset from '@/assets/recepten/framboze-chiapudding.webp.asset.json';
+import imuunboostAsset from '@/assets/recepten/immuunboost-blokjes.webp.asset.json';
 
 export interface RecipeNoteLink {
   /** Letterlijke tekst in de notitie die klikbaar moet zijn. */
@@ -398,7 +399,32 @@ export const recipes: Recipe[] = [
     ],
     videoText: 'Bekijk hieronder de video waarin ik stap voor stap laat zien hoe je deze frambozen chiapudding maak:',
     videoUrl: 'https://www.instagram.com/p/DaHiQyxsPHQ/'
+  },
+  {
+    id: 'immuunboost-blokjes',
+    slug: 'immuunboost-blokjes',
+    title: 'Immuunboost blokjes',
+    intro: 'Citroenen en sinaasappels bevatten vitamine C, dat je immuunsysteem ondersteunt. Gember helpt je spijsvertering en werkt ontstekingsremmend dus de perfecte combi als je niet zo fit bent!\n\nIk maak er blokjes van voor in de vriezer en dit is hoe ik ze maak:',
+    image: imuunboostAsset.url,
+    ingredients: [
+      '2 citroenen',
+      '3 sinaasappels',
+      '1 stukje verse gember',
+      '1 tl kurkumapoeder',
+      '1 tl zwarte peper',
+      '700 ml kokoswater of gewoon water'
+    ],
+    steps: [
+      'Schil de citroenen en sinaasappels en doe ze samen met de gember, kurkuma en zwarte peper in de blender',
+      'Voeg het kokoswater (of gewoon water) toe en blend tot het mooi glad is',
+      'Liever geen pulp? Giet het door een fijne zeef of een theedoek',
+      'Schenk het in een ijsblokjes houder en laat het een paar uur invriezen',
+      'Bewaar de blokjes in een afsluitbaar bakje in de vriezer en laat er eentje smelten in een mok warm water of thee.'
+    ]
   }
 ];
 
 export const getRecipeBySlug = (slug?: string) => recipes.find((r) => r.slug === slug);
+
+/** Weergavevolgorde: nieuwste recepten bovenaan, oudste onderaan. */
+export const recipesByNewest: Recipe[] = [...recipes].reverse();
