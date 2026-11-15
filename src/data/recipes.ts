@@ -36,6 +36,11 @@ export interface Recipe {
   noteLinks?: RecipeNoteLink[];
   videoUrl?: string;
   videoText?: string;
+  /**
+   * Optionele cropping van de foto, bijvoorbeeld 'center 22%' om het onderwerp
+   * iets lager in het beeld te zetten. Staat dat op het midden.
+   */
+  imagePosition?: string;
 }
 
 export const recipes: Recipe[] = [
