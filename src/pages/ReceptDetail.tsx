@@ -4,6 +4,7 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowLeft, Lightbulb, ChefHat, Instagram } from 'lucide-react';
 import { getRecipeBySlug, recipesByNewest, type RecipeNoteLink } from '@/data/recipes';
+import { recipeStepId } from '@/lib/recipe-seo';
 
 /** Maakt de opgegeven teksten binnen een notitie klikbaar. */
 const renderNote = (note: string, links?: RecipeNoteLink[]): React.ReactNode => {
@@ -80,7 +81,7 @@ const ReceptDetail = () => {
             <div className="rounded-2xl overflow-hidden mb-8 aspect-[16/10]">
               <img
                 src={recipe.image}
-                alt={recipe.imageAlt ?? `${recipe.title} - voedzaam recept van orthomoleculair therapeut Danique Kwakman`}
+                alt={recipe.imageAlt ?? recipe.title}
                 className="w-full h-full object-cover"
                 style={recipe.imagePosition ? { objectPosition: recipe.imagePosition } : undefined}
                 decoding="async"
@@ -116,7 +117,7 @@ const ReceptDetail = () => {
                 <h2 className="font-serif text-xl text-foreground mb-4">Bereiding</h2>
                 <ol className="space-y-4">
                   {recipe.steps.map((step, i) => (
-                    <li key={i} className="flex items-start gap-3 text-muted-foreground text-sm">
+                    <li key={i} id={recipeStepId(i)} className="flex items-start gap-3 text-muted-foreground text-sm scroll-mt-24">
                       <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-xs font-medium text-primary flex-shrink-0">
                         {i + 1}
                       </span>
