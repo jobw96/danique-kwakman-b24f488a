@@ -10,6 +10,7 @@ import eiwitrijkePannenkoekenAsset from '@/assets/recepten/eiwitrijke-pannenkoek
 import carrotCakeAsset from '@/assets/recepten/carrotcake-overnight-oats.webp.asset.json';
 import ontbijtbordjeAsset from '@/assets/recepten/ontbijtbordje.webp.asset.json';
 import frambozenChiaAsset from '@/assets/recepten/framboze-chiapudding.webp.asset.json';
+import imuunboostAsset from '@/assets/recepten/immuunboost-blokjes.webp.asset.json';
 
 export interface RecipeNoteLink {
   /** Letterlijke tekst in de notitie die klikbaar moet zijn. */
