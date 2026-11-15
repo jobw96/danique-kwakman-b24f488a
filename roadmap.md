@@ -46,4 +46,4 @@
 - [x] SEO voor alle 15 recepten verbeterd met unieke zoekteksten, uitgebreid Recipe-schema en collectiegegevens; originele teksten exact behouden, vijf tests geslaagd en alle pagina’s gecontroleerd
 - [x] Alle 15 receptpagina’s aangevuld met unieke uitleg en passende receptverwijzingen; originele teksten exact behouden, tests geslaagd en desktop/mobiel gecontroleerd
 - [x] Uitklapmenu van "Welk traject past bij jou?" op de aanbodpagina: alle vier trajecten als uitklapbare items, standaard allemaal ingeklapt, in de stijl van het uitklapmenu op de hormoontrajectpagina; desktop en telefoon gecontroleerd
-- [ ] Actiebanner op alle 78 pagina's controleren: banner bovenaan, geen overlap met de navigatiebalk, balk blijft bruikbaar bij scrollen, aftelling loopt
+- [x] Actiebanner op alle 78 pagina's gecontroleerd: banner bovenaan (top 0), geen overlap met de navigatiebalk, balk blijft zichtbaar bij scrollen, aftelling loopt; desktop en telefoon; dropdown en mobiel menu klikbaar en menu sluit na klik
