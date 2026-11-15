@@ -50,7 +50,7 @@ export const recipes: Recipe[] = [
   {
     id: 'granola',
     slug: 'homemade-chocolade-granola',
-    title: 'Homemade Chocolade Granola',
+    title: 'Homemade chocolade granola',
     intro: 'Granola en chocola zijn voor mij de perfecte combinatie. Ik maak mijn granola het liefst zelf, omdat de varianten uit de supermarkt vaak onnodige toevoegingen bevatten. Zelfgemaakt is niet alleen voedzamer en gezonder, maar ook echt véél lekkerder.',
     image: granolaImage.url,
     ingredientsNote: 'voor een grote pot',
@@ -82,7 +82,7 @@ export const recipes: Recipe[] = [
   {
     id: 'gembershots',
     slug: 'homemade-gembershotjes',
-    title: 'Homemade Gembershotjes',
+    title: 'Homemade gember shotjes',
     intro: 'Gember ondersteunt je spijsvertering, helpt bij een opgeblazen buik en geeft je immuunsysteem een boost. Super simpel om te maken en perfect om elke ochtend mee te starten.',
     image: gingerShotsImage.url,
     imageAlt: 'Drie glazen flesjes met gele homemade gembershotjes en zwarte doppen op een lichte stoffen ondergrond',
