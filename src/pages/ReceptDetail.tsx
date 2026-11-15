@@ -82,6 +82,7 @@ const ReceptDetail = () => {
                 src={recipe.image}
                 alt={`${recipe.title} - voedzaam recept van orthomoleculair therapeut Danique Kwakman`}
                 className="w-full h-full object-cover"
+                style={recipe.imagePosition ? { objectPosition: recipe.imagePosition } : undefined}
                 decoding="async"
               />
             </div>

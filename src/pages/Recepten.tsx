@@ -20,6 +20,7 @@ const RecipeCard = ({ recipe }: { recipe: Recipe }) => (
           src={recipe.image}
           alt={`${recipe.title} - gezond recept voor energie en hormoonbalans`}
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          style={recipe.imagePosition ? { objectPosition: recipe.imagePosition } : undefined}
           loading="lazy"
           decoding="async"
         />
