@@ -45,4 +45,4 @@
 - [x] Instagram-videoknop toegevoegd bij immuunboost blokjes; videolink op alle recepten nu als knop weergegeven
 - [x] SEO voor alle 15 recepten verbeterd met unieke zoekteksten, uitgebreid Recipe-schema en collectiegegevens; originele teksten exact behouden, vijf tests geslaagd en alle pagina’s gecontroleerd
 - [x] Alle 15 receptpagina’s aangevuld met unieke uitleg en passende receptverwijzingen; originele teksten exact behouden, tests geslaagd en desktop/mobiel gecontroleerd
-- [ ] Uitklapmenu van "Welk traject past bij jou?" op de aanbodpagina: alle vier trajecten als uitklapbare items, standaard allemaal ingeklapt, in de stijl van het uitklapmenu op de hormoontrajectpagina
+- [x] Uitklapmenu van "Welk traject past bij jou?" op de aanbodpagina: alle vier trajecten als uitklapbare items, standaard allemaal ingeklapt, in de stijl van het uitklapmenu op de hormoontrajectpagina; desktop en telefoon gecontroleerd
