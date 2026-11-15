@@ -36,3 +36,4 @@
 - [x] Gembershotfoto vervangen door aangeleverde foto in WebP met EXIF/XMP; bestaande bietenfoto gecontroleerd op WebP en metadata; beide foto's voorzien van beschrijvende alt-tekst
 - [x] Pepernotenrecept bovenaan toegevoegd met letterlijke tekst, WebP-foto met EXIF/XMP en beschrijvende alt-tekst; opgenomen in sitemap
 - [x] Gembershotfoto nog iets hoger plaatsen
+- [x] Gembershotfoto verder omhoog geplaatst (object-position center 78%) op lijstkaart en receptpagina
