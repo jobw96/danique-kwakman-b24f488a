@@ -32,3 +32,4 @@
 - [x] Receptenpagina: blok 'Benieuwd welk traject bij jou past?' verwijderd
 - [x] Nieuw recept 'Immuunboost blokjes' toegevoegd met aangeleverde foto (webp met metadata), ingrediënten en bereiding; opgenomen in de sitemap
 - [x] Receptenlijst op volgorde gezet: nieuwste bovenaan, oudste onderaan
+- [x] Nieuw recept 'Rode bieten sap' toegevoegd met aangeleverde foto (webp met metadata), ingrediënten en bereiding; opgenomen in de sitemap

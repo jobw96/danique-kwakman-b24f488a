@@ -11,6 +11,7 @@ import carrotCakeAsset from '@/assets/recepten/carrotcake-overnight-oats.webp.as
 import ontbijtbordjeAsset from '@/assets/recepten/ontbijtbordje.webp.asset.json';
 import frambozenChiaAsset from '@/assets/recepten/framboze-chiapudding.webp.asset.json';
 import imuunboostAsset from '@/assets/recepten/immuunboost-blokjes.webp.asset.json';
+import rodeBietenSapAsset from '@/assets/recepten/rode-bieten-sap.webp.asset.json';
 
 export interface RecipeNoteLink {
   /** Letterlijke tekst in de notitie die klikbaar moet zijn. */
@@ -426,6 +427,24 @@ export const recipes: Recipe[] = [
       'Liever geen pulp? Giet het door een fijne zeef of een theedoek',
       'Schenk het in een ijsblokjes houder en laat het een paar uur invriezen',
       'Bewaar de blokjes in een afsluitbaar bakje in de vriezer en laat er eentje smelten in een mok warm water of thee.'
+    ]
+  },
+  {
+    id: 'rode-bieten-sap',
+    slug: 'rode-bieten-sap',
+    title: 'Rode bieten sap',
+    intro: 'Maak dit drankje binnen 5 minuten om je hormonen liefde te geven.\n\nRode bieten bevatten veel vitamine C en ijzer wat een super combi is tijdens je menstruatie 🩸\n\nRode bieten boosten ook je lever en hoe beter je lever zijn werk doet, des te beter je hormonen in balans komen bij een disbalans tussen oestrogeen en progesteron.\n\nIk gebruik hiervoor mijn slowjuicer en dit is hoe ik hem maak:',
+    image: rodeBietenSapAsset.url,
+    ingredients: [
+      '🧃2 rode bieten (voorgekookt of vers)',
+      '🧃1 appel',
+      '🧃 sap van 1/2 citroen'
+    ],
+    steps: [
+      'Bereid de rode bieten voor of koop een pakje voorgekookte rode bieten',
+      'Schil de halve citroen, verwijder het klokhuis van de appel en snijdt in 4 stukken',
+      'Stop alles in de juicer om er een sapje van te maken',
+      'Bewaar in een glazen fles en vul eventueel aan met water'
     ]
   }
 ];
