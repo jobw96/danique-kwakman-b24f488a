@@ -39,3 +39,4 @@
 - [x] Gembershotfoto verder omhoog geplaatst (object-position center 78%) op lijstkaart en receptpagina
 - [x] Instagram-videoknop toegevoegd bij immuunboost blokjes; videolink op alle recepten nu als knop weergegeven
 - [x] SEO voor alle 15 recepten verbeterd met unieke zoekteksten, uitgebreid Recipe-schema en collectiegegevens; originele teksten exact behouden, vijf tests geslaagd en alle pagina’s gecontroleerd
+- [x] Alle 15 receptpagina’s aangevuld met unieke uitleg en passende receptverwijzingen; originele teksten exact behouden, tests geslaagd en desktop/mobiel gecontroleerd
