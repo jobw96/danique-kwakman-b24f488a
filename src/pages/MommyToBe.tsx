@@ -393,7 +393,7 @@ const MommyToBe = () => {
                 In 5 maanden naar een lichaam dat je zo goed mogelijk ondersteunt
               </h2>
               <p className="mt-6 leading-relaxed text-primary-foreground/85">
-                Met het 1:1 Mommy (to be) traject nemen we 5 maanden de tijd om te kijken wat jouw lichaam nodig heeft, van kinderwens tot zwangerschap en postpartum. We brengen in kaart welke factoren bij jou meespelen en stemmen je voeding en leefstijl af op de fase waarin je zit.
+                Met het 1:1 Mommy (to be) traject begeleid ik je 5 maanden en geven we jouw lichaam precies wat het nodig heeft, van kinderwens tot zwangerschap en postpartum. We brengen in kaart welke factoren bij jou meespelen en stemmen je voeding en leefstijl af op de fase waarin je zit.
               </p>
               <p className="mt-8 leading-relaxed text-primary-foreground/85">Na 5 maanden:</p>
               <div className="mt-6 text-primary-foreground/90">
