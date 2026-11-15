@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Actiebanner met aftelling tot en met 31 december 2026; navigatie en overlap op alle pagina’s controleren op computer en telefoon
+
 - [x] Vier trajecten: totaalprijzen, doorgestreepte oorspronkelijke prijzen, actieperiode en Mommy-pilotprijs consistent op trajectpagina’s, homepage, aanbodpagina en prijsmetadata; zes tests geslaagd en computer/telefoon gecontroleerd
 
 - [x] Instagram-embeds inkorten: like-balk en alles daaronder verbergen
