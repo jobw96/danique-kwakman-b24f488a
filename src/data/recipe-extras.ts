@@ -122,8 +122,8 @@ export const recipeExtras: Record<string, RecipeExtra> = {
   'pepernoten': {
     heading: 'Zelf pepernoten met havermeel bakken',
     paragraphs: [
-      'Je hoeft niet alles wat je lekker vindt te laten staan als je aandacht wilt geven aan je hormonen en darmen. Het gaat om je dagelijkse basis, niet om één keer pepernoten eten. Deze variant met havermeel kan daar gewoon een plek in hebben.',
-      'Merk je dat je steeds naar iets zoets zoekt? Kijk dan ook of je overdag voldoende eet en hoe je maaltijden zijn opgebouwd. Cravings zijn geen reden om streng voor jezelf te worden. Honing blijft een bron van suiker, ook in een zelfgemaakt recept. Het gaat dus niet om onbeperkt kunnen eten, maar om ruimte voor lekker eten zonder alles als goed of fout te zien.',
+      'Je hoeft niet alles wat je lekker vindt te laten staan als je aandacht wilt geven aan je hormonen en darmen. Het gaat om je dagelijkse basis en niet om alles als goed of fout labelen. Deze variant met havermeel kan daar gewoon een plek in hebben.',
+      'Merk je dat je steeds naar iets zoets zoekt? Kijk dan ook of je overdag voldoende eet en hoe je maaltijden zijn opgebouwd. Cravings zijn geen reden om streng voor jezelf te worden, maar wel een signaal van je lichaam om te je eetpatroon te herevalueren.',
     ],
     relatedSlug: 'homemade-chocolade-granola', relatedText: 'Ook met havermout: homemade chocolade granola',
   },
