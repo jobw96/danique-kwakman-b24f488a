@@ -7,7 +7,8 @@ import originalContent from './recipe-content.json';
 
 // Lees de echte recepten zonder browser-assetimports; alleen de foto's worden in deze test vervangen.
 const source = readFileSync(new URL('../../data/recipes.ts', import.meta.url), 'utf8')
-  .replace(/^import (\w+) from .*;$/gm, 'const $1 = {url: ""};');
+  .replace(/^import (\w+) from .*;$/gm, 'const $1 = {url: ""};')
+  .replace('image: eggMuffinsImage,', 'image: "",');
 const compiled = ts.transpile(source, { module: ts.ModuleKind.CommonJS });
 const recipeExports: { recipes?: Recipe[] } = {};
 new Function('exports', compiled)(recipeExports);
