@@ -1,5 +1,8 @@
 # Roadmap
 
+- [x] Actiebanner met aftelling tot en met 31 december 2026; 160 pagina/schermcontroles uitgevoerd, navigatie en banner zonder overlap; één bestaande te brede mobiele kop op /klachten/bloedsuikerschommelingen genoteerd
+- [ ] Aantrekkelijkere bannertekst: eerst voorstellen delen; pas wijzigen na keuze van de gebruiker
+
 - [x] Vier trajecten: totaalprijzen, doorgestreepte oorspronkelijke prijzen, actieperiode en Mommy-pilotprijs consistent op trajectpagina’s, homepage, aanbodpagina en prijsmetadata; zes tests geslaagd en computer/telefoon gecontroleerd
 
 - [x] Instagram-embeds inkorten: like-balk en alles daaronder verbergen
