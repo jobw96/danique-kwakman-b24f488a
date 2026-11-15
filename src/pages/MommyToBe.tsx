@@ -224,16 +224,13 @@ const MommyToBe = () => {
                 1:1 Mommy (to be) traject
               </h1>
               <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
-                Een kinderwens die niet vanzelf in vervulling gaat, een onregelmatige cyclus, hormonale klachten of vragen over je vruchtbaarheid.
+                Een kinderwens die niet vanzelf in vervulling gaat,  misschien ben je al zwanger en wil je je lichaam zo goed mogelijk ondersteunen of ben je bevallen en zoek je naar een goede basis voor je herstel?
               </p>
               <div className="mt-7 max-w-xl space-y-4 leading-relaxed">
                 <p>
-                  Of misschien ben je al zwanger en wil je je lichaam zo goed mogelijk ondersteunen. Of ben je bevallen en zoek je naar een goede basis voor je herstel.
-                  <br /><br />
                   Je wilt je lichaam begrijpen, weten wat het nodig heeft en je zo goed mogelijk voelen in iedere fase, voor jezelf en je kindje.
                   <br /><br />
                   Ik help je stap voor stap de juiste puzzelstukjes samenbrengen. Met aandacht voor je hormonen, darmen, voeding en leefstijl, van kinderwens tot zwangerschap en postpartum.
-                  <br /><br />
                 </p>
               </div>
               <CustomButton onClick={openModal} className="mt-8">
