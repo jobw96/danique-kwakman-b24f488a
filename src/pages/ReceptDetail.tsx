@@ -5,7 +5,6 @@ import { FadeIn } from '@/components/Animations';
 import { ArrowLeft, Lightbulb, ChefHat, Instagram } from 'lucide-react';
 import { getRecipeBySlug, recipesByNewest, type RecipeNoteLink } from '@/data/recipes';
 import { recipeStepId } from '@/lib/recipe-seo';
-import { recipeExtras } from '@/data/recipe-extras';
 
 /** Maakt de opgegeven teksten binnen een notitie klikbaar. */
 const renderNote = (note: string, links?: RecipeNoteLink[]): React.ReactNode => {
@@ -58,7 +57,6 @@ const ReceptDetail = () => {
   if (!recipe) return <Navigate to="/recepten" replace />;
 
   const others = recipesByNewest.filter((r) => r.slug !== recipe.slug).slice(0, 4);
-  const extra = recipeExtras[recipe.slug];
 
   return (
     <div className="min-h-screen">
@@ -168,17 +166,6 @@ const ReceptDetail = () => {
                   <span className="sr-only"> (opent in een nieuw tabblad)</span>
                 </a>
               </div>
-            )}
-            {extra && (
-              <section className="mt-12" aria-labelledby="recept-verdieping">
-                <h2 id="recept-verdieping" className="font-serif text-2xl text-foreground mb-5">{extra.heading}</h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  {extra.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-                </div>
-                <Link to={`/recepten/${extra.relatedSlug}`} className="inline-flex items-center gap-2 text-primary text-sm underline underline-offset-4 mt-5">
-                  {extra.relatedText}
-                </Link>
-              </section>
             )}
           </FadeIn>
 
