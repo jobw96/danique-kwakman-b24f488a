@@ -181,7 +181,7 @@ const Index = () => {
       </div>
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-3xl text-center md:text-left">
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-white leading-[1.15]">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 text-white leading-[1.15]">
             Van een opgeblazen buik, vermoeidheid en een onregelmatige cyclus tot cravings, PMS of het gevoel dat je lichaam niet meer meewerkt.
           </h1>
           <p className="text-white/90 text-base md:text-lg mb-8 leading-relaxed max-w-2xl">
