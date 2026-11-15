@@ -44,6 +44,7 @@ export const serviceSchema = ({
   path,
   monthlyPrice,
   price,
+  priceValidUntil,
   duration,
 }: {
   name: string;
@@ -53,6 +54,8 @@ export const serviceSchema = ({
   monthlyPrice?: number;
   /** Eenmalig bedrag voor het hele traject. */
   price?: number;
+  /** Laatste geldigheidsdag van een actieprijs (YYYY-MM-DD). */
+  priceValidUntil?: string;
   /** Looptijd als ISO 8601-duur, bijv. "P3M" of "P2W". */
   duration?: string;
 }) => ({
@@ -90,6 +93,7 @@ export const serviceSchema = ({
         }
       : {}),
     ...(price !== undefined ? { price, priceCurrency: "EUR" } : {}),
+    ...(priceValidUntil ? { priceValidUntil } : {}),
   },
 });
 

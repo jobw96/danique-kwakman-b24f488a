@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { seoHead, breadcrumbs, serviceSchema } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
 import Bloedsuikertraject from "@/pages/Bloedsuikertraject";
+import { trajectPrices } from '@/data/traject-prices';
 
 export const Route = createFileRoute("/_layout/bloedsuikertraject")({
   head: () => seoHead({
@@ -13,7 +14,8 @@ export const Route = createFileRoute("/_layout/bloedsuikertraject")({
         name: "1:1 Bloedsuikertraject",
         description: "Traject van twee weken met een glucosesensor en persoonlijke begeleiding voor stabiele energie en minder cravings.",
         path: "/bloedsuikertraject",
-        price: 325,
+        price: trajectPrices.bloedsuikertraject.price,
+        priceValidUntil: trajectPrices.bloedsuikertraject.validThrough,
         duration: "P2W",
       }),
       breadcrumbs([
