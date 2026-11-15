@@ -38,3 +38,4 @@
 - [x] Gembershotfoto nog iets hoger plaatsen
 - [x] Gembershotfoto verder omhoog geplaatst (object-position center 78%) op lijstkaart en receptpagina
 - [x] Instagram-videoknop toegevoegd bij immuunboost blokjes; videolink op alle recepten nu als knop weergegeven
+- [ ] SEO voor alle recepten verbeteren zonder receptteksten, ingrediënten of bereidingen te wijzigen; metadata en receptgegevens controleren
