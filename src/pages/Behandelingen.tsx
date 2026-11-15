@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from '@/lib/router-compat';
 import { m } from 'framer-motion';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
 import { TrajectPrice } from '@/components/TrajectPrice';
 import { trajectPrices, type TrajectPrice as PriceDetails } from '@/data/traject-prices';
@@ -126,6 +126,7 @@ const explanations: Explanation[] = [
 
 const Behandelingen = () => {
   const { openModal } = useBookingModal();
+  const [openTraject, setOpenTraject] = useState<number | null>(0);
   return (
     <div className="min-h-screen">
       <SEO
