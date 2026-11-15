@@ -455,7 +455,7 @@ export const recipes: Recipe[] = [
   {
     id: 'pepernoten',
     slug: 'pepernoten',
-    title: 'Pepernoten',
+    title: 'Verantwoorde pepernoten',
     intro: 'Pepernoten horen erbij in december en met dit recept kun je genieten, zonder dat je bakken met suiker binnen krijgt die je hormonen over hoop gooien.\n\nDit is het recept:',
     image: pepernotenAsset.url,
     imageAlt: 'Hand houdt een glazen pot met zelfgemaakte pepernoten tegen een lichte muur',
