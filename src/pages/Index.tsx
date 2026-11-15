@@ -169,7 +169,7 @@ const Index = () => {
       description="Herstel je hormonale balans, darmgezondheid en energie met orthomoleculaire therapie. Persoonlijke begeleiding via de CIRCLE-methode voor duurzame gezondheid."
     />
     <article className="min-h-screen">
-    <section className="relative h-screen flex items-center overflow-hidden bg-foreground pb-[34vh] md:pb-0" aria-label="Hero">
+    <section className="relative h-screen flex items-center overflow-hidden bg-foreground pb-28 md:pb-0" aria-label="Hero">
       <div className="absolute inset-0 z-0">
         {/* Eén <picture> in plaats van twee <img>-tags met CSS-toggle: zo
             downloadt de browser alleen het beeld dat hij echt toont, in
