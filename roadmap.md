@@ -49,3 +49,5 @@
 - [x] Alle 15 receptpagina’s aangevuld met unieke uitleg en passende receptverwijzingen; originele teksten exact behouden, tests geslaagd en desktop/mobiel gecontroleerd
 - [x] Uitklapmenu van "Welk traject past bij jou?" op de aanbodpagina: alle vier trajecten als uitklapbare items, standaard allemaal ingeklapt, in de stijl van het uitklapmenu op de hormoontrajectpagina; desktop en telefoon gecontroleerd
 - [x] Actiebanner op alle 78 pagina's gecontroleerd: banner bovenaan (top 0), geen overlap met de navigatiebalk, balk blijft zichtbaar bij scrollen, aftelling loopt; desktop en telefoon; dropdown en mobiel menu klikbaar en menu sluit na klik
+- [x] Hero-tekst op homepage op telefoon iets hoger geplaatst; op 392px, 320px, tablet en computer blijft de kop onder de navigatiebalk en passen kop, tekst en knoppen in beeld
+- [x] "Hoorn" dikgedrukt in de homepage-lead
