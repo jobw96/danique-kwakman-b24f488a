@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from '@/lib/router-compat';
-import { getPromotionTimeLeft, promotionDeadline } from '@/lib/promo-countdown';
-import { formatPriceDeadline } from '@/data/traject-prices';
+import { getPromotionTimeLeft } from '@/lib/promo-countdown';
 
 const Unit: React.FC<{ value: number; label: string }> = ({ value, label }) => (
   <span className="tabular-nums">
@@ -28,7 +27,7 @@ export const PromoBanner: React.FC = () => {
     <aside aria-label="Tijdelijke trajectkorting" className="bg-primary-deep text-primary-foreground">
       <div className="mx-auto max-w-7xl px-4 py-2 flex flex-col sm:flex-row items-center justify-center gap-x-5 gap-y-1 text-xs leading-5">
         <Link to="/behandelingen" className="inline-flex items-center gap-1 text-center underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2">
-          Trajectkorting t/m {formatPriceDeadline(promotionDeadline)}
+          <span>Tijdelijk tot 28% korting op mijn 1:1 trajecten – t/m 31 december!</span>
           <ArrowUpRight size={14} className="shrink-0" aria-hidden="true" />
         </Link>
         <div role="timer" aria-live="off" aria-label="Resterende tijd tot de actie eindigt" className="flex items-center gap-1.5 whitespace-nowrap min-w-40 justify-center">
