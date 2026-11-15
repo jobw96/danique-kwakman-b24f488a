@@ -153,15 +153,16 @@ const ReceptDetail = () => {
             {recipe.videoUrl && (
               <div className="mt-8">
                 {recipe.videoText && (
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-2">{recipe.videoText}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">{recipe.videoText}</p>
                 )}
                 <a
                   href={recipe.videoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary text-sm font-medium underline underline-offset-4 break-all"
+                  className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium transition-colors hover:bg-primary/90"
                 >
-                  {recipe.videoUrl}
+                  <Instagram className="w-4 h-4" /> Bekijk de video op Instagram
+                  <span className="sr-only"> (opent in een nieuw tabblad)</span>
                 </a>
               </div>
             )}
