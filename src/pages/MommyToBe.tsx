@@ -121,7 +121,7 @@ const faqs = [
   {
     question: 'Voor welke situaties is het Mommy (to be) traject bedoeld?',
     answer: [
-      'Een kinderwens die niet vanzelf in vervulling gaat, een onregelmatige cyclus, hormonale klachten of vragen over je vruchtbaarheid.\n\nOf misschien ben je al zwanger en wil je je lichaam zo goed mogelijk ondersteunen. Of ben je bevallen en zoek je naar een goede basis voor je herstel.\n\nTijdens de gratis kennismaking bespreken we jouw persoonlijke situatie.',
+      'Een kinderwens die niet vanzelf in vervulling gaat, een onregelmatige cyclus, hormonale klachten of vragen over je vruchtbaarheid. Of misschien ben je al zwanger en wil je je lichaam zo goed mogelijk ondersteunen in elk trimester. Of ben je bevallen en zoek je naar een goede basis voor je herstel. Tijdens de gratis kennismaking bespreken we jouw persoonlijke situatie.',
     ],
   },
   {
