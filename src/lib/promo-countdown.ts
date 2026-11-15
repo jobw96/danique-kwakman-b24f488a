@@ -2,7 +2,7 @@ import { trajectPrices } from '@/data/traject-prices';
 
 export const promotionDeadline = trajectPrices.bloedsuikertraject.validThrough;
 // The offer includes the entire last day in the Netherlands (winter time).
-export const promotionEndsAt = Date.parse(`${promotionDeadline}T23:00:00Z`) + 60 * 60 * 1000;
+export const promotionEndsAt = Date.parse(`${promotionDeadline}T23:00:00Z`);
 
 export function getPromotionTimeLeft(now: number) {
   const secondsLeft = Math.floor((promotionEndsAt - now) / 1000);
