@@ -1,5 +1,5 @@
 import granolaImage from '@/assets/recepten/homemade-granola.webp.asset.json';
-import gingerShotsImage from '@/assets/recepten/gembershots.webp.asset.json';
+import gingerShotsImage from '@/assets/recepten/gembershotjes-flesjes.webp.asset.json';
 import eggMuffinsImage from '@/assets/recipe-egg-muffins.webp';
 import chocoladeSmoothieAsset from '@/assets/recepten/chocolade-smoothie.webp.asset.json';
 import mangoChiaAsset from '@/assets/recepten/mango-chia-pudding.webp.asset.json';
@@ -26,6 +26,7 @@ export interface Recipe {
   title: string;
   intro: string;
   image: string;
+  imageAlt?: string;
   ingredients: string[];
   ingredientsNote?: string;
   steps: string[];
@@ -83,6 +84,7 @@ export const recipes: Recipe[] = [
     title: 'Homemade Gembershotjes',
     intro: 'Gember ondersteunt je spijsvertering, helpt bij een opgeblazen buik en geeft je immuunsysteem een boost. Super simpel om te maken en perfect om elke ochtend mee te starten.',
     image: gingerShotsImage.url,
+    imageAlt: 'Drie glazen flesjes met gele homemade gembershotjes en zwarte doppen op een lichte stoffen ondergrond',
     ingredients: [
       '2 bio appels',
       '2 citroenen',
@@ -435,6 +437,7 @@ export const recipes: Recipe[] = [
     title: 'Rode bieten sap',
     intro: 'Maak dit drankje binnen 5 minuten om je hormonen liefde te geven.\n\nRode bieten bevatten veel vitamine C en ijzer wat een super combi is tijdens je menstruatie 🩸\n\nRode bieten boosten ook je lever en hoe beter je lever zijn werk doet, des te beter je hormonen in balans komen bij een disbalans tussen oestrogeen en progesteron.\n\nIk gebruik hiervoor mijn slowjuicer en dit is hoe ik hem maak:',
     image: rodeBietenSapAsset.url,
+    imageAlt: 'Hand houdt een glazen fles rode bieten sap tegen een witte muur',
     ingredients: [
       '🧃2 rode bieten (voorgekookt of vers)',
       '🧃1 appel',

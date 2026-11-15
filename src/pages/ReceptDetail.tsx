@@ -80,7 +80,7 @@ const ReceptDetail = () => {
             <div className="rounded-2xl overflow-hidden mb-8 aspect-[16/10]">
               <img
                 src={recipe.image}
-                alt={`${recipe.title} - voedzaam recept van orthomoleculair therapeut Danique Kwakman`}
+                alt={recipe.imageAlt ?? `${recipe.title} - voedzaam recept van orthomoleculair therapeut Danique Kwakman`}
                 className="w-full h-full object-cover"
                 style={recipe.imagePosition ? { objectPosition: recipe.imagePosition } : undefined}
                 decoding="async"
@@ -178,7 +178,7 @@ const ReceptDetail = () => {
                   className="bg-white rounded-2xl overflow-hidden border border-secondary/30 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-primary/30"
                 >
                   <div className="h-40 overflow-hidden">
-                    <img src={r.image} alt={r.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                    <img src={r.image} alt={r.imageAlt ?? r.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                   </div>
                   <div className="p-5">
                     <h3 className="font-serif text-lg text-foreground mb-2">{r.title}</h3>

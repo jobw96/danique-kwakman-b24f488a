@@ -33,3 +33,4 @@
 - [x] Nieuw recept 'Immuunboost blokjes' toegevoegd met aangeleverde foto (webp met metadata), ingrediënten en bereiding; opgenomen in de sitemap
 - [x] Receptenlijst op volgorde gezet: nieuwste bovenaan, oudste onderaan
 - [x] Nieuw recept 'Rode bieten sap' toegevoegd met aangeleverde foto (webp met metadata), ingrediënten en bereiding; opgenomen in de sitemap
+- [x] Gembershotfoto vervangen door aangeleverde foto in WebP met EXIF/XMP; bestaande bietenfoto gecontroleerd op WebP en metadata; beide foto's voorzien van beschrijvende alt-tekst
