@@ -125,18 +125,6 @@ const faqs = [
     ],
   },
   {
-    question: 'Hoe lang duurt het traject en hoeveel afspraken heb ik?',
-    answer: [
-      'Het traject loopt 5 maanden en bestaat uit 5 afspraken: een uitgebreide intake en vier vervolgconsulten. Tussen de afspraken door heb je begeleiding via WhatsApp, zodat je niet met een vraag hoeft te wachten.',
-    ],
-  },
-  {
-    question: 'Wat kost het traject?',
-    answer: [
-      'De investering is nu €149 per maand in plaats van €199 per maand, gedurende 5 maanden. Aanvullend onderzoek en supplementen zijn niet inbegrepen.',
-    ],
-  },
-  {
     question: 'Is het traject ook geschikt als ik al zwanger ben?',
     answer: [
       'Ja. Ook tijdens een zwangerschap kijken we naar wat jouw lichaam nodig heeft. We stemmen je voeding en leefstijl af op de fase waarin je zit en op wat je op dat moment merkt.',
@@ -151,12 +139,6 @@ const faqs = [
   {
     question: 'Kan ik het traject online volgen?',
     answer: ['Ja. Het volledige traject kan online worden gevolgd.'],
-  },
-  {
-    question: 'Worden de consulten vergoed?',
-    answer: [
-      'Ja, als je aanvullend verzekerd bent, wordt orthomoleculaire therapie vaak (gedeeltelijk) vergoed vanuit de alternatieve geneeswijzen.',
-    ],
   },
   {
     question: 'Hoe weet ik of dit traject bij mij past?',
