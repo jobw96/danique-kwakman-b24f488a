@@ -2,6 +2,7 @@
 
 - [x] Actiebanner met aftelling tot en met 31 december 2026; 160 pagina/schermcontroles uitgevoerd, navigatie en banner zonder overlap; één bestaande te brede mobiele kop op /klachten/bloedsuikerschommelingen genoteerd
 - [x] Bannertekst na keuze aangepast: Tijdelijk tot 28% korting op mijn 1:1 trajecten – t/m 31 december!
+- [x] Pijltje in de actiebanner op telefoon achter "t/m 31 december!" gezet; desktop blijft één regel; gecontroleerd op 390px, 320px en 1130px
 
 - [x] Vier trajecten: totaalprijzen, doorgestreepte oorspronkelijke prijzen, actieperiode en Mommy-pilotprijs consistent op trajectpagina’s, homepage, aanbodpagina en prijsmetadata; zes tests geslaagd en computer/telefoon gecontroleerd
 
