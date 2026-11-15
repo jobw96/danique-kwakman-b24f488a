@@ -86,7 +86,7 @@ export const recipes: Recipe[] = [
     intro: 'Gember ondersteunt je spijsvertering, helpt bij een opgeblazen buik en geeft je immuunsysteem een boost. Super simpel om te maken en perfect om elke ochtend mee te starten.',
     image: gingerShotsImage.url,
     imageAlt: 'Drie glazen flesjes met gele homemade gembershotjes en zwarte doppen op een lichte stoffen ondergrond',
-    imagePosition: 'center 60%',
+    imagePosition: 'center 70%',
     ingredients: [
       '2 bio appels',
       '2 citroenen',
