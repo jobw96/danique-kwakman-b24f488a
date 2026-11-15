@@ -12,6 +12,7 @@ import ontbijtbordjeAsset from '@/assets/recepten/ontbijtbordje.webp.asset.json'
 import frambozenChiaAsset from '@/assets/recepten/framboze-chiapudding.webp.asset.json';
 import imuunboostAsset from '@/assets/recepten/immuunboost-blokjes.webp.asset.json';
 import rodeBietenSapAsset from '@/assets/recepten/rode-bieten-sap.webp.asset.json';
+import pepernotenAsset from '@/assets/recepten/pepernoten.webp.asset.json';
 
 export interface RecipeNoteLink {
   /** Letterlijke tekst in de notitie die klikbaar moet zijn. */
@@ -85,7 +86,7 @@ export const recipes: Recipe[] = [
     intro: 'Gember ondersteunt je spijsvertering, helpt bij een opgeblazen buik en geeft je immuunsysteem een boost. Super simpel om te maken en perfect om elke ochtend mee te starten.',
     image: gingerShotsImage.url,
     imageAlt: 'Drie glazen flesjes met gele homemade gembershotjes en zwarte doppen op een lichte stoffen ondergrond',
-    imagePosition: 'center 60%',
+    imagePosition: 'center 70%',
     ingredients: [
       '2 bio appels',
       '2 citroenen',
@@ -449,6 +450,31 @@ export const recipes: Recipe[] = [
       'Schil de halve citroen, verwijder het klokhuis van de appel en snijdt in 4 stukken',
       'Stop alles in de juicer om er een sapje van te maken',
       'Bewaar in een glazen fles en vul eventueel aan met water'
+    ]
+  },
+  {
+    id: 'pepernoten',
+    slug: 'pepernoten',
+    title: 'Pepernoten',
+    intro: 'Pepernoten horen erbij in december en met dit recept kun je genieten, zonder dat je bakken met suiker binnen krijgt die je hormonen over hoop gooien.\n\nDit is het recept:',
+    image: pepernotenAsset.url,
+    imageAlt: 'Hand houdt een glazen pot met zelfgemaakte pepernoten tegen een lichte muur',
+    imagePosition: 'center 60%',
+    ingredients: [
+      '140 gram havermeel',
+      '1 tl speculaaskruiden',
+      '1 tl bakpoeder',
+      'Een snufje zout',
+      'Een scheut (amandel) melk',
+      '60 gram roomboter',
+      'Optioneel: honing'
+    ],
+    steps: [
+      'Maal 140 gram havermout in de blender om zelf havermeel te maken of gebruik kant en klare havermeel.',
+      'Mix alle droge ingedrienten en voeg vervolgens ook alle natte ingrediënten toe',
+      'Kneed het geheel met je handen tot je 1 grote bol deeg hebt. Voeg nog wat meer melk toe als het deeg wat door blijft',
+      'Verdeel deze bol in allemaal kleine pepernootjes en verdeel deze op de bakplaat',
+      'Bak de pepernoten 15-20 minuten in de oven op 180 graden'
     ]
   }
 ];
