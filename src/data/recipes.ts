@@ -36,6 +36,11 @@ export interface Recipe {
   noteLinks?: RecipeNoteLink[];
   videoUrl?: string;
   videoText?: string;
+  /**
+   * Optionele cropping van de foto, bijvoorbeeld 'center 22%' om het onderwerp
+   * iets lager in het beeld te zetten. Staat dat op het midden.
+   */
+  imagePosition?: string;
 }
 
 export const recipes: Recipe[] = [
@@ -406,6 +411,7 @@ export const recipes: Recipe[] = [
     title: 'Immuunboost blokjes',
     intro: 'Citroenen en sinaasappels bevatten vitamine C, dat je immuunsysteem ondersteunt. Gember helpt je spijsvertering en werkt ontstekingsremmend dus de perfecte combi als je niet zo fit bent!\n\nIk maak er blokjes van voor in de vriezer en dit is hoe ik ze maak:',
     image: imuunboostAsset.url,
+    imagePosition: 'center 22%',
     ingredients: [
       '2 citroenen',
       '3 sinaasappels',
