@@ -431,7 +431,9 @@ export const recipes: Recipe[] = [
       'Liever geen pulp? Giet het door een fijne zeef of een theedoek',
       'Schenk het in een ijsblokjes houder en laat het een paar uur invriezen',
       'Bewaar de blokjes in een afsluitbaar bakje in de vriezer en laat er eentje smelten in een mok warm water of thee.'
-    ]
+    ],
+    videoText: 'Bekijk hieronder de video waarin ik stap voor stap laat zien hoe je deze immuunboost blokjes maak:',
+    videoUrl: 'https://www.instagram.com/p/DfkDUCmsL4C/'
   },
   {
     id: 'rode-bieten-sap',
