@@ -126,7 +126,7 @@ const explanations: Explanation[] = [
 
 const Behandelingen = () => {
   const { openModal } = useBookingModal();
-  const [openTraject, setOpenTraject] = useState<number | null>(0);
+  const [openTraject, setOpenTraject] = useState<number | null>(null);
   return (
     <div className="min-h-screen">
       <SEO
