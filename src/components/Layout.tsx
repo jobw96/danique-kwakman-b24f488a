@@ -10,6 +10,8 @@ import zachteSchaduw from '@/assets/sfeer/zachte-schaduw-boog-4x3.webp';
 import { useBookingModal } from '@/components/BookingModal';
 import { SpotifyIcon } from '@/components/BrandIcons';
 import { useHeadingHierarchyCheck } from '@/hooks/useHeadingHierarchyCheck';
+import { PromoBanner } from '@/components/PromoBanner';
+import { Button } from '@/components/ui/button';
 
 // Navigatie-items zijn echte <a href>-links zodat crawlers ze volgen en
 // bezoekers ze in een nieuw tabblad kunnen openen. MotionLink geeft die
@@ -183,6 +185,25 @@ export const Layout: React.FC<LayoutProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, [bannerHeight]);
 
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMobileMenuOpen(false);
+    };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => {
+      document.body.style.overflow = previous;
+      window.removeEventListener('keydown', closeOnEscape);
+    };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    document.documentElement.style.scrollPaddingTop = `${headerHeight - bannerOffset + 16}px`;
+    return () => { document.documentElement.style.scrollPaddingTop = ''; };
+  }, [headerHeight, bannerOffset]);
+
 
 
   // Scroll to top on route change, or smooth scroll to hash
@@ -328,7 +349,7 @@ export const Layout: React.FC<LayoutProps> = ({
         style={{ transform: `translateY(-${bannerOffset}px)` }}
       >
 
-      <div ref={bannerRef} />
+      <div ref={bannerRef}><PromoBanner /></div>
 
       <m.header className="w-full border-b" animate={{
       backgroundColor: scrolled ? 'hsl(var(--background) / 0.9)' : isHomePage ? 'transparent' : 'hsl(var(--background))',
@@ -491,6 +512,9 @@ export const Layout: React.FC<LayoutProps> = ({
           </m.button>
         </div>
 
+      </m.header>
+      </div>
+
         <AnimatePresence>
           {mobileMenuOpen && <m.div className="fixed inset-0 bg-black/20 backdrop-blur-sm lg:hidden z-[55]" initial={{
           opacity: 0
@@ -503,7 +527,7 @@ export const Layout: React.FC<LayoutProps> = ({
         }} onClick={() => setMobileMenuOpen(false)} />}
         </AnimatePresence>
 
-        <m.div className="fixed top-0 right-0 w-[85%] max-w-[360px] bg-background h-screen px-8 py-8 lg:hidden flex flex-col z-[58] shadow-2xl" initial={{
+        <m.div aria-hidden={!mobileMenuOpen} inert={!mobileMenuOpen} className="fixed top-0 right-0 w-[85%] max-w-[360px] bg-background h-dvh px-8 py-8 lg:hidden flex flex-col z-[58] shadow-2xl" initial={{
         x: "100%"
       }} animate={{
         x: mobileMenuOpen ? 0 : "100%"
@@ -513,6 +537,7 @@ export const Layout: React.FC<LayoutProps> = ({
         damping: 32,
         mass: 0.8
       }}>
+          <Button variant="ghost" size="icon" aria-label="Menu sluiten" className="absolute top-5 right-4" onClick={closeMenus}><X /></Button>
           {/* Logo */}
           <m.div className="mb-8" initial={{
           opacity: 0,
@@ -597,11 +622,11 @@ export const Layout: React.FC<LayoutProps> = ({
                           </div>
                         </m.div>}
                     </AnimatePresence>
-                  </div> : <MotionLink to={link.href!} onClick={closeMenus} className="block text-base font-light text-foreground w-full text-left py-3" whileTap={{
+                  </div> : link.href ? <MotionLink to={link.href} onClick={closeMenus} className="block text-base font-light text-foreground w-full text-left py-3" whileTap={{
               scale: 0.98
             }}>
                     {link.name}
-                  </MotionLink>}
+                  </MotionLink> : null}
               </m.div>)}
           </nav>
 
@@ -621,12 +646,10 @@ export const Layout: React.FC<LayoutProps> = ({
             Gratis kennismaking
           </m.button>
         </m.div>
-      </m.header>
-      </div>
 
       <main
         className="flex-grow bg-background relative z-10"
-        style={isHomePage ? undefined : { paddingTop: headerHeight }}
+        style={{ paddingTop: isHomePage ? bannerHeight : headerHeight }}
       >
         {children}
       </main>
