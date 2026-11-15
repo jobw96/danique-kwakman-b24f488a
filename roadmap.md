@@ -37,3 +37,4 @@
 - [x] Pepernotenrecept bovenaan toegevoegd met letterlijke tekst, WebP-foto met EXIF/XMP en beschrijvende alt-tekst; opgenomen in sitemap
 - [x] Gembershotfoto nog iets hoger plaatsen
 - [x] Gembershotfoto verder omhoog geplaatst (object-position center 78%) op lijstkaart en receptpagina
+- [x] Instagram-videoknop toegevoegd bij immuunboost blokjes; videolink op alle recepten nu als knop weergegeven
