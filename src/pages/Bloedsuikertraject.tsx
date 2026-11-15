@@ -3,6 +3,8 @@ import { m } from 'framer-motion';
 import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import { TrajectPrice } from '@/components/TrajectPrice';
+import { trajectPrices } from '@/data/traject-prices';
 import { GlucoseKaart } from '@/components/GlucoseKaart';
 import havermoutKom from '@/assets/sfeer/havermout-kom-bovenaf-4x3.webp';
 import { Testimonials } from '@/components/Testimonials';
@@ -528,8 +530,7 @@ const Bloedsuikertraject = () => {
                 <SectionLabel text="Investering" />
                 <h2 className="text-3xl text-foreground md:text-4xl">Klaar om inzicht te krijgen in hoe jouw lichaam werkt?{"\u00a0"}</h2>
                 <p className="mt-5 text-sm leading-relaxed">Plan je gratis kennismakingsgesprek in</p>
-                <p className="mt-8 font-serif text-5xl text-primary-dark md:text-6xl">€325</p>
-                <p className="mt-2 text-sm">{"\n"}</p>
+                <TrajectPrice pricing={trajectPrices.bloedsuikertraject} />
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking
                 </CustomButton>

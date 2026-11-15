@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { seoHead, breadcrumbs, serviceSchema } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
 import Darmtraject from "@/pages/Darmtraject";
+import { trajectPrices } from '@/data/traject-prices';
 
 export const Route = createFileRoute("/_layout/darmtraject")({
   head: () => seoHead({
@@ -13,7 +14,8 @@ export const Route = createFileRoute("/_layout/darmtraject")({
         name: "1:1 Darmtraject",
         description: "Darmtraject van ongeveer zes maanden met gericht laboratoriumonderzoek, opgebouwd uit vier fases. Labkosten zijn niet inbegrepen.",
         path: "/darmtraject",
-        monthlyPrice: 299,
+        price: trajectPrices.darmtraject.price,
+        priceValidUntil: trajectPrices.darmtraject.validThrough,
         duration: "P6M",
       }),
       breadcrumbs([

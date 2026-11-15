@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { seoHead, breadcrumbs, serviceSchema } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
 import MommyToBe from "@/pages/MommyToBe";
+import { trajectPrices } from '@/data/traject-prices';
 
 export const Route = createFileRoute("/_layout/mommy-to-be")({
   head: () => seoHead({
@@ -13,7 +14,7 @@ export const Route = createFileRoute("/_layout/mommy-to-be")({
         name: "1:1 Mommy (to be) traject",
         description: "Persoonlijk traject van vijf maanden voor vrouwen met een kinderwens, tijdens de zwangerschap of in de postpartumperiode.",
         path: "/mommy-to-be",
-        monthlyPrice: 149,
+        price: trajectPrices['mommy-to-be'].price,
         duration: "P5M",
       }),
       breadcrumbs([

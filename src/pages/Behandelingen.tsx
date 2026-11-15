@@ -5,6 +5,8 @@ import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { ArrowRight } from 'lucide-react';
 import { CustomButton } from '@/components/CustomButton';
+import { TrajectPrice } from '@/components/TrajectPrice';
+import { trajectPrices, type TrajectPrice as PriceDetails } from '@/data/traject-prices';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
@@ -22,7 +24,7 @@ type Treatment = {
   title: string;
   description: string;
   href: string;
-  price: string;
+  price: PriceDetails;
   comingSoon?: boolean;
 };
 
@@ -33,7 +35,7 @@ const treatments: Treatment[] = [
     title: "1:1 Bloedsuikertraject",
     description: "Met het 1:1 bloedsuikertraject krijg je in 2 weken inzicht in hoe jouw lichaam reageert op voeding, stress, beweging en slaap. Je ontdekt wat zorgt voor pieken en dalen in je bloedsuikerspiegel en leert met praktische veranderingen bouwen aan meer energie, minder cravings en een stabiele basis voor je hormonen.",
     href: "/bloedsuikertraject",
-    price: '€325 eenmalig'
+    price: trajectPrices.bloedsuikertraject
   },
   {
     id: 'hormoontraject',
@@ -41,7 +43,7 @@ const treatments: Treatment[] = [
     title: "1:1 Hormoontraject",
     description: "Met het 1:1 hormoontraject duiken we 3 maanden in jouw hormonale klachten. Waarom heb je zoveel last van mood swings, acne, PCOS-klachten of een luteale fase waarin je je compleet anders voelt? We brengen in kaart welke factoren jouw hormonale disbalans beïnvloeden en pakken deze gericht aan, zodat je cyclus stabieler wordt en je hormonale klachten niet langer je dagelijks leven bepalen.",
     href: "/hormoontraject",
-    price: '€249 p/m'
+    price: trajectPrices.hormoontraject
   },
   {
     id: 'mommy-to-be',
@@ -49,7 +51,7 @@ const treatments: Treatment[] = [
     title: "1:1 Mommy (to be) traject",
     description: "Met het 1:1 Mommy (to be) traject help ik je stap voor stap de juiste puzzelstukjes samenbrengen. Met aandacht voor je hormonen, darmen, voeding en leefstijl, van kinderwens tot zwangerschap en postpartum.",
     href: "/mommy-to-be",
-    price: '€149 p/m'
+    price: trajectPrices['mommy-to-be']
   },
   {
     id: 'darmtraject',
@@ -57,7 +59,7 @@ const treatments: Treatment[] = [
     title: "1:1 Darmtraject",
     description: "Met het 1:1 darmtraject begeleid ik je 6 maanden door het proces van darmherstel, inclusief labonderzoek. Zodat je eindelijk weet waarom je last hebt van een opgeblazen buik, buikpijn of een onrustige stoelgang en we je klachten stap voor stap kunnen gaan verminderen.",
     href: "/darmtraject",
-    price: '€299 p/m'
+    price: trajectPrices.darmtraject
   }
 ];
 
@@ -196,7 +198,7 @@ const Behandelingen = () => {
                 >
                   Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
                 </m.div>}
-                {treatment.price && <p className="mt-2 text-xs text-muted-foreground">{treatment.price}</p>}
+                {treatment.price && <TrajectPrice pricing={treatment.price} compact />}
               </div>
             </m.div>;
             return (

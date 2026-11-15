@@ -3,6 +3,8 @@ import { m } from 'framer-motion';
 import { Check, ChevronDown } from 'lucide-react';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { CustomButton } from '@/components/CustomButton';
+import { TrajectPrice } from '@/components/TrajectPrice';
+import { trajectPrices } from '@/data/traject-prices';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import { Link } from '@/lib/router-compat';
@@ -578,10 +580,7 @@ const Darmtraject = () => {
                   Klaar voor rust in je buik, meer energie en vertrouwen in je lijf?
                 </h2>
                 <p className="mt-6 leading-relaxed">Plan je gratis kennismakingsgesprek in.</p>
-                <p className="mt-8 font-serif text-5xl text-foreground md:text-6xl">
-                  €299
-                  <span className="font-sans text-xl font-light text-muted-foreground md:text-2xl">/maand</span>
-                </p>
+                <TrajectPrice pricing={trajectPrices.darmtraject} />
                 <p className="mt-2 text-sm">Exclusief labkosten.</p>
                 <CustomButton onClick={openModal} className="mt-8">
                   Plan een gratis kennismaking

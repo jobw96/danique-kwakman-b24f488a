@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { seoHead, breadcrumbs, serviceSchema } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
 import Hormoontraject from "@/pages/Hormoontraject";
+import { trajectPrices } from '@/data/traject-prices';
 
 export const Route = createFileRoute("/_layout/hormoontraject")({
   head: () => seoHead({
@@ -13,7 +14,8 @@ export const Route = createFileRoute("/_layout/hormoontraject")({
         name: "1:1 Hormoontraject",
         description: "Persoonlijk traject van drie maanden voor vrouwen met PMS, een onregelmatige cyclus, vermoeidheid of hormonale klachten.",
         path: "/hormoontraject",
-        monthlyPrice: 249,
+        price: trajectPrices.hormoontraject.price,
+        priceValidUntil: trajectPrices.hormoontraject.validThrough,
         duration: "P3M",
       }),
       breadcrumbs([
