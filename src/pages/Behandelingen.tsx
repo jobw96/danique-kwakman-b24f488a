@@ -143,7 +143,7 @@ const Behandelingen = () => {
                 Je probeert gezond te eten, voldoende te slapen en hebt misschien al van alles geprobeerd. En toch blijf je last houden van een opgeblazen buik, cravings, vermoeidheid, PMS, een onregelmatige cyclus, een onrustige buik of andere klachten waar je maar niet vanaf komt ...
               </p>
               <p>
-                Tijd om niet langer te blijven zoeken, maar te ontdekken waar de disbalans in je lichaam is ontstaan en wat jouw lichaam nodig heeft.
+                {""}
               </p>
               <p>
                 Hieronder vind je mijn verschillende trajecten. Weet je nog niet welke bij jou past? Tijdens een vrijblijvend kennismakingsgesprek kijken we samen wat jouw lijf nodig heeft.
