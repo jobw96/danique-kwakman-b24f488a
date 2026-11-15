@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams, Navigate } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { ArrowLeft, Lightbulb, ChefHat } from 'lucide-react';
+import { ArrowLeft, Lightbulb, ChefHat, Instagram } from 'lucide-react';
 import { getRecipeBySlug, recipesByNewest, type RecipeNoteLink } from '@/data/recipes';
 
 /** Maakt de opgegeven teksten binnen een notitie klikbaar. */
