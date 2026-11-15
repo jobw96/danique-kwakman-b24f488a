@@ -3,7 +3,7 @@ import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ChefHat } from 'lucide-react';
-import { recipes, type Recipe } from '@/data/recipes';
+import { recipesByNewest, type Recipe } from '@/data/recipes';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
@@ -56,7 +56,7 @@ const Recepten = () => (
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          {recipes.map((recipe) => (
+          {recipesByNewest.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} />
           ))}
         </div>

@@ -3,7 +3,7 @@ import { Link, useParams, Navigate } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { ArrowLeft, Lightbulb, ChefHat } from 'lucide-react';
-import { getRecipeBySlug, recipes, type RecipeNoteLink } from '@/data/recipes';
+import { getRecipeBySlug, recipesByNewest, type RecipeNoteLink } from '@/data/recipes';
 
 /** Maakt de opgegeven teksten binnen een notitie klikbaar. */
 const renderNote = (note: string, links?: RecipeNoteLink[]): React.ReactNode => {
@@ -55,7 +55,7 @@ const ReceptDetail = () => {
 
   if (!recipe) return <Navigate to="/recepten" replace />;
 
-  const others = recipes.filter((r) => r.slug !== recipe.slug).slice(0, 4);
+  const others = recipesByNewest.filter((r) => r.slug !== recipe.slug).slice(0, 4);
 
   return (
     <div className="min-h-screen">

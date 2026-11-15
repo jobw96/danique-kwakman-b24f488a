@@ -425,3 +425,6 @@ export const recipes: Recipe[] = [
 ];
 
 export const getRecipeBySlug = (slug?: string) => recipes.find((r) => r.slug === slug);
+
+/** Weergavevolgorde: nieuwste recepten bovenaan, oudste onderaan. */
+export const recipesByNewest: Recipe[] = [...recipes].reverse();
