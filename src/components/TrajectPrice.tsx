@@ -5,7 +5,7 @@ export function TrajectPrice({ pricing, compact = false }: { pricing: PriceDetai
     <div className={compact ? 'mt-3' : 'mt-8'}>
       {pricing.originalPrice !== undefined && (
         <p className="text-sm text-muted-foreground">
-          <span className="sr-only">Oorspronkelijke totaalprijs: </span>
+          {pricing.introductory ? 'Oorspronkelijke pilotprijs: ' : <span className="sr-only">Oorspronkelijke totaalprijs: </span>}
           <del>{formatTrajectPrice(pricing.originalPrice)}</del>
         </p>
       )}
@@ -16,7 +16,7 @@ export function TrajectPrice({ pricing, compact = false }: { pricing: PriceDetai
       {pricing.validThrough && (
         <p className="mt-1 text-sm text-primary-deep">Actieprijs · Geldig t/m {formatPriceDeadline(pricing.validThrough)}</p>
       )}
-      {pricing.pilot && <p className="mt-1 text-sm text-primary-deep">Speciale pilotprijs</p>}
+      {pricing.introductory && <p className="mt-1 text-sm text-primary-deep">Introductieprijs · Tijdelijk introductieaanbod voor dit nieuwe traject</p>}
     </div>
   );
 }
