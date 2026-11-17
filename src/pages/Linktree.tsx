@@ -304,21 +304,16 @@ const Linktree: React.FC = () => {
 
 
           {/* Socials */}
-          <div className="mt-9 flex items-center justify-center gap-7">
-            {SOCIAL_LINKS.map((social, i) => (
+          <div className="mt-9 flex items-center justify-center gap-4 sm:gap-7">
+            {SOCIAL_LINKS.map((social) => (
               <m.a
                 key={social.name}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="text-primary-foreground"
-                initial={{ opacity: 0, scale: 0.85 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  opacity: { delay: 0.5 + i * 0.08, duration: 0.3, ease: "easeOut" },
-                  scale: { delay: 0.5 + i * 0.08, duration: 0.3, ease: "easeOut" },
-                }}
+                title={social.name}
+                className="text-primary-foreground shrink-0"
                 whileHover={{
                   scale: 1.18,
                   y: -2,
