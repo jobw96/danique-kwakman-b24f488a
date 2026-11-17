@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { m, AnimatePresence } from 'framer-motion';
 import { Instagram, Linkedin, Mail, Mic, Calendar, Globe, Compass, Heart, ShoppingBag, BookOpen } from 'lucide-react';
-import { WhatsAppIcon, TikTokIcon } from '@/components/BrandIcons';
+import { WhatsAppIcon, TikTokIcon, SpotifyIcon } from '@/components/BrandIcons';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
@@ -76,7 +76,8 @@ const SOCIAL_LINKS = [
   { name: "WhatsApp", href: "https://wa.me/31682018727", icon: WhatsAppIcon },
   { name: "Instagram", href: "https://instagram.com/daniquekwakman", icon: Instagram },
   { name: "TikTok", href: "https://www.tiktok.com/@danique.kwakman?_r=1", icon: TikTokIcon },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/daniquekwakman", icon: Linkedin }
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/daniquekwakman", icon: Linkedin },
+  { name: "Spotify", href: "https://open.spotify.com/show/21JMWSXjs1SziLcNNNFHZf?si=iyjN2HWLQn6QvpWlDB8PRA", icon: SpotifyIcon }
 ];
 
 

@@ -51,3 +51,4 @@
 - [x] Actiebanner op alle 78 pagina's gecontroleerd: banner bovenaan (top 0), geen overlap met de navigatiebalk, balk blijft zichtbaar bij scrollen, aftelling loopt; desktop en telefoon; dropdown en mobiel menu klikbaar en menu sluit na klik
 - [x] Hero-tekst op homepage op telefoon iets hoger geplaatst; op 392px, 320px, tablet en computer blijft de kop onder de navigatiebalk en passen kop, tekst en knoppen in beeld
 - [x] "Hoorn" dikgedrukt in de homepage-lead
+- [x] Spotify-icoon toegevoegd aan de linktree-icoonrij, linkt naar de podcast op Spotify; gecontroleerd op 320px, 390px en computer zonder overloop
