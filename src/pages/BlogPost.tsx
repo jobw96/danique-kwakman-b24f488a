@@ -12,6 +12,7 @@ export const POST_DATES: Record<string, string> = {
   'darmen-gezond-houden-5-tips': '2026-06-29',
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
+  'zoete-cravings-luteale-fase': '2026-11-18',
 };
 
 
@@ -19,6 +20,84 @@ export const POST_DATES: Record<string, string> = {
 const BLOG_CONTENT: Record<string, {
   content: React.ReactNode;
 }> = {
+  'zoete-cravings-luteale-fase': {
+    content: <>
+        <p className="lead">
+          Zit je in je luteale fase en heb je last van zoete cravings? Het ene moment gaat het prima en het volgende moment sta je met je hoofd in de koekjestrommel, of ligt er standaard chocola in huis. Dan ben je echt niet de enige, en het zegt niets over je wilskracht.
+        </p>
+
+        <h2>Waarom heb je zoveel zin in zoet vóór je menstruatie?</h2>
+        <p>
+          Je luteale fase is de periode tussen je eisprong en je menstruatie. Na je eisprong stijgt progesteron en daalt oestrogeen. Je lichaam heeft in die weken meer brandstof nodig.
+        </p>
+        <p>
+          Ook je bloedsuiker reageert in deze fase vaak gevoeliger. Daardoor heb je de dagen voor je menstruatie vaak meer trek, grijp je sneller naar iets zoets en gaat je energie meer op en neer.
+        </p>
+
+        <h2>Zoete cravings in je luteale fase zijn een signaal van je lijf</h2>
+        <p>
+          Je lichaam vraagt om energie. Het verlangen naar chocola is dus geen karakterzwakte. Waar het om gaat, is hoe je op dat signaal reageert.
+        </p>
+        <p>
+          Als je die zin in zoet negeert of probeert te onderdrukken, bouwt dat vaak alleen maar op. En een zak koekjes geeft je even een piek, waarna je weer inzakt en nog vermoeider op de bank ligt.
+        </p>
+
+        <h2>Wat kun je eten bij zoete cravings in je luteale fase?</h2>
+        <p>
+          Het helpt om iets zoets te combineren met eiwit, gezonde vetten en vezels, zodat je langer verzadigd blijft en je energie stabieler blijft. Eet daarnaast genoeg en sla je ontbijt niet over, want voor veel vrouwen is lang niet eten een stressprikkel, wat kan zorgen voor meer cravings later op de dag. Schrap ook geen koolhydraten: havermout, aardappelen en fruit mogen er gewoon in.
+        </p>
+
+        <h2>Mag je chocola eten in je luteale fase?</h2>
+        <p>
+          Je hoeft jezelf niks te ontzeggen! Kies bij voorkeur cacao of pure chocola, omdat dit rijk is aan magnesium en dat kun je in deze fase goed gebruiken.
+        </p>
+        <p>
+          Daarom maakte ik deze smoothie. Hij smaakt als een toetje, is in 5 minuten klaar en geeft je iets te eten waar je lichaam echt wat aan heeft.
+        </p>
+
+        <h2>Gezonde chocolade smoothie</h2>
+        <p>Bereidingstijd: 5 minuten | Porties: 1</p>
+        <p><strong>Ingrediënten:</strong></p>
+        <ul>
+          <li>1 banaan</li>
+          <li>1 eetlepel cacaopoeder</li>
+          <li>1 eetlepel amandelpasta</li>
+          <li>2 eetlepels yoghurt</li>
+          <li>1 eetlepel lijnzaad (zelfgemalen)</li>
+          <li>1 theelepel Ceylon kaneel</li>
+          <li>Optioneel: een halve courgette (je proeft er echt niks van!)</li>
+        </ul>
+        <p><strong>Bereiding:</strong></p>
+        <ol>
+          <li>Snijd ¾ van de banaan af en doe dit in de blender. Bewaar ¼ voor later.</li>
+          <li>Doe de cacaopoeder, amandelpasta, lijnzaad, Ceylon kaneel en eventueel de halve courgette in de blender. Voeg yoghurt toe naar gewenste dikte. Mix alles tot een glad geheel.</li>
+          <li>Schenk de smoothie in een mooi glas.</li>
+          <li>Snijd de overige ¼ van de banaan in plakjes.</li>
+          <li>Leg de plakjes banaan op de smoothie en top eventueel af met wat chiazaadjes of cacaonibs.</li>
+          <li>Je smoothie is nu klaar! Eet hem met een lepel in plaats van hem te drinken.</li>
+        </ol>
+        <p>
+          Tip: Voor een goede vertering wil je graag goed kauwen op je maaltijden en dus ook op je smoothie. Dit voorkomt een opgeblazen buik. Het liefst gooi je daarom wat toppings over je smoothie: extra fruit, wat nootjes of cacaonibs.
+        </p>
+
+        <p>
+          Je hoeft jezelf niks te ontzeggen wanneer je zoete cravings ervaart tijdens je menstruatie. Om je daarbij te helpen heb ik iets voor je gemaakt:
+        </p>
+        <ul>
+          <li>Recepten die je energie geven, in plaats van dat je na een zak koekjes nog vermoeider op de bank ligt</li>
+          <li>Not-guilty recepten, zonder bergen suiker, darmvriendelijk en hormoonproof</li>
+          <li>Snacks die je gemakkelijk en snel in elkaar draait</li>
+        </ul>
+        <p>
+          In mijn gratis e-book '5 recepten om je cravings te stillen tijdens je menstruatie' ontdek je hoe je je zoete cravings vervult met voedzame snacks die je lichaam echt ondersteunen.
+        </p>
+        <p className="not-prose">
+          <Link to="/e-book-recepten-snacks" className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm text-primary-foreground no-underline hover:bg-primary/90 transition-colors">
+            Klik hier om de recepten gratis te downloaden
+          </Link>
+        </p>
+      </>
+  },
   'hormoonproof-darmvriendelijke-ontbijtjes': {
     content: <>
         <p className="lead">
@@ -608,7 +687,7 @@ const BlogPost: React.FC = () => {
           delay: 0.3
         }}>
             <div className="relative aspect-[16/9]">
-              <img src={post.image} alt={post.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={post.image} alt={post.imageAlt ?? post.title} className="w-full h-full object-cover" loading={post.imageAlt ? "eager" : "lazy"} fetchPriority={post.imageAlt ? "high" : undefined} decoding="async" />
             </div>
           </m.div>
         </div>

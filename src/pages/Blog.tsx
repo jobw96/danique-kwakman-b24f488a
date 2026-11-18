@@ -7,6 +7,7 @@ import { FadeIn } from '@/components/Animations';
 import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
 import ontlastingSignalen from '@/assets/ontlasting-gezondheid-signalen.webp';
 import ontbijtjesCover from '@/assets/blog/hormoonproof-ontbijtjes.webp.asset.json';
+import chocoladeSmoothie from '@/assets/blog/chocolade-smoothie.webp.asset.json';
 
 
 export interface BlogPost {
@@ -18,8 +19,23 @@ export interface BlogPost {
   date: string;
   readTime: string;
   category: string;
+  /** Optionele alt-tekst voor de hoofdafbeelding */
+  imageAlt?: string;
+  /** Optionele exacte title-tag zonder sitenaam-achtervoegsel */
+  seoTitle?: string;
 }
 export const BLOG_POSTS: BlogPost[] = [{
+  id: '7',
+  slug: 'zoete-cravings-luteale-fase',
+  title: 'Zoete cravings in je luteale fase: tips + chocolade smoothie',
+  seoTitle: 'Zoete cravings in je luteale fase: tips + chocolade smoothie',
+  excerpt: 'Zin in zoet in je luteale fase? Lees waarom je zoete cravings krijgt en maak in 5 minuten een gezonde chocolade smoothie die je langer verzadigt.',
+  image: chocoladeSmoothie.url,
+  imageAlt: 'Gezonde chocolade smoothie met banaan en cacao',
+  date: '18 november 2026',
+  readTime: '4 min',
+  category: 'Voeding'
+}, {
   id: '6',
   slug: 'hormoonproof-darmvriendelijke-ontbijtjes',
   title: '5 hormoonproof en darmvriendelijke ontbijtjes die je energie een boost geven',

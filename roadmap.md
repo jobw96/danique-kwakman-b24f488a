@@ -52,3 +52,4 @@
 - [x] Hero-tekst op homepage op telefoon iets hoger geplaatst; op 392px, 320px, tablet en computer blijft de kop onder de navigatiebalk en passen kop, tekst en knoppen in beeld
 - [x] "Hoorn" dikgedrukt in de homepage-lead
 - [x] Spotify-icoon toegevoegd aan de linktree-icoonrij, linkt naar de podcast op Spotify; gecontroleerd op 320px, 390px en computer zonder overloop
+- [x] Blog 'Zoete cravings in je luteale fase' toegevoegd met smoothiefoto, Recipe-schema, sitemap en blogoverzicht

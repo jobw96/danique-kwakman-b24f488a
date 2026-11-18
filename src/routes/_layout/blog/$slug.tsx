@@ -3,6 +3,7 @@ import { PageTransition } from "@/components/Animations";
 import BlogPost from "@/pages/BlogPost";
 import { BLOG_POSTS } from "@/pages/Blog";
 import { POST_DATES } from "@/pages/BlogPost";
+import { BLOG_RECIPES } from "@/data/blog-recipes";
 import { seoHead, breadcrumbs, toAbsoluteUrl, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/_layout/blog/$slug")({
@@ -16,7 +17,8 @@ export const Route = createFileRoute("/_layout/blog/$slug")({
       });
     }
     const published = POST_DATES[post.slug];
-    return seoHead({
+    const recipe = BLOG_RECIPES[post.slug];
+    const head = seoHead({
       path: `/blog/${post.slug}`,
       title: post.title,
       description: post.excerpt,
@@ -40,8 +42,32 @@ export const Route = createFileRoute("/_layout/blog/$slug")({
           { name: "Blog", path: "/blog" },
           { name: post.title, path: `/blog/${post.slug}` },
         ]),
+        ...(recipe
+          ? [
+              {
+                "@context": "https://schema.org",
+                "@type": "Recipe",
+                ...recipe,
+                image: [toAbsoluteUrl(post.image)],
+                author: { "@type": "Person", name: "Danique Kwakman" },
+                ...(published ? { datePublished: published } : {}),
+                inLanguage: "nl-NL",
+              },
+            ]
+          : []),
       ],
     });
+    if (!post.seoTitle) return head;
+    const exactTitle = post.seoTitle;
+    return {
+      ...head,
+      meta: head.meta.map((tag) => {
+        if ("title" in tag) return { title: exactTitle };
+        if ("property" in tag && (tag.property === "og:title")) return { ...tag, content: exactTitle };
+        if ("name" in tag && tag.name === "twitter:title") return { ...tag, content: exactTitle };
+        return tag;
+      }),
+    };
   },
   component: () => (
     <PageTransition>
