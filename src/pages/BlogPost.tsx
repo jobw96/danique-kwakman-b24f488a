@@ -127,11 +127,6 @@ const BLOG_CONTENT: Record<string, {
           Succes,<br />
           Liefs Danique
         </p>
-
-        <h2>{"\n"}</h2>
-        <ul>
-          <li><Link to="/blog/zoete-cravings-luteale-fase"></Link></li>
-        </ul>
       </>
   },
   'zoete-cravings-luteale-fase': {
