@@ -53,6 +53,7 @@ export const BLOG_POSTS: BlogPost[] = [{
   title: 'Wat jouw ontlasting je vertelt over je gezondheid',
   excerpt: 'Je ontlasting is misschien wel de meest eerlijke feedback die je lichaam je iedere dag geeft. Ontdek wat kleur, frequentie en vorm vertellen over je darmgezondheid.',
   image: ontlastingSignalen,
+  imagePosition: 'object-[50%_30%]',
   date: '7 juli 2026',
   readTime: '6 min',
   category: 'Darmgezondheid'

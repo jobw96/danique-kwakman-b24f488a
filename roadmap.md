@@ -56,3 +56,4 @@
 - [x] Foto in de blogkaart op de blogpagina omhooggehaald via optioneel imagePosition-veld; andere kaarten blijven zoals ze waren
 - [x] Blogdatum 'Zoete cravings in je luteale fase' naar 7 september 2026 (blogoverzicht, POST_DATES, JSON-LD, sitemap lastmod)
 - [x] Tiptekst in blog 'Zoete cravings' dikgedrukt: alleen "Tip:" (keurgekozen door Danique)
+- [x] Foto 'Wat jouw ontlasting je vertelt' in de blogkaart hoger gezet met imagePosition object-[50%_30%]
