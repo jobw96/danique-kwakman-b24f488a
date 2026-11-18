@@ -5,6 +5,7 @@ import { Calendar, ArrowLeft, Share2 } from 'lucide-react';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { BLOG_POSTS } from './Blog';
+import { useBookingModal } from '@/components/BookingModal';
 import bristolStoolChart from '@/assets/bristol-stool-chart.webp';
 
 // ISO publish dates per slug (for Article schema)
@@ -13,13 +14,127 @@ export const POST_DATES: Record<string, string> = {
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
   'zoete-cravings-luteale-fase': '2026-09-07',
+  'zoete-cravings': '2026-11-18',
 };
+
+function KennismakingLink({ children }: { children: React.ReactNode }) {
+  const { openModal } = useBookingModal();
+  return <button type="button" onClick={openModal} className="text-primary underline">{children}</button>;
+}
 
 
 // Blog content for each post
 const BLOG_CONTENT: Record<string, {
   content: React.ReactNode;
 }> = {
+  'zoete-cravings': {
+    content: <>
+        <p className="lead">
+          Het is 9 uur 's avonds. Je hebt de hele dag gewerkt, gezorgd en geregeld. Eindelijk zit je op de bank en dan denk je 1 stukje chocola kan wel! Voor je het weet is de reep op en voel je je schuldig.
+        </p>
+        <p>Herken je dit?</p>
+        <ul>
+          <li>Je hebt 's middags al trek in iets zoets, ook al heb je net gegeten.</li>
+          <li>Je neemt je voor om er vandaag niet aan toe te geven, en om 9 uur lig je er toch in.</li>
+          <li>Na het snoepen voel je je heel even beter en daarna moe of chagrijnig.</li>
+          <li>Vlak voor je menstruatie is het nog erger.</li>
+          <li>Om 15.00u val je in slaap achter je laptop en zoek je naar een gebrokkelde Sultana in je tas.</li>
+        </ul>
+        <p>
+          Je denkt dan misschien dat je gewoon te weinig discipline hebt. Dat is bijna nooit zo. Een craving is een signaal van je lichaam. Als je begrijpt wat het je vertelt, hoef je er niet meer tegen te vechten en kun je er rustig mee omgaan.
+        </p>
+        <aside className="not-prose my-8 rounded-md border-l-4 border-primary bg-secondary/20 p-6 text-base leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Kort antwoord:</strong> zoete cravings komen vaak door een bloedsuiker die op en neer gaat, te weinig eten of te weinig eiwitten overdag, slaaptekort, stress, gewoontes en emoties. Bij veel vrouwen komt daar hun cyclus nog bovenop. Eet regelmatig met eiwitten, vezels en gezonde vetten, zorg voor voldoende slaap en rust en verbied jezelf niets. Dat laatste maakt cravings vaak juist sterker.
+        </aside>
+
+        <h2>Wat is een craving eigenlijk?</h2>
+        <p>
+          Een craving is een sterke, specifieke behoefte aan een bepaald soort eten, vaak iets zoets. Het verschilt van gewone honger. Honger bouwt langzaam op en is blij met bijna alles. Een craving komt plotseling en wil precies dat ene ding, het liefst nu.
+        </p>
+
+        <h2>Je bloedsuiker gaat op en neer</h2>
+        <p>
+          Eet je een ontbijt met vooral snelle koolhydraten, zoals een croissant, witbrood met jam of een smoothie? Dan schiet je bloedsuiker snel omhoog. Je lichaam maakt daarna insuline aan om die suiker weer de cellen in te brengen, en je bloedsuiker zakt vaak net zo snel weer terug. Die val voel je als trek in iets zoets, soms samen met trillerigheid, een dipje of een kort lontje. Je eet dan weer iets zoets, je bloedsuiker stijgt weer en zo draai je rond.
+        </p>
+        <p>
+          Veel vrouwen met hormonale klachten herkennen dit patroon, omdat een schommelende bloedsuiker en je hormonen elkaar beïnvloeden. Meer rust in je bloedsuiker geeft dus ook meer rust in je cravings.
+        </p>
+
+        <h2>Je eet overdag te weinig</h2>
+        <p>
+          Een klein ontbijt, een salade als lunch en tussendoor een kop koffie. Dat klinkt gezond, maar je lichaam bent een volwassen vrouw die ook mag eten als een volwassen vrouw. Als je overdag te weinig eet dan wil je lichaam dat ‘s avonds in halen.
+        </p>
+        <p>
+          Ook te weinig eiwitten speelt mee. Eiwitten zorgen ervoor dat je langer verzadigd blijft. Eet je ze niet of te weinig, dan heb je sneller weer trek. Dit komt omdat je bleodsuiker spiegel minder stabiel blijft met onvoldoende eiwitten.
+        </p>
+
+        <h2>Je slaapt slecht</h2>
+        <p>
+          Na een korte nacht heb je meer honger en vooral meer zin in zoet en vet. Dat merk je waarschijnlijk zelf ook. Na een nacht van slecht slapen grijp je sneller naar koffie en een koekje. Je lichaam zoekt dan snelle energie om de dag door te komen. Slaaptekort maakt je bloedsuiker bovendien minder stabiel, waardoor de cravings nog sterker worden.
+        </p>
+
+        <h2>Je hebt stress</h2>
+        <p>
+          Als je veel aan je hoofd hebt, zoek je troost. Zoet werkt dan even als een beloning en maakt je spanning dat moment lichter. Ook je stresshormoon cortisol speelt daarbij een rol. Het probleem is dat die rust maar kort duurt. Daarna heb je weer stress en weer trek.
+        </p>
+        <p>
+          Als je dit herkent, helpt het om niet alleen naar je eten te kijken, maar ook naar wat er in je dag aan spanning zit.
+        </p>
+
+        <h2>Je cyclus speelt een grote rol</h2>
+        <p>
+          In de week voor je menstruatie, de luteale fase, hebben veel vrouwen meer trek en meer zin in zoet. Je lichaam heeft in die fase meer energie nodig en je bloedsuiker en stemming zijn gevoeliger. Het is dus niet raar dat je dan meer zin hebt in chocola. Wil je hier meer over weten en wil je gelijk een gezond snackje maken? Lees dan mijn blog <Link to="/blog/zoete-cravings-luteale-fase">Zoete cravings in je luteale fase: tips + chocolade smoothie</Link>.
+        </p>
+
+        <h2>Is het niet gewoon een tekort aan magnesium?</h2>
+        <p>
+          Dit hoor je vaak, vooral bij trek in chocola. Pure chocolade bevat wel magnesium en voeding met magnesium is zinvol voor veel mensen. Kies dus ook regelmatig voor magnesiumrijke voeding, zoals:
+        </p>
+        <ul>
+          <li>Pure chocolade (70% of meer)</li>
+          <li>Noten en pitten, zoals amandelen, cashewnoten en pompoenpitten</li>
+          <li>Groene bladgroenten, zoals spinazie</li>
+          <li>Peulvruchten, zoals kikkererwten en linzen</li>
+          <li>Havermout en andere volkoren producten</li>
+          <li>Avocado en banaan</li>
+        </ul>
+
+        <h2>Wat kun je doen bij zoete cravings?</h2>
+        <p><strong>Eet regelmatig en genoeg.</strong> Begin je dag met een ontbijt met eiwitten en zorg dat je lunch echt voedt. Dat verandert vaak meer dan suiker schrappen.</p>
+        <p><strong>Combineer koolhydraten met eiwitten, vezels en vetten.</strong> Bijvoorbeeld fruit met yoghurt en noten, of een boterham met pindakaas. Je bloedsuiker stijgt dan rustiger en je houdt het langer vol.</p>
+        <p><strong>Zorg voor slaap en rust.</strong> Dat heeft meer invloed op je trek dan je denkt.</p>
+        <p><strong>Ontdek je trigger.</strong> Houd een week bij wanneer je trek hebt en wat er op dat moment speelt. Is het honger, vermoeidheid, stress of je cyclus? Als je weet waar het vandaan komt, weet je ook wat je nodig hebt.</p>
+        <p>
+          Heb je zin in iets zoets? Dan heb ik een <Link to="/e-book-recepten-snacks">e-book met recepten voor zoete cravings</Link> gemaakt, met voedzame snacks die je lichaam ondersteunen. Bekijk ook mijn <Link to="/blog/zoete-cravings-luteale-fase">gezonde chocolade smoothie</Link>.
+        </p>
+
+        <h2>Wanneer is het tijd om hulp te zoeken?</h2>
+        <p>
+          Heb je elke dag last van cravings, lukt het je niet om er zelf grip op te krijgen of voel je je er moe, opgeblazen of onrustig door? Dan is het goed om samen te kijken naar wat er bij jou speelt. Je hoeft dit niet alleen uit te zoeken.
+        </p>
+        <p>
+          Bij mijn cliënten zie ik vaak dat cravings niet los staan van de rest: een bloedsuiker die op en neer gaat, een cyclus die uit balans is, een darm die niet lekker werkt, te weinig slaap of te veel stress. Het is meestal een samenspel. Als je dat samen in kaart brengt, worden cravings vanzelf rustiger.
+        </p>
+
+        <h2>Wil je begrijpen wat jouw cravings je vertellen?</h2>
+        <p>
+          Herken je dit en wil je weten wat er bij jou speelt? Dan kijk ik graag met je mee naar je voeding, bloedsuiker, slaap, stress en cyclus. Zo ontdek je waarom jouw lichaam vraagt om zoet en wat het echt nodig heeft.
+        </p>
+        <p>
+          <Link to="/behandelingen">Lees hier meer over mijn trajecten</Link> of <KennismakingLink>plan een vrijblijvende kennismaking in</KennismakingLink>.
+        </p>
+        <p>Ik gun je een relatie met eten waarin je mag genieten zonder schuldgevoel.</p>
+        <p>
+          Succes,<br />
+          Liefs Danique
+        </p>
+
+        <h2>Lees ook</h2>
+        <ul>
+          <li><Link to="/blog/zoete-cravings-luteale-fase">Zoete cravings in je luteale fase: tips + chocolade smoothie</Link></li>
+        </ul>
+      </>
+  },
   'zoete-cravings-luteale-fase': {
     content: <>
         <p className="lead">
@@ -666,6 +781,7 @@ const BlogPost: React.FC = () => {
               <Calendar className="w-4 h-4" />
               {post.date}
             </span>
+            {post.updated && <span>Laatst bijgewerkt: {post.updated}</span>}
             <button className="flex items-center gap-1.5 hover:text-primary transition-colors ml-auto" onClick={() => navigator.share?.({
             title: post.title,
             url: window.location.href

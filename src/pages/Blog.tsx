@@ -8,6 +8,7 @@ import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
 import ontlastingSignalen from '@/assets/ontlasting-gezondheid-signalen.webp';
 import ontbijtjesCover from '@/assets/blog/hormoonproof-ontbijtjes.webp.asset.json';
 import chocoladeSmoothie from '@/assets/blog/chocolade-smoothie.webp.asset.json';
+import zoeteCravingsKoekjes from '@/assets/blog/zoete-cravings-koekjes.webp.asset.json';
 
 
 export interface BlogPost {
@@ -25,8 +26,22 @@ export interface BlogPost {
   imagePosition?: string;
   /** Optionele exacte title-tag zonder sitenaam-achtervoegsel */
   seoTitle?: string;
+  /** Optionele tekst 'Laatst bijgewerkt' bovenaan de blog */
+  updated?: string;
 }
 export const BLOG_POSTS: BlogPost[] = [{
+  id: '8',
+  slug: 'zoete-cravings',
+  title: 'Zoete cravings: waarom heb je steeds trek in suiker en wat kun je eraan doen?',
+  seoTitle: 'Zoete cravings: waarom heb je trek in suiker? | Danique Kwakman',
+  excerpt: 'Altijd trek in iets zoets? Lees waar zoete cravings vandaan komen, van bloedsuiker en slaap tot stress en je cyclus, en wat je eraan doet zonder jezelf iets te verbieden.',
+  image: zoeteCravingsKoekjes.url,
+  imageAlt: 'Vrouw met een kopje thee en iets zoets, op zoek naar een gezonde manier om zoete cravings te stillen',
+  date: '18 november 2026',
+  updated: 'november 2026',
+  readTime: '6 min',
+  category: 'Voeding'
+}, {
   id: '7',
   slug: 'zoete-cravings-luteale-fase',
   title: 'Zoete cravings in je luteale fase: tips + chocolade smoothie',
