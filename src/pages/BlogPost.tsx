@@ -123,7 +123,6 @@ const BLOG_CONTENT: Record<string, {
         <p>
           <Link to="/behandelingen">Lees hier meer over mijn trajecten</Link> of <KennismakingLink>plan een vrijblijvende kennismaking in</KennismakingLink>.
         </p>
-        <p>Ik gun je een relatie met eten waarin je mag genieten zonder schuldgevoel.</p>
         <p>
           Succes,<br />
           Liefs Danique
