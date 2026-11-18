@@ -39,8 +39,8 @@ export const BLOG_POSTS: BlogPost[] = [{
   image: sensorPortret.url,
   imageAlt: 'Danique Kwakman met een glucosesensor op haar arm, die meet hoe haar bloedsuiker stijgt en daalt na het eten',
   imagePosition: 'object-[50%_30%]',
-  date: '18 november 2026',
-  updated: 'november 2026',
+  date: '30 september 2026',
+  updated: 'september 2026',
   readTime: '6 min',
   category: 'Voeding'
 }, {

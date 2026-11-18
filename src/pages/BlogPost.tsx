@@ -17,7 +17,7 @@ export const POST_DATES: Record<string, string> = {
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
   'zoete-cravings-luteale-fase': '2026-09-07',
   'zoete-cravings': '2026-09-14',
-  'bloedsuikerspiegel-uitgelegd': '2026-11-18',
+  'bloedsuikerspiegel-uitgelegd': '2026-09-30',
 };
 
 function KennismakingLink({ children }: { children: React.ReactNode }) {
