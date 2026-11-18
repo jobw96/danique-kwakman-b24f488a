@@ -59,4 +59,4 @@
 - [x] Foto 'Wat jouw ontlasting je vertelt' in de blogkaart hoger gezet met imagePosition object-[50%_30%]
 - [x] Foto 'Zoete cravings' in de blogkaart hoger gezet en datum naar 14 september 2026 (blogoverzicht, POST_DATES, JSON-LD, sitemap lastmod)
 - [x] Interne link in blog 'Zoete cravings in je luteale fase': "zoete cravings" in de intro klikbaar naar /blog/zoete-cravings, plus Lees-ook-blok met die ene link; bestaande linkstijl, geen tabblad, link mag geen 404 geven
-- [x] Blogdatum Je
+- [x] Blogdatum Je- [x] Foto in de blogkaart van "Je bloedsuikerspiegel uitgelegd" hoger gezet (object-[50- [x] Foto in de blogkaart van "Je bloedsuikerspiegel uitgelegd" hoger gezet zodat het witte sensorapparaatje op de arm zichtbaar is; computer en telefoon gecontroleerd
