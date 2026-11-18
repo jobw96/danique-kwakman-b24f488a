@@ -14,7 +14,7 @@ export const POST_DATES: Record<string, string> = {
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
   'zoete-cravings-luteale-fase': '2026-09-07',
-  'zoete-cravings': '2026-11-18',
+  'zoete-cravings': '2026-09-14',
 };
 
 function KennismakingLink({ children }: { children: React.ReactNode }) {
@@ -138,7 +138,7 @@ const BLOG_CONTENT: Record<string, {
   'zoete-cravings-luteale-fase': {
     content: <>
         <p className="lead">
-          Zit je in je luteale fase en heb je last van zoete cravings? Het ene moment gaat het prima en het volgende moment sta je met je hoofd in de koekjestrommel, of ligt er standaard chocola in huis. Dan ben je echt niet de enige, en het zegt niets over je wilskracht.
+          Zit je in je luteale fase en heb je last van <Link to="/blog/zoete-cravings">zoete cravings</Link>? Het ene moment gaat het prima en het volgende moment sta je met je hoofd in de koekjestrommel, of ligt er standaard chocola in huis. Dan ben je echt niet de enige, en het zegt niets over je wilskracht.
         </p>
 
         <h2>Waarom heb je zoveel zin in zoet vóór je menstruatie?</h2>
@@ -211,6 +211,11 @@ const BLOG_CONTENT: Record<string, {
             Klik hier om de recepten gratis te downloaden
           </Link>
         </p>
+
+        <h2>Lees ook</h2>
+        <ul>
+          <li><Link to="/blog/zoete-cravings">Zoete cravings: waarom heb je steeds trek in suiker en wat kun je eraan doen?</Link></li>
+        </ul>
       </>
   },
   'hormoonproof-darmvriendelijke-ontbijtjes': {

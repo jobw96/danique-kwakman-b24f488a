@@ -57,3 +57,5 @@
 - [x] Blogdatum 'Zoete cravings in je luteale fase' naar 7 september 2026 (blogoverzicht, POST_DATES, JSON-LD, sitemap lastmod)
 - [x] Tiptekst in blog 'Zoete cravings' dikgedrukt: alleen "Tip:" (keurgekozen door Danique)
 - [x] Foto 'Wat jouw ontlasting je vertelt' in de blogkaart hoger gezet met imagePosition object-[50%_30%]
+- [x] Foto 'Zoete cravings' in de blogkaart hoger gezet en datum naar 14 september 2026 (blogoverzicht, POST_DATES, JSON-LD, sitemap lastmod)
+- [x] Interne link in blog 'Zoete cravings in je luteale fase': "zoete cravings" in de intro klikbaar naar /blog/zoete-cravings, plus Lees-ook-blok met die ene link; bestaande linkstijl, geen tabblad, link mag geen 404 geven

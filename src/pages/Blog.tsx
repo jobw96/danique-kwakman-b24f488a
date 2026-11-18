@@ -37,8 +37,9 @@ export const BLOG_POSTS: BlogPost[] = [{
   excerpt: 'Altijd trek in iets zoets? Lees waar zoete cravings vandaan komen, van bloedsuiker en slaap tot stress en je cyclus, en wat je eraan doet zonder jezelf iets te verbieden.',
   image: zoeteCravingsKoekjes.url,
   imageAlt: 'Vrouw met een kopje thee en iets zoets, op zoek naar een gezonde manier om zoete cravings te stillen',
-  date: '18 november 2026',
-  updated: 'november 2026',
+  imagePosition: 'object-[50%_30%]',
+  date: '14 september 2026',
+  updated: 'september 2026',
   readTime: '6 min',
   category: 'Voeding'
 }, {
