@@ -38,7 +38,7 @@ export const BLOG_POSTS: BlogPost[] = [{
   excerpt: 'Wat is je bloedsuikerspiegel en wat gebeurt er na het eten? Een heldere uitleg over bloedsuiker en insuline, waarom je een dip krijgt en wat je zelf kunt doen.',
   image: sensorPortret.url,
   imageAlt: 'Danique Kwakman met een glucosesensor op haar arm, die meet hoe haar bloedsuiker stijgt en daalt na het eten',
-  imagePosition: 'object-[50%_30%]',
+  imagePosition: 'object-[50%_45%]',
   date: '30 september 2026',
   updated: 'september 2026',
   readTime: '6 min',
