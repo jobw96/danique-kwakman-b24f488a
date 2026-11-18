@@ -53,3 +53,5 @@
 - [x] "Hoorn" dikgedrukt in de homepage-lead
 - [x] Spotify-icoon toegevoegd aan de linktree-icoonrij, linkt naar de podcast op Spotify; gecontroleerd op 320px, 390px en computer zonder overloop
 - [x] Blog 'Zoete cravings in je luteale fase' toegevoegd met smoothiefoto, Recipe-schema, sitemap en blogoverzicht
+- [x] Foto in de blogkaart op de blogpagina omhooggehaald via optioneel imagePosition-veld; andere kaarten blijven zoals ze waren
+- [x] Blogdatum 'Zoete cravings in je luteale fase' naar 7 september 2026 (blogoverzicht, POST_DATES, JSON-LD, sitemap lastmod)

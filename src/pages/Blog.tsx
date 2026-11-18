@@ -21,6 +21,8 @@ export interface BlogPost {
   category: string;
   /** Optionele alt-tekst voor de hoofdafbeelding */
   imageAlt?: string;
+  /** Optionele croppositie voor de foto in het blogoverzicht */
+  imagePosition?: string;
   /** Optionele exacte title-tag zonder sitenaam-achtervoegsel */
   seoTitle?: string;
 }
@@ -32,7 +34,8 @@ export const BLOG_POSTS: BlogPost[] = [{
   excerpt: 'Zin in zoet in je luteale fase? Lees waarom je zoete cravings krijgt en maak in 5 minuten een gezonde chocolade smoothie die je langer verzadigt.',
   image: chocoladeSmoothie.url,
   imageAlt: 'Gezonde chocolade smoothie met banaan en cacao',
-  date: '18 november 2026',
+  imagePosition: 'object-[50%_38%]',
+  date: '7 september 2026',
   readTime: '4 min',
   category: 'Voeding'
 }, {
@@ -111,7 +114,7 @@ const Blog: React.FC = () => {
                 <div className="bg-card rounded-xl overflow-hidden border border-border/50 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative h-60 overflow-hidden">
-                    <m.img loading="lazy" decoding="async" src={post.image} alt={post.title} className="w-full h-full object-cover object-top" whileHover={{
+                    <m.img loading="lazy" decoding="async" src={post.image} alt={post.title} className={`w-full h-full object-cover ${post.imagePosition ?? 'object-top'}`} whileHover={{
                   scale: 1.05
                 }} transition={{
                   duration: 0.6,

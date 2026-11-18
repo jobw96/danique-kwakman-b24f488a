@@ -12,7 +12,7 @@ export const POST_DATES: Record<string, string> = {
   'darmen-gezond-houden-5-tips': '2026-06-29',
   'wat-je-ontlasting-zegt-over-je-gezondheid': '2026-07-07',
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
-  'zoete-cravings-luteale-fase': '2026-11-18',
+  'zoete-cravings-luteale-fase': '2026-09-07',
 };
 
 
