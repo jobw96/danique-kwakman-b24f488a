@@ -77,7 +77,7 @@ const BLOG_CONTENT: Record<string, {
           <li>Je smoothie is nu klaar! Eet hem met een lepel in plaats van hem te drinken.</li>
         </ol>
         <p>
-          Tip: Voor een goede vertering wil je graag goed kauwen op je maaltijden en dus ook op je smoothie. Dit voorkomt een opgeblazen buik. Het liefst gooi je daarom wat toppings over je smoothie: extra fruit, wat nootjes of cacaonibs.
+          <strong>Tip:</strong> Voor een goede vertering wil je graag goed kauwen op je maaltijden en dus ook op je smoothie. Dit voorkomt een opgeblazen buik. Het liefst gooi je daarom wat toppings over je smoothie: extra fruit, wat nootjes of cacaonibs.
         </p>
 
         <p>

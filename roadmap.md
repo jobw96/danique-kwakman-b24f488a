@@ -55,3 +55,4 @@
 - [x] Blog 'Zoete cravings in je luteale fase' toegevoegd met smoothiefoto, Recipe-schema, sitemap en blogoverzicht
 - [x] Foto in de blogkaart op de blogpagina omhooggehaald via optioneel imagePosition-veld; andere kaarten blijven zoals ze waren
 - [x] Blogdatum 'Zoete cravings in je luteale fase' naar 7 september 2026 (blogoverzicht, POST_DATES, JSON-LD, sitemap lastmod)
+- [ ] Tiptekst in blog 'Zoete cravings' dikgedrukt (nu: alleen "Tip:"); wachten op keuze of hele alinea dik moet
