@@ -19,7 +19,7 @@ export const POST_DATES: Record<string, string> = {
 
 function KennismakingLink({ children }: { children: React.ReactNode }) {
   const { openModal } = useBookingModal();
-  return <button type="button" onClick={openModal} className="text-primary underline">{children}</button>;
+  return <button type="button" onClick={openModal} className="text-primary underline font-semibold">{children}</button>;
 }
 
 
