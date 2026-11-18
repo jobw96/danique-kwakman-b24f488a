@@ -6,6 +6,8 @@ import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import { BLOG_POSTS } from './Blog';
 import { useBookingModal } from '@/components/BookingModal';
+import { GlucoseKaart } from '@/components/GlucoseKaart';
+import daniqueAbout from '@/assets/danique-about.webp';
 import bristolStoolChart from '@/assets/bristol-stool-chart.webp';
 
 // ISO publish dates per slug (for Article schema)
@@ -15,6 +17,7 @@ export const POST_DATES: Record<string, string> = {
   'hormoonproof-darmvriendelijke-ontbijtjes': '2026-08-09',
   'zoete-cravings-luteale-fase': '2026-09-07',
   'zoete-cravings': '2026-09-14',
+  'bloedsuikerspiegel-uitgelegd': '2026-11-18',
 };
 
 function KennismakingLink({ children }: { children: React.ReactNode }) {
@@ -27,6 +30,146 @@ function KennismakingLink({ children }: { children: React.ReactNode }) {
 const BLOG_CONTENT: Record<string, {
   content: React.ReactNode;
 }> = {
+  'bloedsuikerspiegel-uitgelegd': {
+    content: <>
+        <p className="lead">
+          Het is 15.00 uur. Je hebt gewoon geluncht, maar je ogen vallen bijna dicht achter je laptop. Je hoofd voelt wazig en je zoekt in je tas naar die ene verkruimelde Sultana. Daarna ben je even wat fitter en een uurtje later begint het opnieuw.
+        </p>
+        <p>Herken je dit?</p>
+        <ul>
+          <li>Je krijgt na de lunch een dip, terwijl je net hebt gegeten.</li>
+          <li>Je hebt zin in iets zoets, ook als je geen honger hebt.</li>
+          <li>Je wordt trillerig, prikkelbaar of chagrijnig als je een maaltijd overslaat.</li>
+          <li>Je wordt 's nachts wakker en kunt moeilijk weer in slaap komen.</li>
+          <li>Je voelt je opgeblazen en moe, ook als je gezond eet.</li>
+        </ul>
+        <p>
+          Vaak heeft dit te maken met je bloedsuikerspiegel. Je hoort er steeds meer over: bloedsuiker, insuline, pieken en dips. In deze blog leg ik uit wat er in je lichaam gebeurt als je eet en waarom je je soms na een maaltijd juist slechter voelt.
+        </p>
+        <aside className="not-prose my-8 rounded-xl border-l-4 border-primary bg-secondary/20 p-6">
+          <p className="text-base leading-relaxed text-muted-foreground">
+            <strong className="text-foreground">Kort antwoord:</strong> je bloedsuikerspiegel is de hoeveelheid suiker (glucose) in je bloed. Na het eten stijgt hij en je alvleesklier maakt insuline aan, zodat je cellen de suiker kunnen gebruiken. Daarna daalt hij weer. Bij sommige mensen gaat die beweging heftig op en neer, en dat geeft klachten zoals energiedips, cravings en een wazig hoofd. Eten, beweging, slaap en stress bepalen hoe rustig die beweging verloopt.
+          </p>
+        </aside>
+
+        <h2>Wat is bloedsuiker?</h2>
+        <p>
+          Bloedsuiker, of glucose, is de brandstof van je lichaam. Je haalt het uit koolhydraten: brood, rijst, pasta, aardappelen, fruit en natuurlijk ook zoetigheid. Je hersenen en spieren gebruiken het de hele dag door om te kunnen werken.
+        </p>
+        <p>
+          Je lichaam probeert de hoeveelheid suiker in je bloed binnen een bepaalde marge te houden. Zakt hij te ver, dan krijg je een energietekort. Blijft hij te lang te hoog, dan is dat niet gezond.
+        </p>
+
+        <h2>Wat gebeurt er als je eet?</h2>
+        <p>Stel je voor dat je een boterham met jam eet.</p>
+        <ol>
+          <li>Je bloedsuiker stijgt. Het brood en de jam worden in je darmen afgebroken tot glucose, die in je bloed terechtkomt.</li>
+          <li>Je alvleesklier maakt insuline aan. Insuline werkt als een sleutel waarmee je cellen de glucose naar binnen laten.</li>
+          <li>Je cellen nemen de suiker op. Je spieren en organen gebruiken de energie, en wat over is wordt opgeslagen in je lever en spieren en daarna als vet.</li>
+          <li>Je bloedsuiker daalt weer.</li>
+        </ol>
+        <div className="not-prose my-8">
+          <GlucoseKaart variant="boven" omschrijving="Bloedsuikerverloop dat na het eten stijgt naar 7,7 millimol per liter en binnen het gezonde bereik blijft">
+            <figcaption className="flex flex-col justify-center p-6 text-sm leading-relaxed text-muted-foreground">
+              Na een maaltijd stijgt je bloedsuiker. Blijft hij binnen het blauwe bereik, dan verloopt die beweging rustig.
+            </figcaption>
+          </GlucoseKaart>
+        </div>
+        <p>
+          Dit proces gebeurt bij iedereen, na elke maaltijd. Het gaat erom hoe heftig het verloopt en dat wordt bepaald door je maaltijd, leefstijl, wel of geen stress rond de maaltijd en nog veel meer.
+        </p>
+
+        <h2>Waarom krijg je een dip?</h2>
+        <p>
+          Eet je veel snelle koolhydraten, zoals een witte boterham, een koek of een smoothie, zonder eiwitten, vezels of gezonde vetten erbij? Dan stijgt je bloedsuiker snel en maakt je lichaam veel insuline aan. Daarna zakt hij vaak even snel weer.
+        </p>
+        <p>
+          Die daling voel je. Je wordt moe, krijgt trek in iets zoets, wordt prikkelbaar of krijgt een wazig hoofd. Daalt je bloedsuiker te ver, dan probeert je lichaam deze weer omhoog te krijgen. Daarvoor maakt het onder andere stresshormonen zoals adrenaline aan. Dat kan zorgen voor een trillerig, onrustig gevoel, hartkloppingen en plotselinge trek in eten.
+        </p>
+        <div className="not-prose my-8">
+          <GlucoseKaart variant="onder" omschrijving="Bloedsuikerverloop met een snelle piek gevolgd door een daling naar 3,7 millimol per liter, een dip onder het bereik">
+            <figcaption className="flex flex-col justify-center p-6 text-sm leading-relaxed text-muted-foreground">
+              Na een snelle piek zakt je bloedsuiker hard weg. Dat is het moment waarop je de dip voelt.
+            </figcaption>
+          </GlucoseKaart>
+        </div>
+        <p>
+          Je lichaam roept snel om nieuwe energie, waardoor je al gauw naar zoetigheid grijpt. Zo kun je in een patroon van pieken en dalen terechtkomen.
+        </p>
+
+        <h2>Wat beïnvloedt je bloedsuiker?</h2>
+        <p>
+          <strong>Wat je eet en hoe je het combineert.</strong> Koolhydraten met eiwitten, vezels en gezonde vetten laten je bloedsuiker rustiger stijgen dan koolhydraten alleen. Een boterham met pindakaas of fruit met yoghurt en noten werkt dus beter dan alleen een boterham met jam.
+        </p>
+        <p>
+          <strong>Wanneer en hoe vaak je eet.</strong> Als je lang niet eet, zakt je bloedsuiker en eet je daarna vaak sneller en meer. Regelmatig eten helpt dus.
+        </p>
+        <p>
+          <strong>Beweging.</strong> Je spieren nemen suiker uit je bloed op, zeker als je na het eten beweegt. Onderzoek laat zien dat lichte beweging na een maaltijd, zoals een wandeling, je bloedsuiker na het eten verlaagt. Een wandeling van 10 minuten is al een goed begin.
+        </p>
+        <p>
+          <strong>Slaap en stress.</strong> Te weinig slaap maakt je cellen minder gevoelig voor insuline. Ook stress heeft invloed op je bloedsuiker, omdat stresshormonen je lichaam suiker laten vrijmaken.
+        </p>
+        <p>
+          <strong>Je cyclus.</strong> Na je eisprong, in de luteale fase, stijgt je progesteron. Dat hormoon maakt je cellen iets minder gevoelig voor insuline, terwijl oestrogeen in de eerste helft van je cyclus juist helpt om suiker goed op te nemen. Onderzoek bij gezonde vrouwen laat zien dat je insuline en insulineresistentie in de luteale fase hoger liggen dan in de eerste helft van je cyclus. Je lichaam heeft dan meer insuline nodig om dezelfde hoeveelheid suiker de cellen in te krijgen.
+        </p>
+        <p>
+          Bij veel vrouwen is dat verschil klein, maar je merkt het vooral als je bloedsuiker toch al snel schommelt. Je voelt het als meer trek in zoet, een sterkere dip na het eten en meer vermoeidheid. Daar komt bij dat je lichaam in deze fase meer energie nodig heeft, waardoor je ook meer honger hebt. Daarom is de week voor je menstruatie vaak extra lastig, en dan helpt het extra om je maaltijden goed op te bouwen met eiwitten, vezels en gezonde vetten. In mijn blog <Link to="/blog/zoete-cravings-luteale-fase">Zoete cravings in je luteale fase: tips + chocolade smoothie</Link> lees je wat je dan kunt eten.
+        </p>
+
+        <h2>Wat is insulineresistentie?</h2>
+        <p>
+          Reageren je cellen minder goed op insuline, dan moet je lichaam meer insuline aanmaken om hetzelfde effect te krijgen. Dat noemen we insulineresistentie. Het komt vaak voor bij PMOS en geeft klachten zoals cravings, vermoeidheid en meer vetopslag rondom je buik. Het is een belangrijke reden om niet alleen naar je gewicht te kijken, maar ook naar hoe je lichaam met suiker omgaat.
+        </p>
+
+        <h2>Is een schommelende bloedsuiker hetzelfde als diabetes?</h2>
+        <p>
+          Nee. Bij diabetes is er een medische diagnose en behandeling. Een bloedsuiker die na het eten stijgt en daalt, heeft bijna iedereen. Bij sommige mensen gaat dat gepaard met klachten, maar dat is geen diagnose. Heb je veel dorst, plas je veel of val je onverklaard af? Laat dat dan bij je huisarts onderzoeken.
+        </p>
+
+        <h2>Wat kun je zelf doen?</h2>
+        <p>
+          <strong>Combineer koolhydraten met eiwitten, vezels en gezonde vetten.</strong> Elke maaltijd en elke snack. Dat is de belangrijkste stap die al veel doet.
+        </p>
+        <p>
+          <strong>Eet regelmatig en sla geen maaltijden over.</strong> Zeker niet je ontbijt en je lunch. Een idee nodig voor je ontbijt? Lees mijn blog <Link to="/blog/hormoonproof-darmvriendelijke-ontbijtjes">Hormoonproof en darmvriendelijke ontbijtjes</Link>.
+        </p>
+        <p>
+          <strong>Beweeg na het eten.</strong> Ook als het maar 10 minuten is.
+        </p>
+        <p>
+          <strong>Zorg voor voldoende slaap en herstelmomenten.</strong> Dat maakt je lichaam gevoeliger voor insuline.
+        </p>
+        <p>
+          <strong>Probeer dit een week:</strong> voeg bij elke maaltijd een eiwitbron toe en wandel na je lunch 10 minuten. Noteer hoe je energie om 15.00 uur is. Ik kan je bijna verzekeren dat je je beter voelt!
+        </p>
+
+        <h2>Wil je begrijpen wat jouw bloedsuiker met je doet?</h2>
+        <p>
+          Herken je dit en wil je weten hoe het bij jou zit? Dan kijk ik graag met je mee. In mijn 1:1 bloedsuikertraject kijken we naar je voeding, slaap, stress en cyclus en bouwen we stap voor stap aan meer rust en energie, zodat je niet meer afhankelijk bent van die dip om 15.00 uur.
+        </p>
+        <p>
+          <Link to="/behandelingen">Lees hier meer over mijn trajecten</Link> of <KennismakingLink>plan een vrijblijvende kennismaking in</KennismakingLink>.
+        </p>
+        <p>Ik gun je een dag waarin je energie gewoon blijft.</p>
+        <p>Succes,</p>
+        <p>Liefs Danique</p>
+
+        <div className="not-prose my-10 flex items-center gap-5 rounded-xl border border-border/50 p-6">
+          <img src={daniqueAbout} alt="Danique Kwakman, orthomoleculair hormoon- en darmtherapeut" width={80} height={80} loading="lazy" decoding="async" className="h-20 w-20 flex-shrink-0 rounded-full object-cover object-top" />
+          <div>
+            <p className="font-serif text-lg text-foreground">Danique Kwakman</p>
+            <p className="text-sm text-muted-foreground">Orthomoleculair hormoon- en darmtherapeut in Hoorn en online. <Link to="/over-mij" className="text-primary underline">Meer over mij</Link></p>
+          </div>
+        </div>
+
+        <h2>Lees ook</h2>
+        <ul>
+          <li><Link to="/blog/zoete-cravings">Zoete cravings: waarom heb je steeds trek in suiker en wat kun je eraan doen?</Link></li>
+          <li><Link to="/blog/zoete-cravings-luteale-fase">Zoete cravings in je luteale fase: tips + chocolade smoothie</Link></li>
+        </ul>
+      </>
+  },
   'zoete-cravings': {
     content: <>
         <p className="lead">

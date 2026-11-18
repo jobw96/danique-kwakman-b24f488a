@@ -8,6 +8,7 @@ import darmenGezondTips from '@/assets/darmen-gezond-tips.webp';
 import ontlastingSignalen from '@/assets/ontlasting-gezondheid-signalen.webp';
 import ontbijtjesCover from '@/assets/blog/hormoonproof-ontbijtjes.webp.asset.json';
 import chocoladeSmoothie from '@/assets/blog/chocolade-smoothie.webp.asset.json';
+import sensorPortret from '@/assets/bloedsuiker/danique-glucosesensor-portret.webp.asset.json';
 import zoeteCravingsKoekjes from '@/assets/blog/zoete-cravings-koekjes.webp.asset.json';
 
 
@@ -30,6 +31,19 @@ export interface BlogPost {
   updated?: string;
 }
 export const BLOG_POSTS: BlogPost[] = [{
+  id: '9',
+  slug: 'bloedsuikerspiegel-uitgelegd',
+  title: 'Je bloedsuikerspiegel uitgelegd',
+  seoTitle: 'Je bloedsuikerspiegel uitgelegd: zo werkt het | Danique Kwakman',
+  excerpt: 'Wat is je bloedsuikerspiegel en wat gebeurt er na het eten? Een heldere uitleg over bloedsuiker en insuline, waarom je een dip krijgt en wat je zelf kunt doen.',
+  image: sensorPortret.url,
+  imageAlt: 'Danique Kwakman met een glucosesensor op haar arm, die meet hoe haar bloedsuiker stijgt en daalt na het eten',
+  imagePosition: 'object-[50%_30%]',
+  date: '18 november 2026',
+  updated: 'november 2026',
+  readTime: '6 min',
+  category: 'Voeding'
+}, {
   id: '8',
   slug: 'zoete-cravings',
   title: 'Zoete cravings: waarom heb je steeds trek in suiker en wat kun je eraan doen?',

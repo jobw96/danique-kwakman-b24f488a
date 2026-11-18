@@ -77,8 +77,11 @@ const doorschot = (t: number) => {
 export const GlucoseKaart = ({
   variant,
   vertraging = 0,
+  omschrijving,
   children,
 }: {
+  /** Optionele eigen omschrijving voor schermlezers. */
+  omschrijving?: string;
   variant: Variant;
   /** Milliseconden wachten na het in beeld komen, om twee grafieken te spreiden. */
   vertraging?: number;
@@ -173,7 +176,7 @@ export const GlucoseKaart = ({
       <svg
         viewBox="-22 0 302 322"
         role="img"
-        aria-label={g.omschrijving}
+        aria-label={omschrijving ?? g.omschrijving}
         className="block h-auto w-full"
       >
         <g fontSize="11" fill="hsl(var(--muted-foreground))" textAnchor="end">
