@@ -128,9 +128,9 @@ const BLOG_CONTENT: Record<string, {
           Liefs Danique
         </p>
 
-        <h2>Lees ook</h2>
+        <h2>{"\n"}</h2>
         <ul>
-          <li><Link to="/blog/zoete-cravings-luteale-fase">Zoete cravings in je luteale fase: tips + chocolade smoothie</Link></li>
+          <li><Link to="/blog/zoete-cravings-luteale-fase"></Link></li>
         </ul>
       </>
   },
