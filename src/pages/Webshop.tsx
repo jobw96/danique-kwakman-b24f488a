@@ -1,9 +1,8 @@
 import React from 'react';
-import { m } from 'framer-motion';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
-import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles, Star } from 'lucide-react';
+import { FadeIn } from '@/components/Animations';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, UtensilsCrossed, Sparkles, Star } from 'lucide-react';
 
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
@@ -13,10 +12,6 @@ import ebookPage3 from '@/assets/nourish-ebook-traybake-in-5-stappen.webp.asset.
 import ebookPage4 from '@/assets/nourish-ebook-wortelpannenkoekjes-recept.webp.asset.json';
 import ebookPage5 from '@/assets/nourish-ebook-zoete-aardappel-tzaziki-bowl.webp.asset.json';
 import daniquePortret from '@/assets/danique-portret.webp';
-import daniqueGlowup from '@/assets/danique-glowup.webp';
-import daniqueDarm from '@/assets/danique-darm.webp';
-import daniqueBeach from '@/assets/danique-beach.webp';
-import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 export const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
 /** Enige bron van waarheid voor de prijs: zichtbare prijs én JSON-LD komen hier vandaan. */
@@ -96,36 +91,6 @@ const reviews = [
   {
     text: 'Ik ben elke dag bezig geweest met jouw recepten en mijn hormonen voelen stukken stabieler. Ook ben ik al een paar kilo kwijt, ondanks dat dat niet eens mijn focus was!',
     initial: 'L.',
-  },
-];
-
-const trajectories = [
-  {
-    href: '/bloedsuikertraject',
-    image: daniqueBloedsuiker,
-    title: '1:1 Bloedsuikertraject',
-    description:
-      'In 2 weken tijd naar stabiele energie, minder cravings en meer vertrouwen in je lichaam met een 14-daagse glucosesensor.',
-  },
-  {
-    href: '/hormoontraject',
-    image: daniqueGlowup,
-    title: '1:1 Hormoontraject',
-    description:
-      'In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.',
-  },
-  {
-    href: '/mommy-to-be',
-    image: daniqueBeach,
-    title: '1:1 Mommy (to be) traject',
-    description:
-      'Een kinderwens die niet vanzelf in vervulling gaat, misschien ben je al zwanger en wil je je lichaam zo goed mogelijk ondersteunen of ben je bevallen en zoek je naar een goede basis voor je herstel?',
-  },
-  {
-    href: '/darmtraject',
-    image: daniqueDarm,
-    title: '1:1 Darmtraject',
-    description: 'Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.',
   },
 ];
 
@@ -294,7 +259,7 @@ const Webshop = () => {
           {/* 5. Over Danique */}
           <FadeIn>
             <div className="flex justify-center mb-10">
-              <OrderButton label="ik wil 50+ recepten hebben!" />
+                <OrderButton label="Ik wil 50+ recepten hebben!" />
             </div>
             <section className={`${PANEL} p-8 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
@@ -321,55 +286,9 @@ const Webshop = () => {
 
               </div>
             </section>
-            <div className="flex justify-center mb-20 md:mb-28">
-              <OrderButton label="Bestel nourish your body hier" />
+            <div className="flex justify-center mb-4 md:mb-8">
+              <OrderButton label="Bestel Nourish Your Body hier" />
             </div>
-          </FadeIn>
-
-
-          {/* 8. Andere trajecten */}
-          <FadeIn>
-            <section className="mt-20 md:mt-28">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
-                Ontdek ook mijn 1:1 aanbod
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                {trajectories.map((t, index) => (
-                  <FadeIn key={t.href} delay={index * 0.2} className="h-full">
-                    <Link to={t.href} className="h-full block">
-                      <m.div
-                        className="bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col cursor-pointer"
-                        whileHover={{
-                          y: -8,
-                          borderColor: "hsl(var(--primary) / 0.3)",
-                        }}
-                        transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                      >
-                        <div className="h-64 overflow-hidden relative">
-                          <ParallaxImage
-                            src={t.image}
-                            alt={`${t.title} - traject voor vrouwen met gezondheidsklachten`}
-                            className="w-full h-full"
-                          />
-                        </div>
-                        <div className="p-6 flex flex-col grow">
-                          <h3 className="font-serif text-xl text-card-foreground mb-3">{t.title}</h3>
-                          <p className="text-muted-foreground text-sm mb-6 leading-relaxed grow">{t.description}</p>
-                          <m.div
-                            className="flex items-center text-primary font-medium mt-auto text-sm"
-                            whileHover={{ x: 8 }}
-                            transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                          >
-                            Bekijk traject<span className="sr-only"> {t.title}</span>{' '}
-                            <ArrowRight className="w-4 h-4 ml-2" />
-                          </m.div>
-                        </div>
-                      </m.div>
-                    </Link>
-                  </FadeIn>
-                ))}
-              </div>
-            </section>
           </FadeIn>
         </div>
       </Section>
