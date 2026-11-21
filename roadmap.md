@@ -63,3 +63,5 @@
 - [x] Webshoppagina: "Shop"-kop weg (pill "Webshop" is nu de kop) en prijs onder het e-book weg; doorklikken naar het e-book computer en telefoon gecontroleerd
 - [x] Over Danique op de e-boekpagina: rol en kernwoorden dikgedrukt (naam blijft gewoon), laatste link naar /blog in plaats van het gratis e-book, naam en "Orthomoleculair Therapeut" eronder weg; computer en telefoon gecontroleerd
 - [x] E-boekpagina: kop "Liever persoonlijke begeleiding?" naar "Ontdekt mijn aanbod" en Mommy (to be)-kaart tussen hormoon- en darmtraject; computer en telefoon controleren
+- [x] Homepage: knop "Bestel direct" bij het e-book weg, alleen "Meer info" naar /webshop/nourish-your-body blijft; Plug&Pay-link staat niet meer op de homepage
+- [x] Homepage: Instagram-sectie "Volg me op Instagram" volledig weg (embeds en knop "Volg @daniquekwakman"); component blijft in de repo voor later gebruik

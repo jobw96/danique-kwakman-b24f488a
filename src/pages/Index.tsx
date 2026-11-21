@@ -9,8 +9,6 @@ import { ArrowRight } from 'lucide-react';
 import { Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
-import { InstagramFeed } from '@/components/InstagramFeed';
-
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
 import heroImage from '@/assets/hero-foto.webp';
@@ -25,7 +23,6 @@ import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 
-const EBOOK_CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
 const EBOOK_PRICE = '€39,99';
 
 type Treatment = {
@@ -407,9 +404,6 @@ const Index = () => {
             hormonen, darmen en energie&nbsp;makkelijker wordt, zonder ingewikkelde ingrediënten of uren in de keuken.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <a href={EBOOK_CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              <CustomButton>Bestel direct</CustomButton>
-            </a>
             <Link to="/webshop/nourish-your-body">
               <CustomButton variant="secondary">Meer info</CustomButton>
             </Link>
@@ -417,8 +411,6 @@ const Index = () => {
         </FadeIn>
       </div>
     </Section>
-
-    <InstagramFeed />
 
     <Section className="bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
