@@ -33,14 +33,14 @@ const SectionTag = ({ text }: { text: string }) => (
   </div>
 );
 
-const OrderButton = ({ className = '' }: { className?: string }) => (
+const OrderButton = ({ className = '', label = 'Bestel nu' }: { className?: string; label?: string }) => (
   <a
     href={CHECKOUT_URL}
     target="_blank"
     rel="noopener noreferrer"
     className={`inline-flex items-center justify-center gap-2 rounded-md bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-dark cursor-pointer ${className}`}
   >
-    Bestel nu
+    {label}
   </a>
 );
 
@@ -269,6 +269,9 @@ const Webshop = () => {
           {/* 4. Reviews */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
+              <div className="flex justify-center mb-10">
+                <OrderButton label="Bestel hem direct" />
+              </div>
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Andere gingen je voor</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
                 {reviews.map((r) => (
@@ -290,6 +293,9 @@ const Webshop = () => {
 
           {/* 5. Over Danique */}
           <FadeIn>
+            <div className="flex justify-center mb-10">
+              <OrderButton label="ik wil 50+ recepten hebben!" />
+            </div>
             <section className={`${PANEL} p-8 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
                 <img
@@ -315,6 +321,9 @@ const Webshop = () => {
 
               </div>
             </section>
+            <div className="flex justify-center mb-20 md:mb-28">
+              <OrderButton label="Bestel nourish your body hier" />
+            </div>
           </FadeIn>
 
 
