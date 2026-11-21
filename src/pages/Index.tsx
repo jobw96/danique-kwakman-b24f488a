@@ -277,9 +277,10 @@ const CircleDiagram = () => {
   </>;
 };
 
-const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
-  {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full">
-    <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
+const ComplaintBlocks = () => <div className="-mx-6 px-6 md:mx-auto md:px-0 max-w-5xl overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-12 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+  <div className="flex gap-5 md:grid md:grid-cols-2 md:gap-8 w-max md:w-auto">
+    {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full shrink-0 snap-start w-[78vw] min-w-[260px] max-w-[340px] md:w-auto md:min-w-0 md:max-w-none">
+      <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
       <div className="flex items-start gap-5">
         <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
           {String(index + 1).padStart(2, '0')}
@@ -294,8 +295,9 @@ const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 ga
           </ul>
         </div>
       </div>
-    </div>
-  </FadeIn>)}
+      </div>
+    </FadeIn>)}
+  </div>
 </div>;
 
 const Index = () => {
