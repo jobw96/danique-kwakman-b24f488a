@@ -443,9 +443,9 @@ export const recipes: Recipe[] = [
     image: rodeBietenSapAsset.url,
     imageAlt: 'Hand houdt een glazen fles rode bieten sap tegen een witte muur',
     ingredients: [
-      '2 rode bieten (voorgekookt of vers)',
-      '1 appel',
-      '\u00a0sap van 1/2 citroen'
+      '🧃2 rode bieten (voorgekookt of vers)',
+      '🧃1 appel',
+      '🧃 sap van 1/2 citroen'
     ],
     steps: [
       'Bereid de rode bieten voor of koop een pakje voorgekookte rode bieten',

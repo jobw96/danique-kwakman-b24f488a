@@ -629,7 +629,7 @@ const Index = () => {
           <div className="flex justify-center">
             <SectionTag text={PODCAST_TAG} className="mb-8" />
           </div>
-          <div className="overflow-hidden rounded-xl border border-border/50 bg-card">
+          <div className="overflow-hidden rounded-xl border border-border/50">
             <iframe src={SPOTIFY_EMBED_URL} className="block w-full" width="100%" height="232" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Health & Hormone Secrets podcast op Spotify" />
           </div>
         </FadeIn>
