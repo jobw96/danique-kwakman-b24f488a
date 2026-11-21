@@ -8,6 +8,7 @@ import { Section } from '@/components/Section';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
+import { HScrollCards } from '@/components/HScrollCards';
 import { Testimonials } from '@/components/Testimonials';
 import { useBookingModal } from '@/components/BookingModal';
 import SEO from '@/components/SEO';
@@ -277,9 +278,8 @@ const CircleDiagram = () => {
   </>;
 };
 
-const ComplaintBlocks = () => <div className="-mx-6 px-6 md:mx-auto md:px-0 max-w-5xl overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-12 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-  <div className="flex gap-5 md:grid md:grid-cols-2 md:gap-8 w-max md:w-auto">
-    {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full shrink-0 snap-start w-[78vw] min-w-[260px] max-w-[340px] md:w-auto md:min-w-0 md:max-w-none">
+const ComplaintBlocks = () => <HScrollCards prevLabel="Vorige specialisatie" nextLabel="Volgende specialisatie">
+    {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="shrink-0 snap-start w-[78vw] min-w-[260px] max-w-[340px] md:w-auto md:min-w-0 md:max-w-none">
       <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
       <div className="flex items-start gap-5">
         <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
@@ -297,8 +297,7 @@ const ComplaintBlocks = () => <div className="-mx-6 px-6 md:mx-auto md:px-0 max-
       </div>
       </div>
     </FadeIn>)}
-  </div>
-</div>;
+</HScrollCards>;
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -375,7 +374,7 @@ const Index = () => {
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Aanbod</h2>
         </FadeIn>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <HScrollCards containerClassName="max-w-6xl" prevLabel="Vorige traject" nextLabel="Volgende traject">
         {TREATMENTS.map((treatment, index) => {
           const linkPath = `/${treatment.id}`;
           const card = <m.div className={`bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col${treatment.comingSoon ? '' : ' cursor-pointer'}`} whileHover={treatment.comingSoon ? undefined : {
@@ -410,12 +409,12 @@ const Index = () => {
             </div>
           </m.div>;
           return (
-            <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
+            <FadeIn key={treatment.id} delay={index * 0.2} className="shrink-0 snap-start w-[82vw] min-w-[280px] max-w-[380px] md:w-auto md:min-w-0 md:max-w-none">
               {treatment.comingSoon ? card : <Link to={linkPath} className="h-full block">{card}</Link>}
             </FadeIn>
           );
         })}
-      </div>
+      </HScrollCards>
       <div className="text-center mt-12">
         <CustomButton variant="secondary" onClick={openModal}>Gratis kennismaking</CustomButton>
       </div>
@@ -558,8 +557,8 @@ const Index = () => {
             {"\n"}
           </p>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {BLOG_POSTS.slice(0, 3).map((post, index) => <FadeIn key={post.id} delay={index * 0.1} className="h-full">
+        <HScrollCards containerClassName="max-w-6xl" trackClassName="md:grid md:grid-cols-3 md:gap-8" prevLabel="Vorige blog" nextLabel="Volgende blog">
+          {BLOG_POSTS.slice(0, 3).map((post, index) => <FadeIn key={post.id} delay={index * 0.1} className="shrink-0 snap-start w-[80vw] min-w-[260px] max-w-[340px] md:w-auto md:min-w-0 md:max-w-none">
             <Link to={`/blog/${post.slug}`} className="group block h-full">
               <div className="bg-card rounded-xl overflow-hidden border border-secondary/30 h-full flex flex-col">
                 <div className="relative h-52 overflow-hidden">
@@ -591,7 +590,7 @@ const Index = () => {
               </div>
             </Link>
           </FadeIn>)}
-        </div>
+        </HScrollCards>
         <FadeIn delay={0.2} className="mt-10 flex justify-center">
           <Link to="/blog">
             <CustomButton variant="secondary">Bekijk alle blogs</CustomButton>

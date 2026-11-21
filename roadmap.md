@@ -1,6 +1,7 @@
 # Roadmap
 
 - [x] Specialisaties op homepage: op telefoon naast elkaar met horizontaal scrollen (2e kaart zichtbaar als hint), desktop blijft twee kolommen; gecontroleerd op 320px, 390px, 600px, 700px en 1280px
+- [x] Pijltjes onder de kaartlijnen op telefoon bij specialisaties, aanbod en blogs (één gedeelde component, desktop houdt het raster); kaarten op gelijke hoogte; geen horizontale lekkage meer na pijltjeklik; gecontroleerd op 390px en 1280px
 
 - [x] Vaste mobiele contactbalk op alle pagina's: WhatsApp, gratis kennismaking en soepel naar boven; huisstijl, iPhone-safe-area en vrije ruimte onder content gecontroleerd op 320px, 390px en desktop
 
