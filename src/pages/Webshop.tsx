@@ -171,7 +171,6 @@ const EbookPhotoStrip = () => {
 
   return (
     <div className="mt-14 md:mt-16" role="region" aria-label="Foto's uit het e-book Nourish Your Body">
-      <p className="text-xs text-muted-foreground text-center mb-4">Klik of tik op een foto om deze groot te bekijken.</p>
       <HScrollCards
         containerClassName="max-w-none"
         trackClassName="md:grid md:grid-cols-7 md:gap-3"
@@ -311,6 +310,9 @@ const Webshop = () => {
                     <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
                   </div>
                 ))}
+              </div>
+              <div className="flex justify-center mb-6">
+                <OrderButton label="Bestel het e-book hier" />
               </div>
               <EbookPhotoStrip />
             </section>
