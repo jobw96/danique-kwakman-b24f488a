@@ -62,7 +62,13 @@ export const HScrollCards: React.FC<{
     <div
       ref={scrollerRef}
       onScroll={() => { if (!frame.current) frame.current = requestAnimationFrame(() => { frame.current = 0; measure(); }); }}
-      className={`-mx-6 px-6 md:mx-auto md:px-0 overflow-x-auto md:overflow-visible snap-x snap-proximity overscroll-x-contain [touch-action:pan-x_pan-y] [-webkit-overflow-scrolling:touch] pb-6 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [contain:paint] md:[contain:none] ${containerClassName}`}
+      // overflow-y: clip is hier de belangrijkste regel. overflow-x:auto dwingt
+      // overflow-y:auto af, en dan kan de rij zelf een paar pixels op en neer.
+      // Die eerste pixels pakt de rij af van de pagina, waardoor een verticale
+      // veeg over een kaart stroef begint. Met clip is de rij in die richting
+      // niet meer te slepen en geeft hij de beweging meteen door. De padding
+      // blijft binnen de bak: die geeft de kaart ruimte tijdens de intrede.
+      className={`-mx-6 px-6 md:mx-auto md:px-0 overflow-x-auto overflow-y-clip md:overflow-visible snap-x snap-proximity overscroll-x-contain [touch-action:pan-x_pan-y] [-webkit-overflow-scrolling:touch] pb-6 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [contain:paint] md:[contain:none] ${containerClassName}`}
     >
       <div ref={trackRef} className={`flex gap-5 w-max md:w-auto ${trackClassName}`}>
         {children}
