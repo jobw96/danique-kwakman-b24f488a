@@ -90,7 +90,7 @@ const reviews = [
     initial: 'S.',
   },
   {
-    text: 'Ik heb veel minder cravings op een dag en mijn energie is top!',
+    text: 'Ik heb nu veel minder cravings op een dag en mijn energie is top!',
     initial: 'S.',
   },
   {
