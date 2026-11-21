@@ -322,7 +322,7 @@ const Webshop = () => {
           <FadeIn>
             <section className="mt-20 md:mt-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
-                Ontdekt mijn 1:1 aanbod
+                Ontdek ook mijn 1:1 aanbod
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {trajectories.map((t, index) => (
