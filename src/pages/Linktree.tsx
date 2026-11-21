@@ -2,21 +2,22 @@ import React, { useState } from 'react';
 import { m, AnimatePresence } from 'framer-motion';
 import { Instagram, Linkedin, Mail, Mic, Calendar, Globe, Compass, Heart, ShoppingBag, BookOpen } from 'lucide-react';
 import { WhatsAppIcon, TikTokIcon, SpotifyIcon } from '@/components/BrandIcons';
+import { Link } from '@/lib/router-compat';
 import { useBookingModal } from '@/components/BookingModal';
 import logoFull from '@/assets/logo-full.svg';
 import daniquePortret from '@/assets/danique-portret.webp';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 
 
-const NOURISH_URL = "https://daniquekwakman.plugandpay.com/checkout/nourish-your-body";
+const NOURISH_HREF = '/webshop/nourish-your-body';
 
 const LINKS = [
   {
     title: "Nourish your body",
     subtitle: "50+ hormoonproof en darmvriendelijke recepten",
-    href: NOURISH_URL,
+    href: NOURISH_HREF,
     icon: BookOpen,
-    internal: false
+    internal: true
   },
   {
     title: "Plan je gratis kennismaking in",
@@ -65,9 +66,9 @@ const CONNECT_LINKS = [
 const SHOP_LINKS = [
   {
     title: "Nourish Your Body – 50+ hormoonproof recepten",
-    href: NOURISH_URL,
+    href: NOURISH_HREF,
     icon: ShoppingBag,
-    internal: false
+    internal: true
   }
 ];
 
@@ -275,13 +276,15 @@ const Linktree: React.FC = () => {
                 className={`w-full shrink-0 px-5 sm:px-8 py-1 ${tab === 'shop' ? '' : 'pointer-events-none'}`}
                 aria-hidden={tab !== 'shop'}
               >
-                <m.button
-                  onClick={() => window.open(NOURISH_URL, '_blank')}
+                <Link
+                  to={NOURISH_HREF}
                   className="w-full max-w-[260px] mx-auto block bg-background rounded-[28px] overflow-hidden text-left"
-                  whileHover={{ scale: 1.015, y: -3 }}
-                  whileTap={{ scale: 0.985 }}
-                  transition={{ type: 'spring', stiffness: 400, damping: 26 }}
                 >
+                  <m.div
+                    whileHover={{ scale: 1.015, y: -3 }}
+                    whileTap={{ scale: 0.985 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 26 }}
+                  >
                   <img
                     src={nourishCover.url}
                     alt="Nourish Your Body — 50+ hormoonproof recepten, cyclusgerichte voeding en maaltijden die je hormonen en darmen ondersteunen"
@@ -295,7 +298,8 @@ const Linktree: React.FC = () => {
                       Bekijk e-book
                     </span>
                   </div>
-                </m.button>
+                  </m.div>
+                </Link>
               </div>
             </m.div>
           </m.div>
