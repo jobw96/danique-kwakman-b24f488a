@@ -5,7 +5,7 @@ import { CustomButton } from '@/components/CustomButton';
 import { TrajectPrice } from '@/components/TrajectPrice';
 import { trajectPrices, type TrajectPrice as PriceDetails } from '@/data/traject-prices';
 import { Section } from '@/components/Section';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import { Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { Testimonials } from '@/components/Testimonials';
@@ -22,6 +22,7 @@ import daniqueMatchCall from '@/assets/danique-match-call.webp';
 import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
+import { BLOG_POSTS } from '@/pages/Blog';
 
 const EBOOK_PRICE = '€39,99';
 
@@ -408,6 +409,59 @@ const Index = () => {
               <CustomButton variant="secondary">Meer info</CustomButton>
             </Link>
           </div>
+        </FadeIn>
+      </div>
+    </Section>
+
+    <Section className="bg-background">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn className="max-w-2xl mb-12">
+          <SectionTag text="Blog" />
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+            Blogs over hormonen, darmen en voeding
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Korte, praktische artikelen over wat er in je lichaam speelt en wat je er zelf mee kunt.
+          </p>
+        </FadeIn>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {BLOG_POSTS.slice(0, 3).map((post, index) => <FadeIn key={post.id} delay={index * 0.1} className="h-full">
+            <Link to={`/blog/${post.slug}`} className="group block h-full">
+              <div className="bg-card rounded-xl overflow-hidden border border-secondary/30 h-full flex flex-col">
+                <div className="relative h-52 overflow-hidden">
+                  <m.img loading="lazy" decoding="async" src={post.image} alt={post.imageAlt ?? post.title} className={`w-full h-full object-cover ${post.imagePosition ?? 'object-top'}`} whileHover={{
+                scale: 1.05
+              }} transition={{
+                duration: 0.6,
+                ease: "easeOut"
+              }} />
+                </div>
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center gap-3 text-muted-foreground text-xs mb-2">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {post.date}
+                    </span>
+                  </div>
+                  <h3 className="font-serif text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center gap-2 text-primary font-medium text-sm mt-3 pt-3 border-t border-border/30">
+                    <span>Lees meer</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </FadeIn>)}
+        </div>
+        <FadeIn delay={0.2} className="mt-10 flex justify-center">
+          <Link to="/blog">
+            <CustomButton variant="secondary">Bekijk alle blogs</CustomButton>
+          </Link>
         </FadeIn>
       </div>
     </Section>

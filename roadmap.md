@@ -70,3 +70,4 @@
 - [x] Site-wide: afsluitende band "Benieuwd welk traject bij jou past?" overal weg (was al uitgeschakeld op homepage, trajectpagina's, klachten, recepten en webshop-pagina's)
 - [x] Navigatie: Klachten, Mijn methode en Labonderzoek onder "Meer" gezet (desktop en mobiel); uitklappaneel van "Meer" naar binnen geknikt zodat alle zes items volledig in beeld blijven
 - [x] "Meer"-menu: Over mij bovenaan, dan Mijn methode, dan "Welke klachten ervaar je?" (was Klachten, blijft naar /klachten); desktop en mobiel gecontroleerd
+- [x] Homepage: blogblok tussen Nourish en "Laten we kennismaken" met de drie nieuwste blogs, eigen kaarten en knop "Bekijk alle blogs"; desktop en mobiel gecontroleerd
