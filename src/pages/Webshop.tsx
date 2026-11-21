@@ -21,6 +21,7 @@ import ebookPage5 from '@/assets/nourish-ebook-zoete-aardappel-tzaziki-bowl.webp
 import daniquePortret from '@/assets/danique-portret.webp';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
+import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
 
 export const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nourish-your-body';
@@ -98,6 +99,13 @@ const trajectories = [
     title: '1:1 Hormoontraject',
     description:
       'In 3 maanden tijd naar een hormonale balans, rust en vertrouwen in je lijf. Voor vrouwen met PMS, PCOS, vermoeidheid of hormonale disbalans.',
+  },
+  {
+    href: '/mommy-to-be',
+    image: daniqueBeach,
+    title: '1:1 Mommy (to be) traject',
+    description:
+      'Met het 1:1 Mommy (to be) traject help ik je stap voor stap de juiste puzzelstukjes samenbrengen. Met aandacht voor je hormonen, darmen, voeding en leefstijl, van kinderwens tot zwangerschap en postpartum.',
   },
   {
     href: '/darmtraject',
@@ -321,7 +329,7 @@ const Webshop = () => {
           <FadeIn>
             <section className="mt-20 md:mt-28">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
-                Liever persoonlijke begeleiding?
+                Ontdekt mijn aanbod
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {trajectories.map((t, index) => (
