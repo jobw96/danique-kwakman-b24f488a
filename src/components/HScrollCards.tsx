@@ -24,6 +24,7 @@ export const HScrollCards: React.FC<{
 }) => {
   const scrollerRef = React.useRef<HTMLDivElement>(null);
   const trackRef = React.useRef<HTMLDivElement>(null);
+  const frame = React.useRef(0);
   const [atStart, setAtStart] = React.useState(true);
   const [atEnd, setAtEnd] = React.useState(false);
 
@@ -31,12 +32,14 @@ export const HScrollCards: React.FC<{
     const el = scrollerRef.current;
     if (!el) return;
     // Snapuitlijning laat de eerste kaart tegen het begin van de scrollbak
-    // rusten, en dat beginsel ligt één paddingbreedte in. Zonder die corretie
+    // rusten, en dat beginsel ligt één paddingbreedte in. Zonder die correctie
     // lijkt de pijl naar links actief terwijl er niets te zien is.
     const start = parseFloat(getComputedStyle(el).paddingLeft) || 0;
     const max = el.scrollWidth - el.clientWidth;
-    setAtStart(el.scrollLeft <= start + 2);
-    setAtEnd(el.scrollLeft >= max - 2);
+    const s = el.scrollLeft <= start + 2;
+    const e = el.scrollLeft >= max - 2;
+    setAtStart((p) => (p === s ? p : s));
+    setAtEnd((p) => (p === e ? p : e));
   };
 
   React.useEffect(() => {
@@ -58,8 +61,8 @@ export const HScrollCards: React.FC<{
   return <>
     <div
       ref={scrollerRef}
-      onScroll={measure}
-      className={`-mx-6 px-6 md:mx-auto md:px-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-6 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [contain:paint] md:[contain:none] ${containerClassName}`}
+      onScroll={() => { if (!frame.current) frame.current = requestAnimationFrame(() => { frame.current = 0; measure(); }); }}
+      className={`-mx-6 px-6 md:mx-auto md:px-0 overflow-x-auto md:overflow-visible snap-x snap-proximity overscroll-x-contain [touch-action:pan-x_pan-y] [-webkit-overflow-scrolling:touch] pb-6 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [contain:paint] md:[contain:none] ${containerClassName}`}
     >
       <div ref={trackRef} className={`flex gap-5 w-max md:w-auto ${trackClassName}`}>
         {children}

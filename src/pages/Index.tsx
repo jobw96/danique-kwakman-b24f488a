@@ -377,7 +377,7 @@ const Index = () => {
       <HScrollCards containerClassName="max-w-6xl" prevLabel="Vorige traject" nextLabel="Volgende traject">
         {TREATMENTS.map((treatment, index) => {
           const linkPath = `/${treatment.id}`;
-          const card = <m.div className={`bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col${treatment.comingSoon ? '' : ' cursor-pointer'}`} whileHover={treatment.comingSoon ? undefined : {
+          const card = <m.div className={`bg-card rounded-2xl overflow-hidden border border-secondary/30 h-full flex flex-col${treatment.comingSoon ? '' : ' cursor-pointer'}`} whileHover={treatment.comingSoon || (typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches) ? undefined : {
             y: -8,
             borderColor: "hsl(var(--primary) / 0.3)"
           }} transition={{
