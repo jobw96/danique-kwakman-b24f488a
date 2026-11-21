@@ -139,14 +139,14 @@ const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
 
 const CIRCLE_ANGLES = [-90, -30, 30, 90, 150, 210];
 /** Straal van de ring, de knoppen en de labels, als percentage van de breedte. */
-const CIRCLE_RING = 25;
-const CIRCLE_LABEL_RADIUS = 31;
+const CIRCLE_RING = 27;
+const CIRCLE_LABEL_RADIUS = 33;
 /**
  * De box is lager dan breed, dus percentages van de hoogte moeten worden
  * omgerekend om de ring een echte cirkel te laten blijven. Zonder deze factor
  * stond het diagram zwevend in een vierkant met veel lege ruimte eronder.
  */
-const CIRCLE_TALL = 1 / 0.8;
+const CIRCLE_TALL = 1 / 0.82;
 const CIRCLE_DOODLE_KINDS = ['kern', 'groei', 'proces', 'nieuw', 'stap', 'verandering'];
 /**
  * Labelpositie ten opzichte van het ankerpunt op de cirkel. De padding duwt de
@@ -207,15 +207,28 @@ const CircleDiagram = () => {
   };
 
   return <>
-    <div className="relative mx-auto aspect-[1/0.8] w-full max-w-[900px]">
-      <div className="absolute left-1/2 top-1/2 aspect-square w-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-olive" />
+    <div className="relative mx-auto aspect-[1/0.82] w-full max-w-[800px]">
+      <svg
+        viewBox="0 0 100 100"
+        fill="none"
+        aria-hidden="true"
+        className="absolute left-1/2 top-1/2 aspect-square w-[54%] -translate-x-1/2 -translate-y-1/2 text-olive"
+      >
+        <path
+          d="M50 2.8C72.5 2.4 96.8 22.1 97.1 48.6C97.5 74.2 76.4 96.6 51.2 97.2C25.5 97.8 3.2 77.1 2.9 51.4C2.6 26.2 24.8 3.2 50 2.8Z"
+          stroke="currentColor"
+          strokeWidth="0.8"
+          strokeLinecap="round"
+          vectorEffect="non-scaling-stroke"
+        />
+      </svg>
       {/* Onder lg is het midden te klein voor een alinea: daar blijft de naam
           staan en staat de tekst van de gekozen stap onder de cirkel. */}
       <div className="absolute inset-0 flex items-center justify-center lg:hidden">
-        <span className="font-serif text-sm text-secondary-dark">CIRCLE-methode</span>
+        <span className="font-serif text-sm text-foreground">CIRCLE-methode</span>
       </div>
       <div className="absolute inset-0 hidden items-center justify-center lg:flex">
-        <div className="grid w-full max-w-[280px]">
+        <div className="grid w-full max-w-[270px]">
           {CIRCLE_STEPS.map((step, index) => <m.div
             key={step.title}
             initial={false}
@@ -224,7 +237,7 @@ const CircleDiagram = () => {
             aria-hidden={active !== index}
             className="col-start-1 row-start-1 text-center"
           >
-            <h3 className="font-serif text-xl text-foreground mb-2">{step.title}</h3>
+            <h3 className="font-serif text-2xl text-foreground mb-3">{step.title}</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">{step.paragraphs.join(' ')}</p>
           </m.div>)}
         </div>
@@ -233,41 +246,32 @@ const CircleDiagram = () => {
         const kind = CIRCLE_DOODLE_KINDS[index] as DoodleKind;
         const doodleFirst = index >= 4;
         return <React.Fragment key={step.title}>
-          <div className="absolute aspect-square w-[9%] -translate-x-1/2 -translate-y-1/2" style={point(CIRCLE_RING, index)}>
+          <div className="absolute -translate-x-1/2 -translate-y-1/2" style={point(CIRCLE_RING, index)}>
             <m.button
               type="button"
+              initial={false}
+              animate={{ scale: active === index ? 1.08 : 1 }}
               whileHover={{ scale: 1.12 }}
               onClick={() => setActive(index)}
               onMouseEnter={() => setActive(index)}
               onFocus={() => setActive(index)}
               aria-pressed={active === index}
               aria-label={`Stap ${index + 1}: ${step.title}`}
-              className={`flex h-full w-full cursor-pointer items-center justify-center rounded-full ${active === index ? 'bg-olive text-foreground' : 'border border-olive bg-background text-secondary-dark'}`}
+              className={`flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-olive text-foreground md:h-12 md:w-12 ${active === index ? 'outline outline-1 outline-offset-4 outline-olive' : ''}`}
             >
-              <span className="text-xs tabular-nums md:text-base">{index + 1}</span>
+              <span className="text-sm tabular-nums">{index + 1}</span>
             </m.button>
           </div>
-          <div className={`absolute hidden items-center gap-2 whitespace-nowrap lg:flex ${CIRCLE_LABEL_OFFSET[index]}`} style={point(CIRCLE_LABEL_RADIUS, index)}>
-            {doodleFirst && <CircleDoodle kind={kind} className="h-4 w-7 text-olive" />}
-            <span className={`text-[11px] uppercase tracking-[0.12em] ${active === index ? 'text-foreground' : 'text-secondary-dark'}`}>{step.title}</span>
-            {!doodleFirst && <CircleDoodle kind={kind} className="h-4 w-7 text-olive" />}
+          <div className={`absolute flex items-center gap-1.5 whitespace-nowrap md:gap-2 ${CIRCLE_LABEL_OFFSET[index]}`} style={point(CIRCLE_LABEL_RADIUS, index)}>
+            {doodleFirst && <CircleDoodle kind={kind} className="hidden h-4 w-7 text-olive sm:block" />}
+            <span className={`font-serif text-[10px] sm:text-xs lg:text-sm ${active === index ? 'text-foreground' : 'text-muted-foreground'}`}>{step.title}</span>
+            {!doodleFirst && <CircleDoodle kind={kind} className="hidden h-4 w-7 text-olive sm:block" />}
           </div>
         </React.Fragment>;
       })}
     </div>
-    <div className="mt-8 flex flex-wrap justify-center gap-2 lg:hidden">
-      {CIRCLE_STEPS.map((step, index) => <button
-        key={step.title}
-        type="button"
-        onClick={() => setActive(index)}
-        aria-pressed={active === index}
-        className={`cursor-pointer rounded-full border px-3 py-1.5 text-[11px] uppercase tracking-[0.1em] ${active === index ? 'border-olive bg-olive text-foreground' : 'border-secondary text-secondary-dark'}`}
-      >
-        {step.title}
-      </button>)}
-    </div>
-    <div className="mt-6 text-center lg:hidden">
-      <p className="font-serif text-lg text-foreground mb-2">{CIRCLE_STEPS[active].title}</p>
+    <div className="mx-auto mt-6 max-w-md text-center lg:hidden" aria-live="polite">
+      <h3 className="font-serif text-xl text-foreground mb-2">{CIRCLE_STEPS[active].title}</h3>
       <p className="text-sm leading-relaxed text-muted-foreground">{CIRCLE_STEPS[active].paragraphs.join(' ')}</p>
     </div>
   </>;
@@ -471,7 +475,7 @@ const Index = () => {
     </Section>
 
     <Section id="circle-methode">
-      <div className="text-center mb-16">
+      <div className="text-center mb-10 md:mb-12">
         <FadeIn>
           <SectionTag text="Mijn methode" />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">De CIRCLE-methode</h2>
@@ -481,10 +485,10 @@ const Index = () => {
           
         </FadeIn>
       </div>
-      <FadeIn direction="none" className="mb-12">
+      <FadeIn direction="none">
         <CircleDiagram />
       </FadeIn>
-      <div className="text-center mt-12">
+      <div className="text-center mt-10">
         <Link to="/method">
           <CustomButton variant="secondary">Bekijk mijn methode</CustomButton>
         </Link>
