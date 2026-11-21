@@ -4,7 +4,6 @@ import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
-import { PRICE_DISPLAY } from '@/pages/Webshop';
 
 const products = [
   {
@@ -14,7 +13,6 @@ const products = [
     category: 'E-book',
     title: 'Nourish Your Body',
     text: '50+ hormoonproof en darmvriendelijke recepten, eten volgens je cyclus en mealprep-hacks.',
-    price: PRICE_DISPLAY,
   },
 ];
 
@@ -24,10 +22,9 @@ const WebshopOverzicht = () => (
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
+            <h1 className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">
               Webshop
-            </div>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">Shop</h1>
+            </h1>
             <p className="max-w-2xl mx-auto text-muted-foreground leading-relaxed">
               Hier vind je mijn producten om zelf aan de slag te gaan met je hormonen, darmen en energie.
             </p>
@@ -49,7 +46,6 @@ const WebshopOverzicht = () => (
                   <span className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{p.category}</span>
                   <h2 className="font-serif text-xl text-foreground mb-2">{p.title}</h2>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-3">{p.text}</p>
-                  <p className="text-foreground mb-3">{p.price}</p>
                   <span className="inline-flex items-center text-sm text-primary font-medium mt-auto">
                     Bekijk product <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </span>
