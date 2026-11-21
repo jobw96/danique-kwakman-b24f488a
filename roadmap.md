@@ -68,3 +68,4 @@
 - [x] Homepage: knop "Bestel direct" bij het e-book weg, alleen "Meer info" naar /webshop/nourish-your-body blijft; Plug&Pay-link staat niet meer op de homepage
 - [x] Homepage: Instagram-sectie "Volg me op Instagram" volledig weg (embeds en knop "Volg @daniquekwakman"); component blijft in de repo voor later gebruik
 - [x] Site-wide: afsluitende band "Benieuwd welk traject bij jou past?" overal weg (was al uitgeschakeld op homepage, trajectpagina's, klachten, recepten en webshop-pagina's)
+- [x] Navigatie: Klachten, Mijn methode en Labonderzoek onder "Meer" gezet (desktop en mobiel); uitklappaneel van "Meer" naar binnen geknikt zodat alle zes items volledig in beeld blijven

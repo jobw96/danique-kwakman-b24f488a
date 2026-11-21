@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, UtensilsCrossed, Compass, FlaskConical, FileText, User, HeartHandshake, HelpCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, UtensilsCrossed, Compass, FlaskConical, FileText, User, HeartHandshake, HelpCircle, Stethoscope } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
@@ -251,20 +251,12 @@ export const Layout: React.FC<LayoutProps> = ({
       icon: BookOpen
     }]
   }, {
-    name: 'Klachten',
-    href: '/klachten'
-  }, {
     name: 'Aanbod',
     subItems: [{
     name: 'Aanbod',
       href: '/behandelingen',
       description: '',
       icon: LayoutGrid
-    }, {
-      name: 'Mijn methode',
-      href: '/method',
-      description: '',
-      icon: Compass
     }, {
       name: '1:1 Bloedsuikertraject',
       href: '/bloedsuikertraject',
@@ -285,11 +277,6 @@ export const Layout: React.FC<LayoutProps> = ({
       href: '/darmtraject',
       description: '',
       icon: Activity
-    }, {
-      name: 'Labonderzoek',
-      href: '/labonderzoek',
-      description: '',
-      icon: FlaskConical
     }]
   }, {
     name: 'Webshop',
@@ -297,6 +284,21 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Meer',
     subItems: [{
+      name: 'Klachten',
+      href: '/klachten',
+      description: '',
+      icon: Stethoscope
+    }, {
+      name: 'Mijn methode',
+      href: '/method',
+      description: '',
+      icon: Compass
+    }, {
+      name: 'Labonderzoek',
+      href: '/labonderzoek',
+      description: '',
+      icon: FlaskConical
+    }, {
       name: 'Over mij',
       href: '/over-mij',
       description: '',
@@ -361,9 +363,12 @@ export const Layout: React.FC<LayoutProps> = ({
           </MotionLink>
 
           <nav className="hidden lg:flex items-center gap-2" aria-label="Hoofdnavigatie">
-            {navLinks.map(link => {
+            {navLinks.map((link, index) => {
             // Gedeelde stijl en animatie voor beide varianten: een item met een
             // eigen bestemming wordt een link, een dropdown-trigger blijft knop.
+            // Items rechts in de balk klappen naar binnen open, anders loopt het
+            // paneel buiten het scherm.
+            const alignRight = index >= navLinks.length - 2;
             const triggerProps = {
               className: "flex items-center gap-1.5 text-sm font-light",
               animate: {
@@ -400,7 +405,7 @@ export const Layout: React.FC<LayoutProps> = ({
                 {link.subItems && <AnimatePresence mode="wait">
                     {activeDropdown === link.name && <>
                         <div className="absolute top-full left-0 w-full h-4"></div>
-                        <m.div className="absolute top-[calc(100%+10px)] left-0 w-[340px]" initial={{
+                        <m.div className={`absolute top-[calc(100%+10px)] w-[340px] ${alignRight ? 'right-0' : 'left-0'}`} initial={{
                   opacity: 0,
                   y: -10,
                   scale: 0.95
