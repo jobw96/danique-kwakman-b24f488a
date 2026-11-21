@@ -418,10 +418,10 @@ const Index = () => {
         <FadeIn className="max-w-2xl mb-12">
           <SectionTag text="Blog" />
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-            Blogs over hormonen, darmen en voeding
+            {"\n"}
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Korte, praktische artikelen over wat er in je lichaam speelt en wat je er zelf mee kunt.
+            {"\n"}
           </p>
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
