@@ -96,10 +96,12 @@ const FAQ: FaqItem[] = [{
 }];
 
 const SectionTag = ({
-  text
+  text,
+  className = ''
 }: {
   text: string;
-}) => <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>;
+  className?: string;
+}) => <div className={`inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide ${className}`}>{text}</div>;
 
 const COMPLAINT_BLOCKS: { title: string; complaints: string[] }[] = [{
   title: 'Hormonen en cyclus',
@@ -415,8 +417,10 @@ const Index = () => {
 
     <Section className="bg-background">
       <div className="max-w-6xl mx-auto">
-        <FadeIn className="max-w-2xl mb-12">
-          <SectionTag text="Blog" />
+        <FadeIn className="mb-12">
+          <div className="flex justify-center">
+            <SectionTag text="Blog" className="text-base! px-6! py-2.5! mb-0!" />
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 leading-tight">
             {"\n"}
           </h2>
@@ -458,9 +462,9 @@ const Index = () => {
             </Link>
           </FadeIn>)}
         </div>
-        <FadeIn delay={0.2} className="mt-12 flex justify-center">
+        <FadeIn delay={0.2} className="mt-10 flex justify-center">
           <Link to="/blog">
-            <CustomButton variant="secondary" className="px-8 md:px-12 py-4 text-base!">Bekijk alle blogs</CustomButton>
+            <CustomButton variant="secondary">Bekijk alle blogs</CustomButton>
           </Link>
         </FadeIn>
       </div>
