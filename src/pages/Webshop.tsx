@@ -18,6 +18,7 @@ import saladePerzik from '@/assets/nourish-salade-perzik-burrata.webp.asset.json
 import ontbijtcake from '@/assets/nourish-ontbijtcake-havermout-zaden.webp.asset.json';
 import curry from '@/assets/nourish-curry-rijst-paprika.webp.asset.json';
 import pastaTonijn from '@/assets/nourish-pasta-tonijn-courgette-feta.webp.asset.json';
+import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
 import ebookPage1 from '@/assets/nourish-ebook-keuken-essentials.webp.asset.json';
 import ebookPage2 from '@/assets/nourish-ebook-eten-volgens-je-cyclus.webp.asset.json';
@@ -146,13 +147,23 @@ export const faqs = [
   },
 ];
 
-const ebookPages = [
-  { src: ebookPage0.url, alt: 'Inhoudsopgave van het e-book Nourish Your Body met alle hoofdstukken' },
-  { src: ebookPage1.url, alt: 'Pagina Keuken essentials met een hormoonproof keuken checklist' },
-  { src: ebookPage2.url, alt: 'Pagina Eten volgens je cyclus uit het e-book Nourish Your Body' },
-  { src: ebookPage3.url, alt: 'Pagina How to make: een makkelijke traybake in 5 stappen' },
-  { src: ebookPage4.url, alt: 'Receptpagina Wortelpannenkoekjes met ingrediënten en bereiding' },
-  { src: ebookPage5.url, alt: 'Receptpagina Zoete aardappel met tzaziki bowl' },
+type EbookImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  /** 'contain' houdt de hele afbeelding zichtbaar, 'cover' vult het kader. */
+  fit?: 'cover' | 'contain';
+};
+
+const ebookPages: EbookImage[] = [
+  { src: nourishCover.url, alt: 'Omslag van het e-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten', width: 1080, height: 1101, fit: 'contain' },
+  { src: ebookPage0.url, alt: 'Inhoudsopgave van het e-book Nourish Your Body met alle hoofdstukken', width: 1200, height: 1696 },
+  { src: ebookPage1.url, alt: 'Pagina Keuken essentials met een hormoonproof keuken checklist', width: 1200, height: 1696 },
+  { src: ebookPage2.url, alt: 'Pagina Eten volgens je cyclus uit het e-book Nourish Your Body', width: 1200, height: 1696 },
+  { src: ebookPage3.url, alt: 'Pagina How to make: een makkelijke traybake in 5 stappen', width: 1200, height: 1696 },
+  { src: ebookPage4.url, alt: 'Receptpagina Wortelpannenkoekjes met ingrediënten en bereiding', width: 1200, height: 1696 },
+  { src: ebookPage5.url, alt: 'Receptpagina Zoete aardappel met tzaziki bowl', width: 1200, height: 1696 },
 ];
 
 const ProductGallery = () => {
@@ -164,14 +175,15 @@ const ProductGallery = () => {
         src={current.src}
         alt={current.alt}
         title={current.alt}
-        className="w-full h-auto aspect-[1415/2000] object-cover rounded-xl"
-        width={1200}
-        height={1696}
+        style={{ aspectRatio: `${current.width} / ${current.height}` }}
+        className={`w-full h-auto rounded-xl ${current.fit === 'contain' ? 'object-contain bg-secondary/20' : 'object-cover'}`}
+        width={current.width}
+        height={current.height}
         loading="eager"
         fetchPriority="high"
         decoding="async"
       />
-      <div className="mt-3 grid grid-cols-6 gap-2">
+      <div className="mt-3 grid grid-cols-7 gap-1.5">
         {ebookPages.map((p, i) => (
           <button
             key={p.src}
@@ -181,7 +193,16 @@ const ProductGallery = () => {
             aria-pressed={i === active}
             className={`overflow-hidden rounded-md border-2 cursor-pointer transition-colors ${i === active ? 'border-primary' : 'border-transparent opacity-70 hover:opacity-100'}`}
           >
-            <img src={p.src} alt="" className="w-full aspect-[1415/2000] object-cover" width={120} height={170} loading="lazy" decoding="async" />
+            <img
+              src={p.src}
+              alt=""
+              style={{ aspectRatio: `${p.width} / ${p.height}` }}
+              className={`w-full h-full ${p.fit === 'contain' ? 'object-contain bg-secondary/20' : 'object-cover'}`}
+              width={120}
+              height={170}
+              loading="lazy"
+              decoding="async"
+            />
           </button>
         ))}
       </div>
