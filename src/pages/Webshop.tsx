@@ -119,7 +119,7 @@ const trajectories = [
     image: daniqueBeach,
     title: '1:1 Mommy (to be) traject',
     description:
-      'Met het 1:1 Mommy (to be) traject help ik je stap voor stap de juiste puzzelstukjes samenbrengen. Met aandacht voor je hormonen, darmen, voeding en leefstijl, van kinderwens tot zwangerschap en postpartum.',
+      'Een kinderwens die niet vanzelf in vervulling gaat, misschien ben je al zwanger en wil je je lichaam zo goed mogelijk ondersteunen of ben je bevallen en zoek je naar een goede basis voor je herstel?',
   },
   {
     href: '/darmtraject',
