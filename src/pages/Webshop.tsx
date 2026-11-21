@@ -3,7 +3,7 @@ import { m } from 'framer-motion';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles } from 'lucide-react';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles, Star } from 'lucide-react';
 
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
@@ -78,6 +78,26 @@ const features = [
   },
 ];
 
+
+/** Reviews van cliënten die het e-book al gelezen hebben; initialen zoals aangeleverd. */
+const reviews = [
+  {
+    text: 'Door de recepten heb ik veel meer energie door de dag heen en ik heb geen last met van cravings!',
+    initial: 'A.',
+  },
+  {
+    text: 'Je recepten zijn echt heel fijn!',
+    initial: 'S.',
+  },
+  {
+    text: 'Ik heb veel minder cravings op een dag en mijn energie is top!',
+    initial: 'S.',
+  },
+  {
+    text: 'Ik ben elke dag bezig geweest met jouw recepten en mijn hormonen voelen stukken stabieler. Ook ben ik al een paar kilo kwijt, ondanks dat dat niet eens mijn focus was!',
+    initial: 'L.',
+  },
+];
 
 const trajectories = [
   {
@@ -246,7 +266,29 @@ const Webshop = () => {
             </section>
           </FadeIn>
 
-          {/* 4. Over Danique */}
+          {/* 4. Reviews */}
+          <FadeIn>
+            <section className="mb-20 md:mb-28">
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Andere gingen je voor</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+                {reviews.map((r) => (
+                  <figure key={r.initial + r.text} className="bg-card rounded-2xl border border-secondary/30 p-6 flex flex-col gap-3">
+                    <div className="flex gap-1" role="img" aria-label="5 van de 5 sterren">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-primary text-primary" aria-hidden="true" />
+                      ))}
+                    </div>
+                    <blockquote className="text-sm text-card-foreground leading-relaxed flex-grow">
+                      &ldquo;{r.text}&rdquo;
+                    </blockquote>
+                    <figcaption className="text-xs font-medium text-muted-foreground">{r.initial}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          </FadeIn>
+
+          {/* 5. Over Danique */}
           <FadeIn>
             <section className={`${PANEL} p-8 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
