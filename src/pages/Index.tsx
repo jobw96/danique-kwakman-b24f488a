@@ -458,9 +458,9 @@ const Index = () => {
             </Link>
           </FadeIn>)}
         </div>
-        <FadeIn delay={0.2} className="mt-10 flex justify-center">
+        <FadeIn delay={0.2} className="mt-12 flex justify-center">
           <Link to="/blog">
-            <CustomButton variant="secondary">Bekijk alle blogs</CustomButton>
+            <CustomButton variant="secondary" className="px-8 md:px-12 py-4 text-base!">Bekijk alle blogs</CustomButton>
           </Link>
         </FadeIn>
       </div>
