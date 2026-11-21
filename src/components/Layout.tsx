@@ -108,7 +108,6 @@ export const Layout: React.FC<LayoutProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [bannerOffset, setBannerOffset] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(0);
   const isHomePage = location.pathname === '/';
   const useDarkHeader = scrolled || !isHomePage || mobileMenuOpen;
@@ -144,14 +143,11 @@ export const Layout: React.FC<LayoutProps> = ({
 
   useEffect(() => {
     let ticking = false;
-    const isDesktopMq = window.matchMedia('(min-width: 1024px)');
     const update = () => {
       ticking = false;
       const y = window.scrollY;
       setScrolled(prev => (prev !== y > 20 ? y > 20 : prev));
       setShowBackToTop(prev => (prev !== y > 500 ? y > 500 : prev));
-      const next = isDesktopMq.matches ? 0 : Math.min(y, bannerHeight);
-      setBannerOffset(prev => (prev !== next ? next : prev));
     };
     const handleScroll = () => {
       if (!ticking) {
@@ -179,9 +175,9 @@ export const Layout: React.FC<LayoutProps> = ({
   }, [mobileMenuOpen]);
 
   useEffect(() => {
-    document.documentElement.style.scrollPaddingTop = `${headerHeight - bannerOffset + 16}px`;
+    document.documentElement.style.scrollPaddingTop = `${headerHeight + 16}px`;
     return () => { document.documentElement.style.scrollPaddingTop = ''; };
-  }, [headerHeight, bannerOffset]);
+  }, [headerHeight]);
 
 
 
@@ -327,7 +323,6 @@ export const Layout: React.FC<LayoutProps> = ({
       <div
         ref={headerWrapperRef}
         className="fixed top-0 left-0 right-0 z-50"
-        style={{ transform: `translateY(-${bannerOffset}px)` }}
       >
 
       <div ref={bannerRef}><PromoBanner /></div>
