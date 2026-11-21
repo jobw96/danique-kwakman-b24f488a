@@ -117,6 +117,8 @@ const GEEN_AANBOD_CTA = [
   '/klachten',
   // De receptenpagina sluit af met de recepten zelf; geen aanbodverwijzing.
   '/recepten',
+  // De e-boekpagina toont zijn eigen aanbodverwijzing onderaan.
+  '/webshop/nourish-your-body',
 ];
 
 export const Layout: React.FC<LayoutProps> = ({

@@ -3,12 +3,6 @@ import { m } from 'framer-motion';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles } from 'lucide-react';
 
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
@@ -112,29 +106,6 @@ const trajectories = [
     image: daniqueDarm,
     title: '1:1 Darmtraject',
     description: 'Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.',
-  },
-];
-
-export const faqs = [
-  {
-    q: 'Hoe ontvang ik het e-book?',
-    a: 'Direct na je bestelling ontvang je een mail met je downloadlink. Meestal is dat binnen een paar minuten; check anders even je spammap.',
-  },
-  {
-    q: 'Kan ik het printen?',
-    a: 'Zeker. Het boek is opgemaakt als pdf, dus je kunt het helemaal of per pagina uitprinten en in een map bewaren.',
-  },
-  {
-    q: 'Op welke apparaten kan ik het lezen?',
-    a: 'Op je telefoon, tablet, laptop en e-reader die pdf ondersteunt. Je hebt geen speciale app nodig.',
-  },
-  {
-    q: 'Kan ik mijn geld terugkrijgen?',
-    a: 'Omdat het om een digitaal product gaat dat je meteen ontvangt, is retour niet mogelijk. Twijfel je? Stuur me gerust eerst een berichtje.',
-  },
-  {
-    q: 'Is het geschikt bij een specifieke klacht?',
-    a: 'De recepten zijn hormoon- en darmvriendelijk en voor veel vrouwen een fijne basis. Bij een specifieke klacht is persoonlijke begeleiding altijd passender.',
   },
 ];
 
@@ -301,26 +272,6 @@ const Webshop = () => {
                 </div>
 
               </div>
-            </section>
-          </FadeIn>
-
-
-          {/* 6. FAQ */}
-          <FadeIn>
-            <section className="mb-20 md:mb-28 max-w-3xl mx-auto">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">Veelgestelde vragen</h2>
-              <Accordion type="single" collapsible className="w-full">
-                {faqs.map((f, i) => (
-                  <AccordionItem key={i} value={`faq-${i}`} className="border-b border-border/50">
-                    <AccordionTrigger className="text-left text-base font-medium text-foreground hover:no-underline cursor-pointer">
-                      {f.q}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
-                      {f.a}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
             </section>
           </FadeIn>
 

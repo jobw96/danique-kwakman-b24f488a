@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SITE_URL } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
-import Webshop, { CHECKOUT_URL, PRICE_AMOUNT, faqs } from "@/pages/Webshop";
+import Webshop, { CHECKOUT_URL, PRICE_AMOUNT } from "@/pages/Webshop";
 import nourishCover from "@/assets/nourish-your-body-cover-2.webp.asset.json";
 
 
@@ -78,18 +78,6 @@ export const Route = createFileRoute("/_layout/webshop_/nourish-your-body")({
             { "@type": "ListItem", position: 2, name: "Webshop", item: `${SITE_URL}/webshop` },
             { "@type": "ListItem", position: 3, name: "Nourish Your Body", item: URL },
           ],
-        }),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((f) => ({
-            "@type": "Question",
-            name: f.q,
-            acceptedAnswer: { "@type": "Answer", text: f.a },
-          })),
         }),
       },
     ],
