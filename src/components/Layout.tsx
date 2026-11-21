@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from '@/lib/router-compat';
-import { Menu, X, ChevronDown, ArrowUpRight, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, UtensilsCrossed, Compass, FlaskConical, FileText, User, HeartHandshake, HelpCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, Headphones, BookOpen, Sparkles, Activity, LayoutGrid, Instagram, Mail, ArrowUp, UtensilsCrossed, Compass, FlaskConical, FileText, User, HeartHandshake, HelpCircle } from 'lucide-react';
 import { m, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import logoFull from '@/assets/logo-full.svg';
 import logoCat from '@/assets/logo-cat.webp';
 import logoGat from '@/assets/logo-gat.webp';
-import zachteSchaduw from '@/assets/sfeer/zachte-schaduw-boog-4x3.webp';
 
 import { useBookingModal } from '@/components/BookingModal';
 import { SpotifyIcon } from '@/components/BrandIcons';
@@ -99,30 +98,6 @@ interface NavItem {
   href?: string;
   subItems?: NavSubItem[];
 }
-/**
- * Pagina's zonder de afsluitende verwijzing naar het aanbod:
- * - de aanbodpagina zelf en de drie trajectpagina's, want daar zou het een
- *   verwijzing naar het aanbod zijn vanaf een pagina die het aanbod al is;
- * - pagina's die onderaan al een eigen CTA hebben staan, want twee CTA's
- *   onder elkaar zwakken elkaar af.
- */
-const GEEN_AANBOD_CTA = [
-  // De homepage sluit zelf af met een eigen bloedsuiker- en trajectverwijzing.
-  '/',
-  '/behandelingen',
-  '/bloedsuikertraject',
-  '/hormoontraject',
-  '/mommy-to-be',
-  '/darmtraject',
-  '/klachten',
-  // De receptenpagina sluit af met de recepten zelf; geen aanbodverwijzing.
-  '/recepten',
-  // De webshoppagina's sluiten af met hun eigen productverwijzing.
-  '/webshop',
-  // De e-boekpagina toont zijn eigen aanbodverwijzing onderaan.
-  '/webshop/nourish-your-body',
-];
-
 export const Layout: React.FC<LayoutProps> = ({
   children
 }) => {
@@ -658,42 +633,6 @@ export const Layout: React.FC<LayoutProps> = ({
         {children}
       </main>
 
-
-      {/* Afsluitende verwijzing naar het aanbod; zie GEEN_AANBOD_CTA voor de
-          pagina's die hem overslaan.
-          De waas van 55% is gemeten op deze foto: de helderste pixel in het
-          hele beeld haalt daarmee 4,87:1 tegen de cremekleurige tekst. Met 45%
-          bleef de alinea op 3,8:1 steken, onder de 4,5 van WCAG AA. */}
-      {!GEEN_AANBOD_CTA.includes(location.pathname) && (
-        <section className="relative isolate overflow-hidden">
-          <img
-            src={zachteSchaduw}
-            alt=""
-            aria-hidden="true"
-            width={1600}
-            height={1194}
-            loading="lazy"
-            decoding="async"
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 -z-10 bg-foreground/55" aria-hidden="true" />
-          <div className="mx-auto max-w-2xl px-6 py-20 text-center md:py-28">
-            <h2 className="mb-5 font-serif text-3xl leading-tight text-background md:text-4xl">
-              Benieuwd welk traject bij jou past?
-            </h2>
-            <p className="mb-8 leading-relaxed text-background">
-              Drie 1:1 trajecten, elk met een eigen startpunt: je bloedsuiker, je hormonen of je darmen.
-            </p>
-            <Link
-              to="/behandelingen"
-              className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background focus-visible:ring-offset-2 focus-visible:ring-offset-transparent motion-reduce:transition-none md:px-6"
-            >
-              Bekijk alle trajecten
-              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
-        </section>
-      )}
 
       <footer ref={footerRef} className="relative min-h-[480px] md:min-h-[500px] w-full overflow-hidden z-0" style={{
       backgroundColor: 'hsl(var(--background))',

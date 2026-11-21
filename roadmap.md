@@ -65,3 +65,4 @@
 - [x] E-boekpagina: kop "Liever persoonlijke begeleiding?" naar "Ontdekt mijn aanbod" en Mommy (to be)-kaart tussen hormoon- en darmtraject; computer en telefoon controleren
 - [x] Homepage: knop "Bestel direct" bij het e-book weg, alleen "Meer info" naar /webshop/nourish-your-body blijft; Plug&Pay-link staat niet meer op de homepage
 - [x] Homepage: Instagram-sectie "Volg me op Instagram" volledig weg (embeds en knop "Volg @daniquekwakman"); component blijft in de repo voor later gebruik
+- [x] Site-wide: afsluitende band "Benieuwd welk traject bij jou past?" overal weg (was al uitgeschakeld op homepage, trajectpagina's, klachten, recepten en webshop-pagina's)
