@@ -15,8 +15,8 @@ export function MobileContactBar() {
   return (
     <aside
       aria-label="Snel contact"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-secondary/40 bg-background/95 px-3 pt-3 backdrop-blur-xl lg:hidden"
-      style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-secondary/40 bg-background/95 px-3 pt-2.5 backdrop-blur-xl lg:hidden"
+      style={{ paddingBottom: 'calc(0.625rem + env(safe-area-inset-bottom))' }}
     >
       <div className="mx-auto flex w-full max-w-lg items-center gap-3">
         <m.a
@@ -24,16 +24,16 @@ export function MobileContactBar() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Open een WhatsApp-gesprek met Danique Kwakman"
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md border border-secondary/40 bg-secondary/20 text-primary-deep transition-colors hover:bg-secondary/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-secondary/40 bg-secondary/20 text-primary-deep transition-colors hover:bg-secondary/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           whileTap={{ scale: 0.96 }}
         >
-          <WhatsAppIcon width={25} height={25} />
+          <WhatsAppIcon width={23} height={23} />
         </m.a>
 
         <m.button
           type="button"
           onClick={openModal}
-          className="flex h-14 min-w-0 flex-1 items-center justify-center rounded-md bg-primary px-3 text-center text-[13px] font-medium tracking-[0.06em] text-primary-foreground transition-colors hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="flex h-12 min-w-0 flex-1 items-center justify-center rounded-md bg-primary px-3 text-center text-xs font-medium tracking-[0.06em] text-primary-foreground transition-colors hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           whileTap={{ scale: 0.98 }}
         >
           MAAK GRATIS KENNIS
@@ -43,10 +43,10 @@ export function MobileContactBar() {
           type="button"
           onClick={scrollToTop}
           aria-label="Scroll soepel terug naar boven"
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md border border-secondary/40 bg-secondary/20 text-primary-deep transition-colors hover:bg-secondary/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-secondary/40 bg-secondary/20 text-primary-deep transition-colors hover:bg-secondary/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           whileTap={{ scale: 0.96 }}
         >
-          <ArrowUp size={25} strokeWidth={1.7} aria-hidden="true" />
+          <ArrowUp size={23} strokeWidth={1.7} aria-hidden="true" />
         </m.button>
       </div>
     </aside>
