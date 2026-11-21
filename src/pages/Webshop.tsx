@@ -283,15 +283,13 @@ const Webshop = () => {
                 <div>
                   <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-4">Over Danique</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Hi! Ik ben Danique Kwakman. Orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige. Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek. We brengen niet alleen je klachten in kaart, maar kijken ook naar de samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
+                    Hi! Ik ben Danique Kwakman. <span className="font-semibold text-foreground">Orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige</span>. Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek. We brengen niet alleen je klachten in kaart, maar kijken ook naar de samenhang tussen je <span className="font-semibold text-foreground">hormonen, darmen, voeding, bloedsuiker, slaap en stress</span>. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
                   </p>
                   <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                     Lees meer <Link to="/over-mij" className="text-primary underline underline-offset-4">over mijn werkwijze en achtergrond</Link>,
                     ontdek <Link to="/blog/darmen-gezond-houden-5-tips" className="text-primary underline underline-offset-4">5 simpele tips om je darmen gezond te houden</Link>{' '}
-                    of start met het <Link to="/e-book" className="text-primary underline underline-offset-4">gratis e-book met hormoonproof recepten</Link>.
+                    of lees verder op mijn <Link to="/blog" className="text-primary underline underline-offset-4">blog met artikelen over hormonen, darmen en energie</Link>.
                   </p>
-                  <p className="mt-5 text-sm text-foreground font-medium">Danique Kwakman</p>
-                  <p className="text-sm text-muted-foreground">Orthomoleculair Therapeut</p>
                 </div>
 
               </div>

@@ -61,3 +61,4 @@
 - [x] Interne link in blog 'Zoete cravings in je luteale fase': "zoete cravings" in de intro klikbaar naar /blog/zoete-cravings, plus Lees-ook-blok met die ene link; bestaande linkstijl, geen tabblad, link mag geen 404 geven
 - [x] Blogdatum Je- [x] Foto in de blogkaart van "Je bloedsuikerspiegel uitgelegd" hoger gezet (object-[50- [x] Foto in de blogkaart van "Je bloedsuikerspiegel uitgelegd" hoger gezet zodat het witte sensorapparaatje op de arm zichtbaar is; computer en telefoon gecontroleerd
 - [x] Webshoppagina: "Shop"-kop weg (pill "Webshop" is nu de kop) en prijs onder het e-book weg; doorklikken naar het e-book computer en telefoon gecontroleerd
+- [x] Over Danique op de e-boekpagina: rol en kernwoorden dikgedrukt (naam blijft gewoon), laatste link naar /blog in plaats van het gratis e-book, naam en "Orthomoleculair Therapeut" eronder weg; computer en telefoon gecontroleerd
