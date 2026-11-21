@@ -48,33 +48,33 @@ const OrderButton = ({ className = '' }: { className?: string }) => (
 const features = [
   {
     icon: BookOpen,
-    title: '50+ hormoonproof recepten',
-    text: 'Voedzame, hormoonproof en darmvriendelijke recepten voor elk moment van de dag, zonder ingewikkelde ingrediënten.',
+    title: '50+ hormoonproof & darmvriendelijke recepten',
+    text: 'Voedzame ontbijtjes, lunches, diners en snacks die je lichaam ondersteunen.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Waarom voeding zo belangrijk is voor je hormonen en darmen',
+    text: 'Praktische inzichten om beter te begrijpen wat jouw lichaam nodig heeft.',
   },
   {
     icon: CalendarHeart,
     title: 'Eten volgens je cyclus',
-    text: 'Praktische handvatten om cyclusgericht te eten, zodat je voeding aansluit bij elke fase van je cyclus.',
+    text: 'Ontdek welke voeding je kunt inzetten tijdens de verschillende fases van je cyclus en hoe je hiermee kunt meebewegen met je lichaam.',
   },
   {
     icon: ChefHat,
-    title: 'Mealprep- & keukenhacks',
-    text: 'Slimme hacks om voor te bereiden en sneller op de tafel te zetten, ook op drukke dagen.',
+    title: 'How to make: voedende maaltijden bouwen',
+    text: 'Leer hoe je een hormoonproof ontbijt, een voedzame salade in 10 minuten en een makkelijke traybake in 5 stappen maakt.',
   },
   {
     icon: UtensilsCrossed,
-    title: 'Tools om zelf samen te stellen',
-    text: 'Handige tools om zelf voedzame maaltijden samen te stellen, helemaal afgestemd op wat jij lekker vindt.',
+    title: 'Slimmer in de keuken',
+    text: 'Mealprep tips, keuken essentials en praktische hacks om gezond eten makkelijker te maken.',
   },
   {
-    icon: Sparkles,
-    title: 'Voor hormonen, darmen & energie',
-    text: 'Zodat gezond eten voor je hormonen, darmen en energie makkelijker wordt, zonder uren in de keuken.',
-  },
-  {
-    icon: Tablet,
-    title: 'Direct te downloaden',
-    text: 'Na je bestelling direct in je mail, te lezen op telefoon, tablet en laptop en om te printen.',
+    icon: ShieldCheck,
+    title: 'Overwegend vrij van suikers, gluten en helemaal hormoonproof',
+    text: 'De recepten zijn overwegend vrij van suiker, gluten en zuivel of makkelijk te vervangen.',
   },
 ];
 
@@ -233,7 +233,7 @@ const Webshop = () => {
           {/* 3. Wat je krijgt */}
           <FadeIn>
             <section className="mb-20 md:mb-28">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Wat je krijgt</h2>
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">In dit recepten boek vind je:</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                 {features.map(({ icon: Icon, title, text }) => (
                   <div key={title}>
