@@ -71,3 +71,5 @@
 - [x] Navigatie: Klachten, Mijn methode en Labonderzoek onder "Meer" gezet (desktop en mobiel); uitklappaneel van "Meer" naar binnen geknikt zodat alle zes items volledig in beeld blijven
 - [x] "Meer"-menu: Over mij bovenaan, dan Mijn methode, dan "Welke klachten ervaar je?" (was Klachten, blijft naar /klachten); desktop en mobiel gecontroleerd
 - [x] Homepage: blogblok tussen Nourish en "Laten we kennismaken" met de drie nieuwste blogs, eigen kaarten en knop "Bekijk alle blogs"; desktop en mobiel gecontroleerd
+- [x] CIRCLE-methode op homepage als cirkeldiagram naar de aangeleverde visual: ring met zes genummerde knoppen, labels met handgetekende accenten erbuiten en de tekst van de gekozen stap in het midden van de cirkel; klik/tik kiest de stap, gecontroleerd op 1280px, 1024px, 768px en 390px
+- [x] Losse lijst met stapteksten onder de cirkel verwijderd; op tablet en telefoon staat de tekst van de gekozen stap onder de cirkel met een rij knoppen erboven

@@ -137,6 +137,142 @@ const CIRCLE_STEPS: { title: string; paragraphs: string[] }[] = [{
   paragraphs: ['Je kunt weer uit eten, sporten, afspreken en leven zonder steeds rekening te houden met je buik, energie of cyclus en je weet ook na het traject wat je nodig hebt als je lichaam weer signalen geeft.']
 }];
 
+const CIRCLE_ANGLES = [-90, -30, 30, 90, 150, 210];
+/** Straal van de ring, de knoppen en de labels, als percentage van de breedte. */
+const CIRCLE_RING = 25;
+const CIRCLE_LABEL_RADIUS = 31;
+/**
+ * De box is lager dan breed, dus percentages van de hoogte moeten worden
+ * omgerekend om de ring een echte cirkel te laten blijven. Zonder deze factor
+ * stond het diagram zwevend in een vierkant met veel lege ruimte eronder.
+ */
+const CIRCLE_TALL = 1 / 0.8;
+const CIRCLE_DOODLE_KINDS = ['kern', 'groei', 'proces', 'nieuw', 'stap', 'verandering'];
+/**
+ * Labelpositie ten opzichte van het ankerpunt op de cirkel. De padding duwt de
+ * tekst weg van de knop: bij een bovenlabel valt het element met
+ * -translate-y-full op het anker, dus zit de ruimte in de padding eronder.
+ */
+const CIRCLE_LABEL_OFFSET = [
+  'pb-3 -translate-x-1/2 -translate-y-full',
+  'pl-4 -translate-y-1/2',
+  'pl-4 -translate-y-1/2',
+  'pt-3 -translate-x-1/2',
+  'pr-4 -translate-x-full -translate-y-1/2',
+  'pr-4 -translate-x-full -translate-y-1/2',
+];
+
+type DoodleKind = typeof CIRCLE_DOODLE_KINDS[number];
+
+/** Handgetekende accentjes naast de labels, naar voorbeeld van de visual. */
+const CircleDoodle = ({ kind, className = '' }: { kind: DoodleKind; className?: string }) => <svg viewBox="0 0 40 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className={className}>
+  {kind === 'kern' && <>
+    <path d="M3 14C11 5 27 4 37 10" />
+    <path d="M7 17c8 4 19 3 27-2" />
+  </>}
+  {kind === 'groei' && <>
+    <path d="M20 21V5" />
+    <path d="M20 13c-4 0-7-2-8-6 4 0 7 2 8 6Z" />
+    <path d="M20 10c3 0 6-2 7-5-3 0-6 2-7 5Z" />
+  </>}
+  {kind === 'proces' && <>
+    <path d="M22 12a4 4 0 1 1-4-4 7 7 0 1 1 7 7" />
+    <circle cx="20" cy="12" r="1" fill="currentColor" stroke="none" />
+  </>}
+  {kind === 'nieuw' && <>
+    <path d="M3 10c5-5 9 3 14-1s9 3 14-1" />
+    <path d="M6 17c5-5 9 3 14-1s9 3 14-1" />
+  </>}
+  {kind === 'stap' && <>
+    <ellipse cx="14" cy="15" rx="9" ry="6" />
+    <ellipse cx="28" cy="9" rx="6" ry="4" />
+  </>}
+  {kind === 'verandering' && <>
+    <path d="M4 18c0-9 6-14 13-14" />
+    <path d="M10 19c0-6 4-10 9-10" />
+  </>}
+</svg>;
+
+/**
+ * De zes stappen als cirkeldiagram, naar voorbeeld van de aangeleverde visual.
+ * De toelichting van de gekozen stap staat in het midden van de cirkel. De
+ * knoppen zijn echte knoppen: met muis, toetsenbord en tik te kiezen.
+ */
+const CircleDiagram = () => {
+  const [active, setActive] = useState(0);
+
+  const point = (radius: number, index: number) => {
+    const rad = (CIRCLE_ANGLES[index] * Math.PI) / 180;
+    return { left: `${50 + radius * Math.cos(rad)}%`, top: `${50 + radius * CIRCLE_TALL * Math.sin(rad)}%` };
+  };
+
+  return <>
+    <div className="relative mx-auto aspect-[1/0.8] w-full max-w-[900px]">
+      <div className="absolute left-1/2 top-1/2 aspect-square w-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-olive" />
+      {/* Onder lg is het midden te klein voor een alinea: daar blijft de naam
+          staan en staat de tekst van de gekozen stap onder de cirkel. */}
+      <div className="absolute inset-0 flex items-center justify-center lg:hidden">
+        <span className="font-serif text-sm text-secondary-dark">CIRCLE-methode</span>
+      </div>
+      <div className="absolute inset-0 hidden items-center justify-center lg:flex">
+        <div className="grid w-full max-w-[280px]">
+          {CIRCLE_STEPS.map((step, index) => <m.div
+            key={step.title}
+            initial={false}
+            animate={{ opacity: active === index ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+            aria-hidden={active !== index}
+            className="col-start-1 row-start-1 text-center"
+          >
+            <h3 className="font-serif text-xl text-foreground mb-2">{step.title}</h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">{step.paragraphs.join(' ')}</p>
+          </m.div>)}
+        </div>
+      </div>
+      {CIRCLE_STEPS.map((step, index) => {
+        const kind = CIRCLE_DOODLE_KINDS[index] as DoodleKind;
+        const doodleFirst = index >= 4;
+        return <React.Fragment key={step.title}>
+          <div className="absolute aspect-square w-[9%] -translate-x-1/2 -translate-y-1/2" style={point(CIRCLE_RING, index)}>
+            <m.button
+              type="button"
+              whileHover={{ scale: 1.12 }}
+              onClick={() => setActive(index)}
+              onMouseEnter={() => setActive(index)}
+              onFocus={() => setActive(index)}
+              aria-pressed={active === index}
+              aria-label={`Stap ${index + 1}: ${step.title}`}
+              className={`flex h-full w-full cursor-pointer items-center justify-center rounded-full ${active === index ? 'bg-olive text-foreground' : 'border border-olive bg-background text-secondary-dark'}`}
+            >
+              <span className="text-xs tabular-nums md:text-base">{index + 1}</span>
+            </m.button>
+          </div>
+          <div className={`absolute hidden items-center gap-2 whitespace-nowrap lg:flex ${CIRCLE_LABEL_OFFSET[index]}`} style={point(CIRCLE_LABEL_RADIUS, index)}>
+            {doodleFirst && <CircleDoodle kind={kind} className="h-4 w-7 text-olive" />}
+            <span className={`text-[11px] uppercase tracking-[0.12em] ${active === index ? 'text-foreground' : 'text-secondary-dark'}`}>{step.title}</span>
+            {!doodleFirst && <CircleDoodle kind={kind} className="h-4 w-7 text-olive" />}
+          </div>
+        </React.Fragment>;
+      })}
+    </div>
+    <div className="mt-8 flex flex-wrap justify-center gap-2 lg:hidden">
+      {CIRCLE_STEPS.map((step, index) => <button
+        key={step.title}
+        type="button"
+        onClick={() => setActive(index)}
+        aria-pressed={active === index}
+        className={`cursor-pointer rounded-full border px-3 py-1.5 text-[11px] uppercase tracking-[0.1em] ${active === index ? 'border-olive bg-olive text-foreground' : 'border-secondary text-secondary-dark'}`}
+      >
+        {step.title}
+      </button>)}
+    </div>
+    <div className="mt-6 text-center lg:hidden">
+      <p className="font-serif text-lg text-foreground mb-2">{CIRCLE_STEPS[active].title}</p>
+      <p className="text-sm leading-relaxed text-muted-foreground">{CIRCLE_STEPS[active].paragraphs.join(' ')}</p>
+    </div>
+  </>;
+};
+
 const ComplaintBlocks = () => <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
   {COMPLAINT_BLOCKS.map((block, index) => <FadeIn key={block.title} delay={index * 0.1} className="h-full">
     <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
@@ -345,21 +481,9 @@ const Index = () => {
           
         </FadeIn>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-        {CIRCLE_STEPS.map((step, index) => <FadeIn key={step.title} delay={index * 0.1} className="h-full">
-          <div className="bg-card border border-secondary/30 rounded-2xl p-8 h-full">
-            <div className="flex items-start gap-5">
-              <span className="font-serif text-2xl text-secondary/70 leading-none pt-1 tabular-nums">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-                <div className="space-y-3">
-                  <h3 className="font-serif text-2xl text-foreground mb-5">{step.title}</h3>
-                  {step.paragraphs.map((paragraph, pIndex) => <p key={pIndex} className="text-muted-foreground text-sm leading-relaxed">{paragraph}</p>)}
-                </div>
-            </div>
-          </div>
-        </FadeIn>)}
-      </div>
+      <FadeIn direction="none" className="mb-12">
+        <CircleDiagram />
+      </FadeIn>
       <div className="text-center mt-12">
         <Link to="/method">
           <CustomButton variant="secondary">Bekijk mijn methode</CustomButton>
