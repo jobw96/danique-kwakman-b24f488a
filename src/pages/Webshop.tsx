@@ -22,7 +22,6 @@ export const CHECKOUT_URL = 'https://daniquekwakman.plugandpay.com/checkout/nour
 /** Enige bron van waarheid voor de prijs: zichtbare prijs én JSON-LD komen hier vandaan. */
 export const PRICE_AMOUNT = '39.99';
 export const PRICE_DISPLAY = `€${PRICE_AMOUNT.replace('.', ',')}`;
-const PRICE = PRICE_DISPLAY;
 
 
 
@@ -185,7 +184,6 @@ const Webshop = () => {
                       </li>
                     ))}
                   </ul>
-                  <p className="font-serif text-3xl md:text-4xl text-foreground mb-6">{PRICE}</p>
                   <OrderButton />
                   <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground">
                     <span className="inline-flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-primary" /> Direct in je mail</span>
