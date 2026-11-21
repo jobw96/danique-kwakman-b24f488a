@@ -11,13 +11,6 @@ import {
 } from '@/components/ui/accordion';
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles } from 'lucide-react';
 
-import zoeteAardappel from '@/assets/nourish-zoete-aardappel-gehakt-yoghurtsaus.webp.asset.json';
-import wortelPannenkoekjes from '@/assets/nourish-wortelpannenkoekjes-yoghurt-peer.webp.asset.json';
-import bakedOats from '@/assets/nourish-baked-oats-banaan-chocolade.webp.asset.json';
-import saladePerzik from '@/assets/nourish-salade-perzik-burrata.webp.asset.json';
-import ontbijtcake from '@/assets/nourish-ontbijtcake-havermout-zaden.webp.asset.json';
-import curry from '@/assets/nourish-curry-rijst-paprika.webp.asset.json';
-import pastaTonijn from '@/assets/nourish-pasta-tonijn-courgette-feta.webp.asset.json';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
 import ebookPage1 from '@/assets/nourish-ebook-keuken-essentials.webp.asset.json';
@@ -112,16 +105,6 @@ const trajectories = [
     title: '1:1 Darmtraject',
     description: 'Een diepgaand 1:1 traject incl. lab onderzoek om tot de kern van jouw klacht te komen.',
   },
-];
-
-const recipePhotos = [
-  { src: zoeteAardappel.url, alt: 'Gevulde zoete aardappel met gehakt, yoghurtsaus en frisse salade uit het e-book Nourish Your Body' },
-  { src: wortelPannenkoekjes.url, alt: 'Wortel-havermoutpannenkoekjes met yoghurt, walnoten en peer als hormoonproof ontbijt' },
-  { src: bakedOats.url, alt: 'Baked oats met banaan en pure chocolade, een voedzaam ontbijt uit Nourish Your Body' },
-  { src: saladePerzik.url, alt: 'Salade met gegrilde perzik, burrata, tomaat en pijnboompitten' },
-  { src: ontbijtcake.url, alt: 'Havermout-ontbijtcake met yoghurt, notenpasta en lijnzaad' },
-  { src: curry.url, alt: 'Romige curry met paprika en rijst, een darmvriendelijk avondeten' },
-  { src: pastaTonijn.url, alt: 'Pasta met tonijn, courgette, tomatensaus en feta' },
 ];
 
 export const faqs = [
@@ -266,29 +249,6 @@ const Webshop = () => {
                 </div>
               </div>
             </div>
-          </FadeIn>
-
-          {/* Recepten in beeld */}
-          <FadeIn>
-            <section className="mb-20 md:mb-28">
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10 text-center">Een kijkje in de recepten</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-                {recipePhotos.map((p, i) => (
-                  <figure key={p.src} className={`overflow-hidden rounded-xl ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
-                    <img
-                      src={p.src}
-                      alt={p.alt}
-                      title={p.alt}
-                      className="w-full h-full aspect-[3/4] object-cover"
-                      width={900}
-                      height={1200}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </figure>
-                ))}
-              </div>
-            </section>
           </FadeIn>
 
           {/* 3. Wat je krijgt */}
