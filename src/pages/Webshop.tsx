@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, UtensilsCrossed, Sparkles, Star } from 'lucide-react';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, UtensilsCrossed, Sparkles, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Carousel, type CarouselApi, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
@@ -157,6 +158,65 @@ const ProductGallery = () => {
   );
 };
 
+const EbookSlideshow = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [active, setActive] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) return;
+    const onSelect = () => setActive(api.selectedScrollSnap());
+    onSelect();
+    api.on('select', onSelect);
+    api.on('reInit', onSelect);
+    return () => {
+      api.off('select', onSelect);
+      api.off('reInit', onSelect);
+    };
+  }, [api]);
+
+  const arrow = 'h-10 w-10 rounded-md border border-secondary/40 bg-card text-secondary-dark flex items-center justify-center transition-colors hover:border-primary hover:text-primary disabled:opacity-30 cursor-pointer';
+
+  return (
+    <div className="mt-14 md:mt-16 max-w-md mx-auto">
+      <Carousel
+        setApi={setApi}
+        opts={{ align: 'center', loop: true }}
+        className="w-full"
+        aria-label="Foto's uit het e-book Nourish Your Body"
+      >
+        <CarouselContent className="-ml-3">
+          {ebookPages.map((page, index) => (
+            <CarouselItem key={page.src} className="pl-3" aria-label={`${index + 1} van ${ebookPages.length}`}>
+              <div className="aspect-[4/5] w-full flex items-center justify-center overflow-hidden rounded-xl border border-secondary/30 bg-secondary/10">
+                <img
+                  src={page.src}
+                  alt={page.alt}
+                  className="h-full w-full object-contain"
+                  width={page.width}
+                  height={page.height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+      <div className="mt-5 flex items-center justify-center gap-5">
+        <button type="button" onClick={() => api?.scrollPrev()} disabled={!api} aria-label="Vorige foto" className={arrow}>
+          <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+        </button>
+        <span className="min-w-12 text-center text-sm text-muted-foreground" aria-live="polite">
+          {active + 1} / {ebookPages.length}
+        </span>
+        <button type="button" onClick={() => api?.scrollNext()} disabled={!api} aria-label="Volgende foto" className={arrow}>
+          <ChevronRight className="h-5 w-5" aria-hidden="true" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const Webshop = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -228,6 +288,7 @@ const Webshop = () => {
                   </div>
                 ))}
               </div>
+              <EbookSlideshow />
             </section>
           </FadeIn>
 
