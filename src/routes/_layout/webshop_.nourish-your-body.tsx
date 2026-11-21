@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, toAbsoluteUrl } from "@/lib/seo";
 import { PageTransition } from "@/components/Animations";
-import Webshop, { CHECKOUT_URL, PRICE_AMOUNT } from "@/pages/Webshop";
+import Webshop, { CHECKOUT_URL, PRICE_AMOUNT, ebookPages } from "@/pages/Webshop";
 import nourishCover from "@/assets/nourish-your-body-cover-2.webp.asset.json";
 
 
@@ -66,6 +66,30 @@ export const Route = createFileRoute("/_layout/webshop_/nourish-your-body")({
             priceValidUntil: "2027-12-31",
 
           },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Foto's uit het e-book Nourish Your Body",
+          itemListElement: ebookPages.map((page, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            item: {
+              "@type": "ImageObject",
+              name: page.alt,
+              description: page.alt,
+              caption: page.alt,
+              contentUrl: toAbsoluteUrl(page.src),
+              url: toAbsoluteUrl(page.src),
+              width: page.width,
+              height: page.height,
+              encodingFormat: "image/webp",
+              inLanguage: "nl-NL",
+            },
+          })),
         }),
       },
       {

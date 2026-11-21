@@ -105,7 +105,7 @@ type EbookImage = {
   fit?: 'cover' | 'contain';
 };
 
-const ebookPages: EbookImage[] = [
+export const ebookPages: EbookImage[] = [
   { src: nourishCover.url, alt: 'Omslag van het e-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten', width: 1080, height: 1101, fit: 'contain' },
   { src: ebookPage0.url, alt: 'Inhoudsopgave van het e-book Nourish Your Body met alle hoofdstukken', width: 1200, height: 1696 },
   { src: ebookPage1.url, alt: 'Pagina Keuken essentials met een hormoonproof keuken checklist', width: 1200, height: 1696 },
@@ -144,7 +144,8 @@ const ProductGallery = () => {
           >
             <img
               src={p.src}
-              alt=""
+              alt={p.alt}
+              title={p.alt}
               style={{ aspectRatio: `${p.width} / ${p.height}` }}
               className={`w-full h-full ${p.fit === 'contain' ? 'object-contain bg-secondary/20' : 'object-cover'}`}
               width={120}
@@ -187,7 +188,8 @@ const EbookPhotoStrip = () => {
           >
             <img
               src={page.src}
-              alt=""
+              alt={page.alt}
+              title={page.alt}
               className="h-full w-full object-contain"
               width={page.width}
               height={page.height}
@@ -215,6 +217,7 @@ const EbookPhotoStrip = () => {
               key={current.src}
               src={current.src}
               alt={current.alt}
+              title={current.alt}
               className="h-full w-full object-contain"
               width={current.width}
               height={current.height}
@@ -348,6 +351,7 @@ const Webshop = () => {
                 <img
                   src={daniquePortret}
                   alt="Danique Kwakman, orthomoleculair therapeut en auteur van het e-book Nourish Your Body"
+                  title="Danique Kwakman, orthomoleculair therapeut en auteur van het e-book Nourish Your Body"
                   className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto"
                   width={192}
                   height={192}
