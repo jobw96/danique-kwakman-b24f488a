@@ -5,7 +5,7 @@ import { CustomButton } from '@/components/CustomButton';
 import { TrajectPrice } from '@/components/TrajectPrice';
 import { trajectPrices, type TrajectPrice as PriceDetails } from '@/data/traject-prices';
 import { Section } from '@/components/Section';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, ExternalLink, Headphones } from 'lucide-react';
 import { Testimonial, FaqItem, Stat } from '@/types';
 import { FadeIn, ParallaxImage } from '@/components/Animations';
 import { HScrollCards } from '@/components/HScrollCards';
@@ -24,6 +24,7 @@ import { GENERAL_TESTIMONIALS as TESTIMONIALS } from '@/data/testimonials';
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 import { BLOG_POSTS } from '@/pages/Blog';
+import { PODCAST_TAG, SPOTIFY_EMBED_URL, SPOTIFY_SHOW_URL } from '@/data/podcast';
 
 const EBOOK_PRICE = '€39,99';
 
@@ -618,6 +619,31 @@ const Index = () => {
           <div className="relative rounded-t-full rounded-b-md overflow-hidden bg-secondary/10 aspect-[4/5] max-w-md mx-auto lg:max-w-none w-full">
             <img loading="lazy" decoding="async" src={daniqueMatchCall} alt="Danique Kwakman tijdens een online kennismakingsgesprek" width={839} height={1120} className="w-full h-full object-cover object-top" />
           </div>
+        </FadeIn>
+      </div>
+    </Section>
+
+    <Section className="bg-secondary/10">
+      <div className="max-w-3xl mx-auto text-center">
+        <FadeIn>
+          <div className="flex justify-center">
+            <SectionTag text={PODCAST_TAG} className="mb-8" />
+          </div>
+          <div className="overflow-hidden rounded-xl border border-border/50 bg-card">
+            <iframe src={SPOTIFY_EMBED_URL} className="block w-full" width="100%" height="232" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Health & Hormone Secrets podcast op Spotify" />
+          </div>
+        </FadeIn>
+        <FadeIn delay={0.1} className="mt-6 flex justify-center">
+          <a
+            href={SPOTIFY_SHOW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 py-3.5 rounded-md font-medium transition-colors hover:bg-primary/90"
+          >
+            <Headphones className="w-5 h-5" />
+            <span>Volg de podcast op Spotify</span>
+            <ExternalLink className="w-4 h-4 opacity-80 transition-transform group-hover:translate-x-0.5" />
+          </a>
         </FadeIn>
       </div>
     </Section>
