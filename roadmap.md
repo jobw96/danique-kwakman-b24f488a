@@ -1,6 +1,6 @@
 # Roadmap
 
-- [x] Podcastblok op de homepage onder 'Laten we kennismaken': alleen het Spotify-spelscherm en de knop naar Spotify; titel, tekst en podcastpagina-knop weg; gecontroleerd op 1280px en 390px
+- [x] Podcastblok op de homepage onder 'Laten we kennismaken': alleen het Spotify-spelscherm en de knop naar Spotify; titel, tekst en podcastpagina-knop weg; witte kaart onder de speler verwijderd; gecontroleerd op 1077px, 1280px en 390px
 - [x] Kaartenrijen (specialisaties, aanbod, blogs) geven een verticale veeg meteen door aan de pagina: de rij kan zelf niet meer op en neer scrollen; gecontroleerd op 390px en 1280px
 
 - [x] Specialisaties op homepage: op telefoon naast elkaar met horizontaal scrollen (2e kaart zichtbaar als hint), desktop blijft twee kolommen; gecontroleerd op 320px, 390px, 600px, 700px en 1280px
