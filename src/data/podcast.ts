@@ -8,7 +8,7 @@ export const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed-podcast/show/21
 
 export const PODCAST_TITLE = 'Health & hormone secrets';
 
-export const PODCAST_TAG = 'Beluister mij';
+export const PODCAST_TAG = 'Beluister mijn podcast';
 
 export const PODCAST_LEAD = 'In mijn podcast neem ik je mee in alles wat jij nodig hebt om je lichaam écht te begrijpen en je beter te voelen. Van hormonale balans tot darmgezondheid, van voeding en leefstijl tot kleine dagelijkse aanpassingen die een groot verschil maken.';
 
