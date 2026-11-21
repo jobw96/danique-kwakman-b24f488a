@@ -283,11 +283,7 @@ const Webshop = () => {
                 <div>
                   <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-4">Over Danique</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Ik help vrouwen hun lichaam opnieuw te begrijpen en stap voor stap van{' '}
-                    <strong className="text-foreground font-medium">overleven naar leven</strong> te gaan, met mijn
-                    unieke <strong className="text-foreground font-medium">CIRCLE-methode</strong>. Deze methode helpt
-                    je klachten te doorgronden en duurzame balans te creëren, afgestemd op jouw energie, ritme en
-                    leven.
+                    Hi! Ik ben Danique Kwakman. Orthomoleculair hormoon- en darmtherapeut en ex-verpleegkundige. Ik combineer mijn achtergrond in de reguliere zorg met wetenschappelijke kennis, voeding, leefstijl en laboratoriumonderzoek. We brengen niet alleen je klachten in kaart, maar kijken ook naar de samenhang tussen je hormonen, darmen, voeding, bloedsuiker, slaap en stress. Zo krijgen we inzicht in wat er achter jouw klachten speelt en werken we gericht aan een plan dat bij jou past.
                   </p>
                   <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                     Lees meer <Link to="/over-mij" className="text-primary underline underline-offset-4">over mijn werkwijze en achtergrond</Link>,
