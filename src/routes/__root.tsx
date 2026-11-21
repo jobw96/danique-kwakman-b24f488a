@@ -17,6 +17,7 @@ import { BookingModalProvider } from "@/components/BookingModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { RedirectHandler } from "@/components/RedirectHandler";
 import { Layout } from "@/components/Layout";
+import { MobileContactBar } from "@/components/MobileContactBar";
 import { PageTransition } from "@/components/Animations";
 import NotFound from "@/pages/NotFound";
 import { useLocation } from "@/lib/router-compat";
@@ -183,6 +184,7 @@ function RootComponent() {
               <ErrorBoundary>
                 <Outlet />
               </ErrorBoundary>
+              <MobileContactBar />
             </BookingModalProvider>
           </TooltipProvider>
         </QueryClientProvider>

@@ -91,6 +91,15 @@
 
 body {
   font-weight: 300;
+  /* Houd op mobiel ruimte vrij voor de vaste contactbalk, inclusief de
+     thuisindicator van iPhones, zodat geen pagina-inhoud wordt afgedekt. */
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
 }
 
 @layer base {

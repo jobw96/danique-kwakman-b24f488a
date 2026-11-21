@@ -813,7 +813,7 @@ export const Layout: React.FC<LayoutProps> = ({
             damping: 25
           }} 
           onClick={scrollToTop} 
-          className="fixed bottom-8 right-8 z-40 bg-primary text-primary-foreground p-3.5 rounded-full"
+          className="fixed bottom-8 right-8 z-40 hidden bg-primary text-primary-foreground p-3.5 rounded-full lg:flex"
           aria-label="Terug naar boven"
         >
           <ArrowUp size={20} aria-hidden="true" />
