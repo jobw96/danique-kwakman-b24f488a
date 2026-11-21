@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Specialisaties op homepage: op telefoon naast elkaar met horizontaal scrollen (2e kaart zichtbaar als hint), desktop blijft twee kolommen; gecontroleerd op 320px, 390px, 600px, 700px en 1280px
+
 - [x] Vaste mobiele contactbalk op alle pagina's: WhatsApp, gratis kennismaking en soepel naar boven; huisstijl, iPhone-safe-area en vrije ruimte onder content gecontroleerd op 320px, 390px en desktop
 
 - [x] Actiebanner met aftelling tot en met 31 december 2026; 160 pagina/schermcontroles uitgevoerd, navigatie en banner zonder overlap; één bestaande te brede mobiele kop op /klachten/bloedsuikerschommelingen genoteerd
