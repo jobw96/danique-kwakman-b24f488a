@@ -284,25 +284,25 @@ export const Layout: React.FC<LayoutProps> = ({
   }, {
     name: 'Meer',
     subItems: [{
-      name: 'Klachten',
-      href: '/klachten',
+      name: 'Over mij',
+      href: '/over-mij',
       description: '',
-      icon: Stethoscope
+      icon: User
     }, {
       name: 'Mijn methode',
       href: '/method',
       description: '',
       icon: Compass
     }, {
+      name: 'Welke klachten ervaar je?',
+      href: '/klachten',
+      description: '',
+      icon: Stethoscope
+    }, {
       name: 'Labonderzoek',
       href: '/labonderzoek',
       description: '',
       icon: FlaskConical
-    }, {
-      name: 'Over mij',
-      href: '/over-mij',
-      description: '',
-      icon: User
     }, {
       name: 'Samenwerkingen',
       href: '/samenwerking',
