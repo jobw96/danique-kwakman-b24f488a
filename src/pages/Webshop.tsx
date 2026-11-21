@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from '@/lib/router-compat';
 import { Section } from '@/components/Section';
 import { FadeIn } from '@/components/Animations';
-import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, UtensilsCrossed, Sparkles, Star } from 'lucide-react';
+import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, UtensilsCrossed, Sparkles, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { HScrollCards } from '@/components/HScrollCards';
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 
 import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
 import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
@@ -158,32 +159,84 @@ const ProductGallery = () => {
   );
 };
 
-const EbookPhotoStrip = () => (
-  <div className="mt-14 md:mt-16" role="region" aria-label="Foto's uit het e-book Nourish Your Body">
-    <HScrollCards
-      containerClassName="max-w-none"
-      trackClassName="md:grid md:grid-cols-7 md:gap-3"
-      prevLabel="Vorige e-bookfoto"
-      nextLabel="Volgende e-bookfoto"
-    >
-      {ebookPages.map((page) => (
-        <div key={page.src} className="w-36 sm:w-44 md:w-auto shrink-0 snap-start">
-          <div className="aspect-[3/4] w-full flex items-center justify-center overflow-hidden rounded-xl border border-secondary/30 bg-secondary/10">
+const EbookPhotoStrip = () => {
+  const [active, setActive] = React.useState(0);
+  const [open, setOpen] = React.useState(false);
+  const current = ebookPages[active] ?? ebookPages[0]!;
+  const arrow = 'h-10 w-10 rounded-md border border-secondary/40 bg-card text-secondary-dark flex items-center justify-center transition-colors hover:border-primary hover:text-primary cursor-pointer';
+
+  const previous = () => setActive((index) => (index - 1 + ebookPages.length) % ebookPages.length);
+  const next = () => setActive((index) => (index + 1) % ebookPages.length);
+
+  return (
+    <div className="mt-14 md:mt-16" role="region" aria-label="Foto's uit het e-book Nourish Your Body">
+      <p className="text-xs text-muted-foreground text-center mb-4">Klik of tik op een foto om deze groot te bekijken.</p>
+      <HScrollCards
+        containerClassName="max-w-none"
+        trackClassName="md:grid md:grid-cols-7 md:gap-3"
+        prevLabel="Vorige e-bookfoto"
+        nextLabel="Volgende e-bookfoto"
+      >
+        {ebookPages.map((page, index) => (
+          <button
+            key={page.src}
+            type="button"
+            onClick={() => { setActive(index); setOpen(true); }}
+            aria-label={`Bekijk foto ${index + 1} groot: ${page.alt}`}
+            className="aspect-[3/4] w-36 sm:w-44 md:w-auto shrink-0 snap-start flex items-center justify-center overflow-hidden rounded-xl border border-secondary/30 bg-secondary/10 cursor-pointer transition-colors hover:border-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             <img
               src={page.src}
-              alt={page.alt}
+              alt=""
               className="h-full w-full object-contain"
               width={page.width}
               height={page.height}
               loading="lazy"
               decoding="async"
             />
+          </button>
+        ))}
+      </HScrollCards>
+
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent
+          className="w-[calc(100%-1.5rem)] max-w-3xl h-[92dvh] max-h-[920px] grid-rows-[1fr_auto] gap-4 rounded-2xl border-secondary/30 bg-background p-3 sm:p-5 overflow-hidden [&>button:last-child]:h-10 [&>button:last-child]:w-10 [&>button:last-child]:rounded-md [&>button:last-child]:bg-card [&>button:last-child]:opacity-100"
+          onKeyDown={(event) => {
+            if (event.key === 'ArrowLeft') { event.preventDefault(); previous(); }
+            if (event.key === 'ArrowRight') { event.preventDefault(); next(); }
+          }}
+        >
+          <DialogTitle className="sr-only">{current.alt}</DialogTitle>
+          <DialogDescription className="sr-only">
+            Foto {active + 1} van {ebookPages.length}. Gebruik de pijltjestoetsen of de knoppen om te bladeren.
+          </DialogDescription>
+          <div className="min-h-0 flex items-center justify-center overflow-hidden rounded-xl bg-secondary/10">
+            <img
+              key={current.src}
+              src={current.src}
+              alt={current.alt}
+              className="h-full w-full object-contain"
+              width={current.width}
+              height={current.height}
+              decoding="async"
+            />
           </div>
-        </div>
-      ))}
-    </HScrollCards>
-  </div>
-);
+          <div className="flex items-center justify-center gap-5">
+            <button type="button" onClick={previous} aria-label="Vorige grote foto" className={arrow}>
+              <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+            </button>
+            <span className="min-w-12 text-center text-sm text-muted-foreground" aria-live="polite">
+              {active + 1} / {ebookPages.length}
+            </span>
+            <button type="button" onClick={next} aria-label="Volgende grote foto" className={arrow}>
+              <ChevronRight className="h-5 w-5" aria-hidden="true" />
+            </button>
+          </div>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+};
 
 const Webshop = () => {
   return (
