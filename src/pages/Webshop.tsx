@@ -10,8 +10,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Check, Mail, ShieldCheck, Tablet, BookOpen, CalendarHeart, ChefHat, ArrowRight, UtensilsCrossed, Sparkles } from 'lucide-react';
-import nourishCover from '@/assets/nourish-your-body-cover-2.webp.asset.json';
-import nourishCoverJpeg from '@/assets/nourish-your-body-cover.jpeg.asset.json';
 
 import zoeteAardappel from '@/assets/nourish-zoete-aardappel-gehakt-yoghurtsaus.webp.asset.json';
 import wortelPannenkoekjes from '@/assets/nourish-wortelpannenkoekjes-yoghurt-peer.webp.asset.json';
@@ -20,6 +18,12 @@ import saladePerzik from '@/assets/nourish-salade-perzik-burrata.webp.asset.json
 import ontbijtcake from '@/assets/nourish-ontbijtcake-havermout-zaden.webp.asset.json';
 import curry from '@/assets/nourish-curry-rijst-paprika.webp.asset.json';
 import pastaTonijn from '@/assets/nourish-pasta-tonijn-courgette-feta.webp.asset.json';
+import ebookPage0 from '@/assets/nourish-ebook-inhoud.webp.asset.json';
+import ebookPage1 from '@/assets/nourish-ebook-keuken-essentials.webp.asset.json';
+import ebookPage2 from '@/assets/nourish-ebook-eten-volgens-je-cyclus.webp.asset.json';
+import ebookPage3 from '@/assets/nourish-ebook-traybake-in-5-stappen.webp.asset.json';
+import ebookPage4 from '@/assets/nourish-ebook-wortelpannenkoekjes-recept.webp.asset.json';
+import ebookPage5 from '@/assets/nourish-ebook-zoete-aardappel-tzaziki-bowl.webp.asset.json';
 import daniquePortret from '@/assets/danique-portret.webp';
 import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
@@ -142,6 +146,49 @@ export const faqs = [
   },
 ];
 
+const ebookPages = [
+  { src: ebookPage0.url, alt: 'Inhoudsopgave van het e-book Nourish Your Body met alle hoofdstukken' },
+  { src: ebookPage1.url, alt: 'Pagina Keuken essentials met een hormoonproof keuken checklist' },
+  { src: ebookPage2.url, alt: 'Pagina Eten volgens je cyclus uit het e-book Nourish Your Body' },
+  { src: ebookPage3.url, alt: 'Pagina How to make: een makkelijke traybake in 5 stappen' },
+  { src: ebookPage4.url, alt: 'Receptpagina Wortelpannenkoekjes met ingrediënten en bereiding' },
+  { src: ebookPage5.url, alt: 'Receptpagina Zoete aardappel met tzaziki bowl' },
+];
+
+const ProductGallery = () => {
+  const [active, setActive] = React.useState(0);
+  const current = ebookPages[active] ?? ebookPages[0]!;
+  return (
+    <div className="w-full max-w-md mx-auto">
+      <img
+        src={current.src}
+        alt={current.alt}
+        title={current.alt}
+        className="w-full h-auto aspect-[1415/2000] object-cover rounded-xl"
+        width={1200}
+        height={1696}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+      />
+      <div className="mt-3 grid grid-cols-6 gap-2">
+        {ebookPages.map((p, i) => (
+          <button
+            key={p.src}
+            type="button"
+            onClick={() => setActive(i)}
+            aria-label={`Toon ${p.alt}`}
+            aria-pressed={i === active}
+            className={`overflow-hidden rounded-md border-2 cursor-pointer transition-colors ${i === active ? 'border-primary' : 'border-transparent opacity-70 hover:opacity-100'}`}
+          >
+            <img src={p.src} alt="" className="w-full aspect-[1415/2000] object-cover" width={120} height={170} loading="lazy" decoding="async" />
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Webshop = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -165,19 +212,7 @@ const Webshop = () => {
           <FadeIn>
             <div className={`${PANEL} p-6 sm:p-10 md:p-14 mb-20 md:mb-28`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                <picture className="block">
-                  <source srcSet={nourishCover.url} type="image/webp" />
-                  <img
-                    src={nourishCoverJpeg.url}
-                    alt="E-book Nourish Your Body van Danique Kwakman met 50+ hormoonproof recepten"
-                    className="w-full max-w-md mx-auto h-auto object-contain rounded-xl"
-                    width={1080}
-                    height={1101}
-                    loading="eager"
-                    fetchPriority="high"
-                    decoding="async"
-                  />
-                </picture>
+                <ProductGallery />
 
                 <div>
                   <span className="inline-block rounded-full bg-primary/15 text-primary text-xs font-medium px-3 py-1 mb-4">
