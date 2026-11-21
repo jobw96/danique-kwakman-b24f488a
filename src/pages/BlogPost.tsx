@@ -570,7 +570,7 @@ const BLOG_CONTENT: Record<string, {
         </p>
         <p>
           Kan je wel wat inspiratie gebruiken? <Link to="/recepten">Klik hier voor meer van mijn recepten.</Link> Of bestel{' '}
-          <Link to="/webshop">het e-book met 50+ hormoonproof recepten</Link> voor een compleet weekmenu vol cyclusgerichte ontbijtjes.
+          <Link to="/webshop/nourish-your-body">het e-book met 50+ hormoonproof recepten</Link> voor een compleet weekmenu vol cyclusgerichte ontbijtjes.
         </p>
 
 
@@ -834,7 +834,7 @@ const BLOG_CONTENT: Record<string, {
         </p>
         <p>
           Kan je wel wat inspiratie gebruiken voor darmvriendelijke ontbijtjes? <Link to="/recepten">Check hier mijn recepten.</Link> In{' '}
-          <Link to="/webshop">het e-book met 50+ hormoonproof recepten</Link> vind je bovendien darmvriendelijke maaltijden voor elk moment van de dag.
+          <Link to="/webshop/nourish-your-body">het e-book met 50+ hormoonproof recepten</Link> vind je bovendien darmvriendelijke maaltijden voor elk moment van de dag.
         </p>
 
 

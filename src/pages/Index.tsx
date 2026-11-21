@@ -410,7 +410,7 @@ const Index = () => {
             <a href={EBOOK_CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
               <CustomButton>Bestel direct</CustomButton>
             </a>
-            <Link to="/webshop">
+            <Link to="/webshop/nourish-your-body">
               <CustomButton variant="secondary">Meer info</CustomButton>
             </Link>
           </div>

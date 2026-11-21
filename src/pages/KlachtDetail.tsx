@@ -75,7 +75,7 @@ const TRAJECT_LINKS: { term: string; to: string }[] = [
 
 const EXTRA_LINKS: { term: string; to: string }[] = [
   { term: 'mijn recepten pagina', to: '/recepten' },
-  { term: 'Nourish Your Body', to: '/webshop' },
+  { term: 'Nourish Your Body', to: '/webshop/nourish-your-body' },
   { term: 'deze pagina', to: '/klachten/insulineresistentie' },
 ];
 

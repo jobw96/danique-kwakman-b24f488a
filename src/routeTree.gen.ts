@@ -42,6 +42,7 @@ import { Route as LayoutKlachtenIndexRouteImport } from './routes/_layout/klacht
 import { Route as LayoutKlachtenSlugRouteImport } from './routes/_layout/klachten/$slug'
 import { Route as LayoutReceptenIndexRouteImport } from './routes/_layout/recepten/index'
 import { Route as LayoutReceptenSlugRouteImport } from './routes/_layout/recepten/$slug'
+import { Route as LayoutWebshopNourishYourBodyRouteImport } from './routes/_layout/webshop_.nourish-your-body'
 import { Route as LayoutKlachtenOnderdeelCategoryRouteImport } from './routes/_layout/klachten/onderdeel/$category'
 
 const LayoutRoute = LayoutRouteImport.update({
@@ -212,6 +213,12 @@ const LayoutReceptenSlugRoute = LayoutReceptenSlugRouteImport.update({
   path: '/recepten/$slug',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutWebshopNourishYourBodyRoute =
+  LayoutWebshopNourishYourBodyRouteImport.update({
+    id: '/webshop_/nourish-your-body',
+    path: '/webshop/nourish-your-body',
+    getParentRoute: () => LayoutRoute,
+  } as any)
 const LayoutKlachtenOnderdeelCategoryRoute =
   LayoutKlachtenOnderdeelCategoryRouteImport.update({
     id: '/klachten/onderdeel/$category',
@@ -249,6 +256,7 @@ export interface FileRoutesByFullPath {
   '/blog/$slug': typeof LayoutBlogSlugRoute
   '/klachten/$slug': typeof LayoutKlachtenSlugRoute
   '/recepten/$slug': typeof LayoutReceptenSlugRoute
+  '/webshop/nourish-your-body': typeof LayoutWebshopNourishYourBodyRoute
   '/blog/': typeof LayoutBlogIndexRoute
   '/klachten/': typeof LayoutKlachtenIndexRoute
   '/recepten/': typeof LayoutReceptenIndexRoute
@@ -284,6 +292,7 @@ export interface FileRoutesByTo {
   '/blog/$slug': typeof LayoutBlogSlugRoute
   '/klachten/$slug': typeof LayoutKlachtenSlugRoute
   '/recepten/$slug': typeof LayoutReceptenSlugRoute
+  '/webshop/nourish-your-body': typeof LayoutWebshopNourishYourBodyRoute
   '/blog': typeof LayoutBlogIndexRoute
   '/klachten': typeof LayoutKlachtenIndexRoute
   '/recepten': typeof LayoutReceptenIndexRoute
@@ -321,6 +330,7 @@ export interface FileRoutesById {
   '/_layout/blog/$slug': typeof LayoutBlogSlugRoute
   '/_layout/klachten/$slug': typeof LayoutKlachtenSlugRoute
   '/_layout/recepten/$slug': typeof LayoutReceptenSlugRoute
+  '/_layout/webshop_/nourish-your-body': typeof LayoutWebshopNourishYourBodyRoute
   '/_layout/blog/': typeof LayoutBlogIndexRoute
   '/_layout/klachten/': typeof LayoutKlachtenIndexRoute
   '/_layout/recepten/': typeof LayoutReceptenIndexRoute
@@ -358,6 +368,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/klachten/$slug'
     | '/recepten/$slug'
+    | '/webshop/nourish-your-body'
     | '/blog/'
     | '/klachten/'
     | '/recepten/'
@@ -393,6 +404,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/klachten/$slug'
     | '/recepten/$slug'
+    | '/webshop/nourish-your-body'
     | '/blog'
     | '/klachten'
     | '/recepten'
@@ -429,6 +441,7 @@ export interface FileRouteTypes {
     | '/_layout/blog/$slug'
     | '/_layout/klachten/$slug'
     | '/_layout/recepten/$slug'
+    | '/_layout/webshop_/nourish-your-body'
     | '/_layout/blog/'
     | '/_layout/klachten/'
     | '/_layout/recepten/'
@@ -674,6 +687,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutReceptenSlugRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/webshop_/nourish-your-body': {
+      id: '/_layout/webshop_/nourish-your-body'
+      path: '/webshop/nourish-your-body'
+      fullPath: '/webshop/nourish-your-body'
+      preLoaderRoute: typeof LayoutWebshopNourishYourBodyRouteImport
+      parentRoute: typeof LayoutRoute
+    }
     '/_layout/klachten/onderdeel/$category': {
       id: '/_layout/klachten/onderdeel/$category'
       path: '/klachten/onderdeel/$category'
@@ -712,6 +732,7 @@ interface LayoutRouteChildren {
   LayoutBlogSlugRoute: typeof LayoutBlogSlugRoute
   LayoutKlachtenSlugRoute: typeof LayoutKlachtenSlugRoute
   LayoutReceptenSlugRoute: typeof LayoutReceptenSlugRoute
+  LayoutWebshopNourishYourBodyRoute: typeof LayoutWebshopNourishYourBodyRoute
   LayoutBlogIndexRoute: typeof LayoutBlogIndexRoute
   LayoutKlachtenIndexRoute: typeof LayoutKlachtenIndexRoute
   LayoutReceptenIndexRoute: typeof LayoutReceptenIndexRoute
@@ -746,6 +767,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutBlogSlugRoute: LayoutBlogSlugRoute,
   LayoutKlachtenSlugRoute: LayoutKlachtenSlugRoute,
   LayoutReceptenSlugRoute: LayoutReceptenSlugRoute,
+  LayoutWebshopNourishYourBodyRoute: LayoutWebshopNourishYourBodyRoute,
   LayoutBlogIndexRoute: LayoutBlogIndexRoute,
   LayoutKlachtenIndexRoute: LayoutKlachtenIndexRoute,
   LayoutReceptenIndexRoute: LayoutReceptenIndexRoute,
