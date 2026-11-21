@@ -311,7 +311,7 @@ const Webshop = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mt-10 md:mt-14 mb-6">
                 <OrderButton label="Bestel het e-book hier" />
               </div>
               <EbookPhotoStrip />
