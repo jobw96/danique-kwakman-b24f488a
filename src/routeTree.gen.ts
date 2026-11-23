@@ -27,6 +27,7 @@ import { Route as LayoutFaqRouteImport } from './routes/_layout/faq'
 import { Route as LayoutGlowupRouteImport } from './routes/_layout/glowup'
 import { Route as LayoutHormoontrajectRouteImport } from './routes/_layout/hormoontraject'
 import { Route as LayoutLabonderzoekRouteImport } from './routes/_layout/labonderzoek'
+import { Route as LayoutMaatwerkRouteImport } from './routes/_layout/maatwerk'
 import { Route as LayoutMethodRouteImport } from './routes/_layout/method'
 import { Route as LayoutMommyToBeRouteImport } from './routes/_layout/mommy-to-be'
 import { Route as LayoutNieuwsbriefRouteImport } from './routes/_layout/nieuwsbrief'
@@ -138,6 +139,11 @@ const LayoutLabonderzoekRoute = LayoutLabonderzoekRouteImport.update({
   path: '/labonderzoek',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutMaatwerkRoute = LayoutMaatwerkRouteImport.update({
+  id: '/maatwerk',
+  path: '/maatwerk',
+  getParentRoute: () => LayoutRoute,
+} as any)
 const LayoutMethodRoute = LayoutMethodRouteImport.update({
   id: '/method',
   path: '/method',
@@ -244,6 +250,7 @@ export interface FileRoutesByFullPath {
   '/glowup': typeof LayoutGlowupRoute
   '/hormoontraject': typeof LayoutHormoontrajectRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
+  '/maatwerk': typeof LayoutMaatwerkRoute
   '/method': typeof LayoutMethodRoute
   '/mommy-to-be': typeof LayoutMommyToBeRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -279,6 +286,7 @@ export interface FileRoutesByTo {
   '/glowup': typeof LayoutGlowupRoute
   '/hormoontraject': typeof LayoutHormoontrajectRoute
   '/labonderzoek': typeof LayoutLabonderzoekRoute
+  '/maatwerk': typeof LayoutMaatwerkRoute
   '/method': typeof LayoutMethodRoute
   '/mommy-to-be': typeof LayoutMommyToBeRoute
   '/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -317,6 +325,7 @@ export interface FileRoutesById {
   '/_layout/glowup': typeof LayoutGlowupRoute
   '/_layout/hormoontraject': typeof LayoutHormoontrajectRoute
   '/_layout/labonderzoek': typeof LayoutLabonderzoekRoute
+  '/_layout/maatwerk': typeof LayoutMaatwerkRoute
   '/_layout/method': typeof LayoutMethodRoute
   '/_layout/mommy-to-be': typeof LayoutMommyToBeRoute
   '/_layout/nieuwsbrief': typeof LayoutNieuwsbriefRoute
@@ -356,6 +365,7 @@ export interface FileRouteTypes {
     | '/glowup'
     | '/hormoontraject'
     | '/labonderzoek'
+    | '/maatwerk'
     | '/method'
     | '/mommy-to-be'
     | '/nieuwsbrief'
@@ -391,6 +401,7 @@ export interface FileRouteTypes {
     | '/glowup'
     | '/hormoontraject'
     | '/labonderzoek'
+    | '/maatwerk'
     | '/method'
     | '/mommy-to-be'
     | '/nieuwsbrief'
@@ -428,6 +439,7 @@ export interface FileRouteTypes {
     | '/_layout/glowup'
     | '/_layout/hormoontraject'
     | '/_layout/labonderzoek'
+    | '/_layout/maatwerk'
     | '/_layout/method'
     | '/_layout/mommy-to-be'
     | '/_layout/nieuwsbrief'
@@ -582,6 +594,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutLabonderzoekRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/maatwerk': {
+      id: '/_layout/maatwerk'
+      path: '/maatwerk'
+      fullPath: '/maatwerk'
+      preLoaderRoute: typeof LayoutMaatwerkRouteImport
+      parentRoute: typeof LayoutRoute
+    }
     '/_layout/method': {
       id: '/_layout/method'
       path: '/method'
@@ -719,6 +738,7 @@ interface LayoutRouteChildren {
   LayoutGlowupRoute: typeof LayoutGlowupRoute
   LayoutHormoontrajectRoute: typeof LayoutHormoontrajectRoute
   LayoutLabonderzoekRoute: typeof LayoutLabonderzoekRoute
+  LayoutMaatwerkRoute: typeof LayoutMaatwerkRoute
   LayoutMethodRoute: typeof LayoutMethodRoute
   LayoutMommyToBeRoute: typeof LayoutMommyToBeRoute
   LayoutNieuwsbriefRoute: typeof LayoutNieuwsbriefRoute
@@ -754,6 +774,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutGlowupRoute: LayoutGlowupRoute,
   LayoutHormoontrajectRoute: LayoutHormoontrajectRoute,
   LayoutLabonderzoekRoute: LayoutLabonderzoekRoute,
+  LayoutMaatwerkRoute: LayoutMaatwerkRoute,
   LayoutMethodRoute: LayoutMethodRoute,
   LayoutMommyToBeRoute: LayoutMommyToBeRoute,
   LayoutNieuwsbriefRoute: LayoutNieuwsbriefRoute,
