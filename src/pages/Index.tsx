@@ -35,6 +35,10 @@ type Treatment = {
   image: string;
   price?: PriceDetails;
   comingSoon?: boolean;
+  /** Afwijkende kadertekst boven de prijs, bijv. "Bekijk maatwerk". */
+  ctaLabel?: string;
+  /** Eigen omschrijving van de foto; anders de standaard traject-alt. */
+  alt?: string;
 };
 
 const TREATMENTS: Treatment[] = [{
@@ -61,6 +65,13 @@ const TREATMENTS: Treatment[] = [{
   description: "Met het 1:1 darmtraject begeleid ik je 6 maanden door het proces van darmherstel, inclusief labonderzoek. Zodat je eindelijk weet waarom je last hebt van een opgeblazen buik, buikpijn of een onrustige stoelgang en we je klachten stap voor stap kunnen gaan verminderen.",
   image: daniqueDarm,
   price: trajectPrices.darmtraject
+}, {
+  id: 'maatwerk',
+  title: "Maatwerk",
+  description: "Mijn maatwerk is geschikt als je behoefte hebt aan begeleiding die volledig bij jou past:",
+  image: daniqueMatchCall,
+  ctaLabel: "Bekijk maatwerk",
+  alt: "Danique Kwakman tijdens een match call, waarin samen wordt bekeken welke begeleiding bij jou past"
 }];
 
 const STATS: Stat[] = [{
@@ -387,7 +398,7 @@ const Index = () => {
             damping: 25
           }}>
             <div className="h-64 overflow-hidden relative">
-              <ParallaxImage src={treatment.image} alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
+              <ParallaxImage src={treatment.image} alt={treatment.alt ?? `${treatment.title} - traject voor vrouwen met gezondheidsklachten`} className="w-full h-full" />
               {!treatment.comingSoon && <m.div className="absolute inset-0 bg-foreground/0" whileHover={{
                 backgroundColor: "hsl(var(--foreground) / 0.1)"
               }} transition={{
@@ -404,7 +415,7 @@ const Index = () => {
                 stiffness: 300,
                 damping: 25
               }}>
-                Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
+                {treatment.ctaLabel ?? 'Bekijk traject'}<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
               </m.div>}
               {treatment.price && <TrajectPrice pricing={treatment.price} compact />}
             </div>
