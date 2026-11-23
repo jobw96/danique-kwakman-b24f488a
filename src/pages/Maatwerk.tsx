@@ -61,7 +61,7 @@ const Maatwerk = () => {
                 Maatwerk
               </h1>
               <p className="mt-6 max-w-xl text-lg text-primary-deep md:text-xl">
-                mijn maatwerk is geschikt als je behoefte hebt aan begeleiding die volledig bij jou past:
+                Mijn maatwerk is geschikt als je behoefte hebt aan begeleiding die volledig bij jou past:
               </p>
               <CustomButton onClick={openModal} className="mt-8">
                 Plan een gratis kennismaking
