@@ -13,6 +13,7 @@ import daniqueGlowup from '@/assets/danique-glowup.webp';
 import daniqueDarm from '@/assets/danique-darm.webp';
 import daniqueBeach from '@/assets/danique-beach.webp';
 import daniqueBloedsuiker from '@/assets/danique-walking-beach.webp';
+import daniqueMatchCall from '@/assets/danique-match-call.webp';
 
 const SectionTag = ({ text }: { text: string }) => (
   <div className="inline-block bg-primary text-primary-foreground text-xs px-4 py-1.5 rounded-full mb-6 font-medium tracking-wide">{text}</div>
@@ -24,8 +25,12 @@ type Treatment = {
   title: string;
   description: string;
   href: string;
-  price: PriceDetails;
+  price?: PriceDetails;
   comingSoon?: boolean;
+  /** Afwijkende kadertekst, bijv. "Bekijk maatwerk". */
+  ctaLabel?: string;
+  /** Eigen omschrijving van de foto; anders de standaard traject-alt. */
+  alt?: string;
 };
 
 const treatments: Treatment[] = [
@@ -60,6 +65,15 @@ const treatments: Treatment[] = [
     description: "Met het 1:1 darmtraject begeleid ik je 6 maanden door het proces van darmherstel, inclusief labonderzoek. Zodat je eindelijk weet waarom je last hebt van een opgeblazen buik, buikpijn of een onrustige stoelgang en we je klachten stap voor stap kunnen gaan verminderen.",
     href: "/darmtraject",
     price: trajectPrices.darmtraject
+  },
+  {
+    id: 'maatwerk',
+    image: daniqueMatchCall,
+    title: "Maatwerk",
+    description: "Mijn maatwerk is geschikt als je behoefte hebt aan begeleiding die volledig bij jou past:",
+    href: "/maatwerk",
+    ctaLabel: "Bekijk maatwerk",
+    alt: "Danique Kwakman tijdens een match call, waarin samen wordt bekeken welke begeleiding bij jou past"
   }
 ];
 
@@ -170,7 +184,7 @@ const Behandelingen = () => {
               <div className="h-64 overflow-hidden relative">
                 <ParallaxImage
                   src={treatment.image}
-                  alt={`${treatment.title} - traject voor vrouwen met gezondheidsklachten`}
+                  alt={treatment.alt ?? `${treatment.title} - traject voor vrouwen met gezondheidsklachten`}
                   className="w-full h-full"
                 />
                 {!treatment.comingSoon && <m.div
@@ -197,14 +211,15 @@ const Behandelingen = () => {
                     damping: 25
                   }}
                 >
-                  Bekijk traject<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
+                  {treatment.ctaLabel ?? 'Bekijk traject'}<span className="sr-only"> {treatment.title}</span> <ArrowRight className="w-4 h-4 ml-2" />
                 </m.div>}
                 {treatment.price && <TrajectPrice pricing={treatment.price} compact />}
               </div>
             </m.div>;
+            const isLone = index === treatments.length - 1 && treatments.length % 2 === 1;
             return (
-              <FadeIn key={treatment.id} delay={index * 0.2} className="h-full">
-                {treatment.comingSoon ? card : <Link to={treatment.href} className="h-full block">{card}</Link>}
+              <FadeIn key={treatment.id} delay={index * 0.2} className={`h-full${isLone ? ' md:col-span-2 md:flex md:justify-center' : ''}`}>
+                {treatment.comingSoon ? card : <Link to={treatment.href} className={`h-full block${isLone ? ' w-full md:max-w-[calc(50%-1rem)]' : ''}`}>{card}</Link>}
               </FadeIn>
             );
           })}
