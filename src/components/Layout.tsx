@@ -30,20 +30,11 @@ const footerNav: {
 }[] = [{
   title: 'Aanbod',
   links: [{
-    name: 'Klachten',
-    href: '/klachten'
-  }, {
     name: '1:1 begeleiding',
     href: '/behandelingen'
   }, {
     name: 'Maatwerk',
     href: '/maatwerk'
-  }, {
-    name: 'Labonderzoek',
-    href: '/labonderzoek'
-  }, {
-    name: 'De CIRCLE-methode',
-    href: '/method'
   }, {
     name: 'Webshop',
     href: '/webshop'
@@ -75,7 +66,15 @@ const footerNav: {
     name: 'Over mij',
     href: '/over-mij'
   }, {
-
+    name: 'De CIRCLE-methode',
+    href: '/method'
+  }, {
+    name: 'Klachten',
+    href: '/klachten'
+  }, {
+    name: 'Labonderzoek',
+    href: '/labonderzoek'
+  }, {
     name: 'Contact',
     href: '/contact'
   }, {
