@@ -12,7 +12,6 @@ export function TrajectPrice({ pricing, compact = false }: { pricing: PriceDetai
       <p className={compact ? 'mt-1 font-serif text-2xl text-primary-dark' : 'mt-2 font-serif text-5xl text-primary-dark md:text-6xl'}>
         {formatTrajectPrice(pricing.price)}
       </p>
-      <p className="mt-2 text-sm text-muted-foreground">Totaalprijs voor het traject</p>
       {pricing.validThrough && (
         <p className="mt-1 text-sm text-primary-deep">Actieprijs · Geldig t/m {formatPriceDeadline(pricing.validThrough)}</p>
       )}
