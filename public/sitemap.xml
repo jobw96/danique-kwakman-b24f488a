@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://daniquekwakman.nl/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://daniquekwakman.nl/behandelingen</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://daniquekwakman.nl/bloedsuikertraject</loc>
@@ -196,6 +196,10 @@
     <lastmod>2026-09-25</lastmod>
   </url>
   <url>
+    <loc>https://daniquekwakman.nl/maatwerk</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
     <loc>https://daniquekwakman.nl/method</loc>
     <lastmod>2026-09-25</lastmod>
   </url>
@@ -274,6 +278,6 @@
   </url>
   <url>
     <loc>https://daniquekwakman.nl/webshop/nourish-your-body</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
 </urlset>
